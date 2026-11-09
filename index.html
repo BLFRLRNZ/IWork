@@ -197,6 +197,14 @@ textarea{resize:vertical;min-height:60px}
 .actions{display:flex;gap:8px;flex-wrap:wrap}
 .actions .primary{flex:1 1 auto}
 .preset-row{display:grid;grid-template-columns:minmax(0,1fr) 128px;gap:8px}
+.sheet .btn.round{background:var(--sunken);box-shadow:none}
+.yearbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.yearbar output{font-weight:700;font-size:24px;letter-spacing:-.03em}
+.months{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.months button{border:0;background:var(--sunken);border-radius:14px;min-height:56px;padding:6px 2px;font-weight:600;text-transform:capitalize;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:0}
+.months button small{font-size:11px;font-weight:400;color:var(--muted);text-transform:none}
+.months button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink)}
+.months button[aria-pressed="true"] small{color:inherit;opacity:.7}
 
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--on-ink);border-radius:14px;padding:11px 16px;display:flex;gap:14px;align-items:center;max-width:calc(100% - 32px);font-size:14px;z-index:50;box-shadow:0 12px 30px -10px rgba(0,0,0,.4)}
 .toast button{background:none;border:0;color:inherit;font-weight:600;text-decoration:underline;padding:4px}
@@ -233,7 +241,7 @@ textarea{resize:vertical;min-height:60px}
       <div class="tools">
         <button class="btn" id="repeatBtn">Ripeti l'ultima settimana</button>
         <button class="btn" id="copyBtn">Copia i prossimi 7 giorni</button>
-        <button class="btn" id="csvBtn">Scarica il mese (CSV)</button>
+        <button class="btn" id="pdfBtn">PDF del mese</button>
         <button class="btn" id="bakBtn">Scarica backup</button>
         <button class="btn" id="resBtn">Ripristina backup</button>
       </div>
@@ -298,6 +306,23 @@ textarea{resize:vertical;min-height:60px}
     <div class="actions">
       <button type="button" class="btn ghost" id="stCancel">Annulla</button>
       <button type="submit" class="btn primary">Salva impostazioni</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="pd" aria-labelledby="pdTitle">
+  <form class="sheet" id="pdForm" method="dialog">
+    <h2 id="pdTitle" style="text-transform:none">PDF del mese</h2>
+    <p class="sub">Scegli il mese: ottieni il calendario con i turni e i totali, in un foglio A4 da stampare.</p>
+    <div class="yearbar">
+      <button type="button" class="btn round" id="pdPrev" aria-label="Anno precedente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+      <output id="pdYear"></output>
+      <button type="button" class="btn round" id="pdNext" aria-label="Anno successivo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 6l6 6-6 6"/></svg></button>
+    </div>
+    <div class="months" id="pdMonths" role="group" aria-label="Mese"></div>
+    <div class="actions">
+      <button type="button" class="btn ghost" id="pdCancel">Annulla</button>
+      <button type="submit" class="btn primary" id="pdGo"></button>
     </div>
   </form>
 </dialog>
@@ -429,12 +454,10 @@ function render(){
   renderChips();
   const list=workList(),flags=restFlags(list);
   const first=monday(new Date(y,m,1)),last=new Date(y,m+1,0);let h="";
-  const weeks=[];
   for(let d=first;d<=last||d.getDay()!==1;d=addDays(d,1)){
     const k=keyOf(d),e=S.days[k],hol=holiday(k);
-    if(d.getDay()===1)weeks.push({from:d,h:0});
     let body="";
-    if(e&&e.k==="w"){const i=info(k,e);weeks[weeks.length-1].h+=i.dur;body='<span class="s">'+e.s+'</span><span class="e">'+hm(i.end)+(i.plus?'<span class="p1"> ⁺¹</span>':"")+"</span>";}
+    if(e&&e.k==="w"){const i=info(k,e);body='<span class="s">'+e.s+'</span><span class="e">'+hm(i.end)+(i.plus?'<span class="p1"> ⁺¹</span>':"")+"</span>";}
     else if(e)body='<span class="w">'+KSHORT[e.k]+"</span>";
     const cls="day"+(e?" t-"+tint(e):"")+(d.getMonth()!==m?" out":"")+(k===today?" today":"")+(hol||d.getDay()===0?" hol":"");
     let meta="";
@@ -445,7 +468,7 @@ function render(){
       +body+(meta?'<span class="meta">'+meta+"</span>":"")+"</button>";
   }
   $("grid").innerHTML=h;
-  renderNext(list);renderSummary(y,m,list,flags,weeks);
+  renderNext(list);renderSummary(y,m,list,flags);
 }
 function renderNext(list){
   const now=new Date(),sh=list.find(x=>x.end>now),c=$("nextCard");
@@ -458,27 +481,98 @@ function renderNext(list){
     c.innerHTML='<div class="eyebrow">In turno adesso</div>'+range+'<div class="track" role="progressbar" aria-valuenow="'+Math.round(pct)+'" aria-valuemin="0" aria-valuemax="100"><i style="width:'+pct+'%"></i></div><p>Mancano <b>'+span((sh.end-now)/60000)+"</b> alla fine. Hai fatto "+span((now-sh.start)/60000)+".</p>";}
   else c.innerHTML='<div class="eyebrow">Prossimo turno</div><div class="when">'+day+"</div>"+range+"<p>Inizia tra <b>"+span((sh.start-now)/60000)+"</b>. Dura "+hrs(sh.dur)+" ore.</p>";
 }
-function renderSummary(y,m,list,flags,weeks){
-  const ym=y+"-"+pad(m+1);let tot=0,n=0,ot=0,night=0,sat=0,fest=0;const cnt={r:0,f:0,p:0,m:0};
-  list.forEach(x=>{if(!x.k.startsWith(ym))return;const e=S.days[x.k];tot+=x.dur;n++;if(e.ot>0)ot+=e.ot;night+=x.night;const dow=dateOf(x.k).getDay();if(dow===6)sat++;if(dow===0||holiday(x.k))fest++;});
-  let ferieYear=0;for(const k in S.days){const e=S.days[k];if(e.k!=="w"&&k.startsWith(ym))cnt[e.k]++;if(e.k==="f"&&k.startsWith(y+"-"))ferieYear++;}
-  let h='<div class="eyebrow">Totale di '+MONTHS[m]+'</div><div class="total"><strong>'+hrs(tot)+"</strong><span>ore in "+n+(n===1?" turno":" turni")+'</span></div><div class="tiles">';
+function monthData(y,m,list,flags){
+  const ym=y+"-"+pad(m+1),first=monday(new Date(y,m,1)),last=new Date(y,m+1,0);
+  const o={tot:0,n:0,ot:0,night:0,sat:0,fest:0,cnt:{r:0,f:0,p:0,m:0},ferieYear:0,weeks:[],warns:[]};
+  list.forEach(x=>{if(!x.k.startsWith(ym))return;const e=S.days[x.k];o.tot+=x.dur;o.n++;if(e.ot>0)o.ot+=e.ot;o.night+=x.night;const dow=dateOf(x.k).getDay();if(dow===6)o.sat++;if(dow===0||holiday(x.k))o.fest++;});
+  for(const k in S.days){const e=S.days[k];if(e.k!=="w"&&k.startsWith(ym))o.cnt[e.k]++;if(e.k==="f"&&k.startsWith(y+"-"))o.ferieYear++;}
+  for(let d=first;d<=last||d.getDay()!==1;d=addDays(d,1)){const k=keyOf(d),e=S.days[k];if(d.getDay()===1)o.weeks.push({from:d,h:0});if(e&&e.k==="w")o.weeks[o.weeks.length-1].h+=info(k,e).dur;}
+  Object.keys(flags).filter(k=>k.startsWith(ym)).sort().forEach(k=>{const d=dateOf(k),p=dateOf(flags[k].prev);o.warns.push("Solo "+hrs(Math.max(0,flags[k].gap))+" ore di riposo tra "+D3[p.getDay()]+" "+p.getDate()+" e "+D3[d.getDay()]+" "+d.getDate()+" (il minimo è 11).");});
+  let run=0,runStart=null;for(let d=addDays(new Date(y,m,1),-7);d<=last;d=addDays(d,1)){const e=S.days[keyOf(d)];if(e&&e.k==="w"){if(!run)runStart=d;run++;if(run===7&&d.getMonth()===m)o.warns.push("Sette o più giorni di lavoro di fila dal "+runStart.getDate()+" "+MON3[runStart.getMonth()]+".");}else run=0;}
+  o.weeks.forEach(x=>{if(x.h>48)o.warns.push("Settimana del "+x.from.getDate()+" "+MON3[x.from.getMonth()]+": "+hrs(x.h)+" ore, sopra le 48.");});
+  return o;}
+function renderSummary(y,m,list,flags){
+  const D=monthData(y,m,list,flags),n=D.n;
+  let h='<div class="eyebrow">Totale di '+MONTHS[m]+'</div><div class="total"><strong>'+hrs(D.tot)+"</strong><span>ore in "+n+(n===1?" turno":" turni")+'</span></div><div class="tiles">';
   const tile=(v,l,wide)=>{h+='<div class="tile'+(wide?" wide":"")+'"><strong>'+v+"</strong><span>"+l+"</span></div>";};
-  tile(hrs(ot)+" h","Ore extra");tile(hrs(night)+" h","Ore notturne, 22–06");tile(sat,"Sabati lavorati");tile(fest,"Domeniche e festivi");
-  tile(cnt.f+" g","Ferie nel mese");tile(ferieYear+" g","Ferie nel "+y);
-  if(cnt.p)tile(cnt.p+" g","Permessi");if(cnt.m)tile(cnt.m+" g","Malattia");
-  if(S.settings.rate>0)tile((tot*S.settings.rate).toLocaleString("it-IT",{style:"currency",currency:"EUR"}),"Stima lorda del mese",true);
+  tile(hrs(D.ot)+" h","Ore extra");tile(hrs(D.night)+" h","Ore notturne, 22–06");tile(D.sat,"Sabati lavorati");tile(D.fest,"Domeniche e festivi");
+  tile(D.cnt.f+" g","Ferie nel mese");tile(D.ferieYear+" g","Ferie nel "+y);
+  if(D.cnt.p)tile(D.cnt.p+" g","Permessi");if(D.cnt.m)tile(D.cnt.m+" g","Malattia");
+  if(S.settings.rate>0)tile((D.tot*S.settings.rate).toLocaleString("it-IT",{style:"currency",currency:"EUR"}),"Stima lorda del mese",true);
   $("sumCard").innerHTML=h+"</div>";
   let w='<div class="eyebrow">Ore per settimana</div><div class="weeks">';
-  weeks.forEach(x=>{const to=addDays(x.from,6);w+='<div class="wk'+(x.h>48?" over":"")+'"><span>'+x.from.getDate()+(x.from.getMonth()!==to.getMonth()?" "+MON3[x.from.getMonth()]:"")+"–"+to.getDate()+" "+MON3[to.getMonth()]+"</span><b>"+hrs(x.h)+' h</b><div class="track"><i style="width:'+Math.min(100,x.h/48*100)+'%"></i></div></div>';});
+  D.weeks.forEach(x=>{const to=addDays(x.from,6);w+='<div class="wk'+(x.h>48?" over":"")+'"><span>'+x.from.getDate()+(x.from.getMonth()!==to.getMonth()?" "+MON3[x.from.getMonth()]:"")+"–"+to.getDate()+" "+MON3[to.getMonth()]+"</span><b>"+hrs(x.h)+' h</b><div class="track"><i style="width:'+Math.min(100,x.h/48*100)+'%"></i></div></div>';});
   $("weekCard").innerHTML=w+'</div><p class="note">La barra è piena a 48 ore.</p>';
-  const warns=[];
-  Object.keys(flags).filter(k=>k.startsWith(ym)).forEach(k=>{const d=dateOf(k),p=dateOf(flags[k].prev);warns.push("Solo "+hrs(Math.max(0,flags[k].gap))+" ore di riposo tra "+D3[p.getDay()]+" "+p.getDate()+" e "+D3[d.getDay()]+" "+d.getDate()+" (il minimo è 11).");});
-  let run=0,runStart=null;for(let d=addDays(new Date(y,m,1),-7);d<=new Date(y,m+1,0);d=addDays(d,1)){const e=S.days[keyOf(d)];if(e&&e.k==="w"){if(!run)runStart=d;run++;if(run===7&&d.getMonth()===m)warns.push("Sette o più giorni di lavoro di fila dal "+runStart.getDate()+" "+MON3[runStart.getMonth()]+".");}else run=0;}
-  weeks.forEach(x=>{if(x.h>48)warns.push("Settimana del "+x.from.getDate()+" "+MON3[x.from.getMonth()]+": "+hrs(x.h)+" ore, sopra le 48.");});
-  $("warnCard").hidden=!warns.length;
-  $("warnCard").innerHTML='<div class="eyebrow">Da controllare</div><ul class="warns">'+warns.map(x=>'<li><i class="flag">!</i><span>'+esc(x)+"</span></li>").join("")+"</ul>";
+  $("warnCard").hidden=!D.warns.length;
+  $("warnCard").innerHTML='<div class="eyebrow">Da controllare</div><ul class="warns">'+D.warns.map(x=>'<li><i class="flag">!</i><span>'+esc(x)+"</span></li>").join("")+"</ul>";
 }
+
+/* ---------- PDF del mese: one A4 landscape page, written by hand (Helvetica, no library) ---------- */
+const PW=[[278,278,355,556,556,889,667,191,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,278,278,584,584,584,556,1015,667,667,722,722,667,611,778,722,278,500,667,556,833,722,778,667,778,722,667,611,722,667,944,667,667,611,278,278,278,469,556,333,556,556,500,556,556,278,556,556,222,222,500,222,833,556,556,556,556,333,500,278,556,500,722,500,500,500,334,260,334,584,350,556,350,222,556,333,1000,556,556,333,1000,667,333,1000,350,611,350,350,222,222,333,333,350,556,1000,333,1000,500,333,944,350,500,667,278,333,556,556,556,556,260,556,333,737,370,556,584,333,737,333,400,584,333,333,333,556,537,278,333,333,365,556,834,834,834,611,667,667,667,667,667,667,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,500,556,556,556,556,278,278,278,278,556,556,556,556,556,556,556,584,611,556,556,556,556,500,556,500],[278,333,474,556,556,889,722,238,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,333,333,584,584,584,611,975,722,722,722,722,667,611,778,722,278,556,722,611,833,722,778,667,778,722,667,611,722,667,944,667,667,611,333,278,333,584,556,333,556,611,556,611,556,333,611,611,278,278,556,278,889,611,611,611,611,389,556,333,611,556,778,556,556,500,389,280,389,584,350,556,350,278,556,500,1000,556,556,333,1000,667,333,1000,350,611,350,350,278,278,500,500,350,556,1000,333,1000,556,333,944,350,500,667,278,333,556,556,556,556,280,556,333,737,370,556,584,333,737,333,400,584,333,333,333,611,556,278,333,333,365,556,834,834,834,611,722,722,722,722,722,722,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,556,556,556,556,556,278,278,278,278,611,611,611,611,611,611,611,584,611,611,611,611,611,556,611,556]]; // Helvetica and Helvetica-Bold advance widths, WinAnsi codes 32–255
+const WIN={"€":128,"…":133,"‘":145,"’":146,"“":147,"”":148,"•":149,"–":150,"—":151};
+function pdfStr(s){let o="";for(const ch of String(s)){const c=ch.codePointAt(0),b=WIN[ch]||((c>=32&&c<127)||(c>=160&&c<256)?c:0);if(b)o+=String.fromCharCode(b);}return o;}
+function pdfW(b,f,size){let w=0;for(let i=0;i<b.length;i++)w+=PW[f][b.charCodeAt(i)-32]||0;return w*size/1000;}
+function pdfFit(b,f,size,max){if(pdfW(b,f,size)<=max)return b;while(b.length&&pdfW(b+"\x85",f,size)>max)b=b.slice(0,-1);return b.replace(/\s+$/,"")+"\x85";}
+function monthPdf(y,m){
+  const W=842,H=595,M=34,c=[];
+  const INK="#0d0f14",MUTED="#676e80",LINE="#d6dae3",FAINT="#b3b9c6",HOL="#cf3a2f",WARN="#c96a00",SOFT="#f1f2f6";
+  const TINT={m:["#ffe8ad","#553800"],p:["#ffd2c0","#6b2407"],n:["#d9dbff","#24256e"],f:["#cbf1d8","#0c4927"],x:["#e4e7ee","#4a5267"]};
+  const DOT={m:"#f2a900",p:"#ff6b3d",n:"#6a6ff5",f:"#22b062",x:"#9aa1b2"};
+  const n=v=>String(+v.toFixed(2));
+  const rgb=h=>[1,3,5].map(i=>n(parseInt(h.substr(i,2),16)/255)).join(" ");
+  const box=(x,yt,w,h,r,fill,stroke)=>{const yb=H-yt-h,k=r*0.5523,P=a=>a.map(n).join(" ");
+    c.push((fill?rgb(fill)+" rg ":"")+(stroke?rgb(stroke)+" RG 0.6 w ":"")+P([x+r,yb])+" m "+P([x+w-r,yb])+" l "+P([x+w-r+k,yb,x+w,yb+r-k,x+w,yb+r])+" c "+P([x+w,yb+h-r])+" l "+P([x+w,yb+h-r+k,x+w-r+k,yb+h,x+w-r,yb+h])+" c "+P([x+r,yb+h])+" l "+P([x+r-k,yb+h,x,yb+h-r+k,x,yb+h-r])+" c "+P([x,yb+r])+" l "+P([x,yb+r-k,x+r-k,yb,x+r,yb])+" c h "+(fill&&stroke?"B":fill?"f":"S"));};
+  const text=(x,yb,str,f,size,col,align,max)=>{let b=pdfStr(str);if(max)b=pdfFit(b,f,size,max);const w=pdfW(b,f,size);if(align==="r")x-=w;else if(align==="c")x-=w/2;
+    c.push("BT /F"+(f+1)+" "+size+" Tf "+rgb(col)+" rg "+n(x)+" "+n(H-yb)+" Td ("+b.replace(/[\\()]/g,"\\$&")+") Tj ET");return w;};
+  const list=workList(),flags=restFlags(list),D=monthData(y,m,list,flags),name=MONTHS[m][0].toUpperCase()+MONTHS[m].slice(1);
+  // header
+  ["m","p","n"].forEach((t,i)=>box(M+i*10,29.5,7,7,3.5,DOT[t]));
+  text(M+33,36.5,"iWork",1,11,INK);
+  const tw=text(M,70,name,1,27,INK);text(M+tw+8,70,String(y),0,27,MUTED);
+  text(W-M,36.5,"TOTALE DEL MESE",0,7.5,MUTED,"r");
+  const lw=text(W-M,70,"ore in "+D.n+(D.n===1?" turno":" turni"),0,11,MUTED,"r");text(W-M-lw-6,70,hrs(D.tot),1,27,INK,"r");
+  // bottom band: warnings, tiles, footer
+  const warns=D.warns.length>3?D.warns.slice(0,2).concat(["E altri "+(D.warns.length-2)+" avvisi: li trovi nell'app."]):D.warns;
+  const tilesY=544-(warns.length?warns.length*11+6:0)-40,gridTop=99,gridBottom=tilesY-10;
+  // calendar
+  const first=monday(new Date(y,m,1)),last=new Date(y,m+1,0),rows=Math.round((monday(last)-first)/604800000)+1,gap=4;
+  const cw=(W-2*M-6*gap)/7,ch=(gridBottom-gridTop-(rows-1)*gap)/rows;
+  ["LUN","MAR","MER","GIO","VEN","SAB","DOM"].forEach((t,i)=>text(M+i*(cw+gap)+7,91,t,0,7,MUTED));
+  for(let i=0;i<rows*7;i++){const d=addDays(first,i),k=keyOf(d),e=S.days[k],x=M+(i%7)*(cw+gap),yt=gridTop+Math.floor(i/7)*(ch+gap);
+    if(d.getMonth()!==m){text(x+7,yt+14,String(d.getDate()),0,9,FAINT);continue;}
+    const hol=holiday(k),t=e?tint(e):null,fg=t?TINT[t][1]:INK;
+    if(t)box(x,yt,cw,ch,7,TINT[t][0]);else box(x+.3,yt+.3,cw-.6,ch-.6,7,null,LINE);
+    const nw=text(x+7,yt+14,String(d.getDate()),1,9.5,hol||d.getDay()===0?HOL:fg);
+    if(flags[k]){box(x+11+nw,yt+6.2,9,9,4.5,WARN);text(x+15.5+nw,yt+13.6,"!",1,7.5,"#ffffff","c");}
+    if(hol)text(x+cw-7,yt+13.5,hol,0,6.5,HOL,"r",cw-(flags[k]?46:34)-nw);
+    if(e&&e.k==="w"){const I=info(k,e);
+      const w1=text(x+7,yt+32,e.s+"–"+hm(I.end),1,12.5,fg);if(I.plus)text(x+9+w1,yt+32,"+1",0,7,fg);
+      text(x+7,yt+43.5,hrs(I.dur)+" ore"+(e.ot?" ("+(e.ot>0?"+":"-")+hrs(Math.abs(e.ot))+" h)":""),0,8,fg);
+      if(e.n)text(x+7,yt+53.5,e.n.replace(/\s+/g," "),0,7,fg,"l",cw-14);}
+    else if(e){text(x+7,yt+31,KIND[e.k],1,11,fg);if(e.n)text(x+7,yt+43,e.n.replace(/\s+/g," "),0,7,fg,"l",cw-14);}
+  }
+  // tiles
+  const tiles=[[D.n,"Turni"],[hrs(D.ot)+" h","Ore extra"],[hrs(D.night)+" h","Ore notturne"],[D.sat,"Sabati lavorati"],[D.fest,"Dom. e festivi"],[D.cnt.r+" g","Riposi"],[D.cnt.f+" g","Ferie"],[D.cnt.p+" g","Permessi"],[D.cnt.m+" g","Malattia"]];
+  if(S.settings.rate>0)tiles.push([(D.tot*S.settings.rate).toLocaleString("it-IT",{style:"currency",currency:"EUR"}).replace(/\s/g," "),"Stima lorda"]);
+  const tg=6,tWd=(W-2*M-(tiles.length-1)*tg)/tiles.length;
+  tiles.forEach((t,i)=>{const x=M+i*(tWd+tg);box(x,tilesY,tWd,40,7,SOFT);text(x+8,tilesY+18,String(t[0]),1,12.5,INK,"l",tWd-14);text(x+8,tilesY+31,t[1],0,7,MUTED,"l",tWd-14);});
+  warns.forEach((t,i)=>{const yb=tilesY+54+i*11;box(M,yb-7.2,8.4,8.4,4.2,WARN);text(M+4.2,yb-.4,"!",1,7,"#ffffff","c");text(M+13,yb,t,0,8,INK,"l",W-2*M-13);});
+  // footer: settings and legend
+  const td=new Date();
+  text(M,560,"Turno base "+hrs(S.settings.wd)+" ore, sabato "+hrs(S.settings.sat)+" ore. Creato con iWork il "+pad(td.getDate())+"/"+pad(td.getMonth()+1)+"/"+td.getFullYear()+".",0,7.5,MUTED);
+  let lx=W-M;[["x","Riposo e assenze"],["f","Ferie"],["n","Notte"],["p","Pomeriggio"],["m","Mattina"]].forEach(l=>{lx-=text(lx,560,l[1],0,7.5,MUTED,"r");box(lx-9,554.2,6,6,3,DOT[l[0]]);lx-=20;});
+  // file
+  const content=c.join("\n"),objs=["<< /Type /Catalog /Pages 2 0 R >>","<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+    "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 "+W+" "+H+"] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>",
+    "<< /Length "+content.length+" >>\nstream\n"+content+"\nendstream",
+    "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>",
+    "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>",
+    "<< /Title (iWork - "+MONTHS[m]+" "+y+") /Creator (iWork) >>"];
+  let out="%PDF-1.4\n%\xE2\xE3\xCF\xD3\n";const off=[];
+  objs.forEach((o,i)=>{off.push(out.length);out+=(i+1)+" 0 obj\n"+o+"\nendobj\n";});
+  const xref=out.length;
+  out+="xref\n0 "+(objs.length+1)+"\n0000000000 65535 f \n"+off.map(o=>String(o).padStart(10,"0")+" 00000 n \n").join("")+"trailer\n<< /Size "+(objs.length+1)+" /Root 1 0 R /Info 7 0 R >>\nstartxref\n"+xref+"\n%%EOF\n";
+  const u=new Uint8Array(out.length);for(let i=0;i<out.length;i++)u[i]=out.charCodeAt(i)&255;return u;}
 
 /* ---------- day editor ---------- */
 function kindSel(){const r=document.querySelector('input[name=kind]:checked');return r?r.value:"w";}
@@ -501,7 +595,7 @@ $("edDel").onclick=()=>{$("ed").close();apply([[editing,null]],"Giornata svuotat
 $("edForm").addEventListener("submit",ev=>{ev.preventDefault();const k=kindSel(),n=$("edNote").value.trim();
   if(k==="w"&&!okT($("edStart").value)){$("edStart").focus();return;}
   const e=k==="w"?{k:"w",s:$("edStart").value,ot:edOt,n}:{k,n};$("ed").close();apply([[editing,e]],null);});
-[$("ed"),$("st")].forEach(dlg=>dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();}));
+[$("ed"),$("st"),$("pd")].forEach(dlg=>dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();}));
 
 /* ---------- interactions ---------- */
 let swiped=false;
@@ -545,13 +639,20 @@ async function saveFile(filename,data,type){
   if(!hosted){try{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type}));a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);toast("File scaricato.");}catch(e){toast("Download non riuscito.");}return;}
   let dl=null;try{dl=await window.claude.use("downloads");}catch(e){}
   if(!dl){toast("Il download non è disponibile in questa vista.");return;}
-  try{await dl.save({filename,data});toast("File salvato.");}catch(e){if(!e||e.code!=="declined")toast("Download non riuscito.");}}
-$("csvBtn").onclick=()=>{const ym=view.getFullYear()+"-"+pad(view.getMonth()+1),rows=[["Data","Giorno","Tipo","Inizio","Fine","Ore","Ore extra","Ore notturne","Nota"]];
-  Object.keys(S.days).filter(k=>k.startsWith(ym)).sort().forEach(k=>{const e=S.days[k],d=dateOf(k),dd=pad(d.getDate())+"/"+pad(d.getMonth()+1)+"/"+d.getFullYear();
-    if(e.k==="w"){const i=info(k,e);rows.push([dd,DAYS[d.getDay()],"Turno",e.s,hm(i.end),hrs(i.dur),hrs(e.ot||0),hrs(i.night),e.n||""]);}
-    else rows.push([dd,DAYS[d.getDay()],KIND[e.k],"","","0","0","0",e.n||""]);});
-  if(rows.length===1){toast("Nessun turno in questo mese.");return;}
-  saveFile("iwork-turni-"+ym+".csv","﻿"+rows.map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(";")).join("\r\n"),"text/csv");};
+  try{await dl.save({filename,data});toast("File salvato.");}catch(e){if(e&&e.code==="declined")return;toast(e&&(e.code==="extension_not_enabled"||e.code==="rejected_extension")?"Questo tipo di file non si può salvare in questa vista.":"Download non riuscito.");}}
+let pdY=0,pdM=0;
+function pdRender(){$("pdYear").textContent=pdY;let h="";
+  for(let i=0;i<12;i++){const ym=pdY+"-"+pad(i+1);let n=0;for(const k in S.days)if(S.days[k].k==="w"&&k.startsWith(ym))n++;
+    h+='<button type="button" data-m="'+i+'" aria-pressed="'+(i===pdM)+'" aria-label="'+MONTHS[i]+" "+pdY+", "+(n?n+(n===1?" turno":" turni"):"nessun turno")+'">'+MON3[i]+"<small>"+(n?n+(n===1?" turno":" turni"):"vuoto")+"</small></button>";}
+  $("pdMonths").innerHTML=h;$("pdGo").textContent="Crea il PDF di "+MONTHS[pdM]+" "+pdY;}
+$("pdfBtn").onclick=()=>{pdY=view.getFullYear();pdM=view.getMonth();pdRender();$("pd").showModal();};
+$("pdPrev").onclick=()=>{pdY--;pdRender();};
+$("pdNext").onclick=()=>{pdY++;pdRender();};
+$("pdMonths").addEventListener("click",ev=>{const b=ev.target.closest("[data-m]");if(b){pdM=+b.dataset.m;pdRender();}});
+$("pdCancel").onclick=()=>$("pd").close();
+$("pdForm").addEventListener("submit",ev=>{ev.preventDefault();$("pd").close();
+  let bytes=null;try{bytes=monthPdf(pdY,pdM);}catch(e){toast("Non sono riuscito a creare il PDF.");return;}
+  saveFile("iwork-"+pdY+"-"+pad(pdM+1)+"-"+MONTHS[pdM]+".pdf",bytes,"application/pdf");});
 $("bakBtn").onclick=()=>saveFile("iwork-backup-"+keyOf(new Date())+".json",JSON.stringify({app:"iwork",v:1,settings:S.settings,days:S.days},null,1),"application/json");
 $("resBtn").onclick=()=>$("resFile").click();
 $("resFile").addEventListener("change",()=>{const f=$("resFile").files[0];if(!f)return;const r=new FileReader();
