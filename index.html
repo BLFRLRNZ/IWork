@@ -200,6 +200,17 @@ textarea{resize:vertical;min-height:60px}
 .sheet .btn.round{background:var(--sunken);box-shadow:none}
 .yearbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .yearbar output{font-weight:700;font-size:24px;letter-spacing:-.03em}
+.update{position:fixed;left:50%;transform:translateX(-50%);top:calc(12px + env(safe-area-inset-top,0px));width:min(520px,calc(100% - 32px));background:var(--ink);color:var(--on-ink);border-radius:18px;padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;z-index:60;box-shadow:0 16px 40px -12px rgba(0,0,0,.45)}
+.update div{flex:1 1 220px;min-width:0;font-size:14px}
+.update b{display:block;font-weight:600}
+.update span{opacity:.75;font-size:13px}
+.update .acts{display:flex;gap:6px;flex:0 0 auto}
+.update button{border:0;border-radius:11px;padding:8px 13px;min-height:38px;font-weight:600}
+.update .go{background:var(--on-ink);color:var(--ink)}
+.update .later{background:transparent;color:inherit;opacity:.8}
+.uprow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;justify-content:space-between}
+.uprow span{color:var(--muted);font-size:13.5px;flex:1 1 180px}
+@media(prefers-reduced-motion:no-preference){.update:not([hidden]){animation:drop .3s cubic-bezier(.2,.9,.3,1)}@keyframes drop{from{transform:translate(-50%,-16px);opacity:0}}}
 .months{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
 .months button{border:0;background:var(--sunken);border-radius:14px;min-height:56px;padding:6px 2px;font-weight:600;text-transform:capitalize;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:0}
 .months button small{font-size:11px;font-weight:400;color:var(--muted);text-transform:none}
@@ -303,6 +314,10 @@ textarea{resize:vertical;min-height:60px}
       <div class="preset-row"><input type="text" id="p1n" aria-label="Nome turno 2" maxlength="16"><input type="time" id="p1t" aria-label="Inizio turno 2" step="300"></div>
       <div class="preset-row"><input type="text" id="p2n" aria-label="Nome turno 3" maxlength="16"><input type="time" id="p2t" aria-label="Inizio turno 3" step="300"></div>
     </div>
+    <div class="field">
+      <span class="eyebrow">Aggiornamenti</span>
+      <div class="uprow"><span id="upInfo"></span><button type="button" class="btn" id="upCheck">Cerca aggiornamenti</button></div>
+    </div>
     <div class="actions">
       <button type="button" class="btn ghost" id="stCancel">Annulla</button>
       <button type="submit" class="btn primary">Salva impostazioni</button>
@@ -327,6 +342,8 @@ textarea{resize:vertical;min-height:60px}
   </form>
 </dialog>
 
+<div class="update" id="upBar" role="status" hidden><div><b id="upTitle"></b><span id="upNotes"></span></div><div class="acts"><button type="button" class="later" id="upLater">Più tardi</button><button type="button" class="go" id="upGo">Aggiorna</button></div></div>
+
 <div class="toast" id="toast" role="status" hidden><span id="toastMsg"></span><button id="toastUndo" hidden>Annulla</button></div>
 
 <script>
@@ -350,6 +367,7 @@ const KSHORT={r:"Riposo",f:"Ferie",p:"Perm.",m:"Mal."};
 const hrs=n=>(Math.round(n*100)/100).toLocaleString("it-IT",{maximumFractionDigits:2});
 const span=min=>{min=Math.max(0,Math.round(min));const h=Math.floor(min/60),m=min%60;return h>=24?Math.floor(h/24)+" g "+(h%24)+" h":(h?h+" h ":"")+m+" min";};
 const hosted=!!(window.claude&&window.claude.use);
+const APP_VERSION="1.2.0";
 
 /* ---------- state ---------- */
 const DEF={wd:8,sat:6,rate:0,presets:[{n:"Mattina",t:"06:00"},{n:"Pomeriggio",t:"14:00"},{n:"Notte",t:"22:00"}]};
@@ -615,7 +633,7 @@ $("grid").addEventListener("touchstart",ev=>{tx=ev.touches[0].clientX;ty=ev.touc
 $("grid").addEventListener("touchend",ev=>{const dx=ev.changedTouches[0].clientX-tx,dy=ev.changedTouches[0].clientY-ty;
   if(Math.abs(dx)>60&&Math.abs(dy)<40){swiped=true;shift(dx<0?1:-1);setTimeout(()=>{swiped=false;},400);}},{passive:true});
 
-$("setBtn").onclick=()=>{const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";s.presets.forEach((p,i)=>{$("p"+i+"n").value=p.n;$("p"+i+"t").value=p.t;});$("st").showModal();};
+$("setBtn").onclick=()=>{renderUpInfo();const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";s.presets.forEach((p,i)=>{$("p"+i+"n").value=p.n;$("p"+i+"t").value=p.t;});$("st").showModal();};
 $("stCancel").onclick=()=>$("st").close();
 $("stForm").addEventListener("submit",ev=>{ev.preventDefault();
   S.settings=normSettings({wd:$("stWd").value,sat:$("stSat").value,rate:$("stRate").value,presets:[0,1,2].map(i=>({n:$("p"+i+"n").value.trim(),t:$("p"+i+"t").value}))});
@@ -662,6 +680,48 @@ $("resFile").addEventListener("change",()=>{const f=$("resFile").files[0];if(!f)
       apply([...keys].map(k=>[k,nd[k]||null]),null);toast("Backup ripristinato: "+Object.keys(nd).length+" giornate.");
     }catch(e){toast("Questo file non è un backup di iWork.");}$("resFile").value="";};
   r.readAsText(f);});
+
+/* ---------- aggiornamenti ---------- */
+const UP_EVERY=30*60000;
+let upLast=0,upLatest=null,upBusy=false;
+try{upLast=+localStorage.getItem("iwork-upcheck")||0;}catch(e){}
+const canCheck=()=>!hosted&&/^https?:$/.test(location.protocol);
+function newer(a,b){const x=String(a).split(".").map(Number),y=String(b).split(".").map(Number);for(let i=0;i<3;i++){if((x[i]||0)!==(y[i]||0))return (x[i]||0)>(y[i]||0);}return false;}
+function renderUpInfo(){$("upCheck").hidden=!canCheck();
+  let t="Versione "+APP_VERSION+". ";
+  if(hosted)t+="Qui l'app si aggiorna da sola.";
+  else if(!canCheck())t+="Apri l'app dal suo indirizzo web per ricevere gli aggiornamenti.";
+  else if(upLatest)t+="È disponibile la "+upLatest.version+".";
+  else if(upLast)t+="Ultimo controllo: "+new Date(upLast).toLocaleString("it-IT",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+".";
+  else t+="Controllo automatico attivo.";
+  $("upInfo").textContent=t;}
+function showUpdate(){let dis="";try{dis=sessionStorage.getItem("iwork-up-later")||"";}catch(e){}
+  if(dis===upLatest.version)return;
+  $("upTitle").textContent="È disponibile iWork "+upLatest.version;
+  $("upNotes").textContent=upLatest.notes?String(upLatest.notes).slice(0,160):"Aggiorna per avere le ultime novità. I tuoi turni restano dove sono.";
+  $("toast").hidden=true;$("upBar").hidden=false;}
+async function checkUpdate(manual){
+  if(!canCheck()){if(manual)toast(hosted?"Qui l'app si aggiorna da sola.":"Apri l'app dal suo indirizzo web per cercare aggiornamenti.");return;}
+  if(upBusy)return;upBusy=true;if(manual)$("upCheck").textContent="Controllo…";
+  try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;const j=await r.json();
+    upLast=Date.now();try{localStorage.setItem("iwork-upcheck",String(upLast));}catch(e){}
+    if(j&&j.version&&newer(j.version,APP_VERSION)){upLatest=j;if(manual){try{sessionStorage.removeItem("iwork-up-later");}catch(e){}$("st").close();}showUpdate();}
+    else if(manual)toast("Hai già l'ultima versione ("+APP_VERSION+").");
+  }catch(e){if(manual)toast("Non riesco a controllare gli aggiornamenti: verifica la connessione.");}
+  upBusy=false;$("upCheck").textContent="Cerca aggiornamenti";renderUpInfo();}
+async function doUpdate(){$("upGo").textContent="Aggiorno…";$("upGo").disabled=true;
+  try{if(navigator.serviceWorker){const regs=await navigator.serviceWorker.getRegistrations();await Promise.all(regs.map(r=>r.update().catch(()=>{})));}
+    if(window.caches){const ks=await caches.keys();await Promise.all(ks.filter(k=>k.startsWith("iwork")).map(k=>caches.delete(k)));}}catch(e){}
+  location.reload();}
+$("upCheck").onclick=()=>checkUpdate(true);
+$("upGo").onclick=doUpdate;
+$("upLater").onclick=()=>{$("upBar").hidden=true;try{sessionStorage.setItem("iwork-up-later",upLatest?upLatest.version:"");}catch(e){}};
+if(canCheck()){
+  setTimeout(()=>checkUpdate(false),3000);
+  setInterval(()=>checkUpdate(false),UP_EVERY);
+  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&Date.now()-upLast>UP_EVERY)checkUpdate(false);});
+  window.addEventListener("online",()=>checkUpdate(false));
+}
 
 setStatus("local");render();connect();
 setInterval(()=>renderNext(workList()),30000);
