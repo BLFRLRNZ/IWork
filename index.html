@@ -2,11 +2,12 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>iWork</title>
 <meta name="description" content="iWork: il calendario dei tuoi turni di lavoro. Scegli l'inizio, la fine si calcola da sola.">
 <meta name="theme-color" content="#f1f2f6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090a0e" media="(prefers-color-scheme: dark)">
+<script>try{var t=localStorage.getItem("iwork-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -44,6 +45,10 @@
   --shadow:0 0 0 1px rgba(255,255,255,.04); color-scheme:dark }
 
 *{box-sizing:border-box}
+html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+input,textarea,select{font-size:16px}
+body.locked{position:fixed;left:0;right:0;overflow:hidden}
+dialog{overscroll-behavior:contain}
 [hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--sans);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 button,input,textarea{font:inherit;color:inherit}
@@ -196,7 +201,14 @@ textarea{resize:vertical;min-height:60px}
 .stepper output{font-weight:600;min-width:72px;text-align:center}
 .actions{display:flex;gap:8px;flex-wrap:wrap}
 .actions .primary{flex:1 1 auto}
-.preset-row{display:grid;grid-template-columns:minmax(0,1fr) 128px;gap:8px}
+.preset-row{display:grid;grid-template-columns:12px minmax(0,1fr) 128px 36px;gap:8px;align-items:center}
+.preset-row i{width:10px;height:10px;border-radius:50%;justify-self:center}
+.preset-row .del{width:36px;height:44px;border:0;border-radius:12px;background:transparent;color:var(--muted);font-size:20px;line-height:1}
+.preset-row .del:hover{background:var(--sunken);color:var(--danger)}
+.preset-row .del:disabled{opacity:.3;cursor:default}
+.presets{display:flex;flex-direction:column;gap:8px}
+.btn.add{align-self:flex-start;background:transparent;box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn.add:disabled{opacity:.45;cursor:default}
 .sheet .btn.round{background:var(--sunken);box-shadow:none}
 .yearbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .yearbar output{font-weight:700;font-size:24px;letter-spacing:-.03em}
@@ -309,10 +321,17 @@ textarea{resize:vertical;min-height:60px}
     </div>
     <div class="field"><label class="eyebrow" for="stRate">Paga oraria lorda in euro (facoltativa)</label><input type="number" id="stRate" min="0" step="0.01" placeholder="0,00"></div>
     <div class="field">
+      <span class="eyebrow">Tema</span>
+      <div class="seg" role="radiogroup" aria-label="Tema">
+        <label><input type="radio" name="theme" id="th-auto" value="auto"><span>Automatico</span></label>
+        <label><input type="radio" name="theme" id="th-light" value="light"><span>Chiaro</span></label>
+        <label><input type="radio" name="theme" id="th-dark" value="dark"><span>Scuro</span></label>
+      </div>
+    </div>
+    <div class="field">
       <span class="eyebrow">Turni rapidi</span>
-      <div class="preset-row"><input type="text" id="p0n" aria-label="Nome turno 1" maxlength="16"><input type="time" id="p0t" aria-label="Inizio turno 1" step="300"></div>
-      <div class="preset-row"><input type="text" id="p1n" aria-label="Nome turno 2" maxlength="16"><input type="time" id="p1t" aria-label="Inizio turno 2" step="300"></div>
-      <div class="preset-row"><input type="text" id="p2n" aria-label="Nome turno 3" maxlength="16"><input type="time" id="p2t" aria-label="Inizio turno 3" step="300"></div>
+      <div class="presets" id="stPresets"></div>
+      <button type="button" class="btn add" id="stAdd">+ Aggiungi turno rapido</button>
     </div>
     <div class="field">
       <span class="eyebrow">Aggiornamenti</span>
@@ -367,13 +386,15 @@ const KSHORT={r:"Riposo",f:"Ferie",p:"Perm.",m:"Mal."};
 const hrs=n=>(Math.round(n*100)/100).toLocaleString("it-IT",{maximumFractionDigits:2});
 const span=min=>{min=Math.max(0,Math.round(min));const h=Math.floor(min/60),m=min%60;return h>=24?Math.floor(h/24)+" g "+(h%24)+" h":(h?h+" h ":"")+m+" min";};
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.2.0";
+const APP_VERSION="1.3.0";
 
 /* ---------- state ---------- */
 const DEF={wd:8,sat:6,rate:0,presets:[{n:"Mattina",t:"06:00"},{n:"Pomeriggio",t:"14:00"},{n:"Notte",t:"22:00"}]};
 const okT=t=>typeof t==="string"&&/^([01]\d|2[0-3]):[0-5]\d$/.test(t);
+const MAX_PRESETS=12;
 function normSettings(s){s=s||{};const o={wd:+s.wd>0?+s.wd:DEF.wd,sat:+s.sat>0?+s.sat:DEF.sat,rate:+s.rate>0?+s.rate:0,presets:[]};
-  for(let i=0;i<3;i++){const p=(s.presets||[])[i]||{};o.presets.push({n:String(p.n||DEF.presets[i].n).slice(0,16),t:okT(p.t)?p.t:DEF.presets[i].t});}return o;}
+  (Array.isArray(s.presets)?s.presets:[]).forEach(p=>{if(p&&okT(p.t)&&o.presets.length<MAX_PRESETS)o.presets.push({n:String(p.n||"Turno").trim().slice(0,16)||"Turno",t:p.t});});
+  if(!o.presets.length)o.presets=DEF.presets.map(p=>({n:p.n,t:p.t}));return o;}
 function normEntry(e){if(!e||typeof e!=="object")return null;
   if(e.k==="w"&&okT(e.s))return{k:"w",s:e.s,ot:Math.max(-12,Math.min(12,+e.ot||0)),n:String(e.n||"").slice(0,300)};
   if(KIND[e.k])return{k:e.k,n:String(e.n||"").slice(0,300)};return null;}
@@ -462,7 +483,7 @@ function renderChips(){const p=S.settings.presets;let h="";
   h+=chip("r","x","Riposo")+chip("f","f","Ferie")+chip("x","","Cancella");
   $("chips").innerHTML=h;
   let t="Scegli un turno e tocca i giorni per assegnarlo, oppure tocca un giorno per orario, note e ore extra.";
-  if(brush){const name=brush[0]==="w"?p[+brush[1]].n+" "+p[+brush[1]].t:brush==="r"?"Riposo":brush==="f"?"Ferie":"Cancella";
+  if(brush){const name=brush[0]==="w"?p[+brush.slice(1)].n+" "+p[+brush.slice(1)].t:brush==="r"?"Riposo":brush==="f"?"Ferie":"Cancella";
     t="<b>"+esc(name)+" attivo.</b> Tocca i giorni da "+(brush==="x"?"svuotare":"assegnare")+", poi tocca di nuovo il pulsante per finire.";}
   $("hint").innerHTML=t;}
 function render(){
@@ -603,7 +624,7 @@ function openEditor(k){editing=k;const d=dateOf(k),e=S.days[k],hol=holiday(k);
   $("edSub").textContent=(hol?hol+". ":"")+"Turno base di "+hrs(baseHours(k))+" ore"+(d.getDay()===6?" perché è sabato.":".");
   $("k-"+(e?e.k:"w")).checked=true;$("edStart").value=e&&e.k==="w"?e.s:S.settings.presets[0].t;edOt=e&&e.k==="w"?e.ot||0:0;$("edNote").value=e?e.n||"":"";
   $("edPresets").innerHTML=S.settings.presets.map(p=>'<button type="button" class="chip" data-t="'+p.t+'"><i class="d-'+slot(p.t)+'"></i>'+esc(p.n)+" <small>"+p.t+"</small></button>").join("");
-  $("edDel").hidden=!e;edRefresh();$("ed").showModal();}
+  $("edDel").hidden=!e;edRefresh();openDlg($("ed"));}
 $("edForm").addEventListener("input",edRefresh);
 $("edPresets").addEventListener("click",ev=>{const b=ev.target.closest("[data-t]");if(b){$("edStart").value=b.dataset.t;edRefresh();}});
 $("otMinus").onclick=()=>{edOt=Math.max(0.5-baseHours(editing),edOt-0.5);edRefresh();};
@@ -613,7 +634,16 @@ $("edDel").onclick=()=>{$("ed").close();apply([[editing,null]],"Giornata svuotat
 $("edForm").addEventListener("submit",ev=>{ev.preventDefault();const k=kindSel(),n=$("edNote").value.trim();
   if(k==="w"&&!okT($("edStart").value)){$("edStart").focus();return;}
   const e=k==="w"?{k:"w",s:$("edStart").value,ot:edOt,n}:{k,n};$("ed").close();apply([[editing,e]],null);});
-[$("ed"),$("st"),$("pd")].forEach(dlg=>dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();}));
+/* finestre: la pagina dietro resta ferma */
+let lockY=0;
+function lockPage(){if(document.body.classList.contains("locked"))return;lockY=window.scrollY;document.body.style.top=-lockY+"px";document.body.classList.add("locked");}
+function unlockPage(){if(document.querySelector("dialog[open]")||!document.body.classList.contains("locked"))return;document.body.classList.remove("locked");document.body.style.top="";window.scrollTo(0,lockY);}
+function openDlg(d){lockPage();if(!d.open)d.showModal();}
+[$("ed"),$("st"),$("pd")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
+/* niente zoom con due dita o doppio tocco (Safari ignora user-scalable) */
+["gesturestart","gesturechange","gestureend"].forEach(t=>document.addEventListener(t,ev=>ev.preventDefault(),{passive:false}));
+document.addEventListener("touchmove",ev=>{if(ev.touches.length>1)ev.preventDefault();},{passive:false});
+let lastTouch=0;document.addEventListener("touchend",ev=>{const n=Date.now();if(n-lastTouch<300&&!ev.target.closest("input,textarea"))ev.preventDefault();lastTouch=n;},{passive:false});
 
 /* ---------- interactions ---------- */
 let swiped=false;
@@ -621,7 +651,7 @@ $("grid").addEventListener("click",ev=>{if(swiped){swiped=false;return;}const b=
   if(!brush){openEditor(k);return;}
   const old=S.days[k],note=old?old.n||"":"";
   if(brush==="x"){if(old)apply([[k,null]],null);}
-  else if(brush[0]==="w")apply([[k,{k:"w",s:S.settings.presets[+brush[1]].t,ot:0,n:note}]],null);
+  else if(brush[0]==="w")apply([[k,{k:"w",s:S.settings.presets[+brush.slice(1)].t,ot:0,n:note}]],null);
   else apply([[k,{k:brush,n:note}]],null);});
 $("chips").addEventListener("click",ev=>{const b=ev.target.closest("[data-b]");if(!b)return;brush=brush===b.dataset.b?null:b.dataset.b;renderChips();});
 function shift(n){view=new Date(view.getFullYear(),view.getMonth()+n,1);render();}
@@ -633,10 +663,31 @@ $("grid").addEventListener("touchstart",ev=>{tx=ev.touches[0].clientX;ty=ev.touc
 $("grid").addEventListener("touchend",ev=>{const dx=ev.changedTouches[0].clientX-tx,dy=ev.changedTouches[0].clientY-ty;
   if(Math.abs(dx)>60&&Math.abs(dy)<40){swiped=true;shift(dx<0?1:-1);setTimeout(()=>{swiped=false;},400);}},{passive:true});
 
-$("setBtn").onclick=()=>{renderUpInfo();const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";s.presets.forEach((p,i)=>{$("p"+i+"n").value=p.n;$("p"+i+"t").value=p.t;});$("st").showModal();};
+/* ---------- tema ---------- */
+function getTheme(){try{const t=localStorage.getItem("iwork-theme");return t==="light"||t==="dark"?t:"auto";}catch(e){return"auto";}}
+function applyTheme(t){const r=document.documentElement;if(t==="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",t);
+  const dark=t==="dark"||(t==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches);
+  document.querySelectorAll('meta[name="theme-color"]').forEach(m=>{m.setAttribute("content",dark?"#090a0e":"#f1f2f6");m.removeAttribute("media");});}
+document.addEventListener("change",ev=>{if(ev.target.name==="theme"){const t=ev.target.value;try{localStorage.setItem("iwork-theme",t);}catch(e){}applyTheme(t);}});
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>applyTheme(getTheme()));
+
+/* ---------- impostazioni ---------- */
+let stDraft=[];
+function renderPresets(){const n=stDraft.length;
+  $("stPresets").innerHTML=stDraft.map((p,i)=>'<div class="preset-row"><i class="d-'+(okT(p.t)?slot(p.t):"x")+'"></i><input type="text" id="pn-'+i+'" data-i="'+i+'" data-f="n" aria-label="Nome turno rapido '+(i+1)+'" maxlength="16" placeholder="Nome" value="'+esc(p.n)+'"><input type="time" id="pt-'+i+'" data-i="'+i+'" data-f="t" aria-label="Inizio turno rapido '+(i+1)+'" step="300" value="'+p.t+'"><button type="button" class="del" data-del="'+i+'" aria-label="Elimina turno rapido '+(i+1)+'"'+(n<=1?" disabled":"")+'>×</button></div>').join("");
+  $("stAdd").disabled=n>=MAX_PRESETS;$("stAdd").textContent=n>=MAX_PRESETS?"Massimo "+MAX_PRESETS+" turni rapidi":"+ Aggiungi turno rapido";}
+$("stPresets").addEventListener("input",ev=>{const el=ev.target,i=+el.dataset.i;if(isNaN(i))return;stDraft[i][el.dataset.f]=el.value;
+  if(el.dataset.f==="t"){const dot=el.parentNode.querySelector("i");dot.className="d-"+(okT(el.value)?slot(el.value):"x");}});
+$("stPresets").addEventListener("click",ev=>{const b=ev.target.closest("[data-del]");if(!b||stDraft.length<=1)return;stDraft.splice(+b.dataset.del,1);renderPresets();});
+$("stAdd").onclick=()=>{if(stDraft.length>=MAX_PRESETS)return;const last=stDraft[stDraft.length-1];let t="08:00";
+  if(last&&okT(last.t)){const m=(toMin(last.t)+60*S.settings.wd)%1440;t=pad(Math.floor(m/60))+":"+pad(m%60);}
+  stDraft.push({n:"",t});renderPresets();const el=$("pn-"+(stDraft.length-1));if(el)el.focus();};
+$("setBtn").onclick=()=>{renderUpInfo();const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
+  stDraft=s.presets.map(p=>({n:p.n,t:p.t}));renderPresets();$("th-"+getTheme()).checked=true;openDlg($("st"));};
 $("stCancel").onclick=()=>$("st").close();
 $("stForm").addEventListener("submit",ev=>{ev.preventDefault();
-  S.settings=normSettings({wd:$("stWd").value,sat:$("stSat").value,rate:$("stRate").value,presets:[0,1,2].map(i=>({n:$("p"+i+"n").value.trim(),t:$("p"+i+"t").value}))});
+  const bad=stDraft.findIndex(p=>!okT(p.t));if(bad>=0){toast("Manca l'orario del turno rapido "+(bad+1)+".");$("pt-"+bad).focus();return;}
+  S.settings=normSettings({wd:$("stWd").value,sat:$("stSat").value,rate:$("stRate").value,presets:stDraft.map(p=>({n:p.n.trim()||"Turno "+p.t,t:p.t}))});
   brush=null;mark("settings","s");$("st").close();render();toast("Impostazioni salvate.");});
 
 $("repeatBtn").onclick=()=>{const keys=Object.keys(S.days).sort();if(!keys.length){toast("Non c'è ancora nessuna settimana da ripetere.");return;}
@@ -663,7 +714,7 @@ function pdRender(){$("pdYear").textContent=pdY;let h="";
   for(let i=0;i<12;i++){const ym=pdY+"-"+pad(i+1);let n=0;for(const k in S.days)if(S.days[k].k==="w"&&k.startsWith(ym))n++;
     h+='<button type="button" data-m="'+i+'" aria-pressed="'+(i===pdM)+'" aria-label="'+MONTHS[i]+" "+pdY+", "+(n?n+(n===1?" turno":" turni"):"nessun turno")+'">'+MON3[i]+"<small>"+(n?n+(n===1?" turno":" turni"):"vuoto")+"</small></button>";}
   $("pdMonths").innerHTML=h;$("pdGo").textContent="Crea il PDF di "+MONTHS[pdM]+" "+pdY;}
-$("pdfBtn").onclick=()=>{pdY=view.getFullYear();pdM=view.getMonth();pdRender();$("pd").showModal();};
+$("pdfBtn").onclick=()=>{pdY=view.getFullYear();pdM=view.getMonth();pdRender();openDlg($("pd"));};
 $("pdPrev").onclick=()=>{pdY--;pdRender();};
 $("pdNext").onclick=()=>{pdY++;pdRender();};
 $("pdMonths").addEventListener("click",ev=>{const b=ev.target.closest("[data-m]");if(b){pdM=+b.dataset.m;pdRender();}});
@@ -723,6 +774,7 @@ if(canCheck()){
   window.addEventListener("online",()=>checkUpdate(false));
 }
 
+applyTheme(getTheme());
 setStatus("local");render();connect();
 setInterval(()=>renderNext(workList()),30000);
 if(!hosted&&"serviceWorker" in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js").catch(()=>{});
