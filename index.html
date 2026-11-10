@@ -310,6 +310,25 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 .ylab b{font-weight:600}
 .ylab .track{grid-column:1/-1;height:6px;border-radius:99px;background:var(--sunken);overflow:hidden}
 .ylab .track i{display:block;height:100%;background:var(--ink);border-radius:99px}
+/* benvenuto */
+#ob{width:min(480px,100%);max-height:100%}
+@media(max-width:560px){#ob{margin:0;height:100%;max-height:100%;border-radius:0}#ob .sheet::before{display:none}}
+#ob .sheet{min-height:100%;gap:18px;padding-top:calc(26px + env(safe-area-inset-top,0px))}
+.obtop{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.obtop .logo{width:44px;height:44px;flex:none}
+.obdots{display:flex;gap:6px}
+.obdots i{width:22px;height:5px;border-radius:99px;background:var(--line)}
+.obdots i.on{background:var(--ink)}
+#ob h2{text-transform:none;font-size:27px}
+.obbody{display:flex;flex-direction:column;gap:12px;flex:1 1 auto}
+.optlist{display:flex;flex-direction:column;gap:6px}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:10px;border:0;background:var(--bg);border-radius:14px;padding:13px 14px;text-align:left;font-weight:500;font-size:16px;width:100%;min-height:52px}
+.opt small{color:var(--muted);font-weight:400;font-size:13px}
+.opt[aria-pressed="true"]{background:var(--ink);color:var(--on-ink)}
+.opt[aria-pressed="true"] small{color:inherit;opacity:.7}
+.obsum{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 14px;margin:0;background:var(--bg);border-radius:16px;padding:14px 16px}
+.obsum dt{color:var(--muted)} .obsum dd{margin:0;font-weight:600;text-align:right}
+.rulesgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .edstd{border:0;background:none;padding:0;color:var(--muted);text-decoration:underline;font-size:13px;align-self:flex-start;min-height:28px}
 /* anno */
 .yearview{display:flex;flex-direction:column;gap:18px;min-width:0}
@@ -430,6 +449,19 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
   <footer class="foot"><span id="status"></span><span id="footRule"></span></footer>
 </div>
 
+<dialog id="ob" aria-labelledby="obTitle">
+  <div class="sheet">
+    <div class="obtop"><svg class="logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="iwg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1f2a"/><stop offset="1" stop-color="#0a0b10"/></linearGradient></defs><rect width="512" height="512" rx="118" fill="url(#iwg2)"/><path d="M206.6 103.8A160 160 0 0 1 412.5 222.7" stroke="#7C7FFF" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M412.5 289.3A160 160 0 0 1 206.6 408.2" stroke="#FFB61D" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M148.9 374.9A160 160 0 0 1 148.9 137.1" stroke="#FF6B3D" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M256 256L256.0 172.0" stroke="#fff" stroke-width="30" stroke-linecap="round"/><path d="M256 256L308.0 286.0" stroke="#fff" stroke-width="30" stroke-linecap="round"/><circle cx="256" cy="256" r="22" fill="#fff"/></svg><div class="obdots" id="obDots" aria-hidden="true"></div></div>
+    <h2 id="obTitle"></h2>
+    <p class="sub" id="obSub" style="margin:-8px 0 0"></p>
+    <div class="obbody" id="obBody"></div>
+    <div class="actions">
+      <button type="button" class="btn ghost" id="obBack">Indietro</button>
+      <button type="button" class="btn primary" id="obNext" style="flex:1">Avanti</button>
+    </div>
+  </div>
+</dialog>
+
 <dialog id="ed" aria-labelledby="edTitle">
   <form class="sheet" id="edForm" method="dialog">
     <h2 id="edTitle"></h2>
@@ -506,6 +538,17 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <p class="help">La festa patronale conta come festivo nel calendario, nella banca ore e nella paga. Controlla la data con il tuo contratto o il tuo comune.</p>
     </div>
     <p class="help" id="stRules"></p>
+    <div class="field">
+      <span class="eyebrow">Regole usate dagli avvisi e dai conteggi</span>
+      <div class="rulesgrid">
+        <div class="field"><label class="eyebrow" for="stRRest">Riposo minimo</label><label class="unit"><input type="number" id="stRRest" min="0" max="24" step="0.5"><span>ore</span></label></div>
+        <div class="field"><label class="eyebrow" for="stRWeek">Media massima</label><label class="unit"><input type="number" id="stRWeek" min="1" max="99" step="1"><span>h/sett.</span></label></div>
+        <div class="field"><label class="eyebrow" for="stRNf">Notte dalle</label><label class="unit"><input type="number" id="stRNf" min="0" max="23" step="1"><span>:00</span></label></div>
+        <div class="field"><label class="eyebrow" for="stRNt">Notte fino alle</label><label class="unit"><input type="number" id="stRNt" min="0" max="23" step="1"><span>:00</span></label></div>
+      </div>
+      <p class="help">Il tuo contratto può essere più favorevole della legge: qui puoi adattare le regole.</p>
+      <button type="button" class="linkbtn" id="stRReset" hidden>Torna alle regole del paese</button>
+    </div>
 
     <h3 class="sect">Lingua</h3>
     <select id="stLang" aria-label="Lingua"></select>
@@ -742,9 +785,10 @@ const RULES={rest:11,maxWeek:48,weeklyRest:24,nightFrom:22,nightTo:6};
 const CTRYS=window.IWORK_COUNTRIES||{};
 const ctry=()=>CTRYS[S.settings.country]||CTRYS.IT||{n:{it:"Italia"},cur:"EUR",ws:1,rules:{},hol:[]};
 const locName=n=>!n?"":typeof n==="string"?n:n[LANG]||n.en||n[Object.keys(n)[0]];
-function applyCountry(){const C=ctry(),r=C.rules||{};
+function applyCountry(){const C=ctry(),r=C.rules||{},u=S.settings.rules||{};
   RULES.rest=r.rest||11;RULES.maxWeek=r.maxWeek||48;RULES.weeklyRest=r.weeklyRest||24;
   const nt=r.night||[22,6];RULES.nightFrom=nt[0];RULES.nightTo=nt[1];
+  if(u.rest!=null)RULES.rest=u.rest;if(u.maxWeek!=null)RULES.maxWeek=u.maxWeek;if(u.nf!=null)RULES.nightFrom=u.nf;if(u.nt!=null)RULES.nightTo=u.nt;
   CUR=C.cur||"EUR";WS=C.ws==null?1:C.ws;for(const k in holCache)delete holCache[k];}
 const nightTxt=()=>pad(RULES.nightFrom)+"–"+pad(RULES.nightTo);
 /* testi fissi della pagina: tradotti partendo dall'italiano originale */
@@ -757,7 +801,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.10.0";
+const APP_VERSION="1.11.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -772,7 +816,9 @@ function normSettings(s){s=s||{};const wd=num(s.wd,0.5,16,DEF.wd),sat=num(s.sat,
   const o={wd,sat,rate:num(s.rate,0,9999,0),week:num(s.week,1,80,Math.round((5*wd+sat)*100)/100),ferie:num(s.ferie,0,80,0),perm:num(s.perm,0,400,0),
     bankFrom:isK(s.bankFrom)?s.bankFrom:"",bank0:num(s.bank0,-999,999,0),presets:[],cycle:[],labels:[],
     pOt:num(s.pOt,0,300,0),pNight:num(s.pNight,0,300,0),pSun:num(s.pSun,0,300,0),pHol:num(s.pHol,0,300,0),
-    country:typeof s.country==="string"&&(window.IWORK_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null};
+    country:typeof s.country==="string"&&(window.IWORK_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null,setup:s.setup?1:0,rules:null};
+  if(s.rules&&typeof s.rules==="object"){const r={};const a=num(s.rules.rest,0,24,null),b=num(s.rules.maxWeek,1,99,null),c=num(s.rules.nf,0,23,null),d=num(s.rules.nt,0,23,null);
+    if(a!=null)r.rest=a;if(b!=null)r.maxWeek=b;if(c!=null)r.nf=c|0;if(d!=null)r.nt=d|0;if(Object.keys(r).length)o.rules=r;}
   if(s.patron&&typeof s.patron==="object"){if(typeof s.patron.c==="string")o.patron={c:s.patron.c.slice(0,40)};else if(/^\d\d-\d\d$/.test(s.patron.d))o.patron={d:s.patron.d,n:String(s.patron.n||"").slice(0,40)};}
   (Array.isArray(s.presets)?s.presets:[]).forEach(p=>{if(p&&okT(p.t)&&o.presets.length<MAX_PRESETS){const x={n:String(p.n||t("Turno")).trim().slice(0,16)||t("Turno"),t:p.t};const d=num(p.d,0.5,16,0);if(d)x.d=d;
     if(okT(p.t2)){x.t2=p.t2;const d2=num(p.d2,0.5,16,0);if(d2)x.d2=d2;}o.presets.push(x);}});
@@ -1217,15 +1263,21 @@ function renderCountryUI(){const s=S.settings,C=ctry(),opt=(v,l,sel)=>'<option v
   $("stPatMon").innerHTML=MONTHS.map((m,i)=>opt(pad(i+1),m,P&&P.d&&P.d.slice(0,2)===pad(i+1))).join("");
   if(P&&P.d)$("stPatDay").value=+P.d.slice(3);
   $("stPNightL").textContent=t("Notturno {r}",{r:nightTxt()});
+  $("stRRest").value=RULES.rest;$("stRWeek").value=RULES.maxWeek;$("stRNf").value=RULES.nightFrom;$("stRNt").value=RULES.nightTo;$("stRReset").hidden=!S.settings.rules;
   $("stRules").textContent=t("{c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.",{c:locName(C.n),r:RULES.rest,w:RULES.maxWeek,k:RULES.weeklyRest,d:DAYS[WS]});
   $("stRateU").textContent=curSym()+"/h";}
 function commitCountry(ev){const s=S.settings,id=ev.target.id;let country=s.country,region=s.region,patron=s.patron;
-  if(id==="stCountry"){country=$("stCountry").value;region="";patron=null;}
+  if(id==="stCountry"){country=$("stCountry").value;region="";patron=null;S.settings.rules=null;}
   else if(id==="stRegion")region=$("stRegion").value;
   else{const v=$("stPatron").value;
     if(!v)patron=null;else if(v.startsWith("c:"))patron={c:v.slice(2)};
     else{const day=Math.max(1,Math.min(31,+$("stPatDay").value||1)),mo=$("stPatMon").value||"01";patron={d:mo+"-"+pad(day),n:""};$("stPatDay").value=day;}}
   S.settings=normSettings(Object.assign({},s,{country,region,patron}));applyCountry();mark();renderCountryUI();render();}
+function commitRules(){const C=ctry(),r=C.rules||{},nt=r.night||[22,6],base={rest:r.rest||11,maxWeek:r.maxWeek||48,nf:nt[0],nt:nt[1]},u={};
+  [["stRRest","rest"],["stRWeek","maxWeek"],["stRNf","nf"],["stRNt","nt"]].forEach(([id,k])=>{const v=$(id).value;if(v!==""&&+v!==base[k])u[k]=+v;});
+  S.settings=normSettings(Object.assign({},S.settings,{rules:Object.keys(u).length?u:null}));applyCountry();mark();renderCountryUI();render();}
+["stRRest","stRWeek","stRNf","stRNt"].forEach(id=>{$(id).addEventListener("input",ev=>ev.stopPropagation());$(id).addEventListener("change",ev=>{ev.stopPropagation();commitRules();});});
+$("stRReset").onclick=()=>{S.settings=normSettings(Object.assign({},S.settings,{rules:null}));applyCountry();mark();renderCountryUI();render();};
 ["stCountry","stRegion","stPatron","stPatDay","stPatMon"].forEach(id=>$(id).addEventListener("change",ev=>{ev.stopPropagation();commitCountry(ev);}));
 ["stPatDay"].forEach(id=>$(id).addEventListener("input",ev=>ev.stopPropagation()));
 function openSettings(focus){renderUpInfo();renderCountryUI();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
@@ -1536,13 +1588,60 @@ if(canCheck()){
 function loadLang(l){return new Promise(res=>{if(l==="it"||I18N[l])return res();const sc=document.createElement("script");sc.src="lang/"+l+".js?v="+APP_VERSION;sc.onload=res;sc.onerror=res;document.head.appendChild(sc);});}
 async function setLang(l){if(!LANGS[l])l="it";await loadLang(l);if(l!=="it"&&!I18N[l])l="it";
   LANG=l;LOC=LANGS[l].loc;try{localStorage.setItem("iwork-lang",l);}catch(e){}
-  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();if($("st").open)renderCountryUI();}
+  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();if($("st").open)renderCountryUI();if($("ob").open)obRender();}
 window.iworkSetLang=setLang;
+/* ---------- benvenuto: lingua, paese, regione, ore del turno ---------- */
+const OB={step:0,lang:"it",country:"IT",region:"",patron:null,wd:8,sat:6,q:"",existing:false};
+function guessSetup(){const nl=(navigator.languages&&navigator.languages[0]||navigator.language||"it-IT");
+  const l=nl.slice(0,2).toLowerCase(),c=(nl.split("-")[1]||"").toUpperCase();return{lang:LANGS[l]?l:"en",country:CTRYS[c]?c:(CTRYS.IT?"IT":Object.keys(CTRYS)[0])};}
+function obSteps(){const C=CTRYS[OB.country]||{};const st=["lang","country"];if(C.reg||C.patrons)st.push("place");st.push("hours","done");return st;}
+function obRender(){const steps=obSteps(),cur=steps[OB.step],C=CTRYS[OB.country]||{},opt=(v,l,sel,sub)=>'<button type="button" class="opt" data-v="'+esc(v)+'" aria-pressed="'+!!sel+'"><span>'+esc(l)+"</span>"+(sub?"<small>"+esc(sub)+"</small>":"")+"</button>";
+  $("obDots").innerHTML=steps.map((_,i)=>'<i class="'+(i<=OB.step?"on":"")+'"></i>').join("");
+  $("obBack").hidden=OB.step===0;$("obNext").textContent=cur==="done"?t("Inizia"):t("Avanti");let h="";
+  if(cur==="lang"){$("obTitle").textContent=OB.existing?t("Novità: lingua e paese"):t("Benvenuto in {app}",{app:APP});
+    $("obSub").textContent=OB.existing?t("Scegli lingua e paese: l'app si imposta con le regole e le festività giuste. I tuoi turni restano dove sono."):t("Il calendario dei tuoi turni. Scegli la lingua.");
+    h='<div class="optlist" data-k="lang">'+Object.keys(LANGS).map(l=>opt(l,LANGS[l].n,l===OB.lang)).join("")+"</div>";}
+  else if(cur==="country"){$("obTitle").textContent=t("Dove lavori?");$("obSub").textContent=t("Servono per festività, riposi minimi, ore notturne e valuta.");
+    const list=Object.keys(CTRYS).map(c=>[c,locName(CTRYS[c].n),CTRYS[c].n[CTRYS[c].lang]]).sort((a,b)=>a[1].localeCompare(b[1],LOC)).filter(x=>!OB.q||fold(x[1]+" "+(x[2]||"")).includes(fold(OB.q)));
+    h=(Object.keys(CTRYS).length>8?'<div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input type="search" id="obQ" placeholder="'+esc(t("Cerca un paese"))+'" aria-label="'+esc(t("Cerca un paese"))+'" value="'+esc(OB.q)+'" autocomplete="off"></div>':"")
+      +'<div class="optlist" data-k="country">'+list.map(x=>opt(x[0],x[1],x[0]===OB.country,x[2]&&x[2]!==x[1]?x[2]:"")).join("")+"</div>";}
+  else if(cur==="place"){$("obTitle").textContent=t("La tua zona");$("obSub").textContent=t("Alcune feste valgono solo in una regione o in una città. Puoi saltare questo passo e cambiarlo dopo.");
+    if(C.reg)h+='<div class="field"><label class="eyebrow" for="obReg">'+t("Regione o provincia")+'</label><select id="obReg"><option value="">'+esc(t("Nessuna in particolare"))+"</option>"+Object.keys(C.reg).map(r=>'<option value="'+r+'"'+(r===OB.region?" selected":"")+">"+esc(locName(C.reg[r].n))+"</option>").join("")+"</select></div>";
+    if(C.patrons)h+='<div class="field"><label class="eyebrow" for="obPat">'+t("Santo patrono")+'</label><select id="obPat"><option value="">'+esc(t("Nessuno"))+"</option>"+C.patrons.map(x=>'<option value="'+esc(x[0])+'"'+(OB.patron&&OB.patron.c===x[0]?" selected":"")+">"+esc(x[0]+" – "+x[2])+"</option>").join("")+'</select><p class="help">'+t("Se la tua città non c'è, potrai inserire la data in Impostazioni.")+"</p></div>";}
+  else if(cur==="hours"){$("obTitle").textContent=t("Quanto dura un turno?");$("obSub").textContent=t("Così scegli solo l'orario d'inizio e la fine si calcola da sola. Si può cambiare in qualsiasi momento.");
+    h='<div class="rulesgrid"><div class="field"><label class="eyebrow" for="obWd">'+t("Turno normale")+'</label><label class="unit"><input type="number" id="obWd" min="1" max="16" step="0.5" value="'+OB.wd+'"><span>'+t("ore")+'</span></label></div><div class="field"><label class="eyebrow" for="obSat">'+t("Turno di sabato")+'</label><label class="unit"><input type="number" id="obSat" min="1" max="16" step="0.5" value="'+OB.sat+'"><span>'+t("ore")+"</span></label></div></div>";}
+  else{const r=C.rules||{},nt=r.night||[22,6];$("obTitle").textContent=t("Tutto pronto");$("obSub").textContent=t("Ecco come è impostata l'app. Puoi cambiare tutto in Impostazioni.");
+    h='<dl class="obsum"><dt>'+t("Lingua")+"</dt><dd>"+esc(LANGS[OB.lang].n)+"</dd><dt>"+t("Paese")+"</dt><dd>"+esc(locName(C.n))+"</dd>"
+      +(OB.region?"<dt>"+t("Regione o provincia")+"</dt><dd>"+esc(locName(C.reg[OB.region].n))+"</dd>":"")+(OB.patron?"<dt>"+t("Santo patrono")+"</dt><dd>"+esc(OB.patron.c)+"</dd>":"")
+      +"<dt>"+t("Turno")+"</dt><dd>"+t("{w} ore, sabato {s}",{w:hrs(OB.wd),s:hrs(OB.sat)})+"</dd><dt>"+t("Riposo minimo")+"</dt><dd>"+t("{h} ore",{h:r.rest||11})+"</dd><dt>"+t("Media massima")+"</dt><dd>"+t("{h} ore a settimana",{h:r.maxWeek||48})+"</dd><dt>"+t("Ore notturne")+"</dt><dd>"+pad(nt[0])+"–"+pad(nt[1])+"</dd></dl>"
+      +'<p class="help">'+t("Gli avvisi su riposi e ore sono indicativi e non sostituiscono il tuo contratto.")+"</p>";}
+  $("obBody").innerHTML=h;const q=$("obQ");if(q&&OB.qFocus){q.focus();q.setSelectionRange(q.value.length,q.value.length);}}
+$("obBody").addEventListener("click",async ev=>{const b=ev.target.closest(".opt");if(!b)return;const k=b.parentNode.dataset.k,v=b.dataset.v;
+  if(k==="lang"){OB.lang=v;if(v!==LANG)await setLang(v);}else if(k==="country"){if(OB.country!==v){OB.country=v;OB.region="";OB.patron=null;}}obRender();});
+$("obBody").addEventListener("input",ev=>{const id=ev.target.id;
+  if(id==="obQ"){OB.q=ev.target.value;OB.qFocus=true;obRender();OB.qFocus=false;}
+  else if(id==="obReg")OB.region=ev.target.value;else if(id==="obPat")OB.patron=ev.target.value?{c:ev.target.value}:null;
+  else if(id==="obWd")OB.wd=num(ev.target.value,0.5,16,OB.wd);else if(id==="obSat")OB.sat=num(ev.target.value,0.5,16,OB.sat);});
+$("obBack").onclick=()=>{OB.step=Math.max(0,OB.step-1);obRender();};
+$("obNext").onclick=()=>{const steps=obSteps();if(steps[OB.step]==="done"){obFinish();return;}OB.step++;obRender();};
+$("ob").addEventListener("cancel",ev=>ev.preventDefault());
+function obFinish(){const s=S.settings,fresh=!OB.existing;
+  const o=Object.assign({},s,{country:OB.country,region:OB.region,patron:OB.patron,wd:OB.wd,sat:OB.sat,setup:1});
+  if(s.country!==OB.country)o.rules=null;
+  if(Math.round((5*s.wd+s.sat)*100)/100===s.week)o.week=Math.round((5*OB.wd+OB.sat)*100)/100;
+  if(fresh)o.presets=DEF.presets.map(p=>({n:t(p.n),t:p.t}));
+  S.settings=normSettings(o);applyCountry();mark();$("ob").close();render();}
+function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels.length;
+  if(OB.existing){OB.lang=LANG;OB.country=S.settings.country;OB.region=S.settings.region;OB.patron=S.settings.patron&&S.settings.patron.c?S.settings.patron:null;}
+  else{const g=guessSetup();OB.lang=LANG!=="it"?LANG:g.lang;OB.country=g.country;}
+  OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
+  if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
+
 window.iworkDebug={holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG]){LANG="it";LOC="it-IT";}setNames();translateDom();
-  setStatus();render();bkRender();})();
+  setStatus();render();bkRender();if(!S.settings.setup)obStart();})();
 setInterval(()=>renderNext(workList()),30000);
 if("serviceWorker" in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();

@@ -4,6 +4,8 @@ Il calendario dei tuoi turni di lavoro. Scegli solo l'orario d'inizio: la fine s
 
 ## Cosa fa
 
+Al primo avvio una breve procedura chiede lingua, paese, zona e durata del turno.
+
 L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per argomento.
 
 **Calendario**
@@ -34,6 +36,7 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - Durata dei turni (8 ore, 6 il sabato).
 - Ferie (giorni) e permessi (ore) che ti spettano all'anno.
 - Banca ore: ore settimanali da contratto, data di partenza e saldo iniziale.
+- Regole del paese (riposo minimo, media settimanale, fascia notturna) adattabili al proprio contratto.
 - Paga oraria e maggiorazioni, tema automatico, chiaro o scuro, aggiornamenti.
 
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in italiano e inglese (le traduzioni sono nella cartella `lang/`).

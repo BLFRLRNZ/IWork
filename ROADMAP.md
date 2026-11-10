@@ -12,9 +12,9 @@ Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta co
 - [x] 2.3 Italia completa, con il santo patrono della propria città
 
 ## 3. Schermata iniziale
-- [ ] 3.1 Benvenuto: lingua, paese, regione, ore del turno standard, fatto
-- [ ] 3.2 Chi usa già l'app la vede una volta sola con italiano e Italia già scelti, senza perdere dati
-- [ ] 3.3 In Impostazioni si cambiano lingua, paese, regione e regole quando si vuole
+- [x] 3.1 Benvenuto: lingua, paese, regione, ore del turno standard, fatto
+- [x] 3.2 Chi usa già l'app la vede una volta sola con italiano e Italia già scelti, senza perdere dati
+- [x] 3.3 In Impostazioni si cambiano lingua, paese, regione e regole quando si vuole
 
 ## 4. Paesi (ogni regola controllata su fonti ufficiali)
 - [ ] 4.1 Unione Europea, tutti i 27 paesi

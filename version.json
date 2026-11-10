@@ -1,8 +1,8 @@
 {
-  "version": "1.10.0",
+  "version": "1.11.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Festività e regole del paese, regione e santo patrono in Impostazioni.",
-    "en": "Country holidays and rules, plus region and patron saint's day in Settings."
+    "it": "Nuova schermata di benvenuto con lingua e paese, e regole modificabili in Impostazioni.",
+    "en": "New welcome screen with language and country, and adjustable rules in Settings."
   }
 }
