@@ -4,7 +4,7 @@ Il calendario dei tuoi turni di lavoro. Scegli solo l'orario d'inizio: la fine s
 
 ## Cosa fa
 
-Al primo avvio una breve procedura chiede lingua (italiano, inglese, francese, tedesco, spagnolo, portoghese), paese, zona e durata del turno.
+Al primo avvio una breve procedura chiede lingua (23 lingue: italiano, inglese, francese, tedesco, spagnolo, portoghese e portoghese del Brasile, olandese, polacco, rumeno, bulgaro, croato, ceco, danese, estone, finlandese, greco, ungherese, lettone, lituano, slovacco, sloveno, svedese), paese, zona e durata del turno.
 
 L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per argomento.
 

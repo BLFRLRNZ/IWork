@@ -1,12 +1,12 @@
 {
-  "version": "1.15.0",
+  "version": "1.16.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "L'app ora parla anche francese, tedesco, spagnolo e portoghese. Date e valute seguono il paese scelto.",
-    "en": "The app now also speaks French, German, Spanish and Portuguese. Dates and currencies follow the chosen country.",
-    "fr": "L'app parle maintenant aussi français, allemand, espagnol et portugais. Les dates et les devises suivent le pays choisi.",
-    "de": "Die App spricht jetzt auch Französisch, Deutsch, Spanisch und Portugiesisch. Datum und Währung richten sich nach dem gewählten Land.",
-    "es": "La app ahora también habla francés, alemán, español y portugués. Las fechas y monedas siguen el país elegido.",
-    "pt": "A app agora também fala francês, alemão, espanhol e português. Datas e moedas seguem o país escolhido."
+    "it": "Ora 23 lingue: aggiunti olandese, polacco, rumeno, portoghese del Brasile e tutte le altre lingue dell'Unione Europea.",
+    "en": "Now in 23 languages: Dutch, Polish, Romanian, Brazilian Portuguese and all the other European Union languages added.",
+    "fr": "Désormais en 23 langues : néerlandais, polonais, roumain, portugais du Brésil et toutes les autres langues de l'Union européenne.",
+    "de": "Jetzt in 23 Sprachen: Niederländisch, Polnisch, Rumänisch, brasilianisches Portugiesisch und alle anderen Sprachen der EU.",
+    "es": "Ahora en 23 idiomas: neerlandés, polaco, rumano, portugués de Brasil y todos los demás idiomas de la Unión Europea.",
+    "pt": "Agora em 23 línguas: neerlandês, polaco, romeno, português do Brasil e todas as outras línguas da União Europeia."
   }
 }

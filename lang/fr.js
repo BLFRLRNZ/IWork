@@ -1,5 +1,5 @@
 /* Français */
-(window.IWORK_I18N=window.IWORK_I18N||{}).fr={
+(window.IWORK_I18N=window.IWORK_I18N||{})["fr"]={
 "{n} g": "{n} j",
 "{d} g {h} h": "{d} j {h} h",
 "{h} h {m} min": "{h} h {m} min",
@@ -39,7 +39,10 @@
 "riposo sotto {n} ore": "repos de moins de {n} heures",
 "{x} extra": "{x} en plus",
 "{n} giorno trovato": "{n} jour trouvé",
-"{n} giorni trovati": "{n} jours trouvés",
+"{n} giorni trovati": {
+"other": "{n} jours trouvés",
+"one": "{n} jour trouvé"
+},
 "{h} ore di lavoro": "{h} heures de travail",
 "Nessun giorno con «{q}» nelle note o nelle etichette.": "Aucun jour avec « {q} » dans les notes ou les étiquettes.",
 "Sabato {s} ore, gli altri giorni {w} ore.": "Samedi {s} heures, les autres jours {w} heures.",
@@ -62,11 +65,17 @@
 "Sette o più giorni di lavoro di fila dal {d}.": "Sept jours de travail ou plus d'affilée à partir du {d}.",
 "Settimana del {d}: {h} ore, sopra le {n}.": "Semaine du {d} : {h} heures, au-dessus de {n}.",
 "Nel {y} hai segnato {n} giorno di ferie oltre quelli che ti spettano.": "En {y}, vous avez noté {n} jour de congé de plus que ceux auxquels vous avez droit.",
-"Nel {y} hai segnato {n} giorni di ferie oltre quelli che ti spettano.": "En {y}, vous avez noté {n} jours de congé de plus que ceux auxquels vous avez droit.",
+"Nel {y} hai segnato {n} giorni di ferie oltre quelli che ti spettano.": {
+"other": "En {y}, vous avez noté {n} jours de congé de plus que ceux auxquels vous avez droit.",
+"one": "En {y}, vous avez noté {n} jour de congé de plus que ceux auxquels vous avez droit."
+},
 "Nel {y} hai segnato {h} ore di permesso oltre quelle che ti spettano.": "En {y}, vous avez noté {h} heures d'absence de plus que celles auxquelles vous avez droit.",
 "Totale di {m}": "Total de {m}",
 "ore in {n} turno": "heures en {n} poste",
-"ore in {n} turni": "heures en {n} postes",
+"ore in {n} turni": {
+"other": "heures en {n} postes",
+"one": "heures en {n} poste"
+},
 "Ore extra": "Heures en plus",
 "Ore notturne, {r}": "Heures de nuit, {r}",
 "Sabati lavorati": "Samedis travaillés",
@@ -111,7 +120,10 @@
 "Attenzione: nel {y} hai superato le ferie che ti spettano.": "Attention : en {y}, vous avez dépassé les congés auxquels vous avez droit.",
 "Hai usato tutte le ferie del {y}.": "Vous avez utilisé tous vos congés de {y}.",
 "Ti restano {n} giorno di ferie nel {y}.": "Il vous reste {n} jour de congé en {y}.",
-"Ti restano {n} giorni di ferie nel {y}.": "Il vous reste {n} jours de congé en {y}.",
+"Ti restano {n} giorni di ferie nel {y}.": {
+"other": "Il vous reste {n} jours de congé en {y}.",
+"one": "Il vous reste {n} jour de congé en {y}."
+},
 "Attenzione: nel {y} hai superato i permessi che ti spettano.": "Attention : en {y}, vous avez dépassé les absences auxquelles vous avez droit.",
 "Ti restano {h} ore di permesso nel {y}.": "Il vous reste {h} heures d'absence en {y}.",
 "ore": "h",
@@ -134,7 +146,10 @@
 "Etichetta {n}": "Étiquette {n}",
 "Elimina etichetta {n}": "Supprimer l'étiquette {n}",
 "Etichetta «{x}» eliminata da {n} giorno.": "Étiquette « {x} » retirée de {n} jour.",
-"Etichetta «{x}» eliminata da {n} giorni.": "Étiquette « {x} » retirée de {n} jours.",
+"Etichetta «{x}» eliminata da {n} giorni.": {
+"other": "Étiquette « {x} » retirée de {n} jours.",
+"one": "Étiquette « {x} » retirée de {n} jour."
+},
 "senza nome": "sans nom",
 "Etichetta «{x}» eliminata.": "Étiquette « {x} » supprimée.",
 "Anno": "Année",
@@ -143,7 +158,10 @@
 "Stima paga del {y}": "Estimation de la paie de {y}",
 "Etichette nel {y}": "Étiquettes en {y}",
 "{n} giorno": "{n} jour",
-"{n} giorni": "{n} jours",
+"{n} giorni": {
+"other": "{n} jours",
+"one": "{n} jour"
+},
 "Per cercare i singoli giorni usa la vista elenco nel calendario.": "Pour retrouver un jour précis, utilisez la vue liste du calendrier.",
 "Questo anno non è ancora iniziato.": "Cette année n'a pas encore commencé.",
 "La banca ore parte dal {d}.": "La banque d'heures commence le {d}.",
@@ -193,24 +211,42 @@
 "Scegli da quale giorno partire.": "Choisissez le jour de départ.",
 "Ciclo di <b>{a}</b>. Compilo <b>{b}</b> dal {c} al {d}:": "Cycle de <b>{a}</b>. Je remplis <b>{b}</b> du {c} au {d} :",
 "Applica a {n} giorno": "Appliquer à {n} jour",
-"Applica a {n} giorni": "Appliquer à {n} jours",
+"Applica a {n} giorni": {
+"other": "Appliquer à {n} jours",
+"one": "Appliquer à {n} jour"
+},
 "{n} settimana": "{n} semaine",
-"{n} settimane": "{n} semaines",
+"{n} settimane": {
+"other": "{n} semaines",
+"one": "{n} semaine"
+},
 "Turnazione applicata a {n} giorno.": "Rotation appliquée à {n} jour.",
-"Turnazione applicata a {n} giorni.": "Rotation appliquée à {n} jours.",
+"Turnazione applicata a {n} giorni.": {
+"other": "Rotation appliquée à {n} jours.",
+"one": "Rotation appliquée à {n} jour."
+},
 "I miei turni, settimana dal {d}:": "Mes postes, semaine du {d} :",
 "libero": "libre",
 "I miei turni": "Mes postes",
 "{h} ore in {n} turno": "{h} heures en {n} poste",
-"{h} ore in {n} turni": "{h} heures en {n} postes",
+"{h} ore in {n} turni": {
+"other": "{h} heures en {n} postes",
+"one": "{h} heures en {n} poste"
+},
 "Creato con {app}": "Créé avec {app}",
 "Questa settimana": "Cette semaine",
 "Settimana prossima": "Semaine prochaine",
 "Settimana scorsa": "Semaine dernière",
 "Tra {n} settimana": "Dans {n} semaine",
-"Tra {n} settimane": "Dans {n} semaines",
+"Tra {n} settimane": {
+"other": "Dans {n} semaines",
+"one": "Dans {n} semaine"
+},
 "{n} settimana fa": "Il y a {n} semaine",
-"{n} settimane fa": "Il y a {n} semaines",
+"{n} settimane fa": {
+"other": "Il y a {n} semaines",
+"one": "Il y a {n} semaine"
+},
 "Turni copiati: incollali in un messaggio.": "Postes copiés : collez-les dans un message.",
 "Copia non disponibile qui.": "La copie n'est pas disponible ici.",
 "Non sono riuscito a creare l'immagine.": "Impossible de créer l'image.",
@@ -220,26 +256,41 @@
 "Ultima copia salvata il {d}.": "Dernière copie enregistrée le {d}.",
 "Non hai ancora salvato una copia.": "Vous n'avez pas encore enregistré de copie.",
 "I turni ({n} giornata) stanno solo su questo dispositivo: salva una copia ogni tanto, per esempio su iCloud Drive, Google Drive o in una mail a te stesso, così non li perdi se cambi telefono.": "Vos postes ({n} jour) ne sont que sur cet appareil : enregistrez une copie de temps en temps, par exemple sur iCloud Drive, Google Drive ou dans un e-mail à vous-même, pour ne pas les perdre si vous changez de téléphone.",
-"I turni ({n} giornate) stanno solo su questo dispositivo: salva una copia ogni tanto, per esempio su iCloud Drive, Google Drive o in una mail a te stesso, così non li perdi se cambi telefono.": "Vos postes ({n} jours) ne sont que sur cet appareil : enregistrez une copie de temps en temps, par exemple sur iCloud Drive, Google Drive ou dans un e-mail à vous-même, pour ne pas les perdre si vous changez de téléphone.",
+"I turni ({n} giornate) stanno solo su questo dispositivo: salva una copia ogni tanto, per esempio su iCloud Drive, Google Drive o in una mail a te stesso, così non li perdi se cambi telefono.": {
+"other": "Vos postes ({n} jours) ne sont que sur cet appareil : enregistrez une copie de temps en temps, par exemple sur iCloud Drive, Google Drive ou dans un e-mail à vous-même, pour ne pas les perdre si vous changez de téléphone.",
+"one": "Vos postes ({n} jour) ne sont que sur cet appareil : enregistrez une copie de temps en temps, par exemple sur iCloud Drive, Google Drive ou dans un e-mail à vous-même, pour ne pas les perdre si vous changez de téléphone."
+},
 "File scaricato.": "Fichier téléchargé.",
 "Download non riuscito.": "Échec du téléchargement.",
 "{n} turno": "{n} poste",
-"{n} turni": "{n} postes",
+"{n} turni": {
+"other": "{n} postes",
+"one": "{n} poste"
+},
 "vuoto": "vide",
 "Crea il PDF di {m}": "Créer le PDF de {m}",
 "Non sono riuscito a creare il PDF.": "Impossible de créer le PDF.",
 "Copia dei turni {app}": "Copie des postes {app}",
 "Copia salvata. Tienila in un posto sicuro.": "Copie enregistrée. Gardez-la en lieu sûr.",
 "Il file contiene {n} giornata": "Le fichier contient {n} jour",
-"Il file contiene {n} giornate": "Le fichier contient {n} jours",
+"Il file contiene {n} giornate": {
+"other": "Le fichier contient {n} jours",
+"one": "Le fichier contient {n} jour"
+},
 "dal {a} al {b}": "du {a} au {b}",
 "salvate il {d}": "enregistrée le {d}",
 "Prenderanno il posto dei turni che hai adesso ({n} giornata), insieme alle impostazioni.": "Ils remplaceront les postes que vous avez maintenant ({n} jour), avec les réglages.",
-"Prenderanno il posto dei turni che hai adesso ({n} giornate), insieme alle impostazioni.": "Ils remplaceront les postes que vous avez maintenant ({n} jours), avec les réglages.",
+"Prenderanno il posto dei turni che hai adesso ({n} giornate), insieme alle impostazioni.": {
+"other": "Ils remplaceront les postes que vous avez maintenant ({n} jours), avec les réglages.",
+"one": "Ils remplaceront les postes que vous avez maintenant ({n} jour), avec les réglages."
+},
 "Verranno caricate insieme alle impostazioni.": "Ils seront chargés avec les réglages.",
 "Questo file non è una copia di {app}.": "Ce fichier n'est pas une copie de {app}.",
 "Copia caricata: {n} giornata.": "Copie chargée : {n} jour.",
-"Copia caricata: {n} giornate.": "Copie chargée : {n} jours.",
+"Copia caricata: {n} giornate.": {
+"other": "Copie chargée : {n} jours.",
+"one": "Copie chargée : {n} jour."
+},
 "Versione {v}.": "Version {v}.",
 "Apri l'app dal suo indirizzo web per ricevere gli aggiornamenti.": "Ouvrez l'app depuis son adresse web pour recevoir les mises à jour.",
 "È disponibile la {v}.": "La version {v} est disponible.",

@@ -744,10 +744,13 @@ const hm=d=>pad(d.getHours())+":"+pad(d.getMinutes());
 const APP="iWork";
 /* ---------- lingua e formati ---------- */
 const I18N=window.IWORK_I18N=window.IWORK_I18N||{};
-const LANGS={it:{n:"Italiano",loc:"it-IT"},en:{n:"English",loc:"en-GB"},fr:{n:"Français",loc:"fr-FR"},de:{n:"Deutsch",loc:"de-DE"},es:{n:"Español",loc:"es-ES"},pt:{n:"Português",loc:"pt-PT"}};
+const LANGS={it:{n:"Italiano",loc:"it-IT"},en:{n:"English",loc:"en-GB"},fr:{n:"Français",loc:"fr-FR"},de:{n:"Deutsch",loc:"de-DE"},es:{n:"Español",loc:"es-ES"},pt:{n:"Português",loc:"pt-PT"},"pt-BR":{n:"Português (Brasil)",loc:"pt-BR"},
+  nl:{n:"Nederlands",loc:"nl-NL"},pl:{n:"Polski",loc:"pl-PL"},ro:{n:"Română",loc:"ro-RO"},bg:{n:"Български",loc:"bg-BG"},hr:{n:"Hrvatski",loc:"hr-HR"},
+  cs:{n:"Čeština",loc:"cs-CZ"},da:{n:"Dansk",loc:"da-DK"},et:{n:"Eesti",loc:"et-EE"},fi:{n:"Suomi",loc:"fi-FI"},el:{n:"Ελληνικά",loc:"el-GR"},
+  hu:{n:"Magyar",loc:"hu-HU"},lv:{n:"Latviešu",loc:"lv-LV"},lt:{n:"Lietuvių",loc:"lt-LT"},sk:{n:"Slovenčina",loc:"sk-SK"},sl:{n:"Slovenščina",loc:"sl-SI"},sv:{n:"Svenska",loc:"sv-SE"}};
 /* formati locali del paese quando la lingua vi è parlata (es. tedesco in Svizzera, spagnolo in Messico) */
-const LOCS={it:"IT CH SM",en:"GB IE MT US CA AU NZ",fr:"FR BE CH LU MC CA",de:"DE AT CH LI LU BE",es:"ES MX AR US",pt:"PT BR"};
-function setLoc(){let c="";try{c=S.settings.country||"";}catch(e){}LOC=c&&(LOCS[LANG]||"").split(" ").includes(c)?LANG+"-"+c:LANGS[LANG].loc;}
+const LOCS={it:"IT CH SM",en:"GB IE MT US CA AU NZ",fr:"FR BE CH LU MC CA",de:"DE AT CH LI LU BE",es:"ES MX AR US",pt:"PT BR",nl:"NL BE",pl:"PL",ro:"RO",bg:"BG",hr:"HR",cs:"CZ",da:"DK",et:"EE",fi:"FI",el:"GR CY",hu:"HU",lv:"LV",lt:"LT",sk:"SK",sl:"SI",sv:"SE FI"};
+function setLoc(){let c="";try{c=S.settings.country||"";}catch(e){}LOC=LANG.includes("-")?LANGS[LANG].loc:c&&(LOCS[LANG]||"").split(" ").includes(c)?LANG+"-"+c:LANGS[LANG].loc;}
 let LANG="it",LOC="it-IT",CUR="EUR";
 try{const l=localStorage.getItem("iwork-lang");if(l&&LANGS[l])LANG=l;}catch(e){}
 LOC=LANGS[LANG].loc;
@@ -764,7 +767,8 @@ function tn(n,one,other,v){v=Object.assign({n:typeof n==="number"?n.toLocaleStri
 let MONTHS,MON3,DAYS,D3;
 const df=(d,o)=>new Intl.DateTimeFormat(LOC,o).format(d);
 function setNames(){
-  MONTHS=[...Array(12)].map((_,i)=>df(new Date(2026,i,1),{month:"long"}));
+  /* nome del mese "da solo" (al nominativo): in greco, polacco ecc. il mese dentro una data cambia forma */
+  MONTHS=[...Array(12)].map((_,i)=>{const d=new Date(2026,i,1);try{const p=new Intl.DateTimeFormat(LOC,{month:"long",year:"numeric"}).formatToParts(d).find(x=>x.type==="month");if(p)return p.value;}catch(e){}return df(d,{month:"long"});});
   MON3=[...Array(12)].map((_,i)=>df(new Date(2026,i,1),{month:"short"}).replace(/\.$/,""));
   DAYS=[...Array(7)].map((_,i)=>df(new Date(2026,10,1+i),{weekday:"long"}));
   D3=[...Array(7)].map((_,i)=>df(new Date(2026,10,1+i),{weekday:"short"}).replace(/\.$/,""));}
@@ -809,7 +813,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.15.0";
+const APP_VERSION="1.16.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1082,7 +1086,10 @@ function renderSummary(y,m,list,flags){
 /* ---------- PDF del mese: one A4 landscape page, written by hand (Helvetica, no library) ---------- */
 const PW=[[278,278,355,556,556,889,667,191,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,278,278,584,584,584,556,1015,667,667,722,722,667,611,778,722,278,500,667,556,833,722,778,667,778,722,667,611,722,667,944,667,667,611,278,278,278,469,556,333,556,556,500,556,556,278,556,556,222,222,500,222,833,556,556,556,556,333,500,278,556,500,722,500,500,500,334,260,334,584,350,556,350,222,556,333,1000,556,556,333,1000,667,333,1000,350,611,350,350,222,222,333,333,350,556,1000,333,1000,500,333,944,350,500,667,278,333,556,556,556,556,260,556,333,737,370,556,584,333,737,333,400,584,333,333,333,556,537,278,333,333,365,556,834,834,834,611,667,667,667,667,667,667,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,500,556,556,556,556,278,278,278,278,556,556,556,556,556,556,556,584,611,556,556,556,556,500,556,500],[278,333,474,556,556,889,722,238,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,333,333,584,584,584,611,975,722,722,722,722,667,611,778,722,278,556,722,611,833,722,778,667,778,722,667,611,722,667,944,667,667,611,333,278,333,584,556,333,556,611,556,611,556,333,611,611,278,278,556,278,889,611,611,611,611,389,556,333,611,556,778,556,556,500,389,280,389,584,350,556,350,278,556,500,1000,556,556,333,1000,667,333,1000,350,611,350,350,278,278,500,500,350,556,1000,333,1000,556,333,944,350,500,667,278,333,556,556,556,556,280,556,333,737,370,556,584,333,737,333,400,584,333,333,333,611,556,278,333,333,365,556,834,834,834,611,722,722,722,722,722,722,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,556,556,556,556,556,278,278,278,278,611,611,611,611,611,611,611,584,611,611,611,611,611,556,611,556]]; // Helvetica and Helvetica-Bold advance widths, WinAnsi codes 32–255
 const WIN={"€":128,"‚":130,"ƒ":131,"„":132,"…":133,"†":134,"‡":135,"ˆ":136,"‰":137,"Š":138,"‹":139,"Œ":140,"Ž":142,"‘":145,"’":146,"“":147,"”":148,"•":149,"–":150,"—":151,"˜":152,"™":153,"š":154,"›":155,"œ":156,"ž":158,"Ÿ":159};
-function pdfStr(s){let o="";for(const ch of String(s)){const c=ch.codePointAt(0),b=WIN[ch]||((c>=32&&c<127)||(c>=160&&c<256)?c:0);if(b)o+=String.fromCharCode(b);}return o;}
+/* lettere fuori dalla codifica del PDF: per ora senza accento o traslitterate (greco, cirillico) */
+const PDFX=Object.assign({"ł":"l","Ł":"L","đ":"d","Đ":"D","ı":"i","ș":"s","Ș":"S","ț":"t","Ț":"T","ő":"ö","Ő":"Ö","ű":"ü","Ű":"Ü"},{"α":"a","Α":"A","β":"v","Β":"V","γ":"g","Γ":"G","δ":"d","Δ":"D","ε":"e","Ε":"E","ζ":"z","Ζ":"Z","η":"i","Η":"I","θ":"th","Θ":"Th","ι":"i","Ι":"I","κ":"k","Κ":"K","λ":"l","Λ":"L","μ":"m","Μ":"M","ν":"n","Ν":"N","ξ":"x","Ξ":"X","ο":"o","Ο":"O","π":"p","Π":"P","ρ":"r","Ρ":"R","σ":"s","Σ":"S","ς":"s","τ":"t","Τ":"T","υ":"y","Υ":"Y","φ":"f","Φ":"F","χ":"ch","Χ":"Ch","ψ":"ps","Ψ":"Ps","ω":"o","Ω":"O","ά":"a","Ά":"A","έ":"e","Έ":"E","ή":"i","Ή":"I","ί":"i","Ί":"I","ό":"o","Ό":"O","ύ":"y","Ύ":"Y","ώ":"o","Ώ":"O","ϊ":"i","Ϊ":"I","ϋ":"y","Ϋ":"Y","ΐ":"i","ΰ":"y","а":"a","А":"A","б":"b","Б":"B","в":"v","В":"V","г":"g","Г":"G","д":"d","Д":"D","е":"e","Е":"E","ж":"zh","Ж":"Zh","з":"z","З":"Z","и":"i","И":"I","й":"y","Й":"Y","к":"k","К":"K","л":"l","Л":"L","м":"m","М":"M","н":"n","Н":"N","о":"o","О":"O","п":"p","П":"P","р":"r","Р":"R","с":"s","С":"S","т":"t","Т":"T","у":"u","У":"U","ф":"f","Ф":"F","х":"h","Х":"H","ц":"ts","Ц":"Ts","ч":"ch","Ч":"Ch","ш":"sh","Ш":"Sh","щ":"sht","Щ":"Sht","ъ":"a","Ъ":"A","ь":"y","Ь":"Y","ю":"yu","Ю":"Yu","я":"ya","Я":"Ya"});
+function pdfStr(s){let o="";for(let ch of String(s)){let c=ch.codePointAt(0),b=WIN[ch]||((c>=32&&c<127)||(c>=160&&c<256)?c:0);
+  if(!b){const x=PDFX[ch];if(x){o+=x;continue;}ch=ch.normalize("NFD")[0];c=ch.codePointAt(0);b=WIN[ch]||((c>=32&&c<127)||(c>=160&&c<256)?c:0);}if(b)o+=String.fromCharCode(b);}return o;}
 function pdfW(b,f,size){let w=0;for(let i=0;i<b.length;i++)w+=PW[f][b.charCodeAt(i)-32]||0;return w*size/1000;}
 function pdfFit(b,f,size,max){if(pdfW(b,f,size)<=max)return b;while(b.length&&pdfW(b+"\x85",f,size)>max)b=b.slice(0,-1);return b.replace(/\s+$/,"")+"\x85";}
 function monthPdf(y,m){
@@ -1608,7 +1615,9 @@ window.iworkSetLang=setLang;
 /* ---------- benvenuto: lingua, paese, regione, ore del turno ---------- */
 const OB={step:0,lang:"it",country:"IT",region:"",patron:null,wd:8,sat:6,q:"",existing:false};
 function guessSetup(){const nl=(navigator.languages&&navigator.languages[0]||navigator.language||"it-IT");
-  const l=nl.slice(0,2).toLowerCase(),c=(nl.split("-")[1]||"").toUpperCase();return{lang:LANGS[l]?l:"en",country:CTRYS[c]?c:CTRYS[({en:"GB",fr:"FR",de:"DE",es:"ES",pt:"PT"})[l]]?({en:"GB",fr:"FR",de:"DE",es:"ES",pt:"PT"})[l]:"IT"};}
+  const two=nl.slice(0,2).toLowerCase(),c=(nl.split("-")[1]||"").toUpperCase(),full=two+"-"+c,l=LANGS[full]?full:LANGS[two]?two:"en";
+  const home={en:"GB",fr:"FR",de:"DE",es:"ES",pt:"PT",nl:"NL",pl:"PL",ro:"RO",bg:"BG",hr:"HR",cs:"CZ",da:"DK",et:"EE",fi:"FI",el:"GR",hu:"HU",lv:"LV",lt:"LT",sk:"SK",sl:"SI",sv:"SE"}[two];
+  return{lang:l,country:CTRYS[c]?c:CTRYS[home]?home:"IT"};}
 function obSteps(){const C=CTRYS[OB.country]||{};const st=["lang","country"];if(C.reg||C.patrons)st.push("place");st.push("hours","done");return st;}
 function obRender(){const steps=obSteps(),cur=steps[OB.step],C=CTRYS[OB.country]||{},opt=(v,l,sel,sub)=>'<button type="button" class="opt" data-v="'+esc(v)+'" aria-pressed="'+!!sel+'"><span>'+esc(l)+"</span>"+(sub?"<small>"+esc(sub)+"</small>":"")+"</button>";
   $("obDots").innerHTML=steps.map((_,i)=>'<i class="'+(i<=OB.step?"on":"")+'"></i>').join("");
@@ -1652,7 +1661,7 @@ function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
   if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
 
-window.iworkDebug={holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
+window.iworkDebug={tn,t,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();setNames();translateDom();
