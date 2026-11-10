@@ -54,6 +54,8 @@ I turni restano nel browser del dispositivo che usi (`localStorage`). Non c'è n
 - `index.html`: tutta l'app (markup, stile e codice).
 - `manifest.webmanifest`, `sw.js`, icone: installazione sul telefono e uso offline.
 - `countries.js`: regole di lavoro e festività di ogni paese, con le fonti.
+- `lang/`: le traduzioni (l'italiano è dentro `index.html`).
+- `fonts/`: il carattere incorporato nel PDF (sottoinsieme di Liberation Sans rinominato "iWork Sans PDF", licenza SIL Open Font License in `fonts/OFL.txt`), con latino, greco e cirillico.
 - `lang/`: le traduzioni (l'italiano è nel codice).
 - `version.json`: l'ultima versione pubblicata.
 

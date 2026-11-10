@@ -1,12 +1,12 @@
 {
-  "version": "1.16.0",
+  "version": "1.17.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Ora 23 lingue: aggiunti olandese, polacco, rumeno, portoghese del Brasile e tutte le altre lingue dell'Unione Europea.",
-    "en": "Now in 23 languages: Dutch, Polish, Romanian, Brazilian Portuguese and all the other European Union languages added.",
-    "fr": "Désormais en 23 langues : néerlandais, polonais, roumain, portugais du Brésil et toutes les autres langues de l'Union européenne.",
-    "de": "Jetzt in 23 Sprachen: Niederländisch, Polnisch, Rumänisch, brasilianisches Portugiesisch und alle anderen Sprachen der EU.",
-    "es": "Ahora en 23 idiomas: neerlandés, polaco, rumano, portugués de Brasil y todos los demás idiomas de la Unión Europea.",
-    "pt": "Agora em 23 línguas: neerlandês, polaco, romeno, português do Brasil e todas as outras línguas da União Europeia."
+    "it": "Il PDF del mese ora scrive bene tutte le lettere in ogni lingua, anche greco e cirillico.",
+    "en": "The monthly PDF now prints every letter correctly in every language, including Greek and Cyrillic.",
+    "fr": "Le PDF du mois affiche désormais toutes les lettres dans chaque langue, y compris le grec et le cyrillique.",
+    "de": "Das Monats-PDF zeigt jetzt alle Buchstaben in jeder Sprache richtig an, auch Griechisch und Kyrillisch.",
+    "es": "El PDF del mes ahora muestra bien todas las letras en cada idioma, también griego y cirílico.",
+    "pt": "O PDF do mês agora mostra bem todas as letras em todas as línguas, incluindo grego e cirílico."
   }
 }

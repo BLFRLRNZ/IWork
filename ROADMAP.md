@@ -24,7 +24,7 @@ Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta co
 ## 5. Lingue
 - [x] 5.1 Francese, tedesco, spagnolo, portoghese
 - [x] 5.2 Olandese, polacco, rumeno e le altre lingue dell'UE (più portoghese del Brasile; irlandese e maltese no: in Irlanda e a Malta l'inglese è lingua ufficiale)
-- [ ] 5.3 PDF e immagine condivisa in tutte le lingue, anche con lettere speciali (ą, ș, ř, ő…)
+- [x] 5.3 PDF e immagine condivisa in tutte le lingue, anche con lettere speciali (ą, ș, ř, ő…)
 
 ## 6. Controllo e rilascio
 - [ ] 6.1 Festività di ogni paese confrontate con le fonti su due anni

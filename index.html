@@ -813,7 +813,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.16.0";
+const APP_VERSION="1.17.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1092,7 +1092,29 @@ function pdfStr(s){let o="";for(let ch of String(s)){let c=ch.codePointAt(0),b=W
   if(!b){const x=PDFX[ch];if(x){o+=x;continue;}ch=ch.normalize("NFD")[0];c=ch.codePointAt(0);b=WIN[ch]||((c>=32&&c<127)||(c>=160&&c<256)?c:0);}if(b)o+=String.fromCharCode(b);}return o;}
 function pdfW(b,f,size){let w=0;for(let i=0;i<b.length;i++)w+=PW[f][b.charCodeAt(i)-32]||0;return w*size/1000;}
 function pdfFit(b,f,size,max){if(pdfW(b,f,size)<=max)return b;while(b.length&&pdfW(b+"\x85",f,size)>max)b=b.slice(0,-1);return b.replace(/\s+$/,"")+"\x85";}
+/* font completo per il PDF (latino con tutti gli accenti, greco, cirillico): si carica quando apri il PDF del mese */
+let PDFF=null,pdffP=null;
+function ttfParse(buf){const v=new DataView(buf),T={};for(let i=0,n=v.getUint16(4);i<n;i++){const o=12+i*16;T[String.fromCharCode(v.getUint8(o),v.getUint8(o+1),v.getUint8(o+2),v.getUint8(o+3))]=v.getUint32(o+8);}
+  const upm=v.getUint16(T.head+18),sc=x=>Math.round(x*1000/upm),nG=v.getUint16(T.maxp+4),nH=v.getUint16(T.hhea+34),w=new Array(nG);
+  for(let g=0;g<nG;g++)w[g]=sc(v.getUint16(T.hmtx+4*Math.min(g,nH-1)));
+  const u2g=new Map();let sub=0;for(let i=0,n=v.getUint16(T.cmap+2);i<n;i++){const o=T.cmap+4+i*8,pl=v.getUint16(o),en=v.getUint16(o+2),of=T.cmap+v.getUint32(o+4);if(v.getUint16(of)===4&&(pl===3&&en===1||pl===0))sub=of;}
+  if(sub){const sx2=v.getUint16(sub+6),E=sub+14,S0=E+sx2+2,D0=S0+sx2,R0=D0+sx2;
+    for(let i=0;i<sx2/2;i++){const e=v.getUint16(E+2*i),st=v.getUint16(S0+2*i),d=v.getInt16(D0+2*i),ro=v.getUint16(R0+2*i);
+      for(let c=st;c<=e&&c!==0xFFFF;c++){let g=ro?v.getUint16(R0+2*i+ro+2*(c-st)):c;if(ro&&!g)continue;g=(g+d)&0xFFFF;if(g)u2g.set(c,g);}}}
+  const os2=T["OS/2"];return{u2g,w,bbox:[38,40,42,44].map(k=>sc(v.getInt16(T.head+k-2))),asc:sc(v.getInt16(T.hhea+4)),desc:sc(v.getInt16(T.hhea+6)),
+    cap:os2&&v.getUint16(os2)>=2?sc(v.getInt16(os2+88)):700,bytes:new Uint8Array(buf)};}
+async function deflate(u){if(typeof CompressionStream!=="function")return null;try{const s=new Blob([u]).stream().pipeThrough(new CompressionStream("deflate"));return new Uint8Array(await new Response(s).arrayBuffer());}catch(e){return null;}}
+function loadPdfFonts(){if(PDFF)return Promise.resolve(PDFF);if(pdffP)return pdffP;
+  pdffP=Promise.all(["Regular","Bold"].map(async n=>{const r=await fetch("fonts/pdf-"+n+".ttf");if(!r.ok)throw 0;const F=ttfParse(await r.arrayBuffer());F.name="iWorkSansPDF-"+n;F.z=await deflate(F.bytes);return F;}))
+    .then(a=>PDFF=a).catch(()=>{pdffP=null;return null;});return pdffP;}
+const latin1=u=>{let s="";for(let i=0;i<u.length;i+=8192)s+=String.fromCharCode.apply(null,u.subarray(i,i+8192));return s;};
+const utf16hex=s=>{let h="";for(let i=0;i<s.length;i++)h+=s.charCodeAt(i).toString(16).padStart(4,"0");return h;};
 function monthPdf(y,m){
+  const FN=PDFF;if(FN)FN.forEach(F=>F.used=new Map());
+  /* testo come glifi del font completo; un segno che manca prova senza accento, altrimenti si salta (es. emoji) */
+  const enc=(s,F)=>{const g=[];for(const ch of String(s)){let id=F.u2g.get(ch.codePointAt(0)),u=ch;
+      if(id==null){u=ch.normalize("NFD")[0];id=F.u2g.get(u.codePointAt(0));}if(id==null)continue;g.push(id);if(!F.used.has(id))F.used.set(id,u);}return g;},
+    gw=(g,F,size)=>g.reduce((a,id)=>a+(F.w[id]||0),0)*size/1000;
   const W=842,H=595,M=34,c=[];
   const INK="#0d0f14",MUTED="#676e80",LINE="#d6dae3",FAINT="#b3b9c6",HOL="#cf3a2f",WARN="#c96a00",SOFT="#f1f2f6";
   const TINT={m:["#ffe8ad","#553800"],p:["#ffd2c0","#6b2407"],n:["#d9dbff","#24256e"],f:["#cbf1d8","#0c4927"],x:["#e4e7ee","#4a5267"]};
@@ -1101,14 +1123,18 @@ function monthPdf(y,m){
   const rgb=h=>[1,3,5].map(i=>n(parseInt(h.substr(i,2),16)/255)).join(" ");
   const box=(x,yt,w,h,r,fill,stroke)=>{const yb=H-yt-h,k=r*0.5523,P=a=>a.map(n).join(" ");
     c.push((fill?rgb(fill)+" rg ":"")+(stroke?rgb(stroke)+" RG 0.6 w ":"")+P([x+r,yb])+" m "+P([x+w-r,yb])+" l "+P([x+w-r+k,yb,x+w,yb+r-k,x+w,yb+r])+" c "+P([x+w,yb+h-r])+" l "+P([x+w,yb+h-r+k,x+w-r+k,yb+h,x+w-r,yb+h])+" c "+P([x+r,yb+h])+" l "+P([x+r-k,yb+h,x,yb+h-r+k,x,yb+h-r])+" c "+P([x,yb+r])+" l "+P([x,yb+r-k,x+r-k,yb,x+r,yb])+" c h "+(fill&&stroke?"B":fill?"f":"S"));};
-  const text=(x,yb,str,f,size,col,align,max)=>{let b=pdfStr(str);if(max)b=pdfFit(b,f,size,max);const w=pdfW(b,f,size);if(align==="r")x-=w;else if(align==="c")x-=w/2;
-    c.push("BT /F"+(f+1)+" "+size+" Tf "+rgb(col)+" rg "+n(x)+" "+n(H-yb)+" Td ("+b.replace(/[\\()]/g,"\\$&")+") Tj ET");return w;};
+  const text=(x,yb,str,f,size,col,align,max)=>{let w,op;
+    if(FN){const F=FN[f];let g=enc(str,F);if(max&&gw(g,F,size)>max){const el=enc("…",F);while(g.length&&gw(g.concat(el),F,size)>max)g.pop();while(g.length&&F.used.get(g[g.length-1])===" ")g.pop();g=g.concat(el);}
+      w=gw(g,F,size);op="<"+g.map(id=>id.toString(16).padStart(4,"0")).join("")+"> Tj";}
+    else{let b=pdfStr(str);if(max)b=pdfFit(b,f,size,max);w=pdfW(b,f,size);op="("+b.replace(/[\\()]/g,"\\$&")+") Tj";}
+    if(align==="r")x-=w;else if(align==="c")x-=w/2;
+    c.push("BT /F"+(f+1)+" "+size+" Tf "+rgb(col)+" rg "+n(x)+" "+n(H-yb)+" Td "+op+" ET");return w;};
   const LMP=lblMap(),list=workList(),flags=restFlags(list),D=monthData(y,m,list,flags),name=MONTHS[m][0].toUpperCase()+MONTHS[m].slice(1);
   // header
   box(M,24.5,16,16,3.7,"#14161e");c.push("q "+n(16/512)+" 0 0 "+n(-16/512)+" "+M+" "+n(H-24.5)+" cm "+LOGO_PDF+" Q");
   text(M+22,36.5,APP,1,11,INK);
   const tw=text(M,70,name,1,27,INK);text(M+tw+8,70,String(y),0,27,MUTED);
-  text(W-M,36.5,t("Totale del mese").toUpperCase(),0,7.5,MUTED,"r");
+  text(W-M,36.5,t("Totale del mese").toLocaleUpperCase(LOC),0,7.5,MUTED,"r");
   const lw=text(W-M,70,tn(D.n,"ore in {n} turno","ore in {n} turni"),0,11,MUTED,"r");text(W-M-lw-6,70,hrs(D.tot),1,27,INK,"r");
   // bottom band: warnings, tiles, footer
   const warns=D.warns.length>3?D.warns.slice(0,2).concat([t("E altri {n} avvisi: li trovi nell'app.",{n:D.warns.length-2})]):D.warns;
@@ -1116,7 +1142,7 @@ function monthPdf(y,m){
   // calendar
   const first=monday(new Date(y,m,1)),last=new Date(y,m+1,0),rows=Math.round((monday(last)-first)/604800000)+1,gap=4;
   const cw=(W-2*M-6*gap)/7,ch=(gridBottom-gridTop-(rows-1)*gap)/rows;
-  weekOrder().forEach((d,i)=>text(M+i*(cw+gap)+7,91,D3[d].toUpperCase(),0,7,MUTED));
+  weekOrder().forEach((d,i)=>text(M+i*(cw+gap)+7,91,D3[d].toLocaleUpperCase(LOC),0,7,MUTED));
   for(let i=0;i<rows*7;i++){const d=addDays(first,i),k=keyOf(d),e=S.days[k],x=M+(i%7)*(cw+gap),yt=gridTop+Math.floor(i/7)*(ch+gap);
     if(d.getMonth()!==m){text(x+7,yt+14,String(d.getDate()),0,9,FAINT);continue;}
     const hol=holiday(k),tt=e?tint(e):null,fg=tt?TINT[tt][1]:INK;
@@ -1147,7 +1173,16 @@ function monthPdf(y,m){
     "<< /Length "+content.length+" >>\nstream\n"+content+"\nendstream",
     "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>",
     "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>",
-    "<< /Title ("+pdfStr(APP+" - "+MONTHS[m]+" "+y).replace(/[\\()]/g,"\\$&")+") /Creator ("+APP+") >>"];
+    "<< /Title <FEFF"+utf16hex(APP+" - "+MONTHS[m]+" "+y)+"> /Creator ("+APP+") >>"];
+  /* font incorporato: Type0 + CIDFontType2 (codici = glifi), con la mappa per copiare e cercare il testo */
+  if(FN)FN.forEach((F,i)=>{const b=objs.length+1,ids=[...F.used.keys()].sort((a,z)=>a-z);
+    objs[4+i]="<< /Type /Font /Subtype /Type0 /BaseFont /"+F.name+" /Encoding /Identity-H /DescendantFonts ["+b+" 0 R] /ToUnicode "+(b+3)+" 0 R >>";
+    objs.push("<< /Type /Font /Subtype /CIDFontType2 /BaseFont /"+F.name+" /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> /FontDescriptor "+(b+1)+" 0 R /CIDToGIDMap /Identity /DW 1000 /W ["+ids.map(id=>id+" ["+F.w[id]+"]").join(" ")+"] >>");
+    objs.push("<< /Type /FontDescriptor /FontName /"+F.name+" /Flags 32 /FontBBox ["+F.bbox.join(" ")+"] /ItalicAngle 0 /Ascent "+F.asc+" /Descent "+F.desc+" /CapHeight "+F.cap+" /StemV "+(i?140:80)+" /FontFile2 "+(b+2)+" 0 R >>");
+    const ff=F.z||F.bytes;objs.push("<< /Length "+ff.length+" /Length1 "+F.bytes.length+(F.z?" /Filter /FlateDecode":"")+" >>\nstream\n"+latin1(ff)+"\nendstream");
+    let cm="/CIDInit /ProcSet findresource begin 12 dict begin begincmap /CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def /CMapName /Adobe-Identity-UCS def /CMapType 2 def\n1 begincodespacerange <0000> <FFFF> endcodespacerange\n";
+    for(let k=0;k<ids.length;k+=100){const part=ids.slice(k,k+100);cm+=part.length+" beginbfchar\n"+part.map(id=>"<"+id.toString(16).padStart(4,"0")+"> <"+utf16hex(F.used.get(id))+">").join("\n")+"\nendbfchar\n";}
+    cm+="endcmap CMapName currentdict /CMap defineresource pop end end";objs.push("<< /Length "+cm.length+" >>\nstream\n"+cm+"\nendstream");});
   let out="%PDF-1.4\n%\xE2\xE3\xCF\xD3\n";const off=[];
   objs.forEach((o,i)=>{off.push(out.length);out+=(i+1)+" 0 obj\n"+o+"\nendobj\n";});
   const xref=out.length;
@@ -1473,7 +1508,7 @@ function weekCanvas(mon){const W=1080,H=1350,c=document.createElement("canvas");
     if(tt){g.fillStyle=TINT[tt][0];rr(72,y,936,108,26);g.fill();}else{g.fillStyle="#ffffff";rr(72,y,936,108,26);g.fill();}
     if(k===tk){g.strokeStyle="#0d0f14";g.lineWidth=4;rr(72,y,936,108,26);g.stroke();}
     const fg=tt?TINT[tt][1]:"#0d0f14",hol=holiday(k)||d.getDay()===0;
-    g.fillStyle=hol?"#cf3a2f":(tt?fg:"#676e80");g.font=F(500,26);g.fillText(D3[d.getDay()].toUpperCase(),108,y+44);
+    g.fillStyle=hol?"#cf3a2f":(tt?fg:"#676e80");g.font=F(500,26);g.fillText(D3[d.getDay()].toLocaleUpperCase(LOC),108,y+44);
     g.fillStyle=hol?"#cf3a2f":fg;g.font=F(700,44);g.fillText(String(d.getDate()),108,y+88);
     g.textAlign="right";
     if(e&&e.k==="w"){const x=info(k,e);tot+=x.dur;n++;g.fillStyle=fg;g.font=F(700,x.split?38:50);
@@ -1537,12 +1572,13 @@ function pdRender(){$("pdYear").textContent=pdY;let h="";
   for(let i=0;i<12;i++){const ym=pdY+"-"+pad(i+1);let n=0;for(const k in S.days)if(S.days[k].k==="w"&&k.startsWith(ym))n++;
     const nt=n?tn(n,"{n} turno","{n} turni"):"";h+='<button type="button" data-m="'+i+'" aria-pressed="'+(i===pdM)+'" aria-label="'+esc(MONTHS[i]+" "+pdY+", "+(n?nt:t("nessun turno")))+'">'+MON3[i]+"<small>"+(n?nt:t("vuoto"))+"</small></button>";}
   $("pdMonths").innerHTML=h;$("pdGo").textContent=t("Crea il PDF di {m}",{m:MONTHS[pdM]+" "+pdY});}
-$("pdfBtn").onclick=()=>{pdY=view.getFullYear();pdM=view.getMonth();pdRender();openDlg($("pd"));};
+$("pdfBtn").onclick=()=>{loadPdfFonts();pdY=view.getFullYear();pdM=view.getMonth();pdRender();openDlg($("pd"));};
 $("pdPrev").onclick=()=>{pdY--;pdRender();};
 $("pdNext").onclick=()=>{pdY++;pdRender();};
 $("pdMonths").addEventListener("click",ev=>{const b=ev.target.closest("[data-m]");if(b){pdM=+b.dataset.m;pdRender();}});
 $("pdCancel").onclick=()=>$("pd").close();
-$("pdForm").addEventListener("submit",ev=>{ev.preventDefault();$("pd").close();
+$("pdForm").addEventListener("submit",async ev=>{ev.preventDefault();$("pd").close();
+  if(!PDFF)await Promise.race([loadPdfFonts(),new Promise(r=>setTimeout(r,4000))]);
   let bytes=null;try{bytes=monthPdf(pdY,pdM);}catch(e){toast(t("Non sono riuscito a creare il PDF."));return;}
   saveFile("iwork-"+pdY+"-"+pad(pdM+1)+"-"+MONTHS[pdM]+".pdf",bytes,"application/pdf");});
 $("bakBtn").onclick=async()=>{const json=JSON.stringify({app:"iwork",v:1,saved:new Date().toISOString(),settings:S.settings,days:S.days},null,1);
