@@ -1,8 +1,8 @@
 {
-  "version": "1.9.0",
+  "version": "1.10.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "L'app ora parla anche inglese: scegli la lingua in Impostazioni.",
-    "en": "The app now speaks English too: choose the language in Settings."
+    "it": "Festività e regole del paese, regione e santo patrono in Impostazioni.",
+    "en": "Country holidays and rules, plus region and patron saint's day in Settings."
   }
 }

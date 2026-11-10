@@ -11,7 +11,7 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - **Prossimo turno**: conto alla rovescia all'inizio e, mentre sei in turno, quanto manca alla fine.
 - **Totali del mese**: ore, ore extra, ore notturne, sabati, domeniche e festivi, ferie e permessi residui, banca ore.
 - **Avvisi**: meno di 11 ore di riposo, sette giorni di fila, settimane sopra le 48 ore, ferie o permessi oltre quelli spettanti.
-- **Festività italiane** segnate in rosso.
+- **Festività del paese** segnate in rosso, con la regione e il santo patrono della tua città.
 - **Vista calendario o elenco**: nell'elenco leggi note ed etichette per intero e puoi **cercare** in tutte le note e le etichette, di qualsiasi mese.
 - **Turni spezzati**: due fasce nello stesso giorno, per esempio 8–12 e 16–20, anche come turni rapidi.
 - **Etichette**: reparti, macchinari o postazioni che crei una volta e scegli con un tocco in ogni giorno.
@@ -50,6 +50,8 @@ I turni restano nel browser del dispositivo che usi (`localStorage`). Non c'è n
 
 - `index.html`: tutta l'app (markup, stile e codice).
 - `manifest.webmanifest`, `sw.js`, icone: installazione sul telefono e uso offline.
+- `countries.js`: regole di lavoro e festività di ogni paese, con le fonti.
+- `lang/`: le traduzioni (l'italiano è nel codice).
 - `version.json`: l'ultima versione pubblicata.
 
 ## Pubblicare un aggiornamento

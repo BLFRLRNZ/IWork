@@ -371,5 +371,20 @@
 "Settimana precedente": "Previous week",
 "Settimana successiva": "Next week",
 "Anteprima dell'immagine con i turni della settimana": "Preview of the image with the week's shifts",
-"Annulla|undo": "Undo"
+"Annulla|undo": "Undo",
+"{x}, festa patronale": "{x}, patron saint's day",
+"Festa patronale": "Patron saint's day",
+"{x} (recupero)": "{x} (substitute day)",
+"Nessuna in particolare": "None in particular",
+"Nessuno": "None",
+"Un'altra data…": "Another date…",
+"Regole di {c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.": "Rules for {c}: at least {r} hours' rest between two shifts, on average no more than {w} hours a week, a weekly rest of {k} hours. The week starts on {d}.",
+"Paese e festività": "Country and public holidays",
+"Paese": "Country",
+"Regione o provincia": "Region or province",
+"Santo patrono": "Patron saint",
+"Giorno": "Day",
+"La festa patronale conta come festivo nel calendario, nella banca ore e nella paga. Controlla la data con il tuo contratto o il tuo comune.": "The patron saint's day counts as a public holiday in the calendar, the hour bank and pay. Check the date with your contract or your town.",
+"{c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.": "{c}: at least {r} hours' rest between two shifts, on average no more than {w} hours a week, a weekly rest of {k} hours. The week starts on {d}.",
+"Notturno {r}": "Night {r}"
 };

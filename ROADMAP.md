@@ -7,9 +7,9 @@ Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta co
 - [x] 1.2 Inglese completo, che fa da riferimento per le altre traduzioni
 
 ## 2. Regole per paese
-- [ ] 2.1 Profilo del paese: festività, riposo minimo tra due turni, limite di ore settimanali, riposo settimanale, fascia notturna, primo giorno della settimana, valuta
-- [ ] 2.2 Motore delle festività: date fisse, Pasqua cattolica e ortodossa, «n-esimo lunedì del mese», feste regionali, recupero quando la festa cade nel fine settimana
-- [ ] 2.3 Italia completa, con il santo patrono della propria città
+- [x] 2.1 Profilo del paese: festività, riposo minimo tra due turni, limite di ore settimanali, riposo settimanale, fascia notturna, primo giorno della settimana, valuta
+- [x] 2.2 Motore delle festività: date fisse, Pasqua cattolica e ortodossa, «n-esimo lunedì del mese», feste regionali, recupero quando la festa cade nel fine settimana
+- [x] 2.3 Italia completa, con il santo patrono della propria città
 
 ## 3. Schermata iniziale
 - [ ] 3.1 Benvenuto: lingua, paese, regione, ore del turno standard, fatto

@@ -493,7 +493,25 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <h2 id="stTitle">Impostazioni</h2>
     <p class="saved">Ogni modifica si salva da sola.</p>
 
-    <h3 class="sect first">Turni</h3>
+    <h3 class="sect first">Paese e festività</h3>
+    <div class="field"><label class="eyebrow" for="stCountry">Paese</label><select id="stCountry"></select></div>
+    <div class="field" id="stRegBox"><label class="eyebrow" for="stRegion">Regione o provincia</label><select id="stRegion"></select></div>
+    <div class="field" id="stPatBox">
+      <label class="eyebrow" for="stPatron">Santo patrono</label>
+      <select id="stPatron"></select>
+      <div class="row" id="stPatCustom" hidden>
+        <div class="field"><label class="eyebrow" for="stPatDay">Giorno</label><input type="number" id="stPatDay" min="1" max="31" step="1"></div>
+        <div class="field"><label class="eyebrow" for="stPatMon">Mese</label><select id="stPatMon"></select></div>
+      </div>
+      <p class="help">La festa patronale conta come festivo nel calendario, nella banca ore e nella paga. Controlla la data con il tuo contratto o il tuo comune.</p>
+    </div>
+    <p class="help" id="stRules"></p>
+
+    <h3 class="sect">Lingua</h3>
+    <select id="stLang" aria-label="Lingua"></select>
+
+
+    <h3 class="sect">Turni</h3>
     <div class="row">
       <div class="field"><label class="eyebrow" for="stWd">Ore turno normale</label><input type="number" id="stWd" min="1" max="16" step="0.5"></div>
       <div class="field"><label class="eyebrow" for="stSat">Ore turno sabato</label><input type="number" id="stSat" min="1" max="16" step="0.5"></div>
@@ -516,17 +534,14 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <p class="help">La banca ore confronta le ore lavorate con quelle da contratto, giorno per giorno fino a oggi. Ferie, permessi, malattia, domeniche e festivi non contano come ore mancanti.</p>
 
     <h3 class="sect">Paga</h3>
-    <div class="field"><label class="eyebrow" for="stRate">Paga oraria lorda</label><label class="unit"><input type="number" id="stRate" min="0" step="0.01" placeholder="0,00"><span>€/h</span></label></div>
+    <div class="field"><label class="eyebrow" for="stRate">Paga oraria lorda</label><label class="unit"><input type="number" id="stRate" min="0" step="0.01" placeholder="0,00"><span id="stRateU">€/h</span></label></div>
     <div class="row">
       <div class="field"><label class="eyebrow" for="stPOt">Straordinari</label><label class="unit"><input type="number" id="stPOt" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
-      <div class="field"><label class="eyebrow" for="stPNight">Notturno 22–06</label><label class="unit"><input type="number" id="stPNight" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
+      <div class="field"><label class="eyebrow" for="stPNight" id="stPNightL">Notturno 22–06</label><label class="unit"><input type="number" id="stPNight" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
       <div class="field"><label class="eyebrow" for="stPSun">Domenica</label><label class="unit"><input type="number" id="stPSun" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
       <div class="field"><label class="eyebrow" for="stPHol">Festivi</label><label class="unit"><input type="number" id="stPHol" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
     </div>
     <p class="help">Le maggiorazioni si sommano: un'ora di notte di domenica prende sia il notturno sia il domenicale. Se una festa cade di domenica vale solo il festivo. La stima resta su questo dispositivo e non compare nel PDF né nelle immagini condivise.</p>
-
-    <h3 class="sect">Lingua</h3>
-    <select id="stLang" aria-label="Lingua"></select>
 
     <h3 class="sect">Aspetto</h3>
     <div class="seg" role="radiogroup" aria-label="Tema">
@@ -667,6 +682,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 
 <div class="toast" id="toast" role="status" hidden><span id="toastMsg"></span><button id="toastUndo" hidden>Annulla</button></div>
 
+<script src="countries.js"></script>
 <script>
 (function(){
 "use strict";
@@ -676,7 +692,9 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const keyOf=d=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
 const dateOf=k=>{const p=k.split("-");return new Date(+p[0],+p[1]-1,+p[2]);};
 const addDays=(d,n)=>new Date(d.getFullYear(),d.getMonth(),d.getDate()+n);
-const monday=d=>addDays(d,-((d.getDay()+6)%7));
+let WS=1; // primo giorno della settimana: 1 lunedì, 0 domenica (dal profilo del paese)
+const monday=d=>addDays(d,-((d.getDay()-WS+7)%7));
+const weekOrder=()=>[0,1,2,3,4,5,6].map(i=>(WS+i)%7);
 const toMin=t=>{const p=t.split(":");return +p[0]*60+ +p[1];};
 const hm=d=>pad(d.getHours())+":"+pad(d.getMinutes());
 const APP="iWork";
@@ -720,7 +738,14 @@ const money=v=>v.toLocaleString(LOC,{style:"currency",currency:CUR});
 const span=min=>{min=Math.max(0,Math.round(min));const h=Math.floor(min/60),m=min%60;
   return h>=24?t("{d} g {h} h",{d:Math.floor(h/24),h:h%24}):h?(m?t("{h} h {m} min",{h,m}):t("{h} h",{h})):t("{m} min",{m});};
 /* regole del paese (per ora Italia; il punto 2 della scaletta le rende variabili) */
-const RULES={rest:11,maxWeek:48,nightFrom:22,nightTo:6};
+const RULES={rest:11,maxWeek:48,weeklyRest:24,nightFrom:22,nightTo:6};
+const CTRYS=window.IWORK_COUNTRIES||{};
+const ctry=()=>CTRYS[S.settings.country]||CTRYS.IT||{n:{it:"Italia"},cur:"EUR",ws:1,rules:{},hol:[]};
+const locName=n=>!n?"":typeof n==="string"?n:n[LANG]||n.en||n[Object.keys(n)[0]];
+function applyCountry(){const C=ctry(),r=C.rules||{};
+  RULES.rest=r.rest||11;RULES.maxWeek=r.maxWeek||48;RULES.weeklyRest=r.weeklyRest||24;
+  const nt=r.night||[22,6];RULES.nightFrom=nt[0];RULES.nightTo=nt[1];
+  CUR=C.cur||"EUR";WS=C.ws==null?1:C.ws;for(const k in holCache)delete holCache[k];}
 const nightTxt=()=>pad(RULES.nightFrom)+"–"+pad(RULES.nightTo);
 /* testi fissi della pagina: tradotti partendo dall'italiano originale */
 const TX=new WeakMap();
@@ -732,7 +757,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.9.0";
+const APP_VERSION="1.10.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -746,7 +771,9 @@ const num=(v,lo,hi,dft)=>{v=+v;return v!==v||v<lo||v>hi?dft:Math.round(v*100)/10
 function normSettings(s){s=s||{};const wd=num(s.wd,0.5,16,DEF.wd),sat=num(s.sat,0.5,16,DEF.sat);
   const o={wd,sat,rate:num(s.rate,0,9999,0),week:num(s.week,1,80,Math.round((5*wd+sat)*100)/100),ferie:num(s.ferie,0,80,0),perm:num(s.perm,0,400,0),
     bankFrom:isK(s.bankFrom)?s.bankFrom:"",bank0:num(s.bank0,-999,999,0),presets:[],cycle:[],labels:[],
-    pOt:num(s.pOt,0,300,0),pNight:num(s.pNight,0,300,0),pSun:num(s.pSun,0,300,0),pHol:num(s.pHol,0,300,0)};
+    pOt:num(s.pOt,0,300,0),pNight:num(s.pNight,0,300,0),pSun:num(s.pSun,0,300,0),pHol:num(s.pHol,0,300,0),
+    country:typeof s.country==="string"&&(window.IWORK_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null};
+  if(s.patron&&typeof s.patron==="object"){if(typeof s.patron.c==="string")o.patron={c:s.patron.c.slice(0,40)};else if(/^\d\d-\d\d$/.test(s.patron.d))o.patron={d:s.patron.d,n:String(s.patron.n||"").slice(0,40)};}
   (Array.isArray(s.presets)?s.presets:[]).forEach(p=>{if(p&&okT(p.t)&&o.presets.length<MAX_PRESETS){const x={n:String(p.n||t("Turno")).trim().slice(0,16)||t("Turno"),t:p.t};const d=num(p.d,0.5,16,0);if(d)x.d=d;
     if(okT(p.t2)){x.t2=p.t2;const d2=num(p.d2,0.5,16,0);if(d2)x.d2=d2;}o.presets.push(x);}});
   const seen=new Set();(Array.isArray(s.labels)?s.labels:[]).forEach(l=>{if(!l||o.labels.length>=MAX_LABELS)return;const id=String(l.id||"").slice(0,16),n=String(l.n||"").trim().slice(0,24);if(id&&n&&!seen.has(id)){seen.add(id);o.labels.push({id,n});}});
@@ -814,12 +841,33 @@ document.addEventListener("click",ev=>{const t=ev.target.closest("[data-paytoggl
 function slot(s){const h=toMin(s)/60;return h>=4&&h<12?"m":h>=12&&h<20?"p":"n";}
 const tint=e=>e.k==="w"?slot(e.s):e.k==="f"?"f":"x";
 function easter(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da);}
+function easterO(y){const a=y%4,b=y%7,c=y%19,d=(19*c+15)%30,e=(2*a+4*b-d+34)%7,mo=Math.floor((d+e+114)/31),da=((d+e+114)%31)+1;return addDays(new Date(y,mo-1,da),13);} // Pasqua ortodossa (1900–2099)
+function ruleDate(y,r){let m;
+  if((m=/^(\d\d)-(\d\d)$/.exec(r)))return new Date(y,+m[1]-1,+m[2]);
+  if((m=/^e(-?\d+)$/.exec(r)))return addDays(easter(y),+m[1]);
+  if((m=/^o(-?\d+)$/.exec(r)))return addDays(easterO(y),+m[1]);
+  if((m=/^n(\d\d)\/(\d)\/(-?\d)$/.exec(r))){const mo=+m[1]-1,wd=+m[2],n=+m[3];
+    if(n>0){const f=new Date(y,mo,1);return addDays(f,(wd-f.getDay()+7)%7+7*(n-1));}const l=new Date(y,mo+1,0);return addDays(l,-((l.getDay()-wd+7)%7));}
+  if((m=/^a(\d\d)-(\d\d)\/(\d)$/.exec(r))){const f=new Date(y,+m[1]-1,+m[2]);return addDays(f,(+m[3]-f.getDay()+7)%7);}
+  if((m=/^b(\d\d)-(\d\d)\/(\d)$/.exec(r))){const f=new Date(y,+m[1]-1,+m[2]);return addDays(f,-((f.getDay()-+m[3]+7)%7));}
+  return null;}
 const holCache={};
-function holidays(y){if(holCache[y])return holCache[y];const h={};
-  [["01-01","Capodanno"],["01-06","Epifania"],["04-25","Liberazione"],["05-01","Festa del Lavoro"],["06-02","Festa della Repubblica"],["08-15","Ferragosto"],["11-01","Ognissanti"],["12-08","Immacolata"],["12-25","Natale"],["12-26","Santo Stefano"]].forEach(x=>h[y+"-"+x[0]]=x[1]);
-  if(y>=2026)h[y+"-10-04"]="San Francesco";
-  const e=easter(y);h[keyOf(e)]="Pasqua";h[keyOf(addDays(e,1))]="Lunedì dell'Angelo";return holCache[y]=h;}
-const holiday=k=>{const h=holidays(+k.slice(0,4))[k];return h?t(h):h;};
+function patronOf(){const P=S.settings.patron,C=ctry();if(!P)return null;
+  if(P.c){const x=(C.patrons||[]).find(p=>p[0]===P.c);return x?{r:x[1],n:x[2]}:null;}return P.d?{r:P.d,n:P.n}:null;}
+function holidays(y){const C=ctry(),key=y+"|"+S.settings.country+"|"+S.settings.region+"|"+JSON.stringify(S.settings.patron)+"|"+LANG;
+  if(holCache[key])return holCache[key];const h={},obs=[];
+  const add=(d,nm)=>{const k=keyOf(d);h[k]=h[k]&&h[k]!==nm?h[k]+" · "+nm:nm;};
+  const addList=L=>(L||[]).forEach(x=>{const o=x[2]||{};if(o.from&&y<o.from||o.to&&y>o.to)return;const d=ruleDate(y,x[0]);if(!d||d.getFullYear()!==y)return;
+    const nm=locName(x[1]);add(d,nm);if(o.obs)obs.push([d,nm,o.obs]);});
+  addList(C.hol);const R=C.reg&&C.reg[S.settings.region];if(R)addList(R.hol);
+  const P=patronOf();if(P){const d=ruleDate(y,P.r);if(d)add(d,P.n?t("{x}, festa patronale",{x:P.n}):t("Festa patronale"));}
+  /* giorni di recupero quando la festa cade nel fine settimana */
+  obs.sort((a,b)=>a[0]-b[0]).forEach(([d,nm,mode])=>{const w=d.getDay();if(w!==0&&w!==6)return;let x;
+    if(mode==="near")x=addDays(d,w===6?-1:1);
+    else{x=addDays(d,1);while(x.getDay()===0||x.getDay()===6||h[keyOf(x)])x=addDays(x,1);}
+    add(x,t("{x} (recupero)",{x:nm}));});
+  return holCache[key]=h;}
+const holiday=k=>holidays(+k.slice(0,4))[k];
 function workList(){return Object.keys(S.days).filter(k=>S.days[k].k==="w").sort().map(k=>Object.assign({k},info(k,S.days[k])));}
 /* ferie, permessi e banca ore */
 const todayK=()=>keyOf(new Date());
@@ -897,14 +945,14 @@ function render(){
   const y=view.getFullYear(),m=view.getMonth(),today=keyOf(new Date());
   $("title").innerHTML=MONTHS[m]+" <span>"+y+"</span>";
   $("footRule").textContent=t("Sabato {s} ore, gli altri giorni {w} ore.",{s:hrs(S.settings.sat),w:hrs(S.settings.wd)});
-  document.querySelector(".dow").innerHTML=[1,2,3,4,5,6,0].map(i=>"<div>"+D3[i]+"</div>").join("");
+  document.querySelector(".dow").innerHTML=weekOrder().map(i=>"<div>"+D3[i]+"</div>").join("");
   renderChips();
   const list=workList(),flags=restFlags(list),LM=lblMap();
   const lv=listView();$("vCal").setAttribute("aria-pressed",!lv);$("vList").setAttribute("aria-pressed",lv);
   $("grid").hidden=lv;document.querySelector(".dow").hidden=lv;$("list").hidden=!lv;$("searchBox").hidden=!lv;
   if(lv)renderList(y,m,flags,LM);
   const first=monday(new Date(y,m,1)),last=new Date(y,m+1,0);let h="";
-  for(let d=first;d<=last||d.getDay()!==1;d=addDays(d,1)){
+  for(let d=first;d<=last||d.getDay()!==WS;d=addDays(d,1)){
     const k=keyOf(d),e=S.days[k],hol=holiday(k);
     let body="";
     if(e&&e.k==="w"){const i=info(k,e);
@@ -943,7 +991,7 @@ function monthData(y,m,list,flags){
   list.forEach(x=>{if(!x.k.startsWith(ym))return;const e=S.days[x.k];o.tot+=x.dur;o.n++;if(e.ot>0)o.ot+=e.ot;o.night+=x.night;const dow=dateOf(x.k).getDay();if(dow===6)o.sat++;if(dow===0||holiday(x.k))o.fest++;});
   o.permH=0;for(const k in S.days){const e=S.days[k];if(e.k!=="w"&&k.startsWith(ym)){o.cnt[e.k]++;if(e.k==="p")o.permH+=permH(k,e);}if(e.k==="f"&&k.startsWith(y+"-"))o.ferieYear++;}
   o.leave=leaveYear(y);
-  for(let d=first;d<=last||d.getDay()!==1;d=addDays(d,1)){const k=keyOf(d),e=S.days[k];if(d.getDay()===1)o.weeks.push({from:d,h:0});if(e&&e.k==="w")o.weeks[o.weeks.length-1].h+=info(k,e).dur;}
+  for(let d=first;d<=last||d.getDay()!==WS;d=addDays(d,1)){const k=keyOf(d),e=S.days[k];if(d.getDay()===WS)o.weeks.push({from:d,h:0});if(e&&e.k==="w")o.weeks[o.weeks.length-1].h+=info(k,e).dur;}
   Object.keys(flags).filter(k=>k.startsWith(ym)).sort().forEach(k=>{const d=dateOf(k),p=dateOf(flags[k].prev);o.warns.push(t("Solo {h} ore di riposo tra {a} e {b} (il minimo è {n}).",{h:hrs(Math.max(0,flags[k].gap)),a:fWDd(p),b:fWDd(d),n:RULES.rest}));});
   let run=0,runStart=null;for(let d=addDays(new Date(y,m,1),-7);d<=last;d=addDays(d,1)){const e=S.days[keyOf(d)];if(e&&e.k==="w"){if(!run)runStart=d;run++;if(run===7&&d.getMonth()===m)o.warns.push(t("Sette o più giorni di lavoro di fila dal {d}.",{d:fDMs(runStart)}));}else run=0;}
   o.weeks.forEach(x=>{if(x.h>RULES.maxWeek)o.warns.push(t("Settimana del {d}: {h} ore, sopra le {n}.",{d:fDMs(x.from),h:hrs(x.h),n:RULES.maxWeek}));});
@@ -1001,7 +1049,7 @@ function monthPdf(y,m){
   // calendar
   const first=monday(new Date(y,m,1)),last=new Date(y,m+1,0),rows=Math.round((monday(last)-first)/604800000)+1,gap=4;
   const cw=(W-2*M-6*gap)/7,ch=(gridBottom-gridTop-(rows-1)*gap)/rows;
-  [1,2,3,4,5,6,0].forEach((d,i)=>text(M+i*(cw+gap)+7,91,D3[d].toUpperCase(),0,7,MUTED));
+  weekOrder().forEach((d,i)=>text(M+i*(cw+gap)+7,91,D3[d].toUpperCase(),0,7,MUTED));
   for(let i=0;i<rows*7;i++){const d=addDays(first,i),k=keyOf(d),e=S.days[k],x=M+(i%7)*(cw+gap),yt=gridTop+Math.floor(i/7)*(ch+gap);
     if(d.getMonth()!==m){text(x+7,yt+14,String(d.getDate()),0,9,FAINT);continue;}
     const hol=holiday(k),tt=e?tint(e):null,fg=tt?TINT[tt][1]:INK;
@@ -1158,7 +1206,29 @@ $("stPresets").addEventListener("click",ev=>{const b=ev.target.closest("[data-de
 $("stAdd").onclick=()=>{if(stDraft.length>=MAX_PRESETS)return;const last=stDraft[stDraft.length-1];let t="08:00";
   if(last&&okT(last.t)){const m=(toMin(last.t)+60*(+last.d||S.settings.wd))%1440;t=pad(Math.floor(m/60))+":"+pad(m%60);}
   stDraft.push({n:"",t,d:""});renderPresets();commitPresets();const el=$("pn-"+(stDraft.length-1));if(el)el.focus();};
-function openSettings(focus){renderUpInfo();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
+function curSym(){try{return (0).toLocaleString(LOC,{style:"currency",currency:CUR}).replace(/[\d\s.,\u00a0\u202f]/g,"")||CUR;}catch(e){return CUR;}}
+function renderCountryUI(){const s=S.settings,C=ctry(),opt=(v,l,sel)=>'<option value="'+esc(v)+'"'+(sel?" selected":"")+">"+esc(l)+"</option>";
+  $("stCountry").innerHTML=Object.keys(CTRYS).map(c=>[c,locName(CTRYS[c].n)]).sort((a,b)=>a[1].localeCompare(b[1],LOC)).map(x=>opt(x[0],x[1],x[0]===s.country)).join("");
+  const regs=Object.keys(C.reg||{});$("stRegBox").hidden=!regs.length;
+  $("stRegion").innerHTML=opt("",t("Nessuna in particolare"),!s.region)+regs.map(r=>opt(r,locName(C.reg[r].n),r===s.region)).join("");
+  const pats=C.patrons||[];$("stPatBox").hidden=!C.patrons;const P=s.patron;
+  $("stPatron").innerHTML=opt("",t("Nessuno"),!P)+pats.map(p=>opt("c:"+p[0],p[0]+" – "+p[2],P&&P.c===p[0])).join("")+opt("d",t("Un'altra data…"),P&&!!P.d);
+  $("stPatCustom").hidden=!(P&&P.d);
+  $("stPatMon").innerHTML=MONTHS.map((m,i)=>opt(pad(i+1),m,P&&P.d&&P.d.slice(0,2)===pad(i+1))).join("");
+  if(P&&P.d)$("stPatDay").value=+P.d.slice(3);
+  $("stPNightL").textContent=t("Notturno {r}",{r:nightTxt()});
+  $("stRules").textContent=t("{c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.",{c:locName(C.n),r:RULES.rest,w:RULES.maxWeek,k:RULES.weeklyRest,d:DAYS[WS]});
+  $("stRateU").textContent=curSym()+"/h";}
+function commitCountry(ev){const s=S.settings,id=ev.target.id;let country=s.country,region=s.region,patron=s.patron;
+  if(id==="stCountry"){country=$("stCountry").value;region="";patron=null;}
+  else if(id==="stRegion")region=$("stRegion").value;
+  else{const v=$("stPatron").value;
+    if(!v)patron=null;else if(v.startsWith("c:"))patron={c:v.slice(2)};
+    else{const day=Math.max(1,Math.min(31,+$("stPatDay").value||1)),mo=$("stPatMon").value||"01";patron={d:mo+"-"+pad(day),n:""};$("stPatDay").value=day;}}
+  S.settings=normSettings(Object.assign({},s,{country,region,patron}));applyCountry();mark();renderCountryUI();render();}
+["stCountry","stRegion","stPatron","stPatDay","stPatMon"].forEach(id=>$(id).addEventListener("change",ev=>{ev.stopPropagation();commitCountry(ev);}));
+["stPatDay"].forEach(id=>$(id).addEventListener("input",ev=>ev.stopPropagation()));
+function openSettings(focus){renderUpInfo();renderCountryUI();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
   $("stFerie").value=s.ferie||"";$("stPerm").value=s.perm||"";$("stWeek").value=s.week;$("stBankFrom").value=s.bankFrom||bankStart();$("stBank0").value=s.bank0||"";
   $("stPOt").value=s.pOt||"";$("stPNight").value=s.pNight||"";$("stPSun").value=s.pSun||"";$("stPHol").value=s.pHol||"";$("th-"+getTheme()).checked=true;openDlg($("st"));
   if(focus)setTimeout(()=>{const el=$(focus);if(el){el.scrollIntoView({block:"center"});el.focus();}},120);}
@@ -1183,7 +1253,7 @@ function commitSettings(){stT=null;const s=S.settings,oldWd=s.wd,oldSat=s.sat,wd
   S.settings=normSettings(Object.assign({},s,{wd,sat,rate:$("stRate").value,week,ferie:$("stFerie").value,perm:$("stPerm").value,bankFrom:autoFrom?"":bf,bank0:$("stBank0").value,
     pOt:$("stPOt").value,pNight:$("stPNight").value,pSun:$("stPSun").value,pHol:$("stPHol").value}));
   mark("settings","s");render();}
-$("stForm").addEventListener("input",ev=>{if(ev.target.name==="theme"||ev.target.id==="stLang")return;clearTimeout(stT);stT=setTimeout(commitSettings,400);});
+$("stForm").addEventListener("input",ev=>{if(ev.target.name==="theme"||/^st(Lang|Country|Region|Patron|PatDay|PatMon)$/.test(ev.target.id))return;clearTimeout(stT);stT=setTimeout(commitSettings,400);});
 $("st").addEventListener("close",()=>{if(stT){clearTimeout(stT);commitSettings();}});
 $("stForm").addEventListener("submit",ev=>{ev.preventDefault();$("st").close();});
 
@@ -1295,7 +1365,7 @@ $("cyAdd").onclick=()=>{if(cyDraft.length>=12)return;const last=cyDraft[cyDraft.
 $("cycleBtn").onclick=()=>{const P=S.settings.presets;
   cyDraft=S.settings.cycle.length?S.settings.cycle.map(c=>({v:c.v==="r"||+c.v.slice(1)<P.length?c.v:"p0",c:c.c})):(P.length>1?[{v:"p0",c:5},{v:"r",c:2},{v:"p1",c:5},{v:"r",c:2}]:[{v:"p0",c:5},{v:"r",c:2}]);
   const t=new Date(),f1=new Date(view.getFullYear(),view.getMonth(),1),isNow=view.getFullYear()===t.getFullYear()&&view.getMonth()===t.getMonth();
-  $("cyFrom").value=keyOf(isNow?addDays(monday(t),7):f1.getDay()===1?f1:addDays(monday(f1),7));
+  $("cyFrom").value=keyOf(isNow?addDays(monday(t),7):f1.getDay()===WS?f1:addDays(monday(f1),7));
   $("cyWeeks").value=4;cyWk();cyRender();openDlg($("cy"));};
 function cyWk(){const w=+$("cyWeeks").value||4;$("cyWkOut").textContent=tn(w,"{n} settimana","{n} settimane");$("cyWkMinus").disabled=w<=1;$("cyWkPlus").disabled=w>=52;}
 $("cyWkMinus").onclick=()=>{$("cyWeeks").value=Math.max(1,(+$("cyWeeks").value||4)-1);cyWk();cySummary();};
@@ -1348,7 +1418,7 @@ async function shRender(){const mon=shMonday(),sun=addDays(mon,6);
   $("shRel").textContent=shOff===0?t("Questa settimana"):shOff===1?t("Settimana prossima"):shOff===-1?t("Settimana scorsa"):shOff>1?tn(shOff,"Tra {n} settimana","Tra {n} settimane"):tn(-shOff,"{n} settimana fa","{n} settimane fa");
   $("shNow").hidden=shOff===0;
   try{await document.fonts.load('700 40px Geist');}catch(e){}shCanvas=weekCanvas(mon);$("shImg").src=shCanvas.toDataURL("image/png");}
-$("shareBtn").onclick=()=>{const t=new Date();shOff=mode==="cal"&&(view.getFullYear()!==t.getFullYear()||view.getMonth()!==t.getMonth())?Math.round((monday(new Date(view.getFullYear(),view.getMonth(),1))-monday(t))/6048e5)+(new Date(view.getFullYear(),view.getMonth(),1).getDay()===1?0:1):0;shRender();openDlg($("sh"));};
+$("shareBtn").onclick=()=>{const t=new Date();shOff=mode==="cal"&&(view.getFullYear()!==t.getFullYear()||view.getMonth()!==t.getMonth())?Math.round((monday(new Date(view.getFullYear(),view.getMonth(),1))-monday(t))/6048e5)+(new Date(view.getFullYear(),view.getMonth(),1).getDay()===WS?0:1):0;shRender();openDlg($("sh"));};
 $("shPrev").onclick=()=>{shOff--;shRender();};
 $("shNext").onclick=()=>{shOff++;shRender();};
 $("shNow").onclick=()=>{shOff=0;shRender();};
@@ -1417,7 +1487,7 @@ $("resFile").addEventListener("change",()=>{const f=$("resFile").files[0];if(!f)
   r.readAsText(f);});
 $("rcCancel").onclick=()=>{rcData=null;$("rc").close();};
 $("rcGo").onclick=()=>{if(!rcData)return;const nd=rcData.nd,keys=new Set(Object.keys(S.days).concat(Object.keys(nd)));
-  if(rcData.settings){S.settings=normSettings(rcData.settings);mark("settings","s");}
+  if(rcData.settings){S.settings=normSettings(rcData.settings);applyCountry();mark("settings","s");}
   $("rc").close();rcData=null;apply([...keys].map(k=>[k,nd[k]||null]),tn(Object.keys(nd).length,"Copia caricata: {n} giornata.","Copia caricata: {n} giornate."));};
 
 /* ---------- aggiornamenti ---------- */
@@ -1466,9 +1536,11 @@ if(canCheck()){
 function loadLang(l){return new Promise(res=>{if(l==="it"||I18N[l])return res();const sc=document.createElement("script");sc.src="lang/"+l+".js?v="+APP_VERSION;sc.onload=res;sc.onerror=res;document.head.appendChild(sc);});}
 async function setLang(l){if(!LANGS[l])l="it";await loadLang(l);if(l!=="it"&&!I18N[l])l="it";
   LANG=l;LOC=LANGS[l].loc;try{localStorage.setItem("iwork-lang",l);}catch(e){}
-  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();}
+  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();if($("st").open)renderCountryUI();}
 window.iworkSetLang=setLang;
+window.iworkDebug={holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
+applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG]){LANG="it";LOC="it-IT";}setNames();translateDom();
   setStatus();render();bkRender();})();
 setInterval(()=>renderNext(workList()),30000);
