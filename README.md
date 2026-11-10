@@ -20,6 +20,8 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - **Turni spezzati**: due fasce nello stesso giorno, per esempio 8–12 e 16–20, anche come turni rapidi.
 - **Etichette**: reparti, macchinari o postazioni che crei una volta e scegli con un tocco in ogni giorno.
 - **Stima paga** (solo per te): paga oraria e maggiorazioni per straordinari, notturno, domenica e festivi. Gli importi si possono nascondere e non compaiono mai nel PDF né nelle immagini condivise.
+- **Reperibilità**: in qualsiasi giorno, anche di riposo, con orario d'inizio e durata. Le ore di intervento contano come lavorate e nella stima paga valgono come straordinario; l'indennità per ogni reperibilità si imposta nella stima paga.
+- **Secondo lavoro**: nome, durata abituale e paga oraria propri. I suoi turni compaiono come seconda riga negli stessi giorni, con turni rapidi dedicati, e si contano a parte: non toccano banca ore, ferie e avvisi del lavoro principale.
 
 **Anno**
 - Totale ore e turni dell'anno, grafico mese per mese e tabella con turni, ore, extra, ferie, permessi e banca ore.
@@ -31,17 +33,21 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane.
 - **Ripeti l'ultima settimana**.
 - **Condividi la settimana**: qualsiasi settimana, passata o futura, come immagine pronta da mandare oppure come testo da incollare.
-- **PDF del mese** a scelta, pronto da stampare.
+- **PDF del mese** a scelta, pronto da stampare, del lavoro principale o del secondo lavoro.
+- **Esporta nel calendario**: un file .ics per Google Calendar, il Calendario di Apple e Outlook, con periodo, contenuto e promemoria a scelta. Riesportando lo stesso periodo i turni si aggiornano invece di duplicarsi.
 - **Backup**: "Salva una copia dei turni" crea un file con turni e impostazioni da tenere al sicuro; "Carica una copia" li recupera, dopo una conferma. Un pallino sul pulsante ⋯ ricorda di salvare una copia se l'ultima ha più di 30 giorni.
 
-**Impostazioni** (ogni modifica si salva da sola, anche nella scheda del giorno)
-- Durata dei turni (8 ore, 6 il sabato).
+**Ore e contratto** (in Strumenti; ogni modifica si salva da sola, anche nella scheda del giorno)
+- Orario di lavoro: durata dei turni (8 ore, 6 il sabato), regole del paese (riposo minimo, media settimanale, fascia notturna) adattabili al proprio contratto, reperibilità.
 - Ferie (giorni) e permessi (ore) che ti spettano all'anno.
 - Banca ore: ore settimanali da contratto, data di partenza e saldo iniziale.
-- Regole del paese (riposo minimo, media settimanale, fascia notturna) adattabili al proprio contratto.
-- Paga oraria e maggiorazioni, tema automatico, chiaro o scuro, aggiornamenti.
+- Stima paga: paga oraria, maggiorazioni e indennità di reperibilità.
+- Secondo lavoro.
 
-Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in italiano e inglese (le traduzioni sono nella cartella `lang/`).
+**Impostazioni**
+- Paese e festività, lingua, tema automatico, chiaro o scuro, aggiornamenti.
+
+Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in 23 lingue (le traduzioni sono nella cartella `lang/`).
 
 ## Dove sono i dati
 

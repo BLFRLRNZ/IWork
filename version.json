@@ -1,12 +1,12 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Più ordine: orario di lavoro, ferie e permessi, banca ore e stima paga ora sono in Strumenti. In Impostazioni restano paese, lingua, aspetto e aggiornamenti.",
-    "en": "Tidier: working hours, holiday and leave, hour bank and pay estimate are now in Tools. Settings keep country, language, appearance and updates.",
-    "fr": "Plus d'ordre : horaires, congés et absences, banque d'heures et estimation de la paie sont maintenant dans Outils.",
-    "de": "Aufgeräumter: Arbeitszeit, Urlaub, Stundenkonto und Lohnschätzung sind jetzt unter Werkzeuge.",
-    "es": "Más orden: horario, vacaciones y permisos, bolsa de horas y estimación de nómina están ahora en Herramientas.",
-    "pt": "Mais arrumado: horário, férias e dispensas, banco de horas e estimativa de salário estão agora em Ferramentas."
+    "it": "Reperibilità e secondo lavoro, con conti e paga separati. Nuovo: esporta i turni in Google Calendar, Apple Calendario e Outlook.",
+    "en": "On-call and a second job, with separate totals and pay. New: export your shifts to Google Calendar, Apple Calendar and Outlook.",
+    "fr": "Astreintes et deuxième emploi, avec comptes et paie séparés. Nouveau : exportez vos postes vers Google Agenda, Calendrier d'Apple et Outlook.",
+    "de": "Bereitschaft und Zweitjob, mit getrennten Summen und Lohn. Neu: Schichten in Google Kalender, Apple Kalender und Outlook exportieren.",
+    "es": "Guardias y segundo empleo, con cuentas y sueldo aparte. Nuevo: exporta tus turnos a Google Calendar, Calendario de Apple y Outlook.",
+    "pt": "Prevenção e segundo emprego, com contas e salário à parte. Novo: exporte os turnos para Google Calendar, Calendário da Apple e Outlook."
   }
 }
