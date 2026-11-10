@@ -18,12 +18,12 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - **Ferie e permessi residui**: usati, programmati e rimasti, con avviso quando stai per finirli.
 - **Banca ore**: ore lavorate meno ore da contratto, giorno per giorno fino a oggi. Ferie, permessi, malattia, domeniche e festivi non contano come ore mancanti.
 
-**Strumenti**
+**Strumenti** (pulsante ⋯ in alto)
 - **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane.
 - **Ripeti l'ultima settimana**.
 - **Condividi la settimana**: qualsiasi settimana, passata o futura, come immagine pronta da mandare oppure come testo da incollare.
 - **PDF del mese** a scelta, pronto da stampare.
-- **Backup e ripristino**.
+- **Backup**: "Salva una copia dei turni" crea un file con turni e impostazioni da tenere al sicuro; "Carica una copia" li recupera, dopo una conferma. Un pallino sul pulsante ⋯ ricorda di salvare una copia se l'ultima ha più di 30 giorni.
 
 **Impostazioni**
 - Durata dei turni (8 ore, 6 il sabato) e fino a 12 turni rapidi, ognuno con orario e, se serve, durata propria.
@@ -35,7 +35,7 @@ Installabile sul telefono, funziona anche offline e cerca da sola gli aggiorname
 
 ## Dove sono i dati
 
-I turni restano nel browser del dispositivo che usi (`localStorage`). Non c'è nessun server. Per spostarli su un altro dispositivo usa **Scarica backup** e **Ripristina backup**.
+I turni restano nel browser del dispositivo che usi (`localStorage`). Non c'è nessun server. Per non perderli e per spostarli su un altro dispositivo usa **Strumenti → Salva una copia dei turni** e poi **Carica una copia**.
 
 ## Usarla
 
