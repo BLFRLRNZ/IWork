@@ -801,7 +801,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.11.0";
+const APP_VERSION="1.12.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -896,6 +896,8 @@ function ruleDate(y,r){let m;
     if(n>0){const f=new Date(y,mo,1);return addDays(f,(wd-f.getDay()+7)%7+7*(n-1));}const l=new Date(y,mo+1,0);return addDays(l,-((l.getDay()-wd+7)%7));}
   if((m=/^a(\d\d)-(\d\d)\/(\d)$/.exec(r))){const f=new Date(y,+m[1]-1,+m[2]);return addDays(f,(+m[3]-f.getDay()+7)%7);}
   if((m=/^b(\d\d)-(\d\d)\/(\d)$/.exec(r))){const f=new Date(y,+m[1]-1,+m[2]);return addDays(f,-((f.getDay()-+m[3]+7)%7));}
+  if((m=/^s(\d\d)-(\d\d)\/(\d)\/(-?\d)$/.exec(r))){const f=new Date(y,+m[1]-1,+m[2]);return f.getDay()===+m[3]?addDays(f,+m[4]):f;} // spostata se cade nel giorno W
+  if((m=/^\?(\d\d)-(\d\d)\/(\d):(.+)$/.exec(r))){const f=new Date(y,+m[1]-1,+m[2]);return f.getDay()===+m[3]?f:ruleDate(y,m[4]);} // quella data se cade nel giorno W, altrimenti l'altra regola
   return null;}
 const holCache={};
 function patronOf(){const P=S.settings.patron,C=ctry();if(!P)return null;
@@ -903,8 +905,8 @@ function patronOf(){const P=S.settings.patron,C=ctry();if(!P)return null;
 function holidays(y){const C=ctry(),key=y+"|"+S.settings.country+"|"+S.settings.region+"|"+JSON.stringify(S.settings.patron)+"|"+LANG;
   if(holCache[key])return holCache[key];const h={},obs=[];
   const add=(d,nm)=>{const k=keyOf(d);h[k]=h[k]&&h[k]!==nm?h[k]+" · "+nm:nm;};
-  const addList=L=>(L||[]).forEach(x=>{const o=x[2]||{};if(o.from&&y<o.from||o.to&&y>o.to)return;const d=ruleDate(y,x[0]);if(!d||d.getFullYear()!==y)return;
-    const nm=locName(x[1]);add(d,nm);if(o.obs)obs.push([d,nm,o.obs]);});
+  const addList=L=>(L||[]).forEach(x=>{const o=x[2]||{};if(o.from&&y<o.from||o.to&&y>o.to||o.skip&&o.skip.includes(y))return;const d=ruleDate(y,x[0]);if(!d||d.getFullYear()!==y)return;
+    const nm=x[1][LANG]||x[1][C.lang]||x[1].en||locName(x[1]);add(d,nm);if(o.obs)obs.push([d,nm,o.obs]);});
   addList(C.hol);const R=C.reg&&C.reg[S.settings.region];if(R)addList(R.hol);
   const P=patronOf();if(P){const d=ruleDate(y,P.r);if(d)add(d,P.n?t("{x}, festa patronale",{x:P.n}):t("Festa patronale"));}
   /* giorni di recupero quando la festa cade nel fine settimana */
@@ -1637,7 +1639,7 @@ function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
   if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
 
-window.iworkDebug={holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
+window.iworkDebug={holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG]){LANG="it";LOC="it-IT";}setNames();translateDom();

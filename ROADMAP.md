@@ -17,7 +17,7 @@ Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta co
 - [x] 3.3 In Impostazioni si cambiano lingua, paese, regione e regole quando si vuole
 
 ## 4. Paesi (ogni regola controllata su fonti ufficiali)
-- [ ] 4.1 Unione Europea, tutti i 27 paesi
+- [x] 4.1 Unione Europea, tutti i 27 paesi
 - [ ] 4.2 Europa fuori dall'UE: Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco, Liechtenstein
 - [ ] 4.3 Americhe e Oceania: Stati Uniti, Canada, Messico, Brasile, Argentina, Australia, Nuova Zelanda
 
