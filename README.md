@@ -2,6 +2,8 @@
 
 Il calendario dei tuoi turni di lavoro. Scegli solo l'orario d'inizio: la fine si calcola da sola (8 ore, 6 il sabato).
 
+**Versione 2.0**: 41 paesi (Unione Europea, Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco, Liechtenstein, Stati Uniti, Canada, Messico, Brasile, Argentina, Australia, Nuova Zelanda) con le loro regole di lavoro e festività, in 23 lingue. Le festività del 2026 e 2027 sono state controllate paese per paese: vedi [docs/CONTROLLO-FESTIVITA.md](docs/CONTROLLO-FESTIVITA.md).
+
 ## Cosa fa
 
 Al primo avvio una breve procedura chiede lingua (23 lingue: italiano, inglese, francese, tedesco, spagnolo, portoghese e portoghese del Brasile, olandese, polacco, rumeno, bulgaro, croato, ceco, danese, estone, finlandese, greco, ungherese, lettone, lituano, slovacco, sloveno, svedese), paese, zona e durata del turno.

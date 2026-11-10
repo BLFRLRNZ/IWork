@@ -1,12 +1,12 @@
 {
-  "version": "1.17.0",
+  "version": "2.0.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Il PDF del mese ora scrive bene tutte le lettere in ogni lingua, anche greco e cirillico.",
-    "en": "The monthly PDF now prints every letter correctly in every language, including Greek and Cyrillic.",
-    "fr": "Le PDF du mois affiche désormais toutes les lettres dans chaque langue, y compris le grec et le cyrillique.",
-    "de": "Das Monats-PDF zeigt jetzt alle Buchstaben in jeder Sprache richtig an, auch Griechisch und Kyrillisch.",
-    "es": "El PDF del mes ahora muestra bien todas las letras en cada idioma, también griego y cirílico.",
-    "pt": "O PDF do mês agora mostra bem todas as letras em todas as línguas, incluindo grego e cirílico."
+    "it": "iWork 2.0: 41 paesi con le loro regole e festività, 23 lingue, PDF in tutti gli alfabeti. Festività controllate su due anni e schermate provate in ogni lingua.",
+    "en": "iWork 2.0: 41 countries with their own rules and public holidays, 23 languages, PDF in every alphabet. Holidays checked over two years and every language tested on screen.",
+    "fr": "iWork 2.0 : 41 pays avec leurs règles et jours fériés, 23 langues, PDF dans tous les alphabets.",
+    "de": "iWork 2.0: 41 Länder mit eigenen Regeln und Feiertagen, 23 Sprachen, PDF in allen Alphabeten.",
+    "es": "iWork 2.0: 41 países con sus reglas y festivos, 23 idiomas, PDF en todos los alfabetos.",
+    "pt": "iWork 2.0: 41 países com as suas regras e feriados, 23 línguas, PDF em todos os alfabetos."
   }
 }

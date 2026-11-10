@@ -28,5 +28,5 @@ Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta co
 
 ## 6. Controllo e rilascio
 - [x] 6.1 Festività di ogni paese confrontate con le fonti su due anni
-- [ ] 6.2 Ogni lingua provata a schermo, compresi i testi più lunghi
-- [ ] 6.3 Versione 2.0 pubblicata
+- [x] 6.2 Ogni lingua provata a schermo, compresi i testi più lunghi
+- [x] 6.3 Versione 2.0 pubblicata
