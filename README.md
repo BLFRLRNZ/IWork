@@ -13,7 +13,7 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - **Prossimo turno**: conto alla rovescia all'inizio e, mentre sei in turno, quanto manca alla fine.
 - **Totali del mese**: ore, ore extra, ore notturne, sabati, domeniche e festivi, ferie e permessi residui, banca ore.
 - **Avvisi**: meno di 11 ore di riposo, sette giorni di fila, settimane sopra le 48 ore, ferie o permessi oltre quelli spettanti.
-- **Festività del paese** segnate in rosso, con la regione (o il cantone) e il santo patrono o una festa locale. Paesi disponibili: Italia, gli altri 26 dell'Unione Europea, Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco e Liechtenstein.
+- **Festività del paese** segnate in rosso, con la regione (o il cantone) e il santo patrono o una festa locale. Paesi disponibili: Italia, gli altri 26 dell'Unione Europea, Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco, Liechtenstein, Stati Uniti, Canada, Messico, Brasile, Argentina, Australia e Nuova Zelanda (41 paesi).
 - **Vista calendario o elenco**: nell'elenco leggi note ed etichette per intero e puoi **cercare** in tutte le note e le etichette, di qualsiasi mese.
 - **Turni spezzati**: due fasce nello stesso giorno, per esempio 8–12 e 16–20, anche come turni rapidi.
 - **Etichette**: reparti, macchinari o postazioni che crei una volta e scegli con un tocco in ogni giorno.

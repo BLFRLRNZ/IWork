@@ -1,8 +1,8 @@
 {
-  "version": "1.13.0",
+  "version": "1.14.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Nuovi paesi: Svizzera (con i cantoni), Regno Unito, Norvegia, Islanda, San Marino, Monaco e Liechtenstein. Ora puoi aggiungere una festa locale in ogni paese.",
-    "en": "New countries: Switzerland (with cantons), United Kingdom, Norway, Iceland, San Marino, Monaco and Liechtenstein. You can now add a local holiday in every country."
+    "it": "Nuovi paesi: Stati Uniti, Canada (con le province), Messico, Brasile, Argentina, Australia (con gli stati) e Nuova Zelanda.",
+    "en": "New countries: United States, Canada (with provinces), Mexico, Brazil, Argentina, Australia (with states) and New Zealand."
   }
 }

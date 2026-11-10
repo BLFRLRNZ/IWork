@@ -786,8 +786,10 @@ const RULES={rest:11,maxWeek:48,weeklyRest:24,nightFrom:22,nightTo:6};
 const CTRYS=window.IWORK_COUNTRIES||{};
 const ctry=()=>CTRYS[S.settings.country]||CTRYS.IT||{n:{it:"Italia"},cur:"EUR",ws:1,rules:{},hol:[]};
 const locName=n=>!n?"":typeof n==="string"?n:n[LANG]||n.en||n[Object.keys(n)[0]];
+/* limite settimanale di legge per l'anno in corso (alcuni paesi lo riducono anno per anno) */
+function lawWeek(r){let w=r.maxWeek||48;const by=r.maxWeekBy||{},y=new Date().getFullYear();Object.keys(by).sort().forEach(k=>{if(y>=+k)w=by[k];});return w;}
 function applyCountry(){const C=ctry(),r=C.rules||{},u=S.settings.rules||{};
-  RULES.rest=r.rest||11;RULES.maxWeek=r.maxWeek||48;RULES.weeklyRest=r.weeklyRest||24;
+  RULES.rest=r.rest||11;RULES.maxWeek=lawWeek(r);RULES.adv=!!r.adv;RULES.weeklyRest=r.weeklyRest||24;
   const nt=r.night||[22,6];RULES.nightFrom=nt[0];RULES.nightTo=nt[1];
   if(u.rest!=null)RULES.rest=u.rest;if(u.maxWeek!=null)RULES.maxWeek=u.maxWeek;if(u.nf!=null)RULES.nightFrom=u.nf;if(u.nt!=null)RULES.nightTo=u.nt;
   CUR=C.cur||"EUR";WS=C.ws==null?1:C.ws;for(const k in holCache)delete holCache[k];}
@@ -802,7 +804,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.13.0";
+const APP_VERSION="1.14.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -909,13 +911,16 @@ function holidays(y){const C=ctry(),key=y+"|"+S.settings.country+"|"+S.settings.
   const add=(d,nm)=>{const k=keyOf(d);h[k]=h[k]&&h[k]!==nm?h[k]+" · "+nm:nm;};
   const addList=L=>(L||[]).forEach(x=>{const o=x[2]||{};if(o.from&&y<o.from||o.to&&y>o.to||o.skip&&o.skip.includes(y))return;const d=ruleDate(y,x[0]);if(!d||d.getFullYear()!==y)return;
     const nm=x[1][LANG]||x[1][C.lang]||x[1].en||locName(x[1]);add(d,nm);if(o.obs)obs.push([d,nm,o.obs]);});
-  const R=C.reg&&C.reg[S.settings.region];if(!(R&&R.replace))addList(C.hol);if(R)addList(R.hol);
+  const R=C.reg&&C.reg[S.settings.region],lists=[];if(!(R&&R.replace))lists.push(C.hol);if(R)lists.push(R.hol);lists.forEach(addList);
+  /* una festa di sabato 1° gennaio dell'anno dopo si recupera venerdì 31 dicembre */
+  lists.forEach(L=>(L||[]).forEach(x=>{const o=x[2]||{};if(o.obs!=="near"||x[0]!=="01-01"||o.from&&y+1<o.from||o.to&&y+1>o.to)return;const d=new Date(y+1,0,1);
+    if(d.getDay()===6)add(new Date(y,11,31),t("{x} (recupero)",{x:x[1][LANG]||x[1][C.lang]||x[1].en}));}));
   const P=patronOf();if(P){const d=ruleDate(y,P.r);if(d)add(d,P.n?t(C.patrons?"{x}, festa patronale":"{x}, festa locale",{x:P.n}):t(C.patrons?"Festa patronale":"Festa locale"));}
   /* giorni di recupero quando la festa cade nel fine settimana */
   obs.sort((a,b)=>a[0]-b[0]).forEach(([d,nm,mode])=>{const w=d.getDay();if(w!==0&&w!==6||mode==="sun"&&w!==0)return;let x;
     if(mode==="near")x=addDays(d,w===6?-1:1);
     else{x=addDays(d,1);while(x.getDay()===0||x.getDay()===6||h[keyOf(x)])x=addDays(x,1);}
-    add(x,t("{x} (recupero)",{x:nm}));});
+    if(mode==="move"){const k=keyOf(d);if(h[k]===nm)delete h[k];add(x,nm);}else add(x,t("{x} (recupero)",{x:nm}));});
   return holCache[key]=h;}
 const holiday=k=>holidays(+k.slice(0,4))[k];
 function workList(){return Object.keys(S.days).filter(k=>S.days[k].k==="w").sort().map(k=>Object.assign({k},info(k,S.days[k])));}
@@ -1269,7 +1274,7 @@ function renderCountryUI(){const s=S.settings,C=ctry(),opt=(v,l,sel)=>'<option v
   if(P&&P.d)$("stPatDay").value=+P.d.slice(3);
   $("stPNightL").textContent=t("Notturno {r}",{r:nightTxt()});
   $("stRRest").value=RULES.rest;$("stRWeek").value=RULES.maxWeek;$("stRNf").value=RULES.nightFrom;$("stRNt").value=RULES.nightTo;$("stRReset").hidden=!S.settings.rules;
-  $("stRules").textContent=t("{c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.",{c:locName(C.n),r:RULES.rest,w:RULES.maxWeek,k:RULES.weeklyRest,d:DAYS[WS]});
+  $("stRules").textContent=RULES.adv?t("{c}: la legge non fissa un riposo minimo tra due turni. L'app avvisa sotto le {r} ore e sopra le {w} ore a settimana. La settimana inizia di {d}.",{c:locName(C.n),r:RULES.rest,w:RULES.maxWeek,d:DAYS[WS]}):t("{c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.",{c:locName(C.n),r:RULES.rest,w:RULES.maxWeek,k:RULES.weeklyRest,d:DAYS[WS]});
   $("stRateU").textContent=curSym()+"/h";}
 function commitCountry(ev){const s=S.settings,id=ev.target.id;let country=s.country,region=s.region,patron=s.patron;
   if(id==="stCountry"){country=$("stCountry").value;region="";patron=null;S.settings.rules=null;}
@@ -1278,7 +1283,7 @@ function commitCountry(ev){const s=S.settings,id=ev.target.id;let country=s.coun
     if(!v)patron=null;else if(v.startsWith("c:"))patron={c:v.slice(2)};
     else{const day=Math.max(1,Math.min(31,+$("stPatDay").value||1)),mo=$("stPatMon").value||"01";patron={d:mo+"-"+pad(day),n:""};$("stPatDay").value=day;}}
   S.settings=normSettings(Object.assign({},s,{country,region,patron}));applyCountry();mark();renderCountryUI();render();}
-function commitRules(){const C=ctry(),r=C.rules||{},nt=r.night||[22,6],base={rest:r.rest||11,maxWeek:r.maxWeek||48,nf:nt[0],nt:nt[1]},u={};
+function commitRules(){const C=ctry(),r=C.rules||{},nt=r.night||[22,6],base={rest:r.rest||11,maxWeek:lawWeek(r),nf:nt[0],nt:nt[1]},u={};
   [["stRRest","rest"],["stRWeek","maxWeek"],["stRNf","nf"],["stRNt","nt"]].forEach(([id,k])=>{const v=$(id).value;if(v!==""&&+v!==base[k])u[k]=+v;});
   S.settings=normSettings(Object.assign({},S.settings,{rules:Object.keys(u).length?u:null}));applyCountry();mark();renderCountryUI();render();}
 ["stRRest","stRWeek","stRNf","stRNt"].forEach(id=>{$(id).addEventListener("input",ev=>ev.stopPropagation());$(id).addEventListener("change",ev=>{ev.stopPropagation();commitRules();});});
