@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Regeringen kan flytta de flyttbara helgdagarna (17 juni, 17 augusti, 12 oktober, 20 november) och lägga till lediga dagar: här ser du datumen som lagen anger.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Många avtal (awards) ger 10 timmars vila mellan två pass. Vissa helgdagar gäller bara i vissa områden (Royal Show, Regatta, Recreation Day): du kan lägga till din som lokal helgdag.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Varje provins har sin Anniversary Day: finns inte din med, lägg till den som lokal helgdag.",
-"Nessuna|festa": "Ingen"
+"Nessuna|festa": "Ingen",
+"Ore e contratto": "Timmar och avtal",
+"Orario di lavoro": "Arbetstid",
+"Durata dei turni, riposo minimo, ore notturne": "Passlängd, minsta vila, nattimmar",
+"Quanti giorni e quante ore ti spettano": "Hur många dagar och timmar du har rätt till",
+"Ore da contratto e saldo di partenza": "Avtalade timmar och startsaldo",
+"Stima paga": "Löneuppskattning",
+"Paga oraria e maggiorazioni, solo per te": "Timlön och tillägg, bara för dig"
 };

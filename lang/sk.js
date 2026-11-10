@@ -525,5 +525,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Vláda môže presúvať pohyblivé sviatky (17. júna, 17. augusta, 12. októbra, 20. novembra) a pridávať voľné dni: tu vidíš dátumy stanovené zákonom.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Mnohé kolektívne zmluvy (awards) stanovujú 10 h odpočinku medzi zmenami. Niektoré sviatky platia len v určitých oblastiach (Royal Show, Regatta, Recreation Day): môžeš pridať svoj ako miestny sviatok.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Každá provincia má svoj Anniversary Day: ak tvoj v zozname nie je, pridaj ho ako miestny sviatok.",
-"Nessuna|festa": "Žiadny"
+"Nessuna|festa": "Žiadny",
+"Ore e contratto": "Hodiny a zmluva",
+"Orario di lavoro": "Pracovný čas",
+"Durata dei turni, riposo minimo, ore notturne": "Dĺžka zmien, minimálny odpočinok, nočné hodiny",
+"Quanti giorni e quante ore ti spettano": "Koľko dní a hodín ti patrí",
+"Ore da contratto e saldo di partenza": "Hodiny zo zmluvy a počiatočný zostatok",
+"Stima paga": "Odhad mzdy",
+"Paga oraria e maggiorazioni, solo per te": "Hodinová mzda a príplatky, len pre teba"
 };

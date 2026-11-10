@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Η κυβέρνηση μπορεί να μετακινεί τις κινητές αργίες (17 Ιουνίου, 17 Αυγούστου, 12 Οκτωβρίου, 20 Νοεμβρίου) και να προσθέτει ελεύθερες μέρες: εδώ βλέπεις τις ημερομηνίες του νόμου.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Πολλές συμβάσεις (awards) προβλέπουν 10 ώρες ανάπαυσης ανάμεσα σε βάρδιες. Κάποιες αργίες ισχύουν μόνο σε ορισμένες περιοχές (Royal Show, Regatta, Recreation Day): μπορείς να προσθέσεις τη δική σου ως τοπική αργία.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Κάθε επαρχία έχει τη δική της Anniversary Day: αν η δική σου δεν είναι στη λίστα, πρόσθεσέ τη ως τοπική αργία.",
-"Nessuna|festa": "Καμία"
+"Nessuna|festa": "Καμία",
+"Ore e contratto": "Ώρες και σύμβαση",
+"Orario di lavoro": "Ωράριο εργασίας",
+"Durata dei turni, riposo minimo, ore notturne": "Διάρκεια βαρδιών, ελάχιστη ανάπαυση, νυχτερινές ώρες",
+"Quanti giorni e quante ore ti spettano": "Πόσες μέρες και ώρες δικαιούσαι",
+"Ore da contratto e saldo di partenza": "Ώρες σύμβασης και αρχικό υπόλοιπο",
+"Stima paga": "Εκτίμηση μισθού",
+"Paga oraria e maggiorazioni, solo per te": "Ωρομίσθιο και προσαυξήσεις, μόνο για σένα"
 };

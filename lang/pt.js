@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "O governo pode mudar os feriados trasladables (17 de junho, 17 de agosto, 12 de outubro, 20 de novembro) e acrescentar dias não úteis: aqui vê as datas fixadas por lei.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Muitas convenções (awards) preveem 10 horas de descanso entre dois turnos. Alguns feriados só valem em certas zonas (Royal Show, Regatta, Recreation Day): pode adicionar o seu como feriado local.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Cada província tem o seu Anniversary Day: se a sua não estiver na lista, adicione-a como feriado local.",
-"Nessuna|festa": "Nenhum"
+"Nessuna|festa": "Nenhum",
+"Ore e contratto": "Horas e contrato",
+"Orario di lavoro": "Horário de trabalho",
+"Durata dei turni, riposo minimo, ore notturne": "Duração dos turnos, descanso mínimo, horas noturnas",
+"Quanti giorni e quante ore ti spettano": "Quantos dias e horas lhe cabem",
+"Ore da contratto e saldo di partenza": "Horas do contrato e saldo inicial",
+"Stima paga": "Estimativa de salário",
+"Paga oraria e maggiorazioni, solo per te": "Salário por hora e acréscimos, só para si"
 };

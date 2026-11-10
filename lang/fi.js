@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Hallitus voi siirtää siirrettäviä pyhiä (17. kesäkuuta, 17. elokuuta, 12. lokakuuta, 20. marraskuuta) ja lisätä vapaapäiviä: tässä näet lain määräämät päivämäärät.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Monet työehtosopimukset (awards) edellyttävät 10 tunnin lepoa vuorojen välillä. Jotkin pyhät koskevat vain tiettyjä alueita (Royal Show, Regatta, Recreation Day): voit lisätä omasi paikallisena pyhänä.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Jokaisella provinssilla on oma Anniversary Day: jos omasi puuttuu luettelosta, lisää se paikallisena pyhänä.",
-"Nessuna|festa": "Ei mitään"
+"Nessuna|festa": "Ei mitään",
+"Ore e contratto": "Tunnit ja sopimus",
+"Orario di lavoro": "Työaika",
+"Durata dei turni, riposo minimo, ore notturne": "Vuorojen pituus, vähimmäislepo, yötunnit",
+"Quanti giorni e quante ore ti spettano": "Montako päivää ja tuntia sinulle kuuluu",
+"Ore da contratto e saldo di partenza": "Sopimuksen tunnit ja alkusaldo",
+"Stima paga": "Palkka-arvio",
+"Paga oraria e maggiorazioni, solo per te": "Tuntipalkka ja lisät, vain sinulle"
 };

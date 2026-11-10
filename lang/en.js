@@ -442,5 +442,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "The government can move the movable holidays (17 June, 17 August, 12 October, 20 November) and add non-working days: here you see the dates set by law.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Many awards require 10 hours' rest between two shifts. Some holidays apply only in certain areas (Royal Show, Regatta, Recreation Day): you can add yours as a local holiday.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Each province has its own Anniversary Day: if yours is not listed, add it as a local holiday.",
-"Nessuna|festa": "None"
+"Nessuna|festa": "None",
+"Ore e contratto": "Hours and contract",
+"Orario di lavoro": "Working hours",
+"Durata dei turni, riposo minimo, ore notturne": "Shift length, minimum rest, night hours",
+"Quanti giorni e quante ore ti spettano": "How many days and hours you're entitled to",
+"Ore da contratto e saldo di partenza": "Contract hours and starting balance",
+"Stima paga": "Pay estimate",
+"Paga oraria e maggiorazioni, solo per te": "Hourly pay and premiums, just for you"
 };

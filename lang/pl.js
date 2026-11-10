@@ -525,5 +525,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Rząd może przesuwać święta ruchome (17 czerwca, 17 sierpnia, 12 października, 20 listopada) i dodawać dni wolne: tutaj widzisz daty ustalone w ustawie.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Wiele układów (awards) przewiduje 10 h odpoczynku między zmianami. Niektóre święta obowiązują tylko w części kraju (Royal Show, Regatta, Recreation Day): możesz dodać swoje jako święto lokalne.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Każda prowincja ma swój Anniversary Day: jeśli twojej nie ma na liście, dodaj go jako święto lokalne.",
-"Nessuna|festa": "Brak"
+"Nessuna|festa": "Brak",
+"Ore e contratto": "Godziny i umowa",
+"Orario di lavoro": "Czas pracy",
+"Durata dei turni, riposo minimo, ore notturne": "Długość zmian, minimalny odpoczynek, godziny nocne",
+"Quanti giorni e quante ore ti spettano": "Ile dni i godzin ci przysługuje",
+"Ore da contratto e saldo di partenza": "Godziny z umowy i saldo początkowe",
+"Stima paga": "Szacunkowa płaca",
+"Paga oraria e maggiorazioni, solo per te": "Stawka godzinowa i dodatki, tylko dla ciebie"
 };

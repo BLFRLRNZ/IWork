@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Valitsus võib liikuvaid pühi (17. juuni, 17. august, 12. oktoober, 20. november) nihutada ja lisada vabu päevi: siin näed seadusega määratud kuupäevi.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Paljud kollektiivlepingud (awards) näevad ette 10 t puhkust vahetuste vahel. Mõned pühad kehtivad ainult teatud piirkondades (Royal Show, Regatta, Recreation Day): saad enda oma lisada kohaliku pühana.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Igal provintsil on oma Anniversary Day: kui sinu oma loendis pole, lisa see kohaliku pühana.",
-"Nessuna|festa": "Puudub"
+"Nessuna|festa": "Puudub",
+"Ore e contratto": "Tunnid ja leping",
+"Orario di lavoro": "Tööaeg",
+"Durata dei turni, riposo minimo, ore notturne": "Vahetuste pikkus, minimaalne puhkus, öötunnid",
+"Quanti giorni e quante ore ti spettano": "Mitu päeva ja tundi sulle ette nähtud on",
+"Ore da contratto e saldo di partenza": "Lepingu tunnid ja algsaldo",
+"Stima paga": "Palgahinnang",
+"Paga oraria e maggiorazioni, solo per te": "Tunnitasu ja lisatasud, ainult sulle"
 };

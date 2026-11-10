@@ -1,12 +1,12 @@
 {
-  "version": "2.0.1",
+  "version": "2.1.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Quando cambi lingua, i turni rapidi con il nome predefinito (Mattina, Pomeriggio, Notte) si traducono. Quelli che hai rinominato restano come sono.",
-    "en": "When you change language, quick shifts with their default name (Morning, Afternoon, Night) are translated. The ones you renamed stay as they are.",
-    "fr": "Quand vous changez de langue, les postes rapides au nom par défaut (Matin, Après-midi, Nuit) sont traduits. Ceux que vous avez renommés restent tels quels.",
-    "de": "Beim Sprachwechsel werden Schnellschichten mit Standardnamen (Früh, Spät, Nacht) übersetzt. Umbenannte bleiben, wie sie sind.",
-    "es": "Al cambiar de idioma, los turnos rápidos con el nombre por defecto (Mañana, Tarde, Noche) se traducen. Los que renombraste se quedan igual.",
-    "pt": "Ao mudar de língua, os turnos rápidos com o nome predefinido (Manhã, Tarde, Noite) são traduzidos. Os que renomeou ficam como estão."
+    "it": "Più ordine: orario di lavoro, ferie e permessi, banca ore e stima paga ora sono in Strumenti. In Impostazioni restano paese, lingua, aspetto e aggiornamenti.",
+    "en": "Tidier: working hours, holiday and leave, hour bank and pay estimate are now in Tools. Settings keep country, language, appearance and updates.",
+    "fr": "Plus d'ordre : horaires, congés et absences, banque d'heures et estimation de la paie sont maintenant dans Outils.",
+    "de": "Aufgeräumter: Arbeitszeit, Urlaub, Stundenkonto und Lohnschätzung sind jetzt unter Werkzeuge.",
+    "es": "Más orden: horario, vacaciones y permisos, bolsa de horas y estimación de nómina están ahora en Herramientas.",
+    "pt": "Mais arrumado: horário, férias e dispensas, banco de horas e estimativa de salário estão agora em Ferramentas."
   }
 }

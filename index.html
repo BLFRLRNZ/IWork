@@ -543,54 +543,10 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <p class="help" id="stPatHelp">La festa patronale conta come festivo nel calendario, nella banca ore e nella paga. Controlla la data con il tuo contratto o il tuo comune.</p>
     </div>
     <p class="help" id="stNote" hidden></p>
-    <p class="help" id="stRules"></p>
-    <div class="field">
-      <span class="eyebrow">Regole usate dagli avvisi e dai conteggi</span>
-      <div class="rulesgrid">
-        <div class="field"><label class="eyebrow" for="stRRest">Riposo minimo</label><label class="unit"><input type="number" id="stRRest" min="0" max="24" step="0.5"><span>ore</span></label></div>
-        <div class="field"><label class="eyebrow" for="stRWeek">Media massima</label><label class="unit"><input type="number" id="stRWeek" min="1" max="99" step="1"><span>h/sett.</span></label></div>
-        <div class="field"><label class="eyebrow" for="stRNf">Notte dalle</label><label class="unit"><input type="number" id="stRNf" min="0" max="23" step="1"><span>:00</span></label></div>
-        <div class="field"><label class="eyebrow" for="stRNt">Notte fino alle</label><label class="unit"><input type="number" id="stRNt" min="0" max="23" step="1"><span>:00</span></label></div>
-      </div>
-      <p class="help">Il tuo contratto può essere più favorevole della legge: qui puoi adattare le regole.</p>
-      <button type="button" class="linkbtn" id="stRReset" hidden>Torna alle regole del paese</button>
-    </div>
 
     <h3 class="sect">Lingua</h3>
     <select id="stLang" aria-label="Lingua"></select>
 
-
-    <h3 class="sect">Turni</h3>
-    <div class="row">
-      <div class="field"><label class="eyebrow" for="stWd">Ore turno normale</label><input type="number" id="stWd" min="1" max="16" step="0.5"></div>
-      <div class="field"><label class="eyebrow" for="stSat">Ore turno sabato</label><input type="number" id="stSat" min="1" max="16" step="0.5"></div>
-    </div>
-    <p class="help">I turni rapidi e le etichette si creano e si modificano da Strumenti, il pulsante con i tre puntini.</p>
-
-    <h3 class="sect">Ferie e permessi</h3>
-    <div class="row">
-      <div class="field"><label class="eyebrow" for="stFerie">Ferie all'anno</label><label class="unit"><input type="number" id="stFerie" min="0" max="80" step="1" placeholder="0"><span>giorni</span></label></div>
-      <div class="field"><label class="eyebrow" for="stPerm">Permessi all'anno</label><label class="unit"><input type="number" id="stPerm" min="0" max="400" step="0.5" placeholder="0"><span>ore</span></label></div>
-    </div>
-    <p class="help">Quelle che ti spettano in un anno, comprese le residue dell'anno prima. Con 0 il contatore resta spento.</p>
-
-    <h3 class="sect">Banca ore</h3>
-    <div class="field"><label class="eyebrow" for="stWeek">Ore settimanali da contratto</label><label class="unit"><input type="number" id="stWeek" min="1" max="80" step="0.5"><span>ore</span></label></div>
-    <div class="stack">
-      <div class="field"><label class="eyebrow" for="stBankFrom">Conta dal</label><input type="date" id="stBankFrom"></div>
-      <div class="field"><label class="eyebrow" for="stBank0">Saldo di partenza</label><label class="unit"><input type="number" id="stBank0" min="-999" max="999" step="0.5" placeholder="0"><span>ore</span></label></div>
-    </div>
-    <p class="help">La banca ore confronta le ore lavorate con quelle da contratto, giorno per giorno fino a oggi. Ferie, permessi, malattia, domeniche e festivi non contano come ore mancanti.</p>
-
-    <h3 class="sect">Paga</h3>
-    <div class="field"><label class="eyebrow" for="stRate">Paga oraria lorda</label><label class="unit"><input type="number" id="stRate" min="0" step="0.01" placeholder="0,00"><span id="stRateU">€/h</span></label></div>
-    <div class="row">
-      <div class="field"><label class="eyebrow" for="stPOt">Straordinari</label><label class="unit"><input type="number" id="stPOt" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
-      <div class="field"><label class="eyebrow" for="stPNight" id="stPNightL">Notturno 22–06</label><label class="unit"><input type="number" id="stPNight" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
-      <div class="field"><label class="eyebrow" for="stPSun">Domenica</label><label class="unit"><input type="number" id="stPSun" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
-      <div class="field"><label class="eyebrow" for="stPHol">Festivi</label><label class="unit"><input type="number" id="stPHol" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
-    </div>
-    <p class="help">Le maggiorazioni si sommano: un'ora di notte di domenica prende sia il notturno sia il domenicale. Se una festa cade di domenica vale solo il festivo. La stima resta su questo dispositivo e non compare nel PDF né nelle immagini condivise.</p>
 
     <h3 class="sect">Aspetto</h3>
     <div class="seg" role="radiogroup" aria-label="Tema">
@@ -615,6 +571,11 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <h3>Compila i turni</h3>
       <button type="button" class="mi" id="cycleBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-13.7 5.6M4 12a8 8 0 0 1 13.7-5.6"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></span><span><b>Turnazione ciclica</b><small>Uno schema che si ripete, su più settimane</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="repeatBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15h6M13 13l2 2-2 2"/></svg></span><span><b>Ripeti l'ultima settimana</b><small>Copia i turni sulla settimana dopo</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
+      <h3>Ore e contratto</h3>
+      <button type="button" class="mi" id="whBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><span><b>Orario di lavoro</b><small>Durata dei turni, riposo minimo, ore notturne</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
+      <button type="button" class="mi" id="lvBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M7 20c0-4 2-7 5-7s5 3 5 7"/><path d="M12 13V4M12 4c-3 0-5 2-6 4M12 4c3 0 5 2 6 4"/></svg></span><span><b>Ferie e permessi</b><small>Quanti giorni e quante ore ti spettano</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
+      <button type="button" class="mi" id="hbBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10l8-5 8 5M5 10v8M19 10v8M9 10v8M15 10v8M3.5 20h17"/></svg></span><span><b>Banca ore</b><small>Ore da contratto e saldo di partenza</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
+      <button type="button" class="mi" id="pyBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M15 8.6a4 4 0 1 0 0 6.8M7.5 11h6M7.5 13.4h6"/></svg></span><span><b>Stima paga</b><small>Paga oraria e maggiorazioni, solo per te</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <h3>Personalizza</h3>
       <button type="button" class="mi" id="presetsBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></svg></span><span><b>Turni rapidi</b><small>I pulsanti per assegnare un turno con un tocco</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="labelsBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12.6V4.5a1 1 0 0 1 1-1h8.1a1 1 0 0 1 .7.3l7.2 7.2a1 1 0 0 1 0 1.4l-8.1 8.1a1 1 0 0 1-1.4 0l-7.2-7.2a1 1 0 0 1-.3-.7z"/><circle cx="8" cy="8" r="1.4"/></svg></span><span><b>Etichette</b><small>Reparti, macchinari, postazioni da assegnare con un tocco</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
@@ -629,6 +590,76 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     </div>
     <div class="actions"><button type="button" class="btn ghost" id="tlClose" style="flex:1">Chiudi</button></div>
   </div>
+</dialog>
+
+<dialog id="wh" aria-labelledby="whTitle">
+  <form class="sheet wk-form" method="dialog">
+    <h2 id="whTitle" style="text-transform:none">Orario di lavoro</h2>
+    <p class="saved">Ogni modifica si salva da sola.</p>
+    <h3 class="sect first">Turni</h3>
+    <div class="row">
+      <div class="field"><label class="eyebrow" for="stWd">Ore turno normale</label><input type="number" id="stWd" min="1" max="16" step="0.5"></div>
+      <div class="field"><label class="eyebrow" for="stSat">Ore turno sabato</label><input type="number" id="stSat" min="1" max="16" step="0.5"></div>
+    </div>
+
+
+    <h3 class="sect">Regole usate dagli avvisi e dai conteggi</h3>
+    <p class="help" id="stRules"></p>
+    <div class="field">
+      <div class="rulesgrid">
+        <div class="field"><label class="eyebrow" for="stRRest">Riposo minimo</label><label class="unit"><input type="number" id="stRRest" min="0" max="24" step="0.5"><span>ore</span></label></div>
+        <div class="field"><label class="eyebrow" for="stRWeek">Media massima</label><label class="unit"><input type="number" id="stRWeek" min="1" max="99" step="1"><span>h/sett.</span></label></div>
+        <div class="field"><label class="eyebrow" for="stRNf">Notte dalle</label><label class="unit"><input type="number" id="stRNf" min="0" max="23" step="1"><span>:00</span></label></div>
+        <div class="field"><label class="eyebrow" for="stRNt">Notte fino alle</label><label class="unit"><input type="number" id="stRNt" min="0" max="23" step="1"><span>:00</span></label></div>
+      </div>
+      <p class="help">Il tuo contratto può essere più favorevole della legge: qui puoi adattare le regole.</p>
+      <button type="button" class="linkbtn" id="stRReset" hidden>Torna alle regole del paese</button>
+    </div>
+    <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
+  </form>
+</dialog>
+
+<dialog id="lv" aria-labelledby="lvTitle">
+  <form class="sheet wk-form" method="dialog">
+    <h2 id="lvTitle" style="text-transform:none">Ferie e permessi</h2>
+    <p class="saved">Ogni modifica si salva da sola.</p>
+    <div class="row">
+      <div class="field"><label class="eyebrow" for="stFerie">Ferie all'anno</label><label class="unit"><input type="number" id="stFerie" min="0" max="80" step="1" placeholder="0"><span>giorni</span></label></div>
+      <div class="field"><label class="eyebrow" for="stPerm">Permessi all'anno</label><label class="unit"><input type="number" id="stPerm" min="0" max="400" step="0.5" placeholder="0"><span>ore</span></label></div>
+    </div>
+    <p class="help">Quelle che ti spettano in un anno, comprese le residue dell'anno prima. Con 0 il contatore resta spento.</p>
+    <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
+  </form>
+</dialog>
+
+<dialog id="hb" aria-labelledby="hbTitle">
+  <form class="sheet wk-form" method="dialog">
+    <h2 id="hbTitle" style="text-transform:none">Banca ore</h2>
+    <p class="saved">Ogni modifica si salva da sola.</p>
+    <div class="field"><label class="eyebrow" for="stWeek">Ore settimanali da contratto</label><label class="unit"><input type="number" id="stWeek" min="1" max="80" step="0.5"><span>ore</span></label></div>
+    <div class="stack">
+      <div class="field"><label class="eyebrow" for="stBankFrom">Conta dal</label><input type="date" id="stBankFrom"></div>
+      <div class="field"><label class="eyebrow" for="stBank0">Saldo di partenza</label><label class="unit"><input type="number" id="stBank0" min="-999" max="999" step="0.5" placeholder="0"><span>ore</span></label></div>
+    </div>
+    <p class="help">La banca ore confronta le ore lavorate con quelle da contratto, giorno per giorno fino a oggi. Ferie, permessi, malattia, domeniche e festivi non contano come ore mancanti.</p>
+    <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
+  </form>
+</dialog>
+
+<dialog id="py" aria-labelledby="pyTitle">
+  <form class="sheet wk-form" method="dialog">
+    <h2 id="pyTitle" style="text-transform:none">Stima paga</h2>
+    <p class="saved">Ogni modifica si salva da sola.</p>
+    <div class="field"><label class="eyebrow" for="stRate">Paga oraria lorda</label><label class="unit"><input type="number" id="stRate" min="0" step="0.01" placeholder="0,00"><span id="stRateU">€/h</span></label></div>
+    <div class="row">
+      <div class="field"><label class="eyebrow" for="stPOt">Straordinari</label><label class="unit"><input type="number" id="stPOt" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
+      <div class="field"><label class="eyebrow" for="stPNight" id="stPNightL">Notturno 22–06</label><label class="unit"><input type="number" id="stPNight" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
+      <div class="field"><label class="eyebrow" for="stPSun">Domenica</label><label class="unit"><input type="number" id="stPSun" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
+      <div class="field"><label class="eyebrow" for="stPHol">Festivi</label><label class="unit"><input type="number" id="stPHol" min="0" max="300" step="1" placeholder="0"><span>%</span></label></div>
+    </div>
+    <p class="help">Le maggiorazioni si sommano: un'ora di notte di domenica prende sia il notturno sia il domenicale. Se una festa cade di domenica vale solo il festivo. La stima resta su questo dispositivo e non compare nel PDF né nelle immagini condivise.</p>
+    <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
+  </form>
 </dialog>
 
 <dialog id="pr" aria-labelledby="prTitle">
@@ -818,7 +849,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.0.1";
+const APP_VERSION="2.1.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1255,7 +1286,7 @@ let lockY=0;
 function lockPage(){if(document.body.classList.contains("locked"))return;lockY=window.scrollY;document.body.style.top=-lockY+"px";document.body.classList.add("locked");}
 function unlockPage(){if(document.querySelector("dialog[open]")||!document.body.classList.contains("locked"))return;document.body.classList.remove("locked");document.body.style.top="";window.scrollTo(0,lockY);}
 function openDlg(d){lockPage();if(!d.open)d.showModal();}
-[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
+[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
 /* niente zoom con due dita o doppio tocco (Safari ignora user-scalable) */
 ["gesturestart","gesturechange","gestureend"].forEach(t=>document.addEventListener(t,ev=>ev.preventDefault(),{passive:false}));
 document.addEventListener("touchmove",ev=>{if(ev.touches.length>1)ev.preventDefault();},{passive:false});
@@ -1345,7 +1376,14 @@ function commitRules(){const C=ctry(),r=C.rules||{},nt=r.night||[22,6],base={res
 $("stRReset").onclick=()=>{S.settings=normSettings(Object.assign({},S.settings,{rules:null}));applyCountry();mark();renderCountryUI();render();};
 ["stCountry","stRegion","stPatron","stPatDay","stPatMon"].forEach(id=>$(id).addEventListener("change",ev=>{ev.stopPropagation();commitCountry(ev);}));
 ["stPatDay"].forEach(id=>$(id).addEventListener("input",ev=>ev.stopPropagation()));
-function openSettings(focus){renderUpInfo();renderCountryUI();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
+/* campi di ore, ferie, banca ore e paga: stanno in Strumenti, si salvano da soli come le impostazioni */
+function fillWork(){const s=S.settings;renderCountryUI();$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
+  $("stFerie").value=s.ferie||"";$("stPerm").value=s.perm||"";$("stWeek").value=s.week;$("stBankFrom").value=s.bankFrom||bankStart();$("stBank0").value=s.bank0||"";
+  $("stPOt").value=s.pOt||"";$("stPNight").value=s.pNight||"";$("stPSun").value=s.pSun||"";$("stPHol").value=s.pHol||"";}
+const WK={stWd:"wh",stSat:"wh",stFerie:"lv",stPerm:"lv",stWeek:"hb",stBankFrom:"hb",stBank0:"hb",stRate:"py",stPOt:"py",stPNight:"py",stPSun:"py",stPHol:"py"};
+function openWork(id,focus){fillWork();if($("tl").open)$("tl").close();openDlg($(id));
+  if(focus)setTimeout(()=>{const el=$(focus);if(el){el.scrollIntoView({block:"center"});el.focus();}},120);}
+function openSettings(focus){if(focus&&WK[focus])return openWork(WK[focus],focus);renderUpInfo();renderCountryUI();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
   $("stFerie").value=s.ferie||"";$("stPerm").value=s.perm||"";$("stWeek").value=s.week;$("stBankFrom").value=s.bankFrom||bankStart();$("stBank0").value=s.bank0||"";
   $("stPOt").value=s.pOt||"";$("stPNight").value=s.pNight||"";$("stPSun").value=s.pSun||"";$("stPHol").value=s.pHol||"";$("th-"+getTheme()).checked=true;openDlg($("st"));
   if(focus)setTimeout(()=>{const el=$(focus);if(el){el.scrollIntoView({block:"center"});el.focus();}},120);}
@@ -1371,6 +1409,10 @@ function commitSettings(){stT=null;const s=S.settings,oldWd=s.wd,oldSat=s.sat,wd
     pOt:$("stPOt").value,pNight:$("stPNight").value,pSun:$("stPSun").value,pHol:$("stPHol").value}));
   mark("settings","s");render();}
 $("stForm").addEventListener("input",ev=>{if(ev.target.name==="theme"||/^st(Lang|Country|Region|Patron|PatDay|PatMon)$/.test(ev.target.id))return;clearTimeout(stT);stT=setTimeout(commitSettings,400);});
+["wh","lv","hb","py"].forEach(id=>{const d=$(id),f=d.querySelector("form");
+  f.addEventListener("input",ev=>{if(/^stR(Rest|Week|Nf|Nt)$/.test(ev.target.id))return;clearTimeout(stT);stT=setTimeout(commitSettings,400);});
+  f.addEventListener("submit",ev=>{ev.preventDefault();d.close();});d.addEventListener("close",()=>{if(stT){clearTimeout(stT);commitSettings();}});
+  $(id+"Btn").onclick=()=>openWork(id);});
 $("st").addEventListener("close",()=>{if(stT){clearTimeout(stT);commitSettings();}});
 $("stForm").addEventListener("submit",ev=>{ev.preventDefault();$("st").close();});
 

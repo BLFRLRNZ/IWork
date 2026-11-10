@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "A kormány áthelyezheti a mozgó ünnepeket (június 17., augusztus 17., október 12., november 20.) és szabadnapokat adhat hozzá: itt a törvényben rögzített dátumokat látod.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Sok kollektív szerződés (award) 10 óra pihenőt ír elő két műszak között. Egyes ünnepek csak bizonyos területeken érvényesek (Royal Show, Regatta, Recreation Day): a sajátodat felveheted helyi ünnepként.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Minden tartománynak saját Anniversary Day-e van: ha a tiéd nincs a listán, add hozzá helyi ünnepként.",
-"Nessuna|festa": "Nincs"
+"Nessuna|festa": "Nincs",
+"Ore e contratto": "Órák és szerződés",
+"Orario di lavoro": "Munkaidő",
+"Durata dei turni, riposo minimo, ore notturne": "Műszakhossz, minimális pihenő, éjszakai órák",
+"Quanti giorni e quante ore ti spettano": "Hány nap és óra jár neked",
+"Ore da contratto e saldo di partenza": "Szerződés szerinti órák és nyitó egyenleg",
+"Stima paga": "Bérbecslés",
+"Paga oraria e maggiorazioni, solo per te": "Órabér és pótlékok, csak neked"
 };

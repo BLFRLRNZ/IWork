@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "De regering kan de verschuifbare feestdagen (17 juni, 17 augustus, 12 oktober, 20 november) verplaatsen en vrije dagen toevoegen: hier zie je de data die de wet vastlegt.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Veel cao's (awards) geven 10 uur rust tussen twee diensten. Sommige feestdagen gelden alleen in bepaalde gebieden (Royal Show, Regatta, Recreation Day): je kunt de jouwe toevoegen als lokale feestdag.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Elke provincie heeft haar eigen Anniversary Day: staat de jouwe er niet bij, voeg hem dan toe als lokale feestdag.",
-"Nessuna|festa": "Geen"
+"Nessuna|festa": "Geen",
+"Ore e contratto": "Uren en contract",
+"Orario di lavoro": "Werktijden",
+"Durata dei turni, riposo minimo, ore notturne": "Duur van diensten, minimale rust, nachturen",
+"Quanti giorni e quante ore ti spettano": "Hoeveel dagen en uren je tegoed hebt",
+"Ore da contratto e saldo di partenza": "Contracturen en beginsaldo",
+"Stima paga": "Loonschatting",
+"Paga oraria e maggiorazioni, solo per te": "Uurloon en toeslagen, alleen voor jou"
 };

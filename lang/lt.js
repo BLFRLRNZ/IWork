@@ -525,5 +525,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Vyriausybė gali perkelti kilnojamas šventes (birželio 17, rugpjūčio 17, spalio 12, lapkričio 20) ir pridėti laisvų dienų: čia matai įstatymu nustatytas datas.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Daugelis kolektyvinių sutarčių (awards) numato 10 val. poilsio tarp pamainų. Kai kurios šventės galioja tik tam tikrose vietovėse (Royal Show, Regatta, Recreation Day): savąją gali pridėti kaip vietinę šventę.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Kiekviena provincija turi savo Anniversary Day: jei tavosios nėra sąraše, pridėk ją kaip vietinę šventę.",
-"Nessuna|festa": "Nėra"
+"Nessuna|festa": "Nėra",
+"Ore e contratto": "Valandos ir sutartis",
+"Orario di lavoro": "Darbo laikas",
+"Durata dei turni, riposo minimo, ore notturne": "Pamainų trukmė, minimalus poilsis, naktinės valandos",
+"Quanti giorni e quante ore ti spettano": "Kiek dienų ir valandų tau priklauso",
+"Ore da contratto e saldo di partenza": "Sutarties valandos ir pradinis likutis",
+"Stima paga": "Atlyginimo įvertis",
+"Paga oraria e maggiorazioni, solo per te": "Valandinis atlygis ir priedai, tik tau"
 };

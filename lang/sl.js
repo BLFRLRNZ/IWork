@@ -525,5 +525,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Vlada lahko premika premične praznike (17. junij, 17. avgust, 12. oktober, 20. november) in dodaja proste dni: tu vidiš datume, ki jih določa zakon.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Mnoge kolektivne pogodbe (awards) predvidevajo 10 h počitka med izmenama. Nekateri prazniki veljajo le na določenih območjih (Royal Show, Regatta, Recreation Day): svojega lahko dodaš kot lokalni praznik.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Vsaka provinca ima svoj Anniversary Day: če tvojega ni na seznamu, ga dodaj kot lokalni praznik.",
-"Nessuna|festa": "Noben"
+"Nessuna|festa": "Noben",
+"Ore e contratto": "Ure in pogodba",
+"Orario di lavoro": "Delovni čas",
+"Durata dei turni, riposo minimo, ore notturne": "Trajanje izmen, najkrajši počitek, nočne ure",
+"Quanti giorni e quante ore ti spettano": "Koliko dni in ur ti pripada",
+"Ore da contratto e saldo di partenza": "Ure po pogodbi in začetno stanje",
+"Stima paga": "Ocena plače",
+"Paga oraria e maggiorazioni, solo per te": "Urna postavka in dodatki, samo zate"
 };

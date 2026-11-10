@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Правителството може да мести подвижните празници (17 юни, 17 август, 12 октомври, 20 ноември) и да добавя почивни дни: тук виждаш датите по закон.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Много колективни договори (awards) предвиждат 10 ч почивка между смените. Някои празници важат само в определени райони (Royal Show, Regatta, Recreation Day): можеш да добавиш своя като местен празник.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Всяка провинция има свой Anniversary Day: ако твоят го няма в списъка, добави го като местен празник.",
-"Nessuna|festa": "Няма"
+"Nessuna|festa": "Няма",
+"Ore e contratto": "Часове и договор",
+"Orario di lavoro": "Работно време",
+"Durata dei turni, riposo minimo, ore notturne": "Продължителност на смените, минимална почивка, нощни часове",
+"Quanti giorni e quante ore ti spettano": "Колко дни и часове ти се полагат",
+"Ore da contratto e saldo di partenza": "Часове по договор и начално салдо",
+"Stima paga": "Оценка на заплатата",
+"Paga oraria e maggiorazioni, solo per te": "Заплата на час и добавки, само за теб"
 };

@@ -510,5 +510,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Guvernul poate muta sărbătorile mobile (17 iunie, 17 august, 12 octombrie, 20 noiembrie) și poate adăuga zile libere: aici vezi datele stabilite prin lege.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Multe contracte colective (awards) prevăd 10 ore de odihnă între două ture. Unele sărbători sunt doar în anumite zone (Royal Show, Regatta, Recreation Day): poți adăuga sărbătoarea ta ca sărbătoare locală.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Fiecare provincie are Anniversary Day-ul ei: dacă a ta nu e în listă, adaug-o ca sărbătoare locală.",
-"Nessuna|festa": "Niciuna"
+"Nessuna|festa": "Niciuna",
+"Ore e contratto": "Ore și contract",
+"Orario di lavoro": "Program de lucru",
+"Durata dei turni, riposo minimo, ore notturne": "Durata turelor, odihna minimă, ore de noapte",
+"Quanti giorni e quante ore ti spettano": "Câte zile și ore ți se cuvin",
+"Ore da contratto e saldo di partenza": "Ore din contract și sold inițial",
+"Stima paga": "Estimare salariu",
+"Paga oraria e maggiorazioni, solo per te": "Salariu pe oră și sporuri, doar pentru tine"
 };

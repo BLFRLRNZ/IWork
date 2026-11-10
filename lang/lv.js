@@ -493,5 +493,12 @@
 "Il governo può spostare i feriados trasladables (17 giugno, 17 agosto, 12 ottobre, 20 novembre) e aggiungere giorni non lavorativi: qui trovi le date fissate dalla legge.": "Valdība var pārcelt pārceļamos svētkus (17. jūnijs, 17. augusts, 12. oktobris, 20. novembris) un pievienot brīvdienas: šeit redzi likumā noteiktos datumus.",
 "Molti contratti collettivi (award) prevedono 10 ore di riposo tra due turni. Alcune feste valgono solo in certe zone (Royal Show, Regatta, Recreation Day): puoi aggiungere la tua come festa locale.": "Daudzi koplīgumi (awards) paredz 10 h atpūtu starp maiņām. Daži svētki ir spēkā tikai noteiktās vietās (Royal Show, Regatta, Recreation Day): savējos vari pievienot kā vietējos svētkus.",
 "Ogni provincia ha il suo Anniversary Day: se la tua non è in elenco, aggiungila come festa locale.": "Katrai provincei ir sava Anniversary Day: ja tavējās nav sarakstā, pievieno to kā vietējos svētkus.",
-"Nessuna|festa": "Nav"
+"Nessuna|festa": "Nav",
+"Ore e contratto": "Stundas un līgums",
+"Orario di lavoro": "Darba laiks",
+"Durata dei turni, riposo minimo, ore notturne": "Maiņu ilgums, minimālā atpūta, nakts stundas",
+"Quanti giorni e quante ore ti spettano": "Cik dienu un stundu tev pienākas",
+"Ore da contratto e saldo di partenza": "Līguma stundas un sākuma atlikums",
+"Stima paga": "Algas aprēķins",
+"Paga oraria e maggiorazioni, solo per te": "Stundas likme un piemaksas, tikai tev"
 };
