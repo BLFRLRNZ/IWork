@@ -21,7 +21,7 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 **Strumenti**
 - **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane.
 - **Ripeti l'ultima settimana**.
-- **Condividi la settimana**: immagine pronta da mandare, oppure testo da incollare.
+- **Condividi la settimana**: qualsiasi settimana, passata o futura, come immagine pronta da mandare oppure come testo da incollare.
 - **PDF del mese** a scelta, pronto da stampare.
 - **Backup e ripristino**.
 
