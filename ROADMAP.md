@@ -22,7 +22,7 @@ Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta co
 - [x] 4.3 Americhe e Oceania: Stati Uniti, Canada, Messico, Brasile, Argentina, Australia, Nuova Zelanda
 
 ## 5. Lingue
-- [ ] 5.1 Francese, tedesco, spagnolo, portoghese
+- [x] 5.1 Francese, tedesco, spagnolo, portoghese
 - [ ] 5.2 Olandese, polacco, rumeno e le altre lingue dell'UE
 - [ ] 5.3 PDF e immagine condivisa in tutte le lingue, anche con lettere speciali (ą, ș, ř, ő…)
 

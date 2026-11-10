@@ -744,7 +744,10 @@ const hm=d=>pad(d.getHours())+":"+pad(d.getMinutes());
 const APP="iWork";
 /* ---------- lingua e formati ---------- */
 const I18N=window.IWORK_I18N=window.IWORK_I18N||{};
-const LANGS={it:{n:"Italiano",loc:"it-IT"},en:{n:"English",loc:"en-GB"}};
+const LANGS={it:{n:"Italiano",loc:"it-IT"},en:{n:"English",loc:"en-GB"},fr:{n:"Français",loc:"fr-FR"},de:{n:"Deutsch",loc:"de-DE"},es:{n:"Español",loc:"es-ES"},pt:{n:"Português",loc:"pt-PT"}};
+/* formati locali del paese quando la lingua vi è parlata (es. tedesco in Svizzera, spagnolo in Messico) */
+const LOCS={it:"IT CH SM",en:"GB IE MT US CA AU NZ",fr:"FR BE CH LU MC CA",de:"DE AT CH LI LU BE",es:"ES MX AR US",pt:"PT BR"};
+function setLoc(){let c="";try{c=S.settings.country||"";}catch(e){}LOC=c&&(LOCS[LANG]||"").split(" ").includes(c)?LANG+"-"+c:LANGS[LANG].loc;}
 let LANG="it",LOC="it-IT",CUR="EUR";
 try{const l=localStorage.getItem("iwork-lang");if(l&&LANGS[l])LANG=l;}catch(e){}
 LOC=LANGS[LANG].loc;
@@ -786,13 +789,15 @@ const RULES={rest:11,maxWeek:48,weeklyRest:24,nightFrom:22,nightTo:6};
 const CTRYS=window.IWORK_COUNTRIES||{};
 const ctry=()=>CTRYS[S.settings.country]||CTRYS.IT||{n:{it:"Italia"},cur:"EUR",ws:1,rules:{},hol:[]};
 const locName=n=>!n?"":typeof n==="string"?n:n[LANG]||n.en||n[Object.keys(n)[0]];
+/* nome del paese nella lingua dell'app: prima i nomi scritti a mano, poi quelli del browser */
+function ctryName(c){const C=CTRYS[c];if(C&&C.n&&C.n[LANG])return C.n[LANG];try{const d=new Intl.DisplayNames([LOC],{type:"region"}).of(c);if(d&&d!==c)return d;}catch(e){}return C?ctryName(S.settings.country):c;}
 /* limite settimanale di legge per l'anno in corso (alcuni paesi lo riducono anno per anno) */
 function lawWeek(r){let w=r.maxWeek||48;const by=r.maxWeekBy||{},y=new Date().getFullYear();Object.keys(by).sort().forEach(k=>{if(y>=+k)w=by[k];});return w;}
 function applyCountry(){const C=ctry(),r=C.rules||{},u=S.settings.rules||{};
   RULES.rest=r.rest||11;RULES.maxWeek=lawWeek(r);RULES.adv=!!r.adv;RULES.weeklyRest=r.weeklyRest||24;
   const nt=r.night||[22,6];RULES.nightFrom=nt[0];RULES.nightTo=nt[1];
   if(u.rest!=null)RULES.rest=u.rest;if(u.maxWeek!=null)RULES.maxWeek=u.maxWeek;if(u.nf!=null)RULES.nightFrom=u.nf;if(u.nt!=null)RULES.nightTo=u.nt;
-  CUR=C.cur||"EUR";WS=C.ws==null?1:C.ws;for(const k in holCache)delete holCache[k];}
+  CUR=C.cur||"EUR";WS=C.ws==null?1:C.ws;setLoc();for(const k in holCache)delete holCache[k];}
 const nightTxt=()=>pad(RULES.nightFrom)+"–"+pad(RULES.nightTo);
 /* testi fissi della pagina: tradotti partendo dall'italiano originale */
 const TX=new WeakMap();
@@ -804,7 +809,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="1.14.0";
+const APP_VERSION="1.15.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1076,7 +1081,7 @@ function renderSummary(y,m,list,flags){
 
 /* ---------- PDF del mese: one A4 landscape page, written by hand (Helvetica, no library) ---------- */
 const PW=[[278,278,355,556,556,889,667,191,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,278,278,584,584,584,556,1015,667,667,722,722,667,611,778,722,278,500,667,556,833,722,778,667,778,722,667,611,722,667,944,667,667,611,278,278,278,469,556,333,556,556,500,556,556,278,556,556,222,222,500,222,833,556,556,556,556,333,500,278,556,500,722,500,500,500,334,260,334,584,350,556,350,222,556,333,1000,556,556,333,1000,667,333,1000,350,611,350,350,222,222,333,333,350,556,1000,333,1000,500,333,944,350,500,667,278,333,556,556,556,556,260,556,333,737,370,556,584,333,737,333,400,584,333,333,333,556,537,278,333,333,365,556,834,834,834,611,667,667,667,667,667,667,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,500,556,556,556,556,278,278,278,278,556,556,556,556,556,556,556,584,611,556,556,556,556,500,556,500],[278,333,474,556,556,889,722,238,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,333,333,584,584,584,611,975,722,722,722,722,667,611,778,722,278,556,722,611,833,722,778,667,778,722,667,611,722,667,944,667,667,611,333,278,333,584,556,333,556,611,556,611,556,333,611,611,278,278,556,278,889,611,611,611,611,389,556,333,611,556,778,556,556,500,389,280,389,584,350,556,350,278,556,500,1000,556,556,333,1000,667,333,1000,350,611,350,350,278,278,500,500,350,556,1000,333,1000,556,333,944,350,500,667,278,333,556,556,556,556,280,556,333,737,370,556,584,333,737,333,400,584,333,333,333,611,556,278,333,333,365,556,834,834,834,611,722,722,722,722,722,722,1000,722,667,667,667,667,278,278,278,278,722,722,778,778,778,778,778,584,778,722,722,722,722,667,667,611,556,556,556,556,556,556,889,556,556,556,556,556,278,278,278,278,611,611,611,611,611,611,611,584,611,611,611,611,611,556,611,556]]; // Helvetica and Helvetica-Bold advance widths, WinAnsi codes 32–255
-const WIN={"€":128,"…":133,"‘":145,"’":146,"“":147,"”":148,"•":149,"–":150,"—":151};
+const WIN={"€":128,"‚":130,"ƒ":131,"„":132,"…":133,"†":134,"‡":135,"ˆ":136,"‰":137,"Š":138,"‹":139,"Œ":140,"Ž":142,"‘":145,"’":146,"“":147,"”":148,"•":149,"–":150,"—":151,"˜":152,"™":153,"š":154,"›":155,"œ":156,"ž":158,"Ÿ":159};
 function pdfStr(s){let o="";for(const ch of String(s)){const c=ch.codePointAt(0),b=WIN[ch]||((c>=32&&c<127)||(c>=160&&c<256)?c:0);if(b)o+=String.fromCharCode(b);}return o;}
 function pdfW(b,f,size){let w=0;for(let i=0;i<b.length;i++)w+=PW[f][b.charCodeAt(i)-32]||0;return w*size/1000;}
 function pdfFit(b,f,size,max){if(pdfW(b,f,size)<=max)return b;while(b.length&&pdfW(b+"\x85",f,size)>max)b=b.slice(0,-1);return b.replace(/\s+$/,"")+"\x85";}
@@ -1263,18 +1268,18 @@ $("stAdd").onclick=()=>{if(stDraft.length>=MAX_PRESETS)return;const last=stDraft
   stDraft.push({n:"",t,d:""});renderPresets();commitPresets();const el=$("pn-"+(stDraft.length-1));if(el)el.focus();};
 function curSym(){try{return (0).toLocaleString(LOC,{style:"currency",currency:CUR}).replace(/[\d\s.,\u00a0\u202f]/g,"")||CUR;}catch(e){return CUR;}}
 function renderCountryUI(){const s=S.settings,C=ctry(),opt=(v,l,sel)=>'<option value="'+esc(v)+'"'+(sel?" selected":"")+">"+esc(l)+"</option>";
-  $("stCountry").innerHTML=Object.keys(CTRYS).map(c=>[c,locName(CTRYS[c].n)]).sort((a,b)=>a[1].localeCompare(b[1],LOC)).map(x=>opt(x[0],x[1],x[0]===s.country)).join("");
+  $("stCountry").innerHTML=Object.keys(CTRYS).map(c=>[c,ctryName(c)]).sort((a,b)=>a[1].localeCompare(b[1],LOC)).map(x=>opt(x[0],x[1],x[0]===s.country)).join("");
   const regs=Object.keys(C.reg||{});$("stRegBox").hidden=!regs.length;
   $("stRegion").innerHTML=opt("",C.regNone?locName(C.regNone):t("Nessuna in particolare"),!s.region)+regs.map(r=>opt(r,locName(C.reg[r].n),r===s.region)).join("");
   const pats=C.patrons||[];const P=s.patron;$("stPatL").textContent=t(C.patrons?"Santo patrono":"Festa locale");$("stPatHelp").textContent=t(C.patrons?"La festa patronale conta come festivo nel calendario, nella banca ore e nella paga. Controlla la data con il tuo contratto o il tuo comune.":"Una festa del tuo comune o del tuo contratto: conta come festivo nel calendario, nella banca ore e nella paga.");
   $("stNote").hidden=!C.note;if(C.note)$("stNote").textContent=t(C.note);
-  $("stPatron").innerHTML=opt("",t("Nessuno"),!P)+pats.map(p=>opt("c:"+p[0],p[0]+" – "+p[2],P&&P.c===p[0])).join("")+opt("d",t("Un'altra data…"),P&&!!P.d);
+  $("stPatron").innerHTML=opt("",t(C.patrons?"Nessuno":"Nessuna|festa"),!P)+pats.map(p=>opt("c:"+p[0],p[0]+" – "+p[2],P&&P.c===p[0])).join("")+opt("d",t("Un'altra data…"),P&&!!P.d);
   $("stPatCustom").hidden=!(P&&P.d);
   $("stPatMon").innerHTML=MONTHS.map((m,i)=>opt(pad(i+1),m,P&&P.d&&P.d.slice(0,2)===pad(i+1))).join("");
   if(P&&P.d)$("stPatDay").value=+P.d.slice(3);
   $("stPNightL").textContent=t("Notturno {r}",{r:nightTxt()});
   $("stRRest").value=RULES.rest;$("stRWeek").value=RULES.maxWeek;$("stRNf").value=RULES.nightFrom;$("stRNt").value=RULES.nightTo;$("stRReset").hidden=!S.settings.rules;
-  $("stRules").textContent=RULES.adv?t("{c}: la legge non fissa un riposo minimo tra due turni. L'app avvisa sotto le {r} ore e sopra le {w} ore a settimana. La settimana inizia di {d}.",{c:locName(C.n),r:RULES.rest,w:RULES.maxWeek,d:DAYS[WS]}):t("{c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.",{c:locName(C.n),r:RULES.rest,w:RULES.maxWeek,k:RULES.weeklyRest,d:DAYS[WS]});
+  $("stRules").textContent=RULES.adv?t("{c}: la legge non fissa un riposo minimo tra due turni. L'app avvisa sotto le {r} ore e sopra le {w} ore a settimana. La settimana inizia di {d}.",{c:ctryName(S.settings.country),r:RULES.rest,w:RULES.maxWeek,d:DAYS[WS]}):t("{c}: almeno {r} ore di riposo tra due turni, in media al massimo {w} ore a settimana, riposo settimanale di {k} ore. La settimana inizia di {d}.",{c:ctryName(S.settings.country),r:RULES.rest,w:RULES.maxWeek,k:RULES.weeklyRest,d:DAYS[WS]});
   $("stRateU").textContent=curSym()+"/h";}
 function commitCountry(ev){const s=S.settings,id=ev.target.id;let country=s.country,region=s.region,patron=s.patron;
   if(id==="stCountry"){country=$("stCountry").value;region="";patron=null;S.settings.rules=null;}
@@ -1597,13 +1602,13 @@ if(canCheck()){
 /* ---------- lingua: cambio e avvio ---------- */
 function loadLang(l){return new Promise(res=>{if(l==="it"||I18N[l])return res();const sc=document.createElement("script");sc.src="lang/"+l+".js?v="+APP_VERSION;sc.onload=res;sc.onerror=res;document.head.appendChild(sc);});}
 async function setLang(l){if(!LANGS[l])l="it";await loadLang(l);if(l!=="it"&&!I18N[l])l="it";
-  LANG=l;LOC=LANGS[l].loc;try{localStorage.setItem("iwork-lang",l);}catch(e){}
+  LANG=l;setLoc();try{localStorage.setItem("iwork-lang",l);}catch(e){}
   setNames();translateDom();setStatus();render();renderUpInfo();bkRender();if($("st").open)renderCountryUI();if($("ob").open)obRender();}
 window.iworkSetLang=setLang;
 /* ---------- benvenuto: lingua, paese, regione, ore del turno ---------- */
 const OB={step:0,lang:"it",country:"IT",region:"",patron:null,wd:8,sat:6,q:"",existing:false};
 function guessSetup(){const nl=(navigator.languages&&navigator.languages[0]||navigator.language||"it-IT");
-  const l=nl.slice(0,2).toLowerCase(),c=(nl.split("-")[1]||"").toUpperCase();return{lang:LANGS[l]?l:"en",country:CTRYS[c]?c:(CTRYS.IT?"IT":Object.keys(CTRYS)[0])};}
+  const l=nl.slice(0,2).toLowerCase(),c=(nl.split("-")[1]||"").toUpperCase();return{lang:LANGS[l]?l:"en",country:CTRYS[c]?c:CTRYS[({en:"GB",fr:"FR",de:"DE",es:"ES",pt:"PT"})[l]]?({en:"GB",fr:"FR",de:"DE",es:"ES",pt:"PT"})[l]:"IT"};}
 function obSteps(){const C=CTRYS[OB.country]||{};const st=["lang","country"];if(C.reg||C.patrons)st.push("place");st.push("hours","done");return st;}
 function obRender(){const steps=obSteps(),cur=steps[OB.step],C=CTRYS[OB.country]||{},opt=(v,l,sel,sub)=>'<button type="button" class="opt" data-v="'+esc(v)+'" aria-pressed="'+!!sel+'"><span>'+esc(l)+"</span>"+(sub?"<small>"+esc(sub)+"</small>":"")+"</button>";
   $("obDots").innerHTML=steps.map((_,i)=>'<i class="'+(i<=OB.step?"on":"")+'"></i>').join("");
@@ -1612,7 +1617,7 @@ function obRender(){const steps=obSteps(),cur=steps[OB.step],C=CTRYS[OB.country]
     $("obSub").textContent=OB.existing?t("Scegli lingua e paese: l'app si imposta con le regole e le festività giuste. I tuoi turni restano dove sono."):t("Il calendario dei tuoi turni. Scegli la lingua.");
     h='<div class="optlist" data-k="lang">'+Object.keys(LANGS).map(l=>opt(l,LANGS[l].n,l===OB.lang)).join("")+"</div>";}
   else if(cur==="country"){$("obTitle").textContent=t("Dove lavori?");$("obSub").textContent=t("Servono per festività, riposi minimi, ore notturne e valuta.");
-    const list=Object.keys(CTRYS).map(c=>[c,locName(CTRYS[c].n),CTRYS[c].n[CTRYS[c].lang]]).sort((a,b)=>a[1].localeCompare(b[1],LOC)).filter(x=>!OB.q||fold(x[1]+" "+(x[2]||"")).includes(fold(OB.q)));
+    const list=Object.keys(CTRYS).map(c=>[c,ctryName(c),CTRYS[c].n[CTRYS[c].lang]]).sort((a,b)=>a[1].localeCompare(b[1],LOC)).filter(x=>!OB.q||fold(x[1]+" "+(x[2]||"")).includes(fold(OB.q)));
     h=(Object.keys(CTRYS).length>8?'<div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input type="search" id="obQ" placeholder="'+esc(t("Cerca un paese"))+'" aria-label="'+esc(t("Cerca un paese"))+'" value="'+esc(OB.q)+'" autocomplete="off"></div>':"")
       +'<div class="optlist" data-k="country">'+list.map(x=>opt(x[0],x[1],x[0]===OB.country,x[2]&&x[2]!==x[1]?x[2]:"")).join("")+"</div>";}
   else if(cur==="place"){$("obTitle").textContent=t("La tua zona");$("obSub").textContent=t("Alcune feste valgono solo in una regione o in una città. Puoi saltare questo passo e cambiarlo dopo.");
@@ -1621,7 +1626,7 @@ function obRender(){const steps=obSteps(),cur=steps[OB.step],C=CTRYS[OB.country]
   else if(cur==="hours"){$("obTitle").textContent=t("Quanto dura un turno?");$("obSub").textContent=t("Così scegli solo l'orario d'inizio e la fine si calcola da sola. Si può cambiare in qualsiasi momento.");
     h='<div class="rulesgrid"><div class="field"><label class="eyebrow" for="obWd">'+t("Turno normale")+'</label><label class="unit"><input type="number" id="obWd" min="1" max="16" step="0.5" value="'+OB.wd+'"><span>'+t("ore")+'</span></label></div><div class="field"><label class="eyebrow" for="obSat">'+t("Turno di sabato")+'</label><label class="unit"><input type="number" id="obSat" min="1" max="16" step="0.5" value="'+OB.sat+'"><span>'+t("ore")+"</span></label></div></div>";}
   else{const r=C.rules||{},nt=r.night||[22,6];$("obTitle").textContent=t("Tutto pronto");$("obSub").textContent=t("Ecco come è impostata l'app. Puoi cambiare tutto in Impostazioni.");
-    h='<dl class="obsum"><dt>'+t("Lingua")+"</dt><dd>"+esc(LANGS[OB.lang].n)+"</dd><dt>"+t("Paese")+"</dt><dd>"+esc(locName(C.n))+"</dd>"
+    h='<dl class="obsum"><dt>'+t("Lingua")+"</dt><dd>"+esc(LANGS[OB.lang].n)+"</dd><dt>"+t("Paese")+"</dt><dd>"+esc(ctryName(OB.country))+"</dd>"
       +(OB.region?"<dt>"+t("Regione o provincia")+"</dt><dd>"+esc(locName(C.reg[OB.region].n))+"</dd>":"")+(OB.patron?"<dt>"+t("Santo patrono")+"</dt><dd>"+esc(OB.patron.c)+"</dd>":"")
       +"<dt>"+t("Turno")+"</dt><dd>"+t("{w} ore, sabato {s}",{w:hrs(OB.wd),s:hrs(OB.sat)})+"</dd><dt>"+t("Riposo minimo")+"</dt><dd>"+t("{h} ore",{h:r.rest||11})+"</dd><dt>"+t("Media massima")+"</dt><dd>"+t("{h} ore a settimana",{h:r.maxWeek||48})+"</dd><dt>"+t("Ore notturne")+"</dt><dd>"+pad(nt[0])+"–"+pad(nt[1])+"</dd></dl>"
       +'<p class="help">'+t("Gli avvisi su riposi e ore sono indicativi e non sostituiscono il tuo contratto.")+"</p>";}
@@ -1650,7 +1655,7 @@ function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels
 window.iworkDebug={holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
-(async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG]){LANG="it";LOC="it-IT";}setNames();translateDom();
+(async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();setNames();translateDom();
   setStatus();render();bkRender();if(!S.settings.setup)obStart();})();
 setInterval(()=>renderNext(workList()),30000);
 if("serviceWorker" in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js").catch(()=>{});

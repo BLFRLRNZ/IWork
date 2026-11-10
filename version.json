@@ -1,8 +1,12 @@
 {
-  "version": "1.14.0",
+  "version": "1.15.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Nuovi paesi: Stati Uniti, Canada (con le province), Messico, Brasile, Argentina, Australia (con gli stati) e Nuova Zelanda.",
-    "en": "New countries: United States, Canada (with provinces), Mexico, Brazil, Argentina, Australia (with states) and New Zealand."
+    "it": "L'app ora parla anche francese, tedesco, spagnolo e portoghese. Date e valute seguono il paese scelto.",
+    "en": "The app now also speaks French, German, Spanish and Portuguese. Dates and currencies follow the chosen country.",
+    "fr": "L'app parle maintenant aussi français, allemand, espagnol et portugais. Les dates et les devises suivent le pays choisi.",
+    "de": "Die App spricht jetzt auch Französisch, Deutsch, Spanisch und Portugiesisch. Datum und Währung richten sich nach dem gewählten Land.",
+    "es": "La app ahora también habla francés, alemán, español y portugués. Las fechas y monedas siguen el país elegido.",
+    "pt": "A app agora também fala francês, alemão, espanhol e português. Datas e moedas seguem o país escolhido."
   }
 }
