@@ -18,7 +18,7 @@ Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta co
 
 ## 4. Paesi (ogni regola controllata su fonti ufficiali)
 - [x] 4.1 Unione Europea, tutti i 27 paesi
-- [ ] 4.2 Europa fuori dall'UE: Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco, Liechtenstein
+- [x] 4.2 Europa fuori dall'UE: Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco, Liechtenstein
 - [ ] 4.3 Americhe e Oceania: Stati Uniti, Canada, Messico, Brasile, Argentina, Australia, Nuova Zelanda
 
 ## 5. Lingue

@@ -416,5 +416,22 @@
 "Notte dalle": "Night from",
 "Notte fino alle": "Night until",
 "Il tuo contratto può essere più favorevole della legge: qui puoi adattare le regole.": "Your contract may be more generous than the law: you can adjust the rules here.",
-"Torna alle regole del paese": "Back to the country's rules"
+"Torna alle regole del paese": "Back to the country's rules",
+"{x}, festa locale": "{x}, local holiday",
+"Festa locale": "Local holiday",
+"Una festa del tuo comune o del tuo contratto: conta come festivo nel calendario, nella banca ore e nella paga.": "A holiday of your town or your contract: it counts as a public holiday in the calendar, the hour bank and pay.",
+"Se una festa cade di domenica, il datore di lavoro fissa un giorno di recupero.": "If a holiday falls on a Sunday, the employer sets a replacement day off.",
+"Grundlovsdag (5 giugno) e la vigilia di Natale non sono festivi per legge, ma molti contratti li prevedono.": "Constitution Day (5 June) and Christmas Eve are not statutory holidays, but many contracts include them.",
+"Il lunedì di Pentecoste è spesso la «giornata di solidarietà» e si lavora.": "Whit Monday is often the “solidarity day” and is worked.",
+"In Baviera l'Assunta è festiva solo nei comuni a maggioranza cattolica.": "In Bavaria, Assumption Day is a holiday only in mainly Catholic municipalities.",
+"Venerdì Santo e 5 maggio sono liberi solo se lo prevede il contratto (CAO).": "Good Friday and 5 May are days off only if your collective agreement (CAO) says so.",
+"Il martedì di Carnevale è facoltativo; ogni comune ha anche la sua festa municipale.": "Carnival Tuesday is optional; each municipality also has its own municipal holiday.",
+"Dal 2025 il 17 novembre non è più festivo; nel 2026 si lavora anche l'8 maggio e il 15 settembre.": "Since 2025, 17 November is no longer a holiday; in 2026, 8 May and 15 September are working days too.",
+"Ogni comunità autonoma aggiunge le sue feste (spesso il Giovedì Santo) e le cambia di anno in anno: aggiungi la tua come festa locale.": "Each autonomous community adds its own holidays (often Maundy Thursday) and changes them every year: add yours as a local holiday.",
+"Le vigilie (Midsommarafton, Julafton, Nyårsafton) non sono festive per legge ma sono libere quasi ovunque.": "The eves (Midsummer Eve, Christmas Eve, New Year's Eve) are not statutory holidays but are days off almost everywhere.",
+"Il limite di 45 ore vale per industria, uffici, tecnici e grande distribuzione; per gli altri è 50. In alcuni comuni (Friburgo, Soletta, Argovia) le feste cambiano: aggiungi la tua come festa locale.": "The 45-hour limit applies to industry, offices, technical staff and large retailers; for everyone else it is 50. In some municipalities (Fribourg, Solothurn, Aargau) holidays differ: add yours as a local holiday.",
+"Nel Regno Unito le bank holiday non sono un diritto per legge: dipende dal contratto. Il limite delle 48 ore si può derogare per iscritto (opt-out).": "In the UK, bank holidays are not a statutory right: it depends on your contract. You can opt out of the 48-hour limit in writing.",
+"Per orari e riposi valgono soprattutto i contratti collettivi sammarinesi: controlla i valori qui sotto.": "Working and rest times mostly follow San Marino's collective agreements: check the values below.",
+"Se una festa cade di domenica, si recupera il lunedì.": "If a holiday falls on a Sunday, the Monday is a day off instead.",
+"Il limite di 45 ore vale per industria, uffici e grande distribuzione; per gli altri è 50.": "The 45-hour limit applies to industry, offices and large retailers; for everyone else it is 50."
 };

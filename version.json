@@ -1,8 +1,8 @@
 {
-  "version": "1.12.0",
+  "version": "1.13.0",
   "date": "2026-11-10",
   "notes": {
-    "it": "Aggiunti tutti i 27 paesi dell'Unione Europea, con festività e regioni.",
-    "en": "All 27 European Union countries added, with public holidays and regions."
+    "it": "Nuovi paesi: Svizzera (con i cantoni), Regno Unito, Norvegia, Islanda, San Marino, Monaco e Liechtenstein. Ora puoi aggiungere una festa locale in ogni paese.",
+    "en": "New countries: Switzerland (with cantons), United Kingdom, Norway, Iceland, San Marino, Monaco and Liechtenstein. You can now add a local holiday in every country."
   }
 }
