@@ -4,15 +4,34 @@ Il calendario dei tuoi turni di lavoro. Scegli solo l'orario d'inizio: la fine s
 
 ## Cosa fa
 
-- **Inserimento rapido**: scegli Mattina, Pomeriggio, Notte, Riposo o Ferie e tocchi i giorni per assegnarli.
+L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per argomento.
+
+**Calendario**
+- **Inserimento rapido**: scegli un turno rapido, Riposo o Ferie e tocchi i giorni per assegnarlo.
 - **Prossimo turno**: conto alla rovescia all'inizio e, mentre sei in turno, quanto manca alla fine.
-- **Totali del mese**: ore lavorate, ore extra, ore notturne (22–06), sabati, domeniche e festivi lavorati, ferie, permessi, malattia.
-- **Ore per settimana** e avvisi: meno di 11 ore di riposo tra due turni, sette giorni di fila, settimane sopra le 48 ore.
-- **Festività italiane** segnate in rosso, Pasqua e Lunedì dell'Angelo compresi.
-- **Strumenti**: ripeti l'ultima settimana, copia i prossimi 7 giorni come testo, crea il PDF di un mese a scelta, pronto da stampare, backup e ripristino.
-- **Impostazioni**: durata dei turni, fino a 12 turni rapidi con nome e orario, tema automatico, chiaro o scuro, paga oraria facoltativa per una stima del lordo.
-- Tema chiaro e scuro, installabile sul telefono, funziona anche offline.
-- **Aggiornamenti automatici**: all'avvio, ogni 30 minuti e quando riapri l'app controlla `version.json`; se c'è una versione nuova mostra un avviso con il pulsante **Aggiorna**. Il controllo manuale è in Impostazioni.
+- **Totali del mese**: ore, ore extra, ore notturne, sabati, domeniche e festivi, ferie e permessi residui, banca ore.
+- **Avvisi**: meno di 11 ore di riposo, sette giorni di fila, settimane sopra le 48 ore, ferie o permessi oltre quelli spettanti.
+- **Festività italiane** segnate in rosso.
+
+**Anno**
+- Totale ore e turni dell'anno, grafico mese per mese e tabella con turni, ore, extra, ferie, permessi e banca ore.
+- **Ferie e permessi residui**: usati, programmati e rimasti, con avviso quando stai per finirli.
+- **Banca ore**: ore lavorate meno ore da contratto, giorno per giorno fino a oggi. Ferie, permessi, malattia, domeniche e festivi non contano come ore mancanti.
+
+**Strumenti**
+- **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane.
+- **Ripeti l'ultima settimana**.
+- **Condividi la settimana**: immagine pronta da mandare, oppure testo da incollare.
+- **PDF del mese** a scelta, pronto da stampare.
+- **Backup e ripristino**.
+
+**Impostazioni**
+- Durata dei turni (8 ore, 6 il sabato) e fino a 12 turni rapidi, ognuno con orario e, se serve, durata propria.
+- Ferie (giorni) e permessi (ore) che ti spettano all'anno.
+- Banca ore: ore settimanali da contratto, data di partenza e saldo iniziale.
+- Paga oraria facoltativa, tema automatico, chiaro o scuro, aggiornamenti.
+
+Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti.
 
 ## Dove sono i dati
 
