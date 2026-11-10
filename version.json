@@ -1,5 +1,8 @@
 {
-  "version": "1.8.0",
+  "version": "1.9.0",
   "date": "2026-11-10",
-  "notes": "Etichettatura rapida, turni rapidi ed etichette negli Strumenti, salvataggio automatico ovunque."
+  "notes": {
+    "it": "L'app ora parla anche inglese: scegli la lingua in Impostazioni.",
+    "en": "The app now speaks English too: choose the language in Settings."
+  }
 }

@@ -1,5 +1,5 @@
 // Rete prima (senza cache HTTP, così gli aggiornamenti arrivano subito), copia salvata se sei offline.
-const CACHE = "iwork-v10";
+const CACHE = "iwork-v11";
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(["./", "index.html", "manifest.webmanifest", "icon.svg"])));
   self.skipWaiting();

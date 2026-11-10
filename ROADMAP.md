@@ -3,8 +3,8 @@
 Obiettivo: al primo avvio l'utente sceglie lingua e paese, e l'app si imposta con le regole di quel paese (festività, riposi, limiti di ore, valuta). Più paesi e lingue possibili.
 
 ## 1. Fondamenta multilingua
-- [ ] 1.1 Tutti i testi dell'app in un dizionario, con l'italiano come base; date, numeri e valuta nel formato della lingua e del paese
-- [ ] 1.2 Inglese completo, che fa da riferimento per le altre traduzioni
+- [x] 1.1 Tutti i testi dell'app in un dizionario, con l'italiano come base; date, numeri e valuta nel formato della lingua e del paese
+- [x] 1.2 Inglese completo, che fa da riferimento per le altre traduzioni
 
 ## 2. Regole per paese
 - [ ] 2.1 Profilo del paese: festività, riposo minimo tra due turni, limite di ore settimanali, riposo settimanale, fascia notturna, primo giorno della settimana, valuta

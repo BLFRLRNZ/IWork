@@ -36,7 +36,7 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - Banca ore: ore settimanali da contratto, data di partenza e saldo iniziale.
 - Paga oraria e maggiorazioni, tema automatico, chiaro o scuro, aggiornamenti.
 
-Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti.
+Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in italiano e inglese (le traduzioni sono nella cartella `lang/`).
 
 ## Dove sono i dati
 
