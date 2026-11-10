@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
-  "date": "2026-11-10",
-  "notes": "Strumenti nel menu in alto, backup più semplice e campi della turnazione sistemati."
+  "version": "1.7.0",
+  "date": "2026-11-11",
+  "notes": "Stima paga con maggiorazioni, turni spezzati, vista elenco con ricerca ed etichette per reparti e postazioni."
 }

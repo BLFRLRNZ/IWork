@@ -12,6 +12,10 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - **Totali del mese**: ore, ore extra, ore notturne, sabati, domeniche e festivi, ferie e permessi residui, banca ore.
 - **Avvisi**: meno di 11 ore di riposo, sette giorni di fila, settimane sopra le 48 ore, ferie o permessi oltre quelli spettanti.
 - **Festività italiane** segnate in rosso.
+- **Vista calendario o elenco**: nell'elenco leggi note ed etichette per intero e puoi **cercare** in tutte le note e le etichette, di qualsiasi mese.
+- **Turni spezzati**: due fasce nello stesso giorno, per esempio 8–12 e 16–20, anche come turni rapidi.
+- **Etichette**: reparti, macchinari o postazioni che crei una volta e scegli con un tocco in ogni giorno.
+- **Stima paga** (solo per te): paga oraria e maggiorazioni per straordinari, notturno, domenica e festivi. Gli importi si possono nascondere e non compaiono mai nel PDF né nelle immagini condivise.
 
 **Anno**
 - Totale ore e turni dell'anno, grafico mese per mese e tabella con turni, ore, extra, ferie, permessi e banca ore.
@@ -29,7 +33,7 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - Durata dei turni (8 ore, 6 il sabato) e fino a 12 turni rapidi, ognuno con orario e, se serve, durata propria.
 - Ferie (giorni) e permessi (ore) che ti spettano all'anno.
 - Banca ore: ore settimanali da contratto, data di partenza e saldo iniziale.
-- Paga oraria facoltativa, tema automatico, chiaro o scuro, aggiornamenti.
+- Etichette, paga oraria e maggiorazioni, tema automatico, chiaro o scuro, aggiornamenti.
 
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti.
 
