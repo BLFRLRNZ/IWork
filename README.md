@@ -21,6 +21,7 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - **Etichette**: reparti, macchinari o postazioni che crei una volta e scegli con un tocco in ogni giorno.
 - **Stima paga** (solo per te): paga oraria e maggiorazioni per straordinari, notturno, domenica e festivi. Gli importi si possono nascondere e non compaiono mai nel PDF né nelle immagini condivise.
 - **Reperibilità**: in qualsiasi giorno, anche di riposo, con orario d'inizio e durata. Le ore di intervento contano come lavorate e nella stima paga valgono come straordinario; l'indennità per ogni reperibilità si imposta nella stima paga.
+- **Busta paga**: carichi il PDF della busta paga (anche protetto da password) e l'app legge straordinari, notturno, festivi, ferie e permessi goduti e residui, lordo e netto; se non hai il PDF scrivi i numeri a mano. Le voci vengono confrontate con le ore segnate e le differenze compaiono nel riepilogo del mese. Il PDF è letto solo sul dispositivo e non viene salvato. Per la lettura usa [pdf.js](https://github.com/mozilla/pdf.js) (Apache-2.0, nella cartella `vendor/pdfjs/`).
 - **Secondo lavoro**: nome, durata abituale e paga oraria propri. I suoi turni compaiono come seconda riga negli stessi giorni, con turni rapidi dedicati, e si contano a parte: non toccano banca ore, ferie e avvisi del lavoro principale.
 
 **Anno**
@@ -42,6 +43,7 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - Ferie (giorni) e permessi (ore) che ti spettano all'anno.
 - Banca ore: ore settimanali da contratto, data di partenza e saldo iniziale.
 - Stima paga: paga oraria, maggiorazioni e indennità di reperibilità.
+- Busta paga: confronto con le ore segnate, anche quando straordinari e maggiorazioni arrivano il mese dopo.
 - Secondo lavoro.
 
 **Impostazioni**

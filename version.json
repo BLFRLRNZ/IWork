@@ -1,12 +1,12 @@
 {
-  "version": "2.2.2",
+  "version": "2.3.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "Sugli iPhone senza tasto Home i pulsanti in fondo ai pannelli e alla schermata iniziale non finiscono più sotto il bordo dello schermo.",
-    "en": "On iPhones without a Home button, the buttons at the bottom of panels and the welcome screen no longer slip under the screen edge.",
-    "fr": "Sur les iPhone sans bouton principal, les boutons en bas des panneaux et de l'écran d'accueil ne passent plus sous le bord de l'écran.",
-    "de": "Auf iPhones ohne Home-Taste rutschen die Schaltflächen unten in Fenstern und im Begrüßungsbildschirm nicht mehr unter den Bildschirmrand.",
-    "es": "En los iPhone sin botón de inicio, los botones al pie de los paneles y de la pantalla de bienvenida ya no quedan bajo el borde de la pantalla.",
-    "pt": "Nos iPhone sem botão principal, os botões no fundo dos painéis e do ecrã inicial já não ficam escondidos sob a borda do ecrã."
+    "it": "Nuovo: busta paga. Carica il PDF (anche con password) o scrivi i numeri: l'app controlla straordinari, notturni, festivi, ferie e permessi rispetto alle ore che hai segnato.",
+    "en": "New: payslip check. Upload the PDF (password-protected too) or type the numbers: the app checks overtime, night, holiday work and leave against the hours you logged.",
+    "fr": "Nouveau : bulletin de paie. Chargez le PDF (même protégé) ou saisissez les chiffres : l'app vérifie heures sup., nuits, jours fériés, congés et absences par rapport à vos heures.",
+    "de": "Neu: Lohnabrechnung. Lade das PDF (auch mit Passwort) oder gib die Zahlen ein: Die App prüft Überstunden, Nacht- und Feiertagsarbeit, Urlaub und Freistellung gegen deine Stunden.",
+    "es": "Nuevo: nómina. Carga el PDF (también con contraseña) o escribe los números: la app comprueba horas extra, nocturnidad, festivos, vacaciones y permisos con tus horas.",
+    "pt": "Novo: recibo de vencimento. Carregue o PDF (mesmo com palavra-passe) ou escreva os números: a app verifica horas extra, noturno, feriados, férias e dispensas face às suas horas."
   }
 }
