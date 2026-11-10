@@ -1,12 +1,12 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "date": "2026-11-10",
   "notes": {
-    "it": "iWork 2.0: 41 paesi con le loro regole e festività, 23 lingue, PDF in tutti gli alfabeti. Festività controllate su due anni e schermate provate in ogni lingua.",
-    "en": "iWork 2.0: 41 countries with their own rules and public holidays, 23 languages, PDF in every alphabet. Holidays checked over two years and every language tested on screen.",
-    "fr": "iWork 2.0 : 41 pays avec leurs règles et jours fériés, 23 langues, PDF dans tous les alphabets.",
-    "de": "iWork 2.0: 41 Länder mit eigenen Regeln und Feiertagen, 23 Sprachen, PDF in allen Alphabeten.",
-    "es": "iWork 2.0: 41 países con sus reglas y festivos, 23 idiomas, PDF en todos los alfabetos.",
-    "pt": "iWork 2.0: 41 países com as suas regras e feriados, 23 línguas, PDF em todos os alfabetos."
+    "it": "Quando cambi lingua, i turni rapidi con il nome predefinito (Mattina, Pomeriggio, Notte) si traducono. Quelli che hai rinominato restano come sono.",
+    "en": "When you change language, quick shifts with their default name (Morning, Afternoon, Night) are translated. The ones you renamed stay as they are.",
+    "fr": "Quand vous changez de langue, les postes rapides au nom par défaut (Matin, Après-midi, Nuit) sont traduits. Ceux que vous avez renommés restent tels quels.",
+    "de": "Beim Sprachwechsel werden Schnellschichten mit Standardnamen (Früh, Spät, Nacht) übersetzt. Umbenannte bleiben, wie sie sind.",
+    "es": "Al cambiar de idioma, los turnos rápidos con el nombre por defecto (Mañana, Tarde, Noche) se traducen. Los que renombraste se quedan igual.",
+    "pt": "Ao mudar de língua, os turnos rápidos com o nome predefinido (Manhã, Tarde, Noite) são traduzidos. Os que renomeou ficam como estão."
   }
 }
