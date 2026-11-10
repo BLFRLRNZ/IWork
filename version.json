@@ -1,12 +1,12 @@
 {
-  "version": "2.2.0",
-  "date": "2026-11-10",
+  "version": "2.2.1",
+  "date": "2026-11-11",
   "notes": {
-    "it": "Reperibilità e secondo lavoro, con conti e paga separati. Nuovo: esporta i turni in Google Calendar, Apple Calendario e Outlook.",
-    "en": "On-call and a second job, with separate totals and pay. New: export your shifts to Google Calendar, Apple Calendar and Outlook.",
-    "fr": "Astreintes et deuxième emploi, avec comptes et paie séparés. Nouveau : exportez vos postes vers Google Agenda, Calendrier d'Apple et Outlook.",
-    "de": "Bereitschaft und Zweitjob, mit getrennten Summen und Lohn. Neu: Schichten in Google Kalender, Apple Kalender und Outlook exportieren.",
-    "es": "Guardias y segundo empleo, con cuentas y sueldo aparte. Nuevo: exporta tus turnos a Google Calendar, Calendario de Apple y Outlook.",
-    "pt": "Prevenção e segundo emprego, com contas e salário à parte. Novo: exporte os turnos para Google Calendar, Calendário da Apple e Outlook."
+    "it": "Aprendo strumenti e impostazioni non si apre più da sola la tastiera o una lista: la schermata resta tutta visibile.",
+    "en": "Opening tools and settings no longer pops up the keyboard or a list by itself, so the whole screen stays visible.",
+    "fr": "À l'ouverture des outils et des réglages, le clavier ou une liste ne s'ouvre plus tout seul : tout l'écran reste visible.",
+    "de": "Beim Öffnen von Werkzeugen und Einstellungen erscheinen Tastatur oder Auswahlliste nicht mehr von selbst, der ganze Bildschirm bleibt sichtbar.",
+    "es": "Al abrir herramientas y ajustes ya no se abre solo el teclado ni una lista: toda la pantalla queda a la vista.",
+    "pt": "Ao abrir ferramentas e definições, o teclado ou uma lista já não se abrem sozinhos: o ecrã fica todo visível."
   }
 }
