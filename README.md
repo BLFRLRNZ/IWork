@@ -7,7 +7,7 @@ Il calendario dei tuoi turni di lavoro. Scegli solo l'orario d'inizio: la fine s
 L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per argomento.
 
 **Calendario**
-- **Inserimento rapido**: scegli un turno rapido, Riposo o Ferie e tocchi i giorni per assegnarlo.
+- **Inserimento rapido**: scegli un turno rapido, un'etichetta o tutti e due, e con un tocco sul giorno assegni turno ed etichetta insieme.
 - **Prossimo turno**: conto alla rovescia all'inizio e, mentre sei in turno, quanto manca alla fine.
 - **Totali del mese**: ore, ore extra, ore notturne, sabati, domeniche e festivi, ferie e permessi residui, banca ore.
 - **Avvisi**: meno di 11 ore di riposo, sette giorni di fila, settimane sopra le 48 ore, ferie o permessi oltre quelli spettanti.
@@ -23,17 +23,18 @@ L'app ha due schermate, **Calendario** e **Anno**, e le impostazioni divise per 
 - **Banca ore**: ore lavorate meno ore da contratto, giorno per giorno fino a oggi. Ferie, permessi, malattia, domeniche e festivi non contano come ore mancanti.
 
 **Strumenti** (pulsante ⋯ in alto)
+- **Turni rapidi** ed **Etichette**: crei e modifichi i pulsanti che compaiono sopra al calendario.
 - **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane.
 - **Ripeti l'ultima settimana**.
 - **Condividi la settimana**: qualsiasi settimana, passata o futura, come immagine pronta da mandare oppure come testo da incollare.
 - **PDF del mese** a scelta, pronto da stampare.
 - **Backup**: "Salva una copia dei turni" crea un file con turni e impostazioni da tenere al sicuro; "Carica una copia" li recupera, dopo una conferma. Un pallino sul pulsante ⋯ ricorda di salvare una copia se l'ultima ha più di 30 giorni.
 
-**Impostazioni**
-- Durata dei turni (8 ore, 6 il sabato) e fino a 12 turni rapidi, ognuno con orario e, se serve, durata propria.
+**Impostazioni** (ogni modifica si salva da sola, anche nella scheda del giorno)
+- Durata dei turni (8 ore, 6 il sabato).
 - Ferie (giorni) e permessi (ore) che ti spettano all'anno.
 - Banca ore: ore settimanali da contratto, data di partenza e saldo iniziale.
-- Etichette, paga oraria e maggiorazioni, tema automatico, chiaro o scuro, aggiornamenti.
+- Paga oraria e maggiorazioni, tema automatico, chiaro o scuro, aggiornamenti.
 
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti.
 
