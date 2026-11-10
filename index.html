@@ -918,7 +918,7 @@ function patronOf(){const P=S.settings.patron,C=ctry();if(!P)return null;
 function holidays(y){const C=ctry(),key=y+"|"+S.settings.country+"|"+S.settings.region+"|"+JSON.stringify(S.settings.patron)+"|"+LANG;
   if(holCache[key])return holCache[key];const h={},obs=[];
   const add=(d,nm)=>{const k=keyOf(d);h[k]=h[k]&&h[k]!==nm?h[k]+" · "+nm:nm;};
-  const addList=L=>(L||[]).forEach(x=>{const o=x[2]||{};if(o.from&&y<o.from||o.to&&y>o.to||o.skip&&o.skip.includes(y))return;const d=ruleDate(y,x[0]);if(!d||d.getFullYear()!==y)return;
+  const addList=L=>(L||[]).forEach(x=>{const o=x[2]||{};if(o.from&&y<o.from||o.to&&y>o.to||o.skip&&o.skip.includes(y))return;const d=ruleDate(y,x[0]);if(!d||d.getFullYear()!==y||o.nwd&&o.nwd.includes(d.getDay()))return;
     const nm=x[1][LANG]||x[1][C.lang]||x[1].en||locName(x[1]);add(d,nm);if(o.obs)obs.push([d,nm,o.obs]);});
   const R=C.reg&&C.reg[S.settings.region],lists=[];if(!(R&&R.replace))lists.push(C.hol);if(R)lists.push(R.hol);lists.forEach(addList);
   /* una festa di sabato 1° gennaio dell'anno dopo si recupera venerdì 31 dicembre */
@@ -926,7 +926,10 @@ function holidays(y){const C=ctry(),key=y+"|"+S.settings.country+"|"+S.settings.
     if(d.getDay()===6)add(new Date(y,11,31),t("{x} (recupero)",{x:x[1][LANG]||x[1][C.lang]||x[1].en}));}));
   const P=patronOf();if(P){const d=ruleDate(y,P.r);if(d)add(d,P.n?t(C.patrons?"{x}, festa patronale":"{x}, festa locale",{x:P.n}):t(C.patrons?"Festa patronale":"Festa locale"));}
   /* giorni di recupero quando la festa cade nel fine settimana */
-  obs.sort((a,b)=>a[0]-b[0]).forEach(([d,nm,mode])=>{const w=d.getDay();if(w!==0&&w!==6||mode==="sun"&&w!==0)return;let x;
+  obs.sort((a,b)=>a[0]-b[0]).forEach(([d,nm,mode])=>{const w=d.getDay();
+    /* Argentina, feriados trasladables: martedì e mercoledì al lunedì prima, giovedì (e venerdì) al lunedì dopo */
+    if(mode==="ar"||mode==="arg"){const dl=w===2?-1:w===3?-2:w===4?4:w===5&&mode==="ar"?3:0;if(dl){const k=keyOf(d);if(h[k]===nm)delete h[k];add(addDays(d,dl),nm);}return;}
+    if(w!==0&&w!==6||mode==="sun"&&w!==0)return;let x;
     if(mode==="near")x=addDays(d,w===6?-1:1);
     else{x=addDays(d,1);while(x.getDay()===0||x.getDay()===6||h[keyOf(x)])x=addDays(x,1);}
     if(mode==="move"){const k=keyOf(d);if(h[k]===nm)delete h[k];add(x,nm);}else add(x,t("{x} (recupero)",{x:nm}));});
