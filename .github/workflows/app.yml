@@ -97,6 +97,10 @@ jobs:
           xcrun simctl launch "$UDID" app.myturn
           sleep 20; xcrun simctl io "$UDID" screenshot shots/ios-1-avvio.png
           xcrun simctl ui "$UDID" appearance dark; sleep 4; xcrun simctl io "$UDID" screenshot shots/ios-2-scuro.png
+      - name: Foto nel registro
+        run: |
+          for f in shots/*.png; do sips -Z 1000 -s format jpeg -s formatOptions 70 "$f" --out "${f%.png}.jpg" >/dev/null
+            echo "FOTO-INIZIO $(basename "${f%.png}")"; base64 -i "${f%.png}.jpg" | fold -w 4000; echo "FOTO-FINE"; done
       - uses: actions/upload-artifact@v4
         with:
           name: foto-iphone
@@ -147,6 +151,11 @@ jobs:
             adb shell am start -n app.myturn/.MainActivity
             sleep 25
             adb exec-out screencap -p > shots/android-1-avvio.png
+      - name: Foto nel registro
+        if: always()
+        run: |
+          for f in shots/*.png; do [ -s "$f" ] || continue; convert "$f" -resize 1000x1000 -quality 70 "${f%.png}.jpg"
+            echo "FOTO-INIZIO $(basename "${f%.png}")"; base64 -w 4000 "${f%.png}.jpg"; echo; echo "FOTO-FINE"; done
       - uses: actions/upload-artifact@v4
         if: always()
         with:
