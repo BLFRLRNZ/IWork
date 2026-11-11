@@ -637,3 +637,71 @@ Kezdd a heti műszakjaid beírásával.
 Kihagyás
 Kezdjük
 Bemutató újra
+Bejelentkezve: {e}
+Nincs fiók: az adataid csak ezen az eszközön maradnak.
+Kezelés
+Bejelentkezés
+Be vagy jelentkezve ezzel: {e}.
+Koppints újra, és minden törlődik
+Fiók és szerveren tárolt adatok törlése
+Kérem a kódot
+Belépés
+Elküldtük ide: {e}. Nézd meg a levélszemét mappát is.
+Adj meg egy érvényes e-mail-címet.
+Kód küldése…
+Túl sok kérés. Várj néhány percet, és próbáld újra.
+Nem sikerült elküldeni a kódot. Ellenőrizd a kapcsolatot, és próbáld újra.
+Írd be a kapott 6 jegyű kódot.
+Kód ellenőrzése…
+Sikeres bejelentkezés.
+Hibás vagy lejárt kód. Próbáld újra, vagy kérj új kódot.
+Nem sikerült ellenőrizni a kódot. Ellenőrizd a kapcsolatot, és próbáld újra.
+Kijelentkeztél. A műszakjaid ezen az eszközön maradnak.
+Fiók törlése…
+A fiók törölve, a szerveren tárolt összes adattal együtt. Az ezen az eszközön lévő műszakok megmaradnak.
+Nem sikerült törölni a fiókot. Ellenőrizd a kapcsolatot, és próbáld újra.
+Az emlékeztetőkhöz fiók kell.
+iPhone-on az értesítések csak akkor érkeznek meg, ha az app a főképernyőn van: a Safariban koppints a Megosztás, majd a Főképernyőhöz adás lehetőségre, és onnan nyisd meg az appot.
+Ez a böngésző nem tud értesítéseket fogadni.
+Ennek az appnak az értesítései le vannak tiltva. Engedélyezd őket a telefon beállításaiban, és próbáld újra.
+{x} esetén is
+Emlékeztetők bekapcsolása…
+Az emlékeztetők be vannak kapcsolva ezen az eszközön.
+Nem sikerült bekapcsolni az emlékeztetőket. Ellenőrizd a kapcsolatot, és próbáld újra.
+Az emlékeztetők ki vannak kapcsolva ezen az eszközön.
+Tesztértesítés küldése…
+{app} teszt
+Az értesítések működnek. A műszakok előtt megkapod az emlékeztetőket.
+Értesítés elküldve {n} eszközre.
+Értesítés elküldve {n} eszközre.
+Nincs regisztrált eszköz: kapcsold ki, majd újra be az emlékeztetőket.
+Nem sikerült elküldeni az értesítést. Ellenőrizd a kapcsolatot, és próbáld újra.
+{n} perc
+{n} perc
+{n} óra
+{n} óra
+{a} és {b}
+A műszak {x} múlva kezdődik.
+{n}, {h}
+Készenlét, kezdés: {h}
+A készenlét {x} múlva kezdődik.
+Fiók
+Értesítés minden műszak előtt
+Fiókkal emlékeztetőt kapsz a műszakok előtt, akkor is, ha az app be van zárva. Fiók nélkül az app ugyanúgy működik, mint eddig.
+E-mail
+E-mailben kapott kód
+Másik e-mail-cím
+Kijelentkezés ezen az eszközön
+Mit tárolunk a szerveren
+Csak az e-mail-címedet és, ha bekapcsolod az emlékeztetőket, a következő 45 nap műszakjait időponttal és a műszak nevével, hogy tudjuk, mikor értesítsünk.
+A jegyzetek, címkék, bérjegyzékek, a bérbecslés és minden más csak ezen az eszközön marad. A fiókot és a szerveren tárolt adatokat bármikor törölheted, itt.
+Értesítés a telefonon minden műszak előtt, akkor is, ha az app be van zárva.
+Emlékeztess a műszakok előtt
+Mennyivel előtte
+15 perccel előtte
+1,5 órával előtte
+3 órával előtte
+Készenlét esetén is
+Tesztértesítés küldése
+Az emlékeztetőkhöz a következő 45 nap műszakjait a szerveren tároljuk, időponttal és a műszak nevével. Ha módosítasz egy műszakot, az emlékeztető magától frissül.
+nev@pelda.hu

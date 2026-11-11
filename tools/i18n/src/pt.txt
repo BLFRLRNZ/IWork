@@ -637,3 +637,71 @@ Comece por registar os turnos desta semana.
 Saltar
 Vamos lá
 Rever a visita guiada
+Sessão iniciada como {e}
+Sem conta: os seus dados ficam apenas neste dispositivo.
+Gerir
+Iniciar sessão
+Tem sessão iniciada como {e}.
+Toque novamente para apagar tudo
+Eliminar a conta e os dados no servidor
+Enviar-me o código
+Entrar
+Enviámo-lo para {e}. Verifique também a pasta de spam.
+Escreva um endereço de e-mail válido.
+A enviar o código…
+Demasiados pedidos. Aguarde alguns minutos e tente novamente.
+Não foi possível enviar o código. Verifique a ligação e tente novamente.
+Escreva o código de 6 dígitos que recebeu.
+A verificar o código…
+Sessão iniciada.
+Código errado ou expirado. Tente novamente ou peça um novo código.
+Não foi possível verificar o código. Verifique a ligação e tente novamente.
+Terminou a sessão. Os seus turnos ficam neste dispositivo.
+A eliminar a conta…
+Conta eliminada, com todos os dados no servidor. Os turnos neste dispositivo mantêm-se.
+Não foi possível eliminar a conta. Verifique a ligação e tente novamente.
+Para os lembretes é necessária uma conta.
+No iPhone as notificações só chegam se a app estiver no ecrã principal: no Safari toque em Partilhar, depois em Adicionar ao ecrã principal, e abra a app a partir daí.
+Este navegador não pode receber notificações.
+As notificações desta app estão bloqueadas. Permita-as nas definições do telemóvel e tente novamente.
+Também para {x}
+A ativar os lembretes…
+Lembretes ativos neste dispositivo.
+Não foi possível ativar os lembretes. Verifique a ligação e tente novamente.
+Lembretes desativados neste dispositivo.
+A enviar a notificação de teste…
+Teste do {app}
+As notificações funcionam. Vai receber os lembretes antes dos seus turnos.
+Notificação enviada para {n} dispositivo.
+Notificação enviada para {n} dispositivos.
+Nenhum dispositivo registado: desative e volte a ativar os lembretes.
+Não foi possível enviar a notificação. Verifique a ligação e tente novamente.
+{n} minuto
+{n} minutos
+{n} hora
+{n} horas
+{a} e {b}
+O seu turno começa daqui a {x}.
+{n} às {h}
+Prevenção a partir das {h}
+A prevenção começa daqui a {x}.
+Conta
+Uma notificação antes de cada turno
+Com uma conta recebe lembretes antes dos turnos, mesmo com a app fechada. Sem conta a app funciona como sempre.
+E-mail
+Código recebido por e-mail
+Usar outro e-mail
+Terminar sessão neste dispositivo
+O que é guardado no servidor
+Apenas o seu endereço de e-mail e, se ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisá-lo.
+Notas, etiquetas, recibos de vencimento, estimativa de salário e tudo o resto ficam apenas neste dispositivo. Pode eliminar a conta e os dados no servidor quando quiser, a partir daqui.
+Uma notificação no telemóvel antes de cada turno, mesmo com a app fechada.
+Avisar-me antes dos turnos
+Com que antecedência
+15 minutos antes
+1 hora e meia antes
+3 horas antes
+Também para a prevenção
+Enviar uma notificação de teste
+Para os lembretes, os turnos dos próximos 45 dias são guardados no servidor, com horário e nome do turno. Se alterar um turno, o lembrete atualiza-se sozinho.
+nome@exemplo.pt

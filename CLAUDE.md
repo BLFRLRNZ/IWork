@@ -7,7 +7,7 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 - Parla e scrive in **italiano**. Le risposte vanno in italiano semplice, senza gergo tecnico. Prima il risultato, poi i dettagli.
 - Usa l'app su **iPhone 16 Pro Max**: le modifiche vanno pensate prima di tutto per il telefono, ma devono funzionare anche su computer.
 - Ogni modifica che si vede nell'app è un **rilascio**, secondo la lista "Rilascio" più sotto. Si lavora direttamente su `main`.
-- Nessun server e nessun account: i dati restano sul dispositivo. Una funzione che richiede un server (sincronizzazione, notifiche vere, calendario in abbonamento) va discussa con il proprietario prima di farla.
+- I dati restano sul dispositivo. L'unico server è Supabase (vedi "Server"), usato solo per l'account e i promemoria. Ogni altra funzione che richiede il server (sincronizzazione, calendario in abbonamento, condivisione) va discussa con il proprietario prima di farla.
 
 ## Cos'è
 
@@ -29,6 +29,7 @@ PWA per segnare i turni di lavoro (calendario dei turni con ore, straordinari, f
 | `vendor/pdfjs/` | pdf.js 6.2.108, versione "legacy" (Apache-2.0). Si carica solo quando si legge una busta paga. |
 | `sw.js` | Service worker: prima prova la rete, poi la cache. La cache si chiama `iwork-vN`: N va aumentato a ogni rilascio. |
 | `version.json` | Versione, data e note di rilascio (it, en, fr, de, es, pt). L'app la usa per proporre l'aggiornamento. |
+| `supabase/` | Server: tabelle (`migrations/`), funzioni (`functions/`) e istruzioni (`README.md`). |
 | `docs/` | `CONTROLLO-FESTIVITA.md` (verifica delle festività), `BUSTE-PAGA.md` (come vengono lette le buste paga). |
 | `ROADMAP.md` | Roadmap dell'internazionalizzazione, tutta completata (2.0). |
 
@@ -72,7 +73,7 @@ PWA per segnare i turni di lavoro (calendario dei turni con ore, straordinari, f
 | `helpData` | Contiene il testo della Guida. |
 | `startTour` / `tourSteps` | Avviano e descrivono il tour guidato. |
 
-`window.iworkDebug` espone `startTour`, `t`, `tn`, `bpLines`, `bpParse`, `bpNum`, `holFor`, `holidays` e altre funzioni per i test.
+`window.iworkDebug` espone `remItems`, `startTour`, `t`, `tn`, `bpLines`, `bpParse`, `bpNum`, `holFor`, `holidays` e altre funzioni per i test.
 
 ### Festività
 
@@ -86,6 +87,18 @@ Il motore delle festività è in `index.html`. Le regole possono essere:
 - `A~B/D`, una festività che si sposta.
 
 Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiungere festività o sostituire quelle nazionali.
+
+## Server (Supabase)
+
+- Serve solo per **accesso** (codice di 6 cifre via email) e **promemoria** (notifiche push prima dei turni). Piano gratuito, regione UE.
+- Il collegamento sta in `index.html`, nell'oggetto `SUPA={url,key,vapid}`: indirizzo del progetto, chiave pubblica "anon" e chiave pubblica VAPID. Se è vuoto, la sezione Account e il pulsante Promemoria restano nascosti e l'app non chiama nessun server.
+- Il client è scritto a mano con `fetch` (`sbFetch`, `auToken`), senza librerie. La sessione sta in `localStorage["iwork-auth"]`.
+- L'app calcola da sola i promemoria dei prossimi 45 giorni (`remItems`), già tradotti e con l'ora di invio, e li manda al server con `set_shifts` ogni volta che i dati cambiano (`mark()` → `remSync`).
+- Sul server: `pg_cron` chiama ogni minuto la funzione `send-reminders`, che manda le notifiche con Web Push. `sw.js` le mostra (`push`, `notificationclick`).
+- Restano **solo sul dispositivo**: note, etichette, busta paga, stima paga e tutto il resto.
+- **Segreti:** la chiave privata VAPID, il `cron_secret` e la chiave `service_role` stanno solo nella tabella `app_config` di Supabase. Non vanno mai nel repository né chiesti in chat.
+- **Email:** il servizio email incluso in Supabase manda solo ai membri del progetto. Per utenti veri serve un SMTP (per esempio Resend o Brevo). Il modello dell'email "Magic Link" deve contenere `{{ .Token }}`.
+- Le istruzioni passo per passo sono in `supabase/README.md`.
 
 ## Traduzioni
 
@@ -128,6 +141,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | `tests/payslip-sheet.js` | Scheda Busta paga, PDF con password, scansione | sì |
 | `tests/tour-first-run.js` | Il tour parte una volta sola e si riapre dalla Guida | sì |
 | `tests/tour-all-languages.js` | Il tour resta dentro lo schermo in 23 lingue | no |
+| `tests/account-reminders.js` | Accesso, uscita e promemoria con un Supabase finto | sì |
 
 - Le buste paga di prova sono in `tests/payslip/`. Si rigenerano con `gen.py`, `gen2.py` e `gen3.py`, che usano reportlab e pypdf.
 - I risultati attesi delle 22 buste di `gen3.py` sono in `expected.json`. Quelli delle buste di `gen.py` e `gen2.py` sono scritti direttamente in `payslip-models.js`.
@@ -146,7 +160,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 - **Traduzioni da far rivedere** a chi parla la lingua: et, lv, lt, hu, sl; il termine per "reperibilità" in ogni lingua; i nomi dei menu di iPhone e Android nella Guida.
 - **Etichetta della versione 2.0.0 su GitHub:** va creata a mano.
 - **Festività mancanti:** quelle dei singoli stati di USA e Brasile, la provincia di Terranova e Labrador in Canada, i ponti decisi ogni anno dai governi.
-- **Funzioni che richiederebbero un server:** calendario in abbonamento, promemoria veri, condivisione con i colleghi.
+- **Funzioni del server ancora da fare:** sincronizzazione tra dispositivi, calendario in abbonamento, condivisione con i colleghi.
 
 ## Storia delle versioni
 

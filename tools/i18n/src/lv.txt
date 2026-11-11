@@ -637,3 +637,71 @@ Sāc ar šīs nedēļas maiņu ierakstīšanu.
 Izlaist
 Sākam
 Skatīt apskatu vēlreiz
+Pieteicies kā {e}
+Nav konta: tavi dati paliek tikai šajā ierīcē.
+Pārvaldīt
+Pieteikties
+Tu esi pieteicies kā {e}.
+Pieskaries vēlreiz, lai izdzēstu visu
+Dzēst kontu un datus serverī
+Sūtīt man kodu
+Ieiet
+Mēs to nosūtījām uz {e}. Pārbaudi arī surogātpasta mapi.
+Ieraksti derīgu e-pasta adresi.
+Sūta kodu…
+Pārāk daudz pieprasījumu. Pagaidi dažas minūtes un mēģini vēlreiz.
+Neizdevās nosūtīt kodu. Pārbaudi savienojumu un mēģini vēlreiz.
+Ieraksti saņemto 6 ciparu kodu.
+Pārbauda kodu…
+Pieteikšanās izdevās.
+Nepareizs vai novecojis kods. Mēģini vēlreiz vai palūdz jaunu kodu.
+Neizdevās pārbaudīt kodu. Pārbaudi savienojumu un mēģini vēlreiz.
+Tu esi izrakstījies. Tavas maiņas paliek šajā ierīcē.
+Dzēš kontu…
+Konts izdzēsts kopā ar visiem datiem serverī. Maiņas šajā ierīcē paliek.
+Neizdevās izdzēst kontu. Pārbaudi savienojumu un mēģini vēlreiz.
+Atgādinājumiem vajag kontu.
+iPhone tālrunī paziņojumi pienāk tikai tad, ja lietotne ir sākuma ekrānā: Safari pieskaries Kopīgot, tad Pievienot sākuma ekrānam, un atver lietotni no turienes.
+Šī pārlūkprogramma nevar saņemt paziņojumus.
+Šīs lietotnes paziņojumi ir bloķēti. Atļauj tos tālruņa iestatījumos un mēģini vēlreiz.
+Arī {x}
+Ieslēdz atgādinājumus…
+Atgādinājumi šajā ierīcē ir ieslēgti.
+Neizdevās ieslēgt atgādinājumus. Pārbaudi savienojumu un mēģini vēlreiz.
+Atgādinājumi šajā ierīcē ir izslēgti.
+Sūta testa paziņojumu…
+{app} tests
+Paziņojumi darbojas. Tu saņemsi atgādinājumus pirms maiņām.
+Paziņojums nosūtīts uz {n} ierīci.
+Paziņojums nosūtīts uz {n} ierīcēm.
+Nav reģistrētu ierīču: izslēdz un atkal ieslēdz atgādinājumus.
+Neizdevās nosūtīt paziņojumu. Pārbaudi savienojumu un mēģini vēlreiz.
+{n} minūtes
+{n} minūtēm
+{n} stundas
+{n} stundām
+{a} un {b}
+Maiņa sākas pēc {x}.
+{n} plkst. {h}
+Dežūra no {h}
+Dežūra sākas pēc {x}.
+Konts
+Paziņojums pirms katras maiņas
+Ar kontu tu saņem atgādinājumus pirms maiņām, pat ja lietotne ir aizvērta. Bez konta lietotne darbojas kā vienmēr.
+E-pasts
+Pa e-pastu saņemtais kods
+Izmantot citu e-pastu
+Izrakstīties šajā ierīcē
+Kas tiek saglabāts serverī
+Tikai tava e-pasta adrese un, ja ieslēdz atgādinājumus, nākamo 45 dienu maiņas ar laiku un maiņas nosaukumu, lai zinātu, kad tev atgādināt.
+Piezīmes, birkas, algas lapiņas, algas aprēķins un viss pārējais paliek tikai šajā ierīcē. Kontu un datus serverī vari izdzēst jebkurā laikā, šeit.
+Paziņojums tālrunī pirms katras maiņas, pat ja lietotne ir aizvērta.
+Atgādināt pirms maiņām
+Cik laicīgi
+15 minūtes iepriekš
+1,5 stundu iepriekš
+3 stundas iepriekš
+Arī dežūrām
+Sūtīt testa paziņojumu
+Atgādinājumiem nākamo 45 dienu maiņas tiek saglabātas serverī ar laiku un maiņas nosaukumu. Ja maini maiņu, atgādinājums atjaunojas pats.
+vards@piemers.lv

@@ -637,3 +637,71 @@ Aici găsești tot restul: rotația, concediul și învoirile, banca de ore, est
 Sari peste
 Să începem
 Revezi turul ghidat
+Conectat ca {e}
+Fără cont: datele tale rămân doar pe acest dispozitiv.
+Gestionează
+Conectează-te
+Ești conectat ca {e}.
+Atinge din nou pentru a șterge tot
+Șterge contul și datele de pe server
+Trimite-mi codul
+Intră
+L-am trimis la {e}. Verifică și dosarul de spam.
+Scrie o adresă de e-mail validă.
+Se trimite codul…
+Prea multe cereri. Așteaptă câteva minute și încearcă din nou.
+Nu am reușit să trimit codul. Verifică conexiunea și încearcă din nou.
+Scrie codul de 6 cifre pe care l-ai primit.
+Se verifică codul…
+Te-ai conectat.
+Cod greșit sau expirat. Încearcă din nou sau cere un cod nou.
+Nu am reușit să verific codul. Verifică conexiunea și încearcă din nou.
+Te-ai deconectat. Turele tale rămân pe acest dispozitiv.
+Se șterge contul…
+Cont șters, cu toate datele de pe server. Turele de pe acest dispozitiv rămân.
+Nu am reușit să șterg contul. Verifică conexiunea și încearcă din nou.
+Pentru mementouri ai nevoie de un cont.
+Pe iPhone notificările sosesc doar dacă aplicația este pe ecranul principal: în Safari atinge Partajează, apoi Adaugă pe ecranul principal, și deschide aplicația de acolo.
+Acest browser nu poate primi notificări.
+Notificările pentru această aplicație sunt blocate. Permite-le în setările telefonului și încearcă din nou.
+Și pentru {x}
+Se activează mementourile…
+Mementouri active pe acest dispozitiv.
+Nu am reușit să activez mementourile. Verifică conexiunea și încearcă din nou.
+Mementouri oprite pe acest dispozitiv.
+Se trimite notificarea de test…
+Test {app}
+Notificările funcționează. Vei primi mementourile înainte de ture.
+Notificare trimisă la {n} dispozitiv.
+Notificare trimisă la {n} de dispozitive. ‖few: Notificare trimisă la {n} dispozitive.
+Niciun dispozitiv înregistrat: oprește și repornește mementourile.
+Nu am reușit să trimit notificarea. Verifică conexiunea și încearcă din nou.
+{n} minut
+{n} de minute ‖few: {n} minute
+{n} oră
+{n} de ore ‖few: {n} ore
+{a} și {b}
+Tura începe în {x}.
+{n} la {h}
+Gardă de la {h}
+Garda începe în {x}.
+Cont
+O notificare înainte de fiecare tură
+Cu un cont primești mementouri înainte de ture, chiar și cu aplicația închisă. Fără cont aplicația funcționează ca întotdeauna.
+E-mail
+Cod primit pe e-mail
+Folosește alt e-mail
+Deconectează-te de pe acest dispozitiv
+Ce se salvează pe server
+Doar adresa ta de e-mail și, dacă activezi mementourile, turele din următoarele 45 de zile cu ora și numele turei, ca să știm când să te anunțăm.
+Notițele, etichetele, fluturașii de salariu, estimarea salariului și tot restul rămân doar pe acest dispozitiv. Poți șterge contul și datele de pe server oricând, de aici.
+O notificare pe telefon înainte de fiecare tură, chiar și cu aplicația închisă.
+Anunță-mă înainte de ture
+Cu cât timp înainte
+Cu 15 minute înainte
+Cu o oră și jumătate înainte
+Cu 3 ore înainte
+Și pentru gardă
+Trimite o notificare de test
+Pentru mementouri, turele din următoarele 45 de zile sunt salvate pe server, cu ora și numele turei. Dacă schimbi o tură, mementoul se actualizează singur.
+nume@exemplu.ro

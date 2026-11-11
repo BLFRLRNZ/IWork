@@ -639,6 +639,10 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <label><input type="radio" name="theme" id="th-dark" value="dark"><span>Scuro</span></label>
     </div>
 
+    <div id="acSect" hidden>
+      <h3 class="sect">Account</h3>
+      <div class="uprow"><span id="acInfo"></span><button type="button" class="btn" id="acBtn">Accedi</button></div>
+    </div>
     <h3 class="sect">Aggiornamenti</h3>
     <div class="uprow"><span id="upInfo"></span><button type="button" class="btn" id="upCheck">Cerca aggiornamenti</button></div>
     <button type="button" class="linkbtn" id="stHelp">Apri la guida</button>
@@ -670,6 +674,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <button type="button" class="mi" id="shareBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></span><span><b>Condividi la settimana</b><small>Immagine o testo, qualsiasi settimana</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="pdfBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><span><b>PDF del mese</b><small>Il mese che vuoi, pronto da stampare</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="icsBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5L12 18l2.5-2.5"/></svg></span><span><b>Esporta nel calendario</b><small>Google, Apple o Outlook Calendar</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
+      <button type="button" class="mi" id="rmBtn" hidden><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 16.5V11a5.5 5.5 0 0 1 11 0v5.5l1.5 2h-14zM10 20.5a2 2 0 0 0 4 0"/></svg></span><span><b>Promemoria</b><small>Una notifica prima di ogni turno</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <h3>Backup</h3>
       <button type="button" class="mi" id="bakBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M8 11l4 4 4-4"/><path d="M5 19h14"/></svg></span><span><b>Salva una copia dei turni</b><small>Un file con tutti i turni e le impostazioni</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="resBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 19h14"/></svg></span><span><b>Carica una copia</b><small>Recupera i turni da un file salvato prima</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
@@ -773,6 +778,55 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       </div>
     </div>
     <p class="help">I turni del secondo lavoro compaiono come seconda riga negli stessi giorni, con il quadratino verde acqua. Li assegni con i turni rapidi del secondo lavoro oppure toccando un giorno. Ore e paga si contano a parte: non entrano nella banca ore, nelle ferie e negli avvisi del lavoro principale.</p>
+    <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
+  </form>
+</dialog>
+
+<dialog id="ac" aria-labelledby="acTitle">
+  <form class="sheet" id="acForm" method="dialog">
+    <h2 id="acTitle" style="text-transform:none">Account</h2>
+    <div id="acOut">
+      <p class="sub">Con un account ricevi i promemoria prima dei turni, anche ad app chiusa. Senza account l'app funziona come sempre.</p>
+      <div class="field" id="acEmailBox"><label class="eyebrow" for="acEmail">Email</label><input type="email" id="acEmail" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" placeholder="nome@esempio.it"></div>
+      <div class="field" id="acCodeBox" hidden>
+        <label class="eyebrow" for="acCode">Codice ricevuto via email</label>
+        <input type="text" id="acCode" inputmode="numeric" autocomplete="one-time-code" maxlength="10">
+        <p class="help" id="acCodeHelp"></p>
+        <button type="button" class="linkbtn" id="acChange">Usa un'altra email</button>
+      </div>
+    </div>
+    <div id="acIn" hidden>
+      <p class="sub" id="acWho"></p>
+      <button type="button" class="btn" id="acLogout">Esci da questo dispositivo</button>
+      <button type="button" class="linkbtn" id="acDelete">Elimina l'account e i dati sul server</button>
+    </div>
+    <p class="bpst" id="acStatus" aria-live="polite" hidden></p>
+    <details class="ichelp"><summary>Cosa viene salvato sul server</summary>
+      <p>Solo il tuo indirizzo email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti.</p>
+      <p>Note, etichette, busta paga, stima paga e tutto il resto restano solo su questo dispositivo. Puoi eliminare l'account e i dati sul server quando vuoi, da qui.</p>
+    </details>
+    <div class="actions">
+      <button type="button" class="btn ghost" id="acClose">Chiudi</button>
+      <button type="submit" class="btn primary" id="acGo">Mandami il codice</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="rm" aria-labelledby="rmTitle">
+  <form class="sheet" method="dialog">
+    <h2 id="rmTitle" style="text-transform:none">Promemoria</h2>
+    <p class="sub">Una notifica sul telefono prima di ogni turno, anche con l'app chiusa.</p>
+    <div class="bpst err" id="rmNeed" hidden></div>
+    <label class="check"><input type="checkbox" id="rmOn"> Avvisami prima dei turni</label>
+    <div id="rmBox">
+      <div class="field"><label class="eyebrow" for="rmMin">Quanto prima</label>
+        <select id="rmMin"><option value="15">15 minuti prima</option><option value="30">30 minuti prima</option><option value="60">1 ora prima</option><option value="90">1 ora e mezza prima</option><option value="120">2 ore prima</option><option value="180">3 ore prima</option></select></div>
+      <label class="check" id="rmJ2L"><input type="checkbox" id="rmJ2"> <span id="rmJ2T"></span></label>
+      <label class="check" id="rmOcL"><input type="checkbox" id="rmOc"> Anche per la reperibilità</label>
+      <button type="button" class="btn" id="rmTest">Manda una notifica di prova</button>
+    </div>
+    <p class="bpst" id="rmStatus" aria-live="polite" hidden></p>
+    <p class="help">Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.</p>
     <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
   </form>
 </dialog>
@@ -1072,7 +1126,7 @@ function normSettings(s){s=s||{};const wd=num(s.wd,0.5,16,DEF.wd),sat=num(s.sat,
     bankFrom:isK(s.bankFrom)?s.bankFrom:"",bank0:num(s.bank0,-999,999,0),presets:[],cycle:[],labels:[],
     pOt:num(s.pOt,0,300,0),pNight:num(s.pNight,0,300,0),pSun:num(s.pSun,0,300,0),pHol:num(s.pHol,0,300,0),
     country:typeof s.country==="string"&&(window.IWORK_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null,setup:s.setup?1:0,rules:null,
-    payLag:s.payLag?1:0,ocOn:s.ocOn?1:0,ocS:okT(s.ocS)?s.ocS:"20:00",ocD:num(s.ocD,0.5,24,12),ocPay:num(s.ocPay,0,9999,0),j2:null};
+    rem:(r=>({on:r.on?1:0,min:[15,30,60,90,120,180].includes(+r.min)?+r.min:60,j2:r.j2===0?0:1,oc:r.oc===0?0:1}))(s.rem||{}),payLag:s.payLag?1:0,ocOn:s.ocOn?1:0,ocS:okT(s.ocS)?s.ocS:"20:00",ocD:num(s.ocD,0.5,24,12),ocPay:num(s.ocPay,0,9999,0),j2:null};
   /* secondo lavoro: nome, durata standard, paga oraria */
   const j=s.j2&&typeof s.j2==="object"?s.j2:{};o.j2={on:j.on?1:0,n:String(j.n||"").trim().slice(0,24),d:num(j.d,0.5,16,4),rate:num(j.rate,0,9999,0)};
   if(s.rules&&typeof s.rules==="object"){const r={};const a=num(s.rules.rest,0,24,null),b=num(s.rules.maxWeek,1,99,null),c=num(s.rules.nf,0,23,null),d=num(s.rules.nt,0,23,null);
@@ -1225,7 +1279,7 @@ const dateIt=k=>fDMY(dateOf(k));
 function restFlags(list){const f={};for(let i=1;i<list.length;i++){const gap=(list[i].start-list[i-1].end)/3600000;if(gap<RULES.rest)f[list[i].k]={gap,prev:list[i-1].k};}return f;}
 
 /* ---------- salvataggio sul dispositivo ---------- */
-function mark(){saveLocal();}
+function mark(){saveLocal();try{remSync();}catch(e){}}
 const monthId=k=>"m-"+k.slice(0,7);
 function setStatus(){$("status").textContent=t("I turni sono salvati su questo dispositivo.");}
 
@@ -1553,7 +1607,7 @@ function lockPage(){if(document.body.classList.contains("locked"))return;lockY=w
 function unlockPage(){if(document.querySelector("dialog[open]")||!document.body.classList.contains("locked"))return;document.body.classList.remove("locked");document.body.style.top="";window.scrollTo(0,lockY);}
 function openDlg(d){lockPage();if(d.open)return;d.tabIndex=-1;d.showModal();d.focus({preventScroll:true});}
 function showField(id){setTimeout(()=>{const el=$(id);if(!el)return;el.scrollIntoView({block:"center",behavior:"smooth"});const f=el.closest(".field")||el;f.classList.remove("flash");void f.offsetWidth;f.classList.add("flash");},120);}
-[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp"),$("hp")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
+[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp"),$("hp"),$("ac"),$("rm")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
 /* niente zoom con due dita o doppio tocco (Safari ignora user-scalable) */
 ["gesturestart","gesturechange","gestureend"].forEach(t=>document.addEventListener(t,ev=>ev.preventDefault(),{passive:false}));
 document.addEventListener("touchmove",ev=>{if(ev.touches.length>1)ev.preventDefault();},{passive:false});
@@ -1819,6 +1873,113 @@ $("cyForm").addEventListener("submit",ev=>{ev.preventDefault();const plan=cyPlan
   S.settings.cycle=cyDraft.map(c=>({v:c.v,c:c.c}));mark("settings","s");$("cy").close();
   const f=dateOf(plan[0][0]);view=new Date(f.getFullYear(),f.getMonth(),1);if(mode!=="cal")setMode("cal");
   apply(plan.map(x=>[x[0],cyEntry(x[1])]),tn(plan.length,"Turnazione applicata a {n} giorno.","Turnazione applicata a {n} giorni."));});
+
+/* ---------- account (Supabase) e promemoria ----------
+   Senza configurazione (SUPA.url vuoto) tutto questo resta nascosto e l'app funziona solo in locale.
+   Accesso con codice a 6 cifre via email: su iPhone il link aprirebbe Safari invece dell'app installata. */
+const SUPA=Object.assign({url:"",key:"",vapid:""},window.__IWORK_SUPA||{});  /* __IWORK_SUPA: solo per i test */
+const SB_ON=()=>!!(SUPA.url&&SUPA.key);
+const AUTH_K="iwork-auth";let AU=null;
+try{AU=JSON.parse(localStorage.getItem(AUTH_K)||"null");}catch(e){AU=null;}
+function auSave(){try{if(AU)localStorage.setItem(AUTH_K,JSON.stringify(AU));else localStorage.removeItem(AUTH_K);}catch(e){}}
+function auSet(j){AU={access_token:j.access_token,refresh_token:j.refresh_token,expires_at:j.expires_at||Math.floor(Date.now()/1000)+(j.expires_in||3600),user:{id:j.user.id,email:j.user.email}};auSave();}
+async function sbFetch(path,o={}){const h={apikey:SUPA.key,"Content-Type":"application/json"};
+  if(o.auth!==false){const tk=await auToken();if(!tk)throw Object.assign(new Error("auth"),{status:401});h.Authorization="Bearer "+tk;}else h.Authorization="Bearer "+SUPA.key;
+  const r=await fetch(SUPA.url+path,{method:o.method||"POST",headers:Object.assign(h,o.headers||{}),body:o.body===undefined?undefined:JSON.stringify(o.body)});
+  let j=null;try{j=await r.json();}catch(e){}
+  if(!r.ok)throw Object.assign(new Error((j&&(j.msg||j.message||j.error_description||j.error))||String(r.status)),{status:r.status,code:j&&(j.error_code||j.code)});
+  return j;}
+let auRef=null;
+async function auToken(){if(!AU)return null;if(Date.now()/1000<AU.expires_at-60)return AU.access_token;
+  if(!auRef)auRef=(async()=>{try{const j=await sbFetch("/auth/v1/token?grant_type=refresh_token",{auth:false,body:{refresh_token:AU.refresh_token}});auSet(j);}
+    catch(e){if(e.status===400||e.status===401){AU=null;auSave();renderAccount();}throw e;}finally{auRef=null;}})();
+  await auRef;return AU&&AU.access_token;}
+const acEmailOk=v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+let acStep="email",acBusy=false,acDelArm=0;
+function acStat(msg,cls){const e=$("acStatus");e.hidden=!msg;e.className="bpst"+(cls?" "+cls:"");e.textContent=msg||"";}
+function renderAccount(){const on=SB_ON();$("acSect").hidden=!on;$("rmBtn").hidden=!on;if(!on)return;
+  $("acInfo").textContent=AU?t("Accesso come {e}",{e:AU.user.email}):t("Nessun account: i dati restano solo su questo dispositivo.");
+  $("acBtn").textContent=AU?t("Gestisci"):t("Accedi");
+  if(!$("ac").open)return;
+  $("acOut").hidden=!!AU;$("acIn").hidden=!AU;$("acGo").hidden=!!AU;
+  if(AU){$("acWho").textContent=t("Hai effettuato l'accesso come {e}.",{e:AU.user.email});$("acDelete").textContent=acDelArm>Date.now()?t("Tocca di nuovo per eliminare tutto"):t("Elimina l'account e i dati sul server");return;}
+  $("acEmailBox").hidden=acStep!=="email";$("acCodeBox").hidden=acStep!=="code";
+  $("acGo").textContent=acStep==="email"?t("Mandami il codice"):t("Entra");$("acGo").disabled=acBusy;
+  $("acCodeHelp").textContent=t("L'abbiamo mandato a {e}. Controlla anche la posta indesiderata.",{e:$("acEmail").value.trim()});}
+function openAccount(){if($("st").open)$("st").close();if($("tl").open)$("tl").close();acStep="email";acBusy=false;acDelArm=0;acStat("");$("acCode").value="";renderAccount();openDlg($("ac"));renderAccount();}
+$("acBtn").onclick=openAccount;
+$("acClose").onclick=()=>$("ac").close();
+$("acChange").onclick=()=>{acStep="email";acStat("");renderAccount();};
+$("acForm").addEventListener("submit",async ev=>{ev.preventDefault();if(acBusy||AU)return;const em=$("acEmail").value.trim().toLowerCase();
+  if(acStep==="email"){if(!acEmailOk(em)){acStat(t("Scrivi un indirizzo email valido."),"err");return;}
+    acBusy=true;renderAccount();acStat(t("Invio del codice…"));
+    try{await sbFetch("/auth/v1/otp",{auth:false,body:{email:em,create_user:true}});acStep="code";acStat("");}
+    catch(e){acStat(e.status===429?t("Troppe richieste. Aspetta qualche minuto e riprova."):t("Non sono riuscito a mandare il codice. Controlla la connessione e riprova."),"err");}
+    acBusy=false;renderAccount();return;}
+  const code=$("acCode").value.replace(/\D/g,"");if(code.length<6){acStat(t("Scrivi il codice di 6 cifre che hai ricevuto."),"err");return;}
+  acBusy=true;renderAccount();acStat(t("Controllo il codice…"));
+  try{const j=await sbFetch("/auth/v1/verify",{auth:false,body:{type:"email",email:em,token:code}});auSet(j);acStat(t("Accesso eseguito."),"ok");renderAccount();remSync(true);}
+  catch(e){acStat(e.status===401||e.status===403||e.status===400?t("Codice sbagliato o scaduto. Riprova o fatti mandare un nuovo codice."):t("Non sono riuscito a controllare il codice. Controlla la connessione e riprova."),"err");}
+  acBusy=false;renderAccount();});
+async function pushSub(){try{const r=await navigator.serviceWorker.getRegistration();return r&&await r.pushManager.getSubscription();}catch(e){return null;}}
+$("acLogout").onclick=async()=>{const sub=await pushSub();
+  try{if(sub)await sbFetch("/rest/v1/rpc/forget_push",{body:{p_endpoint:sub.endpoint}});}catch(e){}
+  try{if(sub)await sub.unsubscribe();}catch(e){}
+  try{await sbFetch("/auth/v1/logout",{});}catch(e){}
+  AU=null;auSave();S.settings.rem.on=0;mark();acStat(t("Sei uscito. I tuoi turni restano su questo dispositivo."),"ok");renderAccount();};
+$("acDelete").onclick=async()=>{if(acDelArm<Date.now()){acDelArm=Date.now()+5000;renderAccount();setTimeout(renderAccount,5100);return;}
+  acDelArm=0;acStat(t("Elimino l'account…"));
+  try{await sbFetch("/functions/v1/delete-account",{});const sub=await pushSub();if(sub)try{await sub.unsubscribe();}catch(e){}
+    AU=null;auSave();S.settings.rem.on=0;mark();acStat(t("Account eliminato, con tutti i dati sul server. I turni su questo dispositivo restano."),"ok");}
+  catch(e){acStat(t("Non sono riuscito a eliminare l'account. Controlla la connessione e riprova."),"err");}
+  renderAccount();};
+/* promemoria */
+const isIOS=()=>/iPad|iPhone|iPod/.test(navigator.userAgent)||navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1;
+const isStandalone=()=>matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+function pushProblem(){if(!SB_ON())return"off";if(!AU)return"login";
+  if(!("serviceWorker" in navigator)||!("PushManager" in window)||!("Notification" in window))return isIOS()&&!isStandalone()?"install":"unsupported";
+  if(isIOS()&&!isStandalone())return"install";if(Notification.permission==="denied")return"denied";return"";}
+function rmNeed(p){const e=$("rmNeed");const M={login:t("Per i promemoria serve un account."),install:t("Sull'iPhone le notifiche arrivano solo se l'app è sulla schermata Home: in Safari tocca Condividi, poi Aggiungi alla schermata Home, e apri l'app da lì."),unsupported:t("Questo browser non può ricevere notifiche."),denied:t("Le notifiche per questa app sono bloccate. Consentile nelle impostazioni del telefono e riprova.")};
+  e.hidden=!M[p];e.innerHTML=M[p]?esc(M[p])+(p==="login"?' <button type="button" class="linkbtn" id="rmLogin">'+t("Accedi")+"</button>":""):"";if(p==="login")$("rmLogin").onclick=()=>{$("rm").close();openAccount();};}
+function rmStat(msg,cls){const e=$("rmStatus");e.hidden=!msg;e.className="bpst"+(cls?" "+cls:"");e.textContent=msg||"";}
+function renderRem(){const r=S.settings.rem,p=pushProblem();rmNeed(p);$("rmOn").checked=!!r.on&&!p;$("rmOn").disabled=p==="login"||p==="unsupported";
+  $("rmBox").hidden=!$("rmOn").checked;$("rmMin").value=r.min;$("rmJ2L").hidden=!J2on();$("rmJ2T").textContent=t("Anche per {x}",{x:j2Name()});$("rmJ2").checked=!!r.j2;
+  $("rmOcL").hidden=!S.settings.ocOn;$("rmOc").checked=!!r.oc;}
+$("rmBtn").onclick=()=>{rmStat("");renderRem();openDlg($("rm"));};
+const b64u=s=>{const p="=".repeat((4-s.length%4)%4),b=atob((s+p).replace(/-/g,"+").replace(/_/g,"/"));return Uint8Array.from(b,c=>c.charCodeAt(0));};
+async function remEnable(){const p=pushProblem();if(p){rmNeed(p);return false;}
+  const perm=await Notification.requestPermission();if(perm!=="granted"){rmNeed("denied");return false;}
+  rmStat(t("Attivo i promemoria…"));
+  try{const reg=await navigator.serviceWorker.ready;let sub=await reg.pushManager.getSubscription();
+    if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64u(SUPA.vapid)});
+    const k=sub.toJSON().keys;await sbFetch("/rest/v1/rpc/save_push",{body:{p_endpoint:sub.endpoint,p_p256dh:k.p256dh,p_auth:k.auth,p_ua:navigator.userAgent}});
+    S.settings.rem.on=1;mark();await remSync(true);rmStat(t("Promemoria attivi su questo dispositivo."),"ok");return true;}
+  catch(e){rmStat(t("Non sono riuscito ad attivare i promemoria. Controlla la connessione e riprova."),"err");return false;}}
+async function remDisable(){S.settings.rem.on=0;mark();const sub=await pushSub();
+  try{if(sub)await sbFetch("/rest/v1/rpc/forget_push",{body:{p_endpoint:sub.endpoint}});await sbFetch("/rest/v1/rpc/set_shifts",{body:{items:[]}});}catch(e){}
+  try{if(sub)await sub.unsubscribe();}catch(e){}rmStat(t("Promemoria spenti su questo dispositivo."));}
+$("rmOn").addEventListener("change",async()=>{if($("rmOn").checked){const ok=await remEnable();if(!ok)$("rmOn").checked=false;}else await remDisable();$("rmBox").hidden=!$("rmOn").checked;});
+["rmMin","rmJ2","rmOc"].forEach(id=>$(id).addEventListener("change",()=>{const r=S.settings.rem;r.min=+$("rmMin").value;r.j2=$("rmJ2").checked?1:0;r.oc=$("rmOc").checked?1:0;mark();remSync(true);}));
+$("rmTest").onclick=async()=>{rmStat(t("Invio la notifica di prova…"));
+  try{const j=await sbFetch("/functions/v1/push-test",{body:{title:t("Prova di {app}",{app:APP}),body:t("Le notifiche funzionano. Riceverai i promemoria prima dei turni.")}});
+    rmStat(j&&j.sent?tn(j.sent,"Notifica inviata a {n} dispositivo.","Notifica inviata a {n} dispositivi."):t("Nessun dispositivo iscritto: spegni e riaccendi i promemoria."),j&&j.sent?"ok":"err");}
+  catch(e){rmStat(t("Non sono riuscito a mandare la notifica. Controlla la connessione e riprova."),"err");}};
+/* turni dei prossimi 45 giorni, con il testo della notifica già nella lingua dell'utente */
+function minTxt(m){const h=Math.floor(m/60),mm=m%60;if(!h)return tn(mm,"{n} minuto","{n} minuti");if(!mm)return tn(h,"{n} ora","{n} ore");return t("{a} e {b}",{a:tn(h,"{n} ora","{n} ore"),b:tn(mm,"{n} minuto","{n} minuti")});}
+function remItems(){const r=S.settings.rem,now=Date.now(),lim=now+45*864e5,ms=r.min*6e4,out=[];
+  const push=(start,k,title,body)=>{if(start.getTime()<=now||start.getTime()>lim)return;out.push({s:start.toISOString(),k,r:new Date(start.getTime()-ms).toISOString(),t:title,b:body});};
+  const left=t("Il turno inizia tra {x}.",{x:minTxt(r.min)});
+  workList().forEach(x=>{const e=S.days[x.k];if(!e)return;const nm=presetName(e);x.segs.forEach(g=>push(g.start,"w",t("{n} alle {h}",{n:nm,h:hm(g.start)}),left+" "+hm(g.start)+"–"+hm(g.end)));});
+  if(r.j2&&J2on())j2List().forEach(x=>push(x.start,"j2",t("{n} alle {h}",{n:j2Name(),h:hm(x.start)}),left+" "+hm(x.start)+"–"+hm(x.end)));
+  if(r.oc&&S.settings.ocOn)Object.keys(S.oc).forEach(k=>{const o=ocRange(k);push(o.start,"oc",t("Reperibilità dalle {h}",{h:hm(o.start)}),t("La reperibilità inizia tra {x}.",{x:minTxt(r.min)}))});
+  const seen=new Set();return out.filter(i=>{const id=i.k+i.s;if(seen.has(id))return false;seen.add(id);return true;}).sort((a,b)=>a.s<b.s?-1:1).slice(0,400);}
+let remT=null,remLast="";
+function remSync(now){if(!SB_ON()||!AU||!S.settings.rem.on)return Promise.resolve();clearTimeout(remT);
+  return new Promise(res=>{remT=setTimeout(async()=>{const items=remItems(),sig=JSON.stringify(items);
+    if(sig===remLast&&!now){res();return;}
+    try{await sbFetch("/rest/v1/rpc/set_shifts",{body:{items}});remLast=sig;try{localStorage.setItem("iwork-remsync",String(Date.now()));}catch(e){}}catch(e){}res();},now?0:4000);});}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState!=="visible")return;let l=0;try{l=+localStorage.getItem("iwork-remsync")||0;}catch(e){}if(Date.now()-l>6*3600e3)remSync(true);});
+renderAccount();setTimeout(()=>remSync(true),3000);
 
 /* ---------- tour guidato (una volta, dopo la prima configurazione; si rivede dalla Guida) ---------- */
 const TOUR_K="iwork-tour";let TR=null;
@@ -2237,7 +2398,7 @@ $("repeatBtn").onclick=()=>{const keys=Object.keys(S.days).sort();if(!keys.lengt
   apply(ch,t("Settimana del {a} ripetuta su quella del {b}.",{a:fDMs(src),b:fDMs(to)}));};
 
 function fromMenu(){if($("tl").open)setTimeout(()=>$("tl").close(),0);}
-["cycleBtn","shareBtn","pdfBtn","icsBtn"].forEach(id=>$(id).addEventListener("click",fromMenu));
+["cycleBtn","shareBtn","pdfBtn","icsBtn","rmBtn"].forEach(id=>$(id).addEventListener("click",fromMenu));
 $("repeatBtn").addEventListener("click",()=>$("tl").close());
 $("toolsBtn").onclick=()=>{bkRender();try{localStorage.setItem("iwork-bkseen",String(Date.now()));}catch(e){}$("toolsBadge").hidden=true;openDlg($("tl"));};
 $("tlClose").onclick=()=>$("tl").close();
@@ -2398,7 +2559,7 @@ function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
   if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
 
-window.iworkDebug={startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
+window.iworkDebug={remItems,startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();relabelPresets();setNames();translateDom();

@@ -637,3 +637,71 @@ Alusta selle nädala vahetuste märkimisest.
 Jäta vahele
 Alustame
 Vaata tuuri uuesti
+Sisse logitud kui {e}
+Kontot pole: sinu andmed jäävad ainult sellesse seadmesse.
+Halda
+Logi sisse
+Oled sisse logitud kui {e}.
+Puuduta uuesti, et kõik kustutada
+Kustuta konto ja andmed serverist
+Saada mulle kood
+Sisene
+Saatsime selle aadressile {e}. Vaata ka rämpsposti kausta.
+Sisesta kehtiv e-posti aadress.
+Koodi saatmine…
+Liiga palju päringuid. Oota paar minutit ja proovi uuesti.
+Koodi ei õnnestunud saata. Kontrolli ühendust ja proovi uuesti.
+Sisesta saadud 6-kohaline kood.
+Koodi kontrollimine…
+Sisse logitud.
+Vale või aegunud kood. Proovi uuesti või küsi uus kood.
+Koodi ei õnnestunud kontrollida. Kontrolli ühendust ja proovi uuesti.
+Oled välja logitud. Sinu vahetused jäävad sellesse seadmesse.
+Konto kustutamine…
+Konto on kustutatud koos kõigi serveris olnud andmetega. Selle seadme vahetused jäävad alles.
+Kontot ei õnnestunud kustutada. Kontrolli ühendust ja proovi uuesti.
+Meeldetuletuste jaoks on vaja kontot.
+iPhone'is tulevad teavitused ainult siis, kui rakendus on avakuval: puuduta Safaris Jaga, siis Lisa avakuvale, ja ava rakendus sealt.
+See brauser ei saa teavitusi vastu võtta.
+Selle rakenduse teavitused on blokeeritud. Luba need telefoni seadetes ja proovi uuesti.
+Ka {x} jaoks
+Meeldetuletuste sisselülitamine…
+Meeldetuletused on selles seadmes sees.
+Meeldetuletusi ei õnnestunud sisse lülitada. Kontrolli ühendust ja proovi uuesti.
+Meeldetuletused on selles seadmes väljas.
+Testteavituse saatmine…
+{app} test
+Teavitused töötavad. Saad meeldetuletused enne vahetusi.
+Teavitus saadeti {n} seadmesse.
+Teavitus saadeti {n} seadmesse.
+Ühtegi seadet pole registreeritud: lülita meeldetuletused välja ja uuesti sisse.
+Teavitust ei õnnestunud saata. Kontrolli ühendust ja proovi uuesti.
+{n} minuti
+{n} minuti
+{n} tunni
+{n} tunni
+{a} ja {b}
+Vahetus algab {x} pärast.
+{n} kell {h}
+Valve alates {h}
+Valve algab {x} pärast.
+Konto
+Teavitus enne iga vahetust
+Kontoga saad meeldetuletused enne vahetusi, isegi kui rakendus on suletud. Ilma kontota töötab rakendus nagu alati.
+E-post
+E-postiga saadud kood
+Kasuta teist e-posti
+Logi selles seadmes välja
+Mida serveris hoitakse
+Ainult sinu e-posti aadress ja, kui lülitad meeldetuletused sisse, järgmise 45 päeva vahetused koos kellaaja ja vahetuse nimega, et teada, millal sulle teada anda.
+Märkmed, sildid, palgalehed, palgahinnang ja kõik muu jäävad ainult sellesse seadmesse. Konto ja serveris olevad andmed saad igal ajal siit kustutada.
+Teavitus telefonis enne iga vahetust, isegi kui rakendus on suletud.
+Tuleta vahetusi meelde
+Kui palju varem
+15 minutit enne
+1,5 tundi enne
+3 tundi enne
+Ka valve jaoks
+Saada testteavitus
+Meeldetuletuste jaoks hoitakse serveris järgmise 45 päeva vahetusi koos kellaaja ja vahetuse nimega. Kui muudad vahetust, uueneb meeldetuletus ise.
+nimi@naide.ee

@@ -637,3 +637,71 @@ Aloita merkitsemällä tämän viikon vuorot.
 Ohita
 Aloitetaan
 Katso esittely uudelleen
+Kirjautunut: {e}
+Ei tiliä: tietosi pysyvät vain tällä laitteella.
+Hallitse
+Kirjaudu
+Olet kirjautunut tunnuksella {e}.
+Napauta uudelleen poistaaksesi kaiken
+Poista tili ja palvelimen tiedot
+Lähetä koodi
+Kirjaudu
+Lähetimme sen osoitteeseen {e}. Katso myös roskapostikansio.
+Kirjoita kelvollinen sähköpostiosoite.
+Lähetetään koodia…
+Liian monta pyyntöä. Odota muutama minuutti ja yritä uudelleen.
+Koodin lähetys ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Kirjoita saamasi 6-numeroinen koodi.
+Tarkistetaan koodia…
+Kirjautuminen onnistui.
+Väärä tai vanhentunut koodi. Yritä uudelleen tai pyydä uusi koodi.
+Koodin tarkistus ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Olet kirjautunut ulos. Vuorosi pysyvät tällä laitteella.
+Poistetaan tiliä…
+Tili poistettu kaikkine palvelimen tietoineen. Tämän laitteen vuorot säilyvät.
+Tilin poisto ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Muistutuksiin tarvitaan tili.
+iPhonessa ilmoitukset tulevat vain, jos sovellus on Koti-valikossa: napauta Safarissa Jaa, sitten Lisää Koti-valikkoon, ja avaa sovellus sieltä.
+Tämä selain ei voi vastaanottaa ilmoituksia.
+Tämän sovelluksen ilmoitukset on estetty. Salli ne puhelimen asetuksissa ja yritä uudelleen.
+Myös: {x}
+Otetaan muistutuksia käyttöön…
+Muistutukset ovat päällä tällä laitteella.
+Muistutusten käyttöönotto ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Muistutukset ovat pois päältä tällä laitteella.
+Lähetetään testi-ilmoitusta…
+{app}: testi
+Ilmoitukset toimivat. Saat muistutukset ennen vuorojasi.
+Ilmoitus lähetetty {n} laitteeseen.
+Ilmoitus lähetetty {n} laitteeseen.
+Ei rekisteröityjä laitteita: kytke muistutukset pois ja takaisin päälle.
+Ilmoituksen lähetys ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+{n} minuutin
+{n} minuutin
+{n} tunnin
+{n} tunnin
+{a} ja {b}
+Vuoro alkaa {x} kuluttua.
+{n} klo {h}
+Varallaolo klo {h} alkaen
+Varallaolo alkaa {x} kuluttua.
+Tili
+Ilmoitus ennen jokaista vuoroa
+Tilin kanssa saat muistutukset ennen vuoroja, vaikka sovellus olisi suljettu. Ilman tiliä sovellus toimii kuten aina.
+Sähköposti
+Sähköpostilla saatu koodi
+Käytä toista sähköpostia
+Kirjaudu ulos tällä laitteella
+Mitä palvelimelle tallennetaan
+Vain sähköpostiosoitteesi ja, jos otat muistutukset käyttöön, seuraavan 45 päivän vuorot kellonaikoineen ja vuoron nimineen, jotta tiedetään, milloin sinua muistutetaan.
+Muistiinpanot, tunnisteet, palkkalaskelmat, palkka-arvio ja kaikki muu pysyvät vain tällä laitteella. Voit poistaa tilin ja palvelimen tiedot milloin tahansa, täältä.
+Ilmoitus puhelimeen ennen jokaista vuoroa, vaikka sovellus olisi suljettu.
+Muistuta ennen vuoroja
+Kuinka paljon aiemmin
+15 minuuttia ennen
+1,5 tuntia ennen
+3 tuntia ennen
+Myös varallaololle
+Lähetä testi-ilmoitus
+Muistutuksia varten seuraavan 45 päivän vuorot tallennetaan palvelimelle kellonaikoineen ja vuoron nimineen. Jos muutat vuoroa, muistutus päivittyy itsestään.
+nimi@esimerkki.fi

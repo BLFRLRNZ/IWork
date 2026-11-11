@@ -637,3 +637,71 @@ Pradėk pažymėdamas šios savaitės pamainas.
 Praleisti
 Pradedam
 Peržiūrėti turą dar kartą
+Prisijungta kaip {e}
+Paskyros nėra: tavo duomenys lieka tik šiame įrenginyje.
+Tvarkyti
+Prisijungti
+Esi prisijungęs kaip {e}.
+Paliesk dar kartą, kad ištrintum viską
+Ištrinti paskyrą ir duomenis serveryje
+Atsiųsk man kodą
+Įeiti
+Išsiuntėme jį adresu {e}. Patikrink ir šlamšto aplanką.
+Įrašyk galiojantį el. pašto adresą.
+Siunčiamas kodas…
+Per daug užklausų. Palauk kelias minutes ir bandyk dar kartą.
+Nepavyko išsiųsti kodo. Patikrink ryšį ir bandyk dar kartą.
+Įrašyk gautą 6 skaitmenų kodą.
+Tikrinamas kodas…
+Prisijungta.
+Neteisingas arba pasibaigęs kodas. Bandyk dar kartą arba paprašyk naujo kodo.
+Nepavyko patikrinti kodo. Patikrink ryšį ir bandyk dar kartą.
+Atsijungei. Tavo pamainos lieka šiame įrenginyje.
+Trinama paskyra…
+Paskyra ištrinta kartu su visais duomenimis serveryje. Pamainos šiame įrenginyje lieka.
+Nepavyko ištrinti paskyros. Patikrink ryšį ir bandyk dar kartą.
+Priminimams reikia paskyros.
+„iPhone“ pranešimai ateina tik tada, kai programėlė yra pradžios ekrane: „Safari“ paliesk Bendrinti, tada Įtraukti į pradžios ekraną, ir atidaryk programėlę iš ten.
+Ši naršyklė negali gauti pranešimų.
+Šios programėlės pranešimai užblokuoti. Leisk juos telefono nustatymuose ir bandyk dar kartą.
+Ir {x}
+Įjungiami priminimai…
+Priminimai šiame įrenginyje įjungti.
+Nepavyko įjungti priminimų. Patikrink ryšį ir bandyk dar kartą.
+Priminimai šiame įrenginyje išjungti.
+Siunčiamas bandomasis pranešimas…
+{app} bandymas
+Pranešimai veikia. Priminimus gausi prieš pamainas.
+Pranešimas išsiųstas į {n} įrenginį.
+Pranešimas išsiųstas į {n} įrenginių. ‖few: Pranešimas išsiųstas į {n} įrenginius. ‖many: Pranešimas išsiųstas į {n} įrenginio.
+Nėra užregistruotų įrenginių: išjunk ir vėl įjunk priminimus.
+Nepavyko išsiųsti pranešimo. Patikrink ryšį ir bandyk dar kartą.
+{n} minutės
+{n} minučių ‖few: {n} minučių ‖many: {n} minutės
+{n} valandos
+{n} valandų ‖few: {n} valandų ‖many: {n} valandos
+{a} ir {b}
+Pamaina prasideda po {x}.
+{n}, {h}
+Budėjimas nuo {h}
+Budėjimas prasideda po {x}.
+Paskyra
+Pranešimas prieš kiekvieną pamainą
+Su paskyra gauni priminimus prieš pamainas, net kai programėlė uždaryta. Be paskyros programėlė veikia kaip visada.
+El. paštas
+El. paštu gautas kodas
+Naudoti kitą el. paštą
+Atsijungti šiame įrenginyje
+Kas saugoma serveryje
+Tik tavo el. pašto adresas ir, jei įjungsi priminimus, artimiausių 45 dienų pamainos su laiku ir pamainos pavadinimu, kad žinotume, kada tau priminti.
+Pastabos, žymos, atlyginimo lapeliai, atlyginimo įvertis ir visa kita lieka tik šiame įrenginyje. Paskyrą ir duomenis serveryje gali ištrinti bet kada, čia.
+Pranešimas telefone prieš kiekvieną pamainą, net kai programėlė uždaryta.
+Priminti prieš pamainas
+Kiek anksčiau
+Prieš 15 minučių
+Prieš 1,5 valandos
+Prieš 3 valandas
+Ir budėjimui
+Siųsti bandomąjį pranešimą
+Priminimams artimiausių 45 dienų pamainos saugomos serveryje su laiku ir pamainos pavadinimu. Jei pakeisi pamainą, priminimas atsinaujins pats.
+vardas@pavyzdys.lt

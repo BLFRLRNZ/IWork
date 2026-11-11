@@ -637,3 +637,71 @@ Začni zapsáním směn na tento týden.
 Přeskočit
 Jdeme na to
 Znovu spustit prohlídku
+Přihlášen jako {e}
+Bez účtu: tvoje data zůstávají jen v tomto zařízení.
+Spravovat
+Přihlásit se
+Jsi přihlášen jako {e}.
+Klepni znovu a vše se smaže
+Smazat účet a data na serveru
+Pošli mi kód
+Vstoupit
+Poslali jsme ho na {e}. Podívej se i do nevyžádané pošty.
+Zadej platnou e-mailovou adresu.
+Odesílám kód…
+Příliš mnoho požadavků. Počkej pár minut a zkus to znovu.
+Kód se nepodařilo odeslat. Zkontroluj připojení a zkus to znovu.
+Zadej 6místný kód, který ti přišel.
+Ověřuji kód…
+Přihlášení proběhlo.
+Špatný nebo prošlý kód. Zkus to znovu nebo si nech poslat nový kód.
+Kód se nepodařilo ověřit. Zkontroluj připojení a zkus to znovu.
+Jsi odhlášen. Tvoje směny zůstávají v tomto zařízení.
+Mažu účet…
+Účet smazán, včetně všech dat na serveru. Směny v tomto zařízení zůstávají.
+Účet se nepodařilo smazat. Zkontroluj připojení a zkus to znovu.
+Pro připomenutí potřebuješ účet.
+Na iPhonu chodí oznámení jen tehdy, když je aplikace na ploše: v Safari klepni na Sdílet, pak Přidat na plochu, a otevírej aplikaci odtamtud.
+Tento prohlížeč neumí přijímat oznámení.
+Oznámení této aplikace jsou zablokovaná. Povol je v nastavení telefonu a zkus to znovu.
+Také pro {x}
+Zapínám připomenutí…
+Připomenutí jsou v tomto zařízení zapnutá.
+Připomenutí se nepodařilo zapnout. Zkontroluj připojení a zkus to znovu.
+Připomenutí jsou v tomto zařízení vypnutá.
+Odesílám zkušební oznámení…
+Zkouška {app}
+Oznámení fungují. Připomenutí ti budou chodit před směnami.
+Oznámení odesláno do {n} zařízení.
+Oznámení odesláno do {n} zařízení.
+Žádné registrované zařízení: vypni a znovu zapni připomenutí.
+Oznámení se nepodařilo odeslat. Zkontroluj připojení a zkus to znovu.
+{n} minutu
+{n} minut ‖few: {n} minuty ‖many: {n} minuty
+{n} hodinu
+{n} hodin ‖few: {n} hodiny ‖many: {n} hodiny
+{a} a {b}
+Směna začíná za {x}.
+{n} v {h}
+Pohotovost od {h}
+Pohotovost začíná za {x}.
+Účet
+Oznámení před každou směnou
+S účtem ti chodí připomenutí před směnami, i když je aplikace zavřená. Bez účtu aplikace funguje jako vždy.
+E-mail
+Kód z e-mailu
+Použít jiný e-mail
+Odhlásit se v tomto zařízení
+Co se ukládá na server
+Jen tvoje e-mailová adresa a, pokud zapneš připomenutí, směny na příštích 45 dní s časem a názvem směny, abychom věděli, kdy tě upozornit.
+Poznámky, štítky, výplatní pásky, odhad mzdy a všechno ostatní zůstávají jen v tomto zařízení. Účet a data na serveru můžeš kdykoli smazat, tady.
+Oznámení v telefonu před každou směnou, i když je aplikace zavřená.
+Upozorni mě před směnami
+Jak dlouho předem
+15 minut předem
+1,5 hodiny předem
+3 hodiny předem
+Také pro pohotovost
+Poslat zkušební oznámení
+Kvůli připomenutím se směny na příštích 45 dní ukládají na server, s časem a názvem směny. Když směnu změníš, připomenutí se samo aktualizuje.
+jmeno@priklad.cz

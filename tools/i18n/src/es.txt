@@ -637,3 +637,71 @@ Empieza anotando los turnos de esta semana.
 Saltar
 Vamos
 Volver a ver el tour guiado
+Sesión iniciada como {e}
+Sin cuenta: tus datos se quedan solo en este dispositivo.
+Gestionar
+Iniciar sesión
+Has iniciado sesión como {e}.
+Toca otra vez para borrarlo todo
+Eliminar la cuenta y los datos del servidor
+Envíame el código
+Entrar
+Lo hemos enviado a {e}. Revisa también la carpeta de spam.
+Escribe una dirección de correo válida.
+Enviando el código…
+Demasiadas solicitudes. Espera unos minutos y vuelve a intentarlo.
+No he podido enviar el código. Revisa la conexión y vuelve a intentarlo.
+Escribe el código de 6 cifras que has recibido.
+Comprobando el código…
+Sesión iniciada.
+Código incorrecto o caducado. Vuelve a intentarlo o pide un código nuevo.
+No he podido comprobar el código. Revisa la conexión y vuelve a intentarlo.
+Has cerrado sesión. Tus turnos se quedan en este dispositivo.
+Eliminando la cuenta…
+Cuenta eliminada, con todos los datos del servidor. Los turnos de este dispositivo se mantienen.
+No he podido eliminar la cuenta. Revisa la conexión y vuelve a intentarlo.
+Para los recordatorios necesitas una cuenta.
+En iPhone las notificaciones solo llegan si la app está en la pantalla de inicio: en Safari toca Compartir, luego Añadir a pantalla de inicio, y abre la app desde allí.
+Este navegador no puede recibir notificaciones.
+Las notificaciones de esta app están bloqueadas. Permítelas en los ajustes del teléfono y vuelve a intentarlo.
+También para {x}
+Activando los recordatorios…
+Recordatorios activados en este dispositivo.
+No he podido activar los recordatorios. Revisa la conexión y vuelve a intentarlo.
+Recordatorios desactivados en este dispositivo.
+Enviando la notificación de prueba…
+Prueba de {app}
+Las notificaciones funcionan. Recibirás los recordatorios antes de tus turnos.
+Notificación enviada a {n} dispositivo.
+Notificación enviada a {n} dispositivos.
+Ningún dispositivo registrado: desactiva y vuelve a activar los recordatorios.
+No he podido enviar la notificación. Revisa la conexión y vuelve a intentarlo.
+{n} minuto
+{n} minutos
+{n} hora
+{n} horas
+{a} y {b}
+Tu turno empieza dentro de {x}.
+{n} a las {h}
+Guardia desde las {h}
+La guardia empieza dentro de {x}.
+Cuenta
+Una notificación antes de cada turno
+Con una cuenta recibes recordatorios antes de tus turnos, incluso con la app cerrada. Sin cuenta la app funciona como siempre.
+Correo
+Código recibido por correo
+Usar otro correo
+Cerrar sesión en este dispositivo
+Qué se guarda en el servidor
+Solo tu dirección de correo y, si activas los recordatorios, los turnos de los próximos 45 días con horario y nombre del turno, para saber cuándo avisarte.
+Notas, etiquetas, nóminas, estimación de nómina y todo lo demás se quedan solo en este dispositivo. Puedes eliminar la cuenta y los datos del servidor cuando quieras, desde aquí.
+Una notificación en el teléfono antes de cada turno, incluso con la app cerrada.
+Avísame antes de los turnos
+Con cuánta antelación
+15 minutos antes
+1 hora y media antes
+3 horas antes
+También para las guardias
+Enviar una notificación de prueba
+Para los recordatorios, los turnos de los próximos 45 días se guardan en el servidor, con horario y nombre del turno. Si cambias un turno, el recordatorio se actualiza solo.
+nombre@ejemplo.es

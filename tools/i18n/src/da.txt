@@ -637,3 +637,71 @@ Start med at registrere denne uges vagter.
 Spring over
 Kom så
 Se rundturen igen
+Logget ind som {e}
+Ingen konto: dine data bliver kun på denne enhed.
+Administrer
+Log ind
+Du er logget ind som {e}.
+Tryk igen for at slette alt
+Slet kontoen og dataene på serveren
+Send mig koden
+Log ind
+Vi har sendt den til {e}. Tjek også din spammappe.
+Skriv en gyldig e-mailadresse.
+Sender koden…
+For mange forsøg. Vent et par minutter, og prøv igen.
+Koden kunne ikke sendes. Tjek forbindelsen, og prøv igen.
+Skriv den 6-cifrede kode, du har fået.
+Tjekker koden…
+Du er logget ind.
+Forkert eller udløbet kode. Prøv igen, eller få tilsendt en ny kode.
+Koden kunne ikke tjekkes. Tjek forbindelsen, og prøv igen.
+Du er logget ud. Dine vagter bliver på denne enhed.
+Sletter kontoen…
+Kontoen er slettet sammen med alle data på serveren. Vagterne på denne enhed bliver.
+Kontoen kunne ikke slettes. Tjek forbindelsen, og prøv igen.
+Påmindelser kræver en konto.
+På iPhone kommer notifikationer kun, hvis appen ligger på hjemmeskærmen: tryk på Del i Safari, så Føj til hjemmeskærm, og åbn appen derfra.
+Denne browser kan ikke modtage notifikationer.
+Notifikationer for denne app er blokeret. Tillad dem i telefonens indstillinger, og prøv igen.
+Også for {x}
+Slår påmindelser til…
+Påmindelser er slået til på denne enhed.
+Påmindelserne kunne ikke slås til. Tjek forbindelsen, og prøv igen.
+Påmindelser er slået fra på denne enhed.
+Sender testnotifikation…
+Test af {app}
+Notifikationerne virker. Du får påmindelser før dine vagter.
+Notifikation sendt til {n} enhed.
+Notifikation sendt til {n} enheder.
+Ingen enhed tilmeldt: slå påmindelserne fra og til igen.
+Notifikationen kunne ikke sendes. Tjek forbindelsen, og prøv igen.
+{n} minut
+{n} minutter
+{n} time
+{n} timer
+{a} og {b}
+Din vagt starter om {x}.
+{n} kl. {h}
+Tilkaldevagt fra {h}
+Tilkaldevagten starter om {x}.
+Konto
+En notifikation før hver vagt
+Med en konto får du påmindelser før dine vagter, også når appen er lukket. Uden konto virker appen som altid.
+E-mail
+Kode modtaget på e-mail
+Brug en anden e-mail
+Log ud på denne enhed
+Hvad der gemmes på serveren
+Kun din e-mailadresse og, hvis du slår påmindelser til, vagterne for de næste 45 dage med tidspunkt og vagtnavn, så vi ved, hvornår du skal have besked.
+Noter, etiketter, lønsedler, lønskøn og alt det andet bliver kun på denne enhed. Du kan slette kontoen og dataene på serveren når som helst, herfra.
+En notifikation på telefonen før hver vagt, også når appen er lukket.
+Mind mig om vagter
+Hvor lang tid før
+15 minutter før
+1½ time før
+3 timer før
+Også for tilkaldevagt
+Send en testnotifikation
+Til påmindelserne gemmes vagterne for de næste 45 dage på serveren, med tidspunkt og vagtnavn. Hvis du ændrer en vagt, opdateres påmindelsen af sig selv.
+navn@eksempel.dk

@@ -637,3 +637,71 @@ Börja med att lägga in veckans pass.
 Hoppa över
 Nu kör vi
 Se rundturen igen
+Inloggad som {e}
+Inget konto: dina uppgifter stannar bara på den här enheten.
+Hantera
+Logga in
+Du är inloggad som {e}.
+Tryck igen för att radera allt
+Radera kontot och uppgifterna på servern
+Skicka koden
+Logga in
+Vi har skickat den till {e}. Titta även i skräpposten.
+Skriv en giltig e-postadress.
+Skickar koden…
+För många förfrågningar. Vänta några minuter och försök igen.
+Det gick inte att skicka koden. Kontrollera anslutningen och försök igen.
+Skriv den 6-siffriga koden du fick.
+Kontrollerar koden…
+Du är inloggad.
+Fel eller utgången kod. Försök igen eller be om en ny kod.
+Det gick inte att kontrollera koden. Kontrollera anslutningen och försök igen.
+Du är utloggad. Dina pass stannar på den här enheten.
+Raderar kontot…
+Kontot är raderat, med alla uppgifter på servern. Passen på den här enheten finns kvar.
+Det gick inte att radera kontot. Kontrollera anslutningen och försök igen.
+För påminnelser behövs ett konto.
+På iPhone kommer notiser bara om appen ligger på hemskärmen: tryck på Dela i Safari, sedan Lägg till på hemskärmen, och öppna appen därifrån.
+Den här webbläsaren kan inte ta emot notiser.
+Notiser för den här appen är blockerade. Tillåt dem i telefonens inställningar och försök igen.
+Även för {x}
+Slår på påminnelser…
+Påminnelser är på för den här enheten.
+Det gick inte att slå på påminnelserna. Kontrollera anslutningen och försök igen.
+Påminnelser är av för den här enheten.
+Skickar testnotis…
+Test av {app}
+Notiserna fungerar. Du får påminnelser före dina pass.
+Notis skickad till {n} enhet.
+Notis skickad till {n} enheter.
+Ingen enhet registrerad: stäng av och slå på påminnelserna igen.
+Det gick inte att skicka notisen. Kontrollera anslutningen och försök igen.
+{n} minut
+{n} minuter
+{n} timme
+{n} timmar
+{a} och {b}
+Ditt pass börjar om {x}.
+{n} kl. {h}
+Beredskap från {h}
+Beredskapen börjar om {x}.
+Konto
+En notis före varje pass
+Med ett konto får du påminnelser före dina pass, även när appen är stängd. Utan konto fungerar appen som vanligt.
+E-post
+Kod från e-post
+Använd en annan e-post
+Logga ut på den här enheten
+Vad som sparas på servern
+Bara din e-postadress och, om du slår på påminnelser, passen de kommande 45 dagarna med tid och passnamn, så att vi vet när vi ska påminna dig.
+Anteckningar, etiketter, lönebesked, löneuppskattning och allt annat stannar bara på den här enheten. Du kan radera kontot och uppgifterna på servern när du vill, härifrån.
+En notis i telefonen före varje pass, även när appen är stängd.
+Påminn mig före pass
+Hur långt innan
+15 minuter innan
+1,5 timme innan
+3 timmar innan
+Även för beredskap
+Skicka en testnotis
+För påminnelserna sparas passen de kommande 45 dagarna på servern, med tid och passnamn. Om du ändrar ett pass uppdateras påminnelsen av sig själv.
+namn@exempel.se

@@ -637,3 +637,71 @@ Begin met de diensten van deze week.
 Overslaan
 Aan de slag
 Rondleiding opnieuw bekijken
+Ingelogd als {e}
+Geen account: je gegevens blijven alleen op dit apparaat.
+Beheren
+Inloggen
+Je bent ingelogd als {e}.
+Tik nog een keer om alles te verwijderen
+Account en gegevens op de server verwijderen
+Stuur me de code
+Inloggen
+We hebben hem naar {e} gestuurd. Kijk ook in je spammap.
+Vul een geldig e-mailadres in.
+Code wordt verstuurd…
+Te veel verzoeken. Wacht een paar minuten en probeer het opnieuw.
+De code kon niet worden verstuurd. Controleer de verbinding en probeer het opnieuw.
+Vul de 6-cijferige code in die je hebt gekregen.
+Code wordt gecontroleerd…
+Ingelogd.
+Code onjuist of verlopen. Probeer het opnieuw of vraag een nieuwe code aan.
+De code kon niet worden gecontroleerd. Controleer de verbinding en probeer het opnieuw.
+Je bent uitgelogd. Je diensten blijven op dit apparaat.
+Account wordt verwijderd…
+Account verwijderd, met alle gegevens op de server. De diensten op dit apparaat blijven.
+Het account kon niet worden verwijderd. Controleer de verbinding en probeer het opnieuw.
+Voor herinneringen heb je een account nodig.
+Op de iPhone komen meldingen alleen binnen als de app op het beginscherm staat: tik in Safari op Deel, dan op Zet op beginscherm, en open de app vanaf daar.
+Deze browser kan geen meldingen ontvangen.
+Meldingen voor deze app zijn geblokkeerd. Sta ze toe in de instellingen van je telefoon en probeer het opnieuw.
+Ook voor {x}
+Herinneringen worden aangezet…
+Herinneringen staan aan op dit apparaat.
+De herinneringen konden niet worden aangezet. Controleer de verbinding en probeer het opnieuw.
+Herinneringen staan uit op dit apparaat.
+Testmelding wordt verstuurd…
+Test van {app}
+Meldingen werken. Je krijgt de herinneringen voor je diensten.
+Melding verstuurd naar {n} apparaat.
+Melding verstuurd naar {n} apparaten.
+Geen apparaat aangemeld: zet de herinneringen uit en weer aan.
+De melding kon niet worden verstuurd. Controleer de verbinding en probeer het opnieuw.
+{n} minuut
+{n} minuten
+{n} uur
+{n} uur
+{a} en {b}
+Je dienst begint over {x}.
+{n} om {h}
+Bereikbaarheid vanaf {h}
+De bereikbaarheid begint over {x}.
+Account
+Een melding voor elke dienst
+Met een account krijg je herinneringen voor je diensten, ook als de app dicht is. Zonder account werkt de app zoals altijd.
+E-mail
+Code ontvangen per e-mail
+Ander e-mailadres gebruiken
+Uitloggen op dit apparaat
+Wat er op de server wordt opgeslagen
+Alleen je e-mailadres en, als je herinneringen aanzet, de diensten van de komende 45 dagen met tijd en naam van de dienst, zodat we weten wanneer we je moeten waarschuwen.
+Notities, labels, loonstroken, loonschatting en al het andere blijven alleen op dit apparaat. Je kunt het account en de gegevens op de server altijd verwijderen, hier.
+Een melding op je telefoon voor elke dienst, ook als de app dicht is.
+Herinner me voor diensten
+Hoe lang van tevoren
+15 minuten vooraf
+1,5 uur vooraf
+3 uur vooraf
+Ook voor bereikbaarheid
+Stuur een testmelding
+Voor de herinneringen worden de diensten van de komende 45 dagen op de server opgeslagen, met tijd en naam van de dienst. Als je een dienst wijzigt, wordt de herinnering vanzelf bijgewerkt.
+naam@voorbeeld.nl

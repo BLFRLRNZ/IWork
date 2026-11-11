@@ -637,3 +637,71 @@ Zacznij od wpisania zmian z tego tygodnia.
 Pomiń
 Zaczynamy
 Obejrzyj prezentację ponownie
+Zalogowano jako {e}
+Brak konta: twoje dane zostają tylko na tym urządzeniu.
+Zarządzaj
+Zaloguj się
+Jesteś zalogowany jako {e}.
+Dotknij ponownie, aby usunąć wszystko
+Usuń konto i dane na serwerze
+Wyślij mi kod
+Zaloguj
+Wysłaliśmy go na {e}. Sprawdź też folder spam.
+Wpisz poprawny adres e-mail.
+Wysyłanie kodu…
+Za dużo prób. Poczekaj kilka minut i spróbuj ponownie.
+Nie udało się wysłać kodu. Sprawdź połączenie i spróbuj ponownie.
+Wpisz 6-cyfrowy kod, który otrzymałeś.
+Sprawdzanie kodu…
+Zalogowano.
+Błędny lub wygasły kod. Spróbuj ponownie albo poproś o nowy kod.
+Nie udało się sprawdzić kodu. Sprawdź połączenie i spróbuj ponownie.
+Wylogowano. Twoje zmiany zostają na tym urządzeniu.
+Usuwanie konta…
+Konto usunięte razem ze wszystkimi danymi na serwerze. Zmiany na tym urządzeniu zostają.
+Nie udało się usunąć konta. Sprawdź połączenie i spróbuj ponownie.
+Do przypomnień potrzebne jest konto.
+Na iPhonie powiadomienia przychodzą tylko wtedy, gdy aplikacja jest na ekranie początkowym: w Safari dotknij Udostępnij, potem Do ekranu początkowego, i otwieraj aplikację stamtąd.
+Ta przeglądarka nie może odbierać powiadomień.
+Powiadomienia tej aplikacji są zablokowane. Zezwól na nie w ustawieniach telefonu i spróbuj ponownie.
+Także dla {x}
+Włączanie przypomnień…
+Przypomnienia włączone na tym urządzeniu.
+Nie udało się włączyć przypomnień. Sprawdź połączenie i spróbuj ponownie.
+Przypomnienia wyłączone na tym urządzeniu.
+Wysyłanie powiadomienia testowego…
+Test {app}
+Powiadomienia działają. Dostaniesz przypomnienia przed zmianami.
+Powiadomienie wysłane na {n} urządzenie.
+Powiadomienie wysłane na {n} urządzenia. ‖few: Powiadomienie wysłane na {n} urządzenia. ‖many: Powiadomienie wysłane na {n} urządzeń.
+Brak zarejestrowanych urządzeń: wyłącz i włącz ponownie przypomnienia.
+Nie udało się wysłać powiadomienia. Sprawdź połączenie i spróbuj ponownie.
+{n} minutę
+{n} minuty ‖few: {n} minuty ‖many: {n} minut
+{n} godzinę
+{n} godziny ‖few: {n} godziny ‖many: {n} godzin
+{a} i {b}
+Zmiana zaczyna się za {x}.
+{n} o {h}
+Dyżur od {h}
+Dyżur zaczyna się za {x}.
+Konto
+Powiadomienie przed każdą zmianą
+Z kontem dostajesz przypomnienia przed zmianami, nawet gdy aplikacja jest zamknięta. Bez konta aplikacja działa jak zawsze.
+E-mail
+Kod otrzymany e-mailem
+Użyj innego adresu
+Wyloguj na tym urządzeniu
+Co jest zapisywane na serwerze
+Tylko twój adres e-mail i, jeśli włączysz przypomnienia, zmiany z najbliższych 45 dni z godziną i nazwą zmiany, żeby wiedzieć, kiedy cię powiadomić.
+Notatki, etykiety, paski wypłaty, szacunkowa płaca i cała reszta zostają tylko na tym urządzeniu. Konto i dane na serwerze możesz usunąć w każdej chwili, stąd.
+Powiadomienie na telefonie przed każdą zmianą, nawet gdy aplikacja jest zamknięta.
+Przypominaj przed zmianami
+Z jakim wyprzedzeniem
+15 minut wcześniej
+1,5 godziny wcześniej
+3 godziny wcześniej
+Także dla dyżurów
+Wyślij powiadomienie testowe
+Na potrzeby przypomnień zmiany z najbliższych 45 dni są zapisywane na serwerze, z godziną i nazwą zmiany. Gdy coś zmienisz w grafiku, przypomnienie zaktualizuje się samo.
+imie@przyklad.pl

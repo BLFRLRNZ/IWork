@@ -637,3 +637,71 @@ Fang an und trag die Schichten dieser Woche ein.
 Überspringen
 Los
 Tour noch einmal ansehen
+Angemeldet als {e}
+Kein Konto: Deine Daten bleiben nur auf diesem Gerät.
+Verwalten
+Anmelden
+Du bist angemeldet als {e}.
+Nochmal tippen, um alles zu löschen
+Konto und Daten auf dem Server löschen
+Code senden
+Anmelden
+Wir haben ihn an {e} geschickt. Schau auch im Spam-Ordner nach.
+Gib eine gültige E-Mail-Adresse ein.
+Code wird gesendet…
+Zu viele Anfragen. Warte ein paar Minuten und versuch es nochmal.
+Der Code konnte nicht gesendet werden. Prüfe die Verbindung und versuch es nochmal.
+Gib den 6-stelligen Code ein, den du bekommen hast.
+Code wird geprüft…
+Angemeldet.
+Falscher oder abgelaufener Code. Versuch es nochmal oder lass dir einen neuen Code schicken.
+Der Code konnte nicht geprüft werden. Prüfe die Verbindung und versuch es nochmal.
+Du bist abgemeldet. Deine Schichten bleiben auf diesem Gerät.
+Konto wird gelöscht…
+Konto gelöscht, mit allen Daten auf dem Server. Die Schichten auf diesem Gerät bleiben.
+Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuch es nochmal.
+Für Erinnerungen brauchst du ein Konto.
+Auf dem iPhone kommen Mitteilungen nur an, wenn die App auf dem Home-Bildschirm ist: Tippe in Safari auf Teilen, dann auf Zum Home-Bildschirm, und öffne die App von dort.
+Dieser Browser kann keine Mitteilungen empfangen.
+Mitteilungen für diese App sind blockiert. Erlaube sie in den Einstellungen des Handys und versuch es nochmal.
+Auch für {x}
+Erinnerungen werden eingeschaltet…
+Erinnerungen auf diesem Gerät aktiv.
+Die Erinnerungen konnten nicht eingeschaltet werden. Prüfe die Verbindung und versuch es nochmal.
+Erinnerungen auf diesem Gerät aus.
+Testmitteilung wird gesendet…
+{app}-Test
+Mitteilungen funktionieren. Du bekommst die Erinnerungen vor deinen Schichten.
+Mitteilung an {n} Gerät gesendet.
+Mitteilung an {n} Geräte gesendet.
+Kein Gerät registriert: Schalte die Erinnerungen aus und wieder ein.
+Die Mitteilung konnte nicht gesendet werden. Prüfe die Verbindung und versuch es nochmal.
+{n} Minute
+{n} Minuten
+{n} Stunde
+{n} Stunden
+{a} und {b}
+Deine Schicht beginnt in {x}.
+{n} um {h}
+Bereitschaft ab {h}
+Die Bereitschaft beginnt in {x}.
+Konto
+Eine Mitteilung vor jeder Schicht
+Mit einem Konto bekommst du Erinnerungen vor deinen Schichten, auch wenn die App geschlossen ist. Ohne Konto funktioniert die App wie immer.
+E-Mail
+Per E-Mail erhaltener Code
+Andere E-Mail verwenden
+Auf diesem Gerät abmelden
+Was auf dem Server gespeichert wird
+Nur deine E-Mail-Adresse und, wenn du Erinnerungen einschaltest, die Schichten der nächsten 45 Tage mit Uhrzeit und Schichtname, damit wir wissen, wann wir dich erinnern.
+Notizen, Etiketten, Lohnabrechnungen, Lohnschätzung und alles andere bleiben nur auf diesem Gerät. Du kannst das Konto und die Daten auf dem Server jederzeit hier löschen.
+Eine Mitteilung auf dem Handy vor jeder Schicht, auch wenn die App geschlossen ist.
+Vor Schichten erinnern
+Wie früh
+15 Minuten vorher
+1,5 Stunden vorher
+3 Stunden vorher
+Auch für Bereitschaft
+Testmitteilung senden
+Für die Erinnerungen werden die Schichten der nächsten 45 Tage mit Uhrzeit und Schichtname auf dem Server gespeichert. Wenn du eine Schicht änderst, wird die Erinnerung automatisch angepasst.
+name@beispiel.de

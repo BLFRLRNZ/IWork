@@ -637,3 +637,71 @@ Začni zapísaním zmien na tento týždeň.
 Preskočiť
 Ideme na to
 Znova spustiť prehliadku
+Prihlásený ako {e}
+Bez účtu: tvoje údaje zostávajú len v tomto zariadení.
+Spravovať
+Prihlásiť sa
+Si prihlásený ako {e}.
+Ťukni znova a všetko sa vymaže
+Vymazať účet a údaje na serveri
+Pošli mi kód
+Vstúpiť
+Poslali sme ho na {e}. Pozri sa aj do nevyžiadanej pošty.
+Zadaj platnú e-mailovú adresu.
+Posielam kód…
+Príliš veľa požiadaviek. Počkaj pár minút a skús to znova.
+Kód sa nepodarilo poslať. Skontroluj pripojenie a skús to znova.
+Zadaj 6-miestny kód, ktorý ti prišiel.
+Overujem kód…
+Prihlásenie prebehlo.
+Nesprávny alebo neplatný kód. Skús to znova alebo si nechaj poslať nový kód.
+Kód sa nepodarilo overiť. Skontroluj pripojenie a skús to znova.
+Si odhlásený. Tvoje zmeny zostávajú v tomto zariadení.
+Mažem účet…
+Účet vymazaný aj so všetkými údajmi na serveri. Zmeny v tomto zariadení zostávajú.
+Účet sa nepodarilo vymazať. Skontroluj pripojenie a skús to znova.
+Na pripomienky potrebuješ účet.
+Na iPhone prichádzajú upozornenia, len keď je aplikácia na ploche: v Safari ťukni na Zdieľať, potom Pridať na plochu, a otváraj aplikáciu odtiaľ.
+Tento prehliadač nemôže prijímať upozornenia.
+Upozornenia tejto aplikácie sú zablokované. Povoľ ich v nastaveniach telefónu a skús to znova.
+Aj pre {x}
+Zapínam pripomienky…
+Pripomienky sú v tomto zariadení zapnuté.
+Pripomienky sa nepodarilo zapnúť. Skontroluj pripojenie a skús to znova.
+Pripomienky sú v tomto zariadení vypnuté.
+Posielam skúšobné upozornenie…
+Skúška {app}
+Upozornenia fungujú. Pripomienky ti budú chodiť pred zmenami.
+Upozornenie poslané do {n} zariadenia.
+Upozornenie poslané do {n} zariadení.
+Žiadne registrované zariadenie: vypni a znova zapni pripomienky.
+Upozornenie sa nepodarilo poslať. Skontroluj pripojenie a skús to znova.
+{n} minútu
+{n} minút ‖few: {n} minúty ‖many: {n} minúty
+{n} hodinu
+{n} hodín ‖few: {n} hodiny ‖many: {n} hodiny
+{a} a {b}
+Zmena začína o {x}.
+{n} o {h}
+Pohotovosť od {h}
+Pohotovosť začína o {x}.
+Účet
+Upozornenie pred každou zmenou
+S účtom ti chodia pripomienky pred zmenami, aj keď je aplikácia zatvorená. Bez účtu aplikácia funguje ako vždy.
+E-mail
+Kód z e-mailu
+Použiť iný e-mail
+Odhlásiť sa v tomto zariadení
+Čo sa ukladá na server
+Len tvoja e-mailová adresa a, ak zapneš pripomienky, zmeny na najbližších 45 dní s časom a názvom zmeny, aby sme vedeli, kedy ťa upozorniť.
+Poznámky, štítky, výplatné pásky, odhad mzdy a všetko ostatné zostávajú len v tomto zariadení. Účet a údaje na serveri môžeš kedykoľvek vymazať, tu.
+Upozornenie v telefóne pred každou zmenou, aj keď je aplikácia zatvorená.
+Upozorni ma pred zmenami
+Ako dlho vopred
+15 minút vopred
+1,5 hodiny vopred
+3 hodiny vopred
+Aj pre pohotovosť
+Poslať skúšobné upozornenie
+Kvôli pripomienkam sa zmeny na najbližších 45 dní ukladajú na server, s časom a názvom zmeny. Keď zmenu upravíš, pripomienka sa sama aktualizuje.
+meno@priklad.sk

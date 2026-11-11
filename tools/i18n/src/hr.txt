@@ -637,3 +637,71 @@ Počni upisivanjem smjena za ovaj tjedan.
 Preskoči
 Krenimo
 Ponovno pogledaj obilazak
+Prijavljen kao {e}
+Nema računa: tvoji podaci ostaju samo na ovom uređaju.
+Upravljaj
+Prijavi se
+Prijavljen si kao {e}.
+Dodirni ponovno za brisanje svega
+Izbriši račun i podatke na poslužitelju
+Pošalji mi kôd
+Uđi
+Poslali smo ga na {e}. Provjeri i mapu neželjene pošte.
+Upiši ispravnu adresu e-pošte.
+Slanje kôda…
+Previše zahtjeva. Pričekaj nekoliko minuta i pokušaj ponovno.
+Nisam uspio poslati kôd. Provjeri vezu i pokušaj ponovno.
+Upiši 6-znamenkasti kôd koji si primio.
+Provjera kôda…
+Prijava uspjela.
+Pogrešan ili istekao kôd. Pokušaj ponovno ili zatraži novi kôd.
+Nisam uspio provjeriti kôd. Provjeri vezu i pokušaj ponovno.
+Odjavljen si. Tvoje smjene ostaju na ovom uređaju.
+Brisanje računa…
+Račun je izbrisan, zajedno sa svim podacima na poslužitelju. Smjene na ovom uređaju ostaju.
+Nisam uspio izbrisati račun. Provjeri vezu i pokušaj ponovno.
+Za podsjetnike je potreban račun.
+Na iPhoneu obavijesti stižu samo ako je aplikacija na početnom zaslonu: u Safariju dodirni Podijeli, pa Dodaj na početni zaslon, i otvaraj aplikaciju odande.
+Ovaj preglednik ne može primati obavijesti.
+Obavijesti za ovu aplikaciju su blokirane. Dopusti ih u postavkama telefona i pokušaj ponovno.
+I za {x}
+Uključivanje podsjetnika…
+Podsjetnici su uključeni na ovom uređaju.
+Nisam uspio uključiti podsjetnike. Provjeri vezu i pokušaj ponovno.
+Podsjetnici su isključeni na ovom uređaju.
+Slanje probne obavijesti…
+Proba za {app}
+Obavijesti rade. Primat ćeš podsjetnike prije smjena.
+Obavijest poslana na {n} uređaj.
+Obavijest poslana na {n} uređaja. ‖few: Obavijest poslana na {n} uređaja.
+Nema prijavljenih uređaja: isključi i ponovno uključi podsjetnike.
+Nisam uspio poslati obavijest. Provjeri vezu i pokušaj ponovno.
+{n} minutu
+{n} minuta ‖few: {n} minute
+{n} sat
+{n} sati ‖few: {n} sata
+{a} i {b}
+Smjena počinje za {x}.
+{n} u {h}
+Pripravnost od {h}
+Pripravnost počinje za {x}.
+Račun
+Obavijest prije svake smjene
+S računom primaš podsjetnike prije smjena, čak i kad je aplikacija zatvorena. Bez računa aplikacija radi kao i uvijek.
+E-pošta
+Kôd primljen e-poštom
+Koristi drugu e-poštu
+Odjavi se s ovog uređaja
+Što se sprema na poslužitelj
+Samo tvoja adresa e-pošte i, ako uključiš podsjetnike, smjene za sljedećih 45 dana s vremenom i nazivom smjene, da znamo kada te obavijestiti.
+Bilješke, oznake, platne liste, procjena plaće i sve ostalo ostaju samo na ovom uređaju. Račun i podatke na poslužitelju možeš izbrisati kad god želiš, odavde.
+Obavijest na telefonu prije svake smjene, čak i kad je aplikacija zatvorena.
+Podsjeti me prije smjena
+Koliko ranije
+15 minuta prije
+1 i pol sat prije
+3 sata prije
+I za pripravnost
+Pošalji probnu obavijest
+Za podsjetnike se smjene za sljedećih 45 dana spremaju na poslužitelj, s vremenom i nazivom smjene. Ako promijeniš smjenu, podsjetnik se sam ažurira.
+ime@primjer.hr

@@ -637,3 +637,71 @@ Začni z vpisom izmen za ta teden.
 Preskoči
 Gremo
 Znova si oglej ogled
+Prijavljen kot {e}
+Brez računa: tvoji podatki ostanejo samo v tej napravi.
+Upravljaj
+Prijava
+Prijavljen si kot {e}.
+Tapni še enkrat, da izbrišeš vse
+Izbriši račun in podatke na strežniku
+Pošlji mi kodo
+Vstopi
+Poslali smo jo na {e}. Preveri tudi mapo z neželeno pošto.
+Vpiši veljaven e-poštni naslov.
+Pošiljanje kode…
+Preveč zahtev. Počakaj nekaj minut in poskusi znova.
+Kode ni bilo mogoče poslati. Preveri povezavo in poskusi znova.
+Vpiši 6-mestno kodo, ki si jo prejel.
+Preverjanje kode…
+Prijava uspela.
+Napačna ali potekla koda. Poskusi znova ali zahtevaj novo kodo.
+Kode ni bilo mogoče preveriti. Preveri povezavo in poskusi znova.
+Odjavljen si. Tvoje izmene ostanejo v tej napravi.
+Brisanje računa…
+Račun je izbrisan, skupaj z vsemi podatki na strežniku. Izmene v tej napravi ostanejo.
+Računa ni bilo mogoče izbrisati. Preveri povezavo in poskusi znova.
+Za opomnike potrebuješ račun.
+Na iPhonu obvestila prihajajo samo, če je aplikacija na začetnem zaslonu: v Safariju tapni Deli, nato Dodaj na začetni zaslon, in odpiraj aplikacijo od tam.
+Ta brskalnik ne more prejemati obvestil.
+Obvestila za to aplikacijo so blokirana. Dovoli jih v nastavitvah telefona in poskusi znova.
+Tudi za {x}
+Vklapljanje opomnikov…
+Opomniki so v tej napravi vklopljeni.
+Opomnikov ni bilo mogoče vklopiti. Preveri povezavo in poskusi znova.
+Opomniki so v tej napravi izklopljeni.
+Pošiljanje preizkusnega obvestila…
+Preizkus {app}
+Obvestila delujejo. Opomnike boš prejel pred izmenami.
+Obvestilo poslano na {n} napravo.
+Obvestilo poslano na {n} naprav. ‖two: Obvestilo poslano na {n} napravi. ‖few: Obvestilo poslano na {n} naprave.
+Nobena naprava ni prijavljena: izklopi in znova vklopi opomnike.
+Obvestila ni bilo mogoče poslati. Preveri povezavo in poskusi znova.
+{n} minuto
+{n} minut ‖two: {n} minuti ‖few: {n} minute
+{n} uro
+{n} ur ‖two: {n} uri ‖few: {n} ure
+{a} in {b}
+Izmena se začne čez {x}.
+{n} ob {h}
+Pripravljenost od {h}
+Pripravljenost se začne čez {x}.
+Račun
+Obvestilo pred vsako izmeno
+Z računom prejemaš opomnike pred izmenami, tudi ko je aplikacija zaprta. Brez računa aplikacija deluje kot vedno.
+E-pošta
+Koda, prejeta po e-pošti
+Uporabi drug e-naslov
+Odjava v tej napravi
+Kaj se shrani na strežnik
+Samo tvoj e-poštni naslov in, če vklopiš opomnike, izmene za naslednjih 45 dni s časom in imenom izmene, da vemo, kdaj te opomniti.
+Zapiski, oznake, plačilne liste, ocena plače in vse ostalo ostanejo samo v tej napravi. Račun in podatke na strežniku lahko kadar koli izbrišeš, tukaj.
+Obvestilo na telefonu pred vsako izmeno, tudi ko je aplikacija zaprta.
+Opomni me pred izmenami
+Koliko prej
+15 minut prej
+1,5 ure prej
+3 ure prej
+Tudi za pripravljenost
+Pošlji preizkusno obvestilo
+Za opomnike se izmene za naslednjih 45 dni shranijo na strežnik, s časom in imenom izmene. Če izmeno spremeniš, se opomnik sam posodobi.
+ime@primer.si

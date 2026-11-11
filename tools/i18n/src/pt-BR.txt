@@ -637,3 +637,71 @@ Comece registrando os turnos desta semana.
 Pular
 Vamos lá
 Rever o tour guiado
+Conectado como {e}
+Sem conta: seus dados ficam só neste dispositivo.
+Gerenciar
+Entrar
+Você está conectado como {e}.
+Toque de novo para apagar tudo
+Excluir a conta e os dados no servidor
+Enviar o código
+Entrar
+Enviamos para {e}. Confira também a pasta de spam.
+Digite um endereço de e-mail válido.
+Enviando o código…
+Muitas solicitações. Aguarde alguns minutos e tente de novo.
+Não foi possível enviar o código. Verifique a conexão e tente de novo.
+Digite o código de 6 dígitos que você recebeu.
+Verificando o código…
+Login feito.
+Código errado ou expirado. Tente de novo ou peça um novo código.
+Não foi possível verificar o código. Verifique a conexão e tente de novo.
+Você saiu. Seus turnos continuam neste dispositivo.
+Excluindo a conta…
+Conta excluída, com todos os dados no servidor. Os turnos neste dispositivo continuam.
+Não foi possível excluir a conta. Verifique a conexão e tente de novo.
+Para os lembretes é preciso ter uma conta.
+No iPhone as notificações só chegam se o app estiver na Tela de Início: no Safari toque em Compartilhar, depois em Adicionar à Tela de Início, e abra o app por lá.
+Este navegador não pode receber notificações.
+As notificações deste app estão bloqueadas. Permita-as nos ajustes do celular e tente de novo.
+Também para {x}
+Ativando os lembretes…
+Lembretes ativos neste dispositivo.
+Não foi possível ativar os lembretes. Verifique a conexão e tente de novo.
+Lembretes desativados neste dispositivo.
+Enviando a notificação de teste…
+Teste do {app}
+As notificações funcionam. Você vai receber os lembretes antes dos seus turnos.
+Notificação enviada para {n} dispositivo.
+Notificação enviada para {n} dispositivos.
+Nenhum dispositivo cadastrado: desative e ative de novo os lembretes.
+Não foi possível enviar a notificação. Verifique a conexão e tente de novo.
+{n} minuto
+{n} minutos
+{n} hora
+{n} horas
+{a} e {b}
+Seu turno começa em {x}.
+{n} às {h}
+Sobreaviso a partir das {h}
+O sobreaviso começa em {x}.
+Conta
+Uma notificação antes de cada turno
+Com uma conta você recebe lembretes antes dos turnos, mesmo com o app fechado. Sem conta o app funciona como sempre.
+E-mail
+Código recebido por e-mail
+Usar outro e-mail
+Sair neste dispositivo
+O que fica salvo no servidor
+Só o seu endereço de e-mail e, se você ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisar você.
+Notas, etiquetas, holerites, estimativa de salário e todo o resto ficam só neste dispositivo. Você pode excluir a conta e os dados no servidor quando quiser, por aqui.
+Uma notificação no celular antes de cada turno, mesmo com o app fechado.
+Avisar antes dos turnos
+Com quanta antecedência
+15 minutos antes
+1 hora e meia antes
+3 horas antes
+Também para o sobreaviso
+Enviar uma notificação de teste
+Para os lembretes, os turnos dos próximos 45 dias ficam salvos no servidor, com horário e nome do turno. Se você mudar um turno, o lembrete se atualiza sozinho.
+nome@exemplo.com.br
