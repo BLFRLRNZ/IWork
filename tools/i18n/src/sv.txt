@@ -717,3 +717,49 @@ På iPhone kommer notiser bara om appen ligger på hemskärmen och du öppnar de
 Vad sparas på servern?
 Bara din e-post och, om du slår på påminnelser, passen de kommande 45 dagarna med tid och passnamn, så att vi vet när vi ska påminna dig. Anteckningar, etiketter, lönebesked och löneuppskattning stannar i telefonen. Du kan radera kontot och uppgifterna på servern under {p}.
 Bara på den här enheten, i webbläsaren. Utan konto skickas inget till en server; med påminnelser på skickas bara passen de kommande 45 dagarna till servern.
+Passen uppdaterade från en annan enhet.
+Synkronisering på, senast kl. {h}
+Synkronisering på
+Synkroniseringen måste slås på igen
+Synkronisering av
+Slå på
+Synkronisering kräver ett konto.
+Välj ett lösenord för att skydda dina uppgifter. Du behöver det för att slå på synkroniseringen på dina andra enheter.
+Skriv synkroniseringslösenordet som du valde på den andra enheten.
+Välj ett nytt lösenord. Kopian på servern raderas och ersätts med uppgifterna på den här enheten; på dina andra enheter måste du skriva det nya lösenordet.
+Synkronisering på. Senaste uppdatering: {h}.
+Synkronisering på.
+Börja om
+Synkroniseringslösenordet har ändrats på en annan enhet. Skriv det igen.
+Det gick inte att ansluta. Kontrollera anslutningen och försök igen.
+Synkroniserar…
+Klart: allt är uppdaterat.
+Det gick inte att synkronisera. Kontrollera anslutningen och försök igen.
+Synkroniseringen är avstängd på den här enheten. Dina uppgifter stannar här.
+Lösenordet måste ha minst 8 tecken.
+Lösenorden stämmer inte överens.
+Kontrollerar lösenordet och hämtar uppgifterna…
+Krypterar och skickar uppgifterna…
+Synkroniseringen är på för den här enheten.
+Fel lösenord. Försök igen.
+Land och helgdagar, språk, ljust eller mörkt tema och kontot för påminnelser och synkronisering.
+Konto, påminnelser och synkronisering
+Hur använder jag MyTurn på flera enheter?
+Logga in med samma e-post på varje enhet. Öppna {p} på den första, tryck på {a} och välj ett synkroniseringslösenord; skriv samma lösenord på de andra. Därefter uppdateras pass, anteckningar och inställningar av sig själva. Tema och påminnelser förblir val på varje enhet.
+Jag har glömt synkroniseringslösenordet: vad gör jag?
+Ingen kan återställa det, eftersom det inte sparas någonstans. Dina uppgifter finns dock kvar på enheterna: tryck på {a} på den mest uppdaterade, välj ett nytt lösenord så ersätts kopian på servern. Skriv det nya lösenordet på dina andra enheter.
+Din e-post; med påminnelser passen de kommande 45 dagarna med tid och passnamn, så att vi vet när vi ska påminna dig; med synkronisering alla dina uppgifter, men krypterade med ditt lösenord och därför oläsliga. Du kan radera kontot och alla uppgifter på servern under {p}.
+På den här enheten, i webbläsaren. Utan konto skickas inget till en server. Med synkronisering skickas en kopia krypterad med ditt lösenord till servern; med påminnelser passen de kommande 45 dagarna.
+Med ett konto får du påminnelser före dina pass och kan ha samma pass på alla dina enheter. Utan konto fungerar appen som vanligt.
+Allt annat stannar bara på den här enheten, om du inte slår på synkroniseringen: då färdas det krypterat med ditt lösenord och är oläsligt på servern. Du kan radera kontot och uppgifterna på servern när du vill, härifrån.
+Synkronisering
+Samma pass på alla enheter där du loggar in med din e-post: telefon, surfplatta och dator.
+Synkroniseringslösenord
+Upprepa lösenordet
+Jag har glömt lösenordet
+Synkronisera nu
+Stäng av på den här enheten
+Så fungerar det
+Innan de skickas krypteras dina uppgifter på den här enheten med ditt lösenord: de kommer fram oläsliga till servern och ingen kan läsa dem.
+Lösenordet sparas ingenstans. Om du glömmer det kan kopian på servern inte återställas, men dina uppgifter finns kvar på dina enheter och du kan börja om med ett nytt lösenord.
+Om du ändrar samma dag på två enheter gäller den senaste ändringen. Tema och påminnelser förblir val på varje enhet.

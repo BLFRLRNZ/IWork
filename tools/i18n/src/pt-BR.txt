@@ -717,3 +717,49 @@ No iPhone as notificações só chegam se o app estiver na Tela de Início e voc
 O que fica salvo no servidor?
 Só o seu e-mail e, se você ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisar você. Notas, etiquetas, holerites e estimativa de salário ficam no celular. Você pode excluir a conta e os dados no servidor em {p}.
 Só neste dispositivo, no navegador. Sem conta nada é enviado para um servidor; com os lembretes ativos, só os turnos dos próximos 45 dias vão para o servidor.
+Turnos atualizados por outro dispositivo.
+Sincronização ativa, última às {h}
+Sincronização ativa
+Sincronização precisa ser reativada
+Sincronização desativada
+Ativar
+Para sincronizar é preciso ter uma conta.
+Escolha uma senha para proteger seus dados. Você vai precisar dela para ativar a sincronização nos outros dispositivos.
+Digite a senha de sincronização que você escolheu no outro dispositivo.
+Escolha uma nova senha. A cópia no servidor será apagada e substituída pelos dados deste dispositivo; nos outros dispositivos você vai precisar digitar a nova senha.
+Sincronização ativa. Última atualização: {h}.
+Sincronização ativa.
+Recomeçar
+A senha de sincronização foi alterada em outro dispositivo. Digite-a de novo.
+Não foi possível conectar. Verifique a conexão e tente de novo.
+Sincronizando…
+Pronto: tudo atualizado.
+Não foi possível sincronizar. Verifique a conexão e tente de novo.
+Sincronização desativada neste dispositivo. Seus dados continuam aqui.
+A senha deve ter pelo menos 8 caracteres.
+As duas senhas não coincidem.
+Verificando a senha e baixando os dados…
+Criptografando e enviando os dados…
+Sincronização ativa neste dispositivo.
+Senha errada. Tente de novo.
+País e feriados, idioma, tema claro ou escuro e a conta para lembretes e sincronização.
+Conta, lembretes e sincronização
+Como uso o MyTurn em vários dispositivos?
+Entre com o mesmo e-mail em cada dispositivo. No primeiro abra {p}, toque em {a} e escolha uma senha de sincronização; nos outros digite a mesma senha. A partir daí turnos, notas e ajustes se atualizam sozinhos. O tema e os lembretes continuam sendo escolhas de cada dispositivo.
+Esqueci a senha de sincronização: o que eu faço?
+Ninguém consegue recuperá-la, porque ela não fica salva em lugar nenhum. Mas seus dados continuam nos dispositivos: no mais atualizado toque em {a}, escolha uma nova senha e a cópia no servidor é substituída. Nos outros dispositivos digite a nova senha.
+Seu e-mail; com os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisar você; com a sincronização, todos os dados, mas criptografados com a sua senha e, portanto, ilegíveis. Você pode excluir a conta e todos os dados no servidor em {p}.
+Neste dispositivo, no navegador. Sem conta nada é enviado para um servidor. Com a sincronização, uma cópia criptografada com a sua senha vai para o servidor; com os lembretes, vão os turnos dos próximos 45 dias.
+Com uma conta você recebe lembretes antes dos turnos e pode ter os mesmos turnos em todos os seus dispositivos. Sem conta o app funciona como sempre.
+Todo o resto fica só neste dispositivo, a menos que você ative a sincronização: nesse caso ele viaja criptografado com a sua senha e no servidor é ilegível. Você pode excluir a conta e os dados no servidor quando quiser, por aqui.
+Sincronização
+Os mesmos turnos em todos os dispositivos em que você entra com o seu e-mail: celular, tablet e computador.
+Senha de sincronização
+Repita a senha
+Esqueci a senha
+Sincronizar agora
+Desativar neste dispositivo
+Como funciona
+Antes de sair, seus dados são criptografados neste dispositivo com a sua senha: chegam ao servidor ilegíveis e ninguém consegue lê-los.
+A senha não fica salva em lugar nenhum. Se você esquecer, a cópia no servidor não pode ser recuperada, mas seus dados continuam nos dispositivos e você pode recomeçar com uma nova senha.
+Se você mudar o mesmo dia em dois dispositivos, vale a mudança mais recente. O tema e os lembretes continuam sendo escolhas de cada dispositivo.

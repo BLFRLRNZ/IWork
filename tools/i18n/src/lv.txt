@@ -717,3 +717,49 @@ iPhone tālrunī paziņojumi pienāk tikai tad, ja lietotne ir sākuma ekrānā 
 Kas tiek saglabāts serverī?
 Tikai tavs e-pasts un, ja ieslēdz atgādinājumus, nākamo 45 dienu maiņas ar laiku un maiņas nosaukumu, lai zinātu, kad tev atgādināt. Piezīmes, birkas, algas lapiņas un algas aprēķins paliek tālrunī. Kontu un datus serverī vari izdzēst sadaļā {p}.
 Tikai šajā ierīcē, pārlūkprogrammā. Bez konta nekas netiek sūtīts uz serveri; ar ieslēgtiem atgādinājumiem uz serveri nonāk tikai nākamo 45 dienu maiņas.
+Maiņas atjauninātas no citas ierīces.
+Sinhronizācija ieslēgta, pēdējā plkst. {h}
+Sinhronizācija ieslēgta
+Sinhronizācija jāieslēdz vēlreiz
+Sinhronizācija izslēgta
+Ieslēgt
+Sinhronizācijai vajag kontu.
+Izvēlies paroli, lai aizsargātu savus datus. Tā būs vajadzīga, lai ieslēgtu sinhronizāciju citās ierīcēs.
+Ieraksti sinhronizācijas paroli, ko izvēlējies otrā ierīcē.
+Izvēlies jaunu paroli. Kopija serverī tiks izdzēsta un aizstāta ar šīs ierīces datiem; citās ierīcēs būs jāievada jaunā parole.
+Sinhronizācija ieslēgta. Pēdējā atjaunināšana: {h}.
+Sinhronizācija ieslēgta.
+Sākt no jauna
+Sinhronizācijas parole tika nomainīta citā ierīcē. Ievadi to vēlreiz.
+Neizdevās izveidot savienojumu. Pārbaudi savienojumu un mēģini vēlreiz.
+Sinhronizē…
+Gatavs: viss ir atjaunināts.
+Neizdevās sinhronizēt. Pārbaudi savienojumu un mēģini vēlreiz.
+Sinhronizācija šajā ierīcē izslēgta. Dati paliek šeit.
+Parolē jābūt vismaz 8 rakstzīmēm.
+Paroles nesakrīt.
+Pārbauda paroli un lejupielādē datus…
+Šifrē un sūta datus…
+Sinhronizācija šajā ierīcē ieslēgta.
+Nepareiza parole. Mēģini vēlreiz.
+Valsts un svētku dienas, valoda, gaišs vai tumšs motīvs un konts atgādinājumiem un sinhronizācijai.
+Konts, atgādinājumi un sinhronizācija
+Kā lietot MyTurn vairākās ierīcēs?
+Katrā ierīcē piesakies ar to pašu e-pastu. Pirmajā atver {p}, pieskaries {a} un izvēlies sinhronizācijas paroli; pārējās ievadi to pašu paroli. No tā brīža maiņas, piezīmes un iestatījumi atjaunojas paši. Motīvs un atgādinājumi paliek katras ierīces izvēle.
+Aizmirsu sinhronizācijas paroli: ko darīt?
+Neviens to nevar atjaunot, jo tā nekur netiek glabāta. Tomēr tavi dati paliek ierīcēs: visjaunākajā pieskaries {a}, izvēlies jaunu paroli, un kopija serverī tiks aizstāta. Pārējās ierīcēs ievadi jauno paroli.
+Tavs e-pasts; ar atgādinājumiem nākamo 45 dienu maiņas ar laiku un maiņas nosaukumu, lai zinātu, kad tev atgādināt; ar sinhronizāciju visi dati, bet šifrēti ar tavu paroli, tātad nesalasāmi. Kontu un visus datus serverī vari izdzēst sadaļā {p}.
+Šajā ierīcē, pārlūkprogrammā. Bez konta nekas netiek sūtīts uz serveri. Ar sinhronizāciju uz serveri nonāk ar tavu paroli šifrēta kopija; ar atgādinājumiem nākamo 45 dienu maiņas.
+Ar kontu tu saņem atgādinājumus pirms maiņām un vari redzēt tās pašas maiņas visās savās ierīcēs. Bez konta lietotne darbojas kā vienmēr.
+Viss pārējais paliek tikai šajā ierīcē, ja vien neieslēdz sinhronizāciju: tad tas ceļo šifrēts ar tavu paroli un serverī ir nesalasāms. Kontu un datus serverī vari izdzēst jebkurā laikā, šeit.
+Sinhronizācija
+Tās pašas maiņas visās ierīcēs, kurās piesakies ar savu e-pastu: tālrunī, planšetdatorā un datorā.
+Sinhronizācijas parole
+Atkārto paroli
+Aizmirsu paroli
+Sinhronizēt tagad
+Izslēgt šajā ierīcē
+Kā tas darbojas
+Pirms nosūtīšanas dati šajā ierīcē tiek šifrēti ar tavu paroli: serverī tie nonāk nesalasāmi, un neviens tos nevar izlasīt.
+Parole nekur netiek glabāta. Ja to aizmirsīsi, kopiju serverī nevarēs atjaunot, bet dati paliks tavās ierīcēs un varēsi sākt no jauna ar jaunu paroli.
+Ja maini to pašu dienu divās ierīcēs, spēkā ir jaunākās izmaiņas. Motīvs un atgādinājumi paliek katras ierīces izvēle.

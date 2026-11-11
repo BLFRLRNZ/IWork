@@ -717,3 +717,49 @@ Pe iPhone notificările sosesc doar dacă aplicația este pe ecranul principal �
 Ce se salvează pe server?
 Doar e-mailul tău și, dacă activezi mementourile, turele din următoarele 45 de zile cu ora și numele turei, ca să știm când să te anunțăm. Notițele, etichetele, fluturașii de salariu și estimarea salariului rămân pe telefon. Poți șterge contul și datele de pe server din {p}.
 Doar pe acest dispozitiv, în browser. Fără cont nu se trimite nimic pe un server; cu mementourile active, pe server ajung doar turele din următoarele 45 de zile.
+Ture actualizate de pe alt dispozitiv.
+Sincronizare activă, ultima la {h}
+Sincronizare activă
+Sincronizarea trebuie reactivată
+Sincronizare oprită
+Activează
+Pentru sincronizare ai nevoie de un cont.
+Alege o parolă ca să-ți protejezi datele. Îți va trebui ca să activezi sincronizarea pe celelalte dispozitive.
+Scrie parola de sincronizare pe care ai ales-o pe celălalt dispozitiv.
+Alege o parolă nouă. Copia de pe server va fi ștearsă și înlocuită cu datele de pe acest dispozitiv; pe celelalte dispozitive va trebui să introduci parola nouă.
+Sincronizare activă. Ultima actualizare: {h}.
+Sincronizare activă.
+Începe din nou
+Parola de sincronizare a fost schimbată pe alt dispozitiv. Introdu-o din nou.
+Nu m-am putut conecta. Verifică conexiunea și încearcă din nou.
+Se sincronizează…
+Gata: totul este la zi.
+Nu am reușit să sincronizez. Verifică conexiunea și încearcă din nou.
+Sincronizare oprită pe acest dispozitiv. Datele rămân aici.
+Parola trebuie să aibă cel puțin 8 caractere.
+Cele două parole nu coincid.
+Se verifică parola și se descarcă datele…
+Se criptează și se trimit datele…
+Sincronizare activă pe acest dispozitiv.
+Parolă greșită. Încearcă din nou.
+Țara și sărbătorile, limba, tema deschisă sau întunecată și contul pentru mementouri și sincronizare.
+Cont, mementouri și sincronizare
+Cum folosesc MyTurn pe mai multe dispozitive?
+Conectează-te cu același e-mail pe fiecare dispozitiv. Pe primul deschide {p}, atinge {a} și alege o parolă de sincronizare; pe celelalte introdu aceeași parolă. De acum turele, notițele și setările se actualizează singure. Tema și mementourile rămân alegeri ale fiecărui dispozitiv.
+Am uitat parola de sincronizare: ce fac?
+Nimeni nu o poate recupera, pentru că nu este salvată nicăieri. Datele tale rămân însă pe dispozitive: pe cel mai actualizat atinge {a}, alege o parolă nouă și copia de pe server este înlocuită. Pe celelalte dispozitive introdu parola nouă.
+E-mailul tău; cu mementourile, turele din următoarele 45 de zile cu ora și numele turei, ca să știm când să te anunțăm; cu sincronizarea, toate datele, dar criptate cu parola ta, deci ilizibile. Poți șterge contul și toate datele de pe server din {p}.
+Pe acest dispozitiv, în browser. Fără cont nu se trimite nimic pe un server. Cu sincronizarea, o copie criptată cu parola ta ajunge pe server; cu mementourile, ajung turele din următoarele 45 de zile.
+Cu un cont primești mementouri înainte de ture și poți avea aceleași ture pe toate dispozitivele tale. Fără cont aplicația funcționează ca întotdeauna.
+Tot restul rămâne doar pe acest dispozitiv, dacă nu activezi sincronizarea: atunci călătorește criptat cu parola ta și pe server este ilizibil. Poți șterge contul și datele de pe server oricând, de aici.
+Sincronizare
+Aceleași ture pe toate dispozitivele unde te conectezi cu e-mailul tău: telefon, tabletă și computer.
+Parola de sincronizare
+Repetă parola
+Am uitat parola
+Sincronizează acum
+Oprește pe acest dispozitiv
+Cum funcționează
+Înainte să plece, datele sunt criptate pe acest dispozitiv cu parola ta: ajung pe server ilizibile și nimeni nu le poate citi.
+Parola nu este salvată nicăieri. Dacă o uiți, copia de pe server nu se poate recupera, dar datele rămân pe dispozitivele tale și poți începe din nou cu o parolă nouă.
+Dacă modifici aceeași zi pe două dispozitive, se păstrează modificarea cea mai recentă. Tema și mementourile rămân alegeri ale fiecărui dispozitiv.

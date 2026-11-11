@@ -7,7 +7,7 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 - Parla e scrive in **italiano**. Le risposte vanno in italiano semplice, senza gergo tecnico. Prima il risultato, poi i dettagli.
 - Usa l'app su **iPhone 16 Pro Max**: le modifiche vanno pensate prima di tutto per il telefono, ma devono funzionare anche su computer.
 - Ogni modifica che si vede nell'app è un **rilascio**, secondo la lista "Rilascio" più sotto. Si lavora direttamente su `main`.
-- I dati restano sul dispositivo. L'unico server è Supabase (vedi "Server"), usato solo per l'account e i promemoria. Ogni altra funzione che richiede il server (sincronizzazione, calendario in abbonamento, condivisione) va discussa con il proprietario prima di farla.
+- I dati restano sul dispositivo. L'unico server è Supabase (vedi "Server"), usato per l'account, i promemoria e la sincronizzazione cifrata. Ogni altra funzione che richiede il server (calendario in abbonamento, condivisione) va discussa con il proprietario prima di farla.
 
 ## Cos'è
 
@@ -74,7 +74,7 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 | `helpData` | Contiene il testo della Guida. |
 | `startTour` / `tourSteps` | Avviano e descrivono il tour guidato. |
 
-`window.myturnDebug` espone `remItems`, `startTour`, `t`, `tn`, `bpLines`, `bpParse`, `bpNum`, `holFor`, `holidays` e altre funzioni per i test.
+`window.myturnDebug` espone `remItems`, `syItems`, `syRun`, `S`, `apply`, `mark`, `startTour`, `t`, `tn`, `bpLines`, `bpParse`, `bpNum`, `holFor`, `holidays` e altre funzioni per i test.
 
 ### Festività
 
@@ -91,7 +91,7 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
 
 ## Server (Supabase)
 
-- Serve solo per **accesso** (codice di 6 cifre via email) e **promemoria** (notifiche push prima dei turni). Progetto Supabase `jszgiqdylsachclshyqm` (nome mostrato nel pannello: "iwork"), organizzazione BLFRLRNZ/Team, piano gratuito, Francoforte.
+- Serve per **accesso** (codice di 6 cifre via email), **promemoria** (notifiche push prima dei turni) e **sincronizzazione** tra dispositivi. Progetto Supabase `jszgiqdylsachclshyqm` (nome mostrato nel pannello: "iwork"), organizzazione BLFRLRNZ/Team, piano gratuito, Francoforte.
 - **Email:** Supabase manda i codici tramite Brevo (SMTP, piano gratuito: 300 email al giorno; Supabase ne permette 30 all'ora). Mittente: la Gmail del proprietario, verificata su Brevo e scritta tutta in minuscolo anche su Supabase, altrimenti Brevo rifiuta l'invio. Brevo sostituisce gli indirizzi Gmail con un suo indirizzo tecnico: per aprire a molti utenti conviene un dominio proprio. I modelli "Magic link" e "Confirm sign up" contengono solo `Il tuo codice MyTurn: {{ .Token }}` (dal telefono l'editor non permette di incollare).
 - Il collegamento sta in `index.html`, nell'oggetto `SUPA={url,key,vapid}`: indirizzo del progetto, chiave pubblica "anon" e chiave pubblica VAPID. Se è vuoto, la sezione Account e il pulsante Promemoria restano nascosti e l'app non chiama nessun server.
 - Il client è scritto a mano con `fetch` (`sbFetch`, `auToken`), senza librerie. La sessione sta in `localStorage["myturn-auth"]`.
@@ -99,7 +99,13 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
 - Sul server: il job `myturn-reminders` di `pg_cron` chiama ogni minuto la funzione `send-reminders` con `pg_net`, passando il `cron_secret` letto da `app_config`. Le notifiche partono con Web Push; `sw.js` le mostra (`push`, `notificationclick`). Le risposte si vedono in `net._http_response`.
 - Le tre funzioni hanno la verifica del token spenta: controllano da sole il segreto del cron o il token dell'utente.
 - Lo strumento di Supabase annulla da solo le modifiche che chiedono una conferma (per esempio con `drop`): applicare le modifiche al database a pezzi piccoli e senza `drop`.
-- Restano **solo sul dispositivo**: note, etichette, busta paga, stima paga e tutto il resto.
+- **Sincronizzazione** (codice in `index.html`, cerca `sincronizzazione tra dispositivi`; schermata `#sy`, aperta da `#syBtn` in Impostazioni → Account):
+  - Cifratura end-to-end scelta dal proprietario: password dell'utente → PBKDF2-SHA256 (600.000 giri, sale in `sync_meta`) → 512 bit: AES-GCM per i dati, HMAC per gli identificativi. La password non viene salvata; le chiavi stanno in `localStorage["myturn-sync"]`. `sync_meta.check_*` è il testo `{ok:"myturn"}` cifrato, per controllare la password.
+  - Un elemento per ogni giorno (`d|AAAA-MM-GG`), reperibilità (`o|`), secondo lavoro (`j|`), busta paga (`b|AAAA-MM`) e impostazioni (`s`, senza `rem`). Sul server: `sync_items(k=HMAC, iv, data, seq)`. `seq` cresce a ogni scrittura (sequenza + trigger); ogni dispositivo chiede gli elementi con `seq` maggiore dell'ultimo visto.
+  - Modifiche locali: `mark()` → `syNote()` confronta con l'impronta dell'ultimo valore sincronizzato (`myturn-syncbase`) e annota le differenze con l'ora (`myturn-syncdirty`). `syRun()` scarica, applica (vince la modifica più recente), poi manda. Parte all'apertura, quando l'app torna visibile, ogni 2 minuti e qualche secondo dopo una modifica.
+  - Un dispositivo che si aggiunge dà ora 0 ai suoi dati: nei conflitti vincono quelli già sincronizzati. "Ho dimenticato la password" cancella la copia sul server e la ricrea; gli altri dispositivi se ne accorgono perché il sale è cambiato e chiedono di riattivare.
+  - Tema e lingua sono già locali (`myturn-theme`, `myturn-lang`); le impostazioni dei promemoria (`settings.rem`) non si sincronizzano.
+- Senza sincronizzazione restano **solo sul dispositivo**: note, etichette, busta paga, stima paga e tutto il resto.
 - **Segreti:** la chiave privata VAPID, il `cron_secret` e la chiave `service_role` stanno solo nella tabella `app_config` di Supabase. Non vanno mai nel repository né chiesti in chat.
 - Le istruzioni passo per passo sono in `supabase/README.md`.
 
@@ -145,6 +151,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | `tests/tour-first-run.js` | Il tour parte una volta sola e si riapre dalla Guida | sì |
 | `tests/tour-all-languages.js` | Il tour resta dentro lo schermo in 23 lingue | no |
 | `tests/account-reminders.js` | Accesso, uscita e promemoria con un Supabase finto | sì |
+| `tests/sync.js` | Sincronizzazione tra due dispositivi con un server finto: password, unione, conflitti, cancellazioni, password dimenticata, niente in chiaro sul server | sì |
 
 - Le buste paga di prova sono in `tests/payslip/`. Si rigenerano con `gen.py`, `gen2.py` e `gen3.py`, che usano reportlab e pypdf.
 - I risultati attesi delle 22 buste di `gen3.py` sono in `expected.json`. Quelli delle buste di `gen.py` e `gen2.py` sono scritti direttamente in `payslip-models.js`.
@@ -163,7 +170,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 - **Etichetta della versione 2.0.0 su GitHub:** va creata a mano.
 - **Festività mancanti:** quelle dei singoli stati di USA e Brasile, la provincia di Terranova e Labrador in Canada, i ponti decisi ogni anno dai governi.
 - **Dominio proprio per le email** (per esempio myturn.it), da collegare a Brevo, quando l'app si apre a molti utenti.
-- **Funzioni del server ancora da fare:** sincronizzazione tra dispositivi, calendario in abbonamento, condivisione con i colleghi.
+- **Funzioni del server ancora da fare:** calendario in abbonamento, condivisione con i colleghi.
 
 ## Storia delle versioni
 
@@ -178,3 +185,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.6 | Account e promemoria con Supabase (nascosti) |
 | 2.7 | Nuovo nome: MyTurn, anche nei nomi interni e nell'indirizzo |
 | 2.8 | Account e promemoria aperti a tutti (email tramite Brevo); 2.8.1: Guida e tour li spiegano |
+| 2.9 | Sincronizzazione cifrata tra dispositivi |

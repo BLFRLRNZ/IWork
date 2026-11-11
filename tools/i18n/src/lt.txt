@@ -717,3 +717,49 @@ Pranešimai neateina: ką daryti?
 Kas saugoma serveryje?
 Tik tavo el. paštas ir, jei įjungsi priminimus, artimiausių 45 dienų pamainos su laiku ir pamainos pavadinimu, kad žinotume, kada tau priminti. Pastabos, žymos, atlyginimo lapeliai ir atlyginimo įvertis lieka telefone. Paskyrą ir duomenis serveryje gali ištrinti skiltyje {p}.
 Tik šiame įrenginyje, naršyklėje. Be paskyros niekas nesiunčiama į serverį; įjungus priminimus, į serverį keliauja tik artimiausių 45 dienų pamainos.
+Pamainos atnaujintos iš kito įrenginio.
+Sinchronizavimas įjungtas, paskutinį kartą {h}
+Sinchronizavimas įjungtas
+Sinchronizavimą reikia įjungti iš naujo
+Sinchronizavimas išjungtas
+Įjungti
+Sinchronizavimui reikia paskyros.
+Pasirink slaptažodį savo duomenims apsaugoti. Jo reikės, kai įjungsi sinchronizavimą kituose įrenginiuose.
+Įrašyk sinchronizavimo slaptažodį, kurį pasirinkai kitame įrenginyje.
+Pasirink naują slaptažodį. Kopija serveryje bus ištrinta ir pakeista šio įrenginio duomenimis; kituose įrenginiuose reikės įvesti naują slaptažodį.
+Sinchronizavimas įjungtas. Paskutinis atnaujinimas: {h}.
+Sinchronizavimas įjungtas.
+Pradėti iš naujo
+Sinchronizavimo slaptažodis pakeistas kitame įrenginyje. Įvesk jį dar kartą.
+Nepavyko prisijungti. Patikrink ryšį ir bandyk dar kartą.
+Sinchronizuojama…
+Atlikta: viskas atnaujinta.
+Nepavyko sinchronizuoti. Patikrink ryšį ir bandyk dar kartą.
+Sinchronizavimas šiame įrenginyje išjungtas. Duomenys lieka čia.
+Slaptažodį turi sudaryti bent 8 simboliai.
+Slaptažodžiai nesutampa.
+Tikrinamas slaptažodis ir atsisiunčiami duomenys…
+Duomenys šifruojami ir siunčiami…
+Sinchronizavimas šiame įrenginyje įjungtas.
+Neteisingas slaptažodis. Bandyk dar kartą.
+Šalis ir šventės, kalba, šviesi ar tamsi tema ir paskyra priminimams bei sinchronizavimui.
+Paskyra, priminimai ir sinchronizavimas
+Kaip naudoti MyTurn keliuose įrenginiuose?
+Kiekviename įrenginyje prisijunk tuo pačiu el. paštu. Pirmame atidaryk {p}, paliesk {a} ir pasirink sinchronizavimo slaptažodį; kituose įvesk tą patį slaptažodį. Nuo tada pamainos, pastabos ir nustatymai atsinaujina patys. Tema ir priminimai lieka kiekvieno įrenginio pasirinkimas.
+Pamiršau sinchronizavimo slaptažodį: ką daryti?
+Niekas negali jo atkurti, nes jis niekur nesaugomas. Tačiau tavo duomenys lieka įrenginiuose: naujausiame paliesk {a}, pasirink naują slaptažodį ir kopija serveryje bus pakeista. Kituose įrenginiuose įvesk naują slaptažodį.
+Tavo el. paštas; su priminimais – artimiausių 45 dienų pamainos su laiku ir pamainos pavadinimu, kad žinotume, kada tau priminti; su sinchronizavimu – visi duomenys, bet užšifruoti tavo slaptažodžiu, todėl neįskaitomi. Paskyrą ir visus duomenis serveryje gali ištrinti skiltyje {p}.
+Šiame įrenginyje, naršyklėje. Be paskyros niekas nesiunčiama į serverį. Su sinchronizavimu į serverį keliauja tavo slaptažodžiu užšifruota kopija; su priminimais – artimiausių 45 dienų pamainos.
+Su paskyra gauni priminimus prieš pamainas ir gali turėti tas pačias pamainas visuose savo įrenginiuose. Be paskyros programėlė veikia kaip visada.
+Visa kita lieka tik šiame įrenginyje, nebent įjungsi sinchronizavimą: tada duomenys keliauja užšifruoti tavo slaptažodžiu ir serveryje yra neįskaitomi. Paskyrą ir duomenis serveryje gali ištrinti bet kada, čia.
+Sinchronizavimas
+Tos pačios pamainos visuose įrenginiuose, kuriuose prisijungi savo el. paštu: telefone, planšetėje ir kompiuteryje.
+Sinchronizavimo slaptažodis
+Pakartok slaptažodį
+Pamiršau slaptažodį
+Sinchronizuoti dabar
+Išjungti šiame įrenginyje
+Kaip tai veikia
+Prieš išsiunčiant duomenys šiame įrenginyje užšifruojami tavo slaptažodžiu: į serverį jie atkeliauja neįskaitomi ir niekas negali jų perskaityti.
+Slaptažodis niekur nesaugomas. Jei jį pamirši, kopijos serveryje atkurti nepavyks, bet duomenys liks tavo įrenginiuose ir galėsi pradėti iš naujo su nauju slaptažodžiu.
+Jei tą pačią dieną pakeisi dviejuose įrenginiuose, galioja naujausias pakeitimas. Tema ir priminimai lieka kiekvieno įrenginio pasirinkimas.

@@ -717,3 +717,49 @@ Na iPhoneu obavijesti stižu samo ako je aplikacija na početnom zaslonu i otvar
 Što se sprema na poslužitelj?
 Samo tvoja e-pošta i, ako uključiš podsjetnike, smjene za sljedećih 45 dana s vremenom i nazivom smjene, da znamo kada te obavijestiti. Bilješke, oznake, platne liste i procjena plaće ostaju na telefonu. Račun i podatke na poslužitelju možeš izbrisati u {p}.
 Samo na ovom uređaju, u pregledniku. Bez računa ništa se ne šalje na poslužitelj; s uključenim podsjetnicima na poslužitelj idu samo smjene za sljedećih 45 dana.
+Smjene ažurirane s drugog uređaja.
+Sinkronizacija uključena, posljednja u {h}
+Sinkronizacija uključena
+Sinkronizaciju treba ponovno uključiti
+Sinkronizacija isključena
+Uključi
+Za sinkronizaciju je potreban račun.
+Odaberi lozinku za zaštitu svojih podataka. Trebat će ti za uključivanje sinkronizacije na drugim uređajima.
+Upiši lozinku za sinkronizaciju koju si odabrao na drugom uređaju.
+Odaberi novu lozinku. Kopija na poslužitelju bit će izbrisana i zamijenjena podacima s ovog uređaja; na drugim uređajima morat ćeš upisati novu lozinku.
+Sinkronizacija uključena. Posljednje ažuriranje: {h}.
+Sinkronizacija uključena.
+Počni ispočetka
+Lozinka za sinkronizaciju promijenjena je na drugom uređaju. Upiši je ponovno.
+Nisam se uspio povezati. Provjeri vezu i pokušaj ponovno.
+Sinkroniziram…
+Gotovo: sve je ažurno.
+Nisam uspio sinkronizirati. Provjeri vezu i pokušaj ponovno.
+Sinkronizacija isključena na ovom uređaju. Podaci ostaju ovdje.
+Lozinka mora imati najmanje 8 znakova.
+Lozinke se ne podudaraju.
+Provjeravam lozinku i preuzimam podatke…
+Šifriram i šaljem podatke…
+Sinkronizacija uključena na ovom uređaju.
+Pogrešna lozinka. Pokušaj ponovno.
+Država i blagdani, jezik, svijetla ili tamna tema i račun za podsjetnike i sinkronizaciju.
+Račun, podsjetnici i sinkronizacija
+Kako koristiti MyTurn na više uređaja?
+Prijavi se istom e-poštom na svakom uređaju. Na prvom otvori {p}, dodirni {a} i odaberi lozinku za sinkronizaciju; na ostalima upiši istu lozinku. Od tada se smjene, bilješke i postavke ažuriraju same. Tema i podsjetnici ostaju izbor svakog uređaja.
+Zaboravio sam lozinku za sinkronizaciju: što učiniti?
+Nitko je ne može vratiti jer se nigdje ne sprema. Tvoji podaci ipak ostaju na uređajima: na najažurnijem dodirni {a}, odaberi novu lozinku i kopija na poslužitelju bit će zamijenjena. Na ostalim uređajima upiši novu lozinku.
+Tvoja e-pošta; s podsjetnicima smjene za sljedećih 45 dana s vremenom i nazivom smjene, da znamo kada te obavijestiti; sa sinkronizacijom svi podaci, ali šifrirani tvojom lozinkom, dakle nečitljivi. Račun i sve podatke na poslužitelju možeš izbrisati u {p}.
+Na ovom uređaju, u pregledniku. Bez računa ništa se ne šalje na poslužitelj. Sa sinkronizacijom na poslužitelj ide kopija šifrirana tvojom lozinkom; s podsjetnicima smjene za sljedećih 45 dana.
+S računom primaš podsjetnike prije smjena i možeš imati iste smjene na svim svojim uređajima. Bez računa aplikacija radi kao i uvijek.
+Sve ostalo ostaje samo na ovom uređaju, osim ako ne uključiš sinkronizaciju: tada putuje šifrirano tvojom lozinkom i na poslužitelju je nečitljivo. Račun i podatke na poslužitelju možeš izbrisati kad god želiš, odavde.
+Sinkronizacija
+Iste smjene na svim uređajima na kojima se prijaviš svojom e-poštom: telefonu, tabletu i računalu.
+Lozinka za sinkronizaciju
+Ponovi lozinku
+Zaboravio sam lozinku
+Sinkroniziraj sada
+Isključi na ovom uređaju
+Kako radi
+Prije nego što krenu, podaci se šifriraju na ovom uređaju tvojom lozinkom: na poslužitelj stižu nečitljivi i nitko ih ne može pročitati.
+Lozinka se nigdje ne sprema. Ako je zaboraviš, kopija na poslužitelju ne može se vratiti, ali podaci ostaju na tvojim uređajima i možeš početi ispočetka s novom lozinkom.
+Ako promijeniš isti dan na dva uređaja, vrijedi najnovija promjena. Tema i podsjetnici ostaju izbor svakog uređaja.

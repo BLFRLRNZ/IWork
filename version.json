@@ -1,12 +1,12 @@
 {
-  "version": "2.8.1",
+  "version": "2.9.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "La Guida ha una nuova sezione su account e promemoria: come accedere, come ricevere gli avvisi prima dei turni, cosa fare se le notifiche non arrivano e cosa viene salvato sul server.",
-    "en": "The Guide has a new section on account and reminders: how to sign in, how to get notified before your shifts, what to do if notifications don't arrive and what is stored on the server.",
-    "fr": "Le Guide a une nouvelle section sur le compte et les rappels : comment se connecter, comment être prévenu avant vos postes, que faire si les notifications n'arrivent pas et ce qui est enregistré sur le serveur.",
-    "de": "Die Anleitung hat einen neuen Abschnitt zu Konto und Erinnerungen: wie du dich anmeldest, wie du vor Schichten erinnert wirst, was zu tun ist, wenn keine Mitteilungen kommen, und was auf dem Server gespeichert wird.",
-    "es": "La Guía tiene una nueva sección sobre la cuenta y los recordatorios: cómo iniciar sesión, cómo recibir avisos antes de los turnos, qué hacer si no llegan las notificaciones y qué se guarda en el servidor.",
-    "pt": "O Guia tem uma nova secção sobre a conta e os lembretes: como iniciar sessão, como receber avisos antes dos turnos, o que fazer se as notificações não chegarem e o que é guardado no servidor."
+    "it": "Nuova sincronizzazione: gli stessi turni su telefono, tablet e computer. Attivala in Impostazioni → Account con una password tua: i dati vengono cifrati sul dispositivo e sul server sono illeggibili.",
+    "en": "New sync: the same shifts on phone, tablet and computer. Turn it on in Settings → Account with a password of your own: data is encrypted on the device and can't be read on the server.",
+    "fr": "Nouvelle synchronisation : les mêmes postes sur téléphone, tablette et ordinateur. Activez-la dans Réglages → Compte avec votre propre mot de passe : les données sont chiffrées sur l'appareil et illisibles sur le serveur.",
+    "de": "Neue Synchronisierung: dieselben Schichten auf Handy, Tablet und Computer. Schalte sie unter Einstellungen → Konto mit einem eigenen Passwort ein: Die Daten werden auf dem Gerät verschlüsselt und sind auf dem Server unlesbar.",
+    "es": "Nueva sincronización: los mismos turnos en el teléfono, la tableta y el ordenador. Actívala en Ajustes → Cuenta con una contraseña tuya: los datos se cifran en el dispositivo y en el servidor son ilegibles.",
+    "pt": "Nova sincronização: os mesmos turnos no telemóvel, tablet e computador. Ative-a em Definições → Conta com uma palavra-passe sua: os dados são cifrados no dispositivo e ilegíveis no servidor."
   }
 }

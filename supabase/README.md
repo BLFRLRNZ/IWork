@@ -9,6 +9,8 @@ Serve solo a chi sceglie di creare un account. Senza account l'app funziona come
 | `profiles` | Minuti di anticipo dei promemoria, lingua e fuso orario. |
 | `push_subs` | Iscrizioni alle notifiche, una per ogni dispositivo. |
 | `shifts` | Turni dei prossimi 45 giorni: ora d'inizio, ora del promemoria e testo della notifica, già scritto dall'app nella lingua dell'utente. |
+| `sync_meta` | Per la sincronizzazione: il sale della password e un piccolo testo cifrato per controllarla. |
+| `sync_items` | Per la sincronizzazione: i dati cifrati sul dispositivo (illeggibili per il server), un elemento per giorno o impostazione, con un identificativo anch'esso cifrato. |
 | `app_config` | Chiavi VAPID e segreto del cron. Nessun utente può leggerla: la legge solo il server. |
 
 Le regole di accesso (RLS) sono attive su tutte le tabelle: ognuno vede solo le proprie righe. Le scritture passano dalle funzioni `save_push`, `forget_push` e `set_shifts`.
@@ -27,7 +29,7 @@ Progetto `jszgiqdylsachclshyqm` (nel pannello si chiama "iwork"), Francoforte, p
 
 ## Configurazione da fare una volta
 
-1. Applicare `migrations/20261111000000_account_promemoria.sql`.
+1. Applicare `migrations/20261111000000_account_promemoria.sql` e `migrations/20261111150000_sincronizzazione.sql`.
 2. Pubblicare le tre funzioni.
 3. Scrivere in `app_config` le chiavi VAPID (`vapid_public`, `vapid_private`, `vapid_subject`) e `cron_secret`. **La chiave privata non va mai nel repository.**
 4. Attivare `pg_cron` e `pg_net` e programmare la chiamata a `send-reminders`:

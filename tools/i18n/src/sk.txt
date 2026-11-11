@@ -717,3 +717,49 @@ Na iPhone prichádzajú upozornenia, len keď je aplikácia na ploche a otvára�
 Čo sa ukladá na server?
 Len tvoj e-mail a, ak zapneš pripomienky, zmeny na najbližších 45 dní s časom a názvom zmeny, aby sme vedeli, kedy ťa upozorniť. Poznámky, štítky, výplatné pásky a odhad mzdy zostávajú v telefóne. Účet a údaje na serveri môžeš vymazať v {p}.
 Len v tomto zariadení, v prehliadači. Bez účtu sa nič neposiela na server; so zapnutými pripomienkami idú na server len zmeny na najbližších 45 dní.
+Zmeny aktualizované z iného zariadenia.
+Synchronizácia zapnutá, naposledy o {h}
+Synchronizácia zapnutá
+Synchronizáciu treba znova zapnúť
+Synchronizácia vypnutá
+Zapnúť
+Na synchronizáciu potrebuješ účet.
+Zvoľ heslo, ktoré ochráni tvoje údaje. Budeš ho potrebovať na zapnutie synchronizácie na ďalších zariadeniach.
+Zadaj heslo na synchronizáciu, ktoré si zvolil na druhom zariadení.
+Zvoľ nové heslo. Kópia na serveri sa vymaže a nahradí údajmi z tohto zariadenia; na ostatných zariadeniach budeš musieť zadať nové heslo.
+Synchronizácia zapnutá. Posledná aktualizácia: {h}.
+Synchronizácia zapnutá.
+Začať odznova
+Heslo na synchronizáciu bolo zmenené na inom zariadení. Zadaj ho znova.
+Nepodarilo sa pripojiť. Skontroluj pripojenie a skús to znova.
+Synchronizujem…
+Hotovo: všetko je aktuálne.
+Synchronizácia sa nepodarila. Skontroluj pripojenie a skús to znova.
+Synchronizácia na tomto zariadení vypnutá. Údaje zostávajú tu.
+Heslo musí mať aspoň 8 znakov.
+Heslá sa nezhodujú.
+Overujem heslo a sťahujem údaje…
+Šifrujem a posielam údaje…
+Synchronizácia na tomto zariadení zapnutá.
+Nesprávne heslo. Skús to znova.
+Krajina a sviatky, jazyk, svetlý alebo tmavý motív a účet na pripomienky a synchronizáciu.
+Účet, pripomienky a synchronizácia
+Ako používať MyTurn na viacerých zariadeniach?
+Prihlás sa na každom zariadení rovnakým e-mailom. Na prvom otvor {p}, ťukni na {a} a zvoľ heslo na synchronizáciu; na ostatných zadaj rovnaké heslo. Odvtedy sa zmeny, poznámky a nastavenia aktualizujú samy. Motív a pripomienky zostávajú voľbou každého zariadenia.
+Zabudol som heslo na synchronizáciu: čo mám robiť?
+Nikto ho nemôže obnoviť, pretože sa nikde neukladá. Tvoje údaje však zostávajú v zariadeniach: na najaktuálnejšom ťukni na {a}, zvoľ nové heslo a kópia na serveri sa nahradí. Na ostatných zariadeniach zadaj nové heslo.
+Tvoj e-mail; s pripomienkami zmeny na najbližších 45 dní s časom a názvom zmeny, aby sme vedeli, kedy ťa upozorniť; so synchronizáciou všetky údaje, ale zašifrované tvojím heslom, teda nečitateľné. Účet a všetky údaje na serveri môžeš vymazať v {p}.
+V tomto zariadení, v prehliadači. Bez účtu sa nič neposiela na server. So synchronizáciou ide na server kópia zašifrovaná tvojím heslom; s pripomienkami zmeny na najbližších 45 dní.
+S účtom dostávaš pripomienky pred zmenami a môžeš mať rovnaké zmeny na všetkých svojich zariadeniach. Bez účtu aplikácia funguje ako vždy.
+Všetko ostatné zostáva len v tomto zariadení, ak nezapneš synchronizáciu: vtedy putuje zašifrované tvojím heslom a na serveri je nečitateľné. Účet a údaje na serveri môžeš kedykoľvek vymazať, tu.
+Synchronizácia
+Rovnaké zmeny na všetkých zariadeniach, kde sa prihlásiš svojím e-mailom: v telefóne, tablete aj počítači.
+Heslo na synchronizáciu
+Zopakuj heslo
+Zabudol som heslo
+Synchronizovať teraz
+Vypnúť na tomto zariadení
+Ako to funguje
+Skôr než údaje odídu, zašifrujú sa v tomto zariadení tvojím heslom: na server dorazia nečitateľné a nikto ich nemôže prečítať.
+Heslo sa nikde neukladá. Ak ho zabudneš, kópiu na serveri nemožno obnoviť, ale údaje zostávajú na tvojich zariadeniach a môžeš začať odznova s novým heslom.
+Ak zmeníš ten istý deň na dvoch zariadeniach, platí najnovšia zmena. Motív a pripomienky zostávajú voľbou každého zariadenia.

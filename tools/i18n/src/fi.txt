@@ -717,3 +717,49 @@ iPhonessa ilmoitukset tulevat vain, jos sovellus on Koti-valikossa ja avaat sen 
 Mitä palvelimelle tallennetaan?
 Vain sähköpostisi ja, jos otat muistutukset käyttöön, seuraavan 45 päivän vuorot kellonaikoineen ja vuoron nimineen, jotta tiedetään, milloin sinua muistutetaan. Muistiinpanot, tunnisteet, palkkalaskelmat ja palkka-arvio pysyvät puhelimessa. Voit poistaa tilin ja palvelimen tiedot kohdassa {p}.
 Vain tällä laitteella, selaimessa. Ilman tiliä mitään ei lähetetä palvelimelle; kun muistutukset ovat päällä, palvelimelle menevät vain seuraavan 45 päivän vuorot.
+Vuorot päivitetty toiselta laitteelta.
+Synkronointi päällä, viimeksi klo {h}
+Synkronointi päällä
+Synkronointi on otettava uudelleen käyttöön
+Synkronointi pois päältä
+Ota käyttöön
+Synkronointiin tarvitaan tili.
+Valitse salasana tietojesi suojaamiseksi. Tarvitset sitä, kun otat synkronoinnin käyttöön muilla laitteilla.
+Kirjoita synkronointisalasana, jonka valitsit toisella laitteella.
+Valitse uusi salasana. Palvelimella oleva kopio poistetaan ja korvataan tämän laitteen tiedoilla; muilla laitteilla sinun on annettava uusi salasana.
+Synkronointi päällä. Viimeksi päivitetty: {h}.
+Synkronointi päällä.
+Aloita alusta
+Synkronointisalasana on vaihdettu toisella laitteella. Anna se uudelleen.
+Yhteyttä ei saatu. Tarkista yhteys ja yritä uudelleen.
+Synkronoidaan…
+Valmis: kaikki on ajan tasalla.
+Synkronointi ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Synkronointi poistettu käytöstä tällä laitteella. Tiedot jäävät tänne.
+Salasanassa on oltava vähintään 8 merkkiä.
+Salasanat eivät täsmää.
+Tarkistetaan salasanaa ja ladataan tietoja…
+Salataan ja lähetetään tietoja…
+Synkronointi on käytössä tällä laitteella.
+Väärä salasana. Yritä uudelleen.
+Maa ja juhlapyhät, kieli, vaalea tai tumma teema sekä tili muistutuksia ja synkronointia varten.
+Tili, muistutukset ja synkronointi
+Miten käytän MyTurnia usealla laitteella?
+Kirjaudu samalla sähköpostilla jokaisella laitteella. Avaa ensimmäisellä {p}, napauta {a} ja valitse synkronointisalasana; kirjoita muilla sama salasana. Siitä lähtien vuorot, muistiinpanot ja asetukset päivittyvät itsestään. Teema ja muistutukset ovat jokaisen laitteen omia valintoja.
+Unohdin synkronointisalasanan: mitä teen?
+Kukaan ei voi palauttaa sitä, koska sitä ei tallenneta mihinkään. Tietosi jäävät kuitenkin laitteille: napauta ajantasaisimmalla laitteella {a}, valitse uusi salasana, niin palvelimen kopio korvataan. Anna muilla laitteilla uusi salasana.
+Sähköpostisi; muistutuksilla seuraavan 45 päivän vuorot kellonaikoineen ja vuoron nimineen, jotta tiedetään, milloin sinua muistutetaan; synkronoinnilla kaikki tiedot, mutta salasanallasi salattuina eli lukukelvottomina. Voit poistaa tilin ja kaikki palvelimen tiedot kohdassa {p}.
+Tällä laitteella, selaimessa. Ilman tiliä mitään ei lähetetä palvelimelle. Synkronoinnilla palvelimelle menee salasanallasi salattu kopio; muistutuksilla seuraavan 45 päivän vuorot.
+Tilin avulla saat muistutukset ennen vuoroja ja samat vuorot kaikille laitteillesi. Ilman tiliä sovellus toimii kuten aina.
+Kaikki muu pysyy vain tällä laitteella, ellei synkronointi ole käytössä: silloin tiedot kulkevat salasanallasi salattuina eivätkä ole palvelimella luettavissa. Voit poistaa tilin ja palvelimen tiedot milloin tahansa, täältä.
+Synkronointi
+Samat vuorot kaikilla laitteilla, joille kirjaudut sähköpostillasi: puhelimella, tabletilla ja tietokoneella.
+Synkronointisalasana
+Toista salasana
+Unohdin salasanan
+Synkronoi nyt
+Poista käytöstä tällä laitteella
+Näin se toimii
+Ennen lähtöä tietosi salataan tällä laitteella salasanallasi: ne saapuvat palvelimelle lukukelvottomina, eikä kukaan voi lukea niitä.
+Salasanaa ei tallenneta mihinkään. Jos unohdat sen, palvelimen kopiota ei voi palauttaa, mutta tiedot pysyvät laitteillasi ja voit aloittaa alusta uudella salasanalla.
+Jos muutat samaa päivää kahdella laitteella, uusin muutos jää voimaan. Teema ja muistutukset ovat jokaisen laitteen omia valintoja.

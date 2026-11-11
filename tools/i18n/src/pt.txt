@@ -717,3 +717,49 @@ No iPhone as notificações só chegam se a app estiver no ecrã principal e a a
 O que é guardado no servidor?
 Apenas o seu e-mail e, se ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisá-lo. Notas, etiquetas, recibos de vencimento e estimativa de salário ficam no telemóvel. Pode eliminar a conta e os dados no servidor a partir de {p}.
 Apenas neste dispositivo, no navegador. Sem conta nada é enviado para um servidor; com os lembretes ativos, só os turnos dos próximos 45 dias vão para o servidor.
+Turnos atualizados a partir de outro dispositivo.
+Sincronização ativa, última às {h}
+Sincronização ativa
+Sincronização a reativar
+Sincronização desligada
+Ativar
+Para sincronizar é necessária uma conta.
+Escolha uma palavra-passe para proteger os seus dados. Vai precisar dela para ativar a sincronização nos outros dispositivos.
+Introduza a palavra-passe de sincronização que escolheu no outro dispositivo.
+Escolha uma nova palavra-passe. A cópia no servidor será apagada e substituída pelos dados deste dispositivo; nos outros dispositivos terá de introduzir a nova palavra-passe.
+Sincronização ativa. Última atualização: {h}.
+Sincronização ativa.
+Recomeçar
+A palavra-passe de sincronização foi alterada noutro dispositivo. Introduza-a novamente.
+Não foi possível ligar. Verifique a ligação e tente novamente.
+A sincronizar…
+Concluído: está tudo atualizado.
+Não foi possível sincronizar. Verifique a ligação e tente novamente.
+Sincronização desligada neste dispositivo. Os seus dados ficam aqui.
+A palavra-passe deve ter pelo menos 8 caracteres.
+As duas palavras-passe não coincidem.
+A verificar a palavra-passe e a descarregar os dados…
+A cifrar e a enviar os dados…
+Sincronização ativa neste dispositivo.
+Palavra-passe errada. Tente novamente.
+País e feriados, idioma, tema claro ou escuro e a conta para os lembretes e a sincronização.
+Conta, lembretes e sincronização
+Como uso a MyTurn em vários dispositivos?
+Inicie sessão com o mesmo e-mail em cada dispositivo. No primeiro abra {p}, toque em {a} e escolha uma palavra-passe de sincronização; nos outros introduza a mesma palavra-passe. A partir daí turnos, notas e definições atualizam-se sozinhos. O tema e os lembretes continuam a ser escolhas de cada dispositivo.
+Esqueci-me da palavra-passe de sincronização: o que faço?
+Ninguém a pode recuperar, porque não é guardada em lado nenhum. Os seus dados, porém, ficam nos dispositivos: no mais atualizado toque em {a}, escolha uma nova palavra-passe e a cópia no servidor é substituída. Nos outros dispositivos introduza a nova palavra-passe.
+O seu e-mail; com os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisá-lo; com a sincronização, todos os dados, mas cifrados com a sua palavra-passe e, portanto, ilegíveis. Pode eliminar a conta e todos os dados no servidor a partir de {p}.
+Neste dispositivo, no navegador. Sem conta nada é enviado para um servidor. Com a sincronização, uma cópia cifrada com a sua palavra-passe vai para o servidor; com os lembretes, vão os turnos dos próximos 45 dias.
+Com uma conta recebe lembretes antes dos turnos e pode ter os mesmos turnos em todos os seus dispositivos. Sem conta a app funciona como sempre.
+Tudo o resto fica apenas neste dispositivo, a não ser que ative a sincronização: nesse caso viaja cifrado com a sua palavra-passe e no servidor é ilegível. Pode eliminar a conta e os dados no servidor quando quiser, a partir daqui.
+Sincronização
+Os mesmos turnos em todos os dispositivos onde inicia sessão com o seu e-mail: telemóvel, tablet e computador.
+Palavra-passe de sincronização
+Repita a palavra-passe
+Esqueci-me da palavra-passe
+Sincronizar agora
+Desligar neste dispositivo
+Como funciona
+Antes de saírem, os seus dados são cifrados neste dispositivo com a sua palavra-passe: chegam ao servidor ilegíveis e ninguém os pode ler.
+A palavra-passe não é guardada em lado nenhum. Se a esquecer, a cópia no servidor não se recupera, mas os dados ficam nos seus dispositivos e pode recomeçar com uma nova palavra-passe.
+Se alterar o mesmo dia em dois dispositivos, vale a alteração mais recente. O tema e os lembretes continuam a ser escolhas de cada dispositivo.

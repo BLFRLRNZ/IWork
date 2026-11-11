@@ -55,13 +55,14 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 
 **Account e promemoria**
 - Con un account (Impostazioni → Account, accesso con un codice di 6 cifre ricevuto via email) il telefono avvisa prima di ogni turno anche ad app chiusa: da 15 minuti a 3 ore prima, anche per il secondo lavoro e la reperibilità. Si attivano in Strumenti → Promemoria. Sull'iPhone serve l'app aggiunta alla schermata Home.
+- **Sincronizzazione** (Impostazioni → Account): gli stessi turni, note, etichette, busta paga e impostazioni su tutti i dispositivi dove si accede con la stessa email. I dati vengono cifrati sul dispositivo con una password scelta dall'utente (AES-GCM, chiave ricavata con PBKDF2) e sul server sono illeggibili; la password non viene salvata da nessuna parte. Se lo stesso giorno cambia su due dispositivi vale la modifica più recente; tema e promemoria restano di ogni dispositivo.
 - Senza account l'app funziona come sempre.
 
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in 23 lingue (le traduzioni sono nella cartella `lang/`).
 
 ## Dove sono i dati
 
-I turni restano nel browser del dispositivo che usi (`localStorage`). Il server ([Supabase](supabase/README.md), nell'Unione Europea) serve solo a chi crea un account per i promemoria: riceve l'email e i turni dei prossimi 45 giorni, con orario e nome del turno. Note, etichette, busta paga e stima paga non lasciano mai il dispositivo. Per non perderli e per spostarli su un altro dispositivo usa **Strumenti → Salva una copia dei turni** e poi **Carica una copia**.
+I turni restano nel browser del dispositivo che usi (`localStorage`). Il server ([Supabase](supabase/README.md), nell'Unione Europea) serve solo a chi crea un account: per i promemoria riceve l'email e i turni dei prossimi 45 giorni, con orario e nome del turno; per la sincronizzazione riceve tutti i dati, ma cifrati sul dispositivo con la password dell'utente, quindi illeggibili.
 
 ## Usarla
 

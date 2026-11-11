@@ -717,3 +717,49 @@ iPhone-on az értesítések csak akkor érkeznek meg, ha az app a főképernyőn
 Mit tárolunk a szerveren?
 Csak az e-mail-címedet és, ha bekapcsolod az emlékeztetőket, a következő 45 nap műszakjait időponttal és a műszak nevével, hogy tudjuk, mikor értesítsünk. A jegyzetek, címkék, bérjegyzékek és a bérbecslés a telefonon maradnak. A fiókot és a szerveren tárolt adatokat itt törölheted: {p}.
 Csak ezen az eszközön, a böngészőben. Fiók nélkül semmi sem kerül szerverre; bekapcsolt emlékeztetőkkel csak a következő 45 nap műszakjai kerülnek a szerverre.
+A műszakok egy másik eszközről frissültek.
+Szinkronizálás bekapcsolva, legutóbb: {h}
+Szinkronizálás bekapcsolva
+A szinkronizálást újra be kell kapcsolni
+Szinkronizálás kikapcsolva
+Bekapcsolás
+A szinkronizáláshoz fiók kell.
+Válassz jelszót az adataid védelméhez. Erre lesz szükséged, amikor a többi eszközödön bekapcsolod a szinkronizálást.
+Írd be a szinkronizálási jelszót, amelyet a másik eszközön választottál.
+Válassz új jelszót. A szerveren lévő másolat törlődik, és ennek az eszköznek az adatai lépnek a helyére; a többi eszközön az új jelszót kell majd beírnod.
+Szinkronizálás bekapcsolva. Utolsó frissítés: {h}.
+Szinkronizálás bekapcsolva.
+Újrakezdés
+A szinkronizálási jelszót egy másik eszközön megváltoztatták. Írd be újra.
+Nem sikerült kapcsolódni. Ellenőrizd a kapcsolatot, és próbáld újra.
+Szinkronizálás…
+Kész: minden naprakész.
+Nem sikerült szinkronizálni. Ellenőrizd a kapcsolatot, és próbáld újra.
+A szinkronizálás ezen az eszközön kikapcsolva. Az adatok itt maradnak.
+A jelszónak legalább 8 karakterből kell állnia.
+A két jelszó nem egyezik.
+Jelszó ellenőrzése és adatok letöltése…
+Adatok titkosítása és küldése…
+A szinkronizálás be van kapcsolva ezen az eszközön.
+Hibás jelszó. Próbáld újra.
+Ország és ünnepnapok, nyelv, világos vagy sötét téma, valamint a fiók az emlékeztetőkhöz és a szinkronizáláshoz.
+Fiók, emlékeztetők és szinkronizálás
+Hogyan használhatom a MyTurnt több eszközön?
+Minden eszközön ugyanazzal az e-mail-címmel jelentkezz be. Az elsőn nyisd meg ezt: {p}, koppints erre: {a}, és válassz szinkronizálási jelszót; a többin ugyanezt a jelszót írd be. Ettől kezdve a műszakok, jegyzetek és beállítások maguktól frissülnek. A téma és az emlékeztetők eszközönként külön maradnak.
+Elfelejtettem a szinkronizálási jelszót: mit tegyek?
+Senki sem tudja visszaállítani, mert sehol sincs elmentve. Az adataid viszont az eszközökön maradnak: a legfrissebben koppints erre: {a}, válassz új jelszót, és a szerveren lévő másolat lecserélődik. A többi eszközön írd be az új jelszót.
+Az e-mail-címed; emlékeztetőkkel a következő 45 nap műszakjai időponttal és a műszak nevével, hogy tudjuk, mikor értesítsünk; szinkronizálással az összes adatod, de a jelszavaddal titkosítva, tehát olvashatatlanul. A fiókot és a szerveren tárolt összes adatot itt törölheted: {p}.
+Ezen az eszközön, a böngészőben. Fiók nélkül semmi sem kerül szerverre. Szinkronizálással a jelszavaddal titkosított másolat kerül a szerverre; emlékeztetőkkel a következő 45 nap műszakjai.
+Fiókkal emlékeztetőt kapsz a műszakok előtt, és ugyanazok a műszakok lehetnek meg az összes eszközödön. Fiók nélkül az app ugyanúgy működik, mint eddig.
+Minden más csak ezen az eszközön marad, hacsak be nem kapcsolod a szinkronizálást: ilyenkor a jelszavaddal titkosítva utazik, és a szerveren olvashatatlan. A fiókot és a szerveren tárolt adatokat bármikor törölheted, itt.
+Szinkronizálás
+Ugyanazok a műszakok minden eszközön, ahol az e-mail-címeddel bejelentkezel: telefonon, táblagépen és számítógépen.
+Szinkronizálási jelszó
+Jelszó újra
+Elfelejtettem a jelszót
+Szinkronizálás most
+Kikapcsolás ezen az eszközön
+Hogyan működik
+Mielőtt elindulnak, az adataidat ezen az eszközön titkosítjuk a jelszavaddal: olvashatatlanul érkeznek a szerverre, és senki sem tudja elolvasni őket.
+A jelszó sehol sincs elmentve. Ha elfelejted, a szerveren lévő másolat nem állítható vissza, de az adatok az eszközeiden maradnak, és új jelszóval újrakezdheted.
+Ha ugyanazt a napot két eszközön módosítod, a legutóbbi módosítás marad érvényben. A téma és az emlékeztetők eszközönként külön maradnak.

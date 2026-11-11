@@ -717,3 +717,49 @@ Na iPhonie powiadomienia przychodzą tylko wtedy, gdy aplikacja jest na ekranie 
 Co jest zapisywane na serwerze?
 Tylko twój e-mail i, jeśli włączysz przypomnienia, zmiany z najbliższych 45 dni z godziną i nazwą zmiany, żeby wiedzieć, kiedy cię powiadomić. Notatki, etykiety, paski wypłaty i szacunkowa płaca zostają w telefonie. Konto i dane na serwerze możesz usunąć w {p}.
 Tylko na tym urządzeniu, w przeglądarce. Bez konta nic nie trafia na serwer; przy włączonych przypomnieniach na serwer trafiają tylko zmiany z najbliższych 45 dni.
+Zmiany zaktualizowane z innego urządzenia.
+Synchronizacja włączona, ostatnio o {h}
+Synchronizacja włączona
+Synchronizację trzeba włączyć ponownie
+Synchronizacja wyłączona
+Włącz
+Do synchronizacji potrzebne jest konto.
+Wybierz hasło, aby chronić swoje dane. Będzie potrzebne do włączenia synchronizacji na innych urządzeniach.
+Wpisz hasło synchronizacji, które wybrałeś na drugim urządzeniu.
+Wybierz nowe hasło. Kopia na serwerze zostanie usunięta i zastąpiona danymi z tego urządzenia; na innych urządzeniach trzeba będzie wpisać nowe hasło.
+Synchronizacja włączona. Ostatnia aktualizacja: {h}.
+Synchronizacja włączona.
+Zacznij od nowa
+Hasło synchronizacji zostało zmienione na innym urządzeniu. Wpisz je ponownie.
+Nie udało się połączyć. Sprawdź połączenie i spróbuj ponownie.
+Synchronizuję…
+Gotowe: wszystko jest aktualne.
+Nie udało się zsynchronizować. Sprawdź połączenie i spróbuj ponownie.
+Synchronizacja wyłączona na tym urządzeniu. Dane zostają tutaj.
+Hasło musi mieć co najmniej 8 znaków.
+Hasła nie są takie same.
+Sprawdzam hasło i pobieram dane…
+Szyfruję i wysyłam dane…
+Synchronizacja włączona na tym urządzeniu.
+Błędne hasło. Spróbuj ponownie.
+Kraj i święta, język, jasny lub ciemny motyw oraz konto do przypomnień i synchronizacji.
+Konto, przypomnienia i synchronizacja
+Jak używać MyTurn na kilku urządzeniach?
+Zaloguj się tym samym adresem e-mail na każdym urządzeniu. Na pierwszym otwórz {p}, dotknij {a} i wybierz hasło synchronizacji; na pozostałych wpisz to samo hasło. Od tej chwili zmiany, notatki i ustawienia aktualizują się same. Motyw i przypomnienia pozostają ustawieniami każdego urządzenia.
+Zapomniałem hasła synchronizacji: co robić?
+Nikt nie może go odzyskać, bo nie jest nigdzie zapisywane. Twoje dane zostają jednak na urządzeniach: na najbardziej aktualnym dotknij {a}, wybierz nowe hasło, a kopia na serwerze zostanie zastąpiona. Na pozostałych urządzeniach wpisz nowe hasło.
+Twój e-mail; przy przypomnieniach zmiany z najbliższych 45 dni z godziną i nazwą zmiany, żeby wiedzieć, kiedy cię powiadomić; przy synchronizacji wszystkie dane, ale zaszyfrowane twoim hasłem, więc nieczytelne. Konto i wszystkie dane na serwerze możesz usunąć w {p}.
+Na tym urządzeniu, w przeglądarce. Bez konta nic nie trafia na serwer. Przy synchronizacji na serwer trafia kopia zaszyfrowana twoim hasłem; przy przypomnieniach zmiany z najbliższych 45 dni.
+Z kontem dostajesz przypomnienia przed zmianami i masz te same zmiany na wszystkich swoich urządzeniach. Bez konta aplikacja działa jak zawsze.
+Cała reszta zostaje tylko na tym urządzeniu, chyba że włączysz synchronizację: wtedy jest przesyłana zaszyfrowana twoim hasłem i na serwerze jest nieczytelna. Konto i dane na serwerze możesz usunąć w każdej chwili, stąd.
+Synchronizacja
+Te same zmiany na wszystkich urządzeniach, na których logujesz się swoim e-mailem: telefonie, tablecie i komputerze.
+Hasło synchronizacji
+Powtórz hasło
+Zapomniałem hasła
+Synchronizuj teraz
+Wyłącz na tym urządzeniu
+Jak to działa
+Zanim dane opuszczą to urządzenie, są szyfrowane twoim hasłem: na serwer trafiają nieczytelne i nikt nie może ich odczytać.
+Hasło nie jest nigdzie zapisywane. Jeśli je zapomnisz, kopii na serwerze nie da się odzyskać, ale dane zostają na twoich urządzeniach i możesz zacząć od nowa z nowym hasłem.
+Jeśli zmienisz ten sam dzień na dwóch urządzeniach, obowiązuje najnowsza zmiana. Motyw i przypomnienia pozostają ustawieniami każdego urządzenia.

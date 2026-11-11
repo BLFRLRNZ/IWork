@@ -717,3 +717,49 @@ Na iPhonu chodí oznámení jen tehdy, když je aplikace na ploše a otevíráš
 Co se ukládá na server?
 Jen tvůj e-mail a, pokud zapneš připomenutí, směny na příštích 45 dní s časem a názvem směny, abychom věděli, kdy tě upozornit. Poznámky, štítky, výplatní pásky a odhad mzdy zůstávají v telefonu. Účet a data na serveru můžeš smazat v {p}.
 Jen v tomto zařízení, v prohlížeči. Bez účtu se nic neposílá na server; se zapnutými připomenutími jdou na server jen směny na příštích 45 dní.
+Směny aktualizované z jiného zařízení.
+Synchronizace zapnutá, naposledy v {h}
+Synchronizace zapnutá
+Synchronizaci je třeba znovu zapnout
+Synchronizace vypnutá
+Zapnout
+K synchronizaci potřebuješ účet.
+Zvol heslo, které ochrání tvoje data. Budeš ho potřebovat pro zapnutí synchronizace na dalších zařízeních.
+Zadej heslo k synchronizaci, které jsi zvolil na druhém zařízení.
+Zvol nové heslo. Kopie na serveru se smaže a nahradí daty z tohoto zařízení; na ostatních zařízeních budeš muset zadat nové heslo.
+Synchronizace zapnutá. Poslední aktualizace: {h}.
+Synchronizace zapnutá.
+Začít znovu
+Heslo k synchronizaci bylo změněno na jiném zařízení. Zadej ho znovu.
+Nepodařilo se připojit. Zkontroluj připojení a zkus to znovu.
+Synchronizuji…
+Hotovo: vše je aktuální.
+Synchronizace se nepodařila. Zkontroluj připojení a zkus to znovu.
+Synchronizace na tomto zařízení vypnutá. Data zůstávají tady.
+Heslo musí mít aspoň 8 znaků.
+Hesla se neshodují.
+Ověřuji heslo a stahuji data…
+Šifruji a odesílám data…
+Synchronizace na tomto zařízení zapnutá.
+Špatné heslo. Zkus to znovu.
+Země a svátky, jazyk, světlý nebo tmavý motiv a účet pro připomenutí a synchronizaci.
+Účet, připomenutí a synchronizace
+Jak používat MyTurn na více zařízeních?
+Přihlas se na každém zařízení stejným e-mailem. Na prvním otevři {p}, klepni na {a} a zvol heslo k synchronizaci; na ostatních zadej stejné heslo. Od té chvíle se směny, poznámky a nastavení aktualizují samy. Motiv a připomenutí zůstávají volbou každého zařízení.
+Zapomněl jsem heslo k synchronizaci: co mám dělat?
+Nikdo ho nemůže obnovit, protože se nikde neukládá. Tvoje data ale zůstávají v zařízeních: na tom nejaktuálnějším klepni na {a}, zvol nové heslo a kopie na serveru se nahradí. Na ostatních zařízeních zadej nové heslo.
+Tvůj e-mail; s připomenutími směny na příštích 45 dní s časem a názvem směny, abychom věděli, kdy tě upozornit; se synchronizací všechna data, ale zašifrovaná tvým heslem, tedy nečitelná. Účet a všechna data na serveru můžeš smazat v {p}.
+V tomto zařízení, v prohlížeči. Bez účtu se nic neposílá na server. Se synchronizací jde na server kopie zašifrovaná tvým heslem; s připomenutími směny na příštích 45 dní.
+S účtem dostáváš připomenutí před směnami a můžeš mít stejné směny na všech svých zařízeních. Bez účtu aplikace funguje jako vždy.
+Všechno ostatní zůstává jen v tomto zařízení, pokud nezapneš synchronizaci: pak putuje zašifrované tvým heslem a na serveru je nečitelné. Účet a data na serveru můžeš kdykoli smazat, tady.
+Synchronizace
+Stejné směny na všech zařízeních, kde se přihlásíš svým e-mailem: telefonu, tabletu i počítači.
+Heslo k synchronizaci
+Zopakuj heslo
+Zapomněl jsem heslo
+Synchronizovat teď
+Vypnout na tomto zařízení
+Jak to funguje
+Než data odejdou, zašifrují se v tomto zařízení tvým heslem: na server dorazí nečitelná a nikdo je nemůže přečíst.
+Heslo se nikde neukládá. Když ho zapomeneš, kopii na serveru nelze obnovit, ale data zůstávají na tvých zařízeních a můžeš začít znovu s novým heslem.
+Když změníš stejný den na dvou zařízeních, platí nejnovější změna. Motiv a připomenutí zůstávají volbou každého zařízení.

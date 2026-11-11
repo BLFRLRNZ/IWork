@@ -717,3 +717,49 @@ Auf dem iPhone kommen Mitteilungen nur an, wenn die App auf dem Home-Bildschirm 
 Was wird auf dem Server gespeichert?
 Nur deine E-Mail und, wenn du Erinnerungen einschaltest, die Schichten der nächsten 45 Tage mit Uhrzeit und Schichtname, damit wir wissen, wann wir dich erinnern. Notizen, Etiketten, Lohnabrechnungen und Lohnschätzung bleiben auf dem Handy. Konto und Daten auf dem Server kannst du unter {p} löschen.
 Nur auf diesem Gerät, im Browser. Ohne Konto wird nichts an einen Server geschickt; mit eingeschalteten Erinnerungen gehen nur die Schichten der nächsten 45 Tage an den Server.
+Schichten von einem anderen Gerät aktualisiert.
+Synchronisierung an, zuletzt um {h}
+Synchronisierung an
+Synchronisierung neu einschalten
+Synchronisierung aus
+Einschalten
+Für die Synchronisierung brauchst du ein Konto.
+Wähle ein Passwort, um deine Daten zu schützen. Du brauchst es, um die Synchronisierung auf deinen anderen Geräten einzuschalten.
+Gib das Synchronisierungspasswort ein, das du auf dem anderen Gerät gewählt hast.
+Wähle ein neues Passwort. Die Kopie auf dem Server wird gelöscht und durch die Daten dieses Geräts ersetzt; auf deinen anderen Geräten musst du das neue Passwort eingeben.
+Synchronisierung an. Letzte Aktualisierung: {h}.
+Synchronisierung an.
+Neu beginnen
+Das Synchronisierungspasswort wurde auf einem anderen Gerät geändert. Gib es erneut ein.
+Keine Verbindung möglich. Prüfe die Verbindung und versuch es nochmal.
+Synchronisiere…
+Fertig: alles ist aktuell.
+Die Synchronisierung hat nicht geklappt. Prüfe die Verbindung und versuch es nochmal.
+Synchronisierung auf diesem Gerät ausgeschaltet. Deine Daten bleiben hier.
+Das Passwort muss mindestens 8 Zeichen lang sein.
+Die beiden Passwörter stimmen nicht überein.
+Passwort wird geprüft und Daten werden geladen…
+Daten werden verschlüsselt und gesendet…
+Synchronisierung auf diesem Gerät eingeschaltet.
+Falsches Passwort. Versuch es nochmal.
+Land und Feiertage, Sprache, helles oder dunkles Design und das Konto für Erinnerungen und Synchronisierung.
+Konto, Erinnerungen und Synchronisierung
+Wie nutze ich MyTurn auf mehreren Geräten?
+Melde dich auf jedem Gerät mit derselben E-Mail an. Öffne auf dem ersten {p}, tippe auf {a} und wähle ein Synchronisierungspasswort; auf den anderen gibst du dasselbe Passwort ein. Ab dann aktualisieren sich Schichten, Notizen und Einstellungen von selbst. Design und Erinnerungen bleiben Einstellungen des jeweiligen Geräts.
+Ich habe das Synchronisierungspasswort vergessen: Was tun?
+Niemand kann es wiederherstellen, weil es nirgends gespeichert wird. Deine Daten bleiben aber auf deinen Geräten: Tippe auf dem aktuellsten auf {a}, wähle ein neues Passwort, und die Kopie auf dem Server wird ersetzt. Auf den anderen Geräten gibst du das neue Passwort ein.
+Deine E-Mail; mit Erinnerungen die Schichten der nächsten 45 Tage mit Uhrzeit und Schichtname, damit wir wissen, wann wir dich erinnern; mit Synchronisierung alle Daten, aber mit deinem Passwort verschlüsselt und daher unlesbar. Konto und alle Daten auf dem Server kannst du unter {p} löschen.
+Auf diesem Gerät, im Browser. Ohne Konto wird nichts an einen Server geschickt. Mit Synchronisierung geht eine mit deinem Passwort verschlüsselte Kopie an den Server; mit Erinnerungen die Schichten der nächsten 45 Tage.
+Mit einem Konto bekommst du Erinnerungen vor deinen Schichten und hast dieselben Schichten auf all deinen Geräten. Ohne Konto funktioniert die App wie immer.
+Alles andere bleibt nur auf diesem Gerät, außer du schaltest die Synchronisierung ein: Dann wird es mit deinem Passwort verschlüsselt übertragen und ist auf dem Server unlesbar. Du kannst das Konto und die Daten auf dem Server jederzeit hier löschen.
+Synchronisierung
+Dieselben Schichten auf allen Geräten, auf denen du dich mit deiner E-Mail anmeldest: Handy, Tablet und Computer.
+Synchronisierungspasswort
+Passwort wiederholen
+Ich habe das Passwort vergessen
+Jetzt synchronisieren
+Auf diesem Gerät ausschalten
+So funktioniert es
+Bevor sie das Gerät verlassen, werden deine Daten hier mit deinem Passwort verschlüsselt: Auf dem Server kommen sie unlesbar an, und niemand kann sie lesen.
+Das Passwort wird nirgends gespeichert. Wenn du es vergisst, lässt sich die Kopie auf dem Server nicht wiederherstellen, aber deine Daten bleiben auf deinen Geräten und du kannst mit einem neuen Passwort neu beginnen.
+Wenn du denselben Tag auf zwei Geräten änderst, gilt die neueste Änderung. Design und Erinnerungen bleiben Einstellungen des jeweiligen Geräts.

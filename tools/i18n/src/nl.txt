@@ -717,3 +717,49 @@ Op de iPhone komen meldingen alleen binnen als de app op het beginscherm staat e
 Wat wordt er op de server opgeslagen?
 Alleen je e-mailadres en, als je herinneringen aanzet, de diensten van de komende 45 dagen met tijd en naam van de dienst, zodat we weten wanneer we je moeten waarschuwen. Notities, labels, loonstroken en loonschatting blijven op je telefoon. Je kunt het account en de gegevens op de server verwijderen via {p}.
 Alleen op dit apparaat, in de browser. Zonder account wordt er niets naar een server gestuurd; met herinneringen aan gaan alleen de diensten van de komende 45 dagen naar de server.
+Diensten bijgewerkt vanaf een ander apparaat.
+Synchronisatie aan, laatst om {h}
+Synchronisatie aan
+Synchronisatie opnieuw aanzetten
+Synchronisatie uit
+Aanzetten
+Voor synchronisatie heb je een account nodig.
+Kies een wachtwoord om je gegevens te beschermen. Je hebt het nodig om de synchronisatie op je andere apparaten aan te zetten.
+Vul het synchronisatiewachtwoord in dat je op je andere apparaat hebt gekozen.
+Kies een nieuw wachtwoord. De kopie op de server wordt verwijderd en vervangen door de gegevens van dit apparaat; op je andere apparaten moet je het nieuwe wachtwoord invullen.
+Synchronisatie aan. Laatst bijgewerkt: {h}.
+Synchronisatie aan.
+Opnieuw beginnen
+Het synchronisatiewachtwoord is op een ander apparaat gewijzigd. Vul het opnieuw in.
+Kon geen verbinding maken. Controleer de verbinding en probeer het opnieuw.
+Synchroniseren…
+Klaar: alles is bijgewerkt.
+Synchroniseren is niet gelukt. Controleer de verbinding en probeer het opnieuw.
+Synchronisatie uitgezet op dit apparaat. Je gegevens blijven hier.
+Het wachtwoord moet minstens 8 tekens lang zijn.
+De twee wachtwoorden komen niet overeen.
+Wachtwoord controleren en gegevens downloaden…
+Gegevens versleutelen en versturen…
+Synchronisatie staat aan op dit apparaat.
+Verkeerd wachtwoord. Probeer het opnieuw.
+Land en feestdagen, taal, licht of donker thema en het account voor herinneringen en synchronisatie.
+Account, herinneringen en synchronisatie
+Hoe gebruik ik MyTurn op meerdere apparaten?
+Log op elk apparaat in met hetzelfde e-mailadres. Open op het eerste {p}, tik op {a} en kies een synchronisatiewachtwoord; vul op de andere hetzelfde wachtwoord in. Vanaf dan worden diensten, notities en instellingen vanzelf bijgewerkt. Thema en herinneringen blijven keuzes per apparaat.
+Ik ben het synchronisatiewachtwoord vergeten: wat nu?
+Niemand kan het terughalen, want het wordt nergens bewaard. Je gegevens blijven wel op je apparaten: tik op het meest actuele op {a}, kies een nieuw wachtwoord en de kopie op de server wordt vervangen. Vul op je andere apparaten het nieuwe wachtwoord in.
+Je e-mailadres; met herinneringen de diensten van de komende 45 dagen met tijd en naam van de dienst, zodat we weten wanneer we je moeten waarschuwen; met synchronisatie al je gegevens, maar versleuteld met je wachtwoord en dus onleesbaar. Je kunt het account en alle gegevens op de server verwijderen via {p}.
+Op dit apparaat, in de browser. Zonder account wordt er niets naar een server gestuurd. Met synchronisatie gaat er een met je wachtwoord versleutelde kopie naar de server; met herinneringen de diensten van de komende 45 dagen.
+Met een account krijg je herinneringen voor je diensten en heb je dezelfde diensten op al je apparaten. Zonder account werkt de app zoals altijd.
+Al het andere blijft alleen op dit apparaat, tenzij je synchronisatie aanzet: dan reist het versleuteld met je wachtwoord en is het op de server onleesbaar. Je kunt het account en de gegevens op de server altijd verwijderen, hier.
+Synchronisatie
+Dezelfde diensten op alle apparaten waar je inlogt met je e-mailadres: telefoon, tablet en computer.
+Synchronisatiewachtwoord
+Herhaal het wachtwoord
+Ik ben het wachtwoord vergeten
+Nu synchroniseren
+Uitzetten op dit apparaat
+Hoe het werkt
+Voordat ze vertrekken, worden je gegevens op dit apparaat versleuteld met je wachtwoord: ze komen onleesbaar op de server aan en niemand kan ze lezen.
+Het wachtwoord wordt nergens bewaard. Als je het vergeet, is de kopie op de server niet terug te halen, maar je gegevens blijven op je apparaten en je kunt opnieuw beginnen met een nieuw wachtwoord.
+Als je dezelfde dag op twee apparaten wijzigt, geldt de meest recente wijziging. Thema en herinneringen blijven keuzes per apparaat.

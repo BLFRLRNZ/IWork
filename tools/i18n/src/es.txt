@@ -717,3 +717,49 @@ En iPhone las notificaciones solo llegan si la app está en la pantalla de inici
 ¿Qué se guarda en el servidor?
 Solo tu correo y, si activas los recordatorios, los turnos de los próximos 45 días con horario y nombre del turno, para saber cuándo avisarte. Notas, etiquetas, nóminas y estimación de nómina se quedan en el teléfono. Puedes eliminar la cuenta y los datos del servidor desde {p}.
 Solo en este dispositivo, en el navegador. Sin cuenta no se envía nada a ningún servidor; con los recordatorios activados, al servidor solo van los turnos de los próximos 45 días.
+Turnos actualizados desde otro dispositivo.
+Sincronización activada, última a las {h}
+Sincronización activada
+Hay que volver a activar la sincronización
+Sincronización desactivada
+Activar
+Para sincronizar necesitas una cuenta.
+Elige una contraseña para proteger tus datos. La necesitarás para activar la sincronización en tus otros dispositivos.
+Escribe la contraseña de sincronización que elegiste en el otro dispositivo.
+Elige una contraseña nueva. La copia del servidor se borrará y se sustituirá por los datos de este dispositivo; en los otros dispositivos tendrás que escribir la nueva contraseña.
+Sincronización activada. Última actualización: {h}.
+Sincronización activada.
+Empezar de nuevo
+La contraseña de sincronización se ha cambiado en otro dispositivo. Vuelve a escribirla.
+No he podido conectarme. Revisa la conexión y vuelve a intentarlo.
+Sincronizando…
+Listo: todo está al día.
+No he podido sincronizar. Revisa la conexión y vuelve a intentarlo.
+Sincronización desactivada en este dispositivo. Tus datos se quedan aquí.
+La contraseña debe tener al menos 8 caracteres.
+Las dos contraseñas no coinciden.
+Comprobando la contraseña y descargando los datos…
+Cifrando y enviando los datos…
+Sincronización activada en este dispositivo.
+Contraseña incorrecta. Inténtalo de nuevo.
+País y festivos, idioma, tema claro u oscuro y la cuenta para los recordatorios y la sincronización.
+Cuenta, recordatorios y sincronización
+¿Cómo uso MyTurn en varios dispositivos?
+Inicia sesión con el mismo correo en cada dispositivo. En el primero abre {p}, toca {a} y elige una contraseña de sincronización; en los demás escribe la misma contraseña. A partir de ahí turnos, notas y ajustes se actualizan solos. El tema y los recordatorios son elección de cada dispositivo.
+He olvidado la contraseña de sincronización: ¿qué hago?
+Nadie puede recuperarla, porque no se guarda en ningún sitio. Pero tus datos siguen en tus dispositivos: en el más actualizado toca {a}, elige una contraseña nueva y la copia del servidor se sustituye. En los demás dispositivos escribe la contraseña nueva.
+Tu correo; con los recordatorios, los turnos de los próximos 45 días con horario y nombre del turno, para saber cuándo avisarte; con la sincronización, todos tus datos, pero cifrados con tu contraseña y, por tanto, ilegibles. Puedes eliminar la cuenta y todos los datos del servidor desde {p}.
+En este dispositivo, en el navegador. Sin cuenta no se envía nada a ningún servidor. Con la sincronización, una copia cifrada con tu contraseña va al servidor; con los recordatorios, van los turnos de los próximos 45 días.
+Con una cuenta recibes recordatorios antes de tus turnos y puedes tener los mismos turnos en todos tus dispositivos. Sin cuenta la app funciona como siempre.
+Todo lo demás se queda solo en este dispositivo, salvo que actives la sincronización: entonces viaja cifrado con tu contraseña y en el servidor es ilegible. Puedes eliminar la cuenta y los datos del servidor cuando quieras, desde aquí.
+Sincronización
+Los mismos turnos en todos los dispositivos donde inicias sesión con tu correo: teléfono, tableta y ordenador.
+Contraseña de sincronización
+Repite la contraseña
+He olvidado la contraseña
+Sincronizar ahora
+Desactivar en este dispositivo
+Cómo funciona
+Antes de salir, tus datos se cifran en este dispositivo con tu contraseña: llegan al servidor ilegibles y nadie puede leerlos.
+La contraseña no se guarda en ningún sitio. Si la olvidas, la copia del servidor no se puede recuperar, pero tus datos siguen en tus dispositivos y puedes empezar de nuevo con otra contraseña.
+Si cambias el mismo día en dos dispositivos, vale el cambio más reciente. El tema y los recordatorios son elección de cada dispositivo.

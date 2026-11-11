@@ -717,3 +717,49 @@ Na iPhonu obvestila prihajajo samo, če je aplikacija na začetnem zaslonu in jo
 Kaj se shrani na strežnik?
 Samo tvoj e-naslov in, če vklopiš opomnike, izmene za naslednjih 45 dni s časom in imenom izmene, da vemo, kdaj te opomniti. Zapiski, oznake, plačilne liste in ocena plače ostanejo na telefonu. Račun in podatke na strežniku lahko izbrišeš v {p}.
 Samo v tej napravi, v brskalniku. Brez računa se nič ne pošlje na strežnik; z vklopljenimi opomniki gredo na strežnik samo izmene za naslednjih 45 dni.
+Izmene posodobljene z druge naprave.
+Sinhronizacija vklopljena, zadnja ob {h}
+Sinhronizacija vklopljena
+Sinhronizacijo je treba znova vklopiti
+Sinhronizacija izklopljena
+Vklopi
+Za sinhronizacijo potrebuješ račun.
+Izberi geslo za zaščito svojih podatkov. Potreboval ga boš za vklop sinhronizacije na drugih napravah.
+Vpiši geslo za sinhronizacijo, ki si ga izbral na drugi napravi.
+Izberi novo geslo. Kopija na strežniku bo izbrisana in nadomeščena s podatki s te naprave; na drugih napravah boš moral vpisati novo geslo.
+Sinhronizacija vklopljena. Zadnja posodobitev: {h}.
+Sinhronizacija vklopljena.
+Začni znova
+Geslo za sinhronizacijo je bilo spremenjeno na drugi napravi. Vpiši ga znova.
+Povezava ni uspela. Preveri povezavo in poskusi znova.
+Sinhroniziram…
+Končano: vse je posodobljeno.
+Sinhronizacija ni uspela. Preveri povezavo in poskusi znova.
+Sinhronizacija na tej napravi izklopljena. Podatki ostanejo tukaj.
+Geslo mora imeti vsaj 8 znakov.
+Gesli se ne ujemata.
+Preverjam geslo in prenašam podatke…
+Šifriram in pošiljam podatke…
+Sinhronizacija na tej napravi vklopljena.
+Napačno geslo. Poskusi znova.
+Država in prazniki, jezik, svetla ali temna tema ter račun za opomnike in sinhronizacijo.
+Račun, opomniki in sinhronizacija
+Kako uporabljam MyTurn na več napravah?
+Na vsaki napravi se prijavi z istim e-naslovom. Na prvi odpri {p}, tapni {a} in izberi geslo za sinhronizacijo; na drugih vpiši isto geslo. Od takrat se izmene, zapiski in nastavitve posodabljajo sami. Tema in opomniki ostanejo izbira vsake naprave.
+Pozabil sem geslo za sinhronizacijo: kaj naj naredim?
+Nihče ga ne more obnoviti, ker ni nikjer shranjeno. Tvoji podatki pa ostanejo na napravah: na najbolj posodobljeni tapni {a}, izberi novo geslo in kopija na strežniku bo nadomeščena. Na drugih napravah vpiši novo geslo.
+Tvoj e-naslov; z opomniki izmene za naslednjih 45 dni s časom in imenom izmene, da vemo, kdaj te opomniti; s sinhronizacijo vsi podatki, a šifrirani s tvojim geslom, torej neberljivi. Račun in vse podatke na strežniku lahko izbrišeš v {p}.
+Na tej napravi, v brskalniku. Brez računa se nič ne pošlje na strežnik. S sinhronizacijo gre na strežnik kopija, šifrirana s tvojim geslom; z opomniki izmene za naslednjih 45 dni.
+Z računom prejemaš opomnike pred izmenami in imaš lahko iste izmene na vseh svojih napravah. Brez računa aplikacija deluje kot vedno.
+Vse ostalo ostane samo na tej napravi, razen če vklopiš sinhronizacijo: takrat potuje šifrirano s tvojim geslom in je na strežniku neberljivo. Račun in podatke na strežniku lahko kadar koli izbrišeš, tukaj.
+Sinhronizacija
+Iste izmene na vseh napravah, kjer se prijaviš s svojim e-naslovom: telefonu, tablici in računalniku.
+Geslo za sinhronizacijo
+Ponovi geslo
+Pozabil sem geslo
+Sinhroniziraj zdaj
+Izklopi na tej napravi
+Kako deluje
+Preden odidejo, se podatki na tej napravi šifrirajo s tvojim geslom: na strežnik prispejo neberljivi in nihče jih ne more prebrati.
+Geslo ni nikjer shranjeno. Če ga pozabiš, kopije na strežniku ni mogoče obnoviti, a podatki ostanejo na tvojih napravah in lahko začneš znova z novim geslom.
+Če isti dan spremeniš na dveh napravah, velja najnovejša sprememba. Tema in opomniki ostanejo izbira vsake naprave.

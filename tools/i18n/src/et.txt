@@ -717,3 +717,49 @@ iPhone'is tulevad teavitused ainult siis, kui rakendus on avakuval ja avad selle
 Mida serveris hoitakse?
 Ainult sinu e-posti ja, kui lülitad meeldetuletused sisse, järgmise 45 päeva vahetusi koos kellaaja ja vahetuse nimega, et teada, millal sulle teada anda. Märkmed, sildid, palgalehed ja palgahinnang jäävad telefoni. Konto ja serveris olevad andmed saad kustutada jaotises {p}.
 Ainult selles seadmes, brauseris. Ilma kontota ei saadeta midagi serverisse; sisselülitatud meeldetuletustega lähevad serverisse ainult järgmise 45 päeva vahetused.
+Vahetused uuendati teisest seadmest.
+Sünkroonimine sees, viimati kell {h}
+Sünkroonimine sees
+Sünkroonimine tuleb uuesti sisse lülitada
+Sünkroonimine väljas
+Lülita sisse
+Sünkroonimiseks on vaja kontot.
+Vali parool, et oma andmeid kaitsta. Seda on vaja sünkroonimise sisselülitamiseks teistes seadmetes.
+Sisesta sünkroonimisparool, mille valisid teises seadmes.
+Vali uus parool. Serveris olev koopia kustutatakse ja asendatakse selle seadme andmetega; teistes seadmetes tuleb sisestada uus parool.
+Sünkroonimine sees. Viimati uuendatud: {h}.
+Sünkroonimine sees.
+Alusta uuesti
+Sünkroonimisparool muudeti teises seadmes. Sisesta see uuesti.
+Ühendust ei õnnestunud luua. Kontrolli ühendust ja proovi uuesti.
+Sünkroonin…
+Valmis: kõik on ajakohane.
+Sünkroonimine ei õnnestunud. Kontrolli ühendust ja proovi uuesti.
+Sünkroonimine selles seadmes välja lülitatud. Andmed jäävad siia.
+Parool peab olema vähemalt 8 märki pikk.
+Paroolid ei kattu.
+Kontrollin parooli ja laadin andmed alla…
+Krüpteerin ja saadan andmed…
+Sünkroonimine selles seadmes sisse lülitatud.
+Vale parool. Proovi uuesti.
+Riik ja pühad, keel, hele või tume teema ning konto meeldetuletuste ja sünkroonimise jaoks.
+Konto, meeldetuletused ja sünkroonimine
+Kuidas kasutada MyTurni mitmes seadmes?
+Logi igas seadmes sisse sama e-postiga. Esimeses ava {p}, puuduta nuppu {a} ja vali sünkroonimisparool; teistes sisesta sama parool. Edaspidi uuenevad vahetused, märkmed ja seaded ise. Teema ja meeldetuletused jäävad iga seadme enda valikuks.
+Unustasin sünkroonimisparooli: mida teha?
+Keegi ei saa seda taastada, sest seda ei hoita kusagil. Sinu andmed jäävad aga seadmetesse: kõige värskemas puuduta nuppu {a}, vali uus parool ja serveris olev koopia asendatakse. Teistes seadmetes sisesta uus parool.
+Sinu e-post; meeldetuletustega järgmise 45 päeva vahetused koos kellaaja ja vahetuse nimega, et teada, millal sulle teada anda; sünkroonimisega kõik andmed, kuid sinu parooliga krüpteeritult ehk loetamatult. Konto ja kõik serveris olevad andmed saad kustutada jaotises {p}.
+Selles seadmes, brauseris. Ilma kontota ei saadeta midagi serverisse. Sünkroonimisega läheb serverisse sinu parooliga krüpteeritud koopia; meeldetuletustega järgmise 45 päeva vahetused.
+Kontoga saad meeldetuletused enne vahetusi ja samad vahetused kõigis oma seadmetes. Ilma kontota töötab rakendus nagu alati.
+Kõik muu jääb ainult sellesse seadmesse, kui sa ei lülita sünkroonimist sisse: siis liigub see sinu parooliga krüpteeritult ja serveris on see loetamatu. Konto ja serveris olevad andmed saad igal ajal siit kustutada.
+Sünkroonimine
+Samad vahetused kõigis seadmetes, kuhu logid oma e-postiga sisse: telefonis, tahvelarvutis ja arvutis.
+Sünkroonimisparool
+Korda parooli
+Unustasin parooli
+Sünkrooni kohe
+Lülita selles seadmes välja
+Kuidas see töötab
+Enne teele minekut krüpteeritakse andmed selles seadmes sinu parooliga: serverisse jõuavad need loetamatult ja keegi ei saa neid lugeda.
+Parooli ei hoita kusagil. Kui see ununeb, ei saa serveris olevat koopiat taastada, kuid andmed jäävad sinu seadmetesse ja saad uue parooliga uuesti alustada.
+Kui muudad sama päeva kahes seadmes, kehtib kõige uuem muudatus. Teema ja meeldetuletused jäävad iga seadme enda valikuks.
