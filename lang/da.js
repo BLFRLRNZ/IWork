@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Sådan gør du, trin for trin",
 "Guida": "Vejledning",
 "Nessuna risposta trovata. Prova con altre parole.": "Intet svar fundet. Prøv med andre ord.",
-"Cerca nella guida": "Søg i vejledningen"
+"Cerca nella guida": "Søg i vejledningen",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Jeg viser dig på et minut, hvordan det virker. Du kan springe over når som helst og se rundturen igen fra Vejledningen.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Vælg en vagt og tryk på dagene i kalenderen for at tildele den. Tryk på knappen igen for at stoppe. {a}, {b} og {c} virker på samme måde.",
+"Il calendario": "Kalenderen",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Tryk på en dag for at åbne dens kort: tider, overarbejde, fri, sygdom og noter. Alt gemmes automatisk, og du kan altid fortryde i beskeden nederst.",
+"Il prossimo turno": "Næste vagt",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Her øverst ser du altid din næste vagt eller den igangværende.",
+"Il riepilogo del mese": "Månedens oversigt",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Arbejdstimer, overarbejde, nætter og helligdage i måneden, med advarsler når en vagt bryder hvilereglerne.",
+"Calendario e Anno": "Kalender og År",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Skift til År for at se hele årets totaler, måned for måned.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Her finder du resten: vagtplan, ferie og fri, timebank, lønskøn, lønseddel, månedens PDF, eksport til kalender, kopi af data og Vejledningen.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Land og helligdage, sprog og lyst eller mørkt tema.",
+"Comincia segnando i turni di questa settimana.": "Start med at registrere denne uges vagter.",
+"{n} di {m}": "{n} af {m}",
+"Salta": "Spring over",
+"Iniziamo": "Kom så",
+"Rivedi il tour guidato": "Se rundturen igen"
 };

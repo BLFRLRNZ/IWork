@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Miten asiat tehdään, vaihe vaiheelta",
 "Guida": "Ohje",
 "Nessuna risposta trovata. Prova con altre parole.": "Vastausta ei löytynyt. Kokeile muita sanoja.",
-"Cerca nella guida": "Hae ohjeesta"
+"Cerca nella guida": "Hae ohjeesta",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Näytän minuutissa, miten tämä toimii. Voit ohittaa milloin tahansa ja katsoa esittelyn uudelleen Ohjeesta.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Valitse vuoro ja napauta kalenterin päiviä merkitäksesi sen. Lopeta napauttamalla painiketta uudelleen. {a}, {b} ja {c} toimivat samalla tavalla.",
+"Il calendario": "Kalenteri",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Napauta päivää avataksesi sen kortin: aika, ylityöt, vapaat, sairaus ja muistiinpanot. Kaikki tallentuu itsestään ja voit aina perua alareunan viestistä.",
+"Il prossimo turno": "Seuraava vuoro",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Täällä ylhäällä näet aina seuraavan vuorosi tai meneillään olevan.",
+"Il riepilogo del mese": "Kuukauden yhteenveto",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Kuukauden työtunnit, ylityöt, yöt ja pyhät, sekä varoitukset, kun vuoro rikkoo lepoaikasääntöjä.",
+"Calendario e Anno": "Kalenteri ja Vuosi",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Siirry Vuosi-välilehdelle nähdäksesi koko vuoden summat kuukausittain.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Täältä löytyy kaikki muu: vuorokierto, lomat ja vapaat, tuntipankki, palkka-arvio, palkkalaskelma, kuukauden PDF, vienti kalenteriin, tietojen kopio ja Ohje.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Maa ja pyhät, kieli sekä vaalea tai tumma teema.",
+"Comincia segnando i turni di questa settimana.": "Aloita merkitsemällä tämän viikon vuorot.",
+"{n} di {m}": "{n}/{m}",
+"Salta": "Ohita",
+"Iniziamo": "Aloitetaan",
+"Rivedi il tour guidato": "Katso esittely uudelleen"
 };

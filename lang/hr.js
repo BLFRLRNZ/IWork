@@ -690,5 +690,22 @@
 "Come fare le cose, passo per passo": "Kako se što radi, korak po korak",
 "Guida": "Vodič",
 "Nessuna risposta trovata. Prova con altre parole.": "Nema odgovora. Pokušaj s drugim riječima.",
-"Cerca nella guida": "Pretraži vodič"
+"Cerca nella guida": "Pretraži vodič",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Za minutu ću ti pokazati kako radi. Možeš preskočiti kad god želiš i ponovno pogledati obilazak iz Vodiča.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Odaberi smjenu i dodiruj dane u kalendaru da je dodijeliš. Ponovno dodirni gumb za kraj. {a}, {b} i {c} rade na isti način.",
+"Il calendario": "Kalendar",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Dodirni dan da otvoriš njegovu karticu: vrijeme, prekovremeni, slobodno, bolovanje i bilješke. Sve se sprema samo i uvijek možeš poništiti u poruci dolje.",
+"Il prossimo turno": "Sljedeća smjena",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Ovdje gore uvijek vidiš sljedeću smjenu ili onu koja traje.",
+"Il riepilogo del mese": "Pregled mjeseca",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Odrađeni sati, prekovremeni, noći i blagdani u mjesecu, s upozorenjima kad smjena ne poštuje pravila o odmoru.",
+"Calendario e Anno": "Kalendar i Godina",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Prijeđi na Godinu za zbrojeve cijele godine, mjesec po mjesec.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Ovdje je sve ostalo: raspored, godišnji i slobodno, banka sati, procjena plaće, platna lista, PDF mjeseca, izvoz u kalendar, kopija podataka i Vodič.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Zemlja i blagdani, jezik te svijetla ili tamna tema.",
+"Comincia segnando i turni di questa settimana.": "Počni upisivanjem smjena za ovaj tjedan.",
+"{n} di {m}": "{n} od {m}",
+"Salta": "Preskoči",
+"Iniziamo": "Krenimo",
+"Rivedi il tour guidato": "Ponovno pogledaj obilazak"
 };

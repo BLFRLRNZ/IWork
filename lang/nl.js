@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Hoe je dingen doet, stap voor stap",
 "Guida": "Handleiding",
 "Nessuna risposta trovata. Prova con altre parole.": "Geen antwoord gevonden. Probeer andere woorden.",
-"Cerca nella guida": "Zoeken in de handleiding"
+"Cerca nella guida": "Zoeken in de handleiding",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Ik laat je in een minuut zien hoe het werkt. Je kunt altijd overslaan en de rondleiding opnieuw bekijken via de Handleiding.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Kies een dienst en tik op de dagen in de kalender om hem toe te wijzen. Tik nog eens op de knop om te stoppen. {a}, {b} en {c} werken op dezelfde manier.",
+"Il calendario": "De kalender",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Tik op een dag om de kaart te openen: tijden, overuren, verlof, ziekte en notities. Alles wordt vanzelf bewaard en je kunt altijd ongedaan maken via het bericht onderaan.",
+"Il prossimo turno": "De volgende dienst",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Hier bovenaan zie je altijd je volgende dienst, of de dienst die nu bezig is.",
+"Il riepilogo del mese": "Het maandoverzicht",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Gewerkte uren, overuren, nachten en feestdagen van de maand, met meldingen als een dienst de rustregels niet volgt.",
+"Calendario e Anno": "Kalender en Jaar",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Ga naar Jaar voor de totalen van het hele jaar, maand voor maand.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Hier vind je de rest: rooster, vakantie en verlof, urenbank, loonschatting, loonstrook, maand-pdf, export naar je agenda, kopie van je gegevens en de Handleiding.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Land en feestdagen, taal en licht of donker thema.",
+"Comincia segnando i turni di questa settimana.": "Begin met de diensten van deze week.",
+"{n} di {m}": "{n} van {m}",
+"Salta": "Overslaan",
+"Iniziamo": "Aan de slag",
+"Rivedi il tour guidato": "Rondleiding opnieuw bekijken"
 };

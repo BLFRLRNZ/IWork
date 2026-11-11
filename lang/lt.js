@@ -719,5 +719,22 @@
 "Come fare le cose, passo per passo": "Kaip ką padaryti, žingsnis po žingsnio",
 "Guida": "Vadovas",
 "Nessuna risposta trovata. Prova con altre parole.": "Nieko nerasta. Pabandyk kitus žodžius.",
-"Cerca nella guida": "Ieškoti vadove"
+"Cerca nella guida": "Ieškoti vadove",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Per minutę parodysiu, kaip tai veikia. Gali bet kada praleisti ir vėl peržiūrėti turą iš Vadovo.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Pasirink pamainą ir liesk kalendoriaus dienas, kad ją priskirtum. Norėdamas baigti, dar kartą paliesk mygtuką. {a}, {b} ir {c} veikia taip pat.",
+"Il calendario": "Kalendorius",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Paliesk dieną, kad atidarytum jos kortelę: laikas, viršvalandžiai, laisvas laikas, liga ir pastabos. Viskas išsaugoma savaime, o apačioje esančiame pranešime visada gali atšaukti.",
+"Il prossimo turno": "Kita pamaina",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Čia viršuje visada matai kitą pamainą arba vykstančią.",
+"Il riepilogo del mese": "Mėnesio suvestinė",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Mėnesio dirbtos valandos, viršvalandžiai, naktys ir šventės, su įspėjimais, kai pamaina pažeidžia poilsio taisykles.",
+"Calendario e Anno": "Kalendorius ir Metai",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Pereik į Metai, kad matytum visų metų sumas mėnuo po mėnesio.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Čia rasi visa kita: grafiką, atostogas ir laisvą laiką, valandų banką, atlyginimo įvertį, atlyginimo lapelį, mėnesio PDF, eksportą į kalendorių, duomenų kopiją ir Vadovą.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Šalis ir šventės, kalba ir šviesi ar tamsi tema.",
+"Comincia segnando i turni di questa settimana.": "Pradėk pažymėdamas šios savaitės pamainas.",
+"{n} di {m}": "{n} iš {m}",
+"Salta": "Praleisti",
+"Iniziamo": "Pradedam",
+"Rivedi il tour guidato": "Peržiūrėti turą dar kartą"
 };

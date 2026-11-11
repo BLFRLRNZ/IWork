@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Så gör du, steg för steg",
 "Guida": "Guide",
 "Nessuna risposta trovata. Prova con altre parole.": "Inga svar hittades. Prova andra ord.",
-"Cerca nella guida": "Sök i guiden"
+"Cerca nella guida": "Sök i guiden",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Jag visar på en minut hur det fungerar. Du kan hoppa över när du vill och se rundturen igen från guiden.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Välj ett pass och tryck på dagarna i kalendern för att lägga in det. Tryck på knappen igen för att sluta. {a}, {b} och {c} fungerar på samma sätt.",
+"Il calendario": "Kalendern",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Tryck på en dag för att öppna dess kort: tider, övertid, ledighet, sjukdom och anteckningar. Allt sparas automatiskt och du kan alltid ångra i meddelandet längst ned.",
+"Il prossimo turno": "Nästa pass",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Här uppe ser du alltid ditt nästa pass, eller det som pågår.",
+"Il riepilogo del mese": "Månadens översikt",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Arbetade timmar, övertid, nätter och helgdagar under månaden, med varningar när ett pass bryter mot vilereglerna.",
+"Calendario e Anno": "Kalender och År",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Byt till År för att se hela årets summor, månad för månad.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Här finns allt annat: schema, semester och ledighet, timbank, löneuppskattning, lönebesked, månadens PDF, export till kalender, kopia av data och guiden.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Land och helgdagar, språk och ljust eller mörkt tema.",
+"Comincia segnando i turni di questa settimana.": "Börja med att lägga in veckans pass.",
+"{n} di {m}": "{n} av {m}",
+"Salta": "Hoppa över",
+"Iniziamo": "Nu kör vi",
+"Rivedi il tour guidato": "Se rundturen igen"
 };

@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Πώς γίνονται τα πράγματα, βήμα βήμα",
 "Guida": "Οδηγός",
 "Nessuna risposta trovata. Prova con altre parole.": "Δεν βρέθηκε απάντηση. Δοκίμασε άλλες λέξεις.",
-"Cerca nella guida": "Αναζήτηση στον οδηγό"
+"Cerca nella guida": "Αναζήτηση στον οδηγό",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Σου δείχνω σε ένα λεπτό πώς λειτουργεί. Μπορείς να παραλείψεις όποτε θέλεις και να ξαναδείς την περιήγηση από τον Οδηγό.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Διάλεξε μια βάρδια και πάτα τις μέρες στο ημερολόγιο για να την ορίσεις. Πάτα ξανά το κουμπί για να τελειώσεις. Τα {a}, {b} και {c} λειτουργούν με τον ίδιο τρόπο.",
+"Il calendario": "Το ημερολόγιο",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Πάτα μια μέρα για να ανοίξεις την καρτέλα της: ωράριο, υπερωρίες, ολιγόωρες άδειες, ασθένεια και σημειώσεις. Όλα αποθηκεύονται μόνα τους και μπορείς πάντα να κάνεις αναίρεση από το μήνυμα κάτω.",
+"Il prossimo turno": "Η επόμενη βάρδια",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Εδώ πάνω βλέπεις πάντα την επόμενη βάρδια ή αυτή που είναι σε εξέλιξη.",
+"Il riepilogo del mese": "Η σύνοψη του μήνα",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Ώρες εργασίας, υπερωρίες, νύχτες και αργίες του μήνα, με ειδοποιήσεις όταν μια βάρδια δεν τηρεί τους κανόνες ανάπαυσης.",
+"Calendario e Anno": "Ημερολόγιο και Έτος",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Πέρνα στο Έτος για να δεις τα σύνολα όλου του χρόνου, μήνα προς μήνα.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Εδώ βρίσκεις όλα τα υπόλοιπα: πρόγραμμα, άδειες, τράπεζα ωρών, εκτίμηση μισθού, εκκαθαριστικό, PDF του μήνα, εξαγωγή σε ημερολόγιο, αντίγραφο δεδομένων και τον Οδηγό.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Χώρα και αργίες, γλώσσα και ανοιχτό ή σκούρο θέμα.",
+"Comincia segnando i turni di questa settimana.": "Ξεκίνα σημειώνοντας τις βάρδιες αυτής της εβδομάδας.",
+"{n} di {m}": "{n} από {m}",
+"Salta": "Παράλειψη",
+"Iniziamo": "Πάμε",
+"Rivedi il tour guidato": "Ξαναδές την περιήγηση"
 };

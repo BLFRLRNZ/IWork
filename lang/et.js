@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Kuidas asju teha, samm-sammult",
 "Guida": "Juhend",
 "Nessuna risposta trovata. Prova con altre parole.": "Vastust ei leitud. Proovi teisi sõnu.",
-"Cerca nella guida": "Otsi juhendist"
+"Cerca nella guida": "Otsi juhendist",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Näitan minutiga, kuidas see töötab. Võid igal ajal vahele jätta ja tuuri juhendist uuesti vaadata.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Vali vahetus ja puuduta kalendris päevi, et see määrata. Lõpetamiseks puuduta nuppu uuesti. {a}, {b} ja {c} töötavad samamoodi.",
+"Il calendario": "Kalender",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Puuduta päeva, et avada selle kaart: aeg, ületunnid, vaba aeg, haigus ja märkused. Kõik salvestub ise ja alati saab all olevast teatest tagasi võtta.",
+"Il prossimo turno": "Järgmine vahetus",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Siin üleval näed alati järgmist vahetust või käimasolevat.",
+"Il riepilogo del mese": "Kuu kokkuvõte",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Töötunnid, ületunnid, ööd ja pühad kuus, hoiatustega, kui vahetus rikub puhkeaja reegleid.",
+"Calendario e Anno": "Kalender ja Aasta",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Mine vahelehele Aasta, et näha kogu aasta kokkuvõtteid kuude kaupa.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Siin on kõik muu: graafik, puhkus ja vaba aeg, tunnipank, palgahinnang, palgaleht, kuu PDF, eksport kalendrisse, andmete koopia ja juhend.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Riik ja pühad, keel ning hele või tume teema.",
+"Comincia segnando i turni di questa settimana.": "Alusta selle nädala vahetuste märkimisest.",
+"{n} di {m}": "{n} / {m}",
+"Salta": "Jäta vahele",
+"Iniziamo": "Alustame",
+"Rivedi il tour guidato": "Vaata tuuri uuesti"
 };

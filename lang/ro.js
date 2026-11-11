@@ -701,5 +701,22 @@
 "Come fare le cose, passo per passo": "Cum faci lucrurile, pas cu pas",
 "Guida": "Ghid",
 "Nessuna risposta trovata. Prova con altre parole.": "Niciun răspuns găsit. Încearcă alte cuvinte.",
-"Cerca nella guida": "Caută în ghid"
+"Cerca nella guida": "Caută în ghid",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Îți arăt într-un minut cum funcționează. Poți sări oricând și poți revedea turul din Ghid.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Alege o tură și atinge zilele din calendar ca s-o atribui. Atinge din nou butonul ca să termini. {a}, {b} și {c} funcționează la fel.",
+"Il calendario": "Calendarul",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Atinge o zi ca să-i deschizi fișa: orar, ore suplimentare, învoiri, boală și note. Totul se salvează singur și poți oricând anula din mesajul de jos.",
+"Il prossimo turno": "Următoarea tură",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Aici sus vezi mereu următoarea tură sau pe cea în desfășurare.",
+"Il riepilogo del mese": "Rezumatul lunii",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Ore lucrate, ore suplimentare, nopți și sărbători din lună, cu avertizări când o tură nu respectă regulile de repaus.",
+"Calendario e Anno": "Calendar și An",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Treci la An ca să vezi totalurile întregului an, lună de lună.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Aici găsești tot restul: rotația, concediul și învoirile, banca de ore, estimarea salariului, fluturașul, PDF-ul lunii, exportul în calendar, copia datelor și Ghidul.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Țara și sărbătorile, limba și tema deschisă sau întunecată.",
+"Comincia segnando i turni di questa settimana.": "Începe prin a nota turele din această săptămână.",
+"{n} di {m}": "{n} din {m}",
+"Salta": "Sari peste",
+"Iniziamo": "Să începem",
+"Rivedi il tour guidato": "Revezi turul ghidat"
 };

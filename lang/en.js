@@ -621,5 +621,22 @@
 "Come fare le cose, passo per passo": "How to do things, step by step",
 "Guida": "Guide",
 "Nessuna risposta trovata. Prova con altre parole.": "No answers found. Try other words.",
-"Cerca nella guida": "Search the guide"
+"Cerca nella guida": "Search the guide",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "I'll show you how it works in a minute. You can skip whenever you like and replay the tour from the Guide.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Pick a shift and tap the days on the calendar to assign it. Tap the button again to finish. {a}, {b} and {c} work the same way.",
+"Il calendario": "The calendar",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Tap a day to open its sheet: hours, overtime, leave, sick days and notes. Everything saves itself and you can always undo from the message at the bottom.",
+"Il prossimo turno": "Next shift",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Up here you always see your next shift, or the one in progress.",
+"Il riepilogo del mese": "Month summary",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Hours worked, overtime, nights and holidays this month, with warnings when a shift breaks the rest rules.",
+"Calendario e Anno": "Calendar and Year",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Switch to Year to see totals for the whole year, month by month.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Everything else is here: shift rotation, holiday and leave, hour bank, pay estimate, payslip, monthly PDF, calendar export, data copies and the Guide.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Country and holidays, language and light or dark theme.",
+"Comincia segnando i turni di questa settimana.": "Start by logging this week's shifts.",
+"{n} di {m}": "{n} of {m}",
+"Salta": "Skip",
+"Iniziamo": "Let's go",
+"Rivedi il tour guidato": "Replay the guided tour"
 };

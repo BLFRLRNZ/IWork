@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Как се правят нещата, стъпка по стъпка",
 "Guida": "Ръководство",
 "Nessuna risposta trovata. Prova con altre parole.": "Няма намерен отговор. Опитай с други думи.",
-"Cerca nella guida": "Търси в ръководството"
+"Cerca nella guida": "Търси в ръководството",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "За минута ще ти покажа как работи. Можеш да пропуснеш по всяко време и да видиш обиколката отново от Ръководството.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Избери смяна и докосни дните в календара, за да я зададеш. Докосни бутона отново, за да приключиш. {a}, {b} и {c} работят по същия начин.",
+"Il calendario": "Календарът",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Докосни ден, за да отвориш картата му: часове, извънреден труд, кратък отпуск, болничен и бележки. Всичко се запазва само и винаги можеш да отмениш от съобщението долу.",
+"Il prossimo turno": "Следващата смяна",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Тук горе винаги виждаш следващата смяна или текущата.",
+"Il riepilogo del mese": "Обобщение на месеца",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Изработени часове, извънреден труд, нощи и празници за месеца, с предупреждения, когато смяна не спазва правилата за почивка.",
+"Calendario e Anno": "Календар и Година",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Мини на Година, за да видиш общите суми за цялата година, месец по месец.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Тук е всичко останало: график, отпуски, банка часове, оценка на заплатата, фиш за заплата, PDF за месеца, експорт в календар, копие на данните и Ръководството.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Държава и празници, език и светла или тъмна тема.",
+"Comincia segnando i turni di questa settimana.": "Започни, като отбележиш смените за тази седмица.",
+"{n} di {m}": "{n} от {m}",
+"Salta": "Пропусни",
+"Iniziamo": "Да започваме",
+"Rivedi il tour guidato": "Виж обиколката отново"
 };

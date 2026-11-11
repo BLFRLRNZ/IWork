@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Como fazer as coisas, passo a passo",
 "Guida": "Guia",
 "Nessuna risposta trovata. Prova con altre parole.": "Nenhuma resposta encontrada. Tente outras palavras.",
-"Cerca nella guida": "Pesquisar no guia"
+"Cerca nella guida": "Pesquisar no guia",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Mostro-lhe num minuto como funciona. Pode saltar quando quiser e rever a visita no Guia.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Escolha um turno e toque nos dias do calendário para o atribuir. Toque de novo no botão para terminar. {a}, {b} e {c} funcionam da mesma forma.",
+"Il calendario": "O calendário",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Toque num dia para abrir a ficha: horário, horas extra, dispensas, baixa e notas. Tudo é guardado automaticamente e pode sempre anular na mensagem em baixo.",
+"Il prossimo turno": "O próximo turno",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Aqui em cima vê sempre o próximo turno, ou o que está a decorrer.",
+"Il riepilogo del mese": "O resumo do mês",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Horas trabalhadas, horas extra, noites e feriados do mês, com avisos quando um turno não respeita as regras de descanso.",
+"Calendario e Anno": "Calendário e Ano",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Passe para Ano para ver os totais de todo o ano, mês a mês.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Aqui está tudo o resto: rotação, férias e dispensas, banco de horas, estimativa de salário, recibo de vencimento, PDF do mês, exportação para o calendário, cópia dos dados e o Guia.",
+"Paese e festività, lingua e tema chiaro o scuro.": "País e feriados, língua e tema claro ou escuro.",
+"Comincia segnando i turni di questa settimana.": "Comece por registar os turnos desta semana.",
+"{n} di {m}": "{n} de {m}",
+"Salta": "Saltar",
+"Iniziamo": "Vamos lá",
+"Rivedi il tour guidato": "Rever a visita guiada"
 };

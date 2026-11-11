@@ -719,5 +719,22 @@
 "Come fare le cose, passo per passo": "Jak co zrobić, krok po kroku",
 "Guida": "Przewodnik",
 "Nessuna risposta trovata. Prova con altre parole.": "Nie znaleziono odpowiedzi. Spróbuj innych słów.",
-"Cerca nella guida": "Szukaj w przewodniku"
+"Cerca nella guida": "Szukaj w przewodniku",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "W minutę pokażę ci, jak to działa. Możesz pominąć w każdej chwili i obejrzeć prezentację ponownie z Przewodnika.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Wybierz zmianę i dotykaj dni w kalendarzu, aby ją przypisać. Dotknij przycisku ponownie, aby skończyć. {a}, {b} i {c} działają tak samo.",
+"Il calendario": "Kalendarz",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Dotknij dnia, aby otworzyć jego kartę: godziny, nadgodziny, zwolnienia, choroba i notatki. Wszystko zapisuje się samo i zawsze możesz cofnąć zmianę w komunikacie na dole.",
+"Il prossimo turno": "Następna zmiana",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Tu na górze zawsze widzisz następną zmianę albo tę, która trwa.",
+"Il riepilogo del mese": "Podsumowanie miesiąca",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Godziny pracy, nadgodziny, noce i święta w miesiącu, z ostrzeżeniami, gdy zmiana narusza zasady odpoczynku.",
+"Calendario e Anno": "Kalendarz i Rok",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Przejdź do zakładki Rok, aby zobaczyć sumy z całego roku, miesiąc po miesiącu.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Tu jest cała reszta: system zmian, urlop i zwolnienia, bank godzin, szacunek płacy, pasek wypłaty, PDF miesiąca, eksport do kalendarza, kopia danych i Przewodnik.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Kraj i święta, język oraz jasny lub ciemny motyw.",
+"Comincia segnando i turni di questa settimana.": "Zacznij od wpisania zmian z tego tygodnia.",
+"{n} di {m}": "{n} z {m}",
+"Salta": "Pomiń",
+"Iniziamo": "Zaczynamy",
+"Rivedi il tour guidato": "Obejrzyj prezentację ponownie"
 };

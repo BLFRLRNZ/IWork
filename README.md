@@ -46,7 +46,7 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - Busta paga: confronto con le ore segnate, anche quando straordinari e maggiorazioni arrivano il mese dopo.
 - Secondo lavoro.
 
-**Guida** (in Strumenti e nelle Impostazioni): domande frequenti su tutte le funzioni, con ricerca e un pulsante che porta allo strumento giusto.
+**Guida** (in Strumenti e nelle Impostazioni): domande frequenti su tutte le funzioni, con ricerca e un pulsante che porta allo strumento giusto. Alla prima apertura, dopo la scelta di lingua e paese, un **tour guidato** di nove passi mostra dove sono le cose; si può rivedere dalla Guida.
 
 **Impostazioni**
 - Paese e festività, lingua, tema automatico, chiaro o scuro, aggiornamenti.

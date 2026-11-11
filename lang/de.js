@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "So geht's, Schritt für Schritt",
 "Guida": "Anleitung",
 "Nessuna risposta trovata. Prova con altre parole.": "Keine Antwort gefunden. Versuch es mit anderen Wörtern.",
-"Cerca nella guida": "In der Anleitung suchen"
+"Cerca nella guida": "In der Anleitung suchen",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Ich zeige dir in einer Minute, wie es funktioniert. Du kannst jederzeit überspringen und die Tour in der Anleitung wiederholen.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Wähle eine Schicht und tippe auf die Tage im Kalender, um sie einzutragen. Tippe noch einmal auf die Schaltfläche, um fertig zu sein. {a}, {b} und {c} funktionieren genauso.",
+"Il calendario": "Der Kalender",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Tippe auf einen Tag, um seine Karte zu öffnen: Uhrzeit, Überstunden, Freistellung, Krankheit und Notizen. Alles speichert sich von selbst und du kannst es unten in der Meldung rückgängig machen.",
+"Il prossimo turno": "Die nächste Schicht",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Hier oben siehst du immer deine nächste Schicht oder die laufende.",
+"Il riepilogo del mese": "Die Monatsübersicht",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Arbeitsstunden, Überstunden, Nächte und Feiertage des Monats, mit Hinweisen, wenn eine Schicht die Ruhezeiten verletzt.",
+"Calendario e Anno": "Kalender und Jahr",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Wechsle zu Jahr, um die Summen des ganzen Jahres Monat für Monat zu sehen.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Hier findest du alles andere: Schichtrhythmus, Urlaub und Freistellung, Stundenkonto, Lohnschätzung, Lohnabrechnung, Monats-PDF, Kalenderexport, Datenkopie und die Anleitung.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Land und Feiertage, Sprache und helles oder dunkles Design.",
+"Comincia segnando i turni di questa settimana.": "Fang an und trag die Schichten dieser Woche ein.",
+"{n} di {m}": "{n} von {m}",
+"Salta": "Überspringen",
+"Iniziamo": "Los",
+"Rivedi il tour guidato": "Tour noch einmal ansehen"
 };

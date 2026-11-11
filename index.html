@@ -297,6 +297,15 @@ dialog:focus{outline:none}
 .bpsum.ok{color:var(--good)}.bpsum.diff{color:var(--warn)}
 .months button.has small{color:var(--good)}
 #hp{height:92%}
+#tour{position:fixed;inset:0;z-index:1000;touch-action:none}
+#tour .thole{position:fixed;border-radius:18px;box-shadow:0 0 0 200vmax rgba(8,10,16,.66);transition:left .25s ease,top .25s ease,width .25s ease,height .25s ease;pointer-events:none}
+#tour .tbub{position:fixed;width:min(350px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:auto;background:var(--surface);color:var(--ink);border-radius:22px;padding:18px 18px 14px;box-shadow:0 18px 50px -12px rgba(0,0,0,.5);transition:left .25s ease,top .25s ease}
+#tour .tbub h3{margin:0 0 6px;font-size:18px;line-height:1.25;letter-spacing:-.01em}
+#tour .tbub p{margin:0 0 14px;font-size:15px;line-height:1.5}
+#tour .tfoot{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#tour .tcount{font:500 12px/1 var(--mono);color:var(--muted);margin-right:auto}
+#tour .tdots{display:flex;gap:5px;margin:0 0 12px}#tour .tdots i{width:6px;height:6px;border-radius:3px;background:var(--line)}#tour .tdots i.on{background:var(--ink);width:16px}
+@media (prefers-reduced-motion:reduce){#tour .thole,#tour .tbub{transition:none}}
 .hpsearch{display:flex;align-items:center;gap:8px;background:var(--sunken);border-radius:14px;padding:0 12px;min-height:46px}
 .hpsearch svg{width:18px;height:18px;flex:none;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round}
 .hpsearch input{border:0;background:transparent;flex:1;min-width:0;font:inherit;font-size:16px;color:var(--ink);padding:10px 0;outline:none}
@@ -772,6 +781,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
   <form class="sheet" method="dialog">
     <h2 id="hpTitle" style="text-transform:none">Guida</h2>
     <label class="hpsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input type="search" id="hpQ" placeholder="Cerca nella guida" aria-label="Cerca nella guida" autocomplete="off"></label>
+    <button type="button" class="linkbtn" id="hpTour">Rivedi il tour guidato</button>
     <div id="hpList"></div>
     <p class="help" id="hpNone" hidden>Nessuna risposta trovata. Prova con altre parole.</p>
     <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
@@ -1046,7 +1056,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.4.0";
+const APP_VERSION="2.5.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1810,6 +1820,53 @@ $("cyForm").addEventListener("submit",ev=>{ev.preventDefault();const plan=cyPlan
   const f=dateOf(plan[0][0]);view=new Date(f.getFullYear(),f.getMonth(),1);if(mode!=="cal")setMode("cal");
   apply(plan.map(x=>[x[0],cyEntry(x[1])]),tn(plan.length,"Turnazione applicata a {n} giorno.","Turnazione applicata a {n} giorni."));});
 
+/* ---------- tour guidato (una volta, dopo la prima configurazione; si rivede dalla Guida) ---------- */
+const TOUR_K="iwork-tour";let TR=null;
+function tourSteps(){const vis=id=>{const e=$(id);return e&&!e.hidden&&e.offsetParent!==null?e:null;};return[
+  [null,t("Benvenuto in {app}",{app:APP}),t("Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.")],
+  [()=>vis("chips"),t("Turni rapidi"),t("Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.",{a:t("Riposo"),b:t("Ferie"),c:t("Cancella")})],
+  [()=>vis("grid")||vis("list"),t("Il calendario"),t("Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.")],
+  [()=>vis("nextCard"),t("Il prossimo turno"),t("Qui in alto vedi sempre il prossimo turno, o quello in corso.")],
+  [()=>vis("sumCard"),t("Il riepilogo del mese"),t("Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.")],
+  [()=>document.querySelector(".tabs"),t("Calendario e Anno"),t("Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.")],
+  [()=>$("toolsBtn"),t("Strumenti"),t("Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.")],
+  [()=>$("setBtn"),t("Impostazioni"),t("Paese e festività, lingua e tema chiaro o scuro.")],
+  [null,t("Tutto pronto"),t("Comincia segnando i turni di questa settimana.")]];}
+function startTour(){if(TR)return;if(document.querySelector("dialog[open]"))document.querySelectorAll("dialog[open]").forEach(d=>d.close());
+  if(mode==="yr")$("tabCal").click();
+  const o=document.createElement("div");o.id="tour";o.setAttribute("role","dialog");o.setAttribute("aria-modal","true");o.setAttribute("aria-labelledby","tourH");
+  o.innerHTML='<div class="thole"></div><div class="tbub" tabindex="-1"><div class="tdots" aria-hidden="true"></div><h3 id="tourH"></h3><p id="tourP"></p><div class="tfoot"><span class="tcount"></span><button type="button" class="btn ghost" data-t="skip"></button><button type="button" class="btn ghost" data-t="back"></button><button type="button" class="btn primary" data-t="next"></button></div></div>';
+  document.body.appendChild(o);TR={i:0,steps:tourSteps(),el:o};lockPage();
+  o.addEventListener("click",ev=>{const b=ev.target.closest("[data-t]");if(!b)return;const a=b.dataset.t;if(a==="skip")endTour();else if(a==="back")tourGo(TR.i-1);else tourGo(TR.i+1);});
+  o.addEventListener("wheel",ev=>ev.preventDefault(),{passive:false});
+  document.addEventListener("keydown",tourKey);addEventListener("resize",tourPlace);
+  tourGo(0);}
+function tourKey(ev){if(!TR)return;if(ev.key==="Escape"){ev.preventDefault();endTour();}else if(ev.key==="ArrowRight")tourGo(TR.i+1);else if(ev.key==="ArrowLeft")tourGo(TR.i-1);}
+function tourGo(i){if(!TR)return;const n=TR.steps.length;if(i>=n){endTour();return;}if(i<0)return;
+  /* salta i passi il cui elemento non c'è */
+  let k=i;const dir=i>=TR.i?1:-1;while(k>0&&k<n-1&&TR.steps[k][0]&&!TR.steps[k][0]())k+=dir;if(k<0||k>=n)return;TR.i=k;
+  const[,h,p]=TR.steps[k],o=TR.el,last=k===n-1;
+  o.querySelector("#tourH").textContent=h;o.querySelector("#tourP").textContent=p;
+  o.querySelector(".tcount").textContent=t("{n} di {m}",{n:k+1,m:n});
+  o.querySelector(".tdots").innerHTML=TR.steps.map((_,j)=>'<i class="'+(j===k?"on":"")+'"></i>').join("");
+  const sk=o.querySelector('[data-t="skip"]'),bk=o.querySelector('[data-t="back"]'),nx=o.querySelector('[data-t="next"]');
+  sk.textContent=t("Salta");sk.hidden=last;bk.textContent=t("Indietro");bk.hidden=k===0;nx.textContent=last?t("Inizia"):k===0?t("Iniziamo"):t("Avanti");
+  const tg=TR.steps[k][0]&&TR.steps[k][0]();
+  if(tg){const r=tg.getBoundingClientRect(),H=innerHeight,bh=o.querySelector(".tbub").offsetHeight||200,fitsBelow=r.bottom+bh+30<=H,fitsAbove=r.top-bh-30>=0;
+    if(r.top<60||r.bottom>H-10||!fitsBelow&&!fitsAbove){unlockPage();const want=r.height+bh+40<=H?Math.max(60,Math.min(r.top,H-bh-r.height-40)):70;scrollBy(0,r.top-want);lockPage();}}
+  TR.tg=tg;tourPlace();o.querySelector(".tbub").focus({preventScroll:true});}
+function tourPlace(){if(!TR)return;const o=TR.el,hole=o.querySelector(".thole"),bub=o.querySelector(".tbub"),W=innerWidth,H=innerHeight,m=16,bw=Math.min(350,W-32),bh=bub.offsetHeight||180;
+  const tg=TR.tg;if(!tg){Object.assign(hole.style,{left:W/2+"px",top:H/2+"px",width:"0px",height:"0px"});Object.assign(bub.style,{left:(W-bw)/2+"px",top:Math.max(m,(H-bh)/2)+"px"});return;}
+  const r=tg.getBoundingClientRect(),pd=6,x=Math.max(4,r.left-pd),y=Math.max(4,r.top-pd),w=Math.min(W-8,r.right+pd)-x;let h=Math.min(H-8,r.bottom+pd)-y,top,left=Math.min(Math.max(m,r.left+r.width/2-bw/2),W-m-bw);
+  if(y+h+12+bh<=H-m)top=y+h+12;else if(y-12-bh>=m)top=y-12-bh;
+  else if(W-(x+w)>=bw+2*m){left=x+w+12;top=Math.min(Math.max(m,y),H-m-bh);}
+  else if(x>=bw+2*m){left=x-12-bw;top=Math.min(Math.max(m,y),H-m-bh);}
+  else{h=Math.max(60,H-m-bh-12-y);top=y+h+12;}
+  Object.assign(hole.style,{left:x+"px",top:y+"px",width:w+"px",height:h+"px"});Object.assign(bub.style,{left:left+"px",top:Math.max(m,Math.min(top,H-m-bh))+"px"});}
+function endTour(){if(!TR)return;TR.el.remove();TR=null;unlockPage();document.removeEventListener("keydown",tourKey);removeEventListener("resize",tourPlace);try{localStorage.setItem(TOUR_K,"1");}catch(e){}scrollTo(0,0);}
+function tourSeen(){try{return localStorage.getItem(TOUR_K)==="1";}catch(e){return true;}}
+$("hpTour").onclick=()=>{$("hp").close();setTimeout(startTour,120);};
+
 /* ---------- guida e domande frequenti ---------- */
 function helpData(){const MK={a:"\u0001a\u0002",b:"\u0001b\u0002",c:"\u0001c\u0002",d:"\u0001d\u0002",p:"\u0001p\u0002",q:"\u0001q\u0002"},T=x=>t(x),P=(...k)=>k.map(T).join(" → "),tl=x=>P("Strumenti",x);return[
   [t("Segnare i turni"),[
@@ -2333,14 +2390,15 @@ function obFinish(){const s=S.settings,fresh=!OB.existing;
   if(s.country!==OB.country)o.rules=null;
   if(Math.round((5*s.wd+s.sat)*100)/100===s.week)o.week=Math.round((5*OB.wd+OB.sat)*100)/100;
   if(fresh)o.presets=DEF.presets.map(p=>({n:t(p.n),t:p.t}));
-  S.settings=normSettings(o);applyCountry();mark();$("ob").close();render();}
+  S.settings=normSettings(o);applyCountry();mark();$("ob").close();render();
+  if(fresh&&!tourSeen())setTimeout(startTour,450);}
 function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels.length;
   if(OB.existing){OB.lang=LANG;OB.country=S.settings.country;OB.region=S.settings.region;OB.patron=S.settings.patron&&S.settings.patron.c?S.settings.patron:null;}
   else{const g=guessSetup();OB.lang=LANG!=="it"?LANG:g.lang;OB.country=g.country;}
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
   if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
 
-window.iworkDebug={tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
+window.iworkDebug={startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();relabelPresets();setNames();translateDom();

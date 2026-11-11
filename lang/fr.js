@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Comment faire, étape par étape",
 "Guida": "Guide",
 "Nessuna risposta trovata. Prova con altre parole.": "Aucune réponse trouvée. Essayez d'autres mots.",
-"Cerca nella guida": "Rechercher dans le guide"
+"Cerca nella guida": "Rechercher dans le guide",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Je vous montre comment ça marche en une minute. Vous pouvez passer à tout moment et revoir la visite depuis le Guide.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Choisissez un poste et touchez les jours du calendrier pour l'attribuer. Touchez de nouveau le bouton pour terminer. {a}, {b} et {c} fonctionnent de la même façon.",
+"Il calendario": "Le calendrier",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Touchez un jour pour ouvrir sa fiche : horaire, heures supplémentaires, absences, maladie et notes. Tout s'enregistre seul et vous pouvez toujours annuler depuis le message en bas.",
+"Il prossimo turno": "Le prochain poste",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Ici en haut, vous voyez toujours le prochain poste, ou celui en cours.",
+"Il riepilogo del mese": "Le récapitulatif du mois",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Heures travaillées, heures sup., nuits et jours fériés du mois, avec des alertes quand un poste ne respecte pas les règles de repos.",
+"Calendario e Anno": "Calendrier et Année",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Passez à Année pour voir les totaux de toute l'année, mois par mois.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Tout le reste est ici : rotation, congés et absences, banque d'heures, estimation de la paie, bulletin de paie, PDF du mois, export vers l'agenda, copie des données et le Guide.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Pays et jours fériés, langue et thème clair ou sombre.",
+"Comincia segnando i turni di questa settimana.": "Commencez par noter les postes de cette semaine.",
+"{n} di {m}": "{n} sur {m}",
+"Salta": "Passer",
+"Iniziamo": "C'est parti",
+"Rivedi il tour guidato": "Revoir la visite guidée"
 };

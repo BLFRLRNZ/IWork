@@ -681,5 +681,22 @@
 "Come fare le cose, passo per passo": "Hogyan csinálj meg mindent, lépésről lépésre",
 "Guida": "Útmutató",
 "Nessuna risposta trovata. Prova con altre parole.": "Nincs találat. Próbálj más szavakat.",
-"Cerca nella guida": "Keresés az útmutatóban"
+"Cerca nella guida": "Keresés az útmutatóban",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Egy perc alatt megmutatom, hogyan működik. Bármikor kihagyhatod, és a bemutatót az Útmutatóból újra megnézheted.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Válassz egy műszakot, és koppints a naptár napjaira a beíráshoz. A befejezéshez koppints újra a gombra. A(z) {a}, {b} és {c} ugyanígy működik.",
+"Il calendario": "A naptár",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Koppints egy napra a lapja megnyitásához: időpont, túlóra, szabadidő, betegség és megjegyzések. Minden magától mentődik, és a lenti üzenetben mindig visszavonhatod.",
+"Il prossimo turno": "A következő műszak",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Itt fent mindig látod a következő vagy az éppen zajló műszakot.",
+"Il riepilogo del mese": "A hónap összesítője",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "A hónap ledolgozott órái, túlórái, éjszakái és ünnepnapjai, figyelmeztetéssel, ha egy műszak megsérti a pihenőidő szabályait.",
+"Calendario e Anno": "Naptár és Év",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Válts az Év fülre, és hónapról hónapra látod az egész év összesítőit.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Itt van minden más: beosztás, szabadság és szabadidő, órabank, bérbecslés, bérjegyzék, havi PDF, exportálás naptárba, adatmásolat és az Útmutató.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Ország és ünnepek, nyelv és világos vagy sötét téma.",
+"Comincia segnando i turni di questa settimana.": "Kezdd a heti műszakjaid beírásával.",
+"{n} di {m}": "{n}/{m}",
+"Salta": "Kihagyás",
+"Iniziamo": "Kezdjük",
+"Rivedi il tour guidato": "Bemutató újra"
 };

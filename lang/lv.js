@@ -684,5 +684,22 @@
 "Come fare le cose, passo per passo": "Kā ko izdarīt, soli pa solim",
 "Guida": "Ceļvedis",
 "Nessuna risposta trovata. Prova con altre parole.": "Nekas netika atrasts. Mēģini citus vārdus.",
-"Cerca nella guida": "Meklēt ceļvedī"
+"Cerca nella guida": "Meklēt ceļvedī",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Minūtē parādīšu, kā tas darbojas. Vari jebkurā brīdī izlaist un apskatīt ceļvedi vēlreiz no sadaļas Ceļvedis.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Izvēlies maiņu un pieskaries kalendāra dienām, lai to piešķirtu. Lai beigtu, vēlreiz pieskaries pogai. {a}, {b} un {c} darbojas tāpat.",
+"Il calendario": "Kalendārs",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Pieskaries dienai, lai atvērtu tās kartīti: laiks, virsstundas, brīvais laiks, slimība un piezīmes. Viss saglabājas pats, un vienmēr vari atsaukt apakšā redzamajā ziņā.",
+"Il prossimo turno": "Nākamā maiņa",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Šeit augšā vienmēr redzi nākamo maiņu vai to, kas notiek tagad.",
+"Il riepilogo del mese": "Mēneša kopsavilkums",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Mēneša nostrādātās stundas, virsstundas, naktis un svētki, ar brīdinājumiem, ja maiņa neievēro atpūtas noteikumus.",
+"Calendario e Anno": "Kalendārs un Gads",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Pārej uz Gads, lai redzētu visa gada kopsummas pa mēnešiem.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Šeit ir viss pārējais: grafiks, atvaļinājums un brīvais laiks, stundu banka, algas aprēķins, algas lapiņa, mēneša PDF, eksports uz kalendāru, datu kopija un Ceļvedis.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Valsts un svētki, valoda un gaišais vai tumšais motīvs.",
+"Comincia segnando i turni di questa settimana.": "Sāc ar šīs nedēļas maiņu ierakstīšanu.",
+"{n} di {m}": "{n} no {m}",
+"Salta": "Izlaist",
+"Iniziamo": "Sākam",
+"Rivedi il tour guidato": "Skatīt apskatu vēlreiz"
 };

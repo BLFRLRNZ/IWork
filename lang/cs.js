@@ -719,5 +719,22 @@
 "Come fare le cose, passo per passo": "Jak co udělat, krok za krokem",
 "Guida": "Návod",
 "Nessuna risposta trovata. Prova con altre parole.": "Nic nenalezeno. Zkus jiná slova.",
-"Cerca nella guida": "Hledat v návodu"
+"Cerca nella guida": "Hledat v návodu",
+"Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.": "Za minutu ti ukážu, jak to funguje. Můžeš kdykoli přeskočit a prohlídku si znovu pustit z Návodu.",
+"Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.": "Vyber směnu a klepej na dny v kalendáři, abys ji přiřadil. Dalším klepnutím na tlačítko skončíš. {a}, {b} a {c} fungují stejně.",
+"Il calendario": "Kalendář",
+"Tocca un giorno per aprirne la scheda: orario, straordinari, permessi, malattia e note. Tutto si salva da solo e puoi sempre annullare dal messaggio in basso.": "Klepni na den a otevře se jeho karta: čas, přesčasy, volno, nemoc a poznámky. Vše se ukládá samo a vždy můžeš vrátit změnu ve zprávě dole.",
+"Il prossimo turno": "Další směna",
+"Qui in alto vedi sempre il prossimo turno, o quello in corso.": "Tady nahoře vždy vidíš další směnu nebo tu, která právě běží.",
+"Il riepilogo del mese": "Přehled měsíce",
+"Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.": "Odpracované hodiny, přesčasy, noci a svátky v měsíci, s upozorněním, když směna nedodrží pravidla odpočinku.",
+"Calendario e Anno": "Kalendář a Rok",
+"Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.": "Přepni na Rok a uvidíš součty celého roku, měsíc po měsíci.",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Tady je všechno ostatní: rozpis, dovolená a volno, banka hodin, odhad mzdy, výplatní páska, PDF měsíce, export do kalendáře, kopie dat a Návod.",
+"Paese e festività, lingua e tema chiaro o scuro.": "Země a svátky, jazyk a světlý nebo tmavý motiv.",
+"Comincia segnando i turni di questa settimana.": "Začni zapsáním směn na tento týden.",
+"{n} di {m}": "{n} z {m}",
+"Salta": "Přeskočit",
+"Iniziamo": "Jdeme na to",
+"Rivedi il tour guidato": "Znovu spustit prohlídku"
 };
