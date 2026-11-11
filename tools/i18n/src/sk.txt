@@ -808,3 +808,4 @@ Tvoj e-mail; s pripomienkami zmeny na najbližších 45 dní s časom a názvom 
 Heslo nikdy neopustí zariadenie: server dostane len kľúč odvodený na prihlásenie, ktorým sa tvoje údaje otvoriť nedajú. Účet a všetky údaje na serveri môžeš kedykoľvek vymazať, tu.
 Heslo k účtu
 Je to heslo k tvojmu účtu a nikde sa neukladá. Ak ho zabudneš, zvolíš si nové pomocou kódu z e-mailu: kópiu na serveri nemožno obnoviť, ale údaje zostávajú na tvojich zariadeniach a kópia sa znova vytvorí odtiaľto.
+Aktualizácie prichádzajú z App Store alebo Google Play.

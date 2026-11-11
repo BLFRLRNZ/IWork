@@ -808,3 +808,4 @@ Tavs e-pasts; ar atgādinājumiem nākamo 45 dienu maiņas ar laiku un maiņas n
 Parole nekad nepamet ierīci: serveris saņem tikai pieteikšanās atslēgu, kas no tās atvasināta un ar kuru tavus datus nevar atvērt. Kontu un visus datus serverī vari izdzēst jebkurā laikā, šeit.
 Konta parole
 Tā ir tava konta parole, un tā nekur netiek glabāta. Ja to aizmirsīsi, izvēlēsies jaunu ar e-pasta kodu: kopiju serverī nevar atjaunot, bet dati paliek tavās ierīcēs un kopija tiek izveidota no jauna no šejienes.
+Atjauninājumi nāk no App Store vai Google Play.

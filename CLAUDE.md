@@ -13,7 +13,8 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 
 **MyTurn** (fino alla 2.6 si chiamava iWork, che è un marchio di Apple) è una PWA per segnare i turni di lavoro (calendario dei turni con ore, straordinari, ferie, permessi, banca ore, stima paga e altro).
 
-- **Repository:** BLFRLRNZ/MyTurn (prima BLFRLRNZ/IWork), pubblicato con GitHub Pages su `https://blfrlrnz.github.io/MyTurn/`.
+- **Repository:** BLFRLRNZ/MyTurn- (con il trattino finale; prima BLFRLRNZ/IWork, il vecchio indirizzo rimanda qui), pubblicato con GitHub Pages. Per le API di GitHub serve il nome esatto `BLFRLRNZ/MyTurn-`.
+- **App per iPhone e Android:** la stessa `index.html` dentro Capacitor (vedi "App per gli store").
 - **Nomi interni:** tutto usa il prefisso `myturn`: dati in `localStorage["myturn-v1"]`, altre chiavi `myturn-*`, cache `myturn-vN`, `MYTURN_I18N`, `MYTURN_COUNTRIES`, `myturnDebug`. Il nome visibile è `APP` in `index.html`.
 - **Lingue:** 23.
 - **Paesi:** 41, con le loro festività e le regole sul riposo.
@@ -32,7 +33,12 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 | `version.json` | Versione, data e note di rilascio (it, en, fr, de, es, pt). L'app la usa per proporre l'aggiornamento. |
 | `supabase/` | Server: tabelle (`migrations/`), funzioni (`functions/`) e istruzioni (`README.md`). |
 | `docs/` | `CONTROLLO-FESTIVITA.md` (verifica delle festività), `BUSTE-PAGA.md` (come vengono lette le buste paga). |
-| `ROADMAP.md` | Roadmap dell'internazionalizzazione, tutta completata (2.0). |
+| `ROADMAP.md` | Roadmap dell'internazionalizzazione, tutta completata (2.0). La roadmap del prodotto (fasi 1–4 contro i concorrenti) è nel documento "MyTurn – Roadmap" su Claude. |
+| `package.json`, `capacitor.config.json` | App per gli store con Capacitor 8. `appId` = `app.myturn` (si può cambiare solo prima della prima pubblicazione). |
+| `tools/app/copy-web.js` | Copia in `www/` (ignorata da git) i file che vanno dentro l'app. Il service worker no. |
+| `assets/` | Immagini di partenza per icone e schermata di avvio (le genera `@capacitor/assets` nel workflow). |
+| `ios/`, `android/` | Progetti nativi. **Creati e aggiornati dal workflow** `.github/workflows/app.yml`: prima di modificarli fare `git pull`. |
+| `.github/workflows/app.yml` | Su GitHub: crea i progetti nativi, compila l'app iPhone per il simulatore e l'APK Android, e fa le foto. |
 
 ## Come è fatto `index.html`
 
@@ -88,6 +94,18 @@ Il motore delle festività è in `index.html`. Le regole possono essere:
 - `A~B/D`, una festività che si sposta.
 
 Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiungere festività o sostituire quelle nazionali.
+
+## App per gli store (Capacitor)
+
+- **Niente Mac e niente npm in locale:** in questa sessione npm non scarica pacchetti. Tutto ciò che è nativo si fa su GitHub Actions (`app.yml`, Mac per iPhone e Linux per Android). Ogni push che tocca l'app lo avvia; si segue con `gh api repos/BLFRLRNZ/MyTurn-/actions/runs`, i log con `.../actions/jobs/<id>/logs`.
+- Il workflow crea `ios/` e `android/` se mancano e li salva con un commit del bot: dopo un'esecuzione fare `git pull --rebase`.
+- **Nel codice:** `NATIVE` è vero dentro l'app; `CAP` contiene i plugin (`Capacitor.Plugins`). Sulla pagina ci sono le classi `native` e `ios`/`android`.
+  - Niente service worker e niente controllo di `version.json`: gli aggiornamenti arrivano dallo store.
+  - File (PDF, .ics, copia, immagine dei turni): `nativeShare()` li scrive con Filesystem e apre il menu Condividi (Share).
+  - Promemoria: notifiche **locali** (LocalNotifications), programmate dal telefono senza server e senza account. `remLocal()` tiene le prime 60 (l'iPhone ne accetta 64), con id ≥ 1000; l'id 1 è la notifica di prova.
+  - Margini: su Android Capacitor inietta `--safe-area-inset-*`; il CSS usa `var(--safe-area-inset-x,env(safe-area-inset-x,0px))`.
+  - Barre di sistema: `SystemBars.setStyle` segue il tema in `applyTheme`.
+- **Prossimi passi (fase 1 della roadmap):** account Apple Developer e Google Play del proprietario; firma e invio a TestFlight dal workflow (chiave API di App Store Connect nei segreti di GitHub); 12 tester per 14 giorni su Google Play; widget (WidgetKit / App Widget), sveglie (AlarmKit da iOS 26 / AlarmManager), Apple Watch. I dati per widget e orologio andranno passati dall'app al codice nativo con un piccolo plugin.
 
 ## Server (Supabase)
 
@@ -158,6 +176,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | `tests/account-reminders.js` | Accesso, uscita e promemoria con un Supabase finto | sì |
 | `tests/auth-onboarding.js` | Due telefoni con un server finto: registrazione al primo avvio, accesso che ritrova tutto, password sbagliata, password dimenticata | sì |
 | `tests/layout-audit.js` | Apre ogni schermata e pannello e cerca campi sovrapposti, attaccati o che escono; foto in `$OUT/layout`. Uso: `node tests/layout-audit.js 430 it` (alcune segnalazioni sono volute: righe che scorrono, cifre sopra l'etichetta, tabelle) | sì |
+| `tests/native-shell.js` | L'app nativa simulata nel browser con plugin finti: niente service worker, promemoria locali, file condivisi, margini Android | sì |
 | `tests/sync.js` | Sincronizzazione tra due dispositivi con un server finto: password, unione, conflitti, cancellazioni, password dimenticata, niente in chiaro sul server | sì |
 
 - Le buste paga di prova sono in `tests/payslip/`. Si rigenerano con `gen.py`, `gen2.py` e `gen3.py`, che usano reportlab e pypdf.

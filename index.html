@@ -15,7 +15,7 @@
 <meta name="apple-mobile-web-app-title" content="MyTurn">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
+<style>:root{padding-top:var(--safe-area-inset-top,env(safe-area-inset-top,0px));padding-bottom:var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))}img{max-width:100%}</style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: monochrome app chrome, colour only where there is a shift. Next shift leads, the month grid is the body, totals and tools follow (side rail on wide screens). */
@@ -56,7 +56,7 @@ button,input,textarea,select{font:inherit;color:inherit}
 button{cursor:pointer;-webkit-tap-highlight-color:transparent}
 :focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .app{max-width:1120px;margin:0 auto;padding-block:16px 44px;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-left:max(16px,var(--safe-area-inset-left,env(safe-area-inset-left,0px)));padding-right:max(16px,var(--safe-area-inset-right,env(safe-area-inset-right,0px)));
   display:grid;gap:18px;grid-template-columns:minmax(0,1fr);grid-template-areas:"top" "hero" "cal" "rail" "foot"}
 @media(min-width:940px){.app{grid-template-columns:minmax(0,1fr) 340px;grid-template-rows:auto auto 1fr auto;gap:22px 28px;
   grid-template-areas:"top top" "cal hero" "cal rail" "foot foot"}}
@@ -205,8 +205,8 @@ button{cursor:pointer;-webkit-tap-highlight-color:transparent}
 /* sheets */
 dialog{border:0;background:var(--surface);color:var(--ink);border-radius:24px;padding:0;width:min(440px,100%);max-width:100%;max-height:92%;box-shadow:0 24px 60px -20px rgba(0,0,0,.45)}
 dialog::backdrop{background:rgba(6,8,14,.5);backdrop-filter:blur(3px)}
-.sheet{padding:22px 20px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:16px}
-.sheet>.actions{position:sticky;bottom:0;z-index:3;margin:0 -20px calc(-20px - env(safe-area-inset-bottom,0px));padding:12px 20px calc(14px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line)}
+.sheet{padding:22px 20px calc(20px + var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px)));display:flex;flex-direction:column;gap:16px}
+.sheet>.actions{position:sticky;bottom:0;z-index:3;margin:0 -20px calc(-20px - var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px)));padding:12px 20px calc(14px + var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px)));background:var(--surface);border-top:1px solid var(--line)}
 .saved{font-size:12.5px;color:var(--muted);margin:-6px 0 0}
 .sheet h2{font-weight:700;font-size:23px;line-height:1.1;letter-spacing:-.025em;margin:0;text-transform:capitalize}
 .sheet .sub{color:var(--muted);font-size:13.5px;margin:-10px 0 0}
@@ -392,7 +392,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 /* benvenuto */
 #ob{width:min(480px,100%);max-height:100%}
 @media(max-width:560px){#ob{margin:0;height:100%;max-height:100%;border-radius:0}#ob .sheet::before{display:none}}
-#ob .sheet{min-height:100%;gap:18px;padding-top:calc(26px + env(safe-area-inset-top,0px))}
+#ob .sheet{min-height:100%;gap:18px;padding-top:calc(26px + var(--safe-area-inset-top,env(safe-area-inset-top,0px)))}
 .obtop{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .obtop .logo{width:44px;height:44px;flex:none}
 .obdots{display:flex;gap:6px}
@@ -449,7 +449,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 @media(max-width:400px){.ytable th{letter-spacing:0;padding:8px 3px;font-size:10px;white-space:normal}.ytable td{padding:9px 3px}.ytable .mlong{display:none}.ytable .mshort{display:inline}}
 .yearbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .yearbar output{font-weight:700;font-size:24px;letter-spacing:-.03em}
-.update{position:fixed;left:50%;transform:translateX(-50%);top:calc(12px + env(safe-area-inset-top,0px));width:min(520px,calc(100% - 32px));background:var(--ink);color:var(--on-ink);border-radius:18px;padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;z-index:60;box-shadow:0 16px 40px -12px rgba(0,0,0,.45)}
+.update{position:fixed;left:50%;transform:translateX(-50%);top:calc(12px + var(--safe-area-inset-top,env(safe-area-inset-top,0px)));width:min(520px,calc(100% - 32px));background:var(--ink);color:var(--on-ink);border-radius:18px;padding:14px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;z-index:60;box-shadow:0 16px 40px -12px rgba(0,0,0,.45)}
 .update div{flex:1 1 220px;min-width:0;font-size:14px}
 .update b{display:block;font-weight:600}
 .update span{opacity:.75;font-size:13px}
@@ -466,7 +466,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 .months button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink)}
 .months button[aria-pressed="true"] small{color:inherit;opacity:.7}
 
-.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--on-ink);border-radius:14px;padding:11px 16px;display:flex;gap:14px;align-items:center;max-width:calc(100% - 32px);font-size:14px;z-index:50;box-shadow:0 12px 30px -10px rgba(0,0,0,.4)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px)));background:var(--ink);color:var(--on-ink);border-radius:14px;padding:11px 16px;display:flex;gap:14px;align-items:center;max-width:calc(100% - 32px);font-size:14px;z-index:50;box-shadow:0 12px 30px -10px rgba(0,0,0,.4)}
 .toast button{background:none;border:0;color:inherit;font-weight:600;text-decoration:underline;padding:4px}
 </style>
 </head>
@@ -1066,6 +1066,10 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 (function(){
 "use strict";
 const $=id=>document.getElementById(id);
+/* app per iPhone e Android (Capacitor): stesse pagine, con i plugin nativi in CAP */
+const NATIVE=!!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform());
+const CAP=NATIVE&&Capacitor.Plugins||{};
+if(NATIVE)document.documentElement.classList.add("native",Capacitor.getPlatform());
 const pad=n=>String(n).padStart(2,"0");
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const keyOf=d=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
@@ -1689,7 +1693,8 @@ $("grid").addEventListener("touchend",ev=>{const dx=ev.changedTouches[0].clientX
 function getTheme(){try{const t=localStorage.getItem("myturn-theme");return t==="light"||t==="dark"?t:"auto";}catch(e){return"auto";}}
 function applyTheme(t){const r=document.documentElement;if(t==="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",t);
   const dark=t==="dark"||(t==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches);
-  document.querySelectorAll('meta[name="theme-color"]').forEach(m=>{m.setAttribute("content",dark?"#090a0e":"#f1f2f6");m.removeAttribute("media");});}
+  document.querySelectorAll('meta[name="theme-color"]').forEach(m=>{m.setAttribute("content",dark?"#090a0e":"#f1f2f6");m.removeAttribute("media");});
+  if(CAP.SystemBars)CAP.SystemBars.setStyle({style:dark?"DARK":"LIGHT"}).catch(()=>{});}
 document.addEventListener("change",ev=>{if(ev.target.name==="theme"){const t=ev.target.value;try{localStorage.setItem("myturn-theme",t);}catch(e){}applyTheme(t);}});
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>applyTheme(getTheme()));
 
@@ -2029,17 +2034,17 @@ $("acLogout").onclick=async()=>{const sub=await pushSub();
   try{if(sub)await sbFetch("/rest/v1/rpc/forget_push",{body:{p_endpoint:sub.endpoint}});}catch(e){}
   try{if(sub)await sub.unsubscribe();}catch(e){}
   try{await sbFetch("/auth/v1/logout",{});}catch(e){}
-  syStop();AU=null;auSave();S.settings.rem.on=0;mark();acStat(t("Sei uscito. I tuoi turni restano su questo dispositivo."),"ok");renderAccount();};
+  syStop();AU=null;auSave();if(!NATIVE)S.settings.rem.on=0;mark();acStat(t("Sei uscito. I tuoi turni restano su questo dispositivo."),"ok");renderAccount();};
 $("acDelete").onclick=async()=>{if(acDelArm<Date.now()){acDelArm=Date.now()+5000;renderAccount();setTimeout(renderAccount,5100);return;}
   acDelArm=0;acStat(t("Elimino l'account…"));
   try{await sbFetch("/functions/v1/delete-account",{});const sub=await pushSub();if(sub)try{await sub.unsubscribe();}catch(e){}
-    syStop();AU=null;auSave();S.settings.rem.on=0;mark();acStat(t("Account eliminato, con tutti i dati sul server. I turni su questo dispositivo restano."),"ok");}
+    syStop();AU=null;auSave();if(!NATIVE)S.settings.rem.on=0;mark();acStat(t("Account eliminato, con tutti i dati sul server. I turni su questo dispositivo restano."),"ok");}
   catch(e){acStat(t("Non sono riuscito a eliminare l'account. Controlla la connessione e riprova."),"err");}
   renderAccount();};
 /* promemoria */
 const isIOS=()=>/iPad|iPhone|iPod/.test(navigator.userAgent)||navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1;
 const isStandalone=()=>matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
-function pushProblem(){if(!SB_ON())return"off";if(!AU)return"login";
+function pushProblem(){if(NATIVE)return CAP.LocalNotifications?"":"unsupported";if(!SB_ON())return"off";if(!AU)return"login";
   if(!("serviceWorker" in navigator)||!("PushManager" in window)||!("Notification" in window))return isIOS()&&!isStandalone()?"install":"unsupported";
   if(isIOS()&&!isStandalone())return"install";if(Notification.permission==="denied")return"denied";return"";}
 function rmNeed(p){const e=$("rmNeed");const M={login:t("Per i promemoria serve un account."),install:t("Sull'iPhone le notifiche arrivano solo se l'app è sulla schermata Home: in Safari tocca Condividi, poi Aggiungi alla schermata Home, e apri l'app da lì."),unsupported:t("Questo browser non può ricevere notifiche."),denied:t("Le notifiche per questa app sono bloccate. Consentile nelle impostazioni del telefono e riprova.")};
@@ -2051,6 +2056,9 @@ function renderRem(){const r=S.settings.rem,p=pushProblem();rmNeed(p);$("rmOn").
 $("rmBtn").onclick=()=>{rmStat("");renderRem();openDlg($("rm"));};
 const b64u=s=>{const p="=".repeat((4-s.length%4)%4),b=atob((s+p).replace(/-/g,"+").replace(/_/g,"/"));return Uint8Array.from(b,c=>c.charCodeAt(0));};
 async function remEnable(){const p=pushProblem();if(p){rmNeed(p);return false;}
+  if(NATIVE){try{let q=await CAP.LocalNotifications.checkPermissions();if(q.display!=="granted")q=await CAP.LocalNotifications.requestPermissions();
+      if(q.display!=="granted"){rmNeed("denied");return false;}S.settings.rem.on=1;mark();await remSync(true);rmStat(t("Promemoria attivi su questo dispositivo."),"ok");return true;}
+    catch(e){rmStat(t("Non sono riuscito ad attivare i promemoria. Controlla la connessione e riprova."),"err");return false;}}
   const perm=await Notification.requestPermission();if(perm!=="granted"){rmNeed("denied");return false;}
   rmStat(t("Attivo i promemoria…"));
   try{const reg=await navigator.serviceWorker.ready;let sub=await reg.pushManager.getSubscription();
@@ -2058,12 +2066,14 @@ async function remEnable(){const p=pushProblem();if(p){rmNeed(p);return false;}
     const k=sub.toJSON().keys;await sbFetch("/rest/v1/rpc/save_push",{body:{p_endpoint:sub.endpoint,p_p256dh:k.p256dh,p_auth:k.auth,p_ua:navigator.userAgent}});
     S.settings.rem.on=1;mark();await remSync(true);rmStat(t("Promemoria attivi su questo dispositivo."),"ok");return true;}
   catch(e){rmStat(t("Non sono riuscito ad attivare i promemoria. Controlla la connessione e riprova."),"err");return false;}}
-async function remDisable(){S.settings.rem.on=0;mark();const sub=await pushSub();
+async function remDisable(){S.settings.rem.on=0;mark();if(NATIVE){await remLocal([]);rmStat(t("Promemoria spenti su questo dispositivo."));return;}const sub=await pushSub();
   try{if(sub)await sbFetch("/rest/v1/rpc/forget_push",{body:{p_endpoint:sub.endpoint}});await sbFetch("/rest/v1/rpc/set_shifts",{body:{items:[]}});}catch(e){}
   try{if(sub)await sub.unsubscribe();}catch(e){}rmStat(t("Promemoria spenti su questo dispositivo."));}
 $("rmOn").addEventListener("change",async()=>{if($("rmOn").checked){const ok=await remEnable();if(!ok)$("rmOn").checked=false;}else await remDisable();$("rmBox").hidden=!$("rmOn").checked;});
 ["rmMin","rmJ2","rmOc"].forEach(id=>$(id).addEventListener("change",()=>{const r=S.settings.rem;r.min=+$("rmMin").value;r.j2=$("rmJ2").checked?1:0;r.oc=$("rmOc").checked?1:0;mark();remSync(true);}));
 $("rmTest").onclick=async()=>{rmStat(t("Invio la notifica di prova…"));
+  if(NATIVE){try{await CAP.LocalNotifications.schedule({notifications:[{id:1,title:t("Prova di {app}",{app:APP}),body:t("Le notifiche funzionano. Riceverai i promemoria prima dei turni."),schedule:{at:new Date(Date.now()+3000),allowWhileIdle:true}}]});
+      rmStat(tn(1,"Notifica inviata a {n} dispositivo.","Notifica inviata a {n} dispositivi."),"ok");}catch(e){rmStat(t("Non sono riuscito a mandare la notifica. Controlla la connessione e riprova."),"err");}return;}
   try{const j=await sbFetch("/functions/v1/push-test",{body:{title:t("Prova di {app}",{app:APP}),body:t("Le notifiche funzionano. Riceverai i promemoria prima dei turni.")}});
     rmStat(j&&j.sent?tn(j.sent,"Notifica inviata a {n} dispositivo.","Notifica inviata a {n} dispositivi."):t("Nessun dispositivo iscritto: spegni e riaccendi i promemoria."),j&&j.sent?"ok":"err");}
   catch(e){rmStat(t("Non sono riuscito a mandare la notifica. Controlla la connessione e riprova."),"err");}};
@@ -2077,9 +2087,15 @@ function remItems(){const r=S.settings.rem,now=Date.now(),lim=now+45*864e5,ms=r.
   if(r.oc&&S.settings.ocOn)Object.keys(S.oc).forEach(k=>{const o=ocRange(k);push(o.start,"oc",t("Reperibilità dalle {h}",{h:hm(o.start)}),t("La reperibilità inizia tra {x}.",{x:minTxt(r.min)}))});
   const seen=new Set();return out.filter(i=>{const id=i.k+i.s;if(seen.has(id))return false;seen.add(id);return true;}).sort((a,b)=>a.s<b.s?-1:1).slice(0,400);}
 let remT=null,remLast="";
-function remSync(now){if(!SB_ON()||!AU||!S.settings.rem.on)return Promise.resolve();clearTimeout(remT);
+/* nell'app: iPhone tiene al massimo 64 notifiche in attesa, quindi le prime 60; si riprogrammano a ogni modifica e quando l'app torna visibile */
+async function remLocal(items){const L=CAP.LocalNotifications;if(!L)return;
+  try{const p=(await L.getPending()).notifications.filter(n=>n.id>=1000);if(p.length)await L.cancel({notifications:p.map(n=>({id:n.id}))});
+    const now=Date.now(),list=items.filter(i=>Date.parse(i.r)>now+5000).sort((a,b)=>a.r<b.r?-1:1).slice(0,60);
+    if(list.length)await L.schedule({notifications:list.map((i,n)=>({id:1000+n,title:i.t,body:i.b,schedule:{at:new Date(i.r),allowWhileIdle:true},extra:{k:i.k,s:i.s}}))});}catch(e){}}
+function remSync(now){if(NATIVE&&!S.settings.rem.on)return Promise.resolve();if(!NATIVE&&(!SB_ON()||!AU||!S.settings.rem.on))return Promise.resolve();clearTimeout(remT);
   return new Promise(res=>{remT=setTimeout(async()=>{const items=remItems(),sig=JSON.stringify(items);
     if(sig===remLast&&!now){res();return;}
+    if(NATIVE){await remLocal(items);remLast=sig;try{localStorage.setItem("myturn-remsync",String(Date.now()));}catch(e){}res();return;}
     try{await sbFetch("/rest/v1/rpc/set_shifts",{body:{items}});remLast=sig;try{localStorage.setItem("myturn-remsync",String(Date.now()));}catch(e){}}catch(e){}res();},now?0:4000);});}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState!=="visible")return;let l=0;try{l=+localStorage.getItem("myturn-remsync")||0;}catch(e){}if(Date.now()-l>6*3600e3)remSync(true);});
 renderAccount();setTimeout(()=>remSync(true),3000);
@@ -2625,7 +2641,8 @@ $("shText").onclick=()=>{const txt=weekText(shMonday());
 $("shForm").addEventListener("submit",ev=>{ev.preventDefault();if(!shCanvas)return;const mon=shMonday(),name="myturn-turni-"+keyOf(mon)+".png";
   shCanvas.toBlob(async blob=>{if(!blob){toast(t("Non sono riuscito a creare l'immagine."));return;}
     const file=new File([blob],name,{type:"image/png"});
-    if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:t("I miei turni")});$("sh").close();}catch(e){if(e&&e.name!=="AbortError")saveFile(name,blob,"image/png");}}
+    if(NATIVE){await nativeShare(name,blob,"image/png",t("I miei turni"));$("sh").close();}
+    else if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:t("I miei turni")});$("sh").close();}catch(e){if(e&&e.name!=="AbortError")saveFile(name,blob,"image/png");}}
     else{saveFile(name,blob,"image/png");$("sh").close();}},"image/png");});
 
 $("repeatBtn").onclick=()=>{const keys=Object.keys(S.days).sort();if(!keys.length){toast(t("Non c'è ancora nessuna settimana da ripetere."));return;}
@@ -2651,11 +2668,16 @@ function bkRender(){const l=bkLast(),n=Object.keys(S.days).length,el=$("bkInfo")
   el.textContent=(l?t("Ultima copia salvata il {d}.",{d:fDMYl(new Date(l))}):t("Non hai ancora salvato una copia."))+" "
     +tn(n,"I turni ({n} giornata) stanno solo su questo dispositivo: salva una copia ogni tanto, per esempio su iCloud Drive, Google Drive o in una mail a te stesso, così non li perdi se cambi telefono.","I turni ({n} giornate) stanno solo su questo dispositivo: salva una copia ogni tanto, per esempio su iCloud Drive, Google Drive o in una mail a te stesso, così non li perdi se cambi telefono.");
   $("toolsBadge").hidden=!bkBadge();}
-async function shareOrSave(name,data,type,title){
+async function nativeShare(name,data,type,title){
+  try{const b=data instanceof Blob?data:new Blob([data],{type}),u8=new Uint8Array(await b.arrayBuffer());let bin="";for(let i=0;i<u8.length;i+=32768)bin+=String.fromCharCode.apply(null,u8.subarray(i,i+32768));
+    const w=await CAP.Filesystem.writeFile({path:name,data:btoa(bin),directory:"CACHE"});
+    await CAP.Share.share({title:title||name,files:[w.uri],dialogTitle:title||name});return true;}
+  catch(e){if(/cancel/i.test(String(e&&(e.message||e))))return false;toast(t("Download non riuscito."));return false;}}
+async function shareOrSave(name,data,type,title){if(NATIVE)return nativeShare(name,data,type,title);
   try{const file=new File([data],name,{type});if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({files:[file],title});return true;}}
   catch(e){if(e&&e.name==="AbortError")return false;}
   saveFile(name,data,type);return true;}
-async function saveFile(filename,data,type){
+async function saveFile(filename,data,type){if(NATIVE){await nativeShare(filename,data,type,filename);return;}
   try{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type}));a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);toast(t("File scaricato."));}catch(e){toast(t("Download non riuscito."));}}
 let pdY=0,pdM=0;
 const pdJob=()=>J2on()&&$("pdj2").checked?2:1;
@@ -2699,11 +2721,12 @@ $("rcGo").onclick=()=>{if(!rcData)return;const nd=rcData.nd,keys=new Set(Object.
 const UP_EVERY=30*60000;
 let upLast=0,upLatest=null,upBusy=false;
 try{upLast=+localStorage.getItem("myturn-upcheck")||0;}catch(e){}
-const canCheck=()=>/^https?:$/.test(location.protocol);
+const canCheck=()=>!NATIVE&&/^https?:$/.test(location.protocol);
 function newer(a,b){const x=String(a).split(".").map(Number),y=String(b).split(".").map(Number);for(let i=0;i<3;i++){if((x[i]||0)!==(y[i]||0))return (x[i]||0)>(y[i]||0);}return false;}
 function renderUpInfo(){$("upCheck").hidden=!canCheck();
   let s=t("Versione {v}.",{v:APP_VERSION})+" ";
-  if(!canCheck())s+=t("Apri l'app dal suo indirizzo web per ricevere gli aggiornamenti.");
+  if(NATIVE)s+=t("Gli aggiornamenti arrivano dall'App Store o da Google Play.");
+  else if(!canCheck())s+=t("Apri l'app dal suo indirizzo web per ricevere gli aggiornamenti.");
   else if(upLatest)s+=t("È disponibile la {v}.",{v:upLatest.version});
   else if(upLast)s+=t("Ultimo controllo: {d}.",{d:new Date(upLast).toLocaleString(LOC,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})});
   else s+=t("Controllo automatico attivo.");
@@ -2813,7 +2836,7 @@ applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();relabelPresets();setNames();translateDom();
   setStatus();render();bkRender();if(!S.settings.setup)obStart();})();
 setInterval(()=>renderNext(workList()),30000);
-if("serviceWorker" in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js").catch(()=>{});
+if(!NATIVE&&"serviceWorker" in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
 </script>
 </body>

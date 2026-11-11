@@ -2,3 +2,5 @@ tools/i18n/keys.json
 tools/countries/__pycache__/
 tools/i18n/__pycache__/
 _t.pdf
+node_modules/
+www/

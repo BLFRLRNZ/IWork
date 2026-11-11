@@ -808,3 +808,4 @@ Sinu e-post; meeldetuletustega järgmise 45 päeva vahetused koos kellaaja ja va
 Parool ei lahku kunagi seadmest: server saab ainult sisselogimiseks tuletatud võtme, millega sinu andmeid avada ei saa. Konto ja kõik serveris olevad andmed saad igal ajal siit kustutada.
 Konto parool
 See on sinu konto parool ja seda ei hoita kusagil. Kui see ununeb, valid e-postiga saadud koodiga uue: serveris olevat koopiat ei saa taastada, kuid andmed jäävad sinu seadmetesse ja koopia luuakse siit uuesti.
+Uuendused tulevad App Store'ist või Google Playst.

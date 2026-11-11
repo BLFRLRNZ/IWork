@@ -808,3 +808,4 @@ Din e-mail; med påmindelser vagterne for de næste 45 dage med tidspunkt og vag
 Adgangskoden forlader aldrig enheden: serveren får kun en nøgle, der er afledt til log ind, og som ikke kan åbne dine data. Du kan slette kontoen og alle data på serveren når som helst, herfra.
 Kontoens adgangskode
 Det er adgangskoden til din konto, og den gemmes ingen steder. Hvis du glemmer den, vælger du en ny med en e-mailkode: kopien på serveren kan ikke gendannes, men dine data bliver på dine enheder, og kopien genskabes herfra.
+Opdateringer kommer fra App Store eller Google Play.

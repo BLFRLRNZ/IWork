@@ -808,3 +808,4 @@ Az e-mail-címed; emlékeztetőkkel a következő 45 nap műszakjai időponttal 
 A jelszó soha nem hagyja el az eszközt: a szerver csak egy bejelentkezéshez származtatott kulcsot kap, amellyel az adataidat nem lehet megnyitni. A fiókot és a szerveren tárolt összes adatot bármikor törölheted, itt.
 A fiók jelszava
 Ez a fiókod jelszava, és sehol sincs elmentve. Ha elfelejted, e-mailes kóddal választasz újat: a szerveren lévő másolat nem állítható vissza, de az adatok az eszközeiden maradnak, és a másolat innen készül újra.
+A frissítések az App Store-ból vagy a Google Playről érkeznek.

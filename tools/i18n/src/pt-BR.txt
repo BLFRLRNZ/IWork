@@ -808,3 +808,4 @@ Seu e-mail; com os lembretes, os turnos dos próximos 45 dias com horário e nom
 A senha nunca sai do dispositivo: o servidor recebe só uma chave derivada para o login, que não serve para abrir seus dados. Você pode excluir a conta e todos os dados no servidor quando quiser, por aqui.
 Senha da conta
 É a senha da sua conta e não fica salva em lugar nenhum. Se você esquecer, escolhe uma nova com um código por e-mail: a cópia no servidor não pode ser recuperada, mas seus dados continuam nos dispositivos e a cópia é recriada a partir daqui.
+As atualizações chegam pela App Store ou pelo Google Play.

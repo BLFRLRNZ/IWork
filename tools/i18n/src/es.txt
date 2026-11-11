@@ -808,3 +808,4 @@ Tu correo; con los recordatorios, los turnos de los próximos 45 días con horar
 La contraseña nunca sale del dispositivo: el servidor solo recibe una clave derivada para iniciar sesión, que no sirve para abrir tus datos. Puedes eliminar la cuenta y todos los datos del servidor cuando quieras, desde aquí.
 Contraseña de la cuenta
 Es la contraseña de tu cuenta y no se guarda en ningún sitio. Si la olvidas, eliges una nueva con un código por correo: la copia del servidor no se puede recuperar, pero tus datos siguen en tus dispositivos y la copia se vuelve a crear desde aquí.
+Las actualizaciones llegan desde la App Store o Google Play.

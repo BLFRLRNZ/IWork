@@ -808,3 +808,4 @@ Tvoj e-naslov; z opomniki izmene za naslednjih 45 dni s časom in imenom izmene,
 Geslo nikoli ne zapusti naprave: strežnik dobi samo ključ, izpeljan za prijavo, s katerim tvojih podatkov ni mogoče odpreti. Račun in vse podatke na strežniku lahko kadar koli izbrišeš, tukaj.
 Geslo računa
 To je geslo tvojega računa in ni nikjer shranjeno. Če ga pozabiš, izbereš novo s kodo po e-pošti: kopije na strežniku ni mogoče obnoviti, a podatki ostanejo na tvojih napravah in kopija se ponovno ustvari od tukaj.
+Posodobitve prihajajo iz App Store ali Google Play.

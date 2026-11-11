@@ -808,3 +808,4 @@ Sähköpostisi; muistutuksilla seuraavan 45 päivän vuorot kellonaikoineen ja v
 Salasana ei koskaan poistu laitteelta: palvelin saa vain kirjautumista varten johdetun avaimen, jolla tietojasi ei voi avata. Voit poistaa tilin ja kaikki palvelimen tiedot milloin tahansa, täältä.
 Tilin salasana
 Se on tilisi salasana, eikä sitä tallenneta mihinkään. Jos unohdat sen, valitset uuden sähköpostikoodin avulla: palvelimen kopiota ei voi palauttaa, mutta tiedot pysyvät laitteillasi ja kopio luodaan uudelleen täältä.
+Päivitykset tulevat App Storesta tai Google Playsta.

@@ -1,0 +1,17 @@
+{
+  "appId": "app.myturn",
+  "appName": "MyTurn",
+  "webDir": "www",
+  "backgroundColor": "#0a0b10",
+  "ios": {
+    "contentInset": "never"
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css"
+    },
+    "LocalNotifications": {
+      "iconColor": "#7C7FFF"
+    }
+  }
+}

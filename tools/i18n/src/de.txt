@@ -808,3 +808,4 @@ Deine E-Mail; mit Erinnerungen die Schichten der nächsten 45 Tage mit Uhrzeit u
 Das Passwort verlässt nie das Gerät: Der Server bekommt nur einen für die Anmeldung abgeleiteten Schlüssel, mit dem sich deine Daten nicht öffnen lassen. Du kannst das Konto und alle Daten auf dem Server jederzeit hier löschen.
 Passwort des Kontos
 Es ist das Passwort deines Kontos und wird nirgends gespeichert. Wenn du es vergisst, wählst du mit einem E-Mail-Code ein neues: Die Kopie auf dem Server lässt sich nicht wiederherstellen, aber deine Daten bleiben auf deinen Geräten und die Kopie wird von hier aus neu erstellt.
+Updates kommen über den App Store oder Google Play.

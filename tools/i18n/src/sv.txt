@@ -808,3 +808,4 @@ Din e-post; med påminnelser passen de kommande 45 dagarna med tid och passnamn,
 Lösenordet lämnar aldrig enheten: servern får bara en nyckel som härletts för inloggning och som inte kan öppna dina uppgifter. Du kan radera kontot och alla uppgifter på servern när du vill, härifrån.
 Kontots lösenord
 Det är lösenordet till ditt konto och det sparas ingenstans. Om du glömmer det väljer du ett nytt med en e-postkod: kopian på servern kan inte återställas, men dina uppgifter finns kvar på dina enheter och kopian skapas om härifrån.
+Uppdateringar kommer från App Store eller Google Play.

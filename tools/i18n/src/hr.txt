@@ -808,3 +808,4 @@ Tvoja e-pošta; s podsjetnicima smjene za sljedećih 45 dana s vremenom i nazivo
 Lozinka nikad ne napušta uređaj: poslužitelj dobiva samo ključ izveden za prijavu, kojim se tvoji podaci ne mogu otvoriti. Račun i sve podatke na poslužitelju možeš izbrisati kad god želiš, odavde.
 Lozinka računa
 To je lozinka tvog računa i nigdje se ne sprema. Ako je zaboraviš, biraš novu kôdom e-poštom: kopija na poslužitelju ne može se vratiti, ali podaci ostaju na tvojim uređajima i kopija se ponovno stvara odavde.
+Ažuriranja stižu iz App Storea ili Google Playa.

@@ -808,3 +808,4 @@ O seu e-mail; com os lembretes, os turnos dos próximos 45 dias com horário e n
 A palavra-passe nunca sai do dispositivo: o servidor só recebe uma chave derivada para iniciar sessão, que não serve para abrir os seus dados. Pode eliminar a conta e todos os dados no servidor quando quiser, a partir daqui.
 Palavra-passe da conta
 É a palavra-passe da sua conta e não é guardada em lado nenhum. Se a esquecer, escolhe uma nova com um código por e-mail: a cópia no servidor não se recupera, mas os dados ficam nos seus dispositivos e a cópia é recriada a partir daqui.
+As atualizações chegam pela App Store ou pelo Google Play.

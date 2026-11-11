@@ -808,3 +808,4 @@ E-mailul tău; cu mementourile, turele din următoarele 45 de zile cu ora și nu
 Parola nu părăsește niciodată dispozitivul: serverul primește doar o cheie derivată pentru conectare, care nu poate deschide datele tale. Poți șterge contul și toate datele de pe server oricând, de aici.
 Parola contului
 Este parola contului tău și nu este salvată nicăieri. Dacă o uiți, alegi una nouă cu un cod pe e-mail: copia de pe server nu se poate recupera, dar datele rămân pe dispozitivele tale și copia este recreată de aici.
+Actualizările vin din App Store sau Google Play.

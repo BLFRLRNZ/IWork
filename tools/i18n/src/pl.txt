@@ -808,3 +808,4 @@ Twój e-mail; przy przypomnieniach zmiany z najbliższych 45 dni z godziną i na
 Hasło nigdy nie opuszcza urządzenia: serwer dostaje tylko klucz wyprowadzony do logowania, którym nie da się otworzyć twoich danych. Konto i wszystkie dane na serwerze możesz usunąć w każdej chwili, stąd.
 Hasło do konta
 To hasło do twojego konta i nie jest nigdzie zapisywane. Jeśli je zapomnisz, wybierzesz nowe za pomocą kodu e-mail: kopii na serwerze nie da się odzyskać, ale dane zostają na twoich urządzeniach, a kopia zostanie odtworzona stąd.
+Aktualizacje przychodzą z App Store lub Google Play.

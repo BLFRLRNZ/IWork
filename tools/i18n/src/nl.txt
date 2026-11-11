@@ -808,3 +808,4 @@ Je e-mailadres; met herinneringen de diensten van de komende 45 dagen met tijd e
 Je wachtwoord verlaat nooit het apparaat: de server krijgt alleen een afgeleide sleutel om in te loggen, waarmee je gegevens niet open kunnen. Je kunt het account en alle gegevens op de server altijd verwijderen, hier.
 Wachtwoord van het account
 Het is het wachtwoord van je account en wordt nergens bewaard. Vergeet je het, dan kies je een nieuw met een e-mailcode: de kopie op de server is niet terug te halen, maar je gegevens blijven op je apparaten en de kopie wordt van hieruit opnieuw gemaakt.
+Updates komen via de App Store of Google Play.

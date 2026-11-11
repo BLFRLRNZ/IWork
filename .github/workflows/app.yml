@@ -1,0 +1,155 @@
+# App per iPhone e Android con Capacitor.
+# 1. Su un Mac di GitHub: crea i progetti ios/ e android/ se mancano, aggiorna icone e impostazioni,
+#    e li salva nel repository. Poi compila l'app iPhone per il simulatore e fa le foto delle prime schermate.
+# 2. Su Linux: compila l'APK Android di prova e fa le foto in un emulatore.
+# Le foto e l'APK si scaricano dalla pagina dell'esecuzione (Actions → App iPhone e Android → Artifacts).
+name: App iPhone e Android
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - countries.js
+      - version.json
+      - lang/**
+      - fonts/**
+      - vendor/**
+      - assets/**
+      - ios/**
+      - android/**
+      - package.json
+      - capacitor.config.json
+      - tools/app/**
+      - .github/workflows/app.yml
+  workflow_dispatch:
+
+concurrency:
+  group: app-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  ios:
+    name: iPhone
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Xcode 26 o più recente
+        run: |
+          XC=$(ls -d /Applications/Xcode_2[6-9]*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$XC" ]; then sudo xcode-select -s "$XC"; fi
+          xcodebuild -version
+      - name: Pacchetti
+        run: npm install --no-audit --no-fund
+      - name: File web in www
+        run: node tools/app/copy-web.js
+      - name: Crea i progetti nativi se mancano
+        run: |
+          [ -d ios ] || npx cap add ios
+          [ -d android ] || npx cap add android
+      - name: Icone e schermata di avvio
+        run: >
+          npx @capacitor/assets generate --ios --android
+          --iconBackgroundColor '#0a0b10' --iconBackgroundColorDark '#0a0b10'
+          --splashBackgroundColor '#0a0b10' --splashBackgroundColorDark '#0a0b10'
+      - name: Impostazioni iPhone
+        run: |
+          P=ios/App/App/Info.plist
+          pl(){ /usr/libexec/PlistBuddy -c "Set :$1 $3" "$P" 2>/dev/null || /usr/libexec/PlistBuddy -c "Add :$1 $2 $3" "$P"; }
+          pl CFBundleDisplayName string MyTurn
+          pl ITSAppUsesNonExemptEncryption bool false
+          pl UIViewControllerBasedStatusBarAppearance bool true
+      - name: Copia l'app nei progetti
+        run: npx cap sync
+      - name: Salva i progetti nel repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ios android
+          if ! git diff --cached --quiet; then
+            git commit -m "App: progetti iOS e Android aggiornati [skip ci]"
+            git pull --rebase origin main && git push origin HEAD:main
+          fi
+      - name: Compila per il simulatore
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Debug \
+            -sdk iphonesimulator -derivedDataPath build/ios CODE_SIGNING_ALLOWED=NO build | tail -40
+      - name: Foto dal simulatore
+        run: |
+          mkdir -p shots
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)['devices']
+          c=[x for k,v in d.items() if 'iOS' in k for x in v if x['name'].startswith('iPhone')]
+          c.sort(key=lambda x:('Pro Max' not in x['name'],x['name']))
+          print(c[0]['udid']);print(c[0]['name'],file=sys.stderr)")
+          xcrun simctl boot "$UDID"; xcrun simctl bootstatus "$UDID" -b
+          APP=$(find build/ios -name App.app -path '*iphonesimulator*' | head -1)
+          xcrun simctl install "$UDID" "$APP"
+          xcrun simctl launch "$UDID" app.myturn
+          sleep 20; xcrun simctl io "$UDID" screenshot shots/ios-1-avvio.png
+          xcrun simctl ui "$UDID" appearance dark; sleep 4; xcrun simctl io "$UDID" screenshot shots/ios-2-scuro.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: foto-iphone
+          path: shots/
+
+  android:
+    name: Android
+    needs: ios
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Pacchetti
+        run: npm install --no-audit --no-fund
+      - name: Copia l'app nel progetto
+        run: node tools/app/copy-web.js && npx cap sync android
+      - name: Compila l'APK di prova
+        run: cd android && chmod +x gradlew && ./gradlew --no-daemon assembleDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: myturn-android-prova
+          path: android/app/build/outputs/apk/debug/*.apk
+      - name: Abilita KVM per l'emulatore
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules && sudo udevadm trigger --name-match=kvm
+      - name: Foto dall'emulatore
+        continue-on-error: true
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_7
+          disable-animations: true
+          script: |
+            mkdir -p shots
+            adb install -r android/app/build/outputs/apk/debug/app-debug.apk
+            adb shell am start -n app.myturn/.MainActivity
+            sleep 25
+            adb exec-out screencap -p > shots/android-1-avvio.png
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: foto-android
+          path: shots/
+          if-no-files-found: ignore
