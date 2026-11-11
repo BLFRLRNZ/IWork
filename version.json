@@ -1,12 +1,12 @@
 {
-  "version": "2.7.0",
+  "version": "2.8.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "L'app ora si chiama MyTurn e ha un nuovo indirizzo: blfrlrnz.github.io/MyTurn. Sull'iPhone toglila dalla schermata Home e aggiungila di nuovo dal nuovo indirizzo.",
-    "en": "The app is now called MyTurn and has a new address: blfrlrnz.github.io/MyTurn. On iPhone, remove it from the Home Screen and add it again from the new address.",
-    "fr": "L'app s'appelle désormais MyTurn et a une nouvelle adresse : blfrlrnz.github.io/MyTurn. Sur iPhone, retirez-la de l'écran d'accueil et ajoutez-la à nouveau depuis la nouvelle adresse.",
-    "de": "Die App heißt jetzt MyTurn und hat eine neue Adresse: blfrlrnz.github.io/MyTurn. Entferne sie auf dem iPhone vom Home-Bildschirm und füge sie über die neue Adresse wieder hinzu.",
-    "es": "La app ahora se llama MyTurn y tiene una nueva dirección: blfrlrnz.github.io/MyTurn. En iPhone, quítala de la pantalla de inicio y vuelve a añadirla desde la nueva dirección.",
-    "pt": "A app agora chama-se MyTurn e tem um novo endereço: blfrlrnz.github.io/MyTurn. No iPhone, remova-a do ecrã principal e adicione-a de novo a partir do novo endereço."
+    "it": "Nuovi promemoria: con un account, il telefono ti avvisa prima di ogni turno, anche con l'app chiusa. Accedi da Impostazioni → Account con un codice che ricevi via email, poi attivali in Strumenti → Promemoria. Senza account l'app funziona come sempre.",
+    "en": "New reminders: with an account, your phone notifies you before each shift, even with the app closed. Sign in from Settings → Account with a code sent by email, then turn them on in Tools → Reminders. Without an account the app works as always.",
+    "fr": "Nouveaux rappels : avec un compte, votre téléphone vous prévient avant chaque poste, même app fermée. Connectez-vous dans Réglages → Compte avec un code reçu par e-mail, puis activez-les dans Outils → Rappels. Sans compte, l'app fonctionne comme toujours.",
+    "de": "Neue Erinnerungen: Mit einem Konto meldet sich dein Handy vor jeder Schicht, auch wenn die App geschlossen ist. Melde dich unter Einstellungen → Konto mit einem Code per E-Mail an und schalte sie unter Werkzeuge → Erinnerungen ein. Ohne Konto funktioniert die App wie immer.",
+    "es": "Nuevos recordatorios: con una cuenta, el teléfono te avisa antes de cada turno, incluso con la app cerrada. Inicia sesión en Ajustes → Cuenta con un código que recibes por correo y actívalos en Herramientas → Recordatorios. Sin cuenta la app funciona como siempre.",
+    "pt": "Novos lembretes: com uma conta, o telemóvel avisa-o antes de cada turno, mesmo com a app fechada. Inicie sessão em Definições → Conta com um código recebido por e-mail e ative-os em Ferramentas → Lembretes. Sem conta a app funciona como sempre."
   }
 }

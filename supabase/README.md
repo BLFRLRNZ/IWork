@@ -47,4 +47,4 @@ Progetto `jszgiqdylsachclshyqm` (nel pannello si chiama "iwork"), Francoforte, p
 
 ## Email
 
-Il servizio email incluso in Supabase manda poche email all'ora, e solo agli indirizzi dei membri del progetto. Va bene per le prove. Per gli utenti veri serve un servizio email esterno (SMTP), per esempio Resend o Brevo, da impostare in **Authentication → SMTP Settings**.
+Le email partono da **Brevo** (piano gratuito), impostato in **Authentication → Emails → SMTP Settings**: host `smtp-relay.brevo.com`, porta 587, utente = il Login SMTP di Brevo, password = una chiave SMTP di Brevo. Il mittente deve essere verificato su Brevo e scritto **identico** (tutto minuscolo) su Supabase, altrimenti Brevo rifiuta l'invio ("sender is not valid"). Gli errori si vedono su Brevo in Transazionale → Log.
