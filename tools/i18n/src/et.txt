@@ -1,0 +1,639 @@
+{n} p
+{d} p {h} t
+{h} t {m} min
+{h} t
+{m} min
+Vahetus
+ja
+Näita summasid
+Peida summad
+Töötatud tunnid
+Ületunnid
+Öötöö
+Pühapäev
+Pühad
+Ligikaudne brutohinnang. Ainult sulle: see ei ilmu PDF-i ega jagatud piltidele.
+Lisa lisatasud
+Sinu vahetused on salvestatud selles seadmes.
+vahetust pole
+poolitatud vahetus {r}
+vahetus {r}
+järgmisel päeval
+{h} tundi vaba aega
+Vaba
+Puhkus
+Tühjenda
+Loo sildid osakondadele või töökohtadele
+Vali vahetus, silt või mõlemad ja puuduta siis päevi. Või puuduta päeva, et määrata ajad, märkmed ja lisatunnid.
+Tühjendamine on sees.
+Puuduta tühjendatavaid päevi ja lõpetamiseks uuesti nuppu.
+Iga puudutatud päev saab vahetuse ja sildi korraga.
+{x} on sees.
+Puuduta täidetavaid päevi ja soovi korral vali ka silt. Lõpetamiseks puuduta uuesti nuppu.
+Puuduta täidetavaid päevi. Lõpetamiseks puuduta uuesti nuppu.
+Silt {x} on sees.
+Puuduta vahetusega päevi, et see lisada või eemaldada.
+Vaba
+puhkus alla {n} t
+{x} lisaks
+Leitud {n} päev
+Leitud {n} päeva
+{h} t tööd
+Märkmetes ega siltides pole päevi, kus oleks „{q}”.
+Laupäev {s} t, teised päevad {w} t.
+Märge
+Alla {n} t puhkust eelmisest vahetusest
+Pausil
+Jätkad <b>{x}</b> pärast. Poolitatud vahetus: {r}.
+Järgmine vahetus
+Planeeritud vahetusi pole
+Puuduta kalendris päeva ja vali algusaeg: lõpp arvutatakse ise.
+Täna
+Homme
+Eile
+Praegu tööl
+Lõpuni <b>{a}</b>. Tehtud {b}.
+Algab <b>{x}</b> pärast.
+Poolitatud: {r}, kokku {h} t.
+Kestab {h} t.
+Ainult {h} t puhkust {a} ja {b} vahel (miinimum on {n}).
+Seitse või enam tööpäeva järjest alates {d}.
+Nädal {d}: {h} t, üle {n}.
+{y}. aastal oled märkinud {n} puhkusepäeva rohkem, kui sulle ette nähtud.
+{y}. aastal oled märkinud {n} puhkusepäeva rohkem, kui sulle ette nähtud.
+{y}. aastal oled märkinud {h} t vaba aega rohkem, kui sulle ette nähtud.
+Kokku {m}
+t, {n} vahetus
+t, {n} vahetust
+Lisatunnid
+Öötunnid, {r}
+Töötatud laupäevad
+Pühapäevad ja pühad
+Puhkus kuus
+Puhkust alles {y}
+Puhkus {y}
+Vaba aeg kuus
+Vaba aega alles
+Haigus
+Tunnipank kuu lõpus
+Tunnipank täna
+Palgahinnang {m}
+Tunnid nädalas
+Riba on täis {n} t juures.
+Tasub üle vaadata
+Kuu kokku
+Ja veel {n} hoiatust: leiad need rakendusest.
+{h} t
+Vahetused
+Öötunnid
+P ja pühad
+Vaba aeg
+Tunnipank
+Tavavahetus {w} t, laupäev {s} t. Loodud rakendusega {app} {d}.
+Vaba ja puudumised
+Öö
+Õhtu
+Hommik
+Muuda silte
+Loo sildid osakondadele, masinatele või töökohtadele
+{a}-tunnine vahetus. Kasuta tavapikkust {b} t
+Tunde rohkem või vähem kui {h}
+Terve päev.
+Ülejäänud päev loetakse tavaliselt töötatuks. Vaba aja tunnid arvatakse maha sulle ettenähtust.
+paus {x}
+{h} öösel
+Tavavahetus {h} t, sest on laupäev.
+Tavavahetus {h} t.
+Päev tühjendatud.
+Sildid käivad vahetusega päevadele: vali ka vahetus.
+Tähelepanu: {y}. aastal oled ületanud ettenähtud puhkuse.
+Oled kasutanud kogu {y}. aasta puhkuse.
+Sul on {y}. aastal jäänud {n} puhkusepäev.
+Sul on {y}. aastal jäänud {n} puhkusepäeva.
+Tähelepanu: {y}. aastal oled ületanud ettenähtud vaba aja.
+Sul on {y}. aastal jäänud {h} t vaba aega.
+t
+Kiirvahetuse {n} nimi
+Nimi
+Kustuta kiirvahetus {n}
+Kiirvahetuse {n} algus
+Esimese osa pikkus tundides
+Kiirvahetuse {n} pikkus tundides
+Pool
+Tava
+Poolitatud
+Jätkub kell, kiirvahetus {n}
+Teise osa pikkus tundides
+Ülejäänu
+Kõige rohkem {n} kiirvahetust
++ Lisa kiirvahetus
+Kiirvahetus „{x}” kustutatud.
+Nt osakond A, press 3, kassa 2
+Silt {n}
+Kustuta silt {n}
+Silt „{x}” eemaldatud {n} päevalt.
+Silt „{x}” eemaldatud {n} päevalt.
+nimetu
+Silt „{x}” kustutatud.
+Aasta
+Kokku {y}
+Märgitud vabad päevad
+Palgahinnang {y}
+Sildid {y}
+{n} päev
+{n} päeva
+Üksikute päevade leidmiseks kasuta kalendri loendivaadet.
+See aasta pole veel alanud.
+Tunnipank algab {d}.
+Saldo seisuga {d}.
+Saldo tänase seisuga.
+Oled töötanud rohkem tunde, kui lepingus on.
+Oled töötanud vähem tunde, kui lepingus on.
+Oled täpselt lepingu järgi.
+Leping <b>{h} t</b> nädalas
+Alates <b>{d}</b>
+Algsaldo <b>{h} t</b>
+Muuda tunnipanga seadeid
+Kasutatud
+Kasutatud
+Planeeritud
+Planeeritud
+Ette nähtud
+päeva märgitud {y}
+tundi märgitud {y}
+Määra, mis sulle ette on nähtud
+päeva üle
+tundi üle
+päeva alles {x}-st
+tundi alles {x}-st
+{a} kasutatud, {b} planeeritud {c}-st
+Oled märkinud rohkem puhkust, kui sulle ette nähtud.
+Oled märkinud rohkem vaba aega, kui sulle ette nähtud.
+Kõik on kasutatud.
+Kõik on kasutatud.
+Peaaegu otsas.
+Peaaegu otsas.
+Tunnid kuus
+{m}: {h} t. Ava kuu
+Kuu
+Tunnid
+Lisa
+Vaba
+Pank
+Kokku
+Kuu kaupa
+Puuduta kuud, et see kalendris avada. Veerg Pank näitab, kui palju iga kuu lisas või vähendas.
+Samm {n}
+Üks päev vähem
+Üks päev rohkem
+Kustuta samm {n}
+Nende valikutega pole täidetavaid päevi.
+Vali alguspäev.
+Tsükkel <b>{a}</b>. Täidan <b>{b}</b> {c} kuni {d}:
+Rakenda {n} päevale
+Rakenda {n} päevale
+{n} nädal
+{n} nädalat
+Graafik rakendatud {n} päevale.
+Graafik rakendatud {n} päevale.
+Minu vahetused, nädal {d}:
+vaba
+Minu vahetused
+{h} t, {n} vahetus
+{h} t, {n} vahetust
+Loodud rakendusega {app}
+See nädal
+Järgmine nädal
+Eelmine nädal
+{n} nädala pärast
+{n} nädala pärast
+{n} nädal tagasi
+{n} nädalat tagasi
+Vahetused kopeeritud: kleebi need sõnumisse.
+Kopeerimine pole siin võimalik.
+Pilti ei õnnestunud luua.
+Kordamiseks pole veel ühtegi nädalat.
+Järgmine nädal on juba täidetud.
+Nädal {a} kopeeritud nädalale {b}.
+Viimane koopia salvestatud {d}.
+Sa pole veel koopiat salvestanud.
+Sinu vahetused ({n} päev) on ainult selles seadmes: salvesta aeg-ajalt koopia, näiteks iCloud Drive'i, Google Drive'i või endale e-kirja, et neid telefoni vahetades mitte kaotada.
+Sinu vahetused ({n} päeva) on ainult selles seadmes: salvesta aeg-ajalt koopia, näiteks iCloud Drive'i, Google Drive'i või endale e-kirja, et neid telefoni vahetades mitte kaotada.
+Fail alla laaditud.
+Allalaadimine ebaõnnestus.
+{n} vahetus
+{n} vahetust
+tühi
+Loo PDF: {m}
+PDF-i ei õnnestunud luua.
+{app} vahetuste koopia
+Koopia salvestatud. Hoia seda turvalises kohas.
+Failis on {n} päev
+Failis on {n} päeva
+{a} kuni {b}
+salvestatud {d}
+Need asendavad praegused vahetused ({n} päev) koos seadetega.
+Need asendavad praegused vahetused ({n} päeva) koos seadetega.
+Need laaditakse koos seadetega.
+See fail pole {app} koopia.
+Koopia laaditud: {n} päev.
+Koopia laaditud: {n} päeva.
+Versioon {v}.
+Ava rakendus selle veebiaadressilt, et saada uuendusi.
+Saadaval on versioon {v}.
+Viimati kontrollitud: {d}.
+Automaatne kontroll on sees.
+Saadaval on {app} {v}
+Uuenda, et saada uusimad muudatused. Sinu vahetused jäävad paika.
+Ava rakendus selle veebiaadressilt, et otsida uuendusi.
+Kontrollin…
+Sul on juba uusim versioon ({v}).
+Ei saa uuendusi kontrollida: kontrolli ühendust.
+Otsi uuendusi
+Uuendan…
+Vaba aeg
+Haige
+Uusaasta
+Kolmekuningapäev
+Vabastamispäev
+Töörahvapüha
+Vabariigi päev
+Neitsi Maarja taevaminemine
+Pühakutepäev
+Neitsi Maarja pärispatuta eostamine
+Esimene jõulupüha
+Teine jõulupüha
+Püha Franciscus
+Ülestõusmispühade 1. püha
+Ülestõusmispühade 2. püha
+iWork
+Kalender
+Muudatused salvestuvad ise.
+Vahetuse algus
+Poolitatud vahetus, kahes osas
+Esimene osa
+Jätkub kell
+Teine osa
+Vahetuse lõpp
+Tunde rohkem või vähem
+Vaba aja tunnid
+Sildid
+Tühjenda päev
+Valmis
+Seaded
+Iga muudatus salvestub ise.
+Tavavahetuse tunnid
+Laupäevase vahetuse tunnid
+Kiirvahetusi ja silte lood ja muudad menüüs Tööriistad, kolme täpiga nupu all.
+Puhkus ja vaba aeg
+Puhkus aastas
+päeva
+Vaba aeg aastas
+Mis sulle aastas ette on nähtud, koos eelmisest aastast ülekantuga. 0 korral on loendur väljas.
+Lepingu nädalatunnid
+Loe alates
+Algsaldo
+Tunnipank võrdleb töötatud tunde lepingu tundidega päevhaaval kuni tänaseni. Puhkus, vaba aeg, haigus, pühapäevad ja pühad ei loe puuduvate tundidena.
+Palk
+Bruto tunnitasu
+€/t
+Öö 22–06
+Lisatasud liituvad: öötund pühapäeval saab nii öö- kui pühapäevalisa. Kui püha langeb pühapäevale, kehtib ainult pühalisa. Hinnang jääb sellesse seadmesse ega ilmu PDF-i ega jagatud piltidele.
+Keel
+Välimus
+Automaatne
+Hele
+Tume
+Uuendused
+Tööriistad
+Täida vahetused
+Tsükliline graafik
+Mitme nädala jooksul korduv muster
+Korda viimast nädalat
+Kopeeri vahetused järgmisse nädalasse
+Kohanda
+Kiirvahetused
+Nupud vahetuse lisamiseks ühe puudutusega
+Osakonnad, masinad, töökohad ühe puudutusega
+Jaga ja ekspordi
+Jaga nädalat
+Pilt või tekst, ükskõik milline nädal
+Kuu PDF
+Soovitud kuu, printimiseks valmis
+Varukoopia
+Salvesta vahetuste koopia
+Fail kõigi vahetuste ja seadetega
+Laadi koopia
+Taasta vahetused varem salvestatud failist
+Sulge
+Need on kalendri kohal olevad nupud: vali üks ja puuduta päevi, et see lisada. Siin lood need, nimetad ümber ning muudad aegu ja pikkust. Iga muudatus salvestub ise.
+Jäta pikkus tühjaks, et kasutada tavapikkust (8 t, laupäeval 6). Oma pikkus kehtib kõigil päevadel. Valikuga „Poolitatud” on vahetusel kaks osa, näiteks 8–12 ja 16–20.
+Osakonnad, masinad, töökohad või mida iganes vajad. Need on kalendri kohal teises reas: vali üks ja puuduta päevi, et see määrata, ka koos vahetusega. Iga muudatus salvestub ise.
++ Lisa silt
+Laadida see koopia?
+Tühista
+Asenda vahetused
+Koosta korduv muster, näiteks 5 hommikut, 2 vaba, 5 õhtut, 2 vaba, ja rakenda seda korraga mitmele nädalale.
+Muster
++ Lisa samm
+Alates päevast
+Mitu nädalat
+Ära muuda juba täidetud päevi
+Jäta pühapäevad vabaks
+Rakenda
+Tagasi sellesse nädalasse
+Kopeeri tekstina
+Jaga pilti
+Vali kuu: saad kalendri vahetuste ja summadega A4-lehel printimiseks.
+Hiljem
+Uuenda
+Ekraan
+Eelmine kuu
+Järgmine kuu
+Kiirsisestus
+Vaade
+Kalendrivaade
+Loendivaade
+Kiirsildistamine
+Otsi märkmetest ja siltidest
+Aasta kokkuvõte
+Eelmine aasta
+Järgmine aasta
+Päeva tüüp
+Pool tundi vähem
+Pool tundi rohkem
+Nt vahetus vahetatud Margusega, osakond B
+Teema
+Üks nädal vähem
+Üks nädal rohkem
+Eelmine nädal
+Järgmine nädal
+Nädala vahetustega pildi eelvaade
+Võta tagasi
+{x}, kaitsepühaku päev
+Kaitsepühaku päev
+{x} (asenduspäev)
+Mitte ükski kindel
+Puudub
+Muu kuupäev…
+Reeglid, {c}: kahe vahetuse vahel vähemalt {r} t puhkust, keskmiselt kõige rohkem {w} t nädalas, iganädalane puhkus {k} t. Nädala esimene päev: {d}.
+Riik ja pühad
+Riik
+Piirkond või maakond
+Kaitsepühak
+Päev
+Kaitsepühaku päev loetakse pühaks kalendris, tunnipangas ja palgas. Kontrolli kuupäeva lepingust või omavalitsusest.
+{c}: kahe vahetuse vahel vähemalt {r} t puhkust, keskmiselt kõige rohkem {w} t nädalas, iganädalane puhkus {k} t. Nädala esimene päev: {d}.
+Öö {r}
+Alusta
+Edasi
+Uus: keel ja riik
+Tere tulemast: {app}
+Vali keel ja riik: rakendus seadistub õigete reeglite ja pühadega. Sinu vahetused jäävad paika.
+Sinu vahetuste kalender. Vali keel.
+Kus sa töötad?
+Sellest sõltuvad pühad, minimaalne puhkus, öötunnid ja valuuta.
+Otsi riiki
+Sinu piirkond
+Mõned pühad kehtivad ainult piirkonnas või linnas. Selle sammu võid vahele jätta ja hiljem muuta.
+Kui sinu linna pole, saad kuupäeva sisestada seadetes.
+Kui pikk on vahetus?
+Nii valid ainult algusaja ja lõpp arvutatakse ise. Saab igal ajal muuta.
+Tavavahetus
+Laupäevane vahetus
+Kõik on valmis
+Nii on rakendus seadistatud. Kõike saad muuta seadetes.
+{w} t, laupäev {s}
+Minimaalne puhkus
+Suurim keskmine
+{h} t nädalas
+Hoiatused puhkuse ja tundide kohta on suunavad ega asenda sinu lepingut.
+Tagasi
+Hoiatuste ja arvutuste reeglid
+t/näd
+Öö alates
+Öö kuni
+Sinu leping võib olla seadusest soodsam: siin saad reegleid kohandada.
+Tagasi riigi reeglite juurde
+{x}, kohalik püha
+Kohalik püha
+Sinu omavalitsuse või lepingu püha: loetakse pühaks kalendris, tunnipangas ja palgas.
+Kui püha langeb pühapäevale, määrab tööandja asenduspäeva.
+Grundlovsdag (5. juuni) ja jõululaupäev pole seadusjärgsed pühad, kuid paljud lepingud neid ette näevad.
+Nelipühade teine päev on sageli „solidaarsuspäev” ja siis töötatakse.
+Baieris on Neitsi Maarja taevaminemine püha ainult valdavalt katoliiklikes omavalitsustes.
+Suur reede ja 5. mai on vabad ainult siis, kui kollektiivleping (CAO) nii ette näeb.
+Vastlapäev on vabatahtlik; igal omavalitsusel on ka oma püha.
+Alates 2025. aastast pole 17. november enam püha; 2026. aastal töötatakse ka 8. mail ja 15. septembril.
+Iga autonoomne piirkond lisab oma pühad (sageli suure neljapäeva) ja muudab neid igal aastal: lisa enda oma kohaliku pühana.
+Pühade laupäevad (Midsommarafton, Julafton, Nyårsafton) pole seadusjärgsed pühad, kuid on peaaegu kõikjal vabad.
+45 tunni piir kehtib tööstuses, kontorites, tehnilisele personalile ja suurtes kaubanduskettides; teistele on see 50. Mõnes omavalitsuses (Fribourg, Solothurn, Aargau) on pühad teised: lisa enda oma kohaliku pühana.
+Ühendkuningriigis pole bank holidays seadusjärgne õigus: see sõltub lepingust. 48 tunni piirist saab kirjalikult loobuda (opt-out).
+Töö- ja puhkeaeg järgivad peamiselt San Marino kollektiivlepinguid: kontrolli allolevaid väärtusi.
+Kui püha langeb pühapäevale, on esmaspäev vaba.
+45 tunni piir kehtib tööstuses, kontorites ja suurtes kaubanduskettides; teistele on see 50.
+{c}: seadus ei määra kahe vahetuse vahele minimaalset puhkust. Rakendus hoiatab alla {r} t ja üle {w} t nädalas. Nädala esimene päev: {d}.
+Föderaalpühad kehtivad seaduse järgi ainult föderaaltöötajatele: erasektoris sõltub see lepingust. Igal osariigil on oma pühad: lisa enda oma kohaliku pühana.
+Töö- ja puhkeaeg võivad provintsiti erineda: kontrolli allolevaid väärtusi. Newfoundland ja Labrador pole veel kaasatud.
+Föderaal- ja kohalike valimiste päevad on vabad ka neile, kes peavad hääletama.
+Karneval ja Kristuse ihu ja vere püha on „ponto facultativo”; iga osariik ja omavalitsus lisab oma pühad: lisa enda oma kohaliku pühana.
+Valitsus võib liikuvaid pühi (17. juuni, 17. august, 12. oktoober, 20. november) nihutada ja lisada vabu päevi: siin näed seadusega määratud kuupäevi.
+Paljud kollektiivlepingud (awards) näevad ette 10 t puhkust vahetuste vahel. Mõned pühad kehtivad ainult teatud piirkondades (Royal Show, Regatta, Recreation Day): saad enda oma lisada kohaliku pühana.
+Igal provintsil on oma Anniversary Day: kui sinu oma loendis pole, lisa see kohaliku pühana.
+Puudub
+Tunnid ja leping
+Tööaeg
+Vahetuste pikkus, minimaalne puhkus, öötunnid
+Mitu päeva ja tundi sulle ette nähtud on
+Lepingu tunnid ja algsaldo
+Palgahinnang
+Tunnitasu ja lisatasud, ainult sulle
+Teine töö
+Valve
+Valve sees.
+Puuduta päevi, et see lisada või eemaldada, ka puhkepäevadel. Saad selle valida koos vahetusega.
+Iga puudutatud päev saab vahetuse ja valve korraga.
+{h} h väljakutset
+Väljakutse tunnid
+Teist tööd arvestatakse eraldi: see ei lähe põhitöö tunnipanka, puhkusesse ega hoiatustesse.
+Põhitöö
+Loodud rakendusega {app} {d}.
+Kiirvahetuse {n} töö
+{n} kuu
+{n} kuud
+Vahetused: {x}
+<b>{n}</b> vahemikus {a} kuni {b}.
+{n} sündmus
+{n} sündmust
+Vahemikus {a} kuni {b} pole vahetusi, mida eksportida.
+Alates
+Kestus
+Väljakutse
+Väljakutse tunnid loetakse töötatuks ja palgahinnangus makstakse need ületunnina.
+Algus
+Teine töö oma aegade ja arvestusega
+Ekspordi kalendrisse
+Google, Apple või Outlook kalender
+Mul on valvevahetusi
+Tavaliselt alates
+Kalendri kohal on nupp Valve: vali see ja puuduta päevi, ka puhkepäevi. Väljakutse tunnid märgid päeva puudutades.
+Valvetasu
+Iga valve eest. Väljakutse tunnid makstakse ületunnina.
+Mul on teine töö
+Tavaline kestus
+Teise töö vahetused on samadel päevadel teisel real, türkiissinise ruuduga. Määrad need teise töö kiirvahetustega või päeva puudutades. Tunnid ja palk arvestatakse eraldi: need ei lähe põhitöö tunnipanka, puhkusesse ega hoiatustesse.
+Vali iga kiirvahetuse jaoks, kas see kuulub põhitööle või teisele tööle. Teise töö vahetustel on türkiissinine ruut.
+Loo fail oma vahetustega, mida avada Google'i kalendris, Apple'i kalendris või Outlookis.
+Mitu kuud
+Mida eksportida
+Töövahetused
+Puhkus, vaba aeg ja haigus, terve päevana
+Meeldetuletus
+30 minutit enne
+1 tund enne
+2 tundi enne
+Kuidas see kalendris avada
+iPhone, iPad ja Mac.
+Ava fail ja vali Lisa kõik, seejärel kalender, kuhu need panna.
+Google'i kalender.
+Ava arvutis calendar.google.com, mine Seaded, Import ja eksport, ning laadi fail üles. Androidis saad selle avada ka otse Google'i kalendriga.
+Outlook.
+Ava fail Outlookiga või mine outlook.com-is kalendrisse, Lisa kalender, Laadi üles failist.
+Kui ekspordid sama perioodi uuesti, uuendatakse juba imporditud vahetused tavaliselt, mitte ei dubleerita. Rakenduses tühjendatud päevad tuleb käsitsi eemaldada. Nõuanne: kasuta ainult vahetuste jaoks eraldi kalendrit, siis saad selle tühjendada ja uuesti importida, kui need muutuvad.
+Loo fail
+Nt baar, eratunnid, kullerteenus
+Üks kuu vähem
+Üks kuu rohkem
+Töö
+Ületunnid
+Kasutatud puhkus
+Kasutatud vaba aeg
+Brutosumma
+{n} erinevus sinu märgitud tundidega
+{n} erinevust sinu märgitud tundidega
+Palgalehe read vastavad sellele, mida märkisid.
+Märgitud
+Palgalehel
+Palgalehel {v} vähem
+Palgalehel {v} rohkem
+Rakenduse hinnang, ainult suunav
+Palgaleht ({a}): tunde võrreldakse kuuga {b}.
+Palgaleht: {m}
+märgitud {a}, palgalehel {b}
+Väljamaksmisele
+Ava palgaleht
+palgaleht sisestatud
+palgaleht puudub
+Laadi PDF: {m}
+Palgaleht kustutatud: {m}.
+Loen palgalehte…
+Vale parool, proovi uuesti.
+PDF on parooliga kaitstud. Sageli on see sinu isikukood või tööandja antud parool.
+PDF-lugejat ei õnnestu laadida. Kontrolli ühendust ja proovi uuesti.
+Seda faili ei saa avada. Kas see on PDF?
+Selles PDF-is pole teksti, äkki on see skaneering või foto. Sisesta numbrid käsitsi.
+Ma ei tundnud selle palgalehe ridu ära. Sisesta numbrid käsitsi: ainult need, mis sind huvitavad.
+ületunnid
+öötöö
+pühapäevad ja pühad
+kasutatud puhkus
+kasutatud vaba aeg
+puhkust alles
+vaba aega alles
+brutosumma
+netosumma
+Palgaleht: {m}.
+Lugesin: {x}.
+Kontrolli esiletõstetud numbreid ja täida puuduvad käsitsi.
+See näib olevat lisapalgaga palgaleht: kontrolli brutosummat hoolikalt.
+Fail on palgalehe jaoks liiga suur.
+Palgaleht
+Kontrolli makstud tunde ja ridu
+Laadi palgalehe PDF või sisesta numbrid: rakendus võrdleb neid märgitud tundidega.
+PDF-i parool
+Ava
+PDF-i loetakse ainult selles seadmes ja seda ei salvestata: rakendus hoiab ainult allolevaid numbreid.
+Palgalehel
+Puhkust alles
+Ületunnid ja lisatasud on eelmise kuu omad
+Paljud tööandjad maksavad ületunnid, öö- ja pühadetöö järgmisel kuul. Kui sinul on nii, lülita see sisse: võrdlus kasutab õiget kuud.
+Kustuta
+Vahetuste märkimine
+Kuidas vahetust märkida?
+Vali kalendri kohal kiirvahetus, näiteks {a}, ja puuduta päevi: igaüks saab selle vahetuse. Lõpetamiseks puuduta nuppu uuesti. Muu aja jaoks puuduta päeva ja kirjuta algus ja kestus.
+Kuidas päeva muuta või tühjendada?
+Puuduta päeva: kaardil muudad tüüpi, aega, tunde rohkem või vähem, silte ja märkust ning kõik salvestub ise. {a} kustutab selle. Mitme päeva tühjendamiseks vali kalendri kohal {b} ja puuduta päevi. Pärast iga muudatust saad selle all olevast teatest tagasi võtta.
+Kuidas märkida puhkepäevi, puhkust, vaba aega ja haigust?
+{a} ja {b} on oma nupuga kalendri kohal: vali see ja puuduta päevi. {c} või {d} jaoks puuduta päeva ja vali kaardil tüüp; vaba aja puhul kirjutad ka tunnid.
+Kuidas märkida ületunde või jagatud vahetust?
+Kasuta päeva kaardil {a} ületundide või varem lahkumise jaoks. {b} abil märgid mõlemad osad, näiteks 8–12 ja 16–20.
+Kuidas luua oma kiirvahetusi?
+Ava {p} ja vali iga nupu nimi, algusaeg ja kestus. Need võivad olla jagatud vahetused ja teise töö korral kuuluda sellele tööle.
+Töötan alati sama graafikuga: kas kalender saab end ise täita?
+Jah: kirjelda {p} all mustrit (näiteks 5 hommikut, 2 vaba, 5 ööd, 2 vaba), alguspäeva ja kuni millal. {q} abil kopeerid hoopis ühe nädala järgmisele.
+Milleks on sildid?
+Need märgivad osakonda, masinat või töökohta. Lood need {p} all; siis valid need kalendri kohal ja puudutad päevi, ka koos vahetusega.
+Kuidas leida päeva, märkust või silti?
+Lülitu kiirvahetuste kõrval oleva nupuga loendivaatesse: ilmub otsing märkustest ja siltidest. Vaheleht {a} näitab kogu aasta kokkuvõtteid kuude kaupa.
+Tunnid, leping ja palk
+Mida tähendavad hoiatused kuu lõpus?
+Rakendus kontrollib sinu riigi reegleid: minimaalne puhkus kahe vahetuse vahel, keskmised tunnid nädalas, seitse tööpäeva järjest. Kui sinu leping on teistsugune, muuda väärtusi {p} all.
+Kuidas tunnipank töötab?
+Kirjuta {p} all lepingu nädalatunnid, millest alates lugeda ja vajadusel algsaldo. Rakendus võrdleb töötatud tunde nõutavatega ja näitab saldot kuu kokkuvõttes.
+Kuidas puhkusel ja vabal ajal silma peal hoida?
+Kirjuta {p} all, mitu puhkusepäeva ja vaba aja tundi sul aastas on. Rakendus loeb kasutatud ja planeeritud ning ütleb, palju alles on.
+Kuidas palgahinnang töötab?
+Kirjuta {p} all bruto tunnipalk ja lisatasud. See on suunav hinnang ainult sulle: see ei ilmu kunagi PDF-i ega jagatud piltidele ja summad saab peita.
+Kuidas valvet märkida?
+Lülita see sisse {p} all. Kalendri kohale ilmub nupp {a}: vali see ja puuduta päevi, ka puhkepäevi. Väljakutse tunnid kirjutad päeva kaardile; valvetasu seadistad {q} all.
+Mul on teine töö: kuidas seda eraldi hoida?
+Lülita see sisse {p} all, nime, kestuse ja palgaga. Selle vahetustel on oma kiirnupud ja need on päevadel teisel real. Tunnid ja palk arvestatakse eraldi ning kuu PDF-i saab teha mõlema töö kohta.
+Kuidas palgalehte kontrollida?
+Vali {p} all kuu ja laadi PDF: rakendus loeb ületunnid, öötöö, pühad, puhkuse, vaba aja, bruto ja väljamakse ning võrdleb neid märgitud tundidega. Kui palgaleht on paberil, sisesta numbrid käsitsi.
+Palgalehte ei loeta või numbrid ei klapi: mida teha?
+Kui PDF on skaneering või foto, pole selles loetavat teksti: sisesta numbrid käsitsi. Kui see on kaitstud, küsib rakendus parooli. Kontrolli alati esiletõstetud numbreid ja lülita sisse {a}, kui tööandja maksab ületunnid ja lisatasud järgmisel kuul.
+Jagamine ja eksport
+Kuidas kellelegi nädala vahetusi saata?
+Vali {p} all nädal ja saada see pildi või tekstina, näiteks vestluses.
+Kuidas kuud printida?
+Vali {p} all kuu: saad A4-lehe kalendri ja kokkuvõtetega printimiseks või saatmiseks.
+Kuidas panna vahetused Google'i kalendrisse, Apple'i kalendrisse või Outlooki?
+Vali {p} all algus, mitu kuud ja mida kaasata, siis ava fail oma kalendriga: samal ekraanil on sammud igaühe jaoks. Kui ekspordid sama perioodi uuesti, uuendatakse vahetused tavaliselt, mitte ei dubleerita.
+Andmed, rakendus ja seaded
+Kus mu vahetused salvestatakse?
+Ainult selles seadmes, brauseris. Kontot pole vaja ja midagi ei saadeta serverisse.
+Kuidas teha koopiat või minna üle teisele telefonile?
+{p} abil saad faili vahetuste ja seadetega. Teises telefonis ava rakendus ja kasuta {q}. Täpp {a} peal tuletab meelde, millal on aeg koopia teha.
+Kas brauseri andmete kustutamisel kaovad mu vahetused?
+Jah, kui sul pole koopiat. Seepärast tasub aeg-ajalt üks salvestada, eriti enne telefoni vahetamist.
+Kuidas rakendust telefoni installida?
+iPhone'is ava rakendus Safaris, puuduta Jaga ja siis Lisa avakuvale. Androidis ava Chrome'i menüü ja vali Installi rakendus või Lisa avaekraanile. Installituna töötab see ka ilma internetita.
+Kuidas rakendust uuendada?
+Kui on uus versioon, ilmub üles teade: puuduta {a}. Sinu vahetused jäävad alles.
+Kuidas muuta riiki, pühi, keelt või teemat?
+Vali {p} all riik ja piirkond pühade jaoks, keel ning hele või tume teema. Kohalikud pühad, mida rakendus ei tea, märgi puhkepäevaks.
+Vii mind sinna
+Ava juhend
+Abi
+Juhend ja korduma kippuvad küsimused
+Kuidas asju teha, samm-sammult
+Juhend
+Vastust ei leitud. Proovi teisi sõnu.
+Otsi juhendist
+Näitan minutiga, kuidas see töötab. Võid igal ajal vahele jätta ja tuuri juhendist uuesti vaadata.
+Vali vahetus ja puuduta kalendris päevi, et see määrata. Lõpetamiseks puuduta nuppu uuesti. {a}, {b} ja {c} töötavad samamoodi.
+Kalender
+Puuduta päeva, et avada selle kaart: aeg, ületunnid, vaba aeg, haigus ja märkused. Kõik salvestub ise ja alati saab all olevast teatest tagasi võtta.
+Järgmine vahetus
+Siin üleval näed alati järgmist vahetust või käimasolevat.
+Kuu kokkuvõte
+Töötunnid, ületunnid, ööd ja pühad kuus, hoiatustega, kui vahetus rikub puhkeaja reegleid.
+Kalender ja Aasta
+Mine vahelehele Aasta, et näha kogu aasta kokkuvõtteid kuude kaupa.
+Siin on kõik muu: graafik, puhkus ja vaba aeg, tunnipank, palgahinnang, palgaleht, kuu PDF, eksport kalendrisse, andmete koopia ja juhend.
+Riik ja pühad, keel ning hele või tume teema.
+Alusta selle nädala vahetuste märkimisest.
+{n} / {m}
+Jäta vahele
+Alustame
+Vaata tuuri uuesti

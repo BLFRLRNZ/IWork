@@ -1,0 +1,639 @@
+{n} j
+{d} j {h} h
+{h} h {m} min
+{h} h
+{m} min
+Poste
+et
+Afficher les montants
+Masquer les montants
+Heures travaillées
+Heures supplémentaires
+Travail de nuit
+Dimanche
+Jours fériés
+Estimation brute indicative. Elle est pour vous seul : elle n'apparaît ni dans le PDF ni dans les images partagées.
+Ajouter les majorations
+Vos postes sont enregistrés sur cet appareil.
+aucun poste
+poste coupé {r}
+poste {r}
+du lendemain
+{h} heures d'absence autorisée
+Repos
+Congés
+Effacer
+Créer des étiquettes (services, postes)
+Choisissez un poste, une étiquette ou les deux, puis touchez les jours. Ou touchez un jour pour les horaires, les notes et les heures en plus.
+Effacer est actif.
+Touchez les jours à vider, puis touchez de nouveau le bouton pour terminer.
+Chaque jour touché reçoit le poste et l'étiquette ensemble.
+{x} est actif.
+Touchez les jours à remplir, et choisissez aussi une étiquette si vous voulez. Touchez de nouveau le bouton pour terminer.
+Touchez les jours à remplir. Touchez de nouveau le bouton pour terminer.
+Étiquette {x} active.
+Touchez les jours avec un poste pour l'ajouter ou l'enlever.
+Libre
+repos de moins de {n} heures
+{x} en plus
+{n} jour trouvé
+{n} jours trouvés
+{h} heures de travail
+Aucun jour avec « {q} » dans les notes ou les étiquettes.
+Samedi {s} heures, les autres jours {w} heures.
+Note
+Moins de {n} heures de repos depuis le poste précédent
+En pause
+Reprise dans <b>{x}</b>. Poste coupé : {r}.
+Prochain poste
+Aucun poste prévu
+Touchez un jour du calendrier et choisissez l'heure de début : la fin se calcule toute seule.
+Aujourd'hui
+Demain
+Hier
+En poste maintenant
+Encore <b>{a}</b> avant la fin. Vous avez fait {b}.
+Commence dans <b>{x}</b>.
+Coupé : {r}, {h} heures au total.
+Dure {h} heures.
+Seulement {h} heures de repos entre {a} et {b} (le minimum est de {n}).
+Sept jours de travail ou plus d'affilée à partir du {d}.
+Semaine du {d} : {h} heures, au-dessus de {n}.
+En {y}, vous avez noté {n} jour de congé de plus que ceux auxquels vous avez droit.
+En {y}, vous avez noté {n} jours de congé de plus que ceux auxquels vous avez droit.
+En {y}, vous avez noté {h} heures d'absence de plus que celles auxquelles vous avez droit.
+Total de {m}
+heures en {n} poste
+heures en {n} postes
+Heures en plus
+Heures de nuit, {r}
+Samedis travaillés
+Dimanches et jours fériés
+Congés du mois
+Congés restants en {y}
+Congés en {y}
+Absences du mois
+Absences restantes
+Maladie
+Banque d'heures en fin de mois
+Banque d'heures aujourd'hui
+Estimation de la paie de {m}
+Heures par semaine
+La barre est pleine à {n} heures.
+À vérifier
+Total du mois
+Et {n} autres alertes : vous les trouverez dans l'app.
+{h} heures
+Postes
+Heures de nuit
+Dim. et fériés
+Absences
+Banque d'heures
+Poste standard {w} heures, samedi {s} heures. Créé avec {app} le {d}.
+Repos et absences
+Nuit
+Après-midi
+Matin
+Modifier les étiquettes
+Créer des étiquettes pour services, machines ou postes de travail
+Poste de {a} heures. Utiliser la durée standard de {b} heures
+Heures en plus ou en moins par rapport aux {h}
+Journée entière.
+Le reste de la journée compte comme travaillé normalement. Les heures d'absence sont déduites de celles auxquelles vous avez droit.
+pause {x}
+{h} de nuit
+Poste standard de {h} heures car c'est samedi.
+Poste standard de {h} heures.
+Journée vidée.
+Les étiquettes vont sur les jours avec un poste : choisissez aussi un poste.
+Attention : en {y}, vous avez dépassé les congés auxquels vous avez droit.
+Vous avez utilisé tous vos congés de {y}.
+Il vous reste {n} jour de congé en {y}.
+Il vous reste {n} jours de congé en {y}.
+Attention : en {y}, vous avez dépassé les absences auxquelles vous avez droit.
+Il vous reste {h} heures d'absence en {y}.
+h
+Nom du poste rapide {n}
+Nom
+Supprimer le poste rapide {n}
+Début du poste rapide {n}
+Durée de la première partie en heures
+Durée du poste rapide {n} en heures
+Moitié
+Standard
+Coupé
+Reprise à, poste rapide {n}
+Durée de la deuxième partie en heures
+Le reste
+{n} postes rapides au maximum
++ Ajouter un poste rapide
+Poste rapide « {x} » supprimé.
+Ex. Service A, Presse 3, Caisse 2
+Étiquette {n}
+Supprimer l'étiquette {n}
+Étiquette « {x} » retirée de {n} jour.
+Étiquette « {x} » retirée de {n} jours.
+sans nom
+Étiquette « {x} » supprimée.
+Année
+Total de {y}
+Repos notés
+Estimation de la paie de {y}
+Étiquettes en {y}
+{n} jour
+{n} jours
+Pour retrouver un jour précis, utilisez la vue liste du calendrier.
+Cette année n'a pas encore commencé.
+La banque d'heures commence le {d}.
+Solde au {d}.
+Solde à ce jour.
+Vous avez travaillé plus d'heures que prévu au contrat.
+Vous avez travaillé moins d'heures que prévu au contrat.
+Vous êtes à jour avec votre contrat.
+Contrat <b>{h} h</b> par semaine
+Depuis le <b>{d}</b>
+Départ <b>{h} h</b>
+Modifier les réglages de la banque d'heures
+Pris
+Pris
+Prévus
+Prévus
+Droit annuel
+jours notés en {y}
+heures notées en {y}
+Indiquez votre droit annuel
+jours en trop
+heures en trop
+jours restants sur {x}
+heures restantes sur {x}
+{a} pris, {b} prévus sur {c}
+Vous avez noté plus de congés que ceux auxquels vous avez droit.
+Vous avez noté plus d'absences que celles auxquelles vous avez droit.
+Vous les avez tous pris.
+Vous les avez toutes prises.
+Vous êtes presque au bout.
+Vous êtes presque au bout.
+Heures par mois
+{m} : {h} heures. Ouvrir le mois
+Mois
+Heures
+En plus
+Abs.
+Banque
+Total
+Mois par mois
+Touchez un mois pour l'ouvrir dans le calendrier. La colonne Banque montre ce que chaque mois a ajouté ou retiré.
+Étape {n}
+Un jour de moins
+Un jour de plus
+Supprimer l'étape {n}
+Aucun jour à remplir avec ces choix.
+Choisissez le jour de départ.
+Cycle de <b>{a}</b>. Je remplis <b>{b}</b> du {c} au {d} :
+Appliquer à {n} jour
+Appliquer à {n} jours
+{n} semaine
+{n} semaines
+Rotation appliquée à {n} jour.
+Rotation appliquée à {n} jours.
+Mes postes, semaine du {d} :
+libre
+Mes postes
+{h} heures en {n} poste
+{h} heures en {n} postes
+Créé avec {app}
+Cette semaine
+Semaine prochaine
+Semaine dernière
+Dans {n} semaine
+Dans {n} semaines
+Il y a {n} semaine
+Il y a {n} semaines
+Postes copiés : collez-les dans un message.
+La copie n'est pas disponible ici.
+Impossible de créer l'image.
+Il n'y a pas encore de semaine à répéter.
+La semaine suivante est déjà remplie.
+Semaine du {a} répétée sur celle du {b}.
+Dernière copie enregistrée le {d}.
+Vous n'avez pas encore enregistré de copie.
+Vos postes ({n} jour) ne sont que sur cet appareil : enregistrez une copie de temps en temps, par exemple sur iCloud Drive, Google Drive ou dans un e-mail à vous-même, pour ne pas les perdre si vous changez de téléphone.
+Vos postes ({n} jours) ne sont que sur cet appareil : enregistrez une copie de temps en temps, par exemple sur iCloud Drive, Google Drive ou dans un e-mail à vous-même, pour ne pas les perdre si vous changez de téléphone.
+Fichier téléchargé.
+Échec du téléchargement.
+{n} poste
+{n} postes
+vide
+Créer le PDF de {m}
+Impossible de créer le PDF.
+Copie des postes {app}
+Copie enregistrée. Gardez-la en lieu sûr.
+Le fichier contient {n} jour
+Le fichier contient {n} jours
+du {a} au {b}
+enregistrée le {d}
+Ils remplaceront les postes que vous avez maintenant ({n} jour), avec les réglages.
+Ils remplaceront les postes que vous avez maintenant ({n} jours), avec les réglages.
+Ils seront chargés avec les réglages.
+Ce fichier n'est pas une copie de {app}.
+Copie chargée : {n} jour.
+Copie chargée : {n} jours.
+Version {v}.
+Ouvrez l'app depuis son adresse web pour recevoir les mises à jour.
+La version {v} est disponible.
+Dernière vérification : {d}.
+Vérification automatique activée.
+{app} {v} est disponible
+Mettez à jour pour avoir les dernières nouveautés. Vos postes restent où ils sont.
+Ouvrez l'app depuis son adresse web pour chercher des mises à jour.
+Vérification…
+Vous avez déjà la dernière version ({v}).
+Impossible de vérifier les mises à jour : vérifiez la connexion.
+Rechercher des mises à jour
+Mise à jour…
+Absence
+Mal.
+Jour de l'An
+Épiphanie
+Libération
+Fête du Travail
+Fête de la République
+Assomption
+Toussaint
+Immaculée Conception
+Noël
+Saint-Étienne
+Saint François
+Pâques
+Lundi de Pâques
+iWork
+Calendrier
+Les modifications s'enregistrent toutes seules.
+Début du poste
+Poste coupé, en deux parties
+Première partie
+Reprise à
+Deuxième partie
+Fin du poste
+Heures en plus ou en moins
+Heures d'absence
+Étiquettes
+Vider le jour
+OK
+Réglages
+Chaque modification s'enregistre toute seule.
+Heures du poste normal
+Heures du poste du samedi
+Les postes rapides et les étiquettes se créent et se modifient depuis Outils, le bouton aux trois points.
+Congés et absences
+Congés par an
+jours
+Absences par an
+Ce à quoi vous avez droit sur un an, reliquat de l'année précédente compris. À 0, le compteur reste éteint.
+Heures hebdomadaires du contrat
+Compter depuis le
+Solde de départ
+La banque d'heures compare les heures travaillées à celles du contrat, jour après jour jusqu'à aujourd'hui. Congés, absences, maladie, dimanches et jours fériés ne comptent pas comme heures manquantes.
+Paie
+Salaire horaire brut
+€/h
+Nuit 22–06
+Les majorations s'additionnent : une heure de nuit un dimanche reçoit la majoration de nuit et celle du dimanche. Si un jour férié tombe un dimanche, seule la majoration de jour férié s'applique. L'estimation reste sur cet appareil et n'apparaît ni dans le PDF ni dans les images partagées.
+Langue
+Apparence
+Automatique
+Clair
+Sombre
+Mises à jour
+Outils
+Remplir les postes
+Rotation cyclique
+Un schéma qui se répète, sur plusieurs semaines
+Répéter la dernière semaine
+Copier les postes sur la semaine suivante
+Personnaliser
+Postes rapides
+Les boutons pour attribuer un poste d'un seul geste
+Services, machines, postes de travail à attribuer d'un seul geste
+Partager et exporter
+Partager la semaine
+Image ou texte, n'importe quelle semaine
+PDF du mois
+Le mois de votre choix, prêt à imprimer
+Sauvegarde
+Enregistrer une copie des postes
+Un fichier avec tous les postes et les réglages
+Charger une copie
+Récupérer les postes depuis un fichier enregistré avant
+Fermer
+Ce sont les boutons au-dessus du calendrier : choisissez-en un et touchez les jours pour l'attribuer. Ici, vous les créez, les renommez et changez horaires et durée. Chaque modification s'enregistre toute seule.
+Laissez la durée vide pour utiliser la durée standard (8 heures, 6 le samedi). Une durée propre vaut pour tous les jours. Avec « Coupé », le poste a deux parties, par exemple 8–12 et 16–20.
+Services, machines, postes de travail ou ce dont vous avez besoin. Elles apparaissent sur la deuxième ligne au-dessus du calendrier : choisissez-en une et touchez les jours pour l'attribuer, avec un poste si vous voulez. Chaque modification s'enregistre toute seule.
++ Ajouter une étiquette
+Charger cette copie ?
+Annuler
+Remplacer les postes
+Construisez le schéma qui se répète, par exemple 5 matins, 2 repos, 5 après-midi, 2 repos, et appliquez-le à plusieurs semaines d'un coup.
+Schéma
++ Ajouter une étape
+À partir du
+Pendant combien de semaines
+Ne pas toucher les jours déjà remplis
+Laisser les dimanches libres
+Appliquer
+Revenir à cette semaine
+Copier en texte
+Partager l'image
+Choisissez le mois : vous obtenez le calendrier avec les postes et les totaux, sur une feuille A4 à imprimer.
+Plus tard
+Mettre à jour
+Écran
+Mois précédent
+Mois suivant
+Saisie rapide
+Vue
+Vue calendrier
+Vue liste
+Étiquetage rapide
+Chercher dans les notes et les étiquettes
+Bilan de l'année
+Année précédente
+Année suivante
+Type de journée
+Une demi-heure de moins
+Une demi-heure de plus
+Ex. échange de poste avec Marc, service B
+Thème
+Une semaine de moins
+Une semaine de plus
+Semaine précédente
+Semaine suivante
+Aperçu de l'image avec les postes de la semaine
+Annuler
+{x}, fête patronale
+Fête patronale
+{x} (jour de récupération)
+Aucune en particulier
+Aucun
+Une autre date…
+Règles pour {c} : au moins {r} heures de repos entre deux postes, au maximum {w} heures par semaine en moyenne, repos hebdomadaire de {k} heures. La semaine commence le {d}.
+Pays et jours fériés
+Pays
+Région ou province
+Saint patron
+Jour
+La fête patronale compte comme jour férié dans le calendrier, la banque d'heures et la paie. Vérifiez la date avec votre contrat ou votre commune.
+{c} : au moins {r} heures de repos entre deux postes, au maximum {w} heures par semaine en moyenne, repos hebdomadaire de {k} heures. La semaine commence le {d}.
+Nuit {r}
+Commencer
+Suivant
+Nouveau : langue et pays
+Bienvenue dans {app}
+Choisissez la langue et le pays : l'app se règle avec les bonnes règles et les bons jours fériés. Vos postes restent où ils sont.
+Le calendrier de vos postes. Choisissez la langue.
+Où travaillez-vous ?
+Cela sert pour les jours fériés, le repos minimum, les heures de nuit et la devise.
+Chercher un pays
+Votre zone
+Certains jours fériés ne valent que dans une région ou une ville. Vous pouvez passer cette étape et la changer plus tard.
+Si votre ville n'y est pas, vous pourrez saisir la date dans les Réglages.
+Combien dure un poste ?
+Ainsi, vous choisissez seulement l'heure de début et la fin se calcule toute seule. Modifiable à tout moment.
+Poste normal
+Poste du samedi
+Tout est prêt
+Voici comment l'app est réglée. Vous pouvez tout changer dans les Réglages.
+{w} heures, samedi {s}
+Repos minimum
+Moyenne maximale
+{h} heures par semaine
+Les alertes sur le repos et les heures sont indicatives et ne remplacent pas votre contrat.
+Retour
+Règles utilisées pour les alertes et les totaux
+h/sem.
+Nuit à partir de
+Nuit jusqu'à
+Votre contrat peut être plus favorable que la loi : vous pouvez adapter les règles ici.
+Revenir aux règles du pays
+{x}, fête locale
+Fête locale
+Une fête de votre commune ou de votre contrat : elle compte comme jour férié dans le calendrier, la banque d'heures et la paie.
+Si un jour férié tombe un dimanche, l'employeur fixe un jour de récupération.
+Le Grundlovsdag (5 juin) et la veille de Noël ne sont pas fériés par la loi, mais de nombreux contrats les prévoient.
+Le lundi de Pentecôte est souvent la « journée de solidarité » et il est travaillé.
+En Bavière, l'Assomption n'est fériée que dans les communes à majorité catholique.
+Le Vendredi saint et le 5 mai ne sont chômés que si la convention collective (CAO) le prévoit.
+Le mardi gras est facultatif ; chaque commune a aussi sa fête municipale.
+Depuis 2025, le 17 novembre n'est plus férié ; en 2026, on travaille aussi le 8 mai et le 15 septembre.
+Chaque communauté autonome ajoute ses propres fêtes (souvent le Jeudi saint) et les change d'une année à l'autre : ajoutez la vôtre comme fête locale.
+Les veilles (Midsommarafton, Julafton, Nyårsafton) ne sont pas fériées par la loi mais sont chômées presque partout.
+La limite de 45 heures vaut pour l'industrie, les bureaux, le personnel technique et la grande distribution ; pour les autres, elle est de 50. Dans certaines communes (Fribourg, Soleure, Argovie), les fêtes changent : ajoutez la vôtre comme fête locale.
+Au Royaume-Uni, les bank holidays ne sont pas un droit légal : cela dépend du contrat. On peut renoncer par écrit à la limite des 48 heures (opt-out).
+Les horaires et les repos suivent surtout les conventions collectives saint-marinaises : vérifiez les valeurs ci-dessous.
+Si un jour férié tombe un dimanche, le lundi est chômé.
+La limite de 45 heures vaut pour l'industrie, les bureaux et la grande distribution ; pour les autres, elle est de 50.
+{c} : la loi ne fixe aucun repos minimum entre deux postes. L'app vous alerte en dessous de {r} heures et au-dessus de {w} heures par semaine. La semaine commence le {d}.
+Les jours fériés fédéraux ne valent légalement que pour les employés fédéraux : dans le privé, cela dépend du contrat. Chaque État a ses propres fêtes : ajoutez la vôtre comme fête locale.
+Les horaires et les repos peuvent changer d'une province à l'autre : vérifiez les valeurs ci-dessous. Terre-Neuve-et-Labrador n'est pas encore incluse.
+Les jours d'élections fédérales et locales sont aussi fériés pour ceux qui doivent voter.
+Le Carnaval et la Fête-Dieu sont « ponto facultativo » ; chaque État et chaque commune ajoute ses fêtes : ajoutez la vôtre comme fête locale.
+Le gouvernement peut déplacer les feriados trasladables (17 juin, 17 août, 12 octobre, 20 novembre) et ajouter des jours non ouvrés : vous voyez ici les dates fixées par la loi.
+Beaucoup de conventions (awards) prévoient 10 heures de repos entre deux postes. Certaines fêtes ne valent que dans certaines zones (Royal Show, Regatta, Recreation Day) : vous pouvez ajouter la vôtre comme fête locale.
+Chaque province a son Anniversary Day : si la vôtre n'est pas dans la liste, ajoutez-la comme fête locale.
+Aucune
+Heures et contrat
+Horaires de travail
+Durée des postes, repos minimum, heures de nuit
+Combien de jours et d'heures vous reviennent
+Heures du contrat et solde de départ
+Estimation de la paie
+Salaire horaire et majorations, pour vous seul
+Deuxième emploi
+Astreinte
+Astreinte active.
+Touchez les jours pour l'ajouter ou l'enlever, jours de repos compris. Vous pouvez la choisir avec un poste.
+Chaque jour touché reçoit le poste et l'astreinte ensemble.
+{h} h d'intervention
+Heures d'intervention
+Le deuxième emploi a ses propres comptes : il n'entre pas dans la banque d'heures, les congés et les alertes de l'emploi principal.
+Emploi principal
+Créé avec {app} le {d}.
+Emploi du poste rapide {n}
+{n} mois
+{n} mois
+Postes {x}
+<b>{n}</b> du {a} au {b}.
+{n} événement
+{n} événements
+Aucun poste à exporter du {a} au {b}.
+À partir de
+Durée
+Intervention
+Les heures d'intervention comptent comme travaillées et l'estimation de la paie les compte en heures supplémentaires.
+Début
+Un autre emploi avec ses horaires et ses comptes
+Exporter vers l'agenda
+Google, Apple ou Outlook Agenda
+Je fais des astreintes
+D'habitude à partir de
+Le bouton Astreinte apparaît au-dessus du calendrier : choisissez-le et touchez les jours, même de repos. Notez les heures d'intervention en touchant le jour.
+Indemnité d'astreinte
+Par astreinte. Les heures d'intervention sont payées en heures supplémentaires.
+J'ai un deuxième emploi
+Durée habituelle
+Les postes du deuxième emploi s'affichent sur une deuxième ligne les mêmes jours, avec un carré bleu-vert. Vous les attribuez avec les postes rapides du deuxième emploi ou en touchant un jour. Heures et paie sont comptées à part : elles n'entrent pas dans la banque d'heures, les congés et les alertes de l'emploi principal.
+Pour chaque poste rapide, choisissez s'il appartient à l'emploi principal ou au deuxième emploi. Les postes du deuxième emploi ont un carré bleu-vert.
+Créez un fichier avec vos postes à ouvrir dans Google Agenda, Calendrier d'Apple ou Outlook.
+Combien de mois
+Quoi exporter
+Postes de travail
+Congés, absences et maladie, en journée entière
+Rappel
+30 minutes avant
+1 heure avant
+2 heures avant
+Comment l'ouvrir dans votre agenda
+iPhone, iPad et Mac.
+Ouvrez le fichier et choisissez Tout ajouter, puis le calendrier où les mettre.
+Google Agenda.
+Sur ordinateur, ouvrez calendar.google.com, allez dans Paramètres, Importer et exporter, et importez le fichier. Sur Android, vous pouvez aussi l'ouvrir directement avec Google Agenda.
+Outlook.
+Ouvrez le fichier avec Outlook, ou sur outlook.com allez dans le calendrier, Ajouter un calendrier, Charger à partir d'un fichier.
+Si vous exportez de nouveau la même période, les postes déjà importés sont en général mis à jour au lieu d'être dupliqués. Les jours vidés dans l'app doivent être supprimés à la main. Conseil : utilisez un calendrier réservé aux postes, pour pouvoir le vider et réimporter quand ils changent.
+Créer le fichier
+Ex. Bar, Cours, Livraisons
+Un mois de moins
+Un mois de plus
+Emploi
+Heures supplémentaires
+Congés pris
+Absences prises
+Total brut
+{n} différence avec les heures notées
+{n} différences avec les heures notées
+Les éléments du bulletin correspondent à ce que vous avez noté.
+Notées
+Sur le bulletin
+{v} de moins sur le bulletin
+{v} de plus sur le bulletin
+Estimation de l'app, indicative
+Bulletin de {a} : les heures sont comparées avec {b}.
+Bulletin de paie : {m}
+notées {a}, sur le bulletin {b}
+Net à payer
+Ouvrir le bulletin de paie
+bulletin ajouté
+aucun bulletin
+Charger le PDF de {m}
+Bulletin de paie de {m} supprimé.
+Lecture du bulletin…
+Mot de passe incorrect, réessayez.
+Le PDF est protégé par un mot de passe. C'est souvent votre numéro fiscal ou d'identité, ou un mot de passe donné par l'employeur.
+Impossible de charger le lecteur de PDF. Vérifiez la connexion et réessayez.
+Impossible d'ouvrir ce fichier. Est-ce un PDF ?
+Ce PDF ne contient pas de texte, c'est peut-être un scan ou une photo. Saisissez les chiffres à la main.
+Je n'ai pas reconnu les éléments de ce bulletin. Saisissez les chiffres à la main : seulement ceux qui vous intéressent.
+heures supplémentaires
+travail de nuit
+dimanches et jours fériés
+congés pris
+absences prises
+congés restants
+absences restantes
+total brut
+net à payer
+Bulletin de {m}.
+J'ai lu : {x}.
+Vérifiez les chiffres en surbrillance et complétez à la main ceux qui manquent.
+On dirait un bulletin avec un 13e ou 14e mois : vérifiez bien le total brut.
+Le fichier est trop volumineux pour être un bulletin de paie.
+Bulletin de paie
+Vérifier les heures et éléments payés
+Chargez le PDF du bulletin de paie ou saisissez les chiffres : l'app les compare avec les heures notées.
+Mot de passe du PDF
+Ouvrir
+Le PDF est lu uniquement sur cet appareil et n'est pas enregistré : l'app garde seulement les chiffres ci-dessous.
+Sur le bulletin de paie
+Congés restants
+Heures sup. et majorations sont celles du mois précédent
+Beaucoup d'entreprises paient heures supplémentaires, nuits et jours fériés le mois suivant. Si c'est votre cas, activez-le : la comparaison utilisera le bon mois.
+Supprimer
+Noter les postes
+Comment noter un poste ?
+Au-dessus du calendrier, choisissez un poste rapide, par exemple {a}, et touchez les jours : chacun reçoit ce poste. Touchez de nouveau le bouton pour terminer. Pour d'autres horaires, touchez le jour et indiquez le début et la durée.
+Comment modifier ou vider un jour ?
+Touchez le jour : dans la fiche vous changez le type, l'horaire, les heures en plus ou en moins, les étiquettes et la note, et tout s'enregistre seul. {a} le supprime. Pour en vider plusieurs, choisissez {b} au-dessus du calendrier et touchez les jours. Après chaque modification, vous pouvez annuler depuis le message en bas.
+Comment noter repos, congés, absences et maladie ?
+{a} et {b} ont leur bouton au-dessus du calendrier : choisissez-le et touchez les jours. Pour {c} ou {d}, touchez le jour et choisissez le type dans la fiche ; pour une absence, indiquez aussi les heures.
+Comment noter des heures supplémentaires ou un poste coupé ?
+Dans la fiche du jour, utilisez {a} pour les heures supplémentaires ou un départ anticipé. Avec {b}, vous indiquez les deux parties, par exemple 8–12 et 16–20.
+Comment créer mes postes rapides ?
+Ouvrez {p} et choisissez le nom, l'heure de début et la durée de chaque bouton. Ils peuvent être des postes coupés et, si vous avez un deuxième emploi, appartenir à cet emploi.
+Je fais toujours la même rotation : le calendrier peut-il se remplir seul ?
+Oui : dans {p}, décrivez le cycle (par exemple 5 matins, 2 repos, 5 nuits, 2 repos), le jour de départ et jusqu'à quand. Avec {q}, vous copiez plutôt une semaine sur la suivante.
+À quoi servent les étiquettes ?
+Elles indiquent un service, une machine ou un poste de travail. Créez-les dans {p} ; puis choisissez-les au-dessus du calendrier et touchez les jours, aussi avec un poste.
+Comment trouver un jour, une note ou une étiquette ?
+Passez à la vue en liste avec le bouton à côté des postes rapides : une recherche dans les notes et les étiquettes apparaît. L'onglet {a} montre les totaux de toute l'année, mois par mois.
+Heures, contrat et paie
+Que veulent dire les alertes en bas du mois ?
+L'app vérifie les règles de votre pays : repos minimum entre deux postes, moyenne d'heures par semaine, sept jours de travail d'affilée. Si votre contrat est différent, modifiez les valeurs dans {p}.
+Comment fonctionne la banque d'heures ?
+Dans {p}, indiquez les heures hebdomadaires du contrat, à partir de quand compter et un éventuel solde de départ. L'app compare les heures travaillées aux heures dues et affiche le solde dans le récapitulatif du mois.
+Comment suivre mes congés et absences ?
+Dans {p}, indiquez combien de jours de congé et d'heures d'absence vous avez par an. L'app compte ceux utilisés et prévus et vous dit combien il en reste.
+Comment fonctionne l'estimation de la paie ?
+Dans {p}, indiquez le salaire horaire brut et les majorations. C'est une estimation indicative, rien que pour vous : elle n'apparaît jamais dans le PDF ni dans les images partagées, et vous pouvez masquer les montants.
+Comment noter une astreinte ?
+Activez-la dans {p}. Le bouton {a} apparaît au-dessus du calendrier : choisissez-le et touchez les jours, même de repos. Les heures d'intervention se notent dans la fiche du jour ; l'indemnité se règle dans {q}.
+J'ai un deuxième emploi : comment le garder séparé ?
+Activez-le dans {p}, avec nom, durée et paie. Ses postes ont leurs propres boutons rapides et apparaissent sur une deuxième ligne des jours. Heures et paie sont comptées à part, et le PDF du mois peut être fait pour chaque emploi.
+Comment vérifier mon bulletin de paie ?
+Dans {p}, choisissez le mois et chargez le PDF : l'app lit heures supplémentaires, nuits, jours fériés, congés, absences, brut et net, et les compare aux heures notées. Si le bulletin est sur papier, saisissez les chiffres à la main.
+Le bulletin n'est pas lu ou les chiffres ne collent pas : que faire ?
+Si le PDF est un scan ou une photo, il n'a pas de texte à lire : saisissez les chiffres à la main. S'il est protégé, l'app demande le mot de passe. Vérifiez toujours les chiffres en surbrillance et activez {a} si l'entreprise paie heures sup. et majorations le mois suivant.
+Partager et exporter
+Comment envoyer mes postes de la semaine à quelqu'un ?
+Dans {p}, choisissez la semaine et envoyez-la en image ou en texte, par exemple dans une discussion.
+Comment imprimer un mois ?
+Dans {p}, choisissez le mois : vous obtenez une feuille A4 avec le calendrier et les totaux, à imprimer ou envoyer.
+Comment mettre mes postes dans Google Agenda, Calendrier d'Apple ou Outlook ?
+Dans {p}, choisissez le début, le nombre de mois et ce qu'il faut inclure, puis ouvrez le fichier avec votre agenda : le même écran donne les étapes pour chacun. Si vous exportez de nouveau la même période, les postes sont en général mis à jour au lieu d'être dupliqués.
+Données, app et réglages
+Où sont enregistrés mes postes ?
+Uniquement sur cet appareil, dans le navigateur. Aucun compte n'est nécessaire et rien n'est envoyé à un serveur.
+Comment faire une copie ou passer à un autre téléphone ?
+Avec {p}, vous obtenez un fichier avec vos postes et réglages. Sur l'autre téléphone, ouvrez l'app et utilisez {q}. Le point sur {a} vous rappelle quand il est temps d'en faire une.
+Si j'efface les données du navigateur, je perds mes postes ?
+Oui, si vous n'avez pas de copie. C'est pourquoi il vaut mieux en enregistrer une de temps en temps, surtout avant de changer de téléphone.
+Comment installer l'app sur mon téléphone ?
+Sur iPhone, ouvrez l'app dans Safari, touchez Partager puis Sur l'écran d'accueil. Sur Android, ouvrez le menu de Chrome et choisissez Installer l'application ou Ajouter à l'écran d'accueil. Une fois installée, elle fonctionne aussi hors connexion.
+Comment mettre à jour l'app ?
+Quand une nouvelle version est disponible, un avis apparaît en haut : touchez {a}. Vos postes restent où ils sont.
+Comment changer de pays, de jours fériés, de langue ou de thème ?
+Dans {p}, choisissez le pays et la région pour les jours fériés, la langue et le thème clair ou sombre. Les fêtes locales que l'app ne connaît pas, notez-les comme repos.
+M'y emmener
+Ouvrir le guide
+Aide
+Guide et questions fréquentes
+Comment faire, étape par étape
+Guide
+Aucune réponse trouvée. Essayez d'autres mots.
+Rechercher dans le guide
+Je vous montre comment ça marche en une minute. Vous pouvez passer à tout moment et revoir la visite depuis le Guide.
+Choisissez un poste et touchez les jours du calendrier pour l'attribuer. Touchez de nouveau le bouton pour terminer. {a}, {b} et {c} fonctionnent de la même façon.
+Le calendrier
+Touchez un jour pour ouvrir sa fiche : horaire, heures supplémentaires, absences, maladie et notes. Tout s'enregistre seul et vous pouvez toujours annuler depuis le message en bas.
+Le prochain poste
+Ici en haut, vous voyez toujours le prochain poste, ou celui en cours.
+Le récapitulatif du mois
+Heures travaillées, heures sup., nuits et jours fériés du mois, avec des alertes quand un poste ne respecte pas les règles de repos.
+Calendrier et Année
+Passez à Année pour voir les totaux de toute l'année, mois par mois.
+Tout le reste est ici : rotation, congés et absences, banque d'heures, estimation de la paie, bulletin de paie, PDF du mois, export vers l'agenda, copie des données et le Guide.
+Pays et jours fériés, langue et thème clair ou sombre.
+Commencez par noter les postes de cette semaine.
+{n} sur {m}
+Passer
+C'est parti
+Revoir la visite guidée

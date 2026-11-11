@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} t
+{h} t {m} min
+{h} t
+{m} min
+Vagt
+og
+Vis beløb
+Skjul beløb
+Arbejdstimer
+Overarbejde
+Natarbejde
+Søndag
+Helligdage
+Groft bruttoskøn. Kun til dig: det vises ikke i pdf'en eller i delte billeder.
+Tilføj tillæg
+Dine vagter er gemt på denne enhed.
+ingen vagt
+delt vagt {r}
+vagt {r}
+næste dag
+{h} timers fri
+Fri
+Ferie
+Ryd
+Opret etiketter til afdelinger eller arbejdspladser
+Vælg en vagt, en etiket eller begge, og tryk så på dagene. Eller tryk på en dag for tider, noter og ekstra timer.
+Ryd er slået til.
+Tryk på de dage, der skal tømmes, og tryk så på knappen igen for at afslutte.
+Hver dag, du trykker på, får vagt og etiket på én gang.
+{x} er slået til.
+Tryk på de dage, der skal udfyldes, og vælg evt. også en etiket. Tryk på knappen igen for at afslutte.
+Tryk på de dage, der skal udfyldes. Tryk på knappen igen for at afslutte.
+Etiketten {x} er slået til.
+Tryk på dage med en vagt for at tilføje eller fjerne den.
+Fri
+hvile under {n} timer
+{x} ekstra
+{n} dag fundet
+{n} dage fundet
+{h} timers arbejde
+Ingen dage med »{q}« i noter eller etiketter.
+Lørdag {s} timer, andre dage {w} timer.
+Note
+Under {n} timers hvile siden forrige vagt
+Pause
+Tilbage om <b>{x}</b>. Delt vagt: {r}.
+Næste vagt
+Ingen planlagte vagter
+Tryk på en dag i kalenderen, og vælg starttid: sluttiden beregnes af sig selv.
+I dag
+I morgen
+I går
+På vagt nu
+<b>{a}</b> tilbage. Du har klaret {b}.
+Starter om <b>{x}</b>.
+Delt: {r}, {h} timer i alt.
+Varer {h} timer.
+Kun {h} timers hvile mellem {a} og {b} (minimum er {n}).
+Syv eller flere arbejdsdage i træk fra {d}.
+Ugen fra {d}: {h} timer, over {n}.
+I {y} har du markeret {n} feriedag mere, end du har ret til.
+I {y} har du markeret {n} feriedage mere, end du har ret til.
+I {y} har du markeret {h} timers fri mere, end du har ret til.
+I alt {m}
+timer på {n} vagt
+timer på {n} vagter
+Ekstra timer
+Nattetimer, {r}
+Arbejdede lørdage
+Søn- og helligdage
+Ferie i måneden
+Resterende ferie {y}
+Ferie {y}
+Fri i måneden
+Resterende fri
+Syg
+Timebank ved månedens slut
+Timebank i dag
+Lønskøn {m}
+Timer pr. uge
+Bjælken er fuld ved {n} timer.
+Værd at tjekke
+Månedens total
+Og {n} advarsler mere: du finder dem i appen.
+{h} timer
+Vagter
+Nattetimer
+Søn- og hellig.
+Fri
+Timebank
+Normalvagt {w} timer, lørdag {s} timer. Oprettet med {app} den {d}.
+Fri og fravær
+Nat
+Aften
+Dag
+Rediger etiketter
+Opret etiketter til afdelinger, maskiner eller arbejdspladser
+Vagt på {a} timer. Brug normallængden på {b} timer
+Timer mere eller mindre end {h}
+Hele dagen.
+Resten af dagen tæller som almindeligt arbejdet. Timerne trækkes fra det, du har ret til.
+pause {x}
+{h} om natten
+Normalvagt på {h} timer, fordi det er lørdag.
+Normalvagt på {h} timer.
+Dagen er tømt.
+Etiketter hører til dage med en vagt: vælg også en vagt.
+Pas på: i {y} har du overskredet den ferie, du har ret til.
+Du har brugt al din ferie for {y}.
+Du har {n} feriedag tilbage i {y}.
+Du har {n} feriedage tilbage i {y}.
+Pas på: i {y} har du overskredet den fri, du har ret til.
+Du har {h} timers fri tilbage i {y}.
+t
+Navn på hurtigvagt {n}
+Navn
+Slet hurtigvagt {n}
+Start på hurtigvagt {n}
+Længde på første del i timer
+Længde på hurtigvagt {n} i timer
+Halvdel
+Normal
+Delt
+Fortsætter kl., hurtigvagt {n}
+Længde på anden del i timer
+Resten
+Højst {n} hurtigvagter
++ Tilføj hurtigvagt
+Hurtigvagten »{x}« er slettet.
+F.eks. Afdeling A, Presse 3, Kasse 2
+Etiket {n}
+Slet etiket {n}
+Etiketten »{x}« er fjernet fra {n} dag.
+Etiketten »{x}« er fjernet fra {n} dage.
+uden navn
+Etiketten »{x}« er slettet.
+År
+I alt {y}
+Markerede fridage
+Lønskøn {y}
+Etiketter {y}
+{n} dag
+{n} dage
+Brug listevisningen i kalenderen for at finde enkelte dage.
+Året er ikke begyndt endnu.
+Timebanken starter den {d}.
+Saldo den {d}.
+Saldo i dag.
+Du har arbejdet flere timer end i kontrakten.
+Du har arbejdet færre timer end i kontrakten.
+Du er lige på kontrakten.
+Kontrakt <b>{h} t</b> om ugen
+Fra <b>{d}</b>
+Start <b>{h} t</b>
+Skift indstillinger for timebanken
+Brugt
+Brugt
+Planlagt
+Planlagt
+Ret til
+dage markeret i {y}
+timer markeret i {y}
+Angiv, hvad du har ret til
+dage for mange
+timer for mange
+dage tilbage af {x}
+timer tilbage af {x}
+{a} brugt, {b} planlagt af {c}
+Du har markeret mere ferie, end du har ret til.
+Du har markeret mere fri, end du har ret til.
+Alt er brugt.
+Alt er brugt.
+Næsten brugt op.
+Næsten brugt op.
+Timer pr. måned
+{m}: {h} timer. Åbn måneden
+Måned
+Timer
+Ekstra
+Fri
+Bank
+I alt
+Måned for måned
+Tryk på en måned for at åbne den i kalenderen. Kolonnen Bank viser, hvor meget hver måned har lagt til eller trukket fra.
+Trin {n}
+En dag mindre
+En dag mere
+Slet trin {n}
+Ingen dage at udfylde med disse valg.
+Vælg startdagen.
+Cyklus på <b>{a}</b>. Udfylder <b>{b}</b> fra {c} til {d}:
+Anvend på {n} dag
+Anvend på {n} dage
+{n} uge
+{n} uger
+Vagtplan anvendt på {n} dag.
+Vagtplan anvendt på {n} dage.
+Mine vagter, ugen fra {d}:
+fri
+Mine vagter
+{h} timer på {n} vagt
+{h} timer på {n} vagter
+Oprettet med {app}
+Denne uge
+Næste uge
+Sidste uge
+Om {n} uge
+Om {n} uger
+For {n} uge siden
+For {n} uger siden
+Vagter kopieret: indsæt dem i en besked.
+Kopiering er ikke mulig her.
+Kunne ikke oprette billedet.
+Der er endnu ingen uge at gentage.
+Næste uge er allerede udfyldt.
+Ugen fra {a} gentaget i ugen fra {b}.
+Seneste kopi gemt den {d}.
+Du har ikke gemt en kopi endnu.
+Dine vagter ({n} dag) findes kun på denne enhed: gem en kopi en gang imellem, f.eks. i iCloud Drive, Google Drive eller i en mail til dig selv, så du ikke mister dem, hvis du skifter telefon.
+Dine vagter ({n} dage) findes kun på denne enhed: gem en kopi en gang imellem, f.eks. i iCloud Drive, Google Drive eller i en mail til dig selv, så du ikke mister dem, hvis du skifter telefon.
+Filen er hentet.
+Download mislykkedes.
+{n} vagt
+{n} vagter
+tom
+Opret pdf for {m}
+Kunne ikke oprette pdf'en.
+Kopi af vagter {app}
+Kopi gemt. Opbevar den et sikkert sted.
+Filen indeholder {n} dag
+Filen indeholder {n} dage
+fra {a} til {b}
+gemt den {d}
+De erstatter dine nuværende vagter ({n} dag) sammen med indstillingerne.
+De erstatter dine nuværende vagter ({n} dage) sammen med indstillingerne.
+De indlæses sammen med indstillingerne.
+Denne fil er ikke en kopi fra {app}.
+Kopi indlæst: {n} dag.
+Kopi indlæst: {n} dage.
+Version {v}.
+Åbn appen fra dens webadresse for at få opdateringer.
+Version {v} er klar.
+Senest tjekket: {d}.
+Automatisk tjek er slået til.
+{app} {v} er klar
+Opdater for at få det nyeste. Dine vagter bliver, hvor de er.
+Åbn appen fra dens webadresse for at søge efter opdateringer.
+Tjekker…
+Du har allerede den nyeste version ({v}).
+Kan ikke tjekke for opdateringer: tjek forbindelsen.
+Søg efter opdateringer
+Opdaterer…
+Fri
+Syg
+Nytårsdag
+Helligtrekonger
+Befrielsesdagen
+Arbejdernes kampdag
+Republikkens dag
+Marias himmelfart
+Allehelgensdag
+Den ubesmittede undfangelse
+Juledag
+2. juledag
+Sankt Frans
+Påskedag
+2. påskedag
+iWork
+Kalender
+Ændringer gemmes automatisk.
+Vagtstart
+Delt vagt, i to dele
+Første del
+Fortsætter kl.
+Anden del
+Vagtslut
+Timer mere eller mindre
+Fritimer
+Etiketter
+Tøm dagen
+Færdig
+Indstillinger
+Hver ændring gemmes automatisk.
+Timer normalvagt
+Timer lørdagsvagt
+Hurtigvagter og etiketter opretter og ændrer du under Værktøjer, knappen med de tre prikker.
+Ferie og fri
+Ferie pr. år
+dage
+Fri pr. år
+Det, du har ret til på et år, inkl. overført fra sidste år. Ved 0 er tælleren slået fra.
+Kontrakttimer pr. uge
+Tæl fra
+Startsaldo
+Timebanken sammenligner arbejdede timer med kontrakttimerne, dag for dag frem til i dag. Ferie, fri, sygdom, søndage og helligdage tæller ikke som manglende timer.
+Løn
+Bruttotimeløn
+€/t
+Nat 22–06
+Tillæg lægges sammen: en nattetime om søndagen får både nat- og søndagstillæg. Falder en helligdag på en søndag, gælder kun helligdagstillægget. Skønnet bliver på denne enhed og vises ikke i pdf'en eller i delte billeder.
+Sprog
+Udseende
+Automatisk
+Lys
+Mørk
+Opdateringer
+Værktøjer
+Udfyld vagter
+Fast vagtplan
+Et mønster, der gentager sig over flere uger
+Gentag sidste uge
+Kopiér vagterne til næste uge
+Tilpas
+Hurtigvagter
+Knapperne til at sætte en vagt ind med ét tryk
+Afdelinger, maskiner, arbejdspladser at tildele med ét tryk
+Del og eksportér
+Del ugen
+Billede eller tekst, enhver uge
+Månedens pdf
+Den måned, du vil, klar til print
+Sikkerhedskopi
+Gem en kopi af vagterne
+En fil med alle vagter og indstillinger
+Indlæs en kopi
+Hent vagterne tilbage fra en fil, du har gemt før
+Luk
+Det er knapperne over kalenderen: vælg en, og tryk på dagene for at sætte den ind. Her opretter du dem, omdøber dem og ændrer tider og længde. Hver ændring gemmes automatisk.
+Lad længden stå tom for at bruge normallængden (8 timer, 6 om lørdagen). En egen længde gælder alle dage. Med »Delt« har vagten to dele, f.eks. 8–12 og 16–20.
+Afdelinger, maskiner, arbejdspladser eller hvad du har brug for. De vises i anden række over kalenderen: vælg en, og tryk på dagene for at tildele den, også sammen med en vagt. Hver ændring gemmes automatisk.
++ Tilføj etiket
+Indlæse denne kopi?
+Annuller
+Erstat vagterne
+Byg mønsteret, der gentager sig, f.eks. 5 dag, 2 fri, 5 aften, 2 fri, og anvend det på flere uger på én gang.
+Mønster
++ Tilføj trin
+Fra dagen
+I hvor mange uger
+Rør ikke dage, der allerede er udfyldt
+Lad søndagene være fri
+Anvend
+Tilbage til denne uge
+Kopiér som tekst
+Del billede
+Vælg måned: du får kalenderen med vagter og summer på et A4-ark til print.
+Senere
+Opdater
+Skærm
+Forrige måned
+Næste måned
+Hurtig indtastning
+Visning
+Kalendervisning
+Listevisning
+Hurtige etiketter
+Søg i noter og etiketter
+Årsoversigt
+Forrige år
+Næste år
+Dagstype
+En halv time mindre
+En halv time mere
+F.eks. byttet vagt med Mads, afdeling B
+Tema
+En uge mindre
+En uge mere
+Forrige uge
+Næste uge
+Forhåndsvisning af billedet med ugens vagter
+Fortryd
+{x}, skytshelgenens dag
+Skytshelgenens dag
+{x} (erstatningsdag)
+Ingen bestemt
+Ingen
+En anden dato…
+Regler for {c}: mindst {r} timers hvile mellem to vagter, i gennemsnit højst {w} timer om ugen, ugentlig hvile på {k} timer. Ugen starter {d}.
+Land og helligdage
+Land
+Region eller provins
+Skytshelgen
+Dag
+Skytshelgenens dag tæller som helligdag i kalenderen, timebanken og lønnen. Tjek datoen i din kontrakt eller hos din kommune.
+{c}: mindst {r} timers hvile mellem to vagter, i gennemsnit højst {w} timer om ugen, ugentlig hvile på {k} timer. Ugen starter {d}.
+Nat {r}
+Kom i gang
+Næste
+Nyt: sprog og land
+Velkommen til {app}
+Vælg sprog og land: appen indstiller sig med de rigtige regler og helligdage. Dine vagter bliver, hvor de er.
+Kalenderen til dine vagter. Vælg sprog.
+Hvor arbejder du?
+Det bestemmer helligdage, mindste hvile, nattetimer og valuta.
+Søg efter land
+Dit område
+Nogle helligdage gælder kun i en region eller by. Du kan springe trinnet over og ændre det senere.
+Er din by ikke på listen, kan du skrive datoen under Indstillinger.
+Hvor lang er en vagt?
+Så vælger du kun starttiden, og sluttiden beregnes af sig selv. Kan altid ændres.
+Normalvagt
+Lørdagsvagt
+Alt er klar
+Sådan er appen indstillet. Du kan ændre alt under Indstillinger.
+{w} timer, lørdag {s}
+Mindste hvile
+Højeste gennemsnit
+{h} timer om ugen
+Advarsler om hvile og timer er vejledende og erstatter ikke din kontrakt.
+Tilbage
+Regler for advarsler og optællinger
+t/uge
+Nat fra
+Nat til
+Din kontrakt kan være bedre end loven: her kan du tilpasse reglerne.
+Tilbage til landets regler
+{x}, lokal helligdag
+Lokal helligdag
+En helligdag i din kommune eller i din kontrakt: tæller som helligdag i kalenderen, timebanken og lønnen.
+Falder en helligdag på en søndag, fastsætter arbejdsgiveren en erstatningsdag.
+Grundlovsdag (5. juni) og juleaften er ikke lovbestemte helligdage, men mange overenskomster giver fri.
+2. pinsedag er ofte »solidaritetsdagen«, og så arbejder man.
+I Bayern er Marias himmelfart kun helligdag i overvejende katolske kommuner.
+Langfredag og 5. maj er kun fridage, hvis overenskomsten (CAO) siger det.
+Fastelavnstirsdag er frivillig; hver kommune har desuden sin egen helligdag.
+Siden 2025 er 17. november ikke længere helligdag; i 2026 arbejder man også 8. maj og 15. september.
+Hver selvstyrende region tilføjer egne helligdage (ofte skærtorsdag) og ændrer dem hvert år: tilføj din som lokal helligdag.
+Aftenerne (Midsommarafton, Julafton, Nyårsafton) er ikke lovbestemte helligdage, men fri næsten overalt.
+Grænsen på 45 timer gælder industri, kontorer, teknisk personale og store butikskæder; for alle andre er den 50. I nogle kommuner (Fribourg, Solothurn, Aargau) gælder andre helligdage: tilføj din som lokal helligdag.
+I Storbritannien er bank holidays ikke en lovbestemt ret: det afhænger af kontrakten. Man kan skriftligt fravælge grænsen på 48 timer (opt-out).
+Arbejds- og hviletider følger især San Marinos overenskomster: tjek værdierne nedenfor.
+Falder en helligdag på en søndag, er mandagen fri.
+Grænsen på 45 timer gælder industri, kontorer og store butikskæder; for alle andre er den 50.
+{c}: loven fastsætter ingen mindste hvile mellem to vagter. Appen advarer under {r} timer og over {w} timer om ugen. Ugen starter {d}.
+Føderale helligdage gælder ved lov kun for føderalt ansatte: i den private sektor afhænger det af kontrakten. Hver delstat har egne helligdage: tilføj din som lokal helligdag.
+Arbejds- og hviletider kan variere fra provins til provins: tjek værdierne nedenfor. Newfoundland og Labrador er ikke med endnu.
+Dage med føderale og lokale valg er også fri for dem, der skal stemme.
+Karneval og Kristi legems fest er »ponto facultativo«; hver delstat og kommune tilføjer egne helligdage: tilføj din som lokal helligdag.
+Regeringen kan flytte de flytbare helligdage (17. juni, 17. august, 12. oktober, 20. november) og tilføje fridage: her ser du datoerne fastsat ved lov.
+Mange overenskomster (awards) giver 10 timers hvile mellem to vagter. Nogle helligdage gælder kun i visse områder (Royal Show, Regatta, Recreation Day): du kan tilføje din som lokal helligdag.
+Hver provins har sin Anniversary Day: er din ikke på listen, så tilføj den som lokal helligdag.
+Ingen
+Timer og kontrakt
+Arbejdstid
+Vagtlængde, mindste hvile, nattetimer
+Hvor mange dage og timer du har ret til
+Kontrakttimer og startsaldo
+Lønskøn
+Timeløn og tillæg, kun til dig
+Andet job
+Tilkaldevagt
+Tilkaldevagt aktiv.
+Tryk på dage for at tilføje eller fjerne den, også på fridage. Du kan vælge den sammen med en vagt.
+Hver dag du trykker på, får vagt og tilkaldevagt sammen.
+{h} t udkald
+Timer med udkald
+Det andet job tælles for sig: det indgår ikke i hovedjobbets timebank, ferie eller advarsler.
+Hovedjob
+Oprettet med {app} den {d}.
+Job for hurtigvagt {n}
+{n} måned
+{n} måneder
+Vagter hos {x}
+<b>{n}</b> fra {a} til {b}.
+{n} begivenhed
+{n} begivenheder
+Ingen vagter at eksportere fra {a} til {b}.
+Fra
+Varighed
+Udkald
+Timer med udkald tæller som arbejdet og betales som overarbejde i lønskønnet.
+Start
+Et andet job med egne tider og opgørelser
+Eksportér til kalender
+Google, Apple eller Outlook Kalender
+Jeg har tilkaldevagter
+Normalt fra
+Over kalenderen vises knappen Tilkaldevagt: vælg den og tryk på dagene, også fridage. Timer med udkald skriver du ved at trykke på dagen.
+Tillæg for tilkaldevagt
+Pr. tilkaldevagt. Timer med udkald betales som overarbejde.
+Jeg har et andet job
+Sædvanlig varighed
+Vagter i det andet job vises som en ekstra linje på de samme dage, med en turkis firkant. Du tildeler dem med det andet jobs hurtigvagter eller ved at trykke på en dag. Timer og løn tælles for sig: de indgår ikke i hovedjobbets timebank, ferie eller advarsler.
+Vælg for hver hurtigvagt, om den hører til hovedjobbet eller det andet job. Vagter i det andet job har en turkis firkant.
+Opret en fil med dine vagter, som du kan åbne i Google Kalender, Apples Kalender eller Outlook.
+Hvor mange måneder
+Hvad skal eksporteres
+Arbejdsvagter
+Ferie, fri og sygdom, som heldagsbegivenhed
+Påmindelse
+30 minutter før
+1 time før
+2 timer før
+Sådan åbner du den i din kalender
+iPhone, iPad og Mac.
+Åbn filen og vælg Tilføj alle, derefter kalenderen de skal i.
+Google Kalender.
+Åbn calendar.google.com på en computer, gå til Indstillinger, Import og eksport, og upload filen. På Android kan du også åbne den direkte med Google Kalender.
+Outlook.
+Åbn filen med Outlook, eller gå på outlook.com til kalenderen, Tilføj kalender, Upload fra fil.
+Hvis du eksporterer samme periode igen, bliver allerede importerede vagter som regel opdateret i stedet for at blive dobbelte. Dage du har tømt i appen, skal fjernes manuelt. Tip: brug en kalender kun til vagter, så kan du tømme den og importere igen, når de ændrer sig.
+Opret filen
+F.eks. Bar, Undervisning, Udbringning
+En måned mindre
+En måned mere
+Job
+Overarbejde
+Afholdt ferie
+Afholdt fri
+Brutto i alt
+{n} forskel fra dine registrerede timer
+{n} forskelle fra dine registrerede timer
+Posterne på lønsedlen passer med det, du har registreret.
+Registreret
+På lønseddel
+{v} mindre på lønsedlen
+{v} mere på lønsedlen
+Appens skøn, kun vejledende
+Lønseddel for {a}: timerne sammenlignes med {b}.
+Lønseddel for {m}
+registreret {a}, på lønsedlen {b}
+Udbetalt
+Åbn lønsedlen
+lønseddel tilføjet
+ingen lønseddel
+Indlæs PDF for {m}
+Lønseddel for {m} slettet.
+Læser lønsedlen…
+Forkert adgangskode, prøv igen.
+PDF'en er beskyttet med adgangskode. Ofte er det dit CPR-nummer eller en kode fra arbejdsgiveren.
+Kan ikke indlæse PDF-læseren. Tjek forbindelsen og prøv igen.
+Kan ikke åbne filen. Er det en PDF?
+Denne PDF har ingen tekst, måske er den scannet eller et foto. Skriv tallene selv.
+Jeg genkendte ikke posterne på lønsedlen. Skriv tallene selv: kun dem, du vil.
+overarbejde
+natarbejde
+søn- og helligdage
+afholdt ferie
+afholdt fri
+resterende ferie
+resterende fri
+brutto i alt
+udbetalt
+Lønseddel for {m}.
+Jeg læste: {x}.
+Tjek de fremhævede tal og udfyld de manglende selv.
+Det ligner en lønseddel med ekstra udbetaling: tjek bruttobeløbet grundigt.
+Filen er for stor til at være en lønseddel.
+Lønseddel
+Tjek betalte timer og poster
+Indlæs lønsedlens PDF eller skriv tallene: appen sammenligner dem med dine registrerede timer.
+PDF-adgangskode
+Åbn
+PDF'en læses kun på denne enhed og gemmes ikke: appen beholder kun tallene nedenfor.
+På lønsedlen
+Resterende ferie
+Overarbejde og tillæg er fra måneden før
+Mange arbejdsgivere betaler overarbejde, nat- og helligdagsarbejde måneden efter. Gælder det dig, så slå det til: sammenligningen bruger den rigtige måned.
+Slet
+Registrere vagter
+Hvordan registrerer jeg en vagt?
+Vælg en hurtigvagt over kalenderen, for eksempel {a}, og tryk på dagene: hver dag får den vagt. Tryk på knappen igen for at stoppe. Til andre tider trykker du på dagen og skriver start og varighed.
+Hvordan ændrer eller tømmer jeg en dag?
+Tryk på dagen: på kortet ændrer du type, tider, timer mere eller mindre, etiketter og note, og alt gemmes automatisk. {a} sletter den. For at tømme mange vælger du {b} over kalenderen og trykker på dagene. Efter hver ændring kan du fortryde i beskeden nederst.
+Hvordan registrerer jeg fridage, ferie, fri og sygdom?
+{a} og {b} har deres egen knap over kalenderen: vælg den og tryk på dagene. For {c} eller {d} trykker du på dagen og vælger typen på kortet; ved fri skriver du også timerne.
+Hvordan registrerer jeg overarbejde eller en delt vagt?
+Brug {a} på dagens kort til overarbejde eller tidligere fyraften. Med {b} skriver du begge dele, for eksempel 8–12 og 16–20.
+Hvordan laver jeg mine egne hurtigvagter?
+Åbn {p} og vælg navn, starttid og varighed for hver knap. De kan være delte vagter og, hvis du har et andet job, høre til det job.
+Jeg arbejder altid i samme rul: kan kalenderen udfylde sig selv?
+Ja: i {p} beskriver du mønsteret (for eksempel 5 dag, 2 fri, 5 nat, 2 fri), startdagen og hvor længe. Med {q} kopierer du i stedet en uge til den næste.
+Hvad bruges etiketter til?
+De markerer afdeling, maskine eller arbejdsplads. Du opretter dem i {p}; så vælger du dem over kalenderen og trykker på dagene, også sammen med en vagt.
+Hvordan finder jeg en dag, en note eller en etiket?
+Skift til listevisning med knappen ved siden af hurtigvagterne: så kommer søgning i noter og etiketter frem. Fanen {a} viser hele årets totaler, måned for måned.
+Timer, kontrakt og løn
+Hvad betyder advarslerne nederst i måneden?
+Appen tjekker reglerne i dit land: mindste hvile mellem to vagter, gennemsnitlige timer om ugen, syv arbejdsdage i træk. Hvis din kontrakt er anderledes, så ret værdierne i {p}.
+Hvordan virker timebanken?
+I {p} skriver du kontraktens ugentlige timer, hvornår der skal tælles fra og en eventuel startsaldo. Appen sammenligner arbejdede timer med skyldige og viser saldoen i månedens oversigt.
+Hvordan holder jeg styr på ferie og fri?
+I {p} skriver du, hvor mange feriedage og fritimer du har om året. Appen tæller brugte og planlagte og fortæller, hvor mange der er tilbage.
+Hvordan virker lønskønnet?
+I {p} skriver du din bruttotimeløn og tillæg. Det er et vejledende skøn kun for dig: det kommer aldrig med i PDF'en eller delte billeder, og du kan skjule beløbene.
+Hvordan registrerer jeg tilkaldevagt?
+Slå den til i {p}. Over kalenderen kommer knappen {a}: vælg den og tryk på dagene, også fridage. Timer med udkald skriver du på dagens kort; tillægget indstilles i {q}.
+Jeg har et andet job: hvordan holder jeg det adskilt?
+Slå det til i {p}, med navn, varighed og løn. Dets vagter har egne hurtigknapper og vises som en ekstra linje på dagene. Timer og løn tælles for sig, og månedens PDF kan laves for hvert job.
+Hvordan tjekker jeg min lønseddel?
+I {p} vælger du måneden og indlæser PDF'en: appen læser overarbejde, natarbejde, helligdage, ferie, fri, brutto og udbetalt og sammenligner dem med dine registrerede timer. Er lønsedlen på papir, så skriv tallene selv.
+Lønsedlen bliver ikke læst, eller tallene passer ikke: hvad gør jeg?
+Er PDF'en en scanning eller et foto, er der ingen tekst at læse: skriv tallene selv. Er den beskyttet, beder appen om adgangskoden. Tjek altid de fremhævede tal, og slå {a} til, hvis din arbejdsgiver betaler overarbejde og tillæg måneden efter.
+Dele og eksportere
+Hvordan sender jeg nogen mine vagter for ugen?
+I {p} vælger du ugen og sender den som billede eller tekst, for eksempel i en chat.
+Hvordan udskriver jeg en måned?
+I {p} vælger du måneden: du får et A4-ark med kalender og totaler til udskrift eller afsendelse.
+Hvordan får jeg mine vagter ind i Google Kalender, Apples Kalender eller Outlook?
+I {p} vælger du fra hvornår, hvor mange måneder og hvad der skal med, og åbner så filen med din kalender: samme skærm har trinene for hver kalender. Eksporterer du samme periode igen, bliver vagterne som regel opdateret i stedet for dobbelte.
+Data, app og indstillinger
+Hvor gemmes mine vagter?
+Kun på denne enhed, i browseren. Du skal ikke have en konto, og intet sendes til en server.
+Hvordan laver jeg en kopi eller skifter telefon?
+Med {p} får du en fil med vagter og indstillinger. På den anden telefon åbner du appen og bruger {q}. Prikken på {a} minder dig om, hvornår det er tid til en kopi.
+Mister jeg mine vagter, hvis jeg sletter browserdata?
+Ja, hvis du ikke har en kopi. Derfor er det godt at gemme en en gang imellem, især før du skifter telefon.
+Hvordan installerer jeg appen på telefonen?
+På iPhone åbner du appen i Safari, trykker på Del og så Føj til hjemmeskærm. På Android åbner du Chrome-menuen og vælger Installer app eller Føj til startskærm. Når den er installeret, virker den også offline.
+Hvordan opdaterer jeg appen?
+Når der er en ny version, kommer der en besked øverst: tryk på {a}. Dine vagter bliver, hvor de er.
+Hvordan ændrer jeg land, helligdage, sprog eller tema?
+I {p} vælger du land og region for helligdage, sprog og lyst eller mørkt tema. Lokale helligdage, appen ikke kender, registrerer du som fridag.
+Tag mig derhen
+Åbn vejledningen
+Hjælp
+Vejledning og ofte stillede spørgsmål
+Sådan gør du, trin for trin
+Vejledning
+Intet svar fundet. Prøv med andre ord.
+Søg i vejledningen
+Jeg viser dig på et minut, hvordan det virker. Du kan springe over når som helst og se rundturen igen fra Vejledningen.
+Vælg en vagt og tryk på dagene i kalenderen for at tildele den. Tryk på knappen igen for at stoppe. {a}, {b} og {c} virker på samme måde.
+Kalenderen
+Tryk på en dag for at åbne dens kort: tider, overarbejde, fri, sygdom og noter. Alt gemmes automatisk, og du kan altid fortryde i beskeden nederst.
+Næste vagt
+Her øverst ser du altid din næste vagt eller den igangværende.
+Månedens oversigt
+Arbejdstimer, overarbejde, nætter og helligdage i måneden, med advarsler når en vagt bryder hvilereglerne.
+Kalender og År
+Skift til År for at se hele årets totaler, måned for måned.
+Her finder du resten: vagtplan, ferie og fri, timebank, lønskøn, lønseddel, månedens PDF, eksport til kalender, kopi af data og Vejledningen.
+Land og helligdage, sprog og lyst eller mørkt tema.
+Start med at registrere denne uges vagter.
+{n} af {m}
+Spring over
+Kom så
+Se rundturen igen

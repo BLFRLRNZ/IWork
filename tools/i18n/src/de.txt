@@ -1,0 +1,639 @@
+{n} T
+{d} T {h} h
+{h} h {m} min
+{h} h
+{m} min
+Schicht
+und
+Beträge anzeigen
+Beträge ausblenden
+Gearbeitete Stunden
+Überstunden
+Nachtarbeit
+Sonntag
+Feiertage
+Grobe Bruttoschätzung. Sie ist nur für dich: Sie erscheint weder im PDF noch in geteilten Bildern.
+Zuschläge hinzufügen
+Deine Schichten sind auf diesem Gerät gespeichert.
+keine Schicht
+geteilte Schicht {r}
+Schicht {r}
+des nächsten Tages
+{h} Stunden Freistellung
+Frei
+Urlaub
+Löschen
+Etiketten für Abteilungen anlegen
+Wähle eine Schicht, ein Etikett oder beides und tippe dann auf die Tage. Oder tippe auf einen Tag für Uhrzeiten, Notizen und Zusatzstunden.
+Löschen ist aktiv.
+Tippe auf die Tage, die geleert werden sollen, und dann noch einmal auf die Taste, um fertig zu werden.
+Jeder angetippte Tag bekommt Schicht und Etikett zusammen.
+{x} ist aktiv.
+Tippe auf die Tage, die du füllen willst, und wähle bei Bedarf auch ein Etikett. Tippe noch einmal auf die Taste, um fertig zu werden.
+Tippe auf die Tage, die du füllen willst. Tippe noch einmal auf die Taste, um fertig zu werden.
+Etikett {x} ist aktiv.
+Tippe auf Tage mit einer Schicht, um es hinzuzufügen oder zu entfernen.
+Frei
+Ruhezeit unter {n} Stunden
+{x} zusätzlich
+{n} Tag gefunden
+{n} Tage gefunden
+{h} Stunden Arbeit
+Keine Tage mit „{q}“ in Notizen oder Etiketten.
+Samstag {s} Stunden, die anderen Tage {w} Stunden.
+Notiz
+Weniger als {n} Stunden Ruhezeit seit der letzten Schicht
+In der Pause
+Weiter in <b>{x}</b>. Geteilte Schicht: {r}.
+Nächste Schicht
+Keine Schicht geplant
+Tippe auf einen Tag im Kalender und wähle die Anfangszeit: Das Ende wird automatisch berechnet.
+Heute
+Morgen
+Gestern
+Jetzt im Dienst
+Noch <b>{a}</b> bis zum Ende. Geschafft: {b}.
+Beginnt in <b>{x}</b>.
+Geteilt: {r}, insgesamt {h} Stunden.
+Dauert {h} Stunden.
+Nur {h} Stunden Ruhezeit zwischen {a} und {b} (Minimum: {n}).
+Sieben oder mehr Arbeitstage am Stück ab dem {d}.
+Woche vom {d}: {h} Stunden, über {n}.
+{y} hast du {n} Urlaubstag mehr eingetragen, als dir zusteht.
+{y} hast du {n} Urlaubstage mehr eingetragen, als dir zustehen.
+{y} hast du {h} Stunden Freistellung mehr eingetragen, als dir zustehen.
+Summe {m}
+Stunden in {n} Schicht
+Stunden in {n} Schichten
+Zusatzstunden
+Nachtstunden, {r}
+Gearbeitete Samstage
+Sonn- und Feiertage
+Urlaub im Monat
+Resturlaub {y}
+Urlaub {y}
+Freistellungen im Monat
+Restliche Freistellung
+Krankheit
+Stundenkonto am Monatsende
+Stundenkonto heute
+Lohnschätzung {m}
+Stunden pro Woche
+Der Balken ist bei {n} Stunden voll.
+Zu prüfen
+Monatssumme
+Und {n} weitere Hinweise: Du findest sie in der App.
+{h} Stunden
+Schichten
+Nachtstunden
+So. u. Feiertage
+Freistellung
+Stundenkonto
+Normalschicht {w} Stunden, Samstag {s} Stunden. Erstellt mit {app} am {d}.
+Frei und Abwesenheiten
+Nacht
+Spät
+Früh
+Etiketten bearbeiten
+Etiketten für Abteilungen, Maschinen oder Arbeitsplätze anlegen
+Schicht mit {a} Stunden. Normaldauer von {b} Stunden verwenden
+Stunden mehr oder weniger als {h}
+Ganzer Tag.
+Der Rest des Tages zählt als normal gearbeitet. Die Freistellungsstunden werden von deinem Anspruch abgezogen.
+Pause {x}
+{h} nachts
+Normalschicht mit {h} Stunden, weil Samstag ist.
+Normalschicht mit {h} Stunden.
+Tag geleert.
+Etiketten gehören zu Tagen mit Schicht: Wähle auch eine Schicht.
+Achtung: {y} hast du mehr Urlaub eingetragen, als dir zusteht.
+Du hast deinen ganzen Urlaub für {y} genommen.
+Dir bleibt {n} Urlaubstag in {y}.
+Dir bleiben {n} Urlaubstage in {y}.
+Achtung: {y} hast du mehr Freistellung eingetragen, als dir zusteht.
+Dir bleiben {h} Stunden Freistellung in {y}.
+Std.
+Name der Schnellschicht {n}
+Name
+Schnellschicht {n} löschen
+Beginn der Schnellschicht {n}
+Dauer des ersten Teils in Stunden
+Dauer der Schnellschicht {n} in Stunden
+Hälfte
+Standard
+Geteilt
+Weiter um, Schnellschicht {n}
+Dauer des zweiten Teils in Stunden
+Der Rest
+Höchstens {n} Schnellschichten
++ Schnellschicht hinzufügen
+Schnellschicht „{x}“ gelöscht.
+Z. B. Abteilung A, Presse 3, Kasse 2
+Etikett {n}
+Etikett {n} löschen
+Etikett „{x}“ von {n} Tag entfernt.
+Etikett „{x}“ von {n} Tagen entfernt.
+ohne Namen
+Etikett „{x}“ gelöscht.
+Jahr
+Summe {y}
+Eingetragene freie Tage
+Lohnschätzung {y}
+Etiketten {y}
+{n} Tag
+{n} Tage
+Um einzelne Tage zu finden, nutze die Listenansicht im Kalender.
+Dieses Jahr hat noch nicht begonnen.
+Das Stundenkonto beginnt am {d}.
+Stand am {d}.
+Stand heute.
+Du hast mehr Stunden gearbeitet als im Vertrag.
+Du hast weniger Stunden gearbeitet als im Vertrag.
+Du liegst genau im Vertrag.
+Vertrag <b>{h} h</b> pro Woche
+Ab <b>{d}</b>
+Start <b>{h} h</b>
+Einstellungen des Stundenkontos ändern
+Genommen
+Genommen
+Geplant
+Geplant
+Anspruch
+Tage eingetragen {y}
+Stunden eingetragen {y}
+Lege deinen Anspruch fest
+Tage über dem Anspruch
+Stunden über dem Anspruch
+Tage übrig von {x}
+Stunden übrig von {x}
+{a} genommen, {b} geplant von {c}
+Du hast mehr Urlaub eingetragen, als dir zusteht.
+Du hast mehr Freistellung eingetragen, als dir zusteht.
+Du hast alles genommen.
+Du hast alles genommen.
+Bald aufgebraucht.
+Bald aufgebraucht.
+Stunden pro Monat
+{m}: {h} Stunden. Monat öffnen
+Monat
+Stunden
+Zusatz
+Freist.
+Konto
+Summe
+Monat für Monat
+Tippe auf einen Monat, um ihn im Kalender zu öffnen. Die Spalte Konto zeigt, wie viel jeder Monat hinzugefügt oder abgezogen hat.
+Schritt {n}
+Ein Tag weniger
+Ein Tag mehr
+Schritt {n} löschen
+Mit diesen Einstellungen gibt es keine Tage zu füllen.
+Wähle den Starttag.
+Zyklus von <b>{a}</b>. Ich fülle <b>{b}</b> vom {c} bis {d}:
+Auf {n} Tag anwenden
+Auf {n} Tage anwenden
+{n} Woche
+{n} Wochen
+Schichtfolge auf {n} Tag angewendet.
+Schichtfolge auf {n} Tage angewendet.
+Meine Schichten, Woche vom {d}:
+frei
+Meine Schichten
+{h} Stunden in {n} Schicht
+{h} Stunden in {n} Schichten
+Erstellt mit {app}
+Diese Woche
+Nächste Woche
+Letzte Woche
+In {n} Woche
+In {n} Wochen
+Vor {n} Woche
+Vor {n} Wochen
+Schichten kopiert: Füge sie in eine Nachricht ein.
+Kopieren ist hier nicht möglich.
+Das Bild konnte nicht erstellt werden.
+Es gibt noch keine Woche zum Wiederholen.
+Die nächste Woche ist schon ausgefüllt.
+Woche vom {a} auf die Woche vom {b} übertragen.
+Letzte Kopie gespeichert am {d}.
+Du hast noch keine Kopie gespeichert.
+Deine Schichten ({n} Tag) sind nur auf diesem Gerät: Speichere ab und zu eine Kopie, zum Beispiel in iCloud Drive, Google Drive oder per E-Mail an dich selbst, damit du sie bei einem Handywechsel nicht verlierst.
+Deine Schichten ({n} Tage) sind nur auf diesem Gerät: Speichere ab und zu eine Kopie, zum Beispiel in iCloud Drive, Google Drive oder per E-Mail an dich selbst, damit du sie bei einem Handywechsel nicht verlierst.
+Datei heruntergeladen.
+Download fehlgeschlagen.
+{n} Schicht
+{n} Schichten
+leer
+PDF für {m} erstellen
+Das PDF konnte nicht erstellt werden.
+{app}-Schichtkopie
+Kopie gespeichert. Bewahre sie an einem sicheren Ort auf.
+Die Datei enthält {n} Tag
+Die Datei enthält {n} Tage
+vom {a} bis {b}
+gespeichert am {d}
+Sie ersetzen deine aktuellen Schichten ({n} Tag) samt Einstellungen.
+Sie ersetzen deine aktuellen Schichten ({n} Tage) samt Einstellungen.
+Sie werden zusammen mit den Einstellungen geladen.
+Diese Datei ist keine Kopie von {app}.
+Kopie geladen: {n} Tag.
+Kopie geladen: {n} Tage.
+Version {v}.
+Öffne die App über ihre Webadresse, um Updates zu erhalten.
+Version {v} ist verfügbar.
+Zuletzt geprüft: {d}.
+Automatische Prüfung ist an.
+{app} {v} ist verfügbar
+Aktualisiere, um die neuesten Funktionen zu bekommen. Deine Schichten bleiben, wo sie sind.
+Öffne die App über ihre Webadresse, um nach Updates zu suchen.
+Prüfe…
+Du hast schon die neueste Version ({v}).
+Updates können nicht geprüft werden: Prüfe die Verbindung.
+Nach Updates suchen
+Aktualisiere…
+Freistellung
+Krank
+Neujahr
+Heilige Drei Könige
+Tag der Befreiung
+Tag der Arbeit
+Tag der Republik
+Mariä Himmelfahrt
+Allerheiligen
+Mariä Empfängnis
+Weihnachten
+Stephanstag
+Franz von Assisi
+Ostersonntag
+Ostermontag
+iWork
+Kalender
+Änderungen werden automatisch gespeichert.
+Schichtbeginn
+Geteilte Schicht, in zwei Teilen
+Erster Teil
+Weiter um
+Zweiter Teil
+Schichtende
+Stunden mehr oder weniger
+Freistellungsstunden
+Etiketten
+Tag leeren
+Fertig
+Einstellungen
+Jede Änderung wird automatisch gespeichert.
+Stunden Normalschicht
+Stunden Samstagsschicht
+Schnellschichten und Etiketten legst du unter Werkzeuge an, der Taste mit den drei Punkten.
+Urlaub und Freistellung
+Urlaub pro Jahr
+Tage
+Freistellung pro Jahr
+Dein Anspruch für ein Jahr, einschließlich Rest aus dem Vorjahr. Bei 0 bleibt der Zähler aus.
+Vertragliche Wochenstunden
+Zählen ab
+Anfangssaldo
+Das Stundenkonto vergleicht die gearbeiteten Stunden mit den vertraglichen, Tag für Tag bis heute. Urlaub, Freistellung, Krankheit, Sonn- und Feiertage zählen nicht als fehlende Stunden.
+Lohn
+Bruttostundenlohn
+€/h
+Nacht 22–06
+Zuschläge addieren sich: Eine Nachtstunde am Sonntag bekommt Nacht- und Sonntagszuschlag. Fällt ein Feiertag auf einen Sonntag, gilt nur der Feiertagszuschlag. Die Schätzung bleibt auf diesem Gerät und erscheint weder im PDF noch in geteilten Bildern.
+Sprache
+Darstellung
+Automatisch
+Hell
+Dunkel
+Updates
+Werkzeuge
+Schichten eintragen
+Schichtfolge
+Ein Muster, das sich über mehrere Wochen wiederholt
+Letzte Woche wiederholen
+Die Schichten in die nächste Woche kopieren
+Anpassen
+Schnellschichten
+Die Tasten, um eine Schicht mit einem Tipp einzutragen
+Abteilungen, Maschinen, Arbeitsplätze mit einem Tipp zuweisen
+Teilen und exportieren
+Woche teilen
+Bild oder Text, jede beliebige Woche
+Monats-PDF
+Der gewünschte Monat, fertig zum Drucken
+Sicherung
+Kopie der Schichten speichern
+Eine Datei mit allen Schichten und Einstellungen
+Kopie laden
+Schichten aus einer früher gespeicherten Datei zurückholen
+Schließen
+Das sind die Tasten über dem Kalender: Wähle eine und tippe auf die Tage, um sie einzutragen. Hier legst du sie an, benennst sie um und änderst Uhrzeiten und Dauer. Jede Änderung wird automatisch gespeichert.
+Lass die Dauer leer, um die Normaldauer zu verwenden (8 Stunden, samstags 6). Eine eigene Dauer gilt an allen Tagen. Mit „Geteilt“ hat die Schicht zwei Teile, zum Beispiel 8–12 und 16–20.
+Abteilungen, Maschinen, Arbeitsplätze oder was du brauchst. Sie erscheinen in der zweiten Reihe über dem Kalender: Wähle eines und tippe auf die Tage, um es zuzuweisen, auch zusammen mit einer Schicht. Jede Änderung wird automatisch gespeichert.
++ Etikett hinzufügen
+Diese Kopie laden?
+Abbrechen
+Schichten ersetzen
+Baue das Muster, das sich wiederholt, zum Beispiel 5 Früh, 2 frei, 5 Spät, 2 frei, und wende es auf einmal auf mehrere Wochen an.
+Muster
++ Schritt hinzufügen
+Ab dem
+Für wie viele Wochen
+Bereits ausgefüllte Tage nicht ändern
+Sonntage frei lassen
+Anwenden
+Zurück zu dieser Woche
+Als Text kopieren
+Bild teilen
+Wähle den Monat: Du bekommst den Kalender mit Schichten und Summen auf einer A4-Seite zum Drucken.
+Später
+Aktualisieren
+Ansicht
+Vorheriger Monat
+Nächster Monat
+Schnelleingabe
+Ansicht
+Kalenderansicht
+Listenansicht
+Schnelles Etikettieren
+In Notizen und Etiketten suchen
+Jahresübersicht
+Vorheriges Jahr
+Nächstes Jahr
+Art des Tages
+Eine halbe Stunde weniger
+Eine halbe Stunde mehr
+Z. B. Schicht getauscht mit Markus, Abteilung B
+Design
+Eine Woche weniger
+Eine Woche mehr
+Vorherige Woche
+Nächste Woche
+Vorschau des Bildes mit den Schichten der Woche
+Rückgängig
+{x}, Patronatsfest
+Patronatsfest
+{x} (Ersatztag)
+Keine bestimmte
+Keiner
+Ein anderes Datum…
+Regeln für {c}: mindestens {r} Stunden Ruhezeit zwischen zwei Schichten, im Durchschnitt höchstens {w} Stunden pro Woche, wöchentliche Ruhezeit von {k} Stunden. Die Woche beginnt am {d}.
+Land und Feiertage
+Land
+Region oder Provinz
+Schutzpatron
+Tag
+Das Patronatsfest zählt im Kalender, im Stundenkonto und beim Lohn als Feiertag. Prüfe das Datum mit deinem Vertrag oder deiner Gemeinde.
+{c}: mindestens {r} Stunden Ruhezeit zwischen zwei Schichten, im Durchschnitt höchstens {w} Stunden pro Woche, wöchentliche Ruhezeit von {k} Stunden. Die Woche beginnt am {d}.
+Nacht {r}
+Los geht's
+Weiter
+Neu: Sprache und Land
+Willkommen bei {app}
+Wähle Sprache und Land: Die App stellt sich auf die richtigen Regeln und Feiertage ein. Deine Schichten bleiben, wo sie sind.
+Der Kalender für deine Schichten. Wähle die Sprache.
+Wo arbeitest du?
+Das bestimmt Feiertage, Mindestruhezeit, Nachtstunden und Währung.
+Land suchen
+Deine Gegend
+Manche Feiertage gelten nur in einer Region oder Stadt. Du kannst diesen Schritt überspringen und ihn später ändern.
+Wenn deine Stadt fehlt, kannst du das Datum in den Einstellungen eintragen.
+Wie lange dauert eine Schicht?
+So wählst du nur die Anfangszeit und das Ende wird automatisch berechnet. Jederzeit änderbar.
+Normalschicht
+Samstagsschicht
+Alles bereit
+So ist die App eingestellt. Du kannst alles in den Einstellungen ändern.
+{w} Stunden, Samstag {s}
+Mindestruhezeit
+Höchstdurchschnitt
+{h} Stunden pro Woche
+Hinweise zu Ruhezeiten und Stunden sind Richtwerte und ersetzen nicht deinen Vertrag.
+Zurück
+Regeln für Hinweise und Summen
+h/Woche
+Nacht ab
+Nacht bis
+Dein Vertrag kann günstiger sein als das Gesetz: Hier kannst du die Regeln anpassen.
+Zurück zu den Regeln des Landes
+{x}, lokaler Feiertag
+Lokaler Feiertag
+Ein Feiertag deiner Gemeinde oder deines Vertrags: Er zählt im Kalender, im Stundenkonto und beim Lohn als Feiertag.
+Fällt ein Feiertag auf einen Sonntag, legt der Arbeitgeber einen Ersatztag fest.
+Grundlovsdag (5. Juni) und Heiligabend sind keine gesetzlichen Feiertage, aber viele Verträge sehen sie vor.
+Pfingstmontag ist oft der „Solidaritätstag“ und wird gearbeitet.
+In Bayern ist Mariä Himmelfahrt nur in Gemeinden mit überwiegend katholischer Bevölkerung ein Feiertag.
+Karfreitag und der 5. Mai sind nur frei, wenn der Tarifvertrag (CAO) es vorsieht.
+Der Faschingsdienstag ist freiwillig; jede Gemeinde hat außerdem ihren eigenen Gemeindefeiertag.
+Seit 2025 ist der 17. November kein Feiertag mehr; 2026 wird auch am 8. Mai und 15. September gearbeitet.
+Jede autonome Gemeinschaft fügt eigene Feiertage hinzu (oft Gründonnerstag) und ändert sie jedes Jahr: Trage deinen als lokalen Feiertag ein.
+Die Vorabende (Midsommarafton, Julafton, Nyårsafton) sind keine gesetzlichen Feiertage, aber fast überall frei.
+Die 45-Stunden-Grenze gilt für Industrie, Büros, technisches Personal und Großhandel; für alle anderen sind es 50. In manchen Gemeinden (Freiburg, Solothurn, Aargau) gelten andere Feiertage: Trage deinen als lokalen Feiertag ein.
+Im Vereinigten Königreich sind Bank Holidays kein gesetzlicher Anspruch: Es hängt vom Vertrag ab. Auf die 48-Stunden-Grenze kann man schriftlich verzichten (Opt-out).
+Arbeits- und Ruhezeiten richten sich vor allem nach den Tarifverträgen von San Marino: Prüfe die Werte unten.
+Fällt ein Feiertag auf einen Sonntag, ist der Montag frei.
+Die 45-Stunden-Grenze gilt für Industrie, Büros und Großhandel; für alle anderen sind es 50.
+{c}: Das Gesetz schreibt keine Mindestruhezeit zwischen zwei Schichten vor. Die App warnt unter {r} Stunden und über {w} Stunden pro Woche. Die Woche beginnt am {d}.
+Bundesfeiertage gelten gesetzlich nur für Bundesbedienstete: In der Privatwirtschaft hängt es vom Vertrag ab. Jeder Bundesstaat hat eigene Feiertage: Trage deinen als lokalen Feiertag ein.
+Arbeits- und Ruhezeiten können je nach Provinz verschieden sein: Prüfe die Werte unten. Neufundland und Labrador ist noch nicht enthalten.
+Auch Wahltage für Bundes- und Lokalwahlen sind für Wahlberechtigte frei.
+Karneval und Fronleichnam sind „ponto facultativo“; jeder Bundesstaat und jede Gemeinde fügt eigene Feiertage hinzu: Trage deinen als lokalen Feiertag ein.
+Die Regierung kann die verschiebbaren Feiertage (17. Juni, 17. August, 12. Oktober, 20. November) verlegen und arbeitsfreie Tage hinzufügen: Hier siehst du die gesetzlich festgelegten Daten.
+Viele Tarifverträge (Awards) sehen 10 Stunden Ruhezeit zwischen zwei Schichten vor. Manche Feiertage gelten nur in bestimmten Gebieten (Royal Show, Regatta, Recreation Day): Du kannst deinen als lokalen Feiertag eintragen.
+Jede Provinz hat ihren Anniversary Day: Wenn deiner nicht in der Liste ist, trage ihn als lokalen Feiertag ein.
+Keiner
+Stunden und Vertrag
+Arbeitszeit
+Schichtdauer, Mindestruhezeit, Nachtstunden
+Wie viele Tage und Stunden dir zustehen
+Vertragsstunden und Anfangssaldo
+Lohnschätzung
+Stundenlohn und Zuschläge, nur für dich
+Zweitjob
+Bereitschaft
+Bereitschaft aktiv.
+Tippe auf Tage, um sie hinzuzufügen oder zu entfernen, auch an Ruhetagen. Du kannst sie zusammen mit einer Schicht wählen.
+Jeder angetippte Tag bekommt Schicht und Bereitschaft zusammen.
+{h} Std. Einsatz
+Einsatzstunden
+Der Zweitjob wird getrennt gezählt: Er zählt nicht zum Stundenkonto, zum Urlaub und zu den Hinweisen des Hauptjobs.
+Hauptjob
+Erstellt mit {app} am {d}.
+Job der Schnellschicht {n}
+{n} Monat
+{n} Monate
+Schichten {x}
+<b>{n}</b> vom {a} bis {b}.
+{n} Termin
+{n} Termine
+Keine Schichten zum Exportieren vom {a} bis {b}.
+Ab
+Dauer
+Einsatz
+Einsatzstunden zählen als gearbeitet und werden in der Lohnschätzung als Überstunden bezahlt.
+Beginn
+Ein weiterer Job mit eigenen Zeiten und Summen
+In den Kalender exportieren
+Google, Apple oder Outlook Kalender
+Ich habe Bereitschaftsdienste
+Meist ab
+Über dem Kalender erscheint die Schaltfläche Bereitschaft: wähle sie und tippe auf die Tage, auch an Ruhetagen. Einsatzstunden trägst du ein, indem du auf den Tag tippst.
+Bereitschaftszulage
+Pro Bereitschaftsdienst. Einsatzstunden werden als Überstunden bezahlt.
+Ich habe einen Zweitjob
+Übliche Dauer
+Schichten des Zweitjobs erscheinen als zweite Zeile an denselben Tagen, mit einem türkisen Quadrat. Du trägst sie mit den Schnellschichten des Zweitjobs ein oder indem du auf einen Tag tippst. Stunden und Lohn werden getrennt gezählt: Sie zählen nicht zum Stundenkonto, zum Urlaub und zu den Hinweisen des Hauptjobs.
+Wähle für jede Schnellschicht, ob sie zum Hauptjob oder zum Zweitjob gehört. Schichten des Zweitjobs haben ein türkises Quadrat.
+Erstelle eine Datei mit deinen Schichten für Google Kalender, Apple Kalender oder Outlook.
+Wie viele Monate
+Was exportieren
+Arbeitsschichten
+Urlaub, Freistellung und Krankheit, als ganztägige Termine
+Erinnerung
+30 Minuten vorher
+1 Stunde vorher
+2 Stunden vorher
+So öffnest du sie in deinem Kalender
+iPhone, iPad und Mac.
+Öffne die Datei und wähle Alle hinzufügen, dann den Kalender dafür.
+Google Kalender.
+Öffne am Computer calendar.google.com, geh zu Einstellungen, Importieren & exportieren, und lade die Datei hoch. Unter Android kannst du sie auch direkt mit Google Kalender öffnen.
+Outlook.
+Öffne die Datei mit Outlook, oder geh auf outlook.com in den Kalender, Kalender hinzufügen, Aus Datei hochladen.
+Wenn du denselben Zeitraum erneut exportierst, werden bereits importierte Schichten meist aktualisiert statt verdoppelt. Tage, die du in der App geleert hast, musst du von Hand löschen. Tipp: Nutze einen eigenen Kalender nur für Schichten, dann kannst du ihn leeren und neu importieren, wenn sie sich ändern.
+Datei erstellen
+Z. B. Bar, Nachhilfe, Lieferungen
+Einen Monat weniger
+Einen Monat mehr
+Job
+Überstunden
+Genommener Urlaub
+Genommene Freistellung
+Bruttosumme
+{n} Abweichung von deinen eingetragenen Stunden
+{n} Abweichungen von deinen eingetragenen Stunden
+Die Posten auf der Abrechnung stimmen mit deinen Einträgen überein.
+Eingetragen
+Abrechnung
+{v} weniger auf der Abrechnung
+{v} mehr auf der Abrechnung
+Schätzung der App, nur zur Orientierung
+Abrechnung {a}: Die Stunden werden mit {b} verglichen.
+Lohnabrechnung {m}
+eingetragen {a}, auf der Abrechnung {b}
+Nettoauszahlung
+Lohnabrechnung öffnen
+Abrechnung eingetragen
+keine Abrechnung
+PDF für {m} laden
+Lohnabrechnung {m} gelöscht.
+Lese die Lohnabrechnung…
+Falsches Passwort, versuch es noch einmal.
+Das PDF ist passwortgeschützt. Oft ist es deine Steuer- oder Personalnummer oder ein Passwort vom Arbeitgeber.
+Der PDF-Leser lässt sich nicht laden. Prüfe die Verbindung und versuch es erneut.
+Diese Datei lässt sich nicht öffnen. Ist es ein PDF?
+Dieses PDF enthält keinen Text, vielleicht ist es ein Scan oder Foto. Gib die Zahlen von Hand ein.
+Ich habe die Posten dieser Abrechnung nicht erkannt. Gib die Zahlen von Hand ein: nur die, die dich interessieren.
+Überstunden
+Nachtarbeit
+Sonn- und Feiertage
+genommener Urlaub
+genommene Freistellung
+Resturlaub
+restliche Freistellung
+Bruttosumme
+Netto
+Abrechnung {m}.
+Gelesen: {x}.
+Prüfe die markierten Zahlen und ergänze fehlende von Hand.
+Das sieht nach einer Abrechnung mit 13. oder 14. Gehalt aus: prüfe die Bruttosumme genau.
+Die Datei ist zu groß für eine Lohnabrechnung.
+Lohnabrechnung
+Bezahlte Stunden und Posten prüfen
+Lade das PDF deiner Lohnabrechnung oder gib die Zahlen ein: Die App vergleicht sie mit deinen eingetragenen Stunden.
+PDF-Passwort
+Öffnen
+Das PDF wird nur auf diesem Gerät gelesen und nicht gespeichert: Die App behält nur die Zahlen unten.
+Auf der Abrechnung
+Resturlaub
+Überstunden und Zuschläge sind die des Vormonats
+Viele Firmen bezahlen Überstunden, Nacht- und Feiertagsarbeit erst im Folgemonat. Wenn das bei dir so ist, schalte es ein: Der Vergleich nutzt dann den richtigen Monat.
+Löschen
+Schichten eintragen
+Wie trage ich eine Schicht ein?
+Wähle über dem Kalender eine Schnellschicht, zum Beispiel {a}, und tippe auf die Tage: Jeder bekommt diese Schicht. Tippe noch einmal auf die Schaltfläche, um fertig zu sein. Für andere Zeiten tippe auf den Tag und gib Beginn und Dauer ein.
+Wie ändere oder leere ich einen Tag?
+Tippe auf den Tag: In der Karte änderst du Art, Uhrzeit, Stunden mehr oder weniger, Etiketten und Notiz, und alles speichert sich von selbst. {a} löscht ihn. Um viele zu leeren, wähle {b} über dem Kalender und tippe auf die Tage. Nach jeder Änderung kannst du sie unten in der Meldung rückgängig machen.
+Wie trage ich Ruhetage, Urlaub, Freistellung und Krankheit ein?
+{a} und {b} haben eine eigene Schaltfläche über dem Kalender: Wähle sie und tippe auf die Tage. Für {c} oder {d} tippe auf den Tag und wähle die Art in der Karte; bei Freistellung gibst du auch die Stunden an.
+Wie trage ich Überstunden oder eine geteilte Schicht ein?
+Nutze in der Karte des Tages {a} für Überstunden oder früheres Gehen. Mit {b} gibst du beide Teile an, zum Beispiel 8–12 und 16–20.
+Wie lege ich meine Schnellschichten an?
+Öffne {p} und wähle Name, Beginn und Dauer jeder Schaltfläche. Es können geteilte Schichten sein und, wenn du einen Zweitjob hast, zu diesem Job gehören.
+Ich arbeite immer im gleichen Rhythmus: Kann sich der Kalender selbst füllen?
+Ja: Beschreibe in {p} das Muster (zum Beispiel 5 Früh, 2 frei, 5 Nacht, 2 frei), den Starttag und bis wann. Mit {q} kopierst du stattdessen eine Woche auf die nächste.
+Wozu sind Etiketten da?
+Sie markieren Abteilung, Maschine oder Arbeitsplatz. Du legst sie in {p} an; dann wählst du sie über dem Kalender und tippst auf die Tage, auch zusammen mit einer Schicht.
+Wie finde ich einen Tag, eine Notiz oder ein Etikett?
+Wechsle mit der Schaltfläche neben den Schnellschichten zur Listenansicht: Dort erscheint die Suche in Notizen und Etiketten. Der Reiter {a} zeigt die Summen des ganzen Jahres, Monat für Monat.
+Stunden, Vertrag und Lohn
+Was bedeuten die Hinweise unten im Monat?
+Die App prüft die Regeln deines Landes: Mindestruhe zwischen zwei Schichten, durchschnittliche Wochenstunden, sieben Arbeitstage am Stück. Wenn dein Vertrag anders ist, ändere die Werte unter {p}.
+Wie funktioniert das Stundenkonto?
+Gib unter {p} die Wochenstunden laut Vertrag ein, ab wann gezählt wird und einen eventuellen Anfangssaldo. Die App vergleicht geleistete mit geschuldeten Stunden und zeigt den Saldo in der Monatsübersicht.
+Wie behalte ich Urlaub und Freistellung im Blick?
+Gib unter {p} ein, wie viele Urlaubstage und Freistellungsstunden dir pro Jahr zustehen. Die App zählt genommene und geplante und sagt dir, wie viele übrig sind.
+Wie funktioniert die Lohnschätzung?
+Gib unter {p} den Bruttostundenlohn und die Zuschläge ein. Es ist eine grobe Schätzung nur für dich: Sie erscheint nie im PDF oder in geteilten Bildern, und du kannst die Beträge ausblenden.
+Wie trage ich Bereitschaft ein?
+Schalte sie unter {p} ein. Über dem Kalender erscheint die Schaltfläche {a}: Wähle sie und tippe auf die Tage, auch Ruhetage. Einsatzstunden trägst du in der Karte des Tages ein; die Zulage stellst du unter {q} ein.
+Ich habe einen Zweitjob: Wie halte ich ihn getrennt?
+Schalte ihn unter {p} ein, mit Name, Dauer und Lohn. Seine Schichten haben eigene Schnellschaltflächen und erscheinen als zweite Zeile an den Tagen. Stunden und Lohn werden getrennt gezählt, und das Monats-PDF gibt es für jeden Job.
+Wie prüfe ich meine Lohnabrechnung?
+Wähle unter {p} den Monat und lade das PDF: Die App liest Überstunden, Nacht- und Feiertagsarbeit, Urlaub, Freistellung, Brutto und Netto und vergleicht sie mit deinen Stunden. Ist die Abrechnung auf Papier, gib die Zahlen von Hand ein.
+Die Abrechnung wird nicht gelesen oder die Zahlen stimmen nicht: Was tun?
+Ist das PDF ein Scan oder Foto, hat es keinen lesbaren Text: Gib die Zahlen von Hand ein. Ist es geschützt, fragt die App nach dem Passwort. Prüfe immer die markierten Zahlen und schalte {a} ein, wenn deine Firma Überstunden und Zuschläge im Folgemonat zahlt.
+Teilen und exportieren
+Wie schicke ich jemandem meine Schichten der Woche?
+Wähle unter {p} die Woche und schick sie als Bild oder Text, zum Beispiel in einem Chat.
+Wie drucke ich einen Monat?
+Wähle unter {p} den Monat: Du bekommst ein A4-Blatt mit Kalender und Summen zum Drucken oder Verschicken.
+Wie bekomme ich meine Schichten in Google Kalender, Apple Kalender oder Outlook?
+Wähle unter {p} Beginn, Anzahl Monate und Inhalt, dann öffne die Datei mit deinem Kalender: Im selben Fenster stehen die Schritte für jeden. Exportierst du denselben Zeitraum erneut, werden Schichten meist aktualisiert statt verdoppelt.
+Daten, App und Einstellungen
+Wo werden meine Schichten gespeichert?
+Nur auf diesem Gerät, im Browser. Du brauchst kein Konto und nichts wird an einen Server geschickt.
+Wie mache ich eine Kopie oder wechsle das Handy?
+Mit {p} bekommst du eine Datei mit Schichten und Einstellungen. Öffne auf dem anderen Handy die App und nutze {q}. Der Punkt auf {a} erinnert dich, wann es Zeit für eine Kopie ist.
+Verliere ich meine Schichten, wenn ich die Browserdaten lösche?
+Ja, wenn du keine Kopie hast. Deshalb lohnt es sich, ab und zu eine zu speichern, vor allem vor einem Handywechsel.
+Wie installiere ich die App auf dem Handy?
+Auf dem iPhone öffne die App in Safari, tippe auf Teilen und dann auf Zum Home-Bildschirm. Auf Android öffne das Chrome-Menü und wähle App installieren oder Zum Startbildschirm hinzufügen. Installiert funktioniert sie auch offline.
+Wie aktualisiere ich die App?
+Wenn es eine neue Version gibt, erscheint oben ein Hinweis: Tippe auf {a}. Deine Schichten bleiben, wo sie sind.
+Wie ändere ich Land, Feiertage, Sprache oder Design?
+Wähle unter {p} Land und Region für die Feiertage, die Sprache und das helle oder dunkle Design. Lokale Feiertage, die die App nicht kennt, trägst du als Ruhetag ein.
+Bring mich hin
+Anleitung öffnen
+Hilfe
+Anleitung und häufige Fragen
+So geht's, Schritt für Schritt
+Anleitung
+Keine Antwort gefunden. Versuch es mit anderen Wörtern.
+In der Anleitung suchen
+Ich zeige dir in einer Minute, wie es funktioniert. Du kannst jederzeit überspringen und die Tour in der Anleitung wiederholen.
+Wähle eine Schicht und tippe auf die Tage im Kalender, um sie einzutragen. Tippe noch einmal auf die Schaltfläche, um fertig zu sein. {a}, {b} und {c} funktionieren genauso.
+Der Kalender
+Tippe auf einen Tag, um seine Karte zu öffnen: Uhrzeit, Überstunden, Freistellung, Krankheit und Notizen. Alles speichert sich von selbst und du kannst es unten in der Meldung rückgängig machen.
+Die nächste Schicht
+Hier oben siehst du immer deine nächste Schicht oder die laufende.
+Die Monatsübersicht
+Arbeitsstunden, Überstunden, Nächte und Feiertage des Monats, mit Hinweisen, wenn eine Schicht die Ruhezeiten verletzt.
+Kalender und Jahr
+Wechsle zu Jahr, um die Summen des ganzen Jahres Monat für Monat zu sehen.
+Hier findest du alles andere: Schichtrhythmus, Urlaub und Freistellung, Stundenkonto, Lohnschätzung, Lohnabrechnung, Monats-PDF, Kalenderexport, Datenkopie und die Anleitung.
+Land und Feiertage, Sprache und helles oder dunkles Design.
+Fang an und trag die Schichten dieser Woche ein.
+{n} von {m}
+Überspringen
+Los
+Tour noch einmal ansehen

@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} u
+{h} u {m} min
+{h} u
+{m} min
+Dienst
+en
+Bedragen tonen
+Bedragen verbergen
+Gewerkte uren
+Overuren
+Nachtwerk
+Zondag
+Feestdagen
+Ruwe bruto-schatting. Alleen voor jou: komt niet in de pdf of in gedeelde afbeeldingen.
+Toeslagen toevoegen
+Je diensten worden op dit apparaat bewaard.
+geen dienst
+gebroken dienst {r}
+dienst {r}
+van de volgende dag
+{h} uur verlof
+Vrij
+Vakantie
+Wissen
+Labels maken voor afdelingen of werkplekken
+Kies een dienst, een label of allebei en tik dan op de dagen. Of tik op een dag voor tijden, notities en extra uren.
+Wissen staat aan.
+Tik op de dagen die je wilt leegmaken en tik daarna nog eens op de knop om te stoppen.
+Elke dag waarop je tikt krijgt dienst en label tegelijk.
+{x} staat aan.
+Tik op de dagen die je wilt invullen en kies eventueel ook een label. Tik nog eens op de knop om te stoppen.
+Tik op de dagen die je wilt invullen. Tik nog eens op de knop om te stoppen.
+Label {x} staat aan.
+Tik op dagen met een dienst om het toe te voegen of weg te halen.
+Vrij
+rust korter dan {n} uur
+{x} extra
+{n} dag gevonden
+{n} dagen gevonden
+{h} uur werk
+Geen dagen met ‘{q}’ in notities of labels.
+Zaterdag {s} uur, andere dagen {w} uur.
+Notitie
+Minder dan {n} uur rust sinds de vorige dienst
+Pauze
+Verder over <b>{x}</b>. Gebroken dienst: {r}.
+Volgende dienst
+Geen diensten gepland
+Tik op een dag in de kalender en kies de begintijd: het einde wordt vanzelf berekend.
+Vandaag
+Morgen
+Gisteren
+Nu aan het werk
+Nog <b>{a}</b> te gaan. Je hebt {b} gedaan.
+Begint over <b>{x}</b>.
+Gebroken: {r}, in totaal {h} uur.
+Duurt {h} uur.
+Maar {h} uur rust tussen {a} en {b} (het minimum is {n}).
+Zeven of meer werkdagen achter elkaar vanaf {d}.
+Week van {d}: {h} uur, boven de {n}.
+In {y} heb je {n} vakantiedag meer genoteerd dan je tegoed hebt.
+In {y} heb je {n} vakantiedagen meer genoteerd dan je tegoed hebt.
+In {y} heb je {h} uur verlof meer genoteerd dan je tegoed hebt.
+Totaal {m}
+uur in {n} dienst
+uur in {n} diensten
+Extra uren
+Nachturen, {r}
+Gewerkte zaterdagen
+Zon- en feestdagen
+Vakantie deze maand
+Vakantie over in {y}
+Vakantie in {y}
+Verlof deze maand
+Verlof over
+Ziek
+Urenbank aan het eind van de maand
+Urenbank vandaag
+Loonschatting {m}
+Uren per week
+De balk is vol bij {n} uur.
+Even nakijken
+Maandtotaal
+En nog {n} meldingen: je vindt ze in de app.
+{h} uur
+Diensten
+Nachturen
+Zon- en feestd.
+Verlof
+Urenbank
+Standaarddienst {w} uur, zaterdag {s} uur. Gemaakt met {app} op {d}.
+Vrij en afwezig
+Nacht
+Middag
+Ochtend
+Labels bewerken
+Labels maken voor afdelingen, machines of werkplekken
+Dienst van {a} uur. Standaardduur van {b} uur gebruiken
+Uren meer of minder dan {h}
+Hele dag.
+De rest van de dag telt als normaal gewerkt. Verlofuren gaan van je tegoed af.
+pauze {x}
+{h} 's nachts
+Standaarddienst van {h} uur, want het is zaterdag.
+Standaarddienst van {h} uur.
+Dag leeggemaakt.
+Labels horen bij dagen met een dienst: kies ook een dienst.
+Let op: in {y} zit je boven je vakantietegoed.
+Je hebt al je vakantie van {y} opgenomen.
+Je hebt nog {n} vakantiedag in {y}.
+Je hebt nog {n} vakantiedagen in {y}.
+Let op: in {y} zit je boven je verloftegoed.
+Je hebt nog {h} uur verlof in {y}.
+uur
+Naam snelle dienst {n}
+Naam
+Snelle dienst {n} verwijderen
+Begin snelle dienst {n}
+Duur eerste deel in uren
+Duur snelle dienst {n} in uren
+Helft
+Standaard
+Gebroken
+Verder om, snelle dienst {n}
+Duur tweede deel in uren
+De rest
+Maximaal {n} snelle diensten
++ Snelle dienst toevoegen
+Snelle dienst ‘{x}’ verwijderd.
+Bijv. Afdeling A, Pers 3, Kassa 2
+Label {n}
+Label {n} verwijderen
+Label ‘{x}’ verwijderd van {n} dag.
+Label ‘{x}’ verwijderd van {n} dagen.
+naamloos
+Label ‘{x}’ verwijderd.
+Jaar
+Totaal {y}
+Genoteerde vrije dagen
+Loonschatting {y}
+Labels in {y}
+{n} dag
+{n} dagen
+Gebruik de lijstweergave in de kalender om losse dagen te zoeken.
+Dit jaar is nog niet begonnen.
+De urenbank begint op {d}.
+Saldo op {d}.
+Saldo tot vandaag.
+Je hebt meer uren gewerkt dan in je contract staat.
+Je hebt minder uren gewerkt dan in je contract staat.
+Je zit precies op je contract.
+Contract <b>{h} u</b> per week
+Vanaf <b>{d}</b>
+Start <b>{h} u</b>
+Instellingen van de urenbank wijzigen
+Opgenomen
+Opgenomen
+Gepland
+Gepland
+Tegoed
+dagen genoteerd in {y}
+uur genoteerd in {y}
+Stel je tegoed in
+dagen te veel
+uur te veel
+dagen over van {x}
+uur over van {x}
+{a} opgenomen, {b} gepland van {c}
+Je hebt meer vakantie genoteerd dan je tegoed hebt.
+Je hebt meer verlof genoteerd dan je tegoed hebt.
+Alles is op.
+Alles is op.
+Bijna op.
+Bijna op.
+Uren per maand
+{m}: {h} uur. Maand openen
+Maand
+Uren
+Extra
+Verlof
+Bank
+Totaal
+Maand voor maand
+Tik op een maand om hem in de kalender te openen. De kolom Bank laat zien hoeveel elke maand erbij of eraf deed.
+Stap {n}
+Een dag minder
+Een dag meer
+Stap {n} verwijderen
+Met deze keuzes zijn er geen dagen om in te vullen.
+Kies de startdag.
+Cyclus van <b>{a}</b>. Ik vul <b>{b}</b> in van {c} tot {d}:
+Toepassen op {n} dag
+Toepassen op {n} dagen
+{n} week
+{n} weken
+Rooster toegepast op {n} dag.
+Rooster toegepast op {n} dagen.
+Mijn diensten, week van {d}:
+vrij
+Mijn diensten
+{h} uur in {n} dienst
+{h} uur in {n} diensten
+Gemaakt met {app}
+Deze week
+Volgende week
+Vorige week
+Over {n} week
+Over {n} weken
+{n} week geleden
+{n} weken geleden
+Diensten gekopieerd: plak ze in een bericht.
+Kopiëren kan hier niet.
+Kan de afbeelding niet maken.
+Er is nog geen week om te herhalen.
+De volgende week is al ingevuld.
+Week van {a} herhaald in de week van {b}.
+Laatste kopie bewaard op {d}.
+Je hebt nog geen kopie bewaard.
+Je diensten ({n} dag) staan alleen op dit apparaat: bewaar af en toe een kopie, bijvoorbeeld in iCloud Drive, Google Drive of in een mail aan jezelf, zodat je ze niet kwijtraakt als je van telefoon wisselt.
+Je diensten ({n} dagen) staan alleen op dit apparaat: bewaar af en toe een kopie, bijvoorbeeld in iCloud Drive, Google Drive of in een mail aan jezelf, zodat je ze niet kwijtraakt als je van telefoon wisselt.
+Bestand gedownload.
+Downloaden mislukt.
+{n} dienst
+{n} diensten
+leeg
+Pdf van {m} maken
+Kan de pdf niet maken.
+Kopie van diensten {app}
+Kopie bewaard. Bewaar hem op een veilige plek.
+Het bestand bevat {n} dag
+Het bestand bevat {n} dagen
+van {a} tot {b}
+bewaard op {d}
+Ze vervangen de diensten die je nu hebt ({n} dag), samen met de instellingen.
+Ze vervangen de diensten die je nu hebt ({n} dagen), samen met de instellingen.
+Ze worden samen met de instellingen geladen.
+Dit bestand is geen kopie van {app}.
+Kopie geladen: {n} dag.
+Kopie geladen: {n} dagen.
+Versie {v}.
+Open de app via zijn webadres om updates te krijgen.
+Versie {v} is beschikbaar.
+Laatst gecontroleerd: {d}.
+Automatisch controleren staat aan.
+{app} {v} is beschikbaar
+Werk bij voor het nieuwste. Je diensten blijven waar ze zijn.
+Open de app via zijn webadres om naar updates te zoeken.
+Controleren…
+Je hebt de nieuwste versie al ({v}).
+Kan niet op updates controleren: controleer je verbinding.
+Naar updates zoeken
+Bijwerken…
+Verlof
+Ziek
+Nieuwjaarsdag
+Driekoningen
+Bevrijdingsdag
+Dag van de Arbeid
+Dag van de Republiek
+Maria-Tenhemelopneming
+Allerheiligen
+Onbevlekte Ontvangenis
+Kerstmis
+Tweede kerstdag
+Sint-Franciscus
+Pasen
+Paasmaandag
+iWork
+Kalender
+Wijzigingen worden vanzelf bewaard.
+Begin dienst
+Gebroken dienst, in twee delen
+Eerste deel
+Verder om
+Tweede deel
+Einde dienst
+Uren meer of minder
+Verlofuren
+Labels
+Dag leegmaken
+Klaar
+Instellingen
+Elke wijziging wordt vanzelf bewaard.
+Uren normale dienst
+Uren zaterdagdienst
+Snelle diensten en labels maak en wijzig je via Hulpmiddelen, de knop met de drie puntjes.
+Vakantie en verlof
+Vakantie per jaar
+dagen
+Verlof per jaar
+Je tegoed voor een jaar, inclusief wat over is van vorig jaar. Bij 0 staat de teller uit.
+Contracturen per week
+Tellen vanaf
+Beginsaldo
+De urenbank vergelijkt je gewerkte uren met je contracturen, dag voor dag tot vandaag. Vakantie, verlof, ziekte, zondagen en feestdagen tellen niet als ontbrekende uren.
+Loon
+Bruto uurloon
+€/u
+Nacht 22–06
+Toeslagen tellen op: een nachtuur op zondag krijgt zowel de nacht- als de zondagtoeslag. Valt een feestdag op zondag, dan geldt alleen de feestdagtoeslag. De schatting blijft op dit apparaat en komt niet in de pdf of in gedeelde afbeeldingen.
+Taal
+Weergave
+Automatisch
+Licht
+Donker
+Updates
+Hulpmiddelen
+Diensten invullen
+Vast rooster
+Een patroon dat zich herhaalt, over meerdere weken
+Laatste week herhalen
+De diensten naar de volgende week kopiëren
+Aanpassen
+Snelle diensten
+De knoppen om met één tik een dienst in te vullen
+Afdelingen, machines, werkplekken met één tik toewijzen
+Delen en exporteren
+Week delen
+Afbeelding of tekst, elke week
+Maand-pdf
+De maand die je wilt, klaar om te printen
+Back-up
+Kopie van je diensten bewaren
+Een bestand met al je diensten en instellingen
+Kopie laden
+Je diensten terughalen uit een eerder bewaard bestand
+Sluiten
+Dit zijn de knoppen boven de kalender: kies er een en tik op de dagen om hem in te vullen. Hier maak je ze, geef je ze een naam en pas je tijden en duur aan. Elke wijziging wordt vanzelf bewaard.
+Laat de duur leeg voor de standaardduur (8 uur, 6 op zaterdag). Een eigen duur geldt voor alle dagen. Met ‘Gebroken’ heeft de dienst twee delen, bijvoorbeeld 8–12 en 16–20.
+Afdelingen, machines, werkplekken of wat je maar nodig hebt. Ze staan in de tweede rij boven de kalender: kies er een en tik op de dagen om het toe te wijzen, ook samen met een dienst. Elke wijziging wordt vanzelf bewaard.
++ Label toevoegen
+Deze kopie laden?
+Annuleren
+Diensten vervangen
+Bouw het patroon dat zich herhaalt, bijvoorbeeld 5 ochtenden, 2 vrij, 5 middagen, 2 vrij, en pas het in één keer toe op meerdere weken.
+Patroon
++ Stap toevoegen
+Vanaf
+Voor hoeveel weken
+Al ingevulde dagen niet aanraken
+Zondagen vrij laten
+Toepassen
+Terug naar deze week
+Als tekst kopiëren
+Afbeelding delen
+Kies de maand: je krijgt de kalender met diensten en totalen op een A4 om te printen.
+Later
+Bijwerken
+Scherm
+Vorige maand
+Volgende maand
+Snel invoeren
+Weergave
+Kalenderweergave
+Lijstweergave
+Snel labelen
+Zoeken in notities en labels
+Jaaroverzicht
+Vorig jaar
+Volgend jaar
+Soort dag
+Half uur minder
+Half uur meer
+Bijv. dienst geruild met Mark, afdeling B
+Thema
+Een week minder
+Een week meer
+Vorige week
+Volgende week
+Voorbeeld van de afbeelding met de diensten van de week
+Ongedaan maken
+{x}, beschermheiligenfeest
+Beschermheiligenfeest
+{x} (vervangende dag)
+Geen bepaalde
+Geen
+Een andere datum…
+Regels voor {c}: minstens {r} uur rust tussen twee diensten, gemiddeld hoogstens {w} uur per week, wekelijkse rust van {k} uur. De week begint op {d}.
+Land en feestdagen
+Land
+Regio of provincie
+Beschermheilige
+Dag
+Het beschermheiligenfeest telt als feestdag in de kalender, de urenbank en het loon. Controleer de datum bij je contract of je gemeente.
+{c}: minstens {r} uur rust tussen twee diensten, gemiddeld hoogstens {w} uur per week, wekelijkse rust van {k} uur. De week begint op {d}.
+Nacht {r}
+Beginnen
+Volgende
+Nieuw: taal en land
+Welkom bij {app}
+Kies taal en land: de app stelt zich in met de juiste regels en feestdagen. Je diensten blijven waar ze zijn.
+De kalender voor je diensten. Kies de taal.
+Waar werk je?
+Dit bepaalt feestdagen, minimale rust, nachturen en valuta.
+Zoek een land
+Jouw regio
+Sommige feestdagen gelden alleen in een regio of stad. Je kunt deze stap overslaan en later wijzigen.
+Staat je stad er niet bij, dan kun je de datum invullen bij Instellingen.
+Hoe lang duurt een dienst?
+Zo kies je alleen de begintijd en wordt het einde vanzelf berekend. Altijd te wijzigen.
+Normale dienst
+Zaterdagdienst
+Alles klaar
+Zo is de app ingesteld. Je kunt alles wijzigen bij Instellingen.
+{w} uur, zaterdag {s}
+Minimale rust
+Maximaal gemiddelde
+{h} uur per week
+Meldingen over rust en uren zijn richtlijnen en vervangen je contract niet.
+Terug
+Regels voor meldingen en tellingen
+u/week
+Nacht vanaf
+Nacht tot
+Je contract kan gunstiger zijn dan de wet: hier kun je de regels aanpassen.
+Terug naar de regels van het land
+{x}, lokale feestdag
+Lokale feestdag
+Een feestdag van je gemeente of je contract: telt als feestdag in de kalender, de urenbank en het loon.
+Valt een feestdag op zondag, dan wijst de werkgever een vervangende dag aan.
+Grundlovsdag (5 juni) en kerstavond zijn geen wettelijke feestdagen, maar staan in veel contracten.
+Pinkstermaandag is vaak de ‘solidariteitsdag’ en dan wordt er gewerkt.
+In Beieren is Maria-Tenhemelopneming alleen een feestdag in overwegend katholieke gemeenten.
+Goede Vrijdag en 5 mei zijn alleen vrij als je cao dat zegt.
+Carnavalsdinsdag is facultatief; elke gemeente heeft ook een eigen gemeentelijke feestdag.
+Sinds 2025 is 17 november geen feestdag meer; in 2026 wordt ook op 8 mei en 15 september gewerkt.
+Elke autonome regio voegt eigen feestdagen toe (vaak Witte Donderdag) en verandert ze elk jaar: voeg de jouwe toe als lokale feestdag.
+De vooravonden (Midsommarafton, Julafton, Nyårsafton) zijn geen wettelijke feestdagen, maar bijna overal vrij.
+De grens van 45 uur geldt voor industrie, kantoren, technisch personeel en grote winkelketens; voor de rest is het 50. In sommige gemeenten (Fribourg, Solothurn, Aargau) gelden andere feestdagen: voeg de jouwe toe als lokale feestdag.
+In het Verenigd Koninkrijk zijn bank holidays geen wettelijk recht: het hangt af van je contract. Van de grens van 48 uur kun je schriftelijk afzien (opt-out).
+Werk- en rusttijden volgen vooral de cao's van San Marino: controleer de waarden hieronder.
+Valt een feestdag op zondag, dan is de maandag vrij.
+De grens van 45 uur geldt voor industrie, kantoren en grote winkelketens; voor de rest is het 50.
+{c}: de wet legt geen minimale rust tussen twee diensten vast. De app waarschuwt onder {r} uur en boven {w} uur per week. De week begint op {d}.
+Federale feestdagen gelden wettelijk alleen voor federale ambtenaren: in de privésector hangt het van je contract af. Elke staat heeft eigen feestdagen: voeg de jouwe toe als lokale feestdag.
+Werk- en rusttijden verschillen per provincie: controleer de waarden hieronder. Newfoundland en Labrador zit er nog niet in.
+Dagen van federale en lokale verkiezingen zijn ook vrij voor wie moet stemmen.
+Carnaval en Sacramentsdag zijn ‘ponto facultativo’; elke staat en gemeente voegt eigen feestdagen toe: voeg de jouwe toe als lokale feestdag.
+De regering kan de verschuifbare feestdagen (17 juni, 17 augustus, 12 oktober, 20 november) verplaatsen en vrije dagen toevoegen: hier zie je de data die de wet vastlegt.
+Veel cao's (awards) geven 10 uur rust tussen twee diensten. Sommige feestdagen gelden alleen in bepaalde gebieden (Royal Show, Regatta, Recreation Day): je kunt de jouwe toevoegen als lokale feestdag.
+Elke provincie heeft haar eigen Anniversary Day: staat de jouwe er niet bij, voeg hem dan toe als lokale feestdag.
+Geen
+Uren en contract
+Werktijden
+Duur van diensten, minimale rust, nachturen
+Hoeveel dagen en uren je tegoed hebt
+Contracturen en beginsaldo
+Loonschatting
+Uurloon en toeslagen, alleen voor jou
+Tweede baan
+Bereikbaarheid
+Bereikbaarheid actief.
+Tik op dagen om haar toe te voegen of weg te halen, ook op rustdagen. Je kunt haar samen met een dienst kiezen.
+Elke dag waarop je tikt krijgt dienst en bereikbaarheid samen.
+{h} u oproepwerk
+Uren oproepwerk
+De tweede baan wordt apart geteld: hij telt niet mee voor de urenbank, vakantie en meldingen van de hoofdbaan.
+Hoofdbaan
+Gemaakt met {app} op {d}.
+Baan van snelle dienst {n}
+{n} maand
+{n} maanden
+Diensten {x}
+<b>{n}</b> van {a} tot {b}.
+{n} afspraak
+{n} afspraken
+Geen diensten om te exporteren van {a} tot {b}.
+Vanaf
+Duur
+Oproep
+Uren oproepwerk tellen als gewerkt en worden in de loonschatting als overuren betaald.
+Begin
+Een andere baan met eigen tijden en totalen
+Exporteren naar agenda
+Google, Apple of Outlook Agenda
+Ik heb bereikbaarheidsdiensten
+Meestal vanaf
+Boven de kalender verschijnt de knop Bereikbaarheid: kies hem en tik op de dagen, ook op rustdagen. Uren oproepwerk vul je in door op de dag te tikken.
+Bereikbaarheidsvergoeding
+Per bereikbaarheidsdienst. Uren oproepwerk worden als overuren betaald.
+Ik heb een tweede baan
+Gebruikelijke duur
+Diensten van de tweede baan verschijnen als tweede regel op dezelfde dagen, met een blauwgroen vierkantje. Je plant ze met de snelle diensten van de tweede baan of door op een dag te tikken. Uren en loon worden apart geteld: ze tellen niet mee voor de urenbank, vakantie en meldingen van de hoofdbaan.
+Kies per snelle dienst of hij bij de hoofdbaan of de tweede baan hoort. Diensten van de tweede baan hebben een blauwgroen vierkantje.
+Maak een bestand met je diensten om te openen in Google Agenda, Apple Agenda of Outlook.
+Hoeveel maanden
+Wat exporteren
+Werkdiensten
+Vakantie, verlof en ziekte, als hele dag
+Herinnering
+30 minuten vooraf
+1 uur vooraf
+2 uur vooraf
+Zo open je het in je agenda
+iPhone, iPad en Mac.
+Open het bestand en kies Voeg alles toe, daarna de agenda waarin ze moeten komen.
+Google Agenda.
+Open op een computer calendar.google.com, ga naar Instellingen, Importeren en exporteren, en upload het bestand. Op Android kun je het ook direct met Google Agenda openen.
+Outlook.
+Open het bestand met Outlook, of ga op outlook.com naar de agenda, Agenda toevoegen, Uploaden vanuit bestand.
+Als je dezelfde periode opnieuw exporteert, worden al geïmporteerde diensten meestal bijgewerkt in plaats van verdubbeld. Dagen die je in de app hebt leeggemaakt, moet je zelf verwijderen. Tip: gebruik een agenda alleen voor diensten, dan kun je hem leegmaken en opnieuw importeren als ze veranderen.
+Bestand maken
+Bijv. Bar, Bijles, Bezorging
+Een maand minder
+Een maand meer
+Baan
+Overuren
+Opgenomen vakantie
+Opgenomen verlof
+Brutototaal
+{n} verschil met je ingevoerde uren
+{n} verschillen met je ingevoerde uren
+De posten op de loonstrook kloppen met wat je hebt ingevoerd.
+Ingevoerd
+Op loonstrook
+{v} minder op de loonstrook
+{v} meer op de loonstrook
+Schatting van de app, alleen indicatief
+Loonstrook van {a}: de uren worden vergeleken met {b}.
+Loonstrook van {m}
+ingevoerd {a}, op loonstrook {b}
+Netto uitbetaald
+Loonstrook openen
+loonstrook ingevoerd
+geen loonstrook
+PDF van {m} laden
+Loonstrook van {m} verwijderd.
+Loonstrook lezen…
+Verkeerd wachtwoord, probeer het opnieuw.
+De pdf is beveiligd met een wachtwoord. Vaak is het je BSN of een wachtwoord van je werkgever.
+De pdf-lezer laadt niet. Controleer de verbinding en probeer het opnieuw.
+Ik kan dit bestand niet openen. Is het een pdf?
+Deze pdf bevat geen tekst, misschien is het een scan of foto. Vul de getallen zelf in.
+Ik heb de posten op deze loonstrook niet herkend. Vul de getallen zelf in: alleen die je wilt.
+overuren
+nachtwerk
+zon- en feestdagen
+opgenomen vakantie
+opgenomen verlof
+resterende vakantie
+resterend verlof
+brutototaal
+netto
+Loonstrook van {m}.
+Gelezen: {x}.
+Controleer de gemarkeerde getallen en vul ontbrekende zelf in.
+Dit lijkt een loonstrook met dertiende maand of vakantiegeld: controleer het brutototaal goed.
+Het bestand is te groot voor een loonstrook.
+Loonstrook
+Betaalde uren en posten controleren
+Laad de pdf van je loonstrook of vul de getallen in: de app vergelijkt ze met je ingevoerde uren.
+Wachtwoord van de pdf
+Openen
+De pdf wordt alleen op dit apparaat gelezen en niet bewaard: de app houdt alleen de getallen hieronder.
+Op de loonstrook
+Resterende vakantie
+Overuren en toeslagen zijn van de vorige maand
+Veel werkgevers betalen overuren, nacht- en feestdagwerk een maand later uit. Is dat bij jou zo, zet dit aan: de vergelijking gebruikt dan de juiste maand.
+Verwijderen
+Diensten invoeren
+Hoe voer ik een dienst in?
+Kies boven de kalender een snelle dienst, bijvoorbeeld {a}, en tik op de dagen: elke dag krijgt die dienst. Tik nog eens op de knop om te stoppen. Voor andere tijden tik je op de dag en vul je begin en duur in.
+Hoe wijzig of leeg ik een dag?
+Tik op de dag: op de kaart wijzig je soort, tijden, uren meer of minder, labels en notitie, en alles wordt vanzelf bewaard. {a} wist de dag. Om er veel te legen kies je {b} boven de kalender en tik je op de dagen. Na elke wijziging kun je die ongedaan maken via het bericht onderaan.
+Hoe voer ik rustdagen, vakantie, verlof en ziekte in?
+{a} en {b} hebben een eigen knop boven de kalender: kies die en tik op de dagen. Voor {c} of {d} tik je op de dag en kies je de soort op de kaart; bij verlof vul je ook de uren in.
+Hoe voer ik overuren of een gebroken dienst in?
+Gebruik op de kaart van de dag {a} voor overuren of eerder weggaan. Met {b} vul je beide delen in, bijvoorbeeld 8–12 en 16–20.
+Hoe maak ik mijn eigen snelle diensten?
+Open {p} en kies naam, begintijd en duur van elke knop. Het kunnen gebroken diensten zijn en, als je een tweede baan hebt, bij die baan horen.
+Ik werk altijd hetzelfde rooster: kan de kalender zichzelf vullen?
+Ja: beschrijf in {p} het patroon (bijvoorbeeld 5 vroeg, 2 vrij, 5 nacht, 2 vrij), de startdag en tot wanneer. Met {q} kopieer je juist een week naar de volgende.
+Waarvoor zijn labels?
+Ze geven een afdeling, machine of werkplek aan. Je maakt ze in {p}; daarna kies je ze boven de kalender en tik je op de dagen, ook samen met een dienst.
+Hoe vind ik een dag, een notitie of een label?
+Ga naar de lijstweergave met de knop naast de snelle diensten: daar verschijnt zoeken in notities en labels. Het tabblad {a} toont de totalen van het hele jaar, maand voor maand.
+Uren, contract en loon
+Wat betekenen de meldingen onderaan de maand?
+De app controleert de regels van je land: minimale rust tussen twee diensten, gemiddelde uren per week, zeven werkdagen achter elkaar. Is je contract anders, pas dan de waarden aan in {p}.
+Hoe werkt de urenbank?
+Vul in {p} de contracturen per week in, vanaf wanneer te tellen en eventueel een beginsaldo. De app vergelijkt de gewerkte uren met de verschuldigde uren en toont het saldo in het maandoverzicht.
+Hoe houd ik vakantie en verlof bij?
+Vul in {p} in hoeveel vakantiedagen en verlofuren je per jaar hebt. De app telt opgenomen en geplande dagen en zegt hoeveel er over zijn.
+Hoe werkt de loonschatting?
+Vul in {p} je bruto uurloon en toeslagen in. Het is een ruwe schatting, alleen voor jou: ze staat nooit in de pdf of gedeelde afbeeldingen, en je kunt de bedragen verbergen.
+Hoe voer ik bereikbaarheidsdiensten in?
+Zet ze aan in {p}. Boven de kalender verschijnt de knop {a}: kies die en tik op de dagen, ook rustdagen. Uren oproepwerk vul je in op de kaart van de dag; de vergoeding stel je in bij {q}.
+Ik heb een tweede baan: hoe houd ik die apart?
+Zet hem aan in {p}, met naam, duur en loon. Zijn diensten hebben eigen snelle knoppen en staan als tweede regel bij de dagen. Uren en loon worden apart geteld, en de maand-pdf kan per baan.
+Hoe controleer ik mijn loonstrook?
+Kies in {p} de maand en laad de pdf: de app leest overuren, nachtwerk, feestdagen, vakantie, verlof, bruto en netto en vergelijkt die met je ingevoerde uren. Is de loonstrook op papier, vul dan de getallen zelf in.
+De loonstrook wordt niet gelezen of de getallen kloppen niet: wat nu?
+Is de pdf een scan of foto, dan is er geen tekst om te lezen: vul de getallen zelf in. Is hij beveiligd, dan vraagt de app om het wachtwoord. Controleer altijd de gemarkeerde getallen en zet {a} aan als je werkgever overuren en toeslagen een maand later betaalt.
+Delen en exporteren
+Hoe stuur ik iemand mijn diensten van de week?
+Kies in {p} de week en stuur hem als afbeelding of als tekst, bijvoorbeeld in een chat.
+Hoe print ik een maand?
+Kies in {p} de maand: je krijgt een A4 met kalender en totalen, om te printen of te versturen.
+Hoe zet ik mijn diensten in Google Agenda, Apple Agenda of Outlook?
+Kies in {p} vanaf wanneer, hoeveel maanden en wat erin moet, en open het bestand met je agenda: op hetzelfde scherm staan de stappen voor elke agenda. Exporteer je dezelfde periode opnieuw, dan worden diensten meestal bijgewerkt in plaats van verdubbeld.
+Gegevens, app en instellingen
+Waar worden mijn diensten bewaard?
+Alleen op dit apparaat, in de browser. Je hebt geen account nodig en er gaat niets naar een server.
+Hoe maak ik een kopie of ga ik naar een andere telefoon?
+Met {p} krijg je een bestand met diensten en instellingen. Open op de andere telefoon de app en gebruik {q}. De stip op {a} herinnert je eraan wanneer het tijd is voor een kopie.
+Verlies ik mijn diensten als ik de browsergegevens wis?
+Ja, als je geen kopie hebt. Daarom is het slim er af en toe een te bewaren, zeker voordat je van telefoon wisselt.
+Hoe installeer ik de app op mijn telefoon?
+Open op de iPhone de app in Safari, tik op Deel en dan op Zet op beginscherm. Open op Android het Chrome-menu en kies App installeren of Toevoegen aan startscherm. Geïnstalleerd werkt hij ook zonder internet.
+Hoe werk ik de app bij?
+Als er een nieuwe versie is, verschijnt bovenaan een melding: tik op {a}. Je diensten blijven waar ze zijn.
+Hoe wijzig ik land, feestdagen, taal of thema?
+Kies in {p} land en regio voor de feestdagen, de taal en het lichte of donkere thema. Lokale feestdagen die de app niet kent, voer je in als rustdag.
+Breng me erheen
+Handleiding openen
+Help
+Handleiding en veelgestelde vragen
+Hoe je dingen doet, stap voor stap
+Handleiding
+Geen antwoord gevonden. Probeer andere woorden.
+Zoeken in de handleiding
+Ik laat je in een minuut zien hoe het werkt. Je kunt altijd overslaan en de rondleiding opnieuw bekijken via de Handleiding.
+Kies een dienst en tik op de dagen in de kalender om hem toe te wijzen. Tik nog eens op de knop om te stoppen. {a}, {b} en {c} werken op dezelfde manier.
+De kalender
+Tik op een dag om de kaart te openen: tijden, overuren, verlof, ziekte en notities. Alles wordt vanzelf bewaard en je kunt altijd ongedaan maken via het bericht onderaan.
+De volgende dienst
+Hier bovenaan zie je altijd je volgende dienst, of de dienst die nu bezig is.
+Het maandoverzicht
+Gewerkte uren, overuren, nachten en feestdagen van de maand, met meldingen als een dienst de rustregels niet volgt.
+Kalender en Jaar
+Ga naar Jaar voor de totalen van het hele jaar, maand voor maand.
+Hier vind je de rest: rooster, vakantie en verlof, urenbank, loonschatting, loonstrook, maand-pdf, export naar je agenda, kopie van je gegevens en de Handleiding.
+Land en feestdagen, taal en licht of donker thema.
+Begin met de diensten van deze week.
+{n} van {m}
+Overslaan
+Aan de slag
+Rondleiding opnieuw bekijken

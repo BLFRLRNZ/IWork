@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} h
+{h} h {m} min
+{h} h
+{m} min
+Zmiana
+i
+Pokaż kwoty
+Ukryj kwoty
+Przepracowane godziny
+Nadgodziny
+Praca w nocy
+Niedziela
+Święta
+Orientacyjna kwota brutto. Tylko dla ciebie: nie pojawia się w PDF ani na udostępnianych obrazach.
+Dodaj dodatki
+Twoje zmiany są zapisane na tym urządzeniu.
+brak zmiany
+zmiana dzielona {r}
+zmiana {r}
+następnego dnia
+zwolnienie na {h} h
+Wolne
+Urlop
+Wyczyść
+Utwórz etykiety dla działów lub stanowisk
+Wybierz zmianę, etykietę albo oba, a potem dotknij dni. Albo dotknij dnia, aby ustawić godziny, notatki i dodatkowe godziny.
+Czyszczenie włączone.
+Dotknij dni do wyczyszczenia, a potem jeszcze raz przycisku, aby zakończyć.
+Każdy dotknięty dzień dostaje zmianę i etykietę naraz.
+{x} włączone.
+Dotknij dni do wypełnienia i w razie potrzeby wybierz też etykietę. Dotknij przycisku jeszcze raz, aby zakończyć.
+Dotknij dni do wypełnienia. Dotknij przycisku jeszcze raz, aby zakończyć.
+Etykieta {x} włączona.
+Dotknij dni ze zmianą, aby ją dodać lub usunąć.
+Wolne
+odpoczynek krótszy niż {n} h
+{x} dodatkowo
+Znaleziono {n} dzień
+Znaleziono {n} dnia ‖few: Znaleziono {n} dni ‖many: Znaleziono {n} dni
+{h} h pracy
+Brak dni z „{q}” w notatkach lub etykietach.
+Sobota {s} h, pozostałe dni {w} h.
+Notatka
+Mniej niż {n} h odpoczynku od poprzedniej zmiany
+Przerwa
+Wracasz za <b>{x}</b>. Zmiana dzielona: {r}.
+Następna zmiana
+Brak zaplanowanych zmian
+Dotknij dnia w kalendarzu i wybierz godzinę rozpoczęcia: koniec obliczy się sam.
+Dziś
+Jutro
+Wczoraj
+Teraz w pracy
+Do końca zostało <b>{a}</b>. Za tobą {b}.
+Zaczyna się za <b>{x}</b>.
+Dzielona: {r}, łącznie {h} h.
+Trwa {h} h.
+Tylko {h} h odpoczynku między {a} a {b} (minimum to {n}).
+Siedem lub więcej dni pracy z rzędu od {d}.
+Tydzień od {d}: {h} h, ponad {n}.
+W {y} zaznaczono o {n} dzień urlopu więcej, niż ci przysługuje.
+W {y} zaznaczono o {n} dnia urlopu więcej, niż ci przysługuje. ‖few: W {y} zaznaczono o {n} dni urlopu więcej, niż ci przysługuje. ‖many: W {y} zaznaczono o {n} dni urlopu więcej, niż ci przysługuje.
+W {y} zaznaczono o {h} h zwolnienia więcej, niż ci przysługuje.
+Razem {m}
+h, zmiany: {n}
+h, zmiany: {n}
+Dodatkowe godziny
+Godziny nocne, {r}
+Przepracowane soboty
+Niedziele i święta
+Urlop w miesiącu
+Pozostały urlop {y}
+Urlop {y}
+Zwolnienia w miesiącu
+Pozostałe zwolnienia
+Choroba
+Bank godzin na koniec miesiąca
+Bank godzin dziś
+Szacunkowa płaca {m}
+Godziny w tygodniu
+Pasek jest pełny przy {n} h.
+Do sprawdzenia
+Razem w miesiącu
+Pozostałe ostrzeżenia: {n}. Znajdziesz je w aplikacji.
+{h} h
+Zmiany
+Godziny nocne
+Niedz. i święta
+Zwolnienia
+Bank godzin
+Zwykła zmiana {w} h, sobota {s} h. Utworzono w {app} {d}.
+Wolne i nieobecności
+Noc
+Popołudnie
+Rano
+Edytuj etykiety
+Utwórz etykiety dla działów, maszyn lub stanowisk
+Zmiana {a} h. Użyj standardowych {b} h
+Godziny więcej lub mniej niż {h}
+Cały dzień.
+Reszta dnia liczy się jako normalnie przepracowana. Godziny zwolnienia odejmują się od przysługującej puli.
+przerwa {x}
+{h} w nocy
+Standardowa zmiana {h} h, bo jest sobota.
+Standardowa zmiana {h} h.
+Dzień wyczyszczony.
+Etykiety dodaje się do dni ze zmianą: wybierz też zmianę.
+Uwaga: w {y} przekroczono przysługujący urlop.
+Wykorzystano cały urlop za {y}.
+Został ci {n} dzień urlopu w {y}.
+Zostało ci {n} dnia urlopu w {y}. ‖few: Zostały ci {n} dni urlopu w {y}. ‖many: Zostało ci {n} dni urlopu w {y}.
+Uwaga: w {y} przekroczono przysługujące zwolnienia.
+Zostało ci {h} h zwolnienia w {y}.
+h
+Nazwa szybkiej zmiany {n}
+Nazwa
+Usuń szybką zmianę {n}
+Początek szybkiej zmiany {n}
+Długość pierwszej części w godzinach
+Długość szybkiej zmiany {n} w godzinach
+Połowa
+Standard
+Dzielona
+Powrót o, szybka zmiana {n}
+Długość drugiej części w godzinach
+Reszta
+Maksymalnie {n} szybkich zmian
++ Dodaj szybką zmianę
+Usunięto szybką zmianę „{x}”.
+Np. Dział A, Prasa 3, Kasa 2
+Etykieta {n}
+Usuń etykietę {n}
+Etykietę „{x}” usunięto z {n} dnia.
+Etykietę „{x}” usunięto z {n} dnia. ‖few: Etykietę „{x}” usunięto z {n} dni. ‖many: Etykietę „{x}” usunięto z {n} dni.
+bez nazwy
+Usunięto etykietę „{x}”.
+Rok
+Razem {y}
+Zaznaczone dni wolne
+Szacunkowa płaca {y}
+Etykiety w {y}
+{n} dzień
+{n} dnia ‖few: {n} dni ‖many: {n} dni
+Aby szukać pojedynczych dni, użyj widoku listy w kalendarzu.
+Ten rok jeszcze się nie zaczął.
+Bank godzin zaczyna się {d}.
+Saldo na {d}.
+Saldo na dziś.
+Przepracowano więcej godzin, niż przewiduje umowa.
+Przepracowano mniej godzin, niż przewiduje umowa.
+Jesteś na zero względem umowy.
+Umowa <b>{h} h</b> tygodniowo
+Od <b>{d}</b>
+Start <b>{h} h</b>
+Zmień ustawienia banku godzin
+Wykorzystane
+Wykorzystane
+Zaplanowane
+Zaplanowane
+Przysługuje
+dni zaznaczone w {y}
+godziny zaznaczone w {y}
+Ustaw, ile ci przysługuje
+dni ponad limit
+godzin ponad limit
+dni zostało z {x}
+godzin zostało z {x}
+{a} wykorzystane, {b} zaplanowane z {c}
+Zaznaczono więcej urlopu, niż ci przysługuje.
+Zaznaczono więcej zwolnień, niż ci przysługuje.
+Wykorzystano wszystko.
+Wykorzystano wszystko.
+Prawie się skończyły.
+Prawie się skończyły.
+Godziny w miesiącu
+{m}: {h} h. Otwórz miesiąc
+Miesiąc
+Godziny
+Dodatk.
+Zwoln.
+Bank
+Razem
+Miesiąc po miesiącu
+Dotknij miesiąca, aby otworzyć go w kalendarzu. Kolumna Bank pokazuje, ile każdy miesiąc dodał lub odjął.
+Krok {n}
+Dzień mniej
+Dzień więcej
+Usuń krok {n}
+Przy tych ustawieniach nie ma dni do wypełnienia.
+Wybierz dzień początkowy.
+Cykl <b>{a}</b>. Wypełniam <b>{b}</b> od {c} do {d}:
+Zastosuj do {n} dnia
+Zastosuj do {n} dnia ‖few: Zastosuj do {n} dni ‖many: Zastosuj do {n} dni
+{n} tydzień
+{n} tygodnia ‖few: {n} tygodnie ‖many: {n} tygodni
+Grafik zastosowano do {n} dnia.
+Grafik zastosowano do {n} dnia. ‖few: Grafik zastosowano do {n} dni. ‖many: Grafik zastosowano do {n} dni.
+Moje zmiany, tydzień od {d}:
+wolne
+Moje zmiany
+{h} h, {n} zmiana
+{h} h, {n} zmiany ‖few: {h} h, {n} zmiany ‖many: {h} h, {n} zmian
+Utworzono w {app}
+Ten tydzień
+Następny tydzień
+Poprzedni tydzień
+Za {n} tydzień
+Za {n} tygodnia ‖few: Za {n} tygodnie ‖many: Za {n} tygodni
+{n} tydzień temu
+{n} tygodnia temu ‖few: {n} tygodnie temu ‖many: {n} tygodni temu
+Zmiany skopiowane: wklej je do wiadomości.
+Kopiowanie nie jest tu dostępne.
+Nie udało się utworzyć obrazu.
+Nie ma jeszcze tygodnia do powtórzenia.
+Następny tydzień jest już wypełniony.
+Tydzień od {a} powtórzony w tygodniu od {b}.
+Ostatnia kopia zapisana {d}.
+Nie zapisano jeszcze żadnej kopii.
+Twoje zmiany ({n} dzień) są tylko na tym urządzeniu: co jakiś czas zapisz kopię, na przykład na iCloud Drive, Google Drive albo w mailu do siebie, żeby ich nie stracić przy zmianie telefonu.
+Twoje zmiany ({n} dnia) są tylko na tym urządzeniu: co jakiś czas zapisz kopię, na przykład na iCloud Drive, Google Drive albo w mailu do siebie, żeby ich nie stracić przy zmianie telefonu. ‖few: Twoje zmiany ({n} dni) są tylko na tym urządzeniu: co jakiś czas zapisz kopię, na przykład na iCloud Drive, Google Drive albo w mailu do siebie, żeby ich nie stracić przy zmianie telefonu. ‖many: Twoje zmiany ({n} dni) są tylko na tym urządzeniu: co jakiś czas zapisz kopię, na przykład na iCloud Drive, Google Drive albo w mailu do siebie, żeby ich nie stracić przy zmianie telefonu.
+Plik pobrany.
+Pobieranie nie powiodło się.
+{n} zmiana
+{n} zmiany ‖few: {n} zmiany ‖many: {n} zmian
+puste
+Utwórz PDF za {m}
+Nie udało się utworzyć PDF.
+Kopia zmian {app}
+Kopia zapisana. Przechowuj ją w bezpiecznym miejscu.
+Plik zawiera {n} dzień
+Plik zawiera {n} dnia ‖few: Plik zawiera {n} dni ‖many: Plik zawiera {n} dni
+od {a} do {b}
+zapisane {d}
+Zastąpią zmiany, które masz teraz ({n} dzień), razem z ustawieniami.
+Zastąpią zmiany, które masz teraz ({n} dnia), razem z ustawieniami. ‖few: Zastąpią zmiany, które masz teraz ({n} dni), razem z ustawieniami. ‖many: Zastąpią zmiany, które masz teraz ({n} dni), razem z ustawieniami.
+Zostaną wczytane razem z ustawieniami.
+Ten plik nie jest kopią {app}.
+Kopia wczytana: {n} dzień.
+Kopia wczytana: {n} dnia. ‖few: Kopia wczytana: {n} dni. ‖many: Kopia wczytana: {n} dni.
+Wersja {v}.
+Otwórz aplikację z jej adresu internetowego, aby dostawać aktualizacje.
+Dostępna jest wersja {v}.
+Ostatnie sprawdzenie: {d}.
+Automatyczne sprawdzanie włączone.
+Dostępna jest {app} {v}
+Zaktualizuj, aby mieć najnowsze zmiany. Twoje zmiany zostają na miejscu.
+Otwórz aplikację z jej adresu internetowego, aby szukać aktualizacji.
+Sprawdzam…
+Masz już najnowszą wersję ({v}).
+Nie mogę sprawdzić aktualizacji: sprawdź połączenie.
+Szukaj aktualizacji
+Aktualizuję…
+Zwolnienie
+Chor.
+Nowy Rok
+Trzech Króli
+Dzień Wyzwolenia
+Święto Pracy
+Święto Republiki
+Wniebowzięcie
+Wszystkich Świętych
+Niepokalane Poczęcie
+Boże Narodzenie
+Drugi dzień świąt
+Św. Franciszka
+Wielkanoc
+Poniedziałek Wielkanocny
+iWork
+Kalendarz
+Zmiany zapisują się same.
+Początek zmiany
+Zmiana dzielona, w dwóch częściach
+Pierwsza część
+Powrót o
+Druga część
+Koniec zmiany
+Godziny więcej lub mniej
+Godziny zwolnienia
+Etykiety
+Wyczyść dzień
+Gotowe
+Ustawienia
+Każda zmiana zapisuje się sama.
+Godziny zwykłej zmiany
+Godziny zmiany sobotniej
+Szybkie zmiany i etykiety tworzy się i edytuje w Narzędziach, przycisku z trzema kropkami.
+Urlop i zwolnienia
+Urlop w roku
+dni
+Zwolnienia w roku
+Ile ci przysługuje w roku, razem z zaległym z poprzedniego roku. Przy 0 licznik jest wyłączony.
+Godziny tygodniowo wg umowy
+Licz od
+Saldo początkowe
+Bank godzin porównuje przepracowane godziny z godzinami z umowy, dzień po dniu do dziś. Urlop, zwolnienia, choroba, niedziele i święta nie liczą się jako brakujące godziny.
+Płaca
+Stawka godzinowa brutto
+€/h
+Noc 22–06
+Dodatki się sumują: godzina nocna w niedzielę dostaje dodatek nocny i niedzielny. Jeśli święto wypada w niedzielę, liczy się tylko dodatek świąteczny. Szacunek zostaje na tym urządzeniu i nie pojawia się w PDF ani na udostępnianych obrazach.
+Język
+Wygląd
+Automatyczny
+Jasny
+Ciemny
+Aktualizacje
+Narzędzia
+Wypełnij zmiany
+Grafik cykliczny
+Powtarzający się schemat na kilka tygodni
+Powtórz ostatni tydzień
+Skopiuj zmiany na następny tydzień
+Dostosuj
+Szybkie zmiany
+Przyciski do wpisania zmiany jednym dotknięciem
+Działy, maszyny, stanowiska do przypisania jednym dotknięciem
+Udostępnij i eksportuj
+Udostępnij tydzień
+Obraz lub tekst, dowolny tydzień
+PDF miesiąca
+Wybrany miesiąc, gotowy do druku
+Kopia zapasowa
+Zapisz kopię zmian
+Plik ze wszystkimi zmianami i ustawieniami
+Wczytaj kopię
+Odzyskaj zmiany z zapisanego wcześniej pliku
+Zamknij
+To przyciski nad kalendarzem: wybierz jeden i dotknij dni, aby go wpisać. Tutaj je tworzysz, zmieniasz nazwy, godziny i długość. Każda zmiana zapisuje się sama.
+Zostaw długość pustą, aby użyć standardowej (8 h, w sobotę 6). Własna długość obowiązuje we wszystkie dni. Z opcją „Dzielona” zmiana ma dwie części, na przykład 8–12 i 16–20.
+Działy, maszyny, stanowiska albo cokolwiek potrzebujesz. Pojawiają się w drugim rzędzie nad kalendarzem: wybierz jedną i dotknij dni, aby ją przypisać, także razem ze zmianą. Każda zmiana zapisuje się sama.
++ Dodaj etykietę
+Wczytać tę kopię?
+Anuluj
+Zastąp zmiany
+Zbuduj powtarzający się schemat, na przykład 5 rano, 2 wolne, 5 popołudni, 2 wolne, i zastosuj go do kilku tygodni naraz.
+Schemat
++ Dodaj krok
+Od dnia
+Na ile tygodni
+Nie zmieniaj już wypełnionych dni
+Zostaw niedziele wolne
+Zastosuj
+Wróć do tego tygodnia
+Kopiuj jako tekst
+Udostępnij obraz
+Wybierz miesiąc: dostaniesz kalendarz ze zmianami i sumami na kartce A4 do druku.
+Później
+Aktualizuj
+Ekran
+Poprzedni miesiąc
+Następny miesiąc
+Szybkie wpisywanie
+Widok
+Widok kalendarza
+Widok listy
+Szybkie etykiety
+Szukaj w notatkach i etykietach
+Podsumowanie roku
+Poprzedni rok
+Następny rok
+Rodzaj dnia
+Pół godziny mniej
+Pół godziny więcej
+Np. zamiana zmiany z Markiem, dział B
+Motyw
+Tydzień mniej
+Tydzień więcej
+Poprzedni tydzień
+Następny tydzień
+Podgląd obrazu ze zmianami tygodnia
+Cofnij
+{x}, święto patrona
+Święto patrona
+{x} (dzień zastępczy)
+Żaden konkretny
+Brak
+Inna data…
+Zasady dla {c}: co najmniej {r} h odpoczynku między dwiema zmianami, średnio najwyżej {w} h tygodniowo, odpoczynek tygodniowy {k} h. Pierwszy dzień tygodnia: {d}.
+Kraj i święta
+Kraj
+Region lub województwo
+Patron
+Dzień
+Święto patrona liczy się jako dzień świąteczny w kalendarzu, banku godzin i płacy. Sprawdź datę w umowie lub w gminie.
+{c}: co najmniej {r} h odpoczynku między dwiema zmianami, średnio najwyżej {w} h tygodniowo, odpoczynek tygodniowy {k} h. Pierwszy dzień tygodnia: {d}.
+Noc {r}
+Zaczynamy
+Dalej
+Nowość: język i kraj
+Witaj w {app}
+Wybierz język i kraj: aplikacja ustawi właściwe zasady i święta. Twoje zmiany zostają na miejscu.
+Kalendarz twoich zmian. Wybierz język.
+Gdzie pracujesz?
+Od tego zależą święta, minimalny odpoczynek, godziny nocne i waluta.
+Szukaj kraju
+Twój region
+Niektóre święta obowiązują tylko w regionie lub mieście. Możesz pominąć ten krok i zmienić to później.
+Jeśli twojego miasta nie ma na liście, wpiszesz datę w Ustawieniach.
+Ile trwa zmiana?
+Wtedy wybierasz tylko godzinę rozpoczęcia, a koniec oblicza się sam. Można to zmienić w każdej chwili.
+Zwykła zmiana
+Zmiana sobotnia
+Gotowe
+Tak jest ustawiona aplikacja. Wszystko zmienisz w Ustawieniach.
+{w} h, sobota {s}
+Minimalny odpoczynek
+Maksymalna średnia
+{h} h tygodniowo
+Ostrzeżenia o odpoczynku i godzinach są orientacyjne i nie zastępują umowy.
+Wstecz
+Zasady dla ostrzeżeń i obliczeń
+h/tydz.
+Noc od
+Noc do
+Twoja umowa może być korzystniejsza niż prawo: tutaj możesz dostosować zasady.
+Wróć do zasad kraju
+{x}, święto lokalne
+Święto lokalne
+Święto twojej gminy lub z umowy: liczy się jako dzień świąteczny w kalendarzu, banku godzin i płacy.
+Jeśli święto wypada w niedzielę, pracodawca wyznacza dzień zastępczy.
+Grundlovsdag (5 czerwca) i Wigilia nie są ustawowo wolne, ale wiele umów je przewiduje.
+Poniedziałek Zielonych Świątek to często „dzień solidarności” i się pracuje.
+W Bawarii Wniebowzięcie jest wolne tylko w gminach z większością katolicką.
+Wielki Piątek i 5 maja są wolne tylko, jeśli przewiduje to układ zbiorowy (CAO).
+Wtorek karnawałowy jest dobrowolny; każda gmina ma też własne święto gminne.
+Od 2025 r. 17 listopada nie jest już świętem; w 2026 r. pracuje się też 8 maja i 15 września.
+Każda wspólnota autonomiczna dodaje własne święta (często Wielki Czwartek) i zmienia je co roku: dodaj swoje jako święto lokalne.
+Wigilie (Midsommarafton, Julafton, Nyårsafton) nie są ustawowo wolne, ale prawie wszędzie są dniami wolnymi.
+Limit 45 godzin dotyczy przemysłu, biur, personelu technicznego i dużych sieci handlowych; dla pozostałych wynosi 50. W niektórych gminach (Fryburg, Solura, Argowia) święta są inne: dodaj swoje jako święto lokalne.
+W Wielkiej Brytanii bank holidays nie są prawem ustawowym: zależy to od umowy. Z limitu 48 godzin można zrezygnować na piśmie (opt-out).
+Czas pracy i odpoczynku zależy głównie od układów zbiorowych San Marino: sprawdź wartości poniżej.
+Jeśli święto wypada w niedzielę, wolny jest poniedziałek.
+Limit 45 godzin dotyczy przemysłu, biur i dużych sieci handlowych; dla pozostałych wynosi 50.
+{c}: prawo nie określa minimalnego odpoczynku między zmianami. Aplikacja ostrzega poniżej {r} h i powyżej {w} h tygodniowo. Pierwszy dzień tygodnia: {d}.
+Święta federalne z mocy prawa dotyczą tylko pracowników federalnych: w sektorze prywatnym zależy to od umowy. Każdy stan ma własne święta: dodaj swoje jako święto lokalne.
+Czas pracy i odpoczynku może się różnić między prowincjami: sprawdź wartości poniżej. Nowa Fundlandia i Labrador nie jest jeszcze uwzględniona.
+Dni wyborów federalnych i lokalnych są też wolne dla osób, które muszą głosować.
+Karnawał i Boże Ciało to „ponto facultativo”; każdy stan i gmina dodaje własne święta: dodaj swoje jako święto lokalne.
+Rząd może przesuwać święta ruchome (17 czerwca, 17 sierpnia, 12 października, 20 listopada) i dodawać dni wolne: tutaj widzisz daty ustalone w ustawie.
+Wiele układów (awards) przewiduje 10 h odpoczynku między zmianami. Niektóre święta obowiązują tylko w części kraju (Royal Show, Regatta, Recreation Day): możesz dodać swoje jako święto lokalne.
+Każda prowincja ma swój Anniversary Day: jeśli twojej nie ma na liście, dodaj go jako święto lokalne.
+Brak
+Godziny i umowa
+Czas pracy
+Długość zmian, minimalny odpoczynek, godziny nocne
+Ile dni i godzin ci przysługuje
+Godziny z umowy i saldo początkowe
+Szacunkowa płaca
+Stawka godzinowa i dodatki, tylko dla ciebie
+Druga praca
+Dyżur
+Dyżur aktywny.
+Dotknij dni, aby go dodać lub usunąć, także w dni wolne. Możesz go wybrać razem ze zmianą.
+Każdy dotknięty dzień dostaje zmianę i dyżur naraz.
+{h} godz. interwencji
+Godziny interwencji
+Druga praca jest liczona osobno: nie wchodzi do banku godzin, urlopu ani ostrzeżeń głównej pracy.
+Główna praca
+Utworzono w {app} dnia {d}.
+Praca szybkiej zmiany {n}
+{n} miesiąc
+{n} miesiąca ‖few: {n} miesiące ‖many: {n} miesięcy
+Zmiany: {x}
+<b>{n}</b> od {a} do {b}.
+{n} wydarzenie
+{n} wydarzenia ‖few: {n} wydarzenia ‖many: {n} wydarzeń
+Brak zmian do eksportu od {a} do {b}.
+Od
+Czas trwania
+Interwencja
+Godziny interwencji liczą się jako przepracowane, a w szacunku płacy są płatne jak nadgodziny.
+Początek
+Inna praca z osobnymi godzinami i sumami
+Eksport do kalendarza
+Kalendarz Google, Apple lub Outlook
+Mam dyżury
+Zwykle od
+Nad kalendarzem pojawia się przycisk Dyżur: wybierz go i dotykaj dni, także wolnych. Godziny interwencji wpisujesz, dotykając dnia.
+Dodatek za dyżur
+Za każdy dyżur. Godziny interwencji są płatne jak nadgodziny.
+Mam drugą pracę
+Zwykły czas trwania
+Zmiany drugiej pracy pojawiają się jako druga linia w tych samych dniach, z morskim kwadracikiem. Przypisujesz je szybkimi zmianami drugiej pracy albo dotykając dnia. Godziny i płaca liczą się osobno: nie wchodzą do banku godzin, urlopu ani ostrzeżeń głównej pracy.
+Dla każdej szybkiej zmiany wybierz, czy należy do głównej, czy do drugiej pracy. Zmiany drugiej pracy mają morski kwadracik.
+Utwórz plik ze swoimi zmianami do otwarcia w Kalendarzu Google, Kalendarzu Apple lub Outlooku.
+Ile miesięcy
+Co eksportować
+Zmiany w pracy
+Urlop, zwolnienia i choroba, jako cały dzień
+Przypomnienie
+30 minut wcześniej
+1 godzinę wcześniej
+2 godziny wcześniej
+Jak otworzyć go w kalendarzu
+iPhone, iPad i Mac.
+Otwórz plik i wybierz Dodaj wszystkie, a potem kalendarz, do którego mają trafić.
+Kalendarz Google.
+Na komputerze otwórz calendar.google.com, przejdź do Ustawień, Importuj i eksportuj, i prześlij plik. Na Androidzie możesz też otworzyć go bezpośrednio w Kalendarzu Google.
+Outlook.
+Otwórz plik w Outlooku albo na outlook.com przejdź do kalendarza, Dodaj kalendarz, Przekaż z pliku.
+Jeśli ponownie wyeksportujesz ten sam okres, zaimportowane zmiany zwykle zostaną zaktualizowane zamiast zdublowane. Dni wyczyszczone w aplikacji trzeba usunąć ręcznie. Rada: używaj osobnego kalendarza tylko na zmiany, wtedy możesz go wyczyścić i zaimportować ponownie, gdy się zmienią.
+Utwórz plik
+Np. Bar, Korepetycje, Dostawy
+Miesiąc mniej
+Miesiąc więcej
+Praca
+Nadgodziny
+Wykorzystany urlop
+Wykorzystane zwolnienia
+Suma brutto
+{n} różnica z wpisanymi godzinami
+{n} różnicy z wpisanymi godzinami ‖few: {n} różnice z wpisanymi godzinami ‖many: {n} różnic z wpisanymi godzinami
+Pozycje na pasku zgadzają się z tym, co wpisałeś.
+Wpisane
+Na pasku
+{v} mniej na pasku
+{v} więcej na pasku
+Szacunek aplikacji, orientacyjny
+Pasek za {a}: godziny porównywane z {b}.
+Pasek wypłaty: {m}
+wpisane {a}, na pasku {b}
+Do wypłaty
+Otwórz pasek wypłaty
+pasek dodany
+brak paska
+Wczytaj PDF: {m}
+Pasek wypłaty usunięty: {m}.
+Czytam pasek wypłaty…
+Złe hasło, spróbuj jeszcze raz.
+PDF jest chroniony hasłem. Często to Twój PESEL albo hasło od pracodawcy.
+Nie mogę wczytać czytnika PDF. Sprawdź połączenie i spróbuj ponownie.
+Nie mogę otworzyć tego pliku. Czy to PDF?
+Ten PDF nie zawiera tekstu, może to skan lub zdjęcie. Wpisz liczby ręcznie.
+Nie rozpoznałem pozycji na tym pasku. Wpisz liczby ręcznie: tylko te, które Cię interesują.
+nadgodziny
+praca w nocy
+niedziele i święta
+wykorzystany urlop
+wykorzystane zwolnienia
+pozostały urlop
+pozostałe zwolnienia
+suma brutto
+do wypłaty
+Pasek: {m}.
+Odczytałem: {x}.
+Sprawdź wyróżnione liczby i uzupełnij ręcznie brakujące.
+Wygląda na pasek z trzynastką: dokładnie sprawdź sumę brutto.
+Plik jest za duży jak na pasek wypłaty.
+Pasek wypłaty
+Sprawdź opłacone godziny i pozycje
+Wczytaj PDF paska wypłaty albo wpisz liczby: aplikacja porówna je z wpisanymi godzinami.
+Hasło do PDF
+Otwórz
+PDF jest czytany tylko na tym urządzeniu i nie jest zapisywany: aplikacja zachowuje tylko liczby poniżej.
+Na pasku wypłaty
+Pozostały urlop
+Nadgodziny i dodatki są z poprzedniego miesiąca
+Wiele firm płaci za nadgodziny, noce i święta w następnym miesiącu. Jeśli tak jest u Ciebie, włącz to: porównanie użyje właściwego miesiąca.
+Usuń
+Wpisywanie zmian
+Jak wpisać zmianę?
+Nad kalendarzem wybierz szybką zmianę, na przykład {a}, i dotykaj dni: każdy dostaje tę zmianę. Dotknij przycisku ponownie, aby skończyć. Dla innych godzin dotknij dnia i wpisz początek i czas trwania.
+Jak zmienić lub wyczyścić dzień?
+Dotknij dnia: na karcie zmieniasz rodzaj, godziny, godziny więcej lub mniej, etykiety i notatkę, a wszystko zapisuje się samo. {a} go usuwa. Aby wyczyścić wiele dni, wybierz {b} nad kalendarzem i dotykaj dni. Po każdej zmianie możesz ją cofnąć w komunikacie na dole.
+Jak wpisać dni wolne, urlop, zwolnienia i chorobę?
+{a} i {b} mają własny przycisk nad kalendarzem: wybierz go i dotykaj dni. Dla {c} lub {d} dotknij dnia i wybierz rodzaj na karcie; przy zwolnieniu podajesz też godziny.
+Jak wpisać nadgodziny lub zmianę dzieloną?
+Na karcie dnia użyj {a} dla nadgodzin albo wcześniejszego wyjścia. Przez {b} podajesz obie części, na przykład 8–12 i 16–20.
+Jak utworzyć własne szybkie zmiany?
+Otwórz {p} i wybierz nazwę, godzinę rozpoczęcia i czas trwania każdego przycisku. Mogą to być zmiany dzielone, a jeśli masz drugą pracę, mogą do niej należeć.
+Pracuję zawsze w tym samym systemie: czy kalendarz może wypełnić się sam?
+Tak: w {p} opisz schemat (na przykład 5 rano, 2 wolne, 5 nocy, 2 wolne), dzień początkowy i do kiedy. Przez {q} kopiujesz z kolei jeden tydzień na następny.
+Do czego służą etykiety?
+Oznaczają dział, maszynę lub stanowisko. Tworzysz je w {p}; potem wybierasz je nad kalendarzem i dotykasz dni, także razem ze zmianą.
+Jak znaleźć dzień, notatkę lub etykietę?
+Przełącz na widok listy przyciskiem obok szybkich zmian: pojawi się wyszukiwanie w notatkach i etykietach. Karta {a} pokazuje sumy całego roku, miesiąc po miesiącu.
+Godziny, umowa i płaca
+Co znaczą ostrzeżenia na dole miesiąca?
+Aplikacja sprawdza przepisy twojego kraju: minimalny odpoczynek między zmianami, średnią godzin tygodniowo, siedem dni pracy z rzędu. Jeśli twoja umowa jest inna, zmień wartości w {p}.
+Jak działa bank godzin?
+W {p} podaj tygodniowe godziny z umowy, od kiedy liczyć i ewentualne saldo początkowe. Aplikacja porównuje przepracowane godziny z należnymi i pokazuje saldo w podsumowaniu miesiąca.
+Jak śledzić urlop i zwolnienia?
+W {p} wpisz, ile dni urlopu i godzin zwolnień przysługuje ci w roku. Aplikacja liczy wykorzystane i zaplanowane i mówi, ile zostało.
+Jak działa szacunek płacy?
+W {p} wpisz stawkę godzinową brutto i dodatki. To orientacyjny szacunek tylko dla ciebie: nie pojawia się w PDF ani na udostępnianych obrazach, a kwoty można ukryć.
+Jak wpisać dyżur?
+Włącz go w {p}. Nad kalendarzem pojawi się przycisk {a}: wybierz go i dotykaj dni, także wolnych. Godziny interwencji wpisujesz na karcie dnia; dodatek ustawiasz w {q}.
+Mam drugą pracę: jak trzymać ją osobno?
+Włącz ją w {p}, z nazwą, czasem trwania i płacą. Jej zmiany mają własne szybkie przyciski i pojawiają się jako druga linia w dniach. Godziny i płaca liczą się osobno, a PDF miesiąca można zrobić dla każdej pracy.
+Jak sprawdzić pasek wypłaty?
+W {p} wybierz miesiąc i wczytaj PDF: aplikacja odczyta nadgodziny, pracę w nocy, święta, urlop, zwolnienia, brutto i kwotę do wypłaty i porówna je z wpisanymi godzinami. Jeśli pasek jest papierowy, wpisz liczby ręcznie.
+Pasek nie jest odczytywany albo liczby się nie zgadzają: co robić?
+Jeśli PDF to skan lub zdjęcie, nie ma tekstu do odczytania: wpisz liczby ręcznie. Jeśli jest chroniony, aplikacja zapyta o hasło. Zawsze sprawdzaj wyróżnione liczby i włącz {a}, jeśli firma płaci nadgodziny i dodatki w następnym miesiącu.
+Udostępnianie i eksport
+Jak wysłać komuś swoje zmiany z tygodnia?
+W {p} wybierz tydzień i wyślij go jako obraz lub tekst, na przykład na czacie.
+Jak wydrukować miesiąc?
+W {p} wybierz miesiąc: dostaniesz arkusz A4 z kalendarzem i sumami, do wydruku lub wysłania.
+Jak przenieść zmiany do Kalendarza Google, Kalendarza Apple lub Outlooka?
+W {p} wybierz, od kiedy, ile miesięcy i co dołączyć, a potem otwórz plik w swoim kalendarzu: na tym samym ekranie są kroki dla każdego z nich. Jeśli wyeksportujesz ten sam okres ponownie, zmiany zwykle zostaną zaktualizowane zamiast zdublowane.
+Dane, aplikacja i ustawienia
+Gdzie są zapisane moje zmiany?
+Tylko na tym urządzeniu, w przeglądarce. Nie potrzeba konta i nic nie jest wysyłane na serwer.
+Jak zrobić kopię albo przejść na inny telefon?
+Przez {p} dostajesz plik ze zmianami i ustawieniami. Na drugim telefonie otwórz aplikację i użyj {q}. Kropka na {a} przypomina, kiedy czas zrobić kopię.
+Czy jeśli wyczyszczę dane przeglądarki, stracę zmiany?
+Tak, jeśli nie masz kopii. Dlatego warto co jakiś czas ją zapisać, zwłaszcza przed zmianą telefonu.
+Jak zainstalować aplikację na telefonie?
+Na iPhonie otwórz aplikację w Safari, dotknij Udostępnij, a potem Do ekranu początkowego. Na Androidzie otwórz menu Chrome i wybierz Zainstaluj aplikację lub Dodaj do ekranu głównego. Po instalacji działa też bez internetu.
+Jak zaktualizować aplikację?
+Gdy jest nowa wersja, u góry pojawia się komunikat: dotknij {a}. Twoje zmiany zostają na miejscu.
+Jak zmienić kraj, święta, język lub motyw?
+W {p} wybierz kraj i region dla świąt, język oraz jasny lub ciemny motyw. Lokalne święta, których aplikacja nie zna, wpisz jako dzień wolny.
+Zabierz mnie tam
+Otwórz przewodnik
+Pomoc
+Przewodnik i częste pytania
+Jak co zrobić, krok po kroku
+Przewodnik
+Nie znaleziono odpowiedzi. Spróbuj innych słów.
+Szukaj w przewodniku
+W minutę pokażę ci, jak to działa. Możesz pominąć w każdej chwili i obejrzeć prezentację ponownie z Przewodnika.
+Wybierz zmianę i dotykaj dni w kalendarzu, aby ją przypisać. Dotknij przycisku ponownie, aby skończyć. {a}, {b} i {c} działają tak samo.
+Kalendarz
+Dotknij dnia, aby otworzyć jego kartę: godziny, nadgodziny, zwolnienia, choroba i notatki. Wszystko zapisuje się samo i zawsze możesz cofnąć zmianę w komunikacie na dole.
+Następna zmiana
+Tu na górze zawsze widzisz następną zmianę albo tę, która trwa.
+Podsumowanie miesiąca
+Godziny pracy, nadgodziny, noce i święta w miesiącu, z ostrzeżeniami, gdy zmiana narusza zasady odpoczynku.
+Kalendarz i Rok
+Przejdź do zakładki Rok, aby zobaczyć sumy z całego roku, miesiąc po miesiącu.
+Tu jest cała reszta: system zmian, urlop i zwolnienia, bank godzin, szacunek płacy, pasek wypłaty, PDF miesiąca, eksport do kalendarza, kopia danych i Przewodnik.
+Kraj i święta, język oraz jasny lub ciemny motyw.
+Zacznij od wpisania zmian z tego tygodnia.
+{n} z {m}
+Pomiń
+Zaczynamy
+Obejrzyj prezentację ponownie

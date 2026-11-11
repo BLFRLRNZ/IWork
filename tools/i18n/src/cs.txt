@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} h
+{h} h {m} min
+{h} h
+{m} min
+Směna
+a
+Zobrazit částky
+Skrýt částky
+Odpracované hodiny
+Přesčasy
+Noční práce
+Neděle
+Svátky
+Hrubý orientační odhad. Jen pro tebe: neobjeví se v PDF ani ve sdílených obrázcích.
+Přidat příplatky
+Tvoje směny jsou uložené v tomto zařízení.
+bez směny
+dělená směna {r}
+směna {r}
+následujícího dne
+volno {h} h
+Volno
+Dovolená
+Vymazat
+Vytvořit štítky pro oddělení nebo pracoviště
+Vyber směnu, štítek nebo obojí a pak klepni na dny. Nebo klepni na den a nastav časy, poznámky a hodiny navíc.
+Mazání je zapnuté.
+Klepni na dny, které chceš vyprázdnit, a pak znovu na tlačítko pro ukončení.
+Každý den, na který klepneš, dostane směnu i štítek najednou.
+{x} je zapnuto.
+Klepni na dny, které chceš vyplnit, a případně vyber i štítek. Pro ukončení znovu klepni na tlačítko.
+Klepni na dny, které chceš vyplnit. Pro ukončení znovu klepni na tlačítko.
+Štítek {x} je zapnutý.
+Klepni na dny se směnou, abys ho přidal nebo odebral.
+Volno
+odpočinek pod {n} h
+{x} navíc
+Nalezen {n} den
+Nalezeno {n} dní ‖few: Nalezeny {n} dny ‖many: Nalezeno {n} dne
+{h} h práce
+Žádné dny s „{q}“ v poznámkách ani štítcích.
+Sobota {s} h, ostatní dny {w} h.
+Poznámka
+Méně než {n} h odpočinku od předchozí směny
+Přestávka
+Pokračuješ za <b>{x}</b>. Dělená směna: {r}.
+Další směna
+Žádné naplánované směny
+Klepni na den v kalendáři a vyber čas začátku: konec se spočítá sám.
+Dnes
+Zítra
+Včera
+Teď ve směně
+Do konce zbývá <b>{a}</b>. Máš za sebou {b}.
+Začíná za <b>{x}</b>.
+Dělená: {r}, celkem {h} h.
+Trvá {h} h.
+Jen {h} h odpočinku mezi {a} a {b} (minimum je {n}).
+Sedm a více pracovních dnů v řadě od {d}.
+Týden od {d}: {h} h, nad {n}.
+V roce {y} máš zapsaný {n} den dovolené navíc oproti nároku.
+V roce {y} máš zapsáno {n} dní dovolené navíc oproti nároku. ‖few: V roce {y} máš zapsané {n} dny dovolené navíc oproti nároku. ‖many: V roce {y} máš zapsáno {n} dne dovolené navíc oproti nároku.
+V roce {y} máš zapsáno {h} h volna navíc oproti nároku.
+Celkem {m}
+h, směn: {n}
+h, směn: {n}
+Hodiny navíc
+Noční hodiny, {r}
+Odpracované soboty
+Neděle a svátky
+Dovolená v měsíci
+Zbývající dovolená {y}
+Dovolená {y}
+Volno v měsíci
+Zbývající volno
+Nemoc
+Banka hodin na konci měsíce
+Banka hodin dnes
+Odhad mzdy {m}
+Hodiny za týden
+Pruh je plný při {n} h.
+Ke kontrole
+Celkem za měsíc
+Další upozornění: {n}. Najdeš je v aplikaci.
+{h} h
+Směny
+Noční hodiny
+Ned. a svátky
+Volno
+Banka hodin
+Běžná směna {w} h, sobota {s} h. Vytvořeno v {app} {d}.
+Volno a nepřítomnost
+Noc
+Odpoledne
+Ráno
+Upravit štítky
+Vytvořit štítky pro oddělení, stroje nebo pracoviště
+Směna {a} h. Použít běžnou délku {b} h
+Hodiny navíc nebo méně oproti {h}
+Celý den.
+Zbytek dne se počítá jako běžně odpracovaný. Hodiny volna se odečtou z nároku.
+přestávka {x}
+{h} v noci
+Běžná směna {h} h, protože je sobota.
+Běžná směna {h} h.
+Den vyprázdněn.
+Štítky patří ke dnům se směnou: vyber i směnu.
+Pozor: v roce {y} jsi překročil nárok na dovolenou.
+Vyčerpal jsi celou dovolenou za rok {y}.
+Zbývá ti {n} den dovolené v roce {y}.
+Zbývá ti {n} dní dovolené v roce {y}. ‖few: Zbývají ti {n} dny dovolené v roce {y}. ‖many: Zbývá ti {n} dne dovolené v roce {y}.
+Pozor: v roce {y} jsi překročil nárok na volno.
+Zbývá ti {h} h volna v roce {y}.
+h
+Název rychlé směny {n}
+Název
+Smazat rychlou směnu {n}
+Začátek rychlé směny {n}
+Délka první části v hodinách
+Délka rychlé směny {n} v hodinách
+Polovina
+Běžná
+Dělená
+Pokračuje v, rychlá směna {n}
+Délka druhé části v hodinách
+Zbytek
+Nejvýše {n} rychlých směn
++ Přidat rychlou směnu
+Rychlá směna „{x}“ smazána.
+Např. Oddělení A, Lis 3, Pokladna 2
+Štítek {n}
+Smazat štítek {n}
+Štítek „{x}“ odebrán z {n} dne.
+Štítek „{x}“ odebrán z {n} dnů. ‖few: Štítek „{x}“ odebrán ze {n} dnů. ‖many: Štítek „{x}“ odebrán z {n} dne.
+bez názvu
+Štítek „{x}“ smazán.
+Rok
+Celkem {y}
+Zapsané dny volna
+Odhad mzdy {y}
+Štítky v roce {y}
+{n} den
+{n} dní ‖few: {n} dny ‖many: {n} dne
+Jednotlivé dny hledej v zobrazení seznamu v kalendáři.
+Tento rok ještě nezačal.
+Banka hodin začíná {d}.
+Zůstatek k {d}.
+Zůstatek k dnešku.
+Odpracoval jsi víc hodin, než máš ve smlouvě.
+Odpracoval jsi méně hodin, než máš ve smlouvě.
+Jsi přesně podle smlouvy.
+Smlouva <b>{h} h</b> týdně
+Od <b>{d}</b>
+Start <b>{h} h</b>
+Změnit nastavení banky hodin
+Čerpáno
+Čerpáno
+Plánováno
+Plánováno
+Nárok
+dny zapsané v roce {y}
+hodiny zapsané v roce {y}
+Nastav svůj nárok
+dny navíc
+hodiny navíc
+dny zbývají z {x}
+hodiny zbývají z {x}
+{a} čerpáno, {b} plánováno z {c}
+Zapsal jsi víc dovolené, než máš nárok.
+Zapsal jsi víc volna, než máš nárok.
+Vše vyčerpáno.
+Vše vyčerpáno.
+Brzy dojde.
+Brzy dojde.
+Hodiny za měsíc
+{m}: {h} h. Otevřít měsíc
+Měsíc
+Hodiny
+Navíc
+Volno
+Banka
+Celkem
+Měsíc po měsíci
+Klepnutím na měsíc ho otevřeš v kalendáři. Sloupec Banka ukazuje, kolik každý měsíc přidal nebo ubral.
+Krok {n}
+O den méně
+O den více
+Smazat krok {n}
+S tímto nastavením nejsou žádné dny k vyplnění.
+Vyber počáteční den.
+Cyklus <b>{a}</b>. Vyplňuji <b>{b}</b> od {c} do {d}:
+Použít na {n} den
+Použít na {n} dní ‖few: Použít na {n} dny ‖many: Použít na {n} dne
+{n} týden
+{n} týdnů ‖few: {n} týdny ‖many: {n} týdne
+Rozpis použit na {n} den.
+Rozpis použit na {n} dní. ‖few: Rozpis použit na {n} dny. ‖many: Rozpis použit na {n} dne.
+Moje směny, týden od {d}:
+volno
+Moje směny
+{h} h, {n} směna
+{h} h, {n} směn ‖few: {h} h, {n} směny ‖many: {h} h, {n} směny
+Vytvořeno v {app}
+Tento týden
+Příští týden
+Minulý týden
+Za {n} týden
+Za {n} týdnů ‖few: Za {n} týdny ‖many: Za {n} týdne
+Před {n} týdnem
+Před {n} týdny ‖few: Před {n} týdny ‖many: Před {n} týdne
+Směny zkopírovány: vlož je do zprávy.
+Kopírování tu není k dispozici.
+Obrázek se nepodařilo vytvořit.
+Zatím není žádný týden k zopakování.
+Příští týden už je vyplněný.
+Týden od {a} zopakován v týdnu od {b}.
+Poslední kopie uložena {d}.
+Zatím jsi neuložil žádnou kopii.
+Tvoje směny ({n} den) jsou jen v tomto zařízení: občas si ulož kopii, třeba na iCloud Drive, Google Drive nebo do e-mailu sobě, ať o ně nepřijdeš při výměně telefonu.
+Tvoje směny ({n} dní) jsou jen v tomto zařízení: občas si ulož kopii, třeba na iCloud Drive, Google Drive nebo do e-mailu sobě, ať o ně nepřijdeš při výměně telefonu. ‖few: Tvoje směny ({n} dny) jsou jen v tomto zařízení: občas si ulož kopii, třeba na iCloud Drive, Google Drive nebo do e-mailu sobě, ať o ně nepřijdeš při výměně telefonu. ‖many: Tvoje směny ({n} dne) jsou jen v tomto zařízení: občas si ulož kopii, třeba na iCloud Drive, Google Drive nebo do e-mailu sobě, ať o ně nepřijdeš při výměně telefonu.
+Soubor stažen.
+Stažení se nezdařilo.
+{n} směna
+{n} směn ‖few: {n} směny ‖many: {n} směny
+prázdné
+Vytvořit PDF za {m}
+PDF se nepodařilo vytvořit.
+Kopie směn {app}
+Kopie uložena. Uschovej ji na bezpečném místě.
+Soubor obsahuje {n} den
+Soubor obsahuje {n} dní ‖few: Soubor obsahuje {n} dny ‖many: Soubor obsahuje {n} dne
+od {a} do {b}
+uloženo {d}
+Nahradí směny, které máš teď ({n} den), včetně nastavení.
+Nahradí směny, které máš teď ({n} dní), včetně nastavení. ‖few: Nahradí směny, které máš teď ({n} dny), včetně nastavení. ‖many: Nahradí směny, které máš teď ({n} dne), včetně nastavení.
+Načtou se spolu s nastavením.
+Tento soubor není kopie z {app}.
+Kopie načtena: {n} den.
+Kopie načtena: {n} dní. ‖few: Kopie načtena: {n} dny. ‖many: Kopie načtena: {n} dne.
+Verze {v}.
+Otevři aplikaci z její webové adresy, abys dostával aktualizace.
+Je dostupná verze {v}.
+Naposledy kontrolováno: {d}.
+Automatická kontrola je zapnutá.
+Je dostupná {app} {v}
+Aktualizuj, ať máš nejnovější změny. Tvoje směny zůstanou, kde jsou.
+Otevři aplikaci z její webové adresy, abys mohl hledat aktualizace.
+Kontroluji…
+Už máš nejnovější verzi ({v}).
+Aktualizace nelze zkontrolovat: zkontroluj připojení.
+Hledat aktualizace
+Aktualizuji…
+Volno
+Nem.
+Nový rok
+Tři králové
+Den osvobození
+Svátek práce
+Den republiky
+Nanebevzetí Panny Marie
+Všech svatých
+Neposkvrněné početí
+Boží hod vánoční
+Svatý Štěpán
+Svatý František
+Velikonoční neděle
+Velikonoční pondělí
+iWork
+Kalendář
+Změny se ukládají samy.
+Začátek směny
+Dělená směna, ve dvou částech
+První část
+Pokračuje v
+Druhá část
+Konec směny
+Hodiny navíc nebo méně
+Hodiny volna
+Štítky
+Vyprázdnit den
+Hotovo
+Nastavení
+Každá změna se uloží sama.
+Hodiny běžné směny
+Hodiny sobotní směny
+Rychlé směny a štítky vytvoříš a upravíš v Nástrojích, tlačítku se třemi tečkami.
+Dovolená a volno
+Dovolená za rok
+dny
+Volno za rok
+Tvůj roční nárok včetně zůstatku z minulého roku. Při 0 je počítadlo vypnuté.
+Týdenní hodiny podle smlouvy
+Počítat od
+Počáteční zůstatek
+Banka hodin porovnává odpracované hodiny s hodinami ze smlouvy, den po dni až do dneška. Dovolená, volno, nemoc, neděle a svátky se nepočítají jako chybějící hodiny.
+Mzda
+Hrubá hodinová mzda
+€/h
+Noc 22–06
+Příplatky se sčítají: noční hodina v neděli dostane noční i nedělní příplatek. Když svátek připadne na neděli, platí jen svátkový příplatek. Odhad zůstává v tomto zařízení a neobjeví se v PDF ani ve sdílených obrázcích.
+Jazyk
+Vzhled
+Automaticky
+Světlý
+Tmavý
+Aktualizace
+Nástroje
+Vyplnit směny
+Cyklický rozpis
+Vzor, který se opakuje přes několik týdnů
+Zopakovat poslední týden
+Zkopírovat směny do dalšího týdne
+Přizpůsobit
+Rychlé směny
+Tlačítka pro zadání směny jedním klepnutím
+Oddělení, stroje, pracoviště na jedno klepnutí
+Sdílet a exportovat
+Sdílet týden
+Obrázek nebo text, jakýkoli týden
+PDF měsíce
+Měsíc dle výběru, připravený k tisku
+Záloha
+Uložit kopii směn
+Soubor se všemi směnami a nastavením
+Načíst kopii
+Obnovit směny ze souboru uloženého dříve
+Zavřít
+To jsou tlačítka nad kalendářem: vyber jedno a klepni na dny, kam ho chceš dát. Tady je vytváříš, přejmenováváš a měníš časy a délku. Každá změna se uloží sama.
+Nech délku prázdnou a použije se běžná (8 h, v sobotu 6). Vlastní délka platí pro všechny dny. S volbou „Dělená“ má směna dvě části, například 8–12 a 16–20.
+Oddělení, stroje, pracoviště nebo cokoli potřebuješ. Zobrazí se ve druhé řadě nad kalendářem: vyber jeden a klepni na dny, kam ho chceš přiřadit, i spolu se směnou. Každá změna se uloží sama.
++ Přidat štítek
+Načíst tuto kopii?
+Zrušit
+Nahradit směny
+Sestav opakující se vzor, například 5 ranních, 2 volna, 5 odpoledních, 2 volna, a použij ho na několik týdnů najednou.
+Vzor
++ Přidat krok
+Ode dne
+Na kolik týdnů
+Neměnit už vyplněné dny
+Nechat neděle volné
+Použít
+Zpět na tento týden
+Kopírovat jako text
+Sdílet obrázek
+Vyber měsíc: dostaneš kalendář se směnami a součty na listu A4 k tisku.
+Později
+Aktualizovat
+Obrazovka
+Předchozí měsíc
+Další měsíc
+Rychlé zadávání
+Zobrazení
+Zobrazení kalendáře
+Zobrazení seznamu
+Rychlé štítkování
+Hledat v poznámkách a štítcích
+Přehled roku
+Předchozí rok
+Další rok
+Typ dne
+O půl hodiny méně
+O půl hodiny více
+Např. výměna směny s Markem, oddělení B
+Motiv
+O týden méně
+O týden více
+Předchozí týden
+Další týden
+Náhled obrázku se směnami týdne
+Zpět
+{x}, svátek patrona
+Svátek patrona
+{x} (náhradní den)
+Žádná konkrétní
+Žádný
+Jiné datum…
+Pravidla pro {c}: nejméně {r} h odpočinku mezi dvěma směnami, v průměru nejvýše {w} h týdně, týdenní odpočinek {k} h. První den týdne: {d}.
+Země a svátky
+Země
+Region nebo kraj
+Patron
+Den
+Svátek patrona se počítá jako svátek v kalendáři, bance hodin i mzdě. Ověř datum ve smlouvě nebo na obecním úřadě.
+{c}: nejméně {r} h odpočinku mezi dvěma směnami, v průměru nejvýše {w} h týdně, týdenní odpočinek {k} h. První den týdne: {d}.
+Noc {r}
+Začít
+Další
+Novinka: jazyk a země
+Vítej v {app}
+Vyber jazyk a zemi: aplikace se nastaví podle správných pravidel a svátků. Tvoje směny zůstanou, kde jsou.
+Kalendář tvých směn. Vyber jazyk.
+Kde pracuješ?
+Podle toho se nastaví svátky, minimální odpočinek, noční hodiny a měna.
+Hledat zemi
+Tvoje oblast
+Některé svátky platí jen v regionu nebo městě. Tento krok můžeš přeskočit a změnit později.
+Pokud tu tvé město není, zadáš datum v Nastavení.
+Jak dlouhá je směna?
+Pak vybíráš jen začátek a konec se spočítá sám. Dá se kdykoli změnit.
+Běžná směna
+Sobotní směna
+Vše připraveno
+Takhle je aplikace nastavená. Vše změníš v Nastavení.
+{w} h, sobota {s}
+Minimální odpočinek
+Nejvyšší průměr
+{h} h týdně
+Upozornění na odpočinek a hodiny jsou orientační a nenahrazují tvou smlouvu.
+Zpět
+Pravidla pro upozornění a výpočty
+h/týd.
+Noc od
+Noc do
+Tvoje smlouva může být výhodnější než zákon: tady můžeš pravidla upravit.
+Zpět na pravidla země
+{x}, místní svátek
+Místní svátek
+Svátek tvé obce nebo ze smlouvy: počítá se jako svátek v kalendáři, bance hodin i mzdě.
+Když svátek připadne na neděli, zaměstnavatel určí náhradní den.
+Grundlovsdag (5. června) a Štědrý den nejsou zákonné svátky, ale mnoho smluv s nimi počítá.
+Svatodušní pondělí je často „den solidarity“ a pracuje se.
+V Bavorsku je Nanebevzetí Panny Marie svátkem jen v převážně katolických obcích.
+Velký pátek a 5. květen jsou volné, jen pokud to stanoví kolektivní smlouva (CAO).
+Masopustní úterý je dobrovolné; každá obec má navíc svůj svátek.
+Od roku 2025 už 17. listopad není svátek; v roce 2026 se pracuje i 8. května a 15. září.
+Každé autonomní společenství přidává své svátky (často Zelený čtvrtek) a každý rok je mění: přidej svůj jako místní svátek.
+Předvečery (Midsommarafton, Julafton, Nyårsafton) nejsou zákonné svátky, ale téměř všude jsou volné.
+Limit 45 hodin platí pro průmysl, kanceláře, technické pracovníky a velké obchodní řetězce; pro ostatní je 50. V některých obcích (Fribourg, Solothurn, Aargau) jsou svátky jiné: přidej svůj jako místní svátek.
+Ve Spojeném království nejsou bank holidays zákonným nárokem: záleží na smlouvě. Limitu 48 hodin se lze písemně vzdát (opt-out).
+Pracovní doba a odpočinek se řídí hlavně kolektivními smlouvami San Marina: zkontroluj hodnoty níže.
+Když svátek připadne na neděli, je volné pondělí.
+Limit 45 hodin platí pro průmysl, kanceláře a velké obchodní řetězce; pro ostatní je 50.
+{c}: zákon nestanoví minimální odpočinek mezi dvěma směnami. Aplikace upozorní pod {r} h a nad {w} h týdně. První den týdne: {d}.
+Federální svátky platí ze zákona jen pro federální zaměstnance: v soukromém sektoru záleží na smlouvě. Každý stát má své svátky: přidej svůj jako místní svátek.
+Pracovní doba a odpočinek se mohou lišit podle provincie: zkontroluj hodnoty níže. Newfoundland a Labrador zatím není zahrnut.
+Dny federálních a místních voleb jsou volné i pro ty, kdo musí volit.
+Karneval a Boží tělo jsou „ponto facultativo“; každý stát a obec přidává své svátky: přidej svůj jako místní svátek.
+Vláda může přesouvat pohyblivé svátky (17. června, 17. srpna, 12. října, 20. listopadu) a přidávat volné dny: tady vidíš data stanovená zákonem.
+Mnoho kolektivních smluv (awards) stanoví 10 h odpočinku mezi směnami. Některé svátky platí jen v určitých oblastech (Royal Show, Regatta, Recreation Day): můžeš přidat svůj jako místní svátek.
+Každá provincie má svůj Anniversary Day: pokud tvůj v seznamu není, přidej ho jako místní svátek.
+Žádný
+Hodiny a smlouva
+Pracovní doba
+Délka směn, minimální odpočinek, noční hodiny
+Kolik dní a hodin ti náleží
+Hodiny ze smlouvy a počáteční zůstatek
+Odhad mzdy
+Hodinová mzda a příplatky, jen pro tebe
+Druhá práce
+Pohotovost
+Pohotovost zapnutá.
+Klepni na dny, abys ji přidal nebo odebral, i ve dnech volna. Můžeš ji zvolit spolu se směnou.
+Každý dotčený den dostane směnu i pohotovost zároveň.
+{h} h zásahu
+Hodiny zásahu
+Druhá práce se počítá zvlášť: nepočítá se do banky hodin, dovolené ani upozornění hlavní práce.
+Hlavní práce
+Vytvořeno v {app} dne {d}.
+Práce rychlé směny {n}
+{n} měsíc
+{n} měsíců ‖few: {n} měsíce ‖many: {n} měsíce
+Směny: {x}
+<b>{n}</b> od {a} do {b}.
+{n} událost
+{n} událostí ‖few: {n} události ‖many: {n} události
+Žádné směny k exportu od {a} do {b}.
+Od
+Délka
+Zásah
+Hodiny zásahu se počítají jako odpracované a v odhadu mzdy se platí jako přesčas.
+Začátek
+Další práce s vlastními hodinami a součty
+Export do kalendáře
+Google, Apple nebo Outlook kalendář
+Mám pohotovosti
+Obvykle od
+Nad kalendářem se objeví tlačítko Pohotovost: zvol ho a klepej na dny, i na dny volna. Hodiny zásahu zapíšeš klepnutím na den.
+Příplatek za pohotovost
+Za každou pohotovost. Hodiny zásahu se platí jako přesčas.
+Mám druhou práci
+Obvyklá délka
+Směny druhé práce se zobrazí jako druhý řádek ve stejných dnech, s tyrkysovým čtverečkem. Přiřadíš je rychlými směnami druhé práce nebo klepnutím na den. Hodiny a mzda se počítají zvlášť: nepočítají se do banky hodin, dovolené ani upozornění hlavní práce.
+U každé rychlé směny zvol, jestli patří k hlavní, nebo druhé práci. Směny druhé práce mají tyrkysový čtvereček.
+Vytvoř soubor se směnami k otevření v Kalendáři Google, Kalendáři Apple nebo Outlooku.
+Kolik měsíců
+Co exportovat
+Pracovní směny
+Dovolená, volno a nemoc, jako celý den
+Připomenutí
+30 minut předem
+1 hodinu předem
+2 hodiny předem
+Jak ho otevřít v kalendáři
+iPhone, iPad a Mac.
+Otevři soubor a zvol Přidat vše, pak kalendář, kam je dát.
+Kalendář Google.
+Na počítači otevři calendar.google.com, jdi do Nastavení, Import a export, a nahraj soubor. Na Androidu ho můžeš otevřít i přímo v Kalendáři Google.
+Outlook.
+Otevři soubor v Outlooku, nebo na outlook.com jdi do kalendáře, Přidat kalendář, Nahrát ze souboru.
+Když stejné období vyexportuješ znovu, už importované směny se obvykle aktualizují místo zdvojení. Dny, které jsi v aplikaci vyprázdnil, je třeba smazat ručně. Tip: používej kalendář jen na směny, pak ho můžeš vyprázdnit a znovu importovat, když se změní.
+Vytvořit soubor
+Např. Bar, Doučování, Rozvoz
+O měsíc méně
+O měsíc více
+Práce
+Přesčasy
+Vyčerpaná dovolená
+Vyčerpané volno
+Hrubá mzda celkem
+{n} rozdíl oproti zapsaným hodinám
+{n} rozdílů oproti zapsaným hodinám ‖few: {n} rozdíly oproti zapsaným hodinám ‖many: {n} rozdílu oproti zapsaným hodinám
+Položky na pásce odpovídají tomu, co jsi zapsal.
+Zapsáno
+Na pásce
+{v} méně na pásce
+{v} více na pásce
+Odhad aplikace, jen orientační
+Páska za {a}: hodiny se porovnávají s {b}.
+Výplatní páska: {m}
+zapsáno {a}, na pásce {b}
+K výplatě
+Otevřít výplatní pásku
+páska zadána
+bez pásky
+Nahrát PDF: {m}
+Výplatní páska smazána: {m}.
+Čtu výplatní pásku…
+Špatné heslo, zkus to znovu.
+PDF je chráněné heslem. Často je to tvoje rodné číslo nebo heslo od zaměstnavatele.
+Nedaří se načíst čtečku PDF. Zkontroluj připojení a zkus to znovu.
+Tento soubor nejde otevřít. Je to PDF?
+Toto PDF neobsahuje text, možná je to sken nebo fotka. Zadej čísla ručně.
+Položky na této pásce jsem nerozpoznal. Zadej čísla ručně: jen ta, která tě zajímají.
+přesčasy
+noční práce
+neděle a svátky
+vyčerpaná dovolená
+vyčerpané volno
+zbývající dovolená
+zbývající volno
+hrubá mzda celkem
+k výplatě
+Páska: {m}.
+Přečteno: {x}.
+Zkontroluj zvýrazněná čísla a chybějící doplň ručně.
+Vypadá to na pásku s mimořádnou odměnou (13. plat): pečlivě zkontroluj hrubou mzdu.
+Soubor je na výplatní pásku příliš velký.
+Výplatní páska
+Kontrola proplacených hodin a položek
+Nahraj PDF výplatní pásky nebo zadej čísla: aplikace je porovná se zapsanými hodinami.
+Heslo k PDF
+Otevřít
+PDF se čte jen v tomto zařízení a neukládá se: aplikace si nechá jen čísla níže.
+Na výplatní pásce
+Zbývající dovolená
+Přesčasy a příplatky jsou za předchozí měsíc
+Mnoho firem proplácí přesčasy, noční a sváteční práci až další měsíc. Pokud je to tvůj případ, zapni to: porovnání použije správný měsíc.
+Smazat
+Zapisování směn
+Jak zapíšu směnu?
+Nad kalendářem vyber rychlou směnu, například {a}, a klepej na dny: každý dostane tu směnu. Dalším klepnutím na tlačítko skončíš. Pro jiný čas klepni na den a zadej začátek a délku.
+Jak změním nebo vyprázdním den?
+Klepni na den: na kartě měníš typ, čas, hodiny navíc nebo méně, štítky a poznámku a vše se ukládá samo. {a} ho smaže. Pro vyprázdnění více dnů vyber {b} nad kalendářem a klepej na dny. Po každé změně ji můžeš vrátit ve zprávě dole.
+Jak zapíšu volno, dovolenou, náhradní volno a nemoc?
+{a} a {b} mají vlastní tlačítko nad kalendářem: vyber ho a klepej na dny. Pro {c} nebo {d} klepni na den a vyber typ na kartě; u volna zadáš i hodiny.
+Jak zapíšu přesčas nebo dělenou směnu?
+Na kartě dne použij {a} pro přesčas nebo dřívější odchod. Přes {b} zadáš obě části, například 8–12 a 16–20.
+Jak si vytvořím rychlé směny?
+Otevři {p} a zvol název, začátek a délku každého tlačítka. Mohou to být dělené směny a, pokud máš druhou práci, mohou k ní patřit.
+Pracuji pořád ve stejném rozpisu: může se kalendář vyplnit sám?
+Ano: v {p} popiš schéma (například 5 ranních, 2 volna, 5 nočních, 2 volna), počáteční den a dokdy. Přes {q} naopak zkopíruješ jeden týden na další.
+K čemu jsou štítky?
+Označují oddělení, stroj nebo pracoviště. Vytvoříš je v {p}; pak je vybereš nad kalendářem a klepeš na dny, i spolu se směnou.
+Jak najdu den, poznámku nebo štítek?
+Přepni na zobrazení seznamu tlačítkem vedle rychlých směn: objeví se hledání v poznámkách a štítcích. Karta {a} ukazuje součty celého roku, měsíc po měsíci.
+Hodiny, smlouva a mzda
+Co znamenají upozornění dole v měsíci?
+Aplikace kontroluje pravidla tvé země: minimální odpočinek mezi dvěma směnami, průměr hodin týdně, sedm pracovních dnů po sobě. Pokud máš jinou smlouvu, změň hodnoty v {p}.
+Jak funguje banka hodin?
+V {p} zadej týdenní hodiny ze smlouvy, odkdy počítat a případný počáteční zůstatek. Aplikace porovná odpracované hodiny s požadovanými a ukáže zůstatek v přehledu měsíce.
+Jak sledovat dovolenou a volno?
+V {p} zadej, kolik dnů dovolené a hodin volna máš za rok. Aplikace počítá vyčerpané a naplánované a řekne ti, kolik zbývá.
+Jak funguje odhad mzdy?
+V {p} zadej hrubou hodinovou mzdu a příplatky. Je to orientační odhad jen pro tebe: nikdy se neobjeví v PDF ani ve sdílených obrázcích a částky můžeš skrýt.
+Jak zapíšu pohotovost?
+Zapni ji v {p}. Nad kalendářem se objeví tlačítko {a}: vyber ho a klepej na dny, i na dny volna. Hodiny zásahu zapíšeš na kartě dne; příplatek nastavíš v {q}.
+Mám druhou práci: jak ji držet odděleně?
+Zapni ji v {p}, s názvem, délkou a mzdou. Její směny mají vlastní rychlá tlačítka a zobrazují se jako druhý řádek ve dnech. Hodiny a mzda se počítají zvlášť a PDF měsíce jde udělat pro každou práci.
+Jak zkontroluji výplatní pásku?
+V {p} vyber měsíc a nahraj PDF: aplikace přečte přesčasy, noční a sváteční práci, dovolenou, volno, hrubou mzdu a částku k výplatě a porovná je se zapsanými hodinami. Pokud máš pásku na papíře, zadej čísla ručně.
+Páska se nenačte nebo čísla nesedí: co dělat?
+Pokud je PDF sken nebo fotka, nemá text ke čtení: zadej čísla ručně. Pokud je chráněné, aplikace se zeptá na heslo. Vždy zkontroluj zvýrazněná čísla a zapni {a}, pokud firma proplácí přesčasy a příplatky až další měsíc.
+Sdílení a export
+Jak někomu pošlu směny na týden?
+V {p} vyber týden a pošli ho jako obrázek nebo text, například v chatu.
+Jak vytisknu měsíc?
+V {p} vyber měsíc: dostaneš list A4 s kalendářem a součty k tisku nebo odeslání.
+Jak dostanu směny do Kalendáře Google, Kalendáře Apple nebo Outlooku?
+V {p} vyber odkdy, kolik měsíců a co zahrnout, pak otevři soubor ve svém kalendáři: na stejné obrazovce jsou kroky pro každý. Když stejné období vyexportuješ znovu, směny se obvykle aktualizují místo zdvojení.
+Data, aplikace a nastavení
+Kde jsou uložené moje směny?
+Jen v tomto zařízení, v prohlížeči. Nepotřebuješ účet a nic se neposílá na server.
+Jak udělám kopii nebo přejdu na jiný telefon?
+Přes {p} dostaneš soubor se směnami a nastavením. Na druhém telefonu otevři aplikaci a použij {q}. Tečka na {a} ti připomene, kdy je čas na kopii.
+Když smažu data prohlížeče, přijdu o směny?
+Ano, pokud nemáš kopii. Proto se vyplatí ji občas uložit, hlavně před výměnou telefonu.
+Jak nainstaluji aplikaci do telefonu?
+Na iPhonu otevři aplikaci v Safari, klepni na Sdílet a pak Přidat na plochu. Na Androidu otevři nabídku Chrome a zvol Nainstalovat aplikaci nebo Přidat na plochu. Po instalaci funguje i bez internetu.
+Jak aktualizuji aplikaci?
+Když je nová verze, nahoře se objeví upozornění: klepni na {a}. Tvoje směny zůstanou, kde jsou.
+Jak změním zemi, svátky, jazyk nebo motiv?
+V {p} vyber zemi a region pro svátky, jazyk a světlý nebo tmavý motiv. Místní svátky, které aplikace nezná, zapiš jako volno.
+Vezmi mě tam
+Otevřít návod
+Nápověda
+Návod a časté dotazy
+Jak co udělat, krok za krokem
+Návod
+Nic nenalezeno. Zkus jiná slova.
+Hledat v návodu
+Za minutu ti ukážu, jak to funguje. Můžeš kdykoli přeskočit a prohlídku si znovu pustit z Návodu.
+Vyber směnu a klepej na dny v kalendáři, abys ji přiřadil. Dalším klepnutím na tlačítko skončíš. {a}, {b} a {c} fungují stejně.
+Kalendář
+Klepni na den a otevře se jeho karta: čas, přesčasy, volno, nemoc a poznámky. Vše se ukládá samo a vždy můžeš vrátit změnu ve zprávě dole.
+Další směna
+Tady nahoře vždy vidíš další směnu nebo tu, která právě běží.
+Přehled měsíce
+Odpracované hodiny, přesčasy, noci a svátky v měsíci, s upozorněním, když směna nedodrží pravidla odpočinku.
+Kalendář a Rok
+Přepni na Rok a uvidíš součty celého roku, měsíc po měsíci.
+Tady je všechno ostatní: rozpis, dovolená a volno, banka hodin, odhad mzdy, výplatní páska, PDF měsíce, export do kalendáře, kopie dat a Návod.
+Země a svátky, jazyk a světlý nebo tmavý motiv.
+Začni zapsáním směn na tento týden.
+{n} z {m}
+Přeskočit
+Jdeme na to
+Znovu spustit prohlídku

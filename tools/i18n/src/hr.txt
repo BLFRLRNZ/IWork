@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} h
+{h} h {m} min
+{h} h
+{m} min
+Smjena
+i
+Prikaži iznose
+Sakrij iznose
+Odrađeni sati
+Prekovremeni
+Noćni rad
+Nedjelja
+Blagdani
+Okvirna bruto procjena. Samo za tebe: ne pojavljuje se u PDF-u ni na dijeljenim slikama.
+Dodaj dodatke
+Tvoje smjene spremljene su na ovom uređaju.
+bez smjene
+podijeljena smjena {r}
+smjena {r}
+sljedećeg dana
+slobodno {h} h
+Slobodno
+Godišnji
+Obriši
+Izradi oznake za odjele ili radna mjesta
+Odaberi smjenu, oznaku ili oboje pa dodirni dane. Ili dodirni dan za vremena, bilješke i dodatne sate.
+Brisanje je uključeno.
+Dodirni dane koje želiš isprazniti, a zatim ponovno gumb za kraj.
+Svaki dodirnuti dan dobiva smjenu i oznaku odjednom.
+{x} je uključeno.
+Dodirni dane koje želiš ispuniti i po želji odaberi i oznaku. Za kraj ponovno dodirni gumb.
+Dodirni dane koje želiš ispuniti. Za kraj ponovno dodirni gumb.
+Oznaka {x} je uključena.
+Dodirni dane sa smjenom da je dodaš ili makneš.
+Slobodno
+odmor kraći od {n} h
+{x} dodatno
+Pronađen {n} dan
+Pronađeno {n} dana ‖few: Pronađena {n} dana
+{h} h rada
+Nema dana s „{q}” u bilješkama ili oznakama.
+Subota {s} h, ostali dani {w} h.
+Bilješka
+Manje od {n} h odmora od prethodne smjene
+Na pauzi
+Nastavljaš za <b>{x}</b>. Podijeljena smjena: {r}.
+Sljedeća smjena
+Nema planiranih smjena
+Dodirni dan u kalendaru i odaberi vrijeme početka: kraj se izračuna sam.
+Danas
+Sutra
+Jučer
+Sada u smjeni
+Do kraja još <b>{a}</b>. Odrađeno {b}.
+Počinje za <b>{x}</b>.
+Podijeljena: {r}, ukupno {h} h.
+Traje {h} h.
+Samo {h} h odmora između {a} i {b} (minimum je {n}).
+Sedam ili više radnih dana zaredom od {d}.
+Tjedan od {d}: {h} h, iznad {n}.
+U {y}. si označio {n} dan godišnjeg više nego što ti pripada.
+U {y}. si označio {n} dana godišnjeg više nego što ti pripada.
+U {y}. si označio {h} h slobodnog više nego što ti pripada.
+Ukupno {m}
+h, smjena: {n}
+h, smjena: {n}
+Dodatni sati
+Noćni sati, {r}
+Odrađene subote
+Nedjelje i blagdani
+Godišnji u mjesecu
+Preostali godišnji {y}.
+Godišnji {y}.
+Slobodno u mjesecu
+Preostalo slobodno
+Bolovanje
+Banka sati na kraju mjeseca
+Banka sati danas
+Procjena plaće {m}
+Sati tjedno
+Traka je puna na {n} h.
+Za provjeru
+Ukupno u mjesecu
+Ostala upozorenja: {n}. Naći ćeš ih u aplikaciji.
+{h} h
+Smjene
+Noćni sati
+Ned. i blagd.
+Slobodno
+Banka sati
+Obična smjena {w} h, subota {s} h. Izrađeno u {app} {d}.
+Slobodno i odsutnost
+Noć
+Popodne
+Jutro
+Uredi oznake
+Izradi oznake za odjele, strojeve ili radna mjesta
+Smjena od {a} h. Koristi standardno trajanje od {b} h
+Sati više ili manje od {h}
+Cijeli dan.
+Ostatak dana računa se kao normalno odrađen. Sati slobodnog oduzimaju se od onih koji ti pripadaju.
+pauza {x}
+{h} noću
+Standardna smjena od {h} h jer je subota.
+Standardna smjena od {h} h.
+Dan ispražnjen.
+Oznake idu na dane sa smjenom: odaberi i smjenu.
+Pažnja: u {y}. si premašio godišnji koji ti pripada.
+Iskoristio si sav godišnji za {y}.
+Preostaje ti {n} dan godišnjeg u {y}.
+Preostaje ti {n} dana godišnjeg u {y}.
+Pažnja: u {y}. si premašio slobodne sate koji ti pripadaju.
+Preostaje ti {h} h slobodnog u {y}.
+h
+Naziv brze smjene {n}
+Naziv
+Izbriši brzu smjenu {n}
+Početak brze smjene {n}
+Trajanje prvog dijela u satima
+Trajanje brze smjene {n} u satima
+Pola
+Standardna
+Podijeljena
+Nastavlja u, brza smjena {n}
+Trajanje drugog dijela u satima
+Ostatak
+Najviše {n} brzih smjena
++ Dodaj brzu smjenu
+Brza smjena „{x}” izbrisana.
+Npr. Odjel A, Preša 3, Blagajna 2
+Oznaka {n}
+Izbriši oznaku {n}
+Oznaka „{x}” maknuta s {n} dana.
+Oznaka „{x}” maknuta s {n} dana.
+bez naziva
+Oznaka „{x}” izbrisana.
+Godina
+Ukupno {y}.
+Označeni slobodni dani
+Procjena plaće {y}.
+Oznake u {y}.
+{n} dan
+{n} dana
+Za pojedine dane koristi prikaz popisa u kalendaru.
+Ova godina još nije počela.
+Banka sati počinje {d}.
+Stanje na {d}.
+Stanje do danas.
+Odradio si više sati nego što piše u ugovoru.
+Odradio si manje sati nego što piše u ugovoru.
+Točno si po ugovoru.
+Ugovor <b>{h} h</b> tjedno
+Od <b>{d}</b>
+Početak <b>{h} h</b>
+Promijeni postavke banke sati
+Iskorišteno
+Iskorišteno
+Planirano
+Planirano
+Pripada ti
+dana označeno u {y}.
+sati označeno u {y}.
+Postavi koliko ti pripada
+dana previše
+sati previše
+dana preostalo od {x}
+sati preostalo od {x}
+{a} iskorišteno, {b} planirano od {c}
+Označio si više godišnjeg nego što ti pripada.
+Označio si više slobodnog nego što ti pripada.
+Sve je iskorišteno.
+Sve je iskorišteno.
+Uskoro ponestaje.
+Uskoro ponestaje.
+Sati mjesečno
+{m}: {h} h. Otvori mjesec
+Mjesec
+Sati
+Dodatno
+Slob.
+Banka
+Ukupno
+Mjesec po mjesec
+Dodirni mjesec da ga otvoriš u kalendaru. Stupac Banka pokazuje koliko je svaki mjesec dodao ili oduzeo.
+Korak {n}
+Dan manje
+Dan više
+Izbriši korak {n}
+S ovim odabirom nema dana za ispuniti.
+Odaberi početni dan.
+Ciklus od <b>{a}</b>. Ispunjavam <b>{b}</b> od {c} do {d}:
+Primijeni na {n} dan
+Primijeni na {n} dana
+{n} tjedan
+{n} tjedana ‖few: {n} tjedna
+Raspored primijenjen na {n} dan.
+Raspored primijenjen na {n} dana.
+Moje smjene, tjedan od {d}:
+slobodno
+Moje smjene
+{h} h, {n} smjena
+{h} h, {n} smjena ‖few: {h} h, {n} smjene
+Izrađeno u {app}
+Ovaj tjedan
+Sljedeći tjedan
+Prošli tjedan
+Za {n} tjedan
+Za {n} tjedana ‖few: Za {n} tjedna
+Prije {n} tjedna
+Prije {n} tjedana ‖few: Prije {n} tjedna
+Smjene kopirane: zalijepi ih u poruku.
+Kopiranje ovdje nije dostupno.
+Slika se nije mogla izraditi.
+Još nema tjedna za ponavljanje.
+Sljedeći tjedan je već ispunjen.
+Tjedan od {a} ponovljen u tjednu od {b}.
+Zadnja kopija spremljena {d}.
+Još nisi spremio nijednu kopiju.
+Tvoje smjene ({n} dan) su samo na ovom uređaju: povremeno spremi kopiju, npr. na iCloud Drive, Google Drive ili u e-poruku sebi, da ih ne izgubiš kad promijeniš mobitel.
+Tvoje smjene ({n} dana) su samo na ovom uređaju: povremeno spremi kopiju, npr. na iCloud Drive, Google Drive ili u e-poruku sebi, da ih ne izgubiš kad promijeniš mobitel.
+Datoteka preuzeta.
+Preuzimanje nije uspjelo.
+{n} smjena
+{n} smjena ‖few: {n} smjene
+prazno
+Izradi PDF za {m}
+PDF se nije mogao izraditi.
+Kopija smjena {app}
+Kopija spremljena. Čuvaj je na sigurnom mjestu.
+Datoteka sadrži {n} dan
+Datoteka sadrži {n} dana
+od {a} do {b}
+spremljeno {d}
+Zamijenit će smjene koje sada imaš ({n} dan), zajedno s postavkama.
+Zamijenit će smjene koje sada imaš ({n} dana), zajedno s postavkama.
+Učitat će se zajedno s postavkama.
+Ova datoteka nije kopija iz {app}.
+Kopija učitana: {n} dan.
+Kopija učitana: {n} dana.
+Verzija {v}.
+Otvori aplikaciju s njezine web adrese da dobivaš ažuriranja.
+Dostupna je verzija {v}.
+Zadnja provjera: {d}.
+Automatska provjera je uključena.
+Dostupna je {app} {v}
+Ažuriraj za najnovije promjene. Tvoje smjene ostaju gdje jesu.
+Otvori aplikaciju s njezine web adrese da tražiš ažuriranja.
+Provjeravam…
+Već imaš najnoviju verziju ({v}).
+Ne mogu provjeriti ažuriranja: provjeri vezu.
+Traži ažuriranja
+Ažuriram…
+Slobodno
+Bol.
+Nova godina
+Bogojavljenje
+Dan oslobođenja
+Praznik rada
+Dan Republike
+Velika Gospa
+Svi sveti
+Bezgrešno začeće
+Božić
+Sveti Stjepan
+Sveti Franjo
+Uskrs
+Uskrsni ponedjeljak
+iWork
+Kalendar
+Promjene se spremaju same.
+Početak smjene
+Podijeljena smjena, u dva dijela
+Prvi dio
+Nastavlja u
+Drugi dio
+Kraj smjene
+Sati više ili manje
+Sati slobodnog
+Oznake
+Isprazni dan
+Gotovo
+Postavke
+Svaka promjena sprema se sama.
+Sati obične smjene
+Sati subotnje smjene
+Brze smjene i oznake izrađuješ i uređuješ u Alatima, gumbu s tri točke.
+Godišnji i slobodno
+Godišnji po godini
+dana
+Slobodno po godini
+Koliko ti pripada u godini, uključujući preneseno iz prošle godine. S 0 brojač ostaje isključen.
+Tjedni sati po ugovoru
+Računaj od
+Početno stanje
+Banka sati uspoređuje odrađene sate s onima iz ugovora, dan po dan do danas. Godišnji, slobodno, bolovanje, nedjelje i blagdani ne računaju se kao sati koji nedostaju.
+Plaća
+Bruto satnica
+€/h
+Noć 22–06
+Dodaci se zbrajaju: noćni sat u nedjelju dobiva i noćni i nedjeljni dodatak. Ako blagdan padne u nedjelju, vrijedi samo blagdanski dodatak. Procjena ostaje na ovom uređaju i ne pojavljuje se u PDF-u ni na dijeljenim slikama.
+Jezik
+Izgled
+Automatski
+Svijetlo
+Tamno
+Ažuriranja
+Alati
+Ispuni smjene
+Ciklički raspored
+Uzorak koji se ponavlja kroz više tjedana
+Ponovi zadnji tjedan
+Kopiraj smjene u sljedeći tjedan
+Prilagodi
+Brze smjene
+Gumbi za upis smjene jednim dodirom
+Odjeli, strojevi, radna mjesta jednim dodirom
+Dijeli i izvezi
+Dijeli tjedan
+Slika ili tekst, bilo koji tjedan
+PDF mjeseca
+Mjesec po izboru, spreman za ispis
+Sigurnosna kopija
+Spremi kopiju smjena
+Datoteka sa svim smjenama i postavkama
+Učitaj kopiju
+Vrati smjene iz ranije spremljene datoteke
+Zatvori
+To su gumbi iznad kalendara: odaberi jedan i dodirni dane da ga upišeš. Ovdje ih izrađuješ, preimenuješ i mijenjaš vremena i trajanje. Svaka promjena sprema se sama.
+Ostavi trajanje prazno za standardno (8 h, subotom 6). Vlastito trajanje vrijedi za sve dane. S opcijom „Podijeljena” smjena ima dva dijela, npr. 8–12 i 16–20.
+Odjeli, strojevi, radna mjesta ili što god ti treba. Pojavljuju se u drugom redu iznad kalendara: odaberi jednu i dodirni dane da je dodijeliš, i zajedno sa smjenom. Svaka promjena sprema se sama.
++ Dodaj oznaku
+Učitati ovu kopiju?
+Odustani
+Zamijeni smjene
+Složi uzorak koji se ponavlja, npr. 5 jutarnjih, 2 slobodna, 5 popodnevnih, 2 slobodna, i primijeni ga na više tjedana odjednom.
+Uzorak
++ Dodaj korak
+Od dana
+Koliko tjedana
+Ne diraj već ispunjene dane
+Ostavi nedjelje slobodne
+Primijeni
+Natrag na ovaj tjedan
+Kopiraj kao tekst
+Dijeli sliku
+Odaberi mjesec: dobivaš kalendar sa smjenama i zbrojevima na listu A4 za ispis.
+Kasnije
+Ažuriraj
+Zaslon
+Prethodni mjesec
+Sljedeći mjesec
+Brzi unos
+Prikaz
+Prikaz kalendara
+Prikaz popisa
+Brzo označavanje
+Traži u bilješkama i oznakama
+Pregled godine
+Prethodna godina
+Sljedeća godina
+Vrsta dana
+Pola sata manje
+Pola sata više
+Npr. zamjena smjene s Markom, odjel B
+Tema
+Tjedan manje
+Tjedan više
+Prethodni tjedan
+Sljedeći tjedan
+Pregled slike sa smjenama tjedna
+Poništi
+{x}, blagdan zaštitnika
+Blagdan zaštitnika
+{x} (zamjenski dan)
+Nijedna posebna
+Nijedan
+Drugi datum…
+Pravila za {c}: najmanje {r} h odmora između dviju smjena, u prosjeku najviše {w} h tjedno, tjedni odmor od {k} h. Prvi dan tjedna: {d}.
+Država i blagdani
+Država
+Regija ili županija
+Zaštitnik
+Dan
+Blagdan zaštitnika računa se kao blagdan u kalendaru, banci sati i plaći. Provjeri datum u ugovoru ili kod općine.
+{c}: najmanje {r} h odmora između dviju smjena, u prosjeku najviše {w} h tjedno, tjedni odmor od {k} h. Prvi dan tjedna: {d}.
+Noć {r}
+Kreni
+Dalje
+Novo: jezik i država
+Dobro došao u {app}
+Odaberi jezik i državu: aplikacija se postavlja s pravim pravilima i blagdanima. Tvoje smjene ostaju gdje jesu.
+Kalendar tvojih smjena. Odaberi jezik.
+Gdje radiš?
+O tome ovise blagdani, minimalni odmor, noćni sati i valuta.
+Traži državu
+Tvoje područje
+Neki blagdani vrijede samo u regiji ili gradu. Ovaj korak možeš preskočiti i promijeniti kasnije.
+Ako tvog grada nema, datum možeš upisati u Postavkama.
+Koliko traje smjena?
+Tako biraš samo početak, a kraj se izračuna sam. Može se promijeniti bilo kad.
+Obična smjena
+Subotnja smjena
+Sve je spremno
+Ovako je aplikacija postavljena. Sve možeš promijeniti u Postavkama.
+{w} h, subota {s}
+Minimalni odmor
+Najveći prosjek
+{h} h tjedno
+Upozorenja o odmoru i satima su okvirna i ne zamjenjuju tvoj ugovor.
+Natrag
+Pravila za upozorenja i izračune
+h/tj.
+Noć od
+Noć do
+Tvoj ugovor može biti povoljniji od zakona: ovdje možeš prilagoditi pravila.
+Natrag na pravila države
+{x}, lokalni blagdan
+Lokalni blagdan
+Blagdan tvoje općine ili iz ugovora: računa se kao blagdan u kalendaru, banci sati i plaći.
+Ako blagdan padne u nedjelju, poslodavac određuje zamjenski dan.
+Grundlovsdag (5. lipnja) i Badnjak nisu zakonski blagdani, ali ih mnogi ugovori predviđaju.
+Duhovski ponedjeljak često je „dan solidarnosti” i radi se.
+U Bavarskoj je Velika Gospa blagdan samo u pretežno katoličkim općinama.
+Veliki petak i 5. svibnja slobodni su samo ako to predviđa kolektivni ugovor (CAO).
+Pokladni utorak je neobavezan; svaka općina ima i svoj blagdan.
+Od 2025. 17. studenoga više nije blagdan; 2026. radi se i 8. svibnja i 15. rujna.
+Svaka autonomna zajednica dodaje svoje blagdane (često Veliki četvrtak) i mijenja ih svake godine: dodaj svoj kao lokalni blagdan.
+Predvečerja (Midsommarafton, Julafton, Nyårsafton) nisu zakonski blagdani, ali su gotovo svugdje slobodna.
+Ograničenje od 45 sati vrijedi za industriju, urede, tehničko osoblje i velike trgovačke lance; za ostale je 50. U nekim općinama (Fribourg, Solothurn, Aargau) blagdani su drukčiji: dodaj svoj kao lokalni blagdan.
+U Ujedinjenom Kraljevstvu bank holidays nisu zakonsko pravo: ovisi o ugovoru. Ograničenja od 48 sati može se pisano odreći (opt-out).
+Radno vrijeme i odmor uglavnom slijede kolektivne ugovore San Marina: provjeri vrijednosti ispod.
+Ako blagdan padne u nedjelju, ponedjeljak je slobodan.
+Ograničenje od 45 sati vrijedi za industriju, urede i velike trgovačke lance; za ostale je 50.
+{c}: zakon ne propisuje minimalni odmor između dviju smjena. Aplikacija upozorava ispod {r} h i iznad {w} h tjedno. Prvi dan tjedna: {d}.
+Savezni blagdani po zakonu vrijede samo za savezne službenike: u privatnom sektoru ovisi o ugovoru. Svaka savezna država ima svoje blagdane: dodaj svoj kao lokalni blagdan.
+Radno vrijeme i odmor mogu se razlikovati po pokrajinama: provjeri vrijednosti ispod. Newfoundland i Labrador još nije uključen.
+Dani saveznih i lokalnih izbora slobodni su i za one koji moraju glasati.
+Karneval i Tijelovo su „ponto facultativo”; svaka država i općina dodaje svoje blagdane: dodaj svoj kao lokalni blagdan.
+Vlada može premještati pomične blagdane (17. lipnja, 17. kolovoza, 12. listopada, 20. studenoga) i dodavati slobodne dane: ovdje vidiš datume utvrđene zakonom.
+Mnogi kolektivni ugovori (awards) predviđaju 10 h odmora između smjena. Neki blagdani vrijede samo u određenim područjima (Royal Show, Regatta, Recreation Day): možeš dodati svoj kao lokalni blagdan.
+Svaka pokrajina ima svoj Anniversary Day: ako tvog nema na popisu, dodaj ga kao lokalni blagdan.
+Nijedan
+Sati i ugovor
+Radno vrijeme
+Trajanje smjena, minimalni odmor, noćni sati
+Koliko dana i sati ti pripada
+Sati po ugovoru i početno stanje
+Procjena plaće
+Satnica i dodaci, samo za tebe
+Drugi posao
+Pripravnost
+Pripravnost uključena.
+Dodirni dane da je dodaš ili makneš, i u dane odmora. Možeš je odabrati zajedno sa smjenom.
+Svaki dodirnuti dan dobiva smjenu i pripravnost zajedno.
+{h} h intervencije
+Sati intervencije
+Drugi posao ima zasebne račune: ne ulazi u banku sati, godišnji ni upozorenja glavnog posla.
+Glavni posao
+Izrađeno u aplikaciji {app} {d}.
+Posao brze smjene {n}
+{n} mjesec
+{n} mjeseci ‖few: {n} mjeseca
+Smjene: {x}
+<b>{n}</b> od {a} do {b}.
+{n} događaj
+{n} događaja ‖few: {n} događaja
+Nema smjena za izvoz od {a} do {b}.
+Od
+Trajanje
+Intervencija
+Sati intervencije računaju se kao odrađeni, a u procjeni plaće plaćaju se kao prekovremeni.
+Početak
+Drugi posao s vlastitim satima i računima
+Izvoz u kalendar
+Google, Apple ili Outlook kalendar
+Imam pripravnosti
+Obično od
+Iznad kalendara pojavljuje se gumb Pripravnost: odaberi ga i dodiruj dane, i one odmora. Sate intervencije upisuješ dodirom na dan.
+Naknada za pripravnost
+Po svakoj pripravnosti. Sati intervencije plaćaju se kao prekovremeni.
+Imam drugi posao
+Uobičajeno trajanje
+Smjene drugog posla prikazuju se u drugom retku istih dana, s tirkiznim kvadratićem. Dodjeljuješ ih brzim smjenama drugog posla ili dodirom na dan. Sati i plaća računaju se zasebno: ne ulaze u banku sati, godišnji ni upozorenja glavnog posla.
+Za svaku brzu smjenu odaberi pripada li glavnom ili drugom poslu. Smjene drugog posla imaju tirkizni kvadratić.
+Napravi datoteku sa smjenama za Google kalendar, Appleov Kalendar ili Outlook.
+Koliko mjeseci
+Što izvesti
+Radne smjene
+Godišnji, slobodni dani i bolovanje, kao cijeli dan
+Podsjetnik
+30 minuta prije
+1 sat prije
+2 sata prije
+Kako je otvoriti u kalendaru
+iPhone, iPad i Mac.
+Otvori datoteku i odaberi Dodaj sve, zatim kalendar u koji ih staviti.
+Google kalendar.
+Na računalu otvori calendar.google.com, idi u Postavke, Uvoz i izvoz, i prenesi datoteku. Na Androidu je možeš otvoriti i izravno Google kalendarom.
+Outlook.
+Otvori datoteku Outlookom ili na outlook.com idi u kalendar, Dodaj kalendar, Prenesi iz datoteke.
+Ako ponovno izvezeš isto razdoblje, već uvezene smjene obično se ažuriraju umjesto da se udvostruče. Dane koje si ispraznio u aplikaciji treba ručno ukloniti. Savjet: koristi zaseban kalendar samo za smjene, pa ga možeš isprazniti i ponovno uvesti kad se promijene.
+Napravi datoteku
+Npr. Kafić, Instrukcije, Dostave
+Mjesec manje
+Mjesec više
+Posao
+Prekovremeni
+Iskorišteni godišnji
+Iskorišteno slobodno
+Ukupno bruto
+{n} razlika s upisanim satima
+{n} razlika s upisanim satima ‖few: {n} razlike s upisanim satima
+Stavke na platnoj listi odgovaraju onome što si upisao.
+Upisano
+Na listi
+{v} manje na platnoj listi
+{v} više na platnoj listi
+Procjena aplikacije, okvirna
+Platna lista za {a}: sati se uspoređuju s {b}.
+Platna lista: {m}
+upisano {a}, na listi {b}
+Za isplatu
+Otvori platnu listu
+lista upisana
+nema liste
+Učitaj PDF: {m}
+Platna lista obrisana: {m}.
+Čitam platnu listu…
+Kriva lozinka, pokušaj ponovno.
+PDF je zaštićen lozinkom. Često je to tvoj OIB ili lozinka koju ti je dao poslodavac.
+Ne mogu učitati čitač PDF-a. Provjeri vezu i pokušaj ponovno.
+Ne mogu otvoriti ovu datoteku. Je li to PDF?
+Ovaj PDF nema teksta, možda je skeniran ili fotografija. Upiši brojeve ručno.
+Nisam prepoznao stavke ove platne liste. Upiši brojeve ručno: samo one koji te zanimaju.
+prekovremeni
+noćni rad
+nedjelje i blagdani
+iskorišteni godišnji
+iskorišteno slobodno
+preostali godišnji
+preostalo slobodno
+ukupno bruto
+za isplatu
+Platna lista: {m}.
+Pročitao sam: {x}.
+Provjeri istaknute brojeve i ručno dopuni one koji nedostaju.
+Čini se da je lista s dodatnom plaćom: dobro provjeri ukupno bruto.
+Datoteka je prevelika za platnu listu.
+Platna lista
+Provjeri plaćene sate i stavke
+Učitaj PDF platne liste ili upiši brojeve: aplikacija ih uspoređuje s upisanim satima.
+Lozinka PDF-a
+Otvori
+PDF se čita samo na ovom uređaju i ne sprema se: aplikacija čuva samo brojeve ispod.
+Na platnoj listi
+Preostali godišnji
+Prekovremeni i dodaci su iz prethodnog mjeseca
+Mnoge tvrtke plaćaju prekovremeni, noćni i blagdanski rad mjesec kasnije. Ako je tako i kod tebe, uključi ovo: usporedba će koristiti pravi mjesec.
+Obriši
+Upisivanje smjena
+Kako upisati smjenu?
+Iznad kalendara odaberi brzu smjenu, na primjer {a}, i dodiruj dane: svaki dobiva tu smjenu. Ponovno dodirni gumb za kraj. Za drugo vrijeme dodirni dan i upiši početak i trajanje.
+Kako promijeniti ili isprazniti dan?
+Dodirni dan: na kartici mijenjaš vrstu, vrijeme, sate više ili manje, oznake i bilješku, i sve se sprema samo. {a} ga briše. Za pražnjenje više dana odaberi {b} iznad kalendara i dodiruj dane. Nakon svake promjene možeš je poništiti u poruci dolje.
+Kako upisati odmor, godišnji, slobodne dane i bolovanje?
+{a} i {b} imaju svoj gumb iznad kalendara: odaberi ga i dodiruj dane. Za {c} ili {d} dodirni dan i odaberi vrstu na kartici; za slobodno upisuješ i sate.
+Kako upisati prekovremeni rad ili dijeljenu smjenu?
+Na kartici dana koristi {a} za prekovremeni rad ili raniji odlazak. S {b} upisuješ oba dijela, na primjer 8–12 i 16–20.
+Kako napraviti svoje brze smjene?
+Otvori {p} i odaberi naziv, početak i trajanje svakog gumba. Mogu biti dijeljene smjene i, ako imaš drugi posao, pripadati tom poslu.
+Uvijek radim po istom rasporedu: može li se kalendar sam popuniti?
+Da: u {p} opiši raspored (na primjer 5 jutara, 2 slobodna, 5 noći, 2 slobodna), početni dan i do kada. S {q} pak kopiraš jedan tjedan na sljedeći.
+Čemu služe oznake?
+Označavaju odjel, stroj ili radno mjesto. Izrađuješ ih u {p}; zatim ih odabereš iznad kalendara i dodiruješ dane, i uz smjenu.
+Kako pronaći dan, bilješku ili oznaku?
+Prijeđi na prikaz popisa gumbom pokraj brzih smjena: pojavljuje se pretraga bilješki i oznaka. Kartica {a} pokazuje zbrojeve cijele godine, mjesec po mjesec.
+Sati, ugovor i plaća
+Što znače upozorenja na dnu mjeseca?
+Aplikacija provjerava pravila tvoje zemlje: najkraći odmor između dviju smjena, prosjek sati tjedno, sedam radnih dana zaredom. Ako ti je ugovor drukčiji, promijeni vrijednosti u {p}.
+Kako radi banka sati?
+U {p} upiši tjedne sate iz ugovora, od kada brojati i eventualni početni saldo. Aplikacija uspoređuje odrađene sate s dugovanima i pokazuje saldo u pregledu mjeseca.
+Kako pratiti godišnji i slobodne dane?
+U {p} upiši koliko dana godišnjeg i sati slobodnog imaš godišnje. Aplikacija broji iskorištene i planirane i kaže koliko je preostalo.
+Kako radi procjena plaće?
+U {p} upiši bruto satnicu i dodatke. To je okvirna procjena samo za tebe: nikad se ne pojavljuje u PDF-u ni na dijeljenim slikama, a iznose možeš sakriti.
+Kako upisati pripravnost?
+Uključi je u {p}. Iznad kalendara pojavljuje se gumb {a}: odaberi ga i dodiruj dane, i one odmora. Sate intervencije upisuješ na kartici dana; naknadu postavljaš u {q}.
+Imam drugi posao: kako ga držati odvojeno?
+Uključi ga u {p}, s nazivom, trajanjem i plaćom. Njegove smjene imaju vlastite brze gumbe i prikazuju se u drugom retku dana. Sati i plaća broje se zasebno, a PDF mjeseca može se napraviti za svaki posao.
+Kako provjeriti platnu listu?
+U {p} odaberi mjesec i učitaj PDF: aplikacija čita prekovremeni, noćni i blagdanski rad, godišnji, slobodno, bruto i iznos za isplatu te ih uspoređuje s upisanim satima. Ako je lista na papiru, upiši brojeve ručno.
+Platna lista se ne čita ili se brojevi ne slažu: što učiniti?
+Ako je PDF skeniran ili fotografija, nema teksta za čitanje: upiši brojeve ručno. Ako je zaštićen, aplikacija traži lozinku. Uvijek provjeri istaknute brojeve i uključi {a} ako tvrtka plaća prekovremeni i dodatke idući mjesec.
+Dijeljenje i izvoz
+Kako nekome poslati smjene za tjedan?
+U {p} odaberi tjedan i pošalji ga kao sliku ili tekst, na primjer u chatu.
+Kako ispisati mjesec?
+U {p} odaberi mjesec: dobivaš list A4 s kalendarom i zbrojevima, za ispis ili slanje.
+Kako prebaciti smjene u Google kalendar, Appleov Kalendar ili Outlook?
+U {p} odaberi od kada, koliko mjeseci i što uključiti, pa otvori datoteku svojim kalendarom: na istom zaslonu su koraci za svaki. Ako ponovno izvezeš isto razdoblje, smjene se obično ažuriraju umjesto da se udvostruče.
+Podaci, aplikacija i postavke
+Gdje se spremaju moje smjene?
+Samo na ovom uređaju, u pregledniku. Ne treba ti račun i ništa se ne šalje na poslužitelj.
+Kako napraviti kopiju ili prijeći na drugi mobitel?
+S {p} dobivaš datoteku sa smjenama i postavkama. Na drugom mobitelu otvori aplikaciju i koristi {q}. Točkica na {a} podsjeća te kad je vrijeme za kopiju.
+Ako obrišem podatke preglednika, gubim li smjene?
+Da, ako nemaš kopiju. Zato se isplati povremeno spremiti jednu, osobito prije promjene mobitela.
+Kako instalirati aplikaciju na mobitel?
+Na iPhoneu otvori aplikaciju u Safariju, dodirni Podijeli pa Dodaj na početni zaslon. Na Androidu otvori izbornik Chromea i odaberi Instaliraj aplikaciju ili Dodaj na početni zaslon. Kad je instalirana, radi i bez interneta.
+Kako ažurirati aplikaciju?
+Kad postoji nova verzija, gore se pojavi obavijest: dodirni {a}. Tvoje smjene ostaju gdje jesu.
+Kako promijeniti zemlju, blagdane, jezik ili temu?
+U {p} odaberi zemlju i regiju za blagdane, jezik te svijetlu ili tamnu temu. Lokalne blagdane koje aplikacija ne zna upiši kao odmor.
+Odvedi me tamo
+Otvori vodič
+Pomoć
+Vodič i česta pitanja
+Kako se što radi, korak po korak
+Vodič
+Nema odgovora. Pokušaj s drugim riječima.
+Pretraži vodič
+Za minutu ću ti pokazati kako radi. Možeš preskočiti kad god želiš i ponovno pogledati obilazak iz Vodiča.
+Odaberi smjenu i dodiruj dane u kalendaru da je dodijeliš. Ponovno dodirni gumb za kraj. {a}, {b} i {c} rade na isti način.
+Kalendar
+Dodirni dan da otvoriš njegovu karticu: vrijeme, prekovremeni, slobodno, bolovanje i bilješke. Sve se sprema samo i uvijek možeš poništiti u poruci dolje.
+Sljedeća smjena
+Ovdje gore uvijek vidiš sljedeću smjenu ili onu koja traje.
+Pregled mjeseca
+Odrađeni sati, prekovremeni, noći i blagdani u mjesecu, s upozorenjima kad smjena ne poštuje pravila o odmoru.
+Kalendar i Godina
+Prijeđi na Godinu za zbrojeve cijele godine, mjesec po mjesec.
+Ovdje je sve ostalo: raspored, godišnji i slobodno, banka sati, procjena plaće, platna lista, PDF mjeseca, izvoz u kalendar, kopija podataka i Vodič.
+Zemlja i blagdani, jezik te svijetla ili tamna tema.
+Počni upisivanjem smjena za ovaj tjedan.
+{n} od {m}
+Preskoči
+Krenimo
+Ponovno pogledaj obilazak

@@ -1,0 +1,639 @@
+{n} n
+{d} n {h} ó
+{h} ó {m} p
+{h} ó
+{m} p
+Műszak
+és
+Összegek mutatása
+Összegek elrejtése
+Ledolgozott órák
+Túlóra
+Éjszakai munka
+Vasárnap
+Ünnepnapok
+Durva bruttó becslés. Csak neked szól: nem jelenik meg a PDF-ben és a megosztott képeken.
+Pótlékok hozzáadása
+A műszakjaid ezen az eszközön vannak mentve.
+nincs műszak
+osztott műszak {r}
+műszak {r}
+másnap
+{h} óra szabadidő
+Pihenőnap
+Szabadság
+Törlés
+Címkék a részlegekhez vagy munkahelyekhez
+Válassz műszakot, címkét vagy mindkettőt, majd koppints a napokra. Vagy koppints egy napra az időpontokhoz, jegyzetekhez és plusz órákhoz.
+A törlés be van kapcsolva.
+Koppints a kiürítendő napokra, majd újra a gombra a befejezéshez.
+Minden megkoppintott nap egyszerre kapja meg a műszakot és a címkét.
+{x} be van kapcsolva.
+Koppints a kitöltendő napokra, és ha akarsz, válassz címkét is. A befejezéshez koppints újra a gombra.
+Koppints a kitöltendő napokra. A befejezéshez koppints újra a gombra.
+A(z) {x} címke be van kapcsolva.
+Koppints a műszakos napokra a hozzáadáshoz vagy eltávolításhoz.
+Szabad
+pihenő {n} óra alatt
++{x}
+{n} nap található
+{n} nap található
+{h} óra munka
+Nincs nap, amelynek jegyzetében vagy címkéjében szerepel: „{q}”.
+Szombat {s} óra, a többi nap {w} óra.
+Jegyzet
+Kevesebb mint {n} óra pihenő az előző műszak óta
+Szünet
+Folytatás <b>{x}</b> múlva. Osztott műszak: {r}.
+Következő műszak
+Nincs tervezett műszak
+Koppints egy napra a naptárban, és válaszd ki a kezdést: a vége magától kiszámolódik.
+Ma
+Holnap
+Tegnap
+Most műszakban
+Még <b>{a}</b> van hátra. Már {b} megvan.
+<b>{x}</b> múlva kezdődik.
+Osztott: {r}, összesen {h} óra.
+{h} óra hosszú.
+Csak {h} óra pihenő {a} és {b} között (a minimum {n}).
+Hét vagy több munkanap egymás után {d} óta.
+{d} hete: {h} óra, több mint {n}.
+A {y}. évben {n} nappal több szabadságot jelöltél, mint amennyi jár.
+A {y}. évben {n} nappal több szabadságot jelöltél, mint amennyi jár.
+A {y}. évben {h} órával több szabadidőt jelöltél, mint amennyi jár.
+Összesen: {m}
+óra, {n} műszak
+óra, {n} műszak
+Plusz órák
+Éjszakai órák, {r}
+Ledolgozott szombatok
+Vasárnapok és ünnepek
+Szabadság a hónapban
+Maradék szabadság ({y})
+Szabadság ({y})
+Szabadidő a hónapban
+Maradék szabadidő
+Betegség
+Órabank a hónap végén
+Órabank ma
+Bérbecslés: {m}
+Heti órák
+A sáv {n} óránál telik meg.
+Érdemes megnézni
+A hónap összesen
+És még {n} figyelmeztetés: az appban találod őket.
+{h} óra
+Műszakok
+Éjszakai órák
+Vas. és ünnep
+Szabadidő
+Órabank
+Normál műszak {w} óra, szombat {s} óra. Készült: {app}, {d}.
+Pihenő és távollét
+Éjszaka
+Délután
+Délelőtt
+Címkék szerkesztése
+Címkék részlegekhez, gépekhez vagy munkahelyekhez
+{a} órás műszak. A szokásos {b} óra használata
+Órák plusz vagy mínusz a(z) {h} órához képest
+Egész nap.
+A nap többi része normál munkának számít. A szabadidő órái a neked járóból vonódnak le.
+szünet {x}
+{h} éjjel
+{h} órás normál műszak, mert szombat van.
+{h} órás normál műszak.
+A nap kiürítve.
+Címke csak műszakos napra kerülhet: válassz műszakot is.
+Figyelem: {y}. évben túllépted a neked járó szabadságot.
+Felhasználtad a(z) {y}. évi teljes szabadságodat.
+A {y}. évben még {n} nap szabadságod maradt.
+A {y}. évben még {n} nap szabadságod maradt.
+Figyelem: {y}. évben túllépted a neked járó szabadidőt.
+A {y}. évben még {h} óra szabadidőd maradt.
+óra
+{n}. gyorsműszak neve
+Név
+{n}. gyorsműszak törlése
+{n}. gyorsműszak kezdete
+Az első rész hossza órában
+{n}. gyorsműszak hossza órában
+Fele
+Normál
+Osztott
+Folytatás ekkor, {n}. gyorsműszak
+A második rész hossza órában
+A többi
+Legfeljebb {n} gyorsműszak
++ Gyorsműszak hozzáadása
+„{x}” gyorsműszak törölve.
+Pl. A részleg, 3. prés, 2. kassza
+{n}. címke
+{n}. címke törlése
+„{x}” címke eltávolítva {n} napról.
+„{x}” címke eltávolítva {n} napról.
+névtelen
+„{x}” címke törölve.
+Év
+Összesen: {y}
+Jelölt pihenőnapok
+Bérbecslés: {y}
+Címkék ({y})
+{n} nap
+{n} nap
+Egyes napok kereséséhez használd a naptár lista nézetét.
+Ez az év még nem kezdődött el.
+Az órabank kezdete: {d}.
+Egyenleg: {d}.
+Egyenleg mára.
+Többet dolgoztál, mint a szerződésedben áll.
+Kevesebbet dolgoztál, mint a szerződésedben áll.
+Pont a szerződés szerint állsz.
+Szerződés: heti <b>{h} ó</b>
+Kezdet: <b>{d}</b>
+Nyitó <b>{h} ó</b>
+Az órabank beállításainak módosítása
+Felhasznált
+Felhasznált
+Tervezett
+Tervezett
+Jár
+jelölt nap ({y})
+jelölt óra ({y})
+Állítsd be, mennyi jár
+nappal több
+órával több
+nap maradt ennyiből: {x}
+óra maradt ennyiből: {x}
+{a} felhasznált, {b} tervezett, összesen {c}
+Több szabadságot jelöltél, mint amennyi jár.
+Több szabadidőt jelöltél, mint amennyi jár.
+Elfogyott.
+Elfogyott.
+Hamarosan elfogy.
+Hamarosan elfogy.
+Órák havonta
+{m}: {h} óra. Hónap megnyitása
+Hónap
+Órák
+Plusz
+Szabad.
+Bank
+Össz.
+Hónapról hónapra
+Koppints egy hónapra a naptárban való megnyitáshoz. A Bank oszlop mutatja, mennyit tett hozzá vagy vett el az egyes hónap.
+{n}. lépés
+Egy nappal kevesebb
+Egy nappal több
+{n}. lépés törlése
+Ezekkel a beállításokkal nincs kitöltendő nap.
+Válaszd ki a kezdőnapot.
+<b>{a}</b> ciklus. Kitöltöm: <b>{b}</b>, {c} – {d}:
+Alkalmazás {n} napra
+Alkalmazás {n} napra
+{n} hét
+{n} hét
+Beosztás alkalmazva {n} napra.
+Beosztás alkalmazva {n} napra.
+Műszakjaim, {d} hete:
+szabad
+Műszakjaim
+{h} óra, {n} műszak
+{h} óra, {n} műszak
+Készült: {app}
+Ez a hét
+Jövő hét
+Múlt hét
+{n} hét múlva
+{n} hét múlva
+{n} hete
+{n} hete
+Műszakok másolva: illeszd be őket egy üzenetbe.
+A másolás itt nem érhető el.
+Nem sikerült létrehozni a képet.
+Még nincs ismételhető hét.
+A következő hét már ki van töltve.
+A(z) {a} hete átmásolva a(z) {b} hetére.
+Utolsó mentett másolat: {d}.
+Még nem mentettél másolatot.
+A műszakjaid ({n} nap) csak ezen az eszközön vannak: néha ments róluk másolatot, például iCloud Drive-ra, Google Drive-ra vagy egy magadnak küldött e-mailbe, hogy telefoncserénél se vesszenek el.
+A műszakjaid ({n} nap) csak ezen az eszközön vannak: néha ments róluk másolatot, például iCloud Drive-ra, Google Drive-ra vagy egy magadnak küldött e-mailbe, hogy telefoncserénél se vesszenek el.
+Fájl letöltve.
+A letöltés nem sikerült.
+{n} műszak
+{n} műszak
+üres
+PDF készítése: {m}
+Nem sikerült létrehozni a PDF-et.
+{app} műszakmásolat
+Másolat mentve. Tartsd biztonságos helyen.
+A fájl {n} napot tartalmaz
+A fájl {n} napot tartalmaz
+{a} – {b}
+mentve: {d}
+A mostani műszakjaid ({n} nap) helyére kerülnek, a beállításokkal együtt.
+A mostani műszakjaid ({n} nap) helyére kerülnek, a beállításokkal együtt.
+A beállításokkal együtt töltődnek be.
+Ez a fájl nem {app}-másolat.
+Másolat betöltve: {n} nap.
+Másolat betöltve: {n} nap.
+{v}. verzió.
+Nyisd meg az appot a webcíméről, hogy megkapd a frissítéseket.
+Elérhető a(z) {v}. verzió.
+Utolsó ellenőrzés: {d}.
+Az automatikus ellenőrzés be van kapcsolva.
+Elérhető: {app} {v}
+Frissíts a legújabb funkciókért. A műszakjaid a helyükön maradnak.
+Nyisd meg az appot a webcíméről, hogy frissítést kereshess.
+Ellenőrzés…
+Már a legújabb verzió van meg ({v}).
+Nem tudom ellenőrizni a frissítéseket: nézd meg a kapcsolatot.
+Frissítések keresése
+Frissítés…
+Szabadidő
+Beteg
+Újév
+Vízkereszt
+A felszabadulás napja
+A munka ünnepe
+A köztársaság napja
+Nagyboldogasszony
+Mindenszentek
+Szeplőtelen fogantatás
+Karácsony
+Szent István vértanú
+Szent Ferenc
+Húsvétvasárnap
+Húsvéthétfő
+iWork
+Naptár
+A változtatások maguktól mentődnek.
+Műszak kezdete
+Osztott műszak, két részben
+Első rész
+Folytatás ekkor
+Második rész
+Műszak vége
+Órák plusz vagy mínusz
+Szabadidő órái
+Címkék
+Nap kiürítése
+Kész
+Beállítások
+Minden változtatás magától mentődik.
+Normál műszak órái
+Szombati műszak órái
+A gyorsműszakokat és a címkéket az Eszközökben hozhatod létre és szerkesztheted, a három pöttyös gombnál.
+Szabadság és szabadidő
+Éves szabadság
+nap
+Éves szabadidő
+Ami egy évben jár, az előző évből áthozottal együtt. 0 esetén a számláló ki van kapcsolva.
+Szerződés szerinti heti órák
+Számolás kezdete
+Nyitó egyenleg
+Az órabank napról napra, máig összeveti a ledolgozott órákat a szerződés szerintiekkel. A szabadság, szabadidő, betegség, vasárnap és ünnep nem számít hiányzó órának.
+Bér
+Bruttó órabér
+€/ó
+Éjszaka 22–06
+A pótlékok összeadódnak: egy vasárnapi éjszakai óra éjszakai és vasárnapi pótlékot is kap. Ha ünnep esik vasárnapra, csak az ünnepnapi pótlék jár. A becslés ezen az eszközön marad, és nem jelenik meg a PDF-ben és a megosztott képeken.
+Nyelv
+Megjelenés
+Automatikus
+Világos
+Sötét
+Frissítések
+Eszközök
+Műszakok kitöltése
+Ciklikus beosztás
+Több héten át ismétlődő minta
+Az utolsó hét ismétlése
+A műszakok másolása a következő hétre
+Testreszabás
+Gyorsműszakok
+Gombok egy műszak egy koppintással való beírásához
+Részlegek, gépek, munkahelyek egy koppintással
+Megosztás és exportálás
+A hét megosztása
+Kép vagy szöveg, bármelyik hét
+Havi PDF
+A kívánt hónap, nyomtatásra készen
+Biztonsági mentés
+Másolat mentése a műszakokról
+Fájl az összes műszakkal és beállítással
+Másolat betöltése
+Műszakok visszaállítása egy korábban mentett fájlból
+Bezárás
+Ezek a naptár fölötti gombok: válassz egyet, és koppints a napokra a beírásához. Itt hozod létre, nevezed át őket, és módosítod az időpontokat és a hosszt. Minden változtatás magától mentődik.
+Hagyd üresen a hosszt a szokásoshoz (8 óra, szombaton 6). Saját hossz minden napra érvényes. Az „Osztott” beállítással a műszak két részből áll, például 8–12 és 16–20.
+Részlegek, gépek, munkahelyek vagy bármi, amire szükséged van. A naptár fölötti második sorban jelennek meg: válassz egyet, és koppints a napokra a hozzárendeléshez, akár műszakkal együtt. Minden változtatás magától mentődik.
++ Címke hozzáadása
+Betöltöd ezt a másolatot?
+Mégse
+Műszakok cseréje
+Építsd fel az ismétlődő mintát, például 5 délelőtt, 2 szabad, 5 délután, 2 szabad, és alkalmazd egyszerre több hétre.
+Minta
++ Lépés hozzáadása
+Kezdőnap
+Hány hétre
+A már kitöltött napokhoz ne nyúljon
+Vasárnapok szabadon hagyása
+Alkalmaz
+Vissza erre a hétre
+Másolás szövegként
+Kép megosztása
+Válaszd ki a hónapot: a naptárat műszakokkal és összesítéssel egy nyomtatható A4-es lapon kapod.
+Később
+Frissítés
+Képernyő
+Előző hónap
+Következő hónap
+Gyors bevitel
+Nézet
+Naptárnézet
+Listanézet
+Gyors címkézés
+Keresés a jegyzetekben és címkékben
+Éves összesítő
+Előző év
+Következő év
+Nap típusa
+Fél órával kevesebb
+Fél órával több
+Pl. műszakcsere Márkkal, B részleg
+Téma
+Egy héttel kevesebb
+Egy héttel több
+Előző hét
+Következő hét
+A hét műszakjait mutató kép előnézete
+Visszavonás
+{x}, védőszent ünnepe
+Védőszent ünnepe
+{x} (pótnap)
+Nincs külön
+Nincs
+Másik dátum…
+{c} szabályai: két műszak között legalább {r} óra pihenő, átlagosan legfeljebb heti {w} óra, {k} óra heti pihenő. A hét első napja: {d}.
+Ország és ünnepek
+Ország
+Régió vagy megye
+Védőszent
+Nap
+A védőszent ünnepe ünnepnapnak számít a naptárban, az órabankban és a bérben. Ellenőrizd a dátumot a szerződésedben vagy az önkormányzatnál.
+{c}: két műszak között legalább {r} óra pihenő, átlagosan legfeljebb heti {w} óra, {k} óra heti pihenő. A hét első napja: {d}.
+Éjszaka {r}
+Kezdés
+Tovább
+Újdonság: nyelv és ország
+Üdv az {app} appban
+Válassz nyelvet és országot: az app a megfelelő szabályokkal és ünnepekkel állítja be magát. A műszakjaid a helyükön maradnak.
+A műszakjaid naptára. Válassz nyelvet.
+Hol dolgozol?
+Ettől függnek az ünnepek, a minimális pihenő, az éjszakai órák és a pénznem.
+Ország keresése
+A te környéked
+Egyes ünnepek csak egy régióban vagy városban érvényesek. Ezt a lépést kihagyhatod, és később módosíthatod.
+Ha a városod nincs a listán, a dátumot a Beállításokban adhatod meg.
+Milyen hosszú egy műszak?
+Így csak a kezdést választod, a vége magától kiszámolódik. Bármikor módosítható.
+Normál műszak
+Szombati műszak
+Minden kész
+Így van beállítva az app. Mindent módosíthatsz a Beállításokban.
+{w} óra, szombat {s}
+Minimális pihenő
+Legnagyobb átlag
+Heti {h} óra
+A pihenőre és órákra vonatkozó figyelmeztetések tájékoztató jellegűek, nem helyettesítik a szerződésedet.
+Vissza
+Szabályok a figyelmeztetésekhez és számításokhoz
+ó/hét
+Éjszaka ettől
+Éjszaka eddig
+A szerződésed kedvezőbb lehet a törvénynél: itt módosíthatod a szabályokat.
+Vissza az ország szabályaihoz
+{x}, helyi ünnep
+Helyi ünnep
+A településed vagy a szerződésed ünnepe: ünnepnapnak számít a naptárban, az órabankban és a bérben.
+Ha ünnep esik vasárnapra, a munkáltató pótnapot jelöl ki.
+A Grundlovsdag (június 5.) és a szenteste nem törvényes ünnep, de sok szerződés szabadnapot ad rá.
+A pünkösdhétfő gyakran a „szolidaritás napja”, és dolgozni kell.
+Bajorországban a Nagyboldogasszony csak a túlnyomóan katolikus településeken ünnep.
+A nagypéntek és május 5. csak akkor szabad, ha a kollektív szerződés (CAO) előírja.
+A húshagyókedd nem kötelező; minden településnek van saját ünnepe is.
+2025 óta november 17. már nem ünnep; 2026-ban május 8-án és szeptember 15-én is dolgozni kell.
+Minden autonóm közösség saját ünnepeket ad hozzá (gyakran nagycsütörtököt), és évente változtatja őket: add hozzá a sajátodat helyi ünnepként.
+Az előestek (Midsommarafton, Julafton, Nyårsafton) nem törvényes ünnepek, de szinte mindenhol szabadnapok.
+A 45 órás határ az iparra, irodákra, műszaki személyzetre és nagy áruházláncokra vonatkozik; másoknak 50. Egyes településeken (Fribourg, Solothurn, Aargau) mások az ünnepek: add hozzá a sajátodat helyi ünnepként.
+Az Egyesült Királyságban a bank holiday nem törvényes jog: a szerződéstől függ. A 48 órás határról írásban le lehet mondani (opt-out).
+A munka- és pihenőidő főleg San Marino kollektív szerződéseit követi: ellenőrizd az alábbi értékeket.
+Ha ünnep esik vasárnapra, a hétfő szabad.
+A 45 órás határ az iparra, irodákra és nagy áruházláncokra vonatkozik; másoknak 50.
+{c}: a törvény nem ír elő minimális pihenőt két műszak között. Az app {r} óra alatt és heti {w} óra felett figyelmeztet. A hét első napja: {d}.
+A szövetségi ünnepek törvény szerint csak a szövetségi alkalmazottakra vonatkoznak: a magánszektorban a szerződéstől függ. Minden államnak saját ünnepei vannak: add hozzá a sajátodat helyi ünnepként.
+A munka- és pihenőidő tartományonként eltérhet: ellenőrizd az alábbi értékeket. Új-Fundland és Labrador még nem szerepel.
+A szövetségi és helyi választások napjai a szavazóknak szintén szabadok.
+A karnevál és az úrnapja „ponto facultativo”; minden állam és település saját ünnepeket ad hozzá: add hozzá a sajátodat helyi ünnepként.
+A kormány áthelyezheti a mozgó ünnepeket (június 17., augusztus 17., október 12., november 20.) és szabadnapokat adhat hozzá: itt a törvényben rögzített dátumokat látod.
+Sok kollektív szerződés (award) 10 óra pihenőt ír elő két műszak között. Egyes ünnepek csak bizonyos területeken érvényesek (Royal Show, Regatta, Recreation Day): a sajátodat felveheted helyi ünnepként.
+Minden tartománynak saját Anniversary Day-e van: ha a tiéd nincs a listán, add hozzá helyi ünnepként.
+Nincs
+Órák és szerződés
+Munkaidő
+Műszakhossz, minimális pihenő, éjszakai órák
+Hány nap és óra jár neked
+Szerződés szerinti órák és nyitó egyenleg
+Bérbecslés
+Órabér és pótlékok, csak neked
+Második munka
+Készenlét
+Készenlét bekapcsolva.
+Koppints a napokra a hozzáadáshoz vagy törléshez, pihenőnapokon is. Műszakkal együtt is kiválaszthatod.
+Minden megérintett nap egyszerre kap műszakot és készenlétet.
+{h} óra behívás
+Behívás órái
+A második munka külön számít: nem kerül a fő munka órabankjába, szabadságába és figyelmeztetései közé.
+Fő munka
+Készült: {app}, {d}.
+A(z) {n}. gyorsműszak munkája
+{n} hónap
+{n} hónap
+{x} műszakjai
+<b>{n}</b>: {a} – {b}.
+{n} esemény
+{n} esemény
+Nincs exportálható műszak: {a} – {b}.
+Kezdete
+Időtartam
+Behívás
+A behívás órái ledolgozottnak számítanak, és a bérbecslésben túlórának fizetendők.
+Kezdés
+Egy másik munka saját időkkel és összesítéssel
+Exportálás naptárba
+Google, Apple vagy Outlook naptár
+Vállalok készenlétet
+Általában ettől
+A naptár fölött megjelenik a Készenlét gomb: válaszd ki, és koppints a napokra, pihenőnapokra is. A behívás óráit a napra koppintva írod be.
+Készenléti díj
+Minden készenlétért. A behívás órái túlórának számítanak.
+Van második munkám
+Szokásos időtartam
+A második munka műszakjai ugyanazokon a napokon második sorban jelennek meg, türkiz négyzettel. A második munka gyorsműszakjaival vagy egy napra koppintva adod meg őket. Órák és bér külön számít: nem kerülnek a fő munka órabankjába, szabadságába és figyelmeztetései közé.
+Minden gyorsműszaknál válaszd ki, hogy a fő vagy a második munkához tartozik. A második munka műszakjainak türkiz négyzete van.
+Hozz létre egy fájlt a műszakjaiddal, amit a Google Naptárban, az Apple Naptárban vagy az Outlookban nyithatsz meg.
+Hány hónap
+Mit exportálj
+Munkaműszakok
+Szabadság, szabadidő és betegség, egész napos eseményként
+Emlékeztető
+30 perccel előtte
+1 órával előtte
+2 órával előtte
+Így nyisd meg a naptáradban
+iPhone, iPad és Mac.
+Nyisd meg a fájlt, válaszd az Összes hozzáadása lehetőséget, majd a naptárat.
+Google Naptár.
+Számítógépen nyisd meg a calendar.google.com oldalt, menj a Beállítások, Importálás és exportálás részbe, és töltsd fel a fájlt. Androidon közvetlenül a Google Naptárral is megnyithatod.
+Outlook.
+Nyisd meg a fájlt az Outlookkal, vagy az outlook.com-on menj a naptárba, Naptár hozzáadása, Feltöltés fájlból.
+Ha ugyanazt az időszakot újra exportálod, a már importált műszakok általában frissülnek, nem duplázódnak. Az appban kiürített napokat kézzel kell törölni. Tipp: használj külön naptárat csak a műszakokhoz, így kiürítheted és újra importálhatod, ha változnak.
+Fájl létrehozása
+Pl. Bár, Korrepetálás, Futárkodás
+Egy hónappal kevesebb
+Egy hónappal több
+Munka
+Túlóra
+Kivett szabadság
+Kivett szabadidő
+Bruttó összesen
+{n} eltérés a beírt óráidtól
+{n} eltérés a beírt óráidtól
+A bérjegyzék tételei egyeznek azzal, amit beírtál.
+Beírva
+Bérjegyzéken
+A bérjegyzéken kevesebb: {v}
+A bérjegyzéken több: {v}
+Az app becslése, csak tájékoztató
+Bérjegyzék ({a}): az órákat ezzel vetjük össze: {b}.
+Bérjegyzék: {m}
+beírva {a}, bérjegyzéken {b}
+Kifizetendő
+Bérjegyzék megnyitása
+bérjegyzék megadva
+nincs bérjegyzék
+PDF betöltése: {m}
+Bérjegyzék törölve: {m}.
+Olvasom a bérjegyzéket…
+Hibás jelszó, próbáld újra.
+A PDF jelszóval védett. Gyakran az adóazonosító jeled vagy a munkáltatótól kapott jelszó.
+Nem tudom betölteni a PDF-olvasót. Ellenőrizd a kapcsolatot és próbáld újra.
+Ezt a fájlt nem tudom megnyitni. Biztos, hogy PDF?
+Ebben a PDF-ben nincs szöveg, talán szkennelt vagy fotó. Írd be kézzel a számokat.
+Nem ismertem fel a bérjegyzék tételeit. Írd be kézzel a számokat: csak azokat, amelyek érdekelnek.
+túlóra
+éjszakai munka
+vasár- és ünnepnapok
+kivett szabadság
+kivett szabadidő
+maradék szabadság
+maradék szabadidő
+bruttó összesen
+nettó
+Bérjegyzék: {m}.
+Ezt olvastam ki: {x}.
+Ellenőrizd a kiemelt számokat, és a hiányzókat írd be kézzel.
+Ez 13. havi juttatással készült bérjegyzéknek tűnik: alaposan ellenőrizd a bruttó összeget.
+A fájl túl nagy egy bérjegyzékhez.
+Bérjegyzék
+Kifizetett órák és tételek ellenőrzése
+Töltsd be a bérjegyzék PDF-jét vagy írd be a számokat: az app összeveti őket a beírt óráiddal.
+PDF jelszó
+Megnyitás
+A PDF-et csak ez az eszköz olvassa, és nem mentjük el: az app csak az alábbi számokat tartja meg.
+A bérjegyzéken
+Maradék szabadság
+A túlóra és a pótlékok az előző hónapra vonatkoznak
+Sok munkáltató a túlórát, az éjszakai és ünnepnapi munkát a következő hónapban fizeti ki. Ha nálad is így van, kapcsold be: az összevetés a megfelelő hónapot használja.
+Törlés
+Műszakok beírása
+Hogyan írok be egy műszakot?
+A naptár fölött válassz egy gyorsműszakot, például ezt: {a}, és koppints a napokra: mindegyik megkapja a műszakot. A befejezéshez koppints újra a gombra. Más időponthoz koppints a napra, és írd be a kezdést és az időtartamot.
+Hogyan módosítok vagy ürítek ki egy napot?
+Koppints a napra: a lapon módosítod a típust, az időt, a több vagy kevesebb órát, a címkéket és a megjegyzést, és minden magától mentődik. A(z) {a} törli. Több nap kiürítéséhez válaszd a(z) {b} gombot a naptár fölött, és koppints a napokra. Minden módosítás után visszavonhatod a lenti üzenetben.
+Hogyan írom be a pihenőnapot, szabadságot, szabadidőt és betegséget?
+A(z) {a} és a(z) {b} saját gombot kapott a naptár fölött: válaszd ki, és koppints a napokra. A(z) {c} vagy a(z) {d} esetén koppints a napra, és válaszd ki a típust a lapon; szabadidőnél az órákat is megadod.
+Hogyan írok be túlórát vagy osztott műszakot?
+A nap lapján a(z) {a} mezővel adhatsz meg túlórát vagy korábbi távozást. A(z) {b} beállítással mindkét részt megadod, például 8–12 és 16–20.
+Hogyan hozom létre a saját gyorsműszakjaimat?
+Nyisd meg ezt: {p}, és add meg minden gomb nevét, kezdési idejét és időtartamát. Lehetnek osztott műszakok, és ha van második munkád, tartozhatnak ahhoz is.
+Mindig ugyanabban a beosztásban dolgozom: kitöltheti magát a naptár?
+Igen: itt: {p} írd le a mintát (például 5 délelőtt, 2 szabad, 5 éjszaka, 2 szabad), a kezdőnapot és hogy meddig. Ezzel: {q} egy hetet másolhatsz a következőre.
+Mire valók a címkék?
+Részleget, gépet vagy munkahelyet jelölnek. Itt hozod létre őket: {p}; utána a naptár fölött választod ki őket, és a napokra koppintasz, műszakkal együtt is.
+Hogyan találok meg egy napot, megjegyzést vagy címkét?
+Válts listanézetre a gyorsműszakok melletti gombbal: megjelenik a keresés a megjegyzésekben és a címkékben. A(z) {a} fül az egész év összesítőit mutatja, hónapról hónapra.
+Órák, szerződés és bér
+Mit jelentenek a figyelmeztetések a hónap alján?
+Az app az országod szabályait ellenőrzi: legkevesebb pihenő két műszak között, heti átlagos óraszám, hét munkanap egymás után. Ha a szerződésed más, módosítsd az értékeket itt: {p}.
+Hogyan működik az órabank?
+Itt: {p} add meg a szerződés szerinti heti órákat, hogy mikortól számoljon, és ha van, a kezdő egyenleget. Az app összeveti a ledolgozott órákat az elvárttal, és a havi összesítőben mutatja az egyenleget.
+Hogyan követem a szabadságot és a szabadidőt?
+Itt: {p} írd be, hány nap szabadság és hány óra szabadidő jár neked évente. Az app számolja a felhasznált és a tervezett napokat, és megmondja, mennyi maradt.
+Hogyan működik a bérbecslés?
+Itt: {p} add meg a bruttó órabért és a pótlékokat. Tájékoztató becslés, csak neked: sosem jelenik meg a PDF-ben vagy a megosztott képeken, és az összegeket el is rejtheted.
+Hogyan írom be a készenlétet?
+Kapcsold be itt: {p}. A naptár fölött megjelenik a(z) {a} gomb: válaszd ki, és koppints a napokra, pihenőnapokra is. A behívás óráit a nap lapján írod be; a díjat itt állítod be: {q}.
+Van második munkám: hogyan tartom külön?
+Kapcsold be itt: {p}, névvel, időtartammal és bérrel. A műszakjainak saját gyorsgombjai vannak, és második sorként jelennek meg a napokon. Az órák és a bér külön számítanak, és a havi PDF mindkét munkához elkészíthető.
+Hogyan ellenőrzöm a bérjegyzéket?
+Itt: {p} válaszd ki a hónapot, és töltsd be a PDF-et: az app kiolvassa a túlórát, az éjszakai és ünnepnapi munkát, a szabadságot, a szabadidőt, a bruttót és a kifizetendőt, és összeveti a beírt órákkal. Ha papíron kapod, írd be kézzel a számokat.
+Nem olvassa be a bérjegyzéket, vagy nem stimmelnek a számok: mit tegyek?
+Ha a PDF szkennelt vagy fotó, nincs benne olvasható szöveg: írd be kézzel a számokat. Ha jelszóval védett, az app kéri a jelszót. Mindig ellenőrizd a kiemelt számokat, és kapcsold be ezt: {a}, ha a cég a túlórát és a pótlékokat a következő hónapban fizeti.
+Megosztás és exportálás
+Hogyan küldöm el valakinek a heti műszakjaimat?
+Itt: {p} válaszd ki a hetet, és küldd el képként vagy szövegként, például egy csevegésben.
+Hogyan nyomtatok ki egy hónapot?
+Itt: {p} válaszd ki a hónapot: kapsz egy A4-es lapot naptárral és összesítőkkel, nyomtatáshoz vagy küldéshez.
+Hogyan teszem a műszakjaimat a Google Naptárba, az Apple Naptárba vagy az Outlookba?
+Itt: {p} válaszd ki, mikortól, hány hónapra és mi kerüljön bele, majd nyisd meg a fájlt a naptáraddal: ugyanezen a képernyőn mindegyikhez megtalálod a lépéseket. Ha ugyanazt az időszakot újra exportálod, a műszakok általában frissülnek, nem duplázódnak.
+Adatok, app és beállítások
+Hol tárolódnak a műszakjaim?
+Csak ezen az eszközön, a böngészőben. Nem kell fiók, és semmi sem kerül szerverre.
+Hogyan készítek másolatot, vagy váltok másik telefonra?
+Ezzel: {p} kapsz egy fájlt a műszakokkal és a beállításokkal. A másik telefonon nyisd meg az appot, és használd ezt: {q}. A(z) {a} gombon lévő pötty emlékeztet, mikor esedékes egy másolat.
+Ha törlöm a böngésző adatait, elvesznek a műszakjaim?
+Igen, ha nincs másolatod. Ezért érdemes időnként menteni egyet, főleg telefoncsere előtt.
+Hogyan telepítem az appot a telefonra?
+iPhone-on nyisd meg az appot a Safariban, koppints a Megosztás, majd a Főképernyőhöz adás lehetőségre. Androidon nyisd meg a Chrome menüjét, és válaszd az Alkalmazás telepítése vagy a Hozzáadás a kezdőképernyőhöz lehetőséget. Telepítve internet nélkül is működik.
+Hogyan frissítem az appot?
+Ha új verzió érhető el, fent értesítés jelenik meg: koppints erre: {a}. A műszakjaid megmaradnak.
+Hogyan változtatom meg az országot, ünnepeket, nyelvet vagy témát?
+Itt: {p} válaszd ki az országot és a régiót az ünnepekhez, a nyelvet és a világos vagy sötét témát. A helyi ünnepeket, amelyeket az app nem ismer, pihenőnapként írd be.
+Vigyél oda
+Útmutató megnyitása
+Súgó
+Útmutató és gyakori kérdések
+Hogyan csinálj meg mindent, lépésről lépésre
+Útmutató
+Nincs találat. Próbálj más szavakat.
+Keresés az útmutatóban
+Egy perc alatt megmutatom, hogyan működik. Bármikor kihagyhatod, és a bemutatót az Útmutatóból újra megnézheted.
+Válassz egy műszakot, és koppints a naptár napjaira a beíráshoz. A befejezéshez koppints újra a gombra. A(z) {a}, {b} és {c} ugyanígy működik.
+A naptár
+Koppints egy napra a lapja megnyitásához: időpont, túlóra, szabadidő, betegség és megjegyzések. Minden magától mentődik, és a lenti üzenetben mindig visszavonhatod.
+A következő műszak
+Itt fent mindig látod a következő vagy az éppen zajló műszakot.
+A hónap összesítője
+A hónap ledolgozott órái, túlórái, éjszakái és ünnepnapjai, figyelmeztetéssel, ha egy műszak megsérti a pihenőidő szabályait.
+Naptár és Év
+Válts az Év fülre, és hónapról hónapra látod az egész év összesítőit.
+Itt van minden más: beosztás, szabadság és szabadidő, órabank, bérbecslés, bérjegyzék, havi PDF, exportálás naptárba, adatmásolat és az Útmutató.
+Ország és ünnepek, nyelv és világos vagy sötét téma.
+Kezdd a heti műszakjaid beírásával.
+{n}/{m}
+Kihagyás
+Kezdjük
+Bemutató újra

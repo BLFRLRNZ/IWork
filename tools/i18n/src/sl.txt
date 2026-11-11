@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} h
+{h} h {m} min
+{h} h
+{m} min
+Izmena
+in
+Pokaži zneske
+Skrij zneske
+Opravljene ure
+Nadure
+Nočno delo
+Nedelja
+Prazniki
+Okvirna bruto ocena. Samo zate: ne prikaže se v PDF-ju ali na deljenih slikah.
+Dodaj dodatke
+Tvoje izmene so shranjene v tej napravi.
+brez izmene
+deljena izmena {r}
+izmena {r}
+naslednjega dne
+dela prosto {h} h
+Prosto
+Dopust
+Počisti
+Ustvari oznake za oddelke ali delovna mesta
+Izberi izmeno, oznako ali oboje in nato tapni dneve. Ali tapni dan za čase, opombe in dodatne ure.
+Brisanje je vklopljeno.
+Tapni dneve, ki jih želiš izprazniti, nato še enkrat gumb za konec.
+Vsak tapnjen dan dobi izmeno in oznako hkrati.
+{x} je vklopljeno.
+Tapni dneve, ki jih želiš izpolniti, in po želji izberi še oznako. Za konec znova tapni gumb.
+Tapni dneve, ki jih želiš izpolniti. Za konec znova tapni gumb.
+Oznaka {x} je vklopljena.
+Tapni dneve z izmeno, da jo dodaš ali odstraniš.
+Prosto
+počitek krajši od {n} h
+{x} dodatno
+Najden {n} dan
+Najdenih {n} dni ‖two: Najdena {n} dneva ‖few: Najdeni {n} dnevi
+{h} h dela
+Ni dni z »{q}« v opombah ali oznakah.
+Sobota {s} h, drugi dnevi {w} h.
+Opomba
+Manj kot {n} h počitka od prejšnje izmene
+Na odmoru
+Nadaljuješ čez <b>{x}</b>. Deljena izmena: {r}.
+Naslednja izmena
+Ni načrtovanih izmen
+Tapni dan v koledarju in izberi začetek: konec se izračuna sam.
+Danes
+Jutri
+Včeraj
+Zdaj v izmeni
+Do konca še <b>{a}</b>. Opravljeno {b}.
+Začne se čez <b>{x}</b>.
+Deljena: {r}, skupaj {h} h.
+Traja {h} h.
+Samo {h} h počitka med {a} in {b} (najmanj {n}).
+Sedem ali več delovnih dni zapored od {d}.
+Teden od {d}: {h} h, nad {n}.
+Leta {y} si označil {n} dan dopusta več, kot ti pripada.
+Leta {y} si označil {n} dni dopusta več, kot ti pripada. ‖two: Leta {y} si označil {n} dneva dopusta več, kot ti pripada. ‖few: Leta {y} si označil {n} dni dopusta več, kot ti pripada.
+Leta {y} si označil {h} h prostega več, kot ti pripada.
+Skupaj {m}
+h, izmen: {n}
+h, izmen: {n}
+Dodatne ure
+Nočne ure, {r}
+Opravljene sobote
+Nedelje in prazniki
+Dopust v mesecu
+Preostali dopust {y}
+Dopust {y}
+Prosto v mesecu
+Preostalo prosto
+Bolniška
+Banka ur ob koncu meseca
+Banka ur danes
+Ocena plače {m}
+Ure na teden
+Vrstica je polna pri {n} h.
+Za preveriti
+Skupaj v mesecu
+Druga opozorila: {n}. Najdeš jih v aplikaciji.
+{h} h
+Izmene
+Nočne ure
+Ned. in prazn.
+Prosto
+Banka ur
+Običajna izmena {w} h, sobota {s} h. Ustvarjeno v {app} {d}.
+Prosto in odsotnosti
+Noč
+Popoldne
+Jutro
+Uredi oznake
+Ustvari oznake za oddelke, stroje ali delovna mesta
+Izmena {a} h. Uporabi običajno trajanje {b} h
+Ure več ali manj kot {h}
+Cel dan.
+Preostanek dneva šteje kot običajno opravljen. Ure prostega se odštejejo od tistih, ki ti pripadajo.
+odmor {x}
+{h} ponoči
+Običajna izmena {h} h, ker je sobota.
+Običajna izmena {h} h.
+Dan izpraznjen.
+Oznake sodijo k dnevom z izmeno: izberi še izmeno.
+Pozor: leta {y} si presegel dopust, ki ti pripada.
+Porabil si ves dopust za leto {y}.
+Ostaja ti {n} dan dopusta v letu {y}.
+Ostaja ti {n} dni dopusta v letu {y}. ‖two: Ostajata ti {n} dneva dopusta v letu {y}. ‖few: Ostajajo ti {n} dnevi dopusta v letu {y}.
+Pozor: leta {y} si presegel prosto, ki ti pripada.
+Ostaja ti {h} h prostega v letu {y}.
+h
+Ime hitre izmene {n}
+Ime
+Izbriši hitro izmeno {n}
+Začetek hitre izmene {n}
+Trajanje prvega dela v urah
+Trajanje hitre izmene {n} v urah
+Polovica
+Običajna
+Deljena
+Nadaljuje ob, hitra izmena {n}
+Trajanje drugega dela v urah
+Preostanek
+Največ {n} hitrih izmen
++ Dodaj hitro izmeno
+Hitra izmena »{x}« izbrisana.
+Npr. Oddelek A, Stiskalnica 3, Blagajna 2
+Oznaka {n}
+Izbriši oznako {n}
+Oznaka »{x}« odstranjena z {n} dneva.
+Oznaka »{x}« odstranjena z {n} dni. ‖two: Oznaka »{x}« odstranjena z {n} dni. ‖few: Oznaka »{x}« odstranjena s {n} dni.
+brez imena
+Oznaka »{x}« izbrisana.
+Leto
+Skupaj {y}
+Označeni prosti dnevi
+Ocena plače {y}
+Oznake v letu {y}
+{n} dan
+{n} dni ‖two: {n} dneva ‖few: {n} dnevi
+Posamezne dneve išči v pogledu seznama v koledarju.
+To leto se še ni začelo.
+Banka ur se začne {d}.
+Stanje na dan {d}.
+Stanje do danes.
+Opravil si več ur, kot jih določa pogodba.
+Opravil si manj ur, kot jih določa pogodba.
+Točno si po pogodbi.
+Pogodba <b>{h} h</b> na teden
+Od <b>{d}</b>
+Začetek <b>{h} h</b>
+Spremeni nastavitve banke ur
+Porabljeno
+Porabljeno
+Načrtovano
+Načrtovano
+Pripada ti
+dni označenih v letu {y}
+ur označenih v letu {y}
+Nastavi, koliko ti pripada
+dni preveč
+ur preveč
+dni ostaja od {x}
+ur ostaja od {x}
+{a} porabljeno, {b} načrtovano od {c}
+Označil si več dopusta, kot ti pripada.
+Označil si več prostega, kot ti pripada.
+Vse je porabljeno.
+Vse je porabljeno.
+Kmalu bo zmanjkalo.
+Kmalu bo zmanjkalo.
+Ure na mesec
+{m}: {h} h. Odpri mesec
+Mesec
+Ure
+Dodatno
+Prosto
+Banka
+Skupaj
+Mesec za mesecem
+Tapni mesec, da ga odpreš v koledarju. Stolpec Banka kaže, koliko je vsak mesec dodal ali odvzel.
+Korak {n}
+Dan manj
+Dan več
+Izbriši korak {n}
+S temi izbirami ni dni za izpolniti.
+Izberi začetni dan.
+Cikel <b>{a}</b>. Izpolnjujem <b>{b}</b> od {c} do {d}:
+Uporabi za {n} dan
+Uporabi za {n} dni ‖two: Uporabi za {n} dneva ‖few: Uporabi za {n} dni
+{n} teden
+{n} tednov ‖two: {n} tedna ‖few: {n} tedni
+Razpored uporabljen za {n} dan.
+Razpored uporabljen za {n} dni. ‖two: Razpored uporabljen za {n} dneva. ‖few: Razpored uporabljen za {n} dni.
+Moje izmene, teden od {d}:
+prosto
+Moje izmene
+{h} h, {n} izmena
+{h} h, {n} izmen ‖two: {h} h, {n} izmeni ‖few: {h} h, {n} izmene
+Ustvarjeno v {app}
+Ta teden
+Naslednji teden
+Prejšnji teden
+Čez {n} teden
+Čez {n} tednov ‖two: Čez {n} tedna ‖few: Čez {n} tedne
+Pred {n} tednom
+Pred {n} tedni ‖two: Pred {n} tednoma ‖few: Pred {n} tedni
+Izmene kopirane: prilepi jih v sporočilo.
+Kopiranje tu ni na voljo.
+Slike ni bilo mogoče ustvariti.
+Še ni tedna za ponovitev.
+Naslednji teden je že izpolnjen.
+Teden od {a} ponovljen v tednu od {b}.
+Zadnja kopija shranjena {d}.
+Še nisi shranil nobene kopije.
+Tvoje izmene ({n} dan) so samo v tej napravi: občasno shrani kopijo, npr. v iCloud Drive, Google Drive ali v e-pošto sebi, da jih ne izgubiš ob menjavi telefona.
+Tvoje izmene ({n} dni) so samo v tej napravi: občasno shrani kopijo, npr. v iCloud Drive, Google Drive ali v e-pošto sebi, da jih ne izgubiš ob menjavi telefona. ‖two: Tvoje izmene ({n} dneva) so samo v tej napravi: občasno shrani kopijo, npr. v iCloud Drive, Google Drive ali v e-pošto sebi, da jih ne izgubiš ob menjavi telefona. ‖few: Tvoje izmene ({n} dnevi) so samo v tej napravi: občasno shrani kopijo, npr. v iCloud Drive, Google Drive ali v e-pošto sebi, da jih ne izgubiš ob menjavi telefona.
+Datoteka prenesena.
+Prenos ni uspel.
+{n} izmena
+{n} izmen ‖two: {n} izmeni ‖few: {n} izmene
+prazno
+Ustvari PDF za {m}
+PDF-ja ni bilo mogoče ustvariti.
+Kopija izmen {app}
+Kopija shranjena. Hrani jo na varnem mestu.
+Datoteka vsebuje {n} dan
+Datoteka vsebuje {n} dni ‖two: Datoteka vsebuje {n} dneva ‖few: Datoteka vsebuje {n} dneve
+od {a} do {b}
+shranjeno {d}
+Zamenjale bodo izmene, ki jih imaš zdaj ({n} dan), skupaj z nastavitvami.
+Zamenjale bodo izmene, ki jih imaš zdaj ({n} dni), skupaj z nastavitvami. ‖two: Zamenjale bodo izmene, ki jih imaš zdaj ({n} dneva), skupaj z nastavitvami. ‖few: Zamenjale bodo izmene, ki jih imaš zdaj ({n} dnevi), skupaj z nastavitvami.
+Naložile se bodo skupaj z nastavitvami.
+Ta datoteka ni kopija iz {app}.
+Kopija naložena: {n} dan.
+Kopija naložena: {n} dni. ‖two: Kopija naložena: {n} dneva. ‖few: Kopija naložena: {n} dnevi.
+Različica {v}.
+Odpri aplikacijo z njenega spletnega naslova, da prejemaš posodobitve.
+Na voljo je različica {v}.
+Zadnje preverjanje: {d}.
+Samodejno preverjanje je vklopljeno.
+Na voljo je {app} {v}
+Posodobi za najnovejše spremembe. Tvoje izmene ostanejo, kjer so.
+Odpri aplikacijo z njenega spletnega naslova, da iščeš posodobitve.
+Preverjam…
+Že imaš najnovejšo različico ({v}).
+Posodobitev ni mogoče preveriti: preveri povezavo.
+Poišči posodobitve
+Posodabljam…
+Prosto
+Bol.
+Novo leto
+Sveti trije kralji
+Dan osvoboditve
+Praznik dela
+Dan republike
+Marijino vnebovzetje
+Vsi sveti
+Brezmadežno spočetje
+Božič
+Sveti Štefan
+Sveti Frančišek
+Velika noč
+Velikonočni ponedeljek
+iWork
+Koledar
+Spremembe se shranijo same.
+Začetek izmene
+Deljena izmena, v dveh delih
+Prvi del
+Nadaljuje ob
+Drugi del
+Konec izmene
+Ure več ali manj
+Ure prostega
+Oznake
+Izprazni dan
+Končano
+Nastavitve
+Vsaka sprememba se shrani sama.
+Ure običajne izmene
+Ure sobotne izmene
+Hitre izmene in oznake ustvariš in urejaš v Orodjih, gumbu s tremi pikami.
+Dopust in prosto
+Dopust na leto
+dni
+Prosto na leto
+Koliko ti pripada v enem letu, skupaj s prenesenim iz prejšnjega leta. Pri 0 je števec izklopljen.
+Tedenske ure po pogodbi
+Štej od
+Začetno stanje
+Banka ur primerja opravljene ure z urami iz pogodbe, dan za dnem do danes. Dopust, prosto, bolniška, nedelje in prazniki ne štejejo kot manjkajoče ure.
+Plača
+Bruto urna postavka
+€/h
+Noč 22–06
+Dodatki se seštevajo: nočna ura v nedeljo dobi nočni in nedeljski dodatek. Če praznik pade na nedeljo, velja samo praznični dodatek. Ocena ostane v tej napravi in se ne prikaže v PDF-ju ali na deljenih slikah.
+Jezik
+Videz
+Samodejno
+Svetlo
+Temno
+Posodobitve
+Orodja
+Izpolni izmene
+Ciklični razpored
+Vzorec, ki se ponavlja čez več tednov
+Ponovi zadnji teden
+Kopiraj izmene v naslednji teden
+Prilagodi
+Hitre izmene
+Gumbi za vpis izmene z enim dotikom
+Oddelki, stroji, delovna mesta z enim dotikom
+Deli in izvozi
+Deli teden
+Slika ali besedilo, kateri koli teden
+PDF meseca
+Mesec po izbiri, pripravljen za tisk
+Varnostna kopija
+Shrani kopijo izmen
+Datoteka z vsemi izmenami in nastavitvami
+Naloži kopijo
+Obnovi izmene iz prej shranjene datoteke
+Zapri
+To so gumbi nad koledarjem: izberi enega in tapni dneve, da ga vpišeš. Tu jih ustvariš, preimenuješ in spreminjaš čase in trajanje. Vsaka sprememba se shrani sama.
+Pusti trajanje prazno za običajno (8 h, ob sobotah 6). Lastno trajanje velja vse dni. Z možnostjo »Deljena« ima izmena dva dela, npr. 8–12 in 16–20.
+Oddelki, stroji, delovna mesta ali kar koli potrebuješ. Prikažejo se v drugi vrstici nad koledarjem: izberi eno in tapni dneve, da jo dodeliš, tudi skupaj z izmeno. Vsaka sprememba se shrani sama.
++ Dodaj oznako
+Naložim to kopijo?
+Prekliči
+Zamenjaj izmene
+Sestavi vzorec, ki se ponavlja, npr. 5 dopoldanskih, 2 prosta, 5 popoldanskih, 2 prosta, in ga uporabi za več tednov hkrati.
+Vzorec
++ Dodaj korak
+Od dne
+Za koliko tednov
+Ne spreminjaj že izpolnjenih dni
+Pusti nedelje proste
+Uporabi
+Nazaj na ta teden
+Kopiraj kot besedilo
+Deli sliko
+Izberi mesec: dobiš koledar z izmenami in seštevki na listu A4 za tisk.
+Pozneje
+Posodobi
+Zaslon
+Prejšnji mesec
+Naslednji mesec
+Hiter vnos
+Pogled
+Pogled koledarja
+Pogled seznama
+Hitro označevanje
+Išči v opombah in oznakah
+Pregled leta
+Prejšnje leto
+Naslednje leto
+Vrsta dneva
+Pol ure manj
+Pol ure več
+Npr. menjava izmene z Markom, oddelek B
+Tema
+Teden manj
+Teden več
+Prejšnji teden
+Naslednji teden
+Predogled slike z izmenami tedna
+Razveljavi
+{x}, praznik zavetnika
+Praznik zavetnika
+{x} (nadomestni dan)
+Nobena posebej
+Noben
+Drug datum…
+Pravila za {c}: vsaj {r} h počitka med dvema izmenama, povprečno največ {w} h na teden, tedenski počitek {k} h. Prvi dan tedna: {d}.
+Država in prazniki
+Država
+Regija ali pokrajina
+Zavetnik
+Dan
+Praznik zavetnika šteje kot praznik v koledarju, banki ur in plači. Preveri datum v pogodbi ali pri občini.
+{c}: vsaj {r} h počitka med dvema izmenama, povprečno največ {w} h na teden, tedenski počitek {k} h. Prvi dan tedna: {d}.
+Noč {r}
+Začni
+Naprej
+Novo: jezik in država
+Dobrodošel v {app}
+Izberi jezik in državo: aplikacija se nastavi s pravimi pravili in prazniki. Tvoje izmene ostanejo, kjer so.
+Koledar tvojih izmen. Izberi jezik.
+Kje delaš?
+Od tega so odvisni prazniki, najkrajši počitek, nočne ure in valuta.
+Poišči državo
+Tvoje območje
+Nekateri prazniki veljajo le v regiji ali mestu. Ta korak lahko preskočiš in ga spremeniš pozneje.
+Če tvojega mesta ni, lahko datum vneseš v Nastavitvah.
+Koliko traja izmena?
+Tako izbereš samo začetek, konec pa se izračuna sam. Lahko ga kadar koli spremeniš.
+Običajna izmena
+Sobotna izmena
+Vse je pripravljeno
+Tako je aplikacija nastavljena. Vse lahko spremeniš v Nastavitvah.
+{w} h, sobota {s}
+Najkrajši počitek
+Največje povprečje
+{h} h na teden
+Opozorila o počitku in urah so okvirna in ne nadomeščajo tvoje pogodbe.
+Nazaj
+Pravila za opozorila in izračune
+h/ted.
+Noč od
+Noč do
+Tvoja pogodba je lahko ugodnejša od zakona: tu lahko prilagodiš pravila.
+Nazaj na pravila države
+{x}, lokalni praznik
+Lokalni praznik
+Praznik tvoje občine ali iz pogodbe: šteje kot praznik v koledarju, banki ur in plači.
+Če praznik pade na nedeljo, delodajalec določi nadomestni dan.
+Grundlovsdag (5. junij) in božični večer nista zakonska praznika, a ju mnoge pogodbe predvidevajo.
+Binkoštni ponedeljek je pogosto »dan solidarnosti« in se dela.
+Na Bavarskem je Marijino vnebovzetje praznik le v pretežno katoliških občinah.
+Veliki petek in 5. maj sta prosta le, če to določa kolektivna pogodba (CAO).
+Pustni torek ni obvezen; vsaka občina ima tudi svoj praznik.
+Od leta 2025 17. november ni več praznik; leta 2026 se dela tudi 8. maja in 15. septembra.
+Vsaka avtonomna skupnost doda svoje praznike (pogosto veliki četrtek) in jih vsako leto spreminja: dodaj svojega kot lokalni praznik.
+Predvečeri (Midsommarafton, Julafton, Nyårsafton) niso zakonski prazniki, so pa skoraj povsod prosti.
+Omejitev 45 ur velja za industrijo, pisarne, tehnično osebje in velike trgovske verige; za druge je 50. V nekaterih občinah (Fribourg, Solothurn, Aargau) so prazniki drugačni: dodaj svojega kot lokalni praznik.
+V Združenem kraljestvu bank holidays niso zakonska pravica: odvisno je od pogodbe. Omejitvi 48 ur se je mogoče pisno odpovedati (opt-out).
+Delovni čas in počitek sledita predvsem kolektivnim pogodbam San Marina: preveri spodnje vrednosti.
+Če praznik pade na nedeljo, je ponedeljek prost.
+Omejitev 45 ur velja za industrijo, pisarne in velike trgovske verige; za druge je 50.
+{c}: zakon ne določa najkrajšega počitka med izmenama. Aplikacija opozori pod {r} h in nad {w} h na teden. Prvi dan tedna: {d}.
+Zvezni prazniki po zakonu veljajo le za zvezne uslužbence: v zasebnem sektorju je odvisno od pogodbe. Vsaka zvezna država ima svoje praznike: dodaj svojega kot lokalni praznik.
+Delovni čas in počitek se lahko razlikujeta po provincah: preveri spodnje vrednosti. Nova Fundlandija in Labrador še nista vključena.
+Dnevi zveznih in lokalnih volitev so prosti tudi za tiste, ki morajo voliti.
+Karneval in sveto rešnje telo sta »ponto facultativo«; vsaka zvezna država in občina doda svoje praznike: dodaj svojega kot lokalni praznik.
+Vlada lahko premika premične praznike (17. junij, 17. avgust, 12. oktober, 20. november) in dodaja proste dni: tu vidiš datume, ki jih določa zakon.
+Mnoge kolektivne pogodbe (awards) predvidevajo 10 h počitka med izmenama. Nekateri prazniki veljajo le na določenih območjih (Royal Show, Regatta, Recreation Day): svojega lahko dodaš kot lokalni praznik.
+Vsaka provinca ima svoj Anniversary Day: če tvojega ni na seznamu, ga dodaj kot lokalni praznik.
+Noben
+Ure in pogodba
+Delovni čas
+Trajanje izmen, najkrajši počitek, nočne ure
+Koliko dni in ur ti pripada
+Ure po pogodbi in začetno stanje
+Ocena plače
+Urna postavka in dodatki, samo zate
+Druga služba
+Pripravljenost
+Pripravljenost vklopljena.
+Tapni dneve, da jo dodaš ali odstraniš, tudi na proste dni. Izbereš jo lahko skupaj z izmeno.
+Vsak tapnjen dan dobi izmeno in pripravljenost hkrati.
+{h} h intervencije
+Ure intervencije
+Druga služba se šteje posebej: ne gre v banko ur, dopust in opozorila glavne službe.
+Glavna služba
+Ustvarjeno z aplikacijo {app} dne {d}.
+Služba hitre izmene {n}
+{n} mesec
+{n} mesecev ‖two: {n} meseca ‖few: {n} meseci
+Izmene: {x}
+<b>{n}</b> od {a} do {b}.
+{n} dogodek
+{n} dogodkov ‖two: {n} dogodka ‖few: {n} dogodki
+Ni izmen za izvoz od {a} do {b}.
+Od
+Trajanje
+Intervencija
+Ure intervencije štejejo kot opravljene, v oceni plače pa se plačajo kot nadure.
+Začetek
+Druga služba z lastnim časom in obračunom
+Izvozi v koledar
+Google, Apple ali Outlook koledar
+Imam pripravljenost
+Običajno od
+Nad koledarjem se prikaže gumb Pripravljenost: izberi ga in tapaj dneve, tudi proste. Ure intervencije vpišeš s tapom na dan.
+Dodatek za pripravljenost
+Za vsako pripravljenost. Ure intervencije se plačajo kot nadure.
+Imam drugo službo
+Običajno trajanje
+Izmene druge službe so prikazane v drugi vrstici istih dni, s turkiznim kvadratkom. Dodeliš jih s hitrimi izmenami druge službe ali s tapom na dan. Ure in plača se štejejo posebej: ne gredo v banko ur, dopust in opozorila glavne službe.
+Za vsako hitro izmeno izberi, ali spada h glavni ali drugi službi. Izmene druge službe imajo turkizni kvadratek.
+Ustvari datoteko z izmenami, ki jo odpreš v Google Koledarju, Applovem Koledarju ali Outlooku.
+Koliko mesecev
+Kaj izvoziti
+Delovne izmene
+Dopust, prosti dnevi in bolniška, kot celodnevni dogodki
+Opomnik
+30 minut prej
+1 uro prej
+2 uri prej
+Kako jo odpreti v koledarju
+iPhone, iPad in Mac.
+Odpri datoteko in izberi Dodaj vse, nato koledar, kamor jih daš.
+Google Koledar.
+Na računalniku odpri calendar.google.com, pojdi v Nastavitve, Uvoz in izvoz, ter naloži datoteko. Na Androidu jo lahko odpreš tudi neposredno z Google Koledarjem.
+Outlook.
+Odpri datoteko z Outlookom ali na outlook.com pojdi v koledar, Dodaj koledar, Naloži iz datoteke.
+Če isto obdobje izvoziš znova, se že uvožene izmene običajno posodobijo namesto podvojijo. Dneve, ki si jih v aplikaciji izpraznil, moraš odstraniti ročno. Nasvet: uporabljaj koledar samo za izmene, da ga lahko izprazniš in znova uvoziš, ko se spremenijo.
+Ustvari datoteko
+Npr. Bar, Inštrukcije, Dostava
+Mesec manj
+Mesec več
+Služba
+Nadure
+Izrabljen dopust
+Izrabljen prosti čas
+Bruto skupaj
+{n} razlika z vpisanimi urami
+{n} razlik z vpisanimi urami ‖two: {n} razliki z vpisanimi urami ‖few: {n} razlike z vpisanimi urami
+Postavke na plačilni listi se ujemajo s tem, kar si vpisal.
+Vpisano
+Na listi
+Na plačilni listi {v} manj
+Na plačilni listi {v} več
+Ocena aplikacije, le okvirna
+Plačilna lista ({a}): ure se primerjajo z {b}.
+Plačilna lista: {m}
+vpisano {a}, na listi {b}
+Za izplačilo
+Odpri plačilno listo
+lista vnesena
+ni liste
+Naloži PDF: {m}
+Plačilna lista izbrisana: {m}.
+Berem plačilno listo…
+Napačno geslo, poskusi znova.
+PDF je zaščiten z geslom. Pogosto je to tvoja davčna številka ali geslo delodajalca.
+Bralnika PDF ni mogoče naložiti. Preveri povezavo in poskusi znova.
+Te datoteke ni mogoče odpreti. Je to PDF?
+Ta PDF nima besedila, morda je skeniran ali fotografija. Vpiši številke ročno.
+Postavk na tej plačilni listi nisem prepoznal. Vpiši številke ročno: samo tiste, ki te zanimajo.
+nadure
+nočno delo
+nedelje in prazniki
+izrabljen dopust
+izrabljen prosti čas
+preostali dopust
+preostali prosti čas
+bruto skupaj
+za izplačilo
+Plačilna lista: {m}.
+Prebral sem: {x}.
+Preveri označene številke in manjkajoče vpiši ročno.
+Videti je kot lista z regresom ali dodatnim izplačilom: natančno preveri bruto.
+Datoteka je prevelika za plačilno listo.
+Plačilna lista
+Preveri plačane ure in postavke
+Naloži PDF plačilne liste ali vpiši številke: aplikacija jih primerja z vpisanimi urami.
+Geslo PDF
+Odpri
+PDF se bere samo v tej napravi in se ne shrani: aplikacija obdrži le spodnje številke.
+Na plačilni listi
+Preostali dopust
+Nadure in dodatki so za prejšnji mesec
+Veliko delodajalcev nadure, nočno in praznično delo izplača naslednji mesec. Če velja tudi zate, vklopi to: primerjava bo uporabila pravi mesec.
+Izbriši
+Vpisovanje izmen
+Kako vpišem izmeno?
+Nad koledarjem izberi hitro izmeno, na primer {a}, in tapaj dneve: vsak dobi to izmeno. Za konec znova tapni gumb. Za drug čas tapni dan in vpiši začetek in trajanje.
+Kako spremenim ali izpraznim dan?
+Tapni dan: na kartici spremeniš vrsto, čas, ure več ali manj, oznake in opombo, in vse se shrani samo. {a} ga izbriše. Za praznjenje več dni izberi {b} nad koledarjem in tapaj dneve. Po vsaki spremembi jo lahko razveljaviš v sporočilu spodaj.
+Kako vpišem prost dan, dopust, prosti čas in bolniško?
+{a} in {b} imata svoj gumb nad koledarjem: izberi ga in tapaj dneve. Za {c} ali {d} tapni dan in na kartici izberi vrsto; pri prostem času vpišeš tudi ure.
+Kako vpišem nadure ali deljeno izmeno?
+Na kartici dneva uporabi {a} za nadure ali zgodnejši odhod. Z {b} vpišeš oba dela, na primer 8–12 in 16–20.
+Kako ustvarim svoje hitre izmene?
+Odpri {p} in za vsak gumb izberi ime, začetek in trajanje. Lahko so deljene izmene in, če imaš drugo službo, pripadajo tej službi.
+Vedno delam po istem razporedu: se lahko koledar izpolni sam?
+Da: v {p} opiši vzorec (na primer 5 jutranjih, 2 prosta, 5 nočnih, 2 prosta), začetni dan in do kdaj. Z {q} pa skopiraš en teden na naslednjega.
+Čemu služijo oznake?
+Označujejo oddelek, stroj ali delovno mesto. Ustvariš jih v {p}; nato jih izbereš nad koledarjem in tapaš dneve, tudi skupaj z izmeno.
+Kako najdem dan, opombo ali oznako?
+Z gumbom ob hitrih izmenah preklopi na pogled seznama: pojavi se iskanje po opombah in oznakah. Zavihek {a} prikazuje seštevke celega leta, mesec za mesecem.
+Ure, pogodba in plača
+Kaj pomenijo opozorila na dnu meseca?
+Aplikacija preverja pravila tvoje države: najkrajši počitek med dvema izmenama, povprečje ur na teden, sedem delovnih dni zapored. Če je tvoja pogodba drugačna, spremeni vrednosti v {p}.
+Kako deluje banka ur?
+V {p} vpiši tedenske ure po pogodbi, od kdaj šteti in morebitno začetno stanje. Aplikacija primerja opravljene ure z dolžnimi in pokaže stanje v pregledu meseca.
+Kako spremljam dopust in prosti čas?
+V {p} vpiši, koliko dni dopusta in ur prostega časa ti pripada na leto. Aplikacija šteje izrabljene in načrtovane ter pove, koliko jih je še.
+Kako deluje ocena plače?
+V {p} vpiši bruto urno postavko in dodatke. To je okvirna ocena samo zate: nikoli se ne pojavi v PDF-ju ali na deljenih slikah, zneske pa lahko skriješ.
+Kako vpišem pripravljenost?
+Vklopi jo v {p}. Nad koledarjem se pojavi gumb {a}: izberi ga in tapaj dneve, tudi proste. Ure intervencije vpišeš na kartici dneva; dodatek nastaviš v {q}.
+Imam drugo službo: kako jo držim ločeno?
+Vklopi jo v {p}, z imenom, trajanjem in plačo. Njene izmene imajo svoje hitre gumbe in so prikazane v drugi vrstici dni. Ure in plača se štejejo posebej, PDF meseca pa lahko narediš za vsako službo.
+Kako preverim plačilno listo?
+V {p} izberi mesec in naloži PDF: aplikacija prebere nadure, nočno in praznično delo, dopust, prosti čas, bruto in znesek za izplačilo ter jih primerja z vpisanimi urami. Če je lista na papirju, vpiši številke ročno.
+Plačilna lista se ne prebere ali se številke ne ujemajo: kaj naj naredim?
+Če je PDF skeniran ali fotografija, nima besedila za branje: vpiši številke ročno. Če je zaščiten, aplikacija vpraša za geslo. Vedno preveri označene številke in vklopi {a}, če delodajalec nadure in dodatke izplača naslednji mesec.
+Deljenje in izvoz
+Kako komu pošljem izmene za teden?
+V {p} izberi teden in ga pošlji kot sliko ali besedilo, na primer v klepetu.
+Kako natisnem mesec?
+V {p} izberi mesec: dobiš list A4 s koledarjem in seštevki za tisk ali pošiljanje.
+Kako prenesem izmene v Google Koledar, Applov Koledar ali Outlook?
+V {p} izberi od kdaj, koliko mesecev in kaj vključiti, nato odpri datoteko s svojim koledarjem: na istem zaslonu so koraki za vsakega. Če isto obdobje izvoziš znova, se izmene običajno posodobijo namesto podvojijo.
+Podatki, aplikacija in nastavitve
+Kje so shranjene moje izmene?
+Samo v tej napravi, v brskalniku. Račun ni potreben in nič se ne pošilja na strežnik.
+Kako naredim kopijo ali preidem na drug telefon?
+Z {p} dobiš datoteko z izmenami in nastavitvami. Na drugem telefonu odpri aplikacijo in uporabi {q}. Pika na {a} te opomni, kdaj je čas za kopijo.
+Če izbrišem podatke brskalnika, izgubim izmene?
+Da, če nimaš kopije. Zato se splača občasno shraniti eno, posebej pred menjavo telefona.
+Kako namestim aplikacijo na telefon?
+Na iPhonu odpri aplikacijo v Safariju, tapni Deli in nato Dodaj na začetni zaslon. Na Androidu odpri meni Chroma in izberi Namesti aplikacijo ali Dodaj na začetni zaslon. Ko je nameščena, deluje tudi brez povezave.
+Kako posodobim aplikacijo?
+Ko je na voljo nova različica, se zgoraj pojavi obvestilo: tapni {a}. Tvoje izmene ostanejo, kjer so.
+Kako spremenim državo, praznike, jezik ali temo?
+V {p} izberi državo in regijo za praznike, jezik ter svetlo ali temno temo. Lokalne praznike, ki jih aplikacija ne pozna, vpiši kot prost dan.
+Pelji me tja
+Odpri vodnik
+Pomoč
+Vodnik in pogosta vprašanja
+Kako kaj narediti, korak za korakom
+Vodnik
+Ni najdenih odgovorov. Poskusi z drugimi besedami.
+Išči v vodniku
+V minuti ti pokažem, kako deluje. Kadar koli lahko preskočiš in si ogled znova ogledaš iz Vodnika.
+Izberi izmeno in tapaj dneve v koledarju, da jo dodeliš. Za konec znova tapni gumb. {a}, {b} in {c} delujejo enako.
+Koledar
+Tapni dan, da odpreš njegovo kartico: čas, nadure, prosti čas, bolniška in opombe. Vse se shrani samo in vedno lahko razveljaviš v sporočilu spodaj.
+Naslednja izmena
+Tu zgoraj vedno vidiš naslednjo izmeno ali tisto, ki poteka.
+Pregled meseca
+Opravljene ure, nadure, noči in prazniki v mesecu, z opozorili, ko izmena ne upošteva pravil o počitku.
+Koledar in Leto
+Preklopi na Leto za seštevke celega leta, mesec za mesecem.
+Tu je vse ostalo: razpored, dopust in prosti čas, banka ur, ocena plače, plačilna lista, PDF meseca, izvoz v koledar, kopija podatkov in Vodnik.
+Država in prazniki, jezik ter svetla ali temna tema.
+Začni z vpisom izmen za ta teden.
+{n} od {m}
+Preskoči
+Gremo
+Znova si oglej ogled

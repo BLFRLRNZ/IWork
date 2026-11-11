@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} h
+{h} h {m} min
+{h} h
+{m} min
+Maiņa
+un
+Rādīt summas
+Slēpt summas
+Nostrādātās stundas
+Virsstundas
+Nakts darbs
+Svētdiena
+Svētku dienas
+Aptuvens bruto aprēķins. Tikai tev: tas neparādās PDF failā un kopīgotajos attēlos.
+Pievienot piemaksas
+Tavas maiņas ir saglabātas šajā ierīcē.
+nav maiņas
+dalīta maiņa {r}
+maiņa {r}
+nākamajā dienā
+{h} h brīvs laiks
+Brīvs
+Atvaļinājums
+Notīrīt
+Izveidot birkas nodaļām vai darba vietām
+Izvēlies maiņu, birku vai abas un tad pieskaries dienām. Vai pieskaries dienai, lai iestatītu laikus, piezīmes un papildu stundas.
+Notīrīšana ir ieslēgta.
+Pieskaries dienām, ko iztukšot, un tad vēlreiz pogai, lai beigtu.
+Katra diena, kurai pieskaries, saņem maiņu un birku reizē.
+{x} ir ieslēgts.
+Pieskaries dienām, ko aizpildīt, un, ja vēlies, izvēlies arī birku. Lai beigtu, vēlreiz pieskaries pogai.
+Pieskaries dienām, ko aizpildīt. Lai beigtu, vēlreiz pieskaries pogai.
+Birka {x} ir ieslēgta.
+Pieskaries dienām ar maiņu, lai to pievienotu vai noņemtu.
+Brīvs
+atpūta mazāka par {n} h
+{x} papildus
+Atrasta {n} diena
+Atrastas {n} dienas
+{h} h darba
+Nav dienu ar “{q}” piezīmēs vai birkās.
+Sestdiena {s} h, citas dienas {w} h.
+Piezīme
+Mazāk par {n} h atpūtas kopš iepriekšējās maiņas
+Pārtraukumā
+Turpini pēc <b>{x}</b>. Dalīta maiņa: {r}.
+Nākamā maiņa
+Nav plānotu maiņu
+Pieskaries dienai kalendārā un izvēlies sākuma laiku: beigas aprēķinās pašas.
+Šodien
+Rīt
+Vakar
+Tagad maiņā
+Līdz beigām vēl <b>{a}</b>. Paveikts {b}.
+Sākas pēc <b>{x}</b>.
+Dalīta: {r}, kopā {h} h.
+Ilgst {h} h.
+Tikai {h} h atpūtas starp {a} un {b} (minimums ir {n}).
+Septiņas vai vairāk darba dienas pēc kārtas no {d}.
+Nedēļa no {d}: {h} h, virs {n}.
+{y}. gadā esi atzīmējis par {n} atvaļinājuma dienu vairāk, nekā pienākas.
+{y}. gadā esi atzīmējis par {n} atvaļinājuma dienām vairāk, nekā pienākas.
+{y}. gadā esi atzīmējis par {h} h brīvā laika vairāk, nekā pienākas.
+Kopā {m}
+h, maiņas: {n}
+h, maiņas: {n}
+Papildu stundas
+Nakts stundas, {r}
+Nostrādātās sestdienas
+Svētdienas un svētki
+Atvaļinājums mēnesī
+Atlikušais atvaļinājums {y}
+Atvaļinājums {y}
+Brīvais laiks mēnesī
+Atlikušais brīvais laiks
+Slimība
+Stundu banka mēneša beigās
+Stundu banka šodien
+Algas aprēķins {m}
+Stundas nedēļā
+Josla ir pilna pie {n} h.
+Jāpārbauda
+Mēneša kopsumma
+Citi brīdinājumi: {n}. Tos atradīsi lietotnē.
+{h} h
+Maiņas
+Nakts stundas
+Sv. un svētki
+Brīvais laiks
+Stundu banka
+Parastā maiņa {w} h, sestdiena {s} h. Izveidots ar {app} {d}.
+Brīvs un prombūtne
+Nakts
+Pēcpusdiena
+Rīts
+Rediģēt birkas
+Izveidot birkas nodaļām, mašīnām vai darba vietām
+Maiņa {a} h. Izmantot parasto ilgumu {b} h
+Stundas vairāk vai mazāk nekā {h}
+Visa diena.
+Pārējā diena skaitās nostrādāta kā parasti. Brīvā laika stundas atskaita no tev pienākošajām.
+pārtraukums {x}
+{h} naktī
+Parastā maiņa {h} h, jo ir sestdiena.
+Parastā maiņa {h} h.
+Diena iztukšota.
+Birkas liek dienām ar maiņu: izvēlies arī maiņu.
+Uzmanību: {y}. gadā esi pārsniedzis pienākošos atvaļinājumu.
+Esi izmantojis visu {y}. gada atvaļinājumu.
+{y}. gadā tev atlikusi {n} atvaļinājuma diena.
+{y}. gadā tev atlikušas {n} atvaļinājuma dienas.
+Uzmanību: {y}. gadā esi pārsniedzis pienākošos brīvo laiku.
+{y}. gadā tev atlikušas {h} h brīvā laika.
+h
+Ātrās maiņas {n} nosaukums
+Nosaukums
+Dzēst ātro maiņu {n}
+Ātrās maiņas {n} sākums
+Pirmās daļas ilgums stundās
+Ātrās maiņas {n} ilgums stundās
+Puse
+Parasta
+Dalīta
+Turpinās plkst., ātrā maiņa {n}
+Otrās daļas ilgums stundās
+Pārējais
+Ne vairāk kā {n} ātrās maiņas
++ Pievienot ātro maiņu
+Ātrā maiņa “{x}” izdzēsta.
+Piem., Nodaļa A, Prese 3, Kase 2
+Birka {n}
+Dzēst birku {n}
+Birka “{x}” noņemta no {n} dienas.
+Birka “{x}” noņemta no {n} dienām.
+bez nosaukuma
+Birka “{x}” izdzēsta.
+Gads
+Kopā {y}
+Atzīmētās brīvdienas
+Algas aprēķins {y}
+Birkas {y}
+{n} diena
+{n} dienas
+Atsevišķas dienas meklē kalendāra saraksta skatā.
+Šis gads vēl nav sācies.
+Stundu banka sākas {d}.
+Atlikums {d}.
+Atlikums līdz šodienai.
+Esi nostrādājis vairāk stundu, nekā paredz līgums.
+Esi nostrādājis mazāk stundu, nekā paredz līgums.
+Esi tieši pēc līguma.
+Līgums <b>{h} h</b> nedēļā
+No <b>{d}</b>
+Sākums <b>{h} h</b>
+Mainīt stundu bankas iestatījumus
+Izmantots
+Izmantots
+Plānots
+Plānots
+Pienākas
+dienas atzīmētas {y}
+stundas atzīmētas {y}
+Iestati, cik tev pienākas
+dienas par daudz
+stundas par daudz
+dienas atlikušas no {x}
+stundas atlikušas no {x}
+{a} izmantots, {b} plānots no {c}
+Esi atzīmējis vairāk atvaļinājuma, nekā pienākas.
+Esi atzīmējis vairāk brīvā laika, nekā pienākas.
+Viss izmantots.
+Viss izmantots.
+Drīz beigsies.
+Drīz beigsies.
+Stundas mēnesī
+{m}: {h} h. Atvērt mēnesi
+Mēnesis
+Stundas
+Papild.
+Brīvs
+Banka
+Kopā
+Mēnesi pa mēnesim
+Pieskaries mēnesim, lai to atvērtu kalendārā. Kolonna Banka rāda, cik katrs mēnesis pievienoja vai atņēma.
+Solis {n}
+Diena mazāk
+Diena vairāk
+Dzēst soli {n}
+Ar šīm izvēlēm nav aizpildāmu dienu.
+Izvēlies sākuma dienu.
+Cikls <b>{a}</b>. Aizpildu <b>{b}</b> no {c} līdz {d}:
+Piemērot {n} dienai
+Piemērot {n} dienām
+{n} nedēļa
+{n} nedēļas
+Grafiks piemērots {n} dienai.
+Grafiks piemērots {n} dienām.
+Manas maiņas, nedēļa no {d}:
+brīvs
+Manas maiņas
+{h} h, {n} maiņa
+{h} h, {n} maiņas
+Izveidots ar {app}
+Šī nedēļa
+Nākamā nedēļa
+Iepriekšējā nedēļa
+Pēc {n} nedēļas
+Pēc {n} nedēļām
+Pirms {n} nedēļas
+Pirms {n} nedēļām
+Maiņas nokopētas: ielīmē tās ziņā.
+Kopēšana šeit nav pieejama.
+Neizdevās izveidot attēlu.
+Vēl nav nedēļas, ko atkārtot.
+Nākamā nedēļa jau ir aizpildīta.
+Nedēļa no {a} atkārtota nedēļā no {b}.
+Pēdējā kopija saglabāta {d}.
+Tu vēl neesi saglabājis kopiju.
+Tavas maiņas ({n} diena) ir tikai šajā ierīcē: laiku pa laikam saglabā kopiju, piemēram, iCloud Drive, Google Drive vai e-pastā sev, lai tās nepazaudētu, mainot tālruni.
+Tavas maiņas ({n} dienas) ir tikai šajā ierīcē: laiku pa laikam saglabā kopiju, piemēram, iCloud Drive, Google Drive vai e-pastā sev, lai tās nepazaudētu, mainot tālruni.
+Fails lejupielādēts.
+Lejupielāde neizdevās.
+{n} maiņa
+{n} maiņas
+tukšs
+Izveidot PDF par {m}
+Neizdevās izveidot PDF.
+{app} maiņu kopija
+Kopija saglabāta. Glabā to drošā vietā.
+Failā ir {n} diena
+Failā ir {n} dienas
+no {a} līdz {b}
+saglabāts {d}
+Tās aizstās tavas pašreizējās maiņas ({n} diena) kopā ar iestatījumiem.
+Tās aizstās tavas pašreizējās maiņas ({n} dienas) kopā ar iestatījumiem.
+Tās tiks ielādētas kopā ar iestatījumiem.
+Šis fails nav {app} kopija.
+Kopija ielādēta: {n} diena.
+Kopija ielādēta: {n} dienas.
+Versija {v}.
+Atver lietotni no tās tīmekļa adreses, lai saņemtu atjauninājumus.
+Pieejama versija {v}.
+Pēdējā pārbaude: {d}.
+Automātiskā pārbaude ir ieslēgta.
+Pieejama {app} {v}
+Atjaunini, lai iegūtu jaunāko. Tavas maiņas paliek savās vietās.
+Atver lietotni no tās tīmekļa adreses, lai meklētu atjauninājumus.
+Pārbauda…
+Tev jau ir jaunākā versija ({v}).
+Nevar pārbaudīt atjauninājumus: pārbaudi savienojumu.
+Meklēt atjauninājumus
+Atjaunina…
+Brīvs laiks
+Slims
+Jaungada diena
+Zvaigznes diena
+Atbrīvošanas diena
+Darba svētki
+Republikas diena
+Jaunavas Marijas debesīs uzņemšana
+Visu svēto diena
+Bezvainīgā ieņemšana
+Ziemassvētki
+Otrie Ziemassvētki
+Svētais Francisks
+Lieldienas
+Otrās Lieldienas
+iWork
+Kalendārs
+Izmaiņas saglabājas pašas.
+Maiņas sākums
+Dalīta maiņa, divās daļās
+Pirmā daļa
+Turpinās plkst.
+Otrā daļa
+Maiņas beigas
+Stundas vairāk vai mazāk
+Brīvā laika stundas
+Birkas
+Iztukšot dienu
+Gatavs
+Iestatījumi
+Katra izmaiņa saglabājas pati.
+Parastās maiņas stundas
+Sestdienas maiņas stundas
+Ātrās maiņas un birkas veido un rediģē sadaļā Rīki, pogā ar trim punktiem.
+Atvaļinājums un brīvais laiks
+Atvaļinājums gadā
+dienas
+Brīvais laiks gadā
+Cik tev pienākas gadā, ieskaitot no iepriekšējā gada pārnesto. Ar 0 skaitītājs ir izslēgts.
+Līguma stundas nedēļā
+Skaitīt no
+Sākuma atlikums
+Stundu banka salīdzina nostrādātās stundas ar līguma stundām dienu pa dienai līdz šodienai. Atvaļinājums, brīvais laiks, slimība, svētdienas un svētki netiek skaitīti kā trūkstošās stundas.
+Alga
+Bruto stundas likme
+€/h
+Nakts 22–06
+Piemaksas summējas: nakts stunda svētdienā saņem gan nakts, gan svētdienas piemaksu. Ja svētki iekrīt svētdienā, piemēro tikai svētku piemaksu. Aprēķins paliek šajā ierīcē un neparādās PDF failā un kopīgotajos attēlos.
+Valoda
+Izskats
+Automātiski
+Gaišs
+Tumšs
+Atjauninājumi
+Rīki
+Aizpildīt maiņas
+Ciklisks grafiks
+Raksts, kas atkārtojas vairāku nedēļu garumā
+Atkārtot pēdējo nedēļu
+Kopēt maiņas uz nākamo nedēļu
+Pielāgot
+Ātrās maiņas
+Pogas maiņas ievadīšanai ar vienu pieskārienu
+Nodaļas, mašīnas, darba vietas ar vienu pieskārienu
+Kopīgot un eksportēt
+Kopīgot nedēļu
+Attēls vai teksts, jebkura nedēļa
+Mēneša PDF
+Izvēlētais mēnesis, gatavs drukai
+Rezerves kopija
+Saglabāt maiņu kopiju
+Fails ar visām maiņām un iestatījumiem
+Ielādēt kopiju
+Atjaunot maiņas no agrāk saglabāta faila
+Aizvērt
+Šīs ir pogas virs kalendāra: izvēlies vienu un pieskaries dienām, lai to ievadītu. Šeit tās izveido, pārdēvē un maina laikus un ilgumu. Katra izmaiņa saglabājas pati.
+Atstāj ilgumu tukšu, lai izmantotu parasto (8 h, sestdienās 6). Savs ilgums attiecas uz visām dienām. Ar “Dalīta” maiņai ir divas daļas, piemēram, 8–12 un 16–20.
+Nodaļas, mašīnas, darba vietas vai kas vien vajadzīgs. Tās redzamas otrajā rindā virs kalendāra: izvēlies vienu un pieskaries dienām, lai to piešķirtu, arī kopā ar maiņu. Katra izmaiņa saglabājas pati.
++ Pievienot birku
+Ielādēt šo kopiju?
+Atcelt
+Aizstāt maiņas
+Izveido rakstu, kas atkārtojas, piemēram, 5 rīti, 2 brīvas, 5 vakari, 2 brīvas, un piemēro to vairākām nedēļām uzreiz.
+Raksts
++ Pievienot soli
+No dienas
+Cik nedēļām
+Nemainīt jau aizpildītās dienas
+Atstāt svētdienas brīvas
+Piemērot
+Atpakaļ uz šo nedēļu
+Kopēt kā tekstu
+Kopīgot attēlu
+Izvēlies mēnesi: saņemsi kalendāru ar maiņām un kopsummām A4 lapā drukāšanai.
+Vēlāk
+Atjaunināt
+Ekrāns
+Iepriekšējais mēnesis
+Nākamais mēnesis
+Ātrā ievade
+Skats
+Kalendāra skats
+Saraksta skats
+Ātrā birkošana
+Meklēt piezīmēs un birkās
+Gada kopsavilkums
+Iepriekšējais gads
+Nākamais gads
+Dienas veids
+Pusstundu mazāk
+Pusstundu vairāk
+Piem., maiņa samainīta ar Mārci, nodaļa B
+Motīvs
+Nedēļa mazāk
+Nedēļa vairāk
+Iepriekšējā nedēļa
+Nākamā nedēļa
+Nedēļas maiņu attēla priekšskatījums
+Atsaukt
+{x}, aizbildņa svētki
+Aizbildņa svētki
+{x} (aizstājēja diena)
+Neviena konkrēta
+Nav
+Cits datums…
+Noteikumi, {c}: starp divām maiņām vismaz {r} h atpūtas, vidēji ne vairāk kā {w} h nedēļā, nedēļas atpūta {k} h. Nedēļas pirmā diena: {d}.
+Valsts un svētki
+Valsts
+Reģions vai novads
+Aizbildnis
+Diena
+Aizbildņa svētki skaitās svētku diena kalendārā, stundu bankā un algā. Pārbaudi datumu līgumā vai pašvaldībā.
+{c}: starp divām maiņām vismaz {r} h atpūtas, vidēji ne vairāk kā {w} h nedēļā, nedēļas atpūta {k} h. Nedēļas pirmā diena: {d}.
+Nakts {r}
+Sākt
+Tālāk
+Jaunums: valoda un valsts
+Laipni lūdzam {app}
+Izvēlies valodu un valsti: lietotne iestatīsies ar pareizajiem noteikumiem un svētkiem. Tavas maiņas paliek savās vietās.
+Tavu maiņu kalendārs. Izvēlies valodu.
+Kur tu strādā?
+No tā atkarīgi svētki, minimālā atpūta, nakts stundas un valūta.
+Meklēt valsti
+Tavs apgabals
+Daži svētki ir spēkā tikai reģionā vai pilsētā. Šo soli vari izlaist un mainīt vēlāk.
+Ja tavas pilsētas nav, datumu varēsi ievadīt iestatījumos.
+Cik gara ir maiņa?
+Tā izvēlies tikai sākumu, un beigas aprēķinās pašas. Var mainīt jebkurā laikā.
+Parastā maiņa
+Sestdienas maiņa
+Viss gatavs
+Lūk, kā lietotne ir iestatīta. Visu vari mainīt iestatījumos.
+{w} h, sestdiena {s}
+Minimālā atpūta
+Lielākais vidējais
+{h} h nedēļā
+Brīdinājumi par atpūtu un stundām ir orientējoši un neaizstāj tavu līgumu.
+Atpakaļ
+Noteikumi brīdinājumiem un aprēķiniem
+h/ned.
+Nakts no
+Nakts līdz
+Tavs līgums var būt labvēlīgāks par likumu: šeit vari pielāgot noteikumus.
+Atpakaļ uz valsts noteikumiem
+{x}, vietējie svētki
+Vietējie svētki
+Tavas pašvaldības vai līguma svētki: skaitās svētku diena kalendārā, stundu bankā un algā.
+Ja svētki iekrīt svētdienā, darba devējs nosaka aizstājēja dienu.
+Grundlovsdag (5. jūnijs) un Ziemassvētku vakars nav likumīgas brīvdienas, bet daudzi līgumi tās paredz.
+Vasarsvētku pirmdiena bieži ir “solidaritātes diena”, un tad strādā.
+Bavārijā Jaunavas Marijas debesīs uzņemšana ir brīvdiena tikai pārsvarā katoliskās pašvaldībās.
+Lielā piektdiena un 5. maijs ir brīvi tikai tad, ja to paredz koplīgums (CAO).
+Meteņu otrdiena nav obligāta; katrai pašvaldībai ir arī savi svētki.
+Kopš 2025. gada 17. novembris vairs nav brīvdiena; 2026. gadā strādā arī 8. maijā un 15. septembrī.
+Katra autonomā kopiena pievieno savus svētkus (bieži Zaļo ceturtdienu) un katru gadu tos maina: pievieno savējos kā vietējos svētkus.
+Svētvakari (Midsommarafton, Julafton, Nyårsafton) nav likumīgas brīvdienas, bet gandrīz visur ir brīvi.
+45 stundu ierobežojums attiecas uz rūpniecību, birojiem, tehnisko personālu un lielajiem veikalu tīkliem; pārējiem tas ir 50. Dažās pašvaldībās (Fribūra, Zoloturna, Ārgava) svētki atšķiras: pievieno savējos kā vietējos svētkus.
+Apvienotajā Karalistē bank holidays nav likumīgas tiesības: tas atkarīgs no līguma. No 48 stundu ierobežojuma var rakstiski atteikties (opt-out).
+Darba un atpūtas laiks galvenokārt seko Sanmarīno koplīgumiem: pārbaudi vērtības zemāk.
+Ja svētki iekrīt svētdienā, pirmdiena ir brīva.
+45 stundu ierobežojums attiecas uz rūpniecību, birojiem un lielajiem veikalu tīkliem; pārējiem tas ir 50.
+{c}: likums nenosaka minimālo atpūtu starp divām maiņām. Lietotne brīdina zem {r} h un virs {w} h nedēļā. Nedēļas pirmā diena: {d}.
+Federālie svētki pēc likuma attiecas tikai uz federālajiem darbiniekiem: privātajā sektorā tas atkarīgs no līguma. Katram štatam ir savi svētki: pievieno savējos kā vietējos svētkus.
+Darba un atpūtas laiks var atšķirties pa provincēm: pārbaudi vērtības zemāk. Ņūfaundlenda un Labradora vēl nav iekļauta.
+Federālo un vietējo vēlēšanu dienas ir brīvas arī tiem, kam jābalso.
+Karnevāls un Kristus Miesas svētki ir “ponto facultativo”; katrs štats un pašvaldība pievieno savus svētkus: pievieno savējos kā vietējos svētkus.
+Valdība var pārcelt pārceļamos svētkus (17. jūnijs, 17. augusts, 12. oktobris, 20. novembris) un pievienot brīvdienas: šeit redzi likumā noteiktos datumus.
+Daudzi koplīgumi (awards) paredz 10 h atpūtu starp maiņām. Daži svētki ir spēkā tikai noteiktās vietās (Royal Show, Regatta, Recreation Day): savējos vari pievienot kā vietējos svētkus.
+Katrai provincei ir sava Anniversary Day: ja tavējās nav sarakstā, pievieno to kā vietējos svētkus.
+Nav
+Stundas un līgums
+Darba laiks
+Maiņu ilgums, minimālā atpūta, nakts stundas
+Cik dienu un stundu tev pienākas
+Līguma stundas un sākuma atlikums
+Algas aprēķins
+Stundas likme un piemaksas, tikai tev
+Otrs darbs
+Dežūra
+Dežūra ieslēgta.
+Pieskaries dienām, lai to pievienotu vai noņemtu, arī brīvdienās. Vari to izvēlēties kopā ar maiņu.
+Katra diena, kurai pieskaries, saņem maiņu un dežūru kopā.
+{h} h izsaukuma
+Izsaukuma stundas
+Otro darbu uzskaita atsevišķi: tas neietilpst pamatdarba stundu bankā, atvaļinājumos un brīdinājumos.
+Pamatdarbs
+Izveidots ar {app} {d}.
+Ātrās maiņas {n} darbs
+{n} mēnesis
+{n} mēneši ‖zero: {n} mēnešu
+Maiņas: {x}
+<b>{n}</b> no {a} līdz {b}.
+{n} notikums
+{n} notikumi ‖zero: {n} notikumu
+No {a} līdz {b} nav maiņu, ko eksportēt.
+No
+Ilgums
+Izsaukums
+Izsaukuma stundas skaitās kā nostrādātas, un algas aprēķinā tās apmaksā kā virsstundas.
+Sākums
+Cits darbs ar savu laiku un uzskaiti
+Eksportēt uz kalendāru
+Google, Apple vai Outlook kalendārs
+Man ir dežūras
+Parasti no
+Virs kalendāra parādās poga Dežūra: izvēlies to un pieskaries dienām, arī brīvdienām. Izsaukuma stundas ieraksti, pieskaroties dienai.
+Piemaksa par dežūru
+Par katru dežūru. Izsaukuma stundas apmaksā kā virsstundas.
+Man ir otrs darbs
+Parastais ilgums
+Otrā darba maiņas redzamas tajās pašās dienās otrajā rindā, ar tirkīzzilu kvadrātiņu. Tās piešķir ar otrā darba ātrajām maiņām vai pieskaroties dienai. Stundas un algu uzskaita atsevišķi: tās neietilpst pamatdarba stundu bankā, atvaļinājumos un brīdinājumos.
+Katrai ātrajai maiņai izvēlies, vai tā ir pamatdarbam vai otrajam darbam. Otrā darba maiņām ir tirkīzzils kvadrātiņš.
+Izveido failu ar savām maiņām, ko atvērt Google kalendārā, Apple kalendārā vai Outlook.
+Cik mēnešus
+Ko eksportēt
+Darba maiņas
+Atvaļinājums, brīvs laiks un slimība kā visas dienas notikums
+Atgādinājums
+30 minūtes iepriekš
+1 stundu iepriekš
+2 stundas iepriekš
+Kā to atvērt kalendārā
+iPhone, iPad un Mac.
+Atver failu un izvēlies Pievienot visus, tad kalendāru, kurā tos likt.
+Google kalendārs.
+Datorā atver calendar.google.com, ej uz Iestatījumi, Importēšana un eksportēšana, un augšupielādē failu. Android ierīcē to var atvērt arī tieši ar Google kalendāru.
+Outlook.
+Atver failu ar Outlook vai outlook.com ej uz kalendāru, Pievienot kalendāru, Augšupielādēt no faila.
+Ja to pašu periodu eksportē vēlreiz, jau importētās maiņas parasti tiek atjauninātas, nevis dublētas. Lietotnē iztukšotās dienas jāizdzēš ar roku. Padoms: izmanto atsevišķu kalendāru tikai maiņām, tad vari to iztukšot un importēt no jauna, kad tās mainās.
+Izveidot failu
+Piem. Bārs, Privātstundas, Piegādes
+Vienu mēnesi mazāk
+Vienu mēnesi vairāk
+Darbs
+Virsstundas
+Izmantotais atvaļinājums
+Izmantotais brīvais laiks
+Bruto kopā
+{n} atšķirība no ierakstītajām stundām
+{n} atšķirības no ierakstītajām stundām ‖zero: {n} atšķirību no ierakstītajām stundām
+Algas lapiņas pozīcijas sakrīt ar to, ko ierakstīji.
+Ierakstīts
+Lapiņā
+Lapiņā par {v} mazāk
+Lapiņā par {v} vairāk
+Lietotnes aprēķins, tikai orientējošs
+Algas lapiņa ({a}): stundas salīdzina ar {b}.
+Algas lapiņa: {m}
+ierakstīts {a}, lapiņā {b}
+Izmaksājams
+Atvērt algas lapiņu
+lapiņa ievadīta
+nav lapiņas
+Ielādēt PDF: {m}
+Algas lapiņa izdzēsta: {m}.
+Lasu algas lapiņu…
+Nepareiza parole, mēģini vēlreiz.
+PDF ir aizsargāts ar paroli. Bieži tas ir tavs personas kods vai darba devēja dota parole.
+Neizdodas ielādēt PDF lasītāju. Pārbaudi savienojumu un mēģini vēlreiz.
+Šo failu nevar atvērt. Vai tas ir PDF?
+Šajā PDF nav teksta, varbūt tas ir skenējums vai foto. Ievadi skaitļus ar roku.
+Neatpazinu šīs algas lapiņas pozīcijas. Ievadi skaitļus ar roku: tikai tos, kas tevi interesē.
+virsstundas
+nakts darbs
+svētdienas un svētki
+izmantotais atvaļinājums
+izmantotais brīvais laiks
+atlikušais atvaļinājums
+atlikušais brīvais laiks
+bruto kopā
+neto
+Algas lapiņa: {m}.
+Nolasīju: {x}.
+Pārbaudi izceltos skaitļus un trūkstošos ievadi ar roku.
+Izskatās pēc lapiņas ar papildu algu: rūpīgi pārbaudi bruto summu.
+Fails ir par lielu algas lapiņai.
+Algas lapiņa
+Pārbaudi apmaksātās stundas un pozīcijas
+Ielādē algas lapiņas PDF vai ievadi skaitļus: lietotne tos salīdzina ar ierakstītajām stundām.
+PDF parole
+Atvērt
+PDF tiek lasīts tikai šajā ierīcē un netiek saglabāts: lietotne patur tikai zemāk esošos skaitļus.
+Algas lapiņā
+Atlikušais atvaļinājums
+Virsstundas un piemaksas ir par iepriekšējo mēnesi
+Daudzi darba devēji virsstundas, nakts un svētku darbu apmaksā nākamajā mēnesī. Ja tā ir arī tev, ieslēdz šo: salīdzinājumā tiks izmantots pareizais mēnesis.
+Dzēst
+Maiņu ierakstīšana
+Kā ierakstīt maiņu?
+Virs kalendāra izvēlies ātro maiņu, piemēram, {a}, un pieskaries dienām: katra saņem šo maiņu. Lai beigtu, vēlreiz pieskaries pogai. Citam laikam pieskaries dienai un ieraksti sākumu un ilgumu.
+Kā mainīt vai iztukšot dienu?
+Pieskaries dienai: kartītē maini veidu, laiku, stundas vairāk vai mazāk, birkas un piezīmi, un viss saglabājas pats. {a} to izdzēš. Lai iztukšotu daudzas, izvēlies {b} virs kalendāra un pieskaries dienām. Pēc katras izmaiņas to var atsaukt apakšā redzamajā ziņā.
+Kā ierakstīt brīvdienas, atvaļinājumu, brīvo laiku un slimību?
+{a} un {b} ir sava poga virs kalendāra: izvēlies to un pieskaries dienām. Lai ierakstītu {c} vai {d}, pieskaries dienai un kartītē izvēlies veidu; brīvajam laikam norādi arī stundas.
+Kā ierakstīt virsstundas vai dalītu maiņu?
+Dienas kartītē izmanto {a} virsstundām vai agrākai aiziešanai. Ar {b} norādi abas daļas, piemēram, 8–12 un 16–20.
+Kā izveidot savas ātrās maiņas?
+Atver {p} un izvēlies katras pogas nosaukumu, sākuma laiku un ilgumu. Tās var būt dalītas maiņas un, ja tev ir otrs darbs, piederēt tam.
+Strādāju vienmēr pēc viena grafika: vai kalendārs var aizpildīties pats?
+Jā: sadaļā {p} apraksti shēmu (piemēram, 5 rīti, 2 brīvas, 5 naktis, 2 brīvas), sākuma dienu un līdz kuram laikam. Ar {q} turpretī nokopē vienu nedēļu uz nākamo.
+Kam vajadzīgas birkas?
+Tās apzīmē nodaļu, iekārtu vai darba vietu. Tās izveido sadaļā {p}; pēc tam izvēlies tās virs kalendāra un pieskaries dienām, arī kopā ar maiņu.
+Kā atrast dienu, piezīmi vai birku?
+Pārslēdzies uz saraksta skatu ar pogu blakus ātrajām maiņām: parādās meklēšana piezīmēs un birkās. Cilne {a} rāda visa gada kopsummas pa mēnešiem.
+Stundas, līgums un alga
+Ko nozīmē brīdinājumi mēneša beigās?
+Lietotne pārbauda tavas valsts noteikumus: minimālo atpūtu starp divām maiņām, vidējās stundas nedēļā, septiņas darba dienas pēc kārtas. Ja tavs līgums ir citāds, maini vērtības sadaļā {p}.
+Kā darbojas stundu banka?
+Sadaļā {p} norādi līguma stundas nedēļā, no kura brīža skaitīt un, ja vajag, sākuma atlikumu. Lietotne salīdzina nostrādātās stundas ar paredzētajām un rāda atlikumu mēneša kopsavilkumā.
+Kā sekot atvaļinājumam un brīvajam laikam?
+Sadaļā {p} ieraksti, cik atvaļinājuma dienu un brīvā laika stundu tev pienākas gadā. Lietotne skaita izmantotās un plānotās un pasaka, cik vēl palicis.
+Kā darbojas algas aprēķins?
+Sadaļā {p} ieraksti bruto stundas likmi un piemaksas. Tas ir orientējošs aprēķins tikai tev: tas nekad neparādās PDF vai kopīgotajos attēlos, un summas var paslēpt.
+Kā ierakstīt dežūru?
+Ieslēdz to sadaļā {p}. Virs kalendāra parādās poga {a}: izvēlies to un pieskaries dienām, arī brīvdienām. Izsaukuma stundas ieraksti dienas kartītē; piemaksu iestata sadaļā {q}.
+Man ir otrs darbs: kā to turēt atsevišķi?
+Ieslēdz to sadaļā {p}, ar nosaukumu, ilgumu un algu. Tā maiņām ir savas ātrās pogas, un tās redzamas dienās otrajā rindā. Stundas un algu skaita atsevišķi, un mēneša PDF var izveidot katram darbam.
+Kā pārbaudīt algas lapiņu?
+Sadaļā {p} izvēlies mēnesi un ielādē PDF: lietotne nolasa virsstundas, nakts un svētku darbu, atvaļinājumu, brīvo laiku, bruto un izmaksājamo summu un salīdzina tās ar ierakstītajām stundām. Ja lapiņa ir uz papīra, ievadi skaitļus ar roku.
+Algas lapiņu nenolasa vai skaitļi nesakrīt: ko darīt?
+Ja PDF ir skenējums vai foto, tajā nav teksta, ko nolasīt: ievadi skaitļus ar roku. Ja tas ir aizsargāts, lietotne prasīs paroli. Vienmēr pārbaudi izceltos skaitļus un ieslēdz {a}, ja uzņēmums virsstundas un piemaksas maksā nākamajā mēnesī.
+Kopīgošana un eksports
+Kā kādam nosūtīt savas nedēļas maiņas?
+Sadaļā {p} izvēlies nedēļu un nosūti to kā attēlu vai tekstu, piemēram, tērzēšanā.
+Kā izdrukāt mēnesi?
+Sadaļā {p} izvēlies mēnesi: saņem A4 lapu ar kalendāru un kopsummām drukāšanai vai nosūtīšanai.
+Kā ielikt maiņas Google kalendārā, Apple kalendārā vai Outlook?
+Sadaļā {p} izvēlies, no kura brīža, cik mēnešus un ko iekļaut, tad atver failu ar savu kalendāru: tajā pašā ekrānā ir soļi katram. Ja to pašu periodu eksportē vēlreiz, maiņas parasti tiek atjauninātas, nevis dublētas.
+Dati, lietotne un iestatījumi
+Kur glabājas manas maiņas?
+Tikai šajā ierīcē, pārlūkā. Konts nav vajadzīgs, un nekas netiek sūtīts uz serveri.
+Kā izveidot kopiju vai pāriet uz citu tālruni?
+Ar {p} saņem failu ar maiņām un iestatījumiem. Otrā tālrunī atver lietotni un izmanto {q}. Punkts uz {a} atgādina, kad ir laiks veidot kopiju.
+Ja izdzēšu pārlūka datus, vai pazaudēšu maiņas?
+Jā, ja tev nav kopijas. Tāpēc ir vērts ik pa laikam saglabāt kopiju, īpaši pirms tālruņa maiņas.
+Kā instalēt lietotni tālrunī?
+iPhone tālrunī atver lietotni Safari, pieskaries Kopīgot un tad Pievienot sākuma ekrānam. Android tālrunī atver Chrome izvēlni un izvēlies Instalēt lietotni vai Pievienot sākuma ekrānam. Pēc instalēšanas tā darbojas arī bez interneta.
+Kā atjaunināt lietotni?
+Kad ir jauna versija, augšā parādās paziņojums: pieskaries {a}. Tavas maiņas paliek savā vietā.
+Kā mainīt valsti, svētkus, valodu vai motīvu?
+Sadaļā {p} izvēlies valsti un reģionu svētkiem, valodu un gaišo vai tumšo motīvu. Vietējos svētkus, ko lietotne nezina, ieraksti kā brīvdienu.
+Aizved mani turp
+Atvērt ceļvedi
+Palīdzība
+Ceļvedis un biežāk uzdotie jautājumi
+Kā ko izdarīt, soli pa solim
+Ceļvedis
+Nekas netika atrasts. Mēģini citus vārdus.
+Meklēt ceļvedī
+Minūtē parādīšu, kā tas darbojas. Vari jebkurā brīdī izlaist un apskatīt ceļvedi vēlreiz no sadaļas Ceļvedis.
+Izvēlies maiņu un pieskaries kalendāra dienām, lai to piešķirtu. Lai beigtu, vēlreiz pieskaries pogai. {a}, {b} un {c} darbojas tāpat.
+Kalendārs
+Pieskaries dienai, lai atvērtu tās kartīti: laiks, virsstundas, brīvais laiks, slimība un piezīmes. Viss saglabājas pats, un vienmēr vari atsaukt apakšā redzamajā ziņā.
+Nākamā maiņa
+Šeit augšā vienmēr redzi nākamo maiņu vai to, kas notiek tagad.
+Mēneša kopsavilkums
+Mēneša nostrādātās stundas, virsstundas, naktis un svētki, ar brīdinājumiem, ja maiņa neievēro atpūtas noteikumus.
+Kalendārs un Gads
+Pārej uz Gads, lai redzētu visa gada kopsummas pa mēnešiem.
+Šeit ir viss pārējais: grafiks, atvaļinājums un brīvais laiks, stundu banka, algas aprēķins, algas lapiņa, mēneša PDF, eksports uz kalendāru, datu kopija un Ceļvedis.
+Valsts un svētki, valoda un gaišais vai tumšais motīvs.
+Sāc ar šīs nedēļas maiņu ierakstīšanu.
+{n} no {m}
+Izlaist
+Sākam
+Skatīt apskatu vēlreiz

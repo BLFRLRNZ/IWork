@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} h
+{h} h {m} min
+{h} h
+{m} min
+Turno
+e
+Mostrar valores
+Ocultar valores
+Horas trabalhadas
+Horas extra
+Trabalho noturno
+Domingo
+Feriados
+Estimativa bruta indicativa. É só para você: não aparece no PDF nem nas imagens compartilhadas.
+Adicionar os acréscimos
+Seus turnos estão salvos neste dispositivo.
+sem turno
+turno repartido {r}
+turno {r}
+do dia seguinte
+dispensa de {h} horas
+Folga
+Férias
+Apagar
+Criar etiquetas para setores ou postos
+Escolha um turno, uma etiqueta ou ambos e depois toque nos dias. Ou toque em um dia para horários, notas e horas a mais.
+Apagar está ativo.
+Toque nos dias que quer esvaziar e depois toque de novo no botão para terminar.
+Cada dia em que tocar recebe o turno e a etiqueta juntos.
+{x} está ativo.
+Toque nos dias a preencher e, se quiser, escolha também uma etiqueta. Toque de novo no botão para terminar.
+Toque nos dias a preencher. Toque de novo no botão para terminar.
+Etiqueta {x} ativa.
+Toque nos dias com turno para adicioná-la ou removê-la.
+Livre
+descanso inferior a {n} horas
+{x} a mais
+{n} dia encontrado
+{n} dias encontrados
+{h} horas de trabalho
+Nenhum dia com «{q}» nas notas ou nas etiquetas.
+Sábado {s} horas, nos outros dias {w} horas.
+Nota
+Menos de {n} horas de descanso desde o turno anterior
+Em pausa
+Recomeça daqui a <b>{x}</b>. Turno repartido: {r}.
+Próximo turno
+Nenhum turno previsto
+Toque em um dia do calendário e escolha a hora de início: o fim é calculado automaticamente.
+Hoje
+Amanhã
+Ontem
+De turno agora
+Faltam <b>{a}</b> para o fim. Já fez {b}.
+Começa daqui a <b>{x}</b>.
+Repartido: {r}, {h} horas no total.
+Dura {h} horas.
+Apenas {h} horas de descanso entre {a} e {b} (o mínimo é {n}).
+Sete ou mais dias de trabalho seguidos desde {d}.
+Semana de {d}: {h} horas, acima de {n}.
+Em {y} você marcou {n} dia de férias a mais do que tem direito.
+Em {y} você marcou {n} dias de férias a mais do que tem direito.
+Em {y} você marcou {h} horas de dispensa a mais do que tem direito.
+Total de {m}
+horas em {n} turno
+horas em {n} turnos
+Horas a mais
+Horas noturnas, {r}
+Sábados trabalhados
+Domingos e feriados
+Férias no mês
+Férias restantes em {y}
+Férias em {y}
+Dispensas no mês
+Dispensas restantes
+Doença
+Banco de horas no fim do mês
+Banco de horas hoje
+Estimativa de salário de {m}
+Horas por semana
+A barra fica cheia às {n} horas.
+Verificar
+Total do mês
+E mais {n} avisos: você os encontra no app.
+{h} horas
+Turnos
+Horas noturnas
+Dom. e feriados
+Dispensas
+Banco de horas
+Turno normal {w} horas, sábado {s} horas. Criado com {app} em {d}.
+Folgas e ausências
+Noite
+Tarde
+Manhã
+Editar as etiquetas
+Criar etiquetas para setores, máquinas ou postos
+Turno de {a} horas. Usar a duração normal de {b} horas
+Horas a mais ou a menos em relação às {h}
+Dia inteiro.
+O resto do dia conta como trabalhado normalmente. As horas de dispensa são descontadas do seu saldo.
+pausa {x}
+{h} noturnas
+Turno normal de {h} horas porque é sábado.
+Turno normal de {h} horas.
+Dia esvaziado.
+As etiquetas vão nos dias com turno: escolha também um turno.
+Atenção: em {y} você passou das férias a que tem direito.
+Usou todas as férias de {y}.
+Você ainda tem {n} dia de férias em {y}.
+Você ainda tem {n} dias de férias em {y}.
+Atenção: em {y} você passou das dispensas a que tem direito.
+Você ainda tem {h} horas de dispensa em {y}.
+h
+Nome do turno rápido {n}
+Nome
+Excluir o turno rápido {n}
+Início do turno rápido {n}
+Duração da primeira parte em horas
+Duração do turno rápido {n} em horas
+Metade
+Normal
+Repartido
+Recomeça às, turno rápido {n}
+Duração da segunda parte em horas
+O resto
+No máximo {n} turnos rápidos
++ Adicionar turno rápido
+Turno rápido «{x}» excluído.
+Ex. Setor A, Prensa 3, Caixa 2
+Etiqueta {n}
+Excluir a etiqueta {n}
+Etiqueta «{x}» retirada de {n} dia.
+Etiqueta «{x}» retirada de {n} dias.
+sem nome
+Etiqueta «{x}» excluída.
+Ano
+Total de {y}
+Folgas marcadas
+Estimativa de salário de {y}
+Etiquetas em {y}
+{n} dia
+{n} dias
+Para procurar dias concretos, use a vista de lista no calendário.
+Este ano ainda não começou.
+O banco de horas começa em {d}.
+Saldo em {d}.
+Saldo até hoje.
+Trabalhou mais horas do que as do contrato.
+Trabalhou menos horas do que as do contrato.
+Está em dia com o contrato.
+Contrato <b>{h} h</b> por semana
+Desde <b>{d}</b>
+Saldo inicial <b>{h} h</b>
+Alterar as configurações do banco de horas
+Usadas
+Usadas
+Previstas
+Previstas
+Direito
+dias marcados em {y}
+horas marcadas em {y}
+Indique a quantas você tem direito
+dias a mais
+horas a mais
+dias restantes de {x}
+horas restantes de {x}
+{a} usados, {b} previstos de {c}
+Você marcou mais férias do que tem direito.
+Você marcou mais dispensas do que tem direito.
+Você já usou todas.
+Você já usou todas.
+Estão quase acabando.
+Estão quase acabando.
+Horas por mês
+{m}: {h} horas. Abrir o mês
+Mês
+Horas
+A mais
+Disp.
+Banco
+Total
+Mês a mês
+Toque em um mês para o abrir no calendário. A coluna Banco mostra quanto cada mês acrescentou ou retirou.
+Passo {n}
+Menos um dia
+Mais um dia
+Excluir o passo {n}
+Não há dias a preencher com estas opções.
+Escolha o dia de início.
+Ciclo de <b>{a}</b>. Preencho <b>{b}</b> de {c} a {d}:
+Aplicar a {n} dia
+Aplicar a {n} dias
+{n} semana
+{n} semanas
+Rotação aplicada a {n} dia.
+Rotação aplicada a {n} dias.
+Os meus turnos, semana de {d}:
+livre
+Os meus turnos
+{h} horas em {n} turno
+{h} horas em {n} turnos
+Criado com {app}
+Esta semana
+Próxima semana
+Semana passada
+Daqui a {n} semana
+Daqui a {n} semanas
+Há {n} semana
+Há {n} semanas
+Turnos copiados: cole em uma mensagem.
+Copiar não está disponível aqui.
+Não foi possível criar a imagem.
+Ainda não há nenhuma semana para repetir.
+A semana seguinte já está preenchida.
+Semana de {a} repetida na de {b}.
+Última cópia salva em {d}.
+Você ainda não salvou nenhuma cópia.
+Seus turnos ({n} dia) estão só neste dispositivo: salve uma cópia de vez em quando, por exemplo no iCloud Drive, no Google Drive ou em um e-mail para você mesmo, para não os perder se mudar de celular.
+Seus turnos ({n} dias) estão só neste dispositivo: salve uma cópia de vez em quando, por exemplo no iCloud Drive, no Google Drive ou em um e-mail para você mesmo, para não os perder se mudar de celular.
+Arquivo baixado.
+O download falhou.
+{n} turno
+{n} turnos
+vazio
+Criar o PDF de {m}
+Não foi possível criar o PDF.
+Cópia dos turnos {app}
+Cópia salva. Guarde em um lugar seguro.
+O arquivo contém {n} dia
+O arquivo contém {n} dias
+de {a} a {b}
+salva em {d}
+Vão substituir os turnos que tem agora ({n} dia), juntamente com as configurações.
+Vão substituir os turnos que tem agora ({n} dias), juntamente com as configurações.
+Serão carregados juntamente com as configurações.
+Este arquivo não é uma cópia do {app}.
+Cópia carregada: {n} dia.
+Cópia carregada: {n} dias.
+Versão {v}.
+Abra o app a partir do seu endereço web para receber atualizações.
+Está disponível a {v}.
+Última verificação: {d}.
+Verificação automática ativa.
+Está disponível o {app} {v}
+Atualize para ter as últimas novidades. Seus turnos ficam onde estão.
+Abra o app a partir do seu endereço web para procurar atualizações.
+Verificando…
+Já tem a versão mais recente ({v}).
+Não consigo verificar as atualizações: verifique a ligação.
+Procurar atualizações
+Atualizando…
+Dispensa
+Doença
+Ano Novo
+Epifania
+Libertação
+Dia do Trabalhador
+Festa da República
+Assunção
+Todos os Santos
+Imaculada Conceição
+Natal
+Santo Estêvão
+São Francisco
+Domingo de Páscoa
+Segunda-feira de Páscoa
+iWork
+Calendário
+As alterações são salvas automaticamente.
+Início do turno
+Turno repartido, em duas partes
+Primeira parte
+Recomeça às
+Segunda parte
+Fim do turno
+Horas a mais ou a menos
+Horas de dispensa
+Etiquetas
+Esvaziar o dia
+Concluído
+Configurações
+Cada alteração é salva automaticamente.
+Horas do turno normal
+Horas do turno de sábado
+Os turnos rápidos e as etiquetas são criados e editados em Ferramentas, o botão com três pontos.
+Férias e dispensas
+Férias por ano
+dias
+Dispensas por ano
+Quantas você tem direito em um ano, incluindo as que sobraram do ano anterior. Com 0 o contador fica desligado.
+Horas semanais do contrato
+Contar a partir de
+Saldo inicial
+O banco de horas compara as horas trabalhadas com as do contrato, dia a dia até hoje. Férias, dispensas, doença, domingos e feriados não contam como horas em falta.
+Salário
+Salário bruto por hora
+€/h
+Noturno 22–06
+Os acréscimos se somam: uma hora noturna no domingo recebe o acréscimo noturno e o de domingo. Se um feriado cair num domingo, vale só o de feriado. A estimativa fica neste dispositivo e não aparece no PDF nem nas imagens compartilhadas.
+Idioma
+Aparência
+Automático
+Claro
+Escuro
+Atualizações
+Ferramentas
+Preencher turnos
+Rotação cíclica
+Um esquema que se repete, ao longo de várias semanas
+Repetir a última semana
+Copiar os turnos para a semana seguinte
+Personalizar
+Turnos rápidos
+Os botões para atribuir um turno com um toque
+Setores, máquinas, postos para atribuir com um toque
+Compartilhar e exportar
+Compartilhar a semana
+Imagem ou texto, qualquer semana
+PDF do mês
+O mês que quiser, pronto a imprimir
+Cópia de segurança
+Salvar uma cópia dos turnos
+Um arquivo com todos os turnos e configurações
+Carregar uma cópia
+Recupere os turnos de um arquivo salvo antes
+Fechar
+São os botões acima do calendário: escolha um e toque nos dias para atribuí-lo. Aqui você os cria, renomeia e muda horários e duração. Cada alteração é salva automaticamente.
+Deixe a duração vazia para usar a normal (8 horas, 6 ao sábado). Uma duração própria vale para todos os dias. Com «Repartido» o turno tem duas partes, por exemplo 8–12 e 16–20.
+Setores, máquinas, postos ou o que precisar. Aparecem na segunda fileira acima do calendário: escolha uma e toque nos dias para atribuí-la, também junto com um turno. Cada alteração é salva automaticamente.
++ Adicionar etiqueta
+Carregar esta cópia?
+Cancelar
+Substituir os turnos
+Construa o esquema que se repete, por exemplo 5 manhãs, 2 folgas, 5 tardes, 2 folgas, e aplique-o a várias semanas de uma vez.
+Esquema
++ Adicionar passo
+A partir do dia
+Durante quantas semanas
+Não alterar os dias já preenchidos
+Deixar os domingos livres
+Aplicar
+Voltar a esta semana
+Copiar como texto
+Compartilhar imagem
+Escolha o mês: você recebe o calendário com os turnos e os totais em uma folha A4 pronta para imprimir.
+Mais tarde
+Atualizar
+Tela
+Mês anterior
+Mês seguinte
+Entrada rápida
+Vista
+Vista de calendário
+Vista de lista
+Etiquetagem rápida
+Procurar nas notas e etiquetas
+Resumo do ano
+Ano anterior
+Ano seguinte
+Tipo de dia
+Menos meia hora
+Mais meia hora
+Ex. troca de turno com o Marco, setor B
+Tema
+Menos uma semana
+Mais uma semana
+Semana anterior
+Semana seguinte
+Pré-visualização da imagem com os turnos da semana
+Desfazer
+{x}, festa do padroeiro
+Festa do padroeiro
+{x} (dia de compensação)
+Nenhuma em especial
+Nenhum
+Outra data…
+Regras de {c}: pelo menos {r} horas de descanso entre dois turnos, em média no máximo {w} horas por semana, descanso semanal de {k} horas. Primeiro dia da semana: {d}.
+País e feriados
+País
+Região ou província
+Santo padroeiro
+Dia
+A festa do padroeiro conta como feriado no calendário, no banco de horas e no salário. Confirme a data com seu contrato ou seu município.
+{c}: pelo menos {r} horas de descanso entre dois turnos, em média no máximo {w} horas por semana, descanso semanal de {k} horas. Primeiro dia da semana: {d}.
+Noturno {r}
+Começar
+Próximo
+Novidade: idioma e país
+Boas-vindas ao {app}
+Escolha o idioma e o país: o app se configura com as regras e os feriados certos. Seus turnos ficam onde estão.
+O calendário dseus turnos. Escolha o idioma.
+Onde trabalha?
+Serve para feriados, descanso mínimo, horas noturnas e moeda.
+Procurar um país
+Sua região
+Alguns feriados só valem em uma região ou cidade. Você pode pular esta etapa e mudar depois.
+Se sua cidade não estiver na lista, pode introduzir a data nas Configurações.
+Quanto dura um turno?
+Assim você escolhe só a hora de início e o fim é calculado automaticamente. Dá para mudar a qualquer momento.
+Turno normal
+Turno de sábado
+Tudo pronto
+É assim que o app está configurada. Você pode mudar tudo nas Configurações.
+{w} horas, sábado {s}
+Descanso mínimo
+Média máxima
+{h} horas por semana
+Os avisos sobre descansos e horas são indicativos e não substituem seu contrato.
+Voltar
+Regras usadas nos avisos e nas contas
+h/sem.
+Noite a partir das
+Noite até às
+Seu contrato pode ser mais favorável do que a lei: aqui pode adaptar as regras.
+Voltar às regras do país
+{x}, feriado local
+Feriado local
+Um feriado dseu município ou dseu contrato: conta como feriado no calendário, no banco de horas e no salário.
+Se um feriado cair num domingo, o empregador marca um dia de compensação.
+O Grundlovsdag (5 de junho) e a véspera de Natal não são feriados por lei, mas muitos contratos preveem-nos.
+A segunda-feira de Pentecostes muitas vezes é a «jornada de solidariedade» e se trabalha.
+Na Baviera, a Assunção só é feriado nos municípios de maioria católica.
+A Sexta-feira Santa e o 5 de maio só são livres se a convenção coletiva (CAO) o previr.
+A terça-feira de Carnaval é facultativa; cada município tem ainda o seu feriado municipal.
+Desde 2025 o 17 de novembro já não é feriado; em 2026 também se trabalha a 8 de maio e a 15 de setembro.
+Cada comunidade autônoma acrescenta seus feriados (muitas vezes a Quinta-feira Santa) e muda de ano para ano: adicione o seu como feriado local.
+As vésperas (Midsommarafton, Julafton, Nyårsafton) não são feriados por lei, mas são livres quase em todo o lado.
+O limite de 45 horas vale para a indústria, escritórios, pessoal técnico e grande distribuição; para os outros é 50. Em alguns municípios (Friburgo, Soleura, Argóvia) os feriados mudam: adicione o seu como feriado local.
+No Reino Unido os bank holidays não são um direito legal: depende do contrato. É possível renunciar por escrito ao limite de 48 horas (opt-out).
+Horários e descansos seguem sobretudo as convenções coletivas de San Marino: verifique os valores abaixo.
+Se um feriado cair num domingo, a segunda-feira é livre.
+O limite de 45 horas vale para a indústria, escritórios e grande distribuição; para os outros é 50.
+{c}: a lei não fixa um descanso mínimo entre dois turnos. O app avisa abaixo de {r} horas e acima de {w} horas por semana. Primeiro dia da semana: {d}.
+Os feriados federais só valem por lei para os funcionários públicos federais: no privado depende do contrato. Cada estado tem os seus feriados: adicione o seu como feriado local.
+Horários e descansos podem mudar de província para província: verifique os valores abaixo. Terra Nova e Labrador ainda não está incluída.
+Os dias de eleições federais e locais também são feriados para quem tem de votar.
+Carnaval e Corpus Christi são ponto facultativo; cada estado e município acrescenta os seus feriados: adicione o seu como feriado local.
+O governo pode mudar os feriados trasladables (17 de junho, 17 de agosto, 12 de outubro, 20 de novembro) e acrescentar dias não úteis: aqui vê as datas fixadas por lei.
+Muitas convenções (awards) preveem 10 horas de descanso entre dois turnos. Alguns feriados só valem em certas zonas (Royal Show, Regatta, Recreation Day): pode adicionar o seu como feriado local.
+Cada província tem seu Anniversary Day: se a sua não estiver na lista, adicione como feriado local.
+Nenhum
+Horas e contrato
+Horário de trabalho
+Duração dos turnos, descanso mínimo, horas noturnas
+Quantos dias e horas você tem direito
+Horas do contrato e saldo inicial
+Estimativa de salário
+Salário por hora e acréscimos, só para você
+Segundo emprego
+Sobreaviso
+Sobreaviso ativo.
+Toque nos dias para adicionar ou tirar, inclusive nos dias de folga. Você pode escolher junto com um turno.
+Cada dia que você tocar recebe turno e sobreaviso juntos.
+{h} h de acionamento
+Horas de acionamento
+O segundo emprego tem contas separadas: não entra no banco de horas, nas férias nem nos avisos do emprego principal.
+Emprego principal
+Criado com {app} em {d}.
+Emprego do turno rápido {n}
+{n} mês
+{n} meses
+Turnos de {x}
+<b>{n}</b> de {a} a {b}.
+{n} evento
+{n} eventos
+Nenhum turno para exportar de {a} a {b}.
+A partir das
+Duração
+Acionamento
+As horas de acionamento contam como trabalhadas e, na estimativa de salário, são pagas como hora extra.
+Início
+Outro emprego com horários e contas separados
+Exportar para a agenda
+Google, Apple ou Outlook Calendar
+Faço sobreaviso
+Normalmente a partir das
+Acima do calendário aparece o botão Sobreaviso: escolha e toque nos dias, inclusive nos de folga. As horas de acionamento você registra tocando no dia.
+Adicional de sobreaviso
+Por plantão de sobreaviso. As horas de acionamento são pagas como hora extra.
+Tenho um segundo emprego
+Duração habitual
+Os turnos do segundo emprego aparecem numa segunda linha nos mesmos dias, com um quadradinho verde-água. Você os atribui com os turnos rápidos do segundo emprego ou tocando em um dia. Horas e salário são contados à parte: não entram no banco de horas, nas férias nem nos avisos do emprego principal.
+Escolha para cada turno rápido se é do emprego principal ou do segundo emprego. Os turnos do segundo emprego têm um quadradinho verde-água.
+Crie um arquivo com seus turnos para abrir no Google Agenda, no Calendário da Apple ou no Outlook.
+Quantos meses
+O que exportar
+Turnos de trabalho
+Férias, dispensas e licença médica, como dia inteiro
+Lembrete
+30 minutos antes
+1 hora antes
+2 horas antes
+Como abrir na sua agenda
+iPhone, iPad e Mac.
+Abra o arquivo e escolha Adicionar Todos, depois o calendário onde colocar.
+Google Agenda.
+No computador, abra calendar.google.com, vá em Configurações, Importar e exportar, e envie o arquivo. No Android você também pode abrir direto com o Google Agenda.
+Outlook.
+Abra o arquivo com o Outlook, ou em outlook.com vá ao calendário, Adicionar calendário, Carregar do arquivo.
+Se você exportar de novo o mesmo período, os turnos já importados costumam ser atualizados em vez de duplicados. Os dias que você esvaziou no app precisam ser removidos à mão. Dica: use uma agenda só para os turnos, assim você pode esvaziá-la e importar de novo quando mudarem.
+Criar o arquivo
+Ex. Bar, Aulas, Entregas
+Um mês a menos
+Um mês a mais
+Emprego
+Horas extras
+Férias tiradas
+Dispensas usadas
+Total bruto
+{n} diferença em relação às horas registradas
+{n} diferenças em relação às horas registradas
+As verbas do holerite batem com o que você registrou.
+Registradas
+No holerite
+{v} a menos no holerite
+{v} a mais no holerite
+Estimativa do app, apenas indicativa
+Holerite de {a}: as horas são comparadas com {b}.
+Holerite de {m}
+registradas {a}, no holerite {b}
+Líquido a receber
+Abrir o holerite
+holerite inserido
+sem holerite
+Enviar o PDF de {m}
+Holerite de {m} excluído.
+Lendo o holerite…
+Senha errada, tente de novo.
+O PDF está protegido por senha. Muitas vezes é o seu CPF ou uma senha passada pela empresa.
+Não consigo carregar o leitor de PDF. Verifique a conexão e tente de novo.
+Não consigo abrir este arquivo. É um PDF?
+Este PDF não tem texto, talvez seja uma digitalização ou uma foto. Digite os números à mão.
+Não reconheci as verbas deste holerite. Digite os números à mão: só os que interessam.
+horas extras
+adicional noturno
+domingos e feriados
+férias tiradas
+dispensas usadas
+férias restantes
+dispensas restantes
+total bruto
+líquido
+Holerite de {m}.
+Li: {x}.
+Confira os números destacados e complete à mão os que faltam.
+Parece um holerite com 13º salário: confira bem o total bruto.
+O arquivo é grande demais para ser um holerite.
+Holerite
+Conferir horas e verbas pagas
+Envie o PDF do holerite ou digite os números: o app compara com as horas que você registrou.
+Senha do PDF
+Abrir
+O PDF é lido só neste dispositivo e não é salvo: o app guarda apenas os números abaixo.
+No holerite
+Férias restantes
+Horas extras e adicionais são do mês anterior
+Muitas empresas pagam horas extras, adicional noturno e feriados no mês seguinte. Se for o seu caso, ative: a comparação vai usar o mês certo.
+Excluir
+Registrar os turnos
+Como registro um turno?
+Acima do calendário escolha um turno rápido, por exemplo {a}, e toque nos dias: cada um recebe esse turno. Toque de novo no botão para terminar. Para outro horário, toque no dia e digite o início e a duração.
+Como altero ou limpo um dia?
+Toque no dia: na ficha você muda tipo, horário, horas a mais ou a menos, etiquetas e nota, e tudo é salvo sozinho. {a} apaga o dia. Para limpar vários, escolha {b} acima do calendário e toque nos dias. Depois de cada alteração você pode desfazer pela mensagem embaixo.
+Como registro folgas, férias, dispensas e licença médica?
+{a} e {b} têm seu próprio botão acima do calendário: escolha e toque nos dias. Para {c} ou {d} toque no dia e escolha o tipo na ficha; numa dispensa você informa também as horas.
+Como registro horas extras ou um turno dividido?
+Na ficha do dia use {a} para horas extras ou saída antecipada. Com {b} você informa as duas partes, por exemplo 8–12 e 16–20.
+Como crio meus turnos rápidos?
+Abra {p} e escolha nome, horário de início e duração de cada botão. Podem ser turnos divididos e, se você tiver um segundo emprego, pertencer a esse emprego.
+Faço sempre a mesma escala: o calendário pode se preencher sozinho?
+Sim: em {p} descreva a escala (por exemplo 5 manhãs, 2 folgas, 5 noites, 2 folgas), o dia de início e até quando. Com {q} você copia uma semana para a seguinte.
+Para que servem as etiquetas?
+Servem para marcar setor, máquina ou posto. Você cria em {p}; depois escolhe acima do calendário e toca nos dias, também junto com um turno.
+Como encontro um dia, uma nota ou uma etiqueta?
+Passe para a visualização em lista com o botão ao lado dos turnos rápidos: aparece a busca nas notas e etiquetas. A aba {a} mostra os totais do ano inteiro, mês a mês.
+Horas, contrato e salário
+O que significam os avisos no fim do mês?
+O app confere as regras do seu país: descanso mínimo entre dois turnos, média de horas semanais, sete dias de trabalho seguidos. Se o seu contrato for diferente, mude os valores em {p}.
+Como funciona o banco de horas?
+Em {p} informe as horas semanais do contrato, a partir de quando contar e um eventual saldo inicial. O app compara as horas trabalhadas com as devidas e mostra o saldo no resumo do mês.
+Como controlo férias e dispensas?
+Em {p} informe quantos dias de férias e quantas horas de dispensa você tem por ano. O app conta os usados e os programados e diz quantos sobram.
+Como funciona a estimativa de salário?
+Em {p} informe o salário bruto por hora e os adicionais. É uma estimativa aproximada, só para você: nunca aparece no PDF nem nas imagens compartilhadas, e você pode ocultar os valores.
+Como registro o sobreaviso?
+Ative em {p}. Acima do calendário aparece o botão {a}: escolha e toque nos dias, inclusive nas folgas. As horas de acionamento você registra na ficha do dia; o adicional se configura em {q}.
+Tenho um segundo emprego: como mantenho separado?
+Ative em {p}, com nome, duração e salário. Os turnos dele têm botões rápidos próprios e aparecem como segunda linha nos dias. Horas e salário são contados à parte e o PDF do mês pode ser feito para cada emprego.
+Como confiro meu holerite?
+Em {p} escolha o mês e envie o PDF: o app lê horas extras, adicional noturno, feriados, férias, dispensas, bruto e líquido e compara com as horas registradas. Se o holerite for em papel, digite os números à mão.
+O holerite não é lido ou os números não batem: o que faço?
+Se o PDF for uma digitalização ou foto, não tem texto para ler: digite os números à mão. Se for protegido, o app pede a senha. Confira sempre os números destacados e ative {a} se a empresa pagar horas extras e adicionais no mês seguinte.
+Compartilhar e exportar
+Como envio para alguém meus turnos da semana?
+Em {p} escolha a semana e envie como imagem ou como texto, por exemplo numa conversa.
+Como imprimo um mês?
+Em {p} escolha o mês: você recebe uma folha A4 com calendário e totais, para imprimir ou enviar.
+Como coloco meus turnos no Google Agenda, no Calendário da Apple ou no Outlook?
+Em {p} escolha a partir de quando, quantos meses e o que incluir, e abra o arquivo com sua agenda: na mesma tela estão os passos para cada uma. Se exportar de novo o mesmo período, os turnos costumam ser atualizados em vez de duplicados.
+Dados, app e configurações
+Onde ficam salvos meus turnos?
+Só neste aparelho, no navegador. Não precisa de conta e nada é enviado para um servidor.
+Como faço uma cópia ou passo para outro celular?
+Com {p} você recebe um arquivo com turnos e configurações. No outro celular abra o app e use {q}. O pontinho em {a} lembra você quando é hora de fazer uma.
+Se eu apagar os dados do navegador, perco os turnos?
+Sim, se você não tiver uma cópia. Por isso vale salvar uma de vez em quando, principalmente antes de trocar de celular.
+Como instalo o app no celular?
+No iPhone abra o app no Safari, toque em Compartilhar e depois em Adicionar à Tela de Início. No Android abra o menu do Chrome e escolha Instalar app ou Adicionar à tela inicial. Depois de instalado funciona também sem internet.
+Como atualizo o app?
+Quando sai uma versão nova aparece um aviso no alto: toque em {a}. Seus turnos continuam onde estão.
+Como mudo país, feriados, idioma ou tema?
+Em {p} escolha país e estado para os feriados, o idioma e o tema claro ou escuro. Feriados locais que o app não conhece, registre como folga.
+Me leve até lá
+Abrir o guia
+Ajuda
+Guia e perguntas frequentes
+Como fazer as coisas, passo a passo
+Guia
+Nenhuma resposta encontrada. Tente outras palavras.
+Buscar no guia
+Mostro em um minuto como funciona. Você pode pular quando quiser e rever o tour pelo Guia.
+Escolha um turno e toque nos dias do calendário para atribuí-lo. Toque de novo no botão para terminar. {a}, {b} e {c} funcionam do mesmo jeito.
+O calendário
+Toque em um dia para abrir a ficha: horário, horas extras, dispensas, licença médica e notas. Tudo é salvo sozinho e você sempre pode desfazer pela mensagem embaixo.
+O próximo turno
+Aqui em cima você sempre vê o próximo turno, ou o que está em andamento.
+O resumo do mês
+Horas trabalhadas, horas extras, noites e feriados do mês, com avisos quando um turno não respeita as regras de descanso.
+Calendário e Ano
+Passe para Ano para ver os totais do ano inteiro, mês a mês.
+Aqui está todo o resto: escala, férias e dispensas, banco de horas, estimativa de salário, holerite, PDF do mês, exportação para a agenda, cópia dos dados e o Guia.
+País e feriados, idioma e tema claro ou escuro.
+Comece registrando os turnos desta semana.
+{n} de {m}
+Pular
+Vamos lá
+Rever o tour guiado

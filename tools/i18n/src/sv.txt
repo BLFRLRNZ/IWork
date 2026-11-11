@@ -1,0 +1,639 @@
+{n} d
+{d} d {h} h
+{h} h {m} min
+{h} h
+{m} min
+Pass
+och
+Visa belopp
+Dölj belopp
+Arbetade timmar
+Övertid
+Nattarbete
+Söndag
+Helgdagar
+Ungefärlig bruttouppskattning. Bara för dig: den syns inte i pdf:en eller i delade bilder.
+Lägg till tillägg
+Dina pass sparas på den här enheten.
+inget pass
+delat pass {r}
+pass {r}
+nästa dag
+{h} timmar ledighet
+Ledig
+Semester
+Rensa
+Skapa etiketter för avdelningar eller arbetsplatser
+Välj ett pass, en etikett eller båda och tryck sedan på dagarna. Eller tryck på en dag för tider, anteckningar och extratimmar.
+Rensa är på.
+Tryck på dagarna som ska tömmas och tryck sedan på knappen igen för att avsluta.
+Varje dag du trycker på får pass och etikett samtidigt.
+{x} är på.
+Tryck på dagarna som ska fyllas i och välj gärna en etikett också. Tryck på knappen igen för att avsluta.
+Tryck på dagarna som ska fyllas i. Tryck på knappen igen för att avsluta.
+Etiketten {x} är på.
+Tryck på dagar med pass för att lägga till eller ta bort den.
+Ledig
+vila under {n} timmar
+{x} extra
+{n} dag hittades
+{n} dagar hittades
+{h} timmar arbete
+Inga dagar med ”{q}” i anteckningar eller etiketter.
+Lördag {s} timmar, övriga dagar {w} timmar.
+Anteckning
+Mindre än {n} timmars vila sedan förra passet
+Paus
+Tillbaka om <b>{x}</b>. Delat pass: {r}.
+Nästa pass
+Inga planerade pass
+Tryck på en dag i kalendern och välj starttid: sluttiden räknas ut automatiskt.
+I dag
+I morgon
+I går
+I tjänst nu
+<b>{a}</b> kvar. Du har gjort {b}.
+Börjar om <b>{x}</b>.
+Delat: {r}, totalt {h} timmar.
+Varar {h} timmar.
+Bara {h} timmars vila mellan {a} och {b} (minimum är {n}).
+Sju eller fler arbetsdagar i rad från {d}.
+Veckan {d}: {h} timmar, över {n}.
+{y} har du markerat {n} semesterdag mer än du har rätt till.
+{y} har du markerat {n} semesterdagar mer än du har rätt till.
+{y} har du markerat {h} timmar ledighet mer än du har rätt till.
+Totalt {m}
+timmar på {n} pass
+timmar på {n} pass
+Extratimmar
+Nattimmar, {r}
+Arbetade lördagar
+Sön- och helgdagar
+Semester i månaden
+Semester kvar {y}
+Semester {y}
+Ledighet i månaden
+Ledighet kvar
+Sjuk
+Timbank vid månadens slut
+Timbank i dag
+Löneuppskattning {m}
+Timmar per vecka
+Stapeln är full vid {n} timmar.
+Att kontrollera
+Månadens summa
+Och {n} varningar till: du hittar dem i appen.
+{h} timmar
+Pass
+Nattimmar
+Sön- o. helgd.
+Ledighet
+Timbank
+Normalpass {w} timmar, lördag {s} timmar. Skapad med {app} den {d}.
+Ledigt och frånvaro
+Natt
+Kväll
+Morgon
+Redigera etiketter
+Skapa etiketter för avdelningar, maskiner eller arbetsplatser
+Pass på {a} timmar. Använd normallängden {b} timmar
+Timmar mer eller mindre än {h}
+Hel dag.
+Resten av dagen räknas som vanligt arbetad. Ledighetstimmarna dras från det du har rätt till.
+paus {x}
+{h} på natten
+Normalpass på {h} timmar eftersom det är lördag.
+Normalpass på {h} timmar.
+Dagen tömd.
+Etiketter hör till dagar med pass: välj ett pass också.
+Obs: {y} har du gått över den semester du har rätt till.
+Du har tagit ut all semester för {y}.
+Du har {n} semesterdag kvar {y}.
+Du har {n} semesterdagar kvar {y}.
+Obs: {y} har du gått över den ledighet du har rätt till.
+Du har {h} timmar ledighet kvar {y}.
+tim
+Namn på snabbpass {n}
+Namn
+Ta bort snabbpass {n}
+Start för snabbpass {n}
+Längd på första delen i timmar
+Längd på snabbpass {n} i timmar
+Hälften
+Normal
+Delat
+Fortsätter kl., snabbpass {n}
+Längd på andra delen i timmar
+Resten
+Högst {n} snabbpass
++ Lägg till snabbpass
+Snabbpasset ”{x}” togs bort.
+T.ex. Avdelning A, Press 3, Kassa 2
+Etikett {n}
+Ta bort etikett {n}
+Etiketten ”{x}” togs bort från {n} dag.
+Etiketten ”{x}” togs bort från {n} dagar.
+namnlös
+Etiketten ”{x}” togs bort.
+År
+Totalt {y}
+Markerade lediga dagar
+Löneuppskattning {y}
+Etiketter {y}
+{n} dag
+{n} dagar
+Använd listvyn i kalendern för att hitta enskilda dagar.
+Året har inte börjat än.
+Timbanken börjar den {d}.
+Saldo den {d}.
+Saldo i dag.
+Du har arbetat fler timmar än avtalet.
+Du har arbetat färre timmar än avtalet.
+Du ligger precis enligt avtalet.
+Avtal <b>{h} h</b> per vecka
+Från <b>{d}</b>
+Start <b>{h} h</b>
+Ändra inställningar för timbanken
+Uttagna
+Uttagna
+Planerade
+Planerade
+Rätt till
+dagar markerade {y}
+timmar markerade {y}
+Ange vad du har rätt till
+dagar för mycket
+timmar för mycket
+dagar kvar av {x}
+timmar kvar av {x}
+{a} uttagna, {b} planerade av {c}
+Du har markerat mer semester än du har rätt till.
+Du har markerat mer ledighet än du har rätt till.
+Allt är slut.
+Allt är slut.
+Snart slut.
+Snart slut.
+Timmar per månad
+{m}: {h} timmar. Öppna månaden
+Månad
+Timmar
+Extra
+Ledigh.
+Bank
+Totalt
+Månad för månad
+Tryck på en månad för att öppna den i kalendern. Kolumnen Bank visar hur mycket varje månad lade till eller drog av.
+Steg {n}
+En dag mindre
+En dag mer
+Ta bort steg {n}
+Inga dagar att fylla i med de här valen.
+Välj startdag.
+Cykel på <b>{a}</b>. Fyller i <b>{b}</b> från {c} till {d}:
+Använd på {n} dag
+Använd på {n} dagar
+{n} vecka
+{n} veckor
+Schemat lades på {n} dag.
+Schemat lades på {n} dagar.
+Mina pass, veckan {d}:
+ledig
+Mina pass
+{h} timmar på {n} pass
+{h} timmar på {n} pass
+Skapad med {app}
+Den här veckan
+Nästa vecka
+Förra veckan
+Om {n} vecka
+Om {n} veckor
+För {n} vecka sedan
+För {n} veckor sedan
+Passen kopierade: klistra in dem i ett meddelande.
+Kopiering går inte här.
+Kunde inte skapa bilden.
+Det finns ingen vecka att upprepa än.
+Nästa vecka är redan ifylld.
+Veckan {a} upprepad på veckan {b}.
+Senaste kopian sparad den {d}.
+Du har inte sparat någon kopia än.
+Dina pass ({n} dag) finns bara på den här enheten: spara en kopia då och då, till exempel i iCloud Drive, Google Drive eller i ett mejl till dig själv, så att du inte förlorar dem om du byter telefon.
+Dina pass ({n} dagar) finns bara på den här enheten: spara en kopia då och då, till exempel i iCloud Drive, Google Drive eller i ett mejl till dig själv, så att du inte förlorar dem om du byter telefon.
+Filen har laddats ned.
+Nedladdningen misslyckades.
+{n} pass
+{n} pass
+tom
+Skapa pdf för {m}
+Kunde inte skapa pdf:en.
+Kopia av pass {app}
+Kopian sparad. Förvara den på ett säkert ställe.
+Filen innehåller {n} dag
+Filen innehåller {n} dagar
+från {a} till {b}
+sparad den {d}
+De ersätter passen du har nu ({n} dag), tillsammans med inställningarna.
+De ersätter passen du har nu ({n} dagar), tillsammans med inställningarna.
+De läses in tillsammans med inställningarna.
+Den här filen är ingen kopia från {app}.
+Kopian inläst: {n} dag.
+Kopian inläst: {n} dagar.
+Version {v}.
+Öppna appen från dess webbadress för att få uppdateringar.
+Version {v} finns.
+Senast kontrollerad: {d}.
+Automatisk kontroll är på.
+{app} {v} finns
+Uppdatera för att få det senaste. Dina pass stannar kvar.
+Öppna appen från dess webbadress för att söka efter uppdateringar.
+Kontrollerar…
+Du har redan senaste versionen ({v}).
+Kan inte söka efter uppdateringar: kontrollera anslutningen.
+Sök efter uppdateringar
+Uppdaterar…
+Ledighet
+Sjuk
+Nyårsdagen
+Trettondedag jul
+Befrielsedagen
+Arbetets dag
+Republikens dag
+Marie himmelsfärd
+Allhelgonadagen
+Obefläckade avlelsen
+Juldagen
+Annandag jul
+Sankt Franciskus
+Påskdagen
+Annandag påsk
+iWork
+Kalender
+Ändringar sparas automatiskt.
+Passets start
+Delat pass, i två delar
+Första delen
+Fortsätter kl.
+Andra delen
+Passets slut
+Timmar mer eller mindre
+Ledighetstimmar
+Etiketter
+Töm dagen
+Klar
+Inställningar
+Varje ändring sparas automatiskt.
+Timmar normalpass
+Timmar lördagspass
+Snabbpass och etiketter skapar och ändrar du under Verktyg, knappen med tre prickar.
+Semester och ledighet
+Semester per år
+dagar
+Ledighet per år
+Det du har rätt till på ett år, inklusive sparat från förra året. Vid 0 är räknaren av.
+Avtalade timmar per vecka
+Räkna från
+Startsaldo
+Timbanken jämför arbetade timmar med avtalade, dag för dag fram till i dag. Semester, ledighet, sjukdom, söndagar och helgdagar räknas inte som saknade timmar.
+Lön
+Bruttotimlön
+€/h
+Natt 22–06
+Tilläggen läggs ihop: en nattimme på söndag får både natt- och söndagstillägg. Om en helgdag infaller på en söndag gäller bara helgdagstillägget. Uppskattningen stannar på den här enheten och syns inte i pdf:en eller i delade bilder.
+Språk
+Utseende
+Automatiskt
+Ljust
+Mörkt
+Uppdateringar
+Verktyg
+Fyll i pass
+Rullande schema
+Ett mönster som upprepas över flera veckor
+Upprepa senaste veckan
+Kopiera passen till nästa vecka
+Anpassa
+Snabbpass
+Knapparna för att lägga in ett pass med ett tryck
+Avdelningar, maskiner, arbetsplatser att tilldela med ett tryck
+Dela och exportera
+Dela veckan
+Bild eller text, vilken vecka som helst
+Månads-pdf
+Valfri månad, klar att skriva ut
+Säkerhetskopia
+Spara en kopia av passen
+En fil med alla pass och inställningar
+Läs in en kopia
+Hämta tillbaka passen från en fil du sparat tidigare
+Stäng
+Det här är knapparna ovanför kalendern: välj en och tryck på dagarna för att lägga in den. Här skapar du dem, byter namn och ändrar tider och längd. Varje ändring sparas automatiskt.
+Lämna längden tom för att använda normallängden (8 timmar, 6 på lördag). En egen längd gäller alla dagar. Med ”Delat” har passet två delar, till exempel 8–12 och 16–20.
+Avdelningar, maskiner, arbetsplatser eller vad du behöver. De visas på andra raden ovanför kalendern: välj en och tryck på dagarna för att tilldela den, även tillsammans med ett pass. Varje ändring sparas automatiskt.
++ Lägg till etikett
+Läsa in den här kopian?
+Avbryt
+Ersätt passen
+Bygg mönstret som upprepas, till exempel 5 morgnar, 2 lediga, 5 kvällar, 2 lediga, och lägg det på flera veckor på en gång.
+Mönster
++ Lägg till steg
+Från dagen
+Hur många veckor
+Rör inte dagar som redan är ifyllda
+Låt söndagarna vara lediga
+Använd
+Tillbaka till den här veckan
+Kopiera som text
+Dela bild
+Välj månad: du får kalendern med pass och summor på ett A4 att skriva ut.
+Senare
+Uppdatera
+Skärm
+Föregående månad
+Nästa månad
+Snabbinmatning
+Vy
+Kalendervy
+Listvy
+Snabbetikettering
+Sök i anteckningar och etiketter
+Årsöversikt
+Föregående år
+Nästa år
+Typ av dag
+En halvtimme mindre
+En halvtimme mer
+T.ex. bytt pass med Markus, avdelning B
+Tema
+En vecka mindre
+En vecka mer
+Föregående vecka
+Nästa vecka
+Förhandsvisning av bilden med veckans pass
+Ångra
+{x}, skyddshelgonets dag
+Skyddshelgonets dag
+{x} (ersättningsdag)
+Ingen särskild
+Inget
+Ett annat datum…
+Regler för {c}: minst {r} timmars vila mellan två pass, i genomsnitt högst {w} timmar per vecka, veckovila på {k} timmar. Veckan börjar på {d}.
+Land och helgdagar
+Land
+Region eller län
+Skyddshelgon
+Dag
+Skyddshelgonets dag räknas som helgdag i kalendern, timbanken och lönen. Kontrollera datumet i ditt avtal eller hos din kommun.
+{c}: minst {r} timmars vila mellan två pass, i genomsnitt högst {w} timmar per vecka, veckovila på {k} timmar. Veckan börjar på {d}.
+Natt {r}
+Kom igång
+Nästa
+Nytt: språk och land
+Välkommen till {app}
+Välj språk och land: appen ställer in rätt regler och helgdagar. Dina pass stannar kvar.
+Kalendern för dina pass. Välj språk.
+Var arbetar du?
+Det styr helgdagar, minsta vila, nattimmar och valuta.
+Sök land
+Ditt område
+Vissa helgdagar gäller bara i en region eller stad. Du kan hoppa över steget och ändra det senare.
+Finns inte din stad med kan du ange datumet under Inställningar.
+Hur långt är ett pass?
+Då väljer du bara starttiden och sluttiden räknas ut automatiskt. Kan ändras när som helst.
+Normalpass
+Lördagspass
+Allt klart
+Så här är appen inställd. Du kan ändra allt under Inställningar.
+{w} timmar, lördag {s}
+Minsta vila
+Högsta genomsnitt
+{h} timmar per vecka
+Varningar om vila och timmar är vägledande och ersätter inte ditt avtal.
+Tillbaka
+Regler för varningar och summor
+h/vecka
+Natt från
+Natt till
+Ditt avtal kan vara förmånligare än lagen: här kan du anpassa reglerna.
+Tillbaka till landets regler
+{x}, lokal helgdag
+Lokal helgdag
+En helgdag i din kommun eller enligt ditt avtal: räknas som helgdag i kalendern, timbanken och lönen.
+Om en helgdag infaller på en söndag bestämmer arbetsgivaren en ersättningsdag.
+Grundlovsdag (5 juni) och julafton är inte lagstadgade helgdagar, men många avtal ger ledigt.
+Annandag pingst är ofta ”solidaritetsdagen” och då arbetar man.
+I Bayern är Marie himmelsfärd helgdag bara i övervägande katolska kommuner.
+Långfredag och 5 maj är lediga bara om kollektivavtalet (CAO) säger det.
+Fettisdagen är frivillig; varje kommun har dessutom sin egen helgdag.
+Sedan 2025 är 17 november inte längre helgdag; 2026 arbetar man även 8 maj och 15 september.
+Varje autonom region lägger till egna helgdagar (ofta skärtorsdagen) och ändrar dem varje år: lägg till din som lokal helgdag.
+Aftnarna (midsommarafton, julafton, nyårsafton) är inte lagstadgade helgdagar men lediga nästan överallt.
+Gränsen på 45 timmar gäller industri, kontor, teknisk personal och stora butikskedjor; för övriga är den 50. I vissa kommuner (Fribourg, Solothurn, Aargau) gäller andra helgdagar: lägg till din som lokal helgdag.
+I Storbritannien är bank holidays ingen laglig rättighet: det beror på avtalet. Man kan skriftligt avstå från gränsen på 48 timmar (opt-out).
+Arbets- och vilotider följer främst San Marinos kollektivavtal: kontrollera värdena nedan.
+Om en helgdag infaller på en söndag är måndagen ledig.
+Gränsen på 45 timmar gäller industri, kontor och stora butikskedjor; för övriga är den 50.
+{c}: lagen anger ingen minsta vila mellan två pass. Appen varnar under {r} timmar och över {w} timmar per vecka. Veckan börjar på {d}.
+Federala helgdagar gäller enligt lag bara för federalt anställda: i privat sektor beror det på avtalet. Varje delstat har egna helgdagar: lägg till din som lokal helgdag.
+Arbets- och vilotider kan skilja mellan provinser: kontrollera värdena nedan. Newfoundland och Labrador är inte med än.
+Dagar med federala och lokala val är också lediga för den som ska rösta.
+Karneval och Kristi lekamens dag är ”ponto facultativo”; varje delstat och kommun lägger till egna helgdagar: lägg till din som lokal helgdag.
+Regeringen kan flytta de flyttbara helgdagarna (17 juni, 17 augusti, 12 oktober, 20 november) och lägga till lediga dagar: här ser du datumen som lagen anger.
+Många avtal (awards) ger 10 timmars vila mellan två pass. Vissa helgdagar gäller bara i vissa områden (Royal Show, Regatta, Recreation Day): du kan lägga till din som lokal helgdag.
+Varje provins har sin Anniversary Day: finns inte din med, lägg till den som lokal helgdag.
+Ingen
+Timmar och avtal
+Arbetstid
+Passlängd, minsta vila, nattimmar
+Hur många dagar och timmar du har rätt till
+Avtalade timmar och startsaldo
+Löneuppskattning
+Timlön och tillägg, bara för dig
+Andra jobb
+Beredskap
+Beredskap på.
+Tryck på dagar för att lägga till eller ta bort den, även lediga dagar. Du kan välja den tillsammans med ett pass.
+Varje dag du trycker på får pass och beredskap samtidigt.
+{h} tim utryckning
+Timmar utryckning
+Det andra jobbet räknas för sig: det ingår inte i huvudjobbets timbank, semester eller varningar.
+Huvudjobb
+Skapad med {app} den {d}.
+Jobb för snabbpass {n}
+{n} månad
+{n} månader
+Pass på {x}
+<b>{n}</b> från {a} till {b}.
+{n} händelse
+{n} händelser
+Inga pass att exportera från {a} till {b}.
+Från
+Längd
+Utryckning
+Timmar med utryckning räknas som arbetade och betalas som övertid i löneuppskattningen.
+Start
+Ett annat jobb med egna tider och summor
+Exportera till kalender
+Google, Apple eller Outlook Kalender
+Jag har beredskap
+Oftast från
+Ovanför kalendern visas knappen Beredskap: välj den och tryck på dagarna, även lediga. Timmar med utryckning fyller du i genom att trycka på dagen.
+Beredskapsersättning
+Per beredskapspass. Timmar med utryckning betalas som övertid.
+Jag har ett andra jobb
+Vanlig längd
+Pass i det andra jobbet visas som en andra rad samma dagar, med en turkos fyrkant. Du lägger in dem med det andra jobbets snabbpass eller genom att trycka på en dag. Timmar och lön räknas för sig: de ingår inte i huvudjobbets timbank, semester eller varningar.
+Välj för varje snabbpass om det hör till huvudjobbet eller det andra jobbet. Pass i det andra jobbet har en turkos fyrkant.
+Skapa en fil med dina pass att öppna i Google Kalender, Apples Kalender eller Outlook.
+Hur många månader
+Vad som exporteras
+Arbetspass
+Semester, ledighet och sjukdom, som heldag
+Påminnelse
+30 minuter innan
+1 timme innan
+2 timmar innan
+Så öppnar du den i din kalender
+iPhone, iPad och Mac.
+Öppna filen och välj Lägg till alla, sedan kalendern de ska hamna i.
+Google Kalender.
+Öppna calendar.google.com på en dator, gå till Inställningar, Importera och exportera, och ladda upp filen. På Android kan du också öppna den direkt med Google Kalender.
+Outlook.
+Öppna filen med Outlook, eller gå på outlook.com till kalendern, Lägg till kalender, Ladda upp från fil.
+Om du exporterar samma period igen uppdateras redan importerade pass oftast i stället för att dubbleras. Dagar du har tömt i appen måste tas bort för hand. Tips: använd en kalender bara för pass, så kan du tömma den och importera igen när de ändras.
+Skapa filen
+T.ex. Bar, Läxhjälp, Budjobb
+En månad mindre
+En månad mer
+Jobb
+Övertid
+Uttagen semester
+Uttagen ledighet
+Brutto totalt
+{n} skillnad mot dina registrerade timmar
+{n} skillnader mot dina registrerade timmar
+Posterna på lönebeskedet stämmer med det du har registrerat.
+Registrerat
+På lönebesked
+{v} mindre på lönebeskedet
+{v} mer på lönebeskedet
+Appens uppskattning, endast vägledande
+Lönebesked för {a}: timmarna jämförs med {b}.
+Lönebesked för {m}
+registrerat {a}, på lönebeskedet {b}
+Att betala ut
+Öppna lönebeskedet
+lönebesked tillagt
+inget lönebesked
+Ladda PDF för {m}
+Lönebesked för {m} raderat.
+Läser lönebeskedet…
+Fel lösenord, försök igen.
+PDF:en är lösenordsskyddad. Ofta är det ditt personnummer eller ett lösenord från arbetsgivaren.
+Kan inte ladda PDF-läsaren. Kontrollera anslutningen och försök igen.
+Kan inte öppna filen. Är det en PDF?
+Den här PDF:en har ingen text, kanske är den skannad eller ett foto. Skriv in siffrorna själv.
+Jag kände inte igen posterna på lönebeskedet. Skriv in siffrorna själv: bara dem du vill.
+övertid
+nattarbete
+sön- och helgdagar
+uttagen semester
+uttagen ledighet
+semester kvar
+ledighet kvar
+brutto totalt
+netto
+Lönebesked för {m}.
+Jag läste: {x}.
+Kontrollera de markerade siffrorna och fyll i de som saknas själv.
+Det ser ut som ett lönebesked med extra utbetalning: kontrollera bruttot noga.
+Filen är för stor för att vara ett lönebesked.
+Lönebesked
+Kontrollera betalda timmar och poster
+Ladda lönebeskedets PDF eller skriv in siffrorna: appen jämför dem med dina registrerade timmar.
+PDF-lösenord
+Öppna
+PDF:en läses bara på den här enheten och sparas inte: appen behåller bara siffrorna nedan.
+På lönebeskedet
+Semester kvar
+Övertid och tillägg gäller månaden innan
+Många arbetsgivare betalar övertid, natt- och helgarbete månaden efter. Om det gäller dig, slå på det: jämförelsen använder rätt månad.
+Radera
+Registrera pass
+Hur registrerar jag ett pass?
+Välj ett snabbpass ovanför kalendern, till exempel {a}, och tryck på dagarna: varje dag får det passet. Tryck på knappen igen för att sluta. För andra tider trycker du på dagen och skriver start och längd.
+Hur ändrar eller tömmer jag en dag?
+Tryck på dagen: på kortet ändrar du typ, tider, timmar mer eller mindre, etiketter och anteckning, och allt sparas automatiskt. {a} raderar den. För att tömma många väljer du {b} ovanför kalendern och trycker på dagarna. Efter varje ändring kan du ångra i meddelandet längst ned.
+Hur registrerar jag lediga dagar, semester, ledighet och sjukdom?
+{a} och {b} har en egen knapp ovanför kalendern: välj den och tryck på dagarna. För {c} eller {d} trycker du på dagen och väljer typ på kortet; vid ledighet skriver du också timmarna.
+Hur registrerar jag övertid eller ett delat pass?
+Använd {a} på dagens kort för övertid eller att gå tidigare. Med {b} anger du båda delarna, till exempel 8–12 och 16–20.
+Hur skapar jag egna snabbpass?
+Öppna {p} och välj namn, starttid och längd för varje knapp. De kan vara delade pass och, om du har ett andra jobb, höra till det jobbet.
+Jag jobbar alltid enligt samma schema: kan kalendern fyllas i av sig själv?
+Ja: i {p} beskriver du mönstret (till exempel 5 morgon, 2 lediga, 5 natt, 2 lediga), startdagen och hur länge. Med {q} kopierar du i stället en vecka till nästa.
+Vad är etiketter till för?
+De visar avdelning, maskin eller arbetsplats. Du skapar dem i {p}; sedan väljer du dem ovanför kalendern och trycker på dagarna, även tillsammans med ett pass.
+Hur hittar jag en dag, en anteckning eller en etikett?
+Byt till listvyn med knappen bredvid snabbpassen: då visas sökning i anteckningar och etiketter. Fliken {a} visar hela årets summor, månad för månad.
+Timmar, avtal och lön
+Vad betyder varningarna längst ned i månaden?
+Appen kontrollerar reglerna i ditt land: minsta vila mellan två pass, genomsnittliga timmar per vecka, sju arbetsdagar i rad. Om ditt avtal är annorlunda ändrar du värdena i {p}.
+Hur fungerar timbanken?
+I {p} anger du avtalets veckotimmar, från när det ska räknas och ett eventuellt startsaldo. Appen jämför arbetade timmar med de som ska arbetas och visar saldot i månadens översikt.
+Hur håller jag koll på semester och ledighet?
+I {p} skriver du hur många semesterdagar och ledighetstimmar du har per år. Appen räknar uttagna och planerade och säger hur många som är kvar.
+Hur fungerar löneuppskattningen?
+I {p} skriver du bruttotimlönen och tilläggen. Det är en ungefärlig uppskattning bara för dig: den syns aldrig i PDF:en eller i delade bilder, och du kan dölja beloppen.
+Hur registrerar jag beredskap?
+Slå på den i {p}. Ovanför kalendern visas knappen {a}: välj den och tryck på dagarna, även lediga. Timmar med utryckning skriver du på dagens kort; ersättningen ställs in i {q}.
+Jag har ett andra jobb: hur håller jag det separat?
+Slå på det i {p}, med namn, längd och lön. Dess pass har egna snabbknappar och visas som en andra rad på dagarna. Timmar och lön räknas för sig, och månadens PDF kan göras för varje jobb.
+Hur kontrollerar jag mitt lönebesked?
+I {p} väljer du månaden och laddar PDF:en: appen läser övertid, natt- och helgarbete, semester, ledighet, brutto och utbetalt belopp och jämför dem med dina registrerade timmar. Är lönebeskedet på papper, skriv in siffrorna själv.
+Lönebeskedet läses inte eller siffrorna stämmer inte: vad gör jag?
+Är PDF:en en skanning eller ett foto finns ingen text att läsa: skriv in siffrorna själv. Är den skyddad frågar appen efter lösenordet. Kontrollera alltid de markerade siffrorna och slå på {a} om din arbetsgivare betalar övertid och tillägg månaden efter.
+Dela och exportera
+Hur skickar jag mina pass för veckan till någon?
+I {p} väljer du veckan och skickar den som bild eller text, till exempel i en chatt.
+Hur skriver jag ut en månad?
+I {p} väljer du månaden: du får ett A4-blad med kalender och summor att skriva ut eller skicka.
+Hur får jag in mina pass i Google Kalender, Apples Kalender eller Outlook?
+I {p} väljer du från när, hur många månader och vad som ska med, och öppnar sedan filen med din kalender: på samma skärm finns stegen för var och en. Exporterar du samma period igen uppdateras passen oftast i stället för att dubbleras.
+Data, app och inställningar
+Var sparas mina pass?
+Bara på den här enheten, i webbläsaren. Du behöver inget konto och inget skickas till en server.
+Hur gör jag en kopia eller byter telefon?
+Med {p} får du en fil med pass och inställningar. Öppna appen på den andra telefonen och använd {q}. Pricken på {a} påminner dig när det är dags att göra en kopia.
+Förlorar jag mina pass om jag rensar webbläsardata?
+Ja, om du inte har en kopia. Därför är det bra att spara en då och då, särskilt innan du byter telefon.
+Hur installerar jag appen på telefonen?
+På iPhone öppnar du appen i Safari, trycker på Dela och sedan Lägg till på hemskärmen. På Android öppnar du Chrome-menyn och väljer Installera app eller Lägg till på startskärmen. Installerad fungerar den även utan internet.
+Hur uppdaterar jag appen?
+När det finns en ny version visas en notis högst upp: tryck på {a}. Dina pass ligger kvar.
+Hur byter jag land, helgdagar, språk eller tema?
+I {p} väljer du land och region för helgdagarna, språket och ljust eller mörkt tema. Lokala helgdagar som appen inte känner till registrerar du som ledig dag.
+Ta mig dit
+Öppna guiden
+Hjälp
+Guide och vanliga frågor
+Så gör du, steg för steg
+Guide
+Inga svar hittades. Prova andra ord.
+Sök i guiden
+Jag visar på en minut hur det fungerar. Du kan hoppa över när du vill och se rundturen igen från guiden.
+Välj ett pass och tryck på dagarna i kalendern för att lägga in det. Tryck på knappen igen för att sluta. {a}, {b} och {c} fungerar på samma sätt.
+Kalendern
+Tryck på en dag för att öppna dess kort: tider, övertid, ledighet, sjukdom och anteckningar. Allt sparas automatiskt och du kan alltid ångra i meddelandet längst ned.
+Nästa pass
+Här uppe ser du alltid ditt nästa pass, eller det som pågår.
+Månadens översikt
+Arbetade timmar, övertid, nätter och helgdagar under månaden, med varningar när ett pass bryter mot vilereglerna.
+Kalender och År
+Byt till År för att se hela årets summor, månad för månad.
+Här finns allt annat: schema, semester och ledighet, timbank, löneuppskattning, lönebesked, månadens PDF, export till kalender, kopia av data och guiden.
+Land och helgdagar, språk och ljust eller mörkt tema.
+Börja med att lägga in veckans pass.
+{n} av {m}
+Hoppa över
+Nu kör vi
+Se rundturen igen

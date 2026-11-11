@@ -1,0 +1,639 @@
+{n} d.
+{d} d. {h} val.
+{h} val. {m} min
+{h} val.
+{m} min
+Pamaina
+ir
+Rodyti sumas
+Slėpti sumas
+Dirbtos valandos
+Viršvalandžiai
+Naktinis darbas
+Sekmadienis
+Šventės
+Apytikslis bruto įvertis. Tik tau: nerodomas PDF ir bendrinamuose paveikslėliuose.
+Pridėti priedus
+Tavo pamainos išsaugotos šiame įrenginyje.
+nėra pamainos
+padalyta pamaina {r}
+pamaina {r}
+kitą dieną
+{h} val. laisvo laiko
+Laisva
+Atostogos
+Išvalyti
+Sukurti žymas skyriams ar darbo vietoms
+Pasirink pamainą, žymą arba abu ir paliesk dienas. Arba paliesk dieną, kad nustatytum laiką, pastabas ir papildomas valandas.
+Valymas įjungtas.
+Paliesk dienas, kurias nori išvalyti, tada dar kartą mygtuką, kad baigtum.
+Kiekviena paliesta diena gauna pamainą ir žymą kartu.
+{x} įjungta.
+Paliesk dienas, kurias nori užpildyti, ir, jei nori, pasirink ir žymą. Kad baigtum, dar kartą paliesk mygtuką.
+Paliesk dienas, kurias nori užpildyti. Kad baigtum, dar kartą paliesk mygtuką.
+Žyma {x} įjungta.
+Paliesk dienas su pamaina, kad ją pridėtum ar pašalintum.
+Laisva
+poilsis trumpesnis nei {n} val.
+{x} papildomai
+Rasta {n} diena
+Rasta {n} dienų ‖few: Rastos {n} dienos ‖many: Rasta {n} dienos
+{h} val. darbo
+Nėra dienų su „{q}“ pastabose ar žymose.
+Šeštadienis {s} val., kitos dienos {w} val.
+Pastaba
+Mažiau nei {n} val. poilsio nuo ankstesnės pamainos
+Pertrauka
+Tęsi po <b>{x}</b>. Padalyta pamaina: {r}.
+Kita pamaina
+Nėra suplanuotų pamainų
+Paliesk dieną kalendoriuje ir pasirink pradžios laiką: pabaiga apskaičiuojama pati.
+Šiandien
+Rytoj
+Vakar
+Dabar pamainoje
+Iki pabaigos liko <b>{a}</b>. Jau atlikta {b}.
+Prasideda po <b>{x}</b>.
+Padalyta: {r}, iš viso {h} val.
+Trunka {h} val.
+Tik {h} val. poilsio tarp {a} ir {b} (minimumas {n}).
+Septynios ar daugiau darbo dienų iš eilės nuo {d}.
+Savaitė nuo {d}: {h} val., daugiau nei {n}.
+{y} m. pažymėjai {n} atostogų diena daugiau, nei priklauso.
+{y} m. pažymėjai {n} atostogų dienų daugiau, nei priklauso. ‖few: {y} m. pažymėjai {n} atostogų dienomis daugiau, nei priklauso. ‖many: {y} m. pažymėjai {n} atostogų dienos daugiau, nei priklauso.
+{y} m. pažymėjai {h} val. laisvo laiko daugiau, nei priklauso.
+Iš viso {m}
+val., pamainų: {n}
+val., pamainų: {n}
+Papildomos valandos
+Naktinės valandos, {r}
+Dirbti šeštadieniai
+Sekmadieniai ir šventės
+Atostogos per mėnesį
+Likusios atostogos {y}
+Atostogos {y}
+Laisvas laikas per mėnesį
+Likęs laisvas laikas
+Liga
+Valandų bankas mėnesio pabaigoje
+Valandų bankas šiandien
+Atlyginimo įvertis {m}
+Valandos per savaitę
+Juosta pilna ties {n} val.
+Verta patikrinti
+Mėnesio iš viso
+Kiti įspėjimai: {n}. Rasi juos programėlėje.
+{h} val.
+Pamainos
+Naktinės valandos
+Sekm. ir šventės
+Laisvas laikas
+Valandų bankas
+Įprasta pamaina {w} val., šeštadienis {s} val. Sukurta su {app} {d}.
+Laisva ir nebuvimas
+Naktis
+Popietė
+Rytas
+Redaguoti žymas
+Sukurti žymas skyriams, mašinoms ar darbo vietoms
+Pamaina {a} val. Naudoti įprastą trukmę {b} val.
+Valandos daugiau ar mažiau nei {h}
+Visa diena.
+Likusi dienos dalis skaičiuojama kaip įprastai dirbta. Laisvo laiko valandos atimamos iš tau priklausančių.
+pertrauka {x}
+{h} naktį
+Įprasta {h} val. pamaina, nes šeštadienis.
+Įprasta {h} val. pamaina.
+Diena išvalyta.
+Žymos dedamos dienoms su pamaina: pasirink ir pamainą.
+Dėmesio: {y} m. viršijai priklausančias atostogas.
+Išnaudojai visas {y} m. atostogas.
+{y} m. tau liko {n} atostogų diena.
+{y} m. tau liko {n} atostogų dienų. ‖few: {y} m. tau liko {n} atostogų dienos. ‖many: {y} m. tau liko {n} atostogų dienos.
+Dėmesio: {y} m. viršijai priklausantį laisvą laiką.
+{y} m. tau liko {h} val. laisvo laiko.
+val.
+Greitosios pamainos {n} pavadinimas
+Pavadinimas
+Ištrinti greitąją pamainą {n}
+Greitosios pamainos {n} pradžia
+Pirmosios dalies trukmė valandomis
+Greitosios pamainos {n} trukmė valandomis
+Pusė
+Įprasta
+Padalyta
+Tęsiama nuo, greitoji pamaina {n}
+Antrosios dalies trukmė valandomis
+Likutis
+Ne daugiau kaip {n} greitųjų pamainų
++ Pridėti greitąją pamainą
+Greitoji pamaina „{x}“ ištrinta.
+Pvz., Skyrius A, Presas 3, Kasa 2
+Žyma {n}
+Ištrinti žymą {n}
+Žyma „{x}“ pašalinta iš {n} dienos.
+Žyma „{x}“ pašalinta iš {n} dienų. ‖few: Žyma „{x}“ pašalinta iš {n} dienų. ‖many: Žyma „{x}“ pašalinta iš {n} dienos.
+be pavadinimo
+Žyma „{x}“ ištrinta.
+Metai
+Iš viso {y}
+Pažymėtos laisvos dienos
+Atlyginimo įvertis {y}
+Žymos {y}
+{n} diena
+{n} dienų ‖few: {n} dienos ‖many: {n} dienos
+Atskirų dienų ieškok kalendoriaus sąrašo rodinyje.
+Šie metai dar neprasidėjo.
+Valandų bankas prasideda {d}.
+Likutis {d}.
+Likutis šiandien.
+Dirbai daugiau valandų nei numatyta sutartyje.
+Dirbai mažiau valandų nei numatyta sutartyje.
+Tiksliai pagal sutartį.
+Sutartis <b>{h} val.</b> per savaitę
+Nuo <b>{d}</b>
+Pradžia <b>{h} val.</b>
+Keisti valandų banko nustatymus
+Panaudota
+Panaudota
+Suplanuota
+Suplanuota
+Priklauso
+dienų pažymėta {y}
+valandų pažymėta {y}
+Nustatyk, kiek tau priklauso
+dienų per daug
+valandų per daug
+dienų liko iš {x}
+valandų liko iš {x}
+{a} panaudota, {b} suplanuota iš {c}
+Pažymėjai daugiau atostogų, nei priklauso.
+Pažymėjai daugiau laisvo laiko, nei priklauso.
+Viskas išnaudota.
+Viskas išnaudota.
+Greitai baigsis.
+Greitai baigsis.
+Valandos per mėnesį
+{m}: {h} val. Atidaryti mėnesį
+Mėnuo
+Valandos
+Papild.
+Laisva
+Bankas
+Iš viso
+Mėnuo po mėnesio
+Paliesk mėnesį, kad atidarytum jį kalendoriuje. Stulpelis Bankas rodo, kiek kiekvienas mėnuo pridėjo ar atėmė.
+Žingsnis {n}
+Viena diena mažiau
+Viena diena daugiau
+Ištrinti žingsnį {n}
+Su šiais pasirinkimais nėra dienų pildyti.
+Pasirink pradžios dieną.
+Ciklas <b>{a}</b>. Pildau <b>{b}</b> nuo {c} iki {d}:
+Taikyti {n} dienai
+Taikyti {n} dienų ‖few: Taikyti {n} dienoms ‖many: Taikyti {n} dienos
+{n} savaitė
+{n} savaičių ‖few: {n} savaitės ‖many: {n} savaitės
+Grafikas pritaikytas {n} dienai.
+Grafikas pritaikytas {n} dienų. ‖few: Grafikas pritaikytas {n} dienoms. ‖many: Grafikas pritaikytas {n} dienos.
+Mano pamainos, savaitė nuo {d}:
+laisva
+Mano pamainos
+{h} val., {n} pamaina
+{h} val., {n} pamainų ‖few: {h} val., {n} pamainos ‖many: {h} val., {n} pamainos
+Sukurta su {app}
+Ši savaitė
+Kita savaitė
+Praėjusi savaitė
+Po {n} savaitės
+Po {n} savaičių ‖few: Po {n} savaičių ‖many: Po {n} savaitės
+Prieš {n} savaitę
+Prieš {n} savaičių ‖few: Prieš {n} savaites ‖many: Prieš {n} savaitės
+Pamainos nukopijuotos: įklijuok jas į žinutę.
+Kopijuoti čia negalima.
+Nepavyko sukurti paveikslėlio.
+Dar nėra savaitės, kurią galima kartoti.
+Kita savaitė jau užpildyta.
+Savaitė nuo {a} pakartota savaitėje nuo {b}.
+Paskutinė kopija išsaugota {d}.
+Dar neišsaugojai jokios kopijos.
+Tavo pamainos ({n} diena) yra tik šiame įrenginyje: kartkartėmis išsaugok kopiją, pvz., iCloud Drive, Google Drive arba el. laiške sau, kad jų neprarastum keisdamas telefoną.
+Tavo pamainos ({n} dienų) yra tik šiame įrenginyje: kartkartėmis išsaugok kopiją, pvz., iCloud Drive, Google Drive arba el. laiške sau, kad jų neprarastum keisdamas telefoną. ‖few: Tavo pamainos ({n} dienos) yra tik šiame įrenginyje: kartkartėmis išsaugok kopiją, pvz., iCloud Drive, Google Drive arba el. laiške sau, kad jų neprarastum keisdamas telefoną. ‖many: Tavo pamainos ({n} dienos) yra tik šiame įrenginyje: kartkartėmis išsaugok kopiją, pvz., iCloud Drive, Google Drive arba el. laiške sau, kad jų neprarastum keisdamas telefoną.
+Failas atsisiųstas.
+Atsisiųsti nepavyko.
+{n} pamaina
+{n} pamainų ‖few: {n} pamainos ‖many: {n} pamainos
+tuščia
+Sukurti PDF už {m}
+Nepavyko sukurti PDF.
+{app} pamainų kopija
+Kopija išsaugota. Laikyk ją saugioje vietoje.
+Faile yra {n} diena
+Faile yra {n} dienų ‖few: Faile yra {n} dienos ‖many: Faile yra {n} dienos
+nuo {a} iki {b}
+išsaugota {d}
+Jos pakeis dabartines tavo pamainas ({n} diena) kartu su nustatymais.
+Jos pakeis dabartines tavo pamainas ({n} dienų) kartu su nustatymais. ‖few: Jos pakeis dabartines tavo pamainas ({n} dienos) kartu su nustatymais. ‖many: Jos pakeis dabartines tavo pamainas ({n} dienos) kartu su nustatymais.
+Jos bus įkeltos kartu su nustatymais.
+Šis failas nėra {app} kopija.
+Kopija įkelta: {n} diena.
+Kopija įkelta: {n} dienų. ‖few: Kopija įkelta: {n} dienos. ‖many: Kopija įkelta: {n} dienos.
+Versija {v}.
+Atidaryk programėlę iš jos interneto adreso, kad gautum atnaujinimus.
+Yra versija {v}.
+Paskutinį kartą tikrinta: {d}.
+Automatinis tikrinimas įjungtas.
+Yra {app} {v}
+Atnaujink, kad turėtum naujausius pakeitimus. Tavo pamainos lieka savo vietose.
+Atidaryk programėlę iš jos interneto adreso, kad ieškotum atnaujinimų.
+Tikrinama…
+Jau turi naujausią versiją ({v}).
+Nepavyksta patikrinti atnaujinimų: patikrink ryšį.
+Ieškoti atnaujinimų
+Atnaujinama…
+Laisvas laikas
+Liga
+Naujieji metai
+Trys Karaliai
+Išlaisvinimo diena
+Darbo diena
+Respublikos diena
+Žolinė
+Visų Šventųjų diena
+Nekaltasis Prasidėjimas
+Kalėdos
+Antroji Kalėdų diena
+Šv. Pranciškus
+Velykos
+Antroji Velykų diena
+iWork
+Kalendorius
+Pakeitimai išsaugomi patys.
+Pamainos pradžia
+Padalyta pamaina, dviem dalimis
+Pirma dalis
+Tęsiama nuo
+Antra dalis
+Pamainos pabaiga
+Valandos daugiau ar mažiau
+Laisvo laiko valandos
+Žymos
+Išvalyti dieną
+Atlikta
+Nustatymai
+Kiekvienas pakeitimas išsaugomas pats.
+Įprastos pamainos valandos
+Šeštadienio pamainos valandos
+Greitąsias pamainas ir žymas kuri ir redaguoji Įrankiuose, mygtuke su trimis taškais.
+Atostogos ir laisvas laikas
+Atostogos per metus
+dienos
+Laisvas laikas per metus
+Kiek tau priklauso per metus, įskaitant perkeltą iš praėjusių metų. Esant 0 skaitiklis išjungtas.
+Savaitės valandos pagal sutartį
+Skaičiuoti nuo
+Pradinis likutis
+Valandų bankas lygina dirbtas valandas su sutarties valandomis diena po dienos iki šiandien. Atostogos, laisvas laikas, liga, sekmadieniai ir šventės nelaikomi trūkstamomis valandomis.
+Atlyginimas
+Bruto valandinis atlygis
+€/val.
+Naktis 22–06
+Priedai sumuojasi: naktinė valanda sekmadienį gauna ir naktinį, ir sekmadienio priedą. Jei šventė sutampa su sekmadieniu, taikomas tik šventės priedas. Įvertis lieka šiame įrenginyje ir nerodomas PDF ir bendrinamuose paveikslėliuose.
+Kalba
+Išvaizda
+Automatinė
+Šviesi
+Tamsi
+Atnaujinimai
+Įrankiai
+Pildyti pamainas
+Ciklinis grafikas
+Raštas, kuris kartojasi kelias savaites
+Kartoti paskutinę savaitę
+Kopijuoti pamainas į kitą savaitę
+Pritaikyti
+Greitosios pamainos
+Mygtukai pamainai įrašyti vienu prisilietimu
+Skyriai, mašinos, darbo vietos vienu prisilietimu
+Bendrinti ir eksportuoti
+Bendrinti savaitę
+Paveikslėlis ar tekstas, bet kuri savaitė
+Mėnesio PDF
+Norimas mėnuo, paruoštas spausdinti
+Atsarginė kopija
+Išsaugoti pamainų kopiją
+Failas su visomis pamainomis ir nustatymais
+Įkelti kopiją
+Atkurti pamainas iš anksčiau išsaugoto failo
+Uždaryti
+Tai mygtukai virš kalendoriaus: pasirink vieną ir paliesk dienas, kad jį įrašytum. Čia juos kuri, pervadini ir keiti laiką bei trukmę. Kiekvienas pakeitimas išsaugomas pats.
+Palik trukmę tuščią, kad būtų naudojama įprasta (8 val., šeštadienį 6). Sava trukmė galioja visomis dienomis. Su „Padalyta“ pamaina turi dvi dalis, pvz., 8–12 ir 16–20.
+Skyriai, mašinos, darbo vietos ar kas tik reikia. Jos rodomos antroje eilutėje virš kalendoriaus: pasirink vieną ir paliesk dienas, kad ją priskirtum, ir kartu su pamaina. Kiekvienas pakeitimas išsaugomas pats.
++ Pridėti žymą
+Įkelti šią kopiją?
+Atšaukti
+Pakeisti pamainas
+Sukurk besikartojantį raštą, pvz., 5 rytai, 2 laisvos, 5 popietės, 2 laisvos, ir pritaikyk jį iškart kelioms savaitėms.
+Raštas
++ Pridėti žingsnį
+Nuo dienos
+Kelioms savaitėms
+Nekeisti jau užpildytų dienų
+Palikti sekmadienius laisvus
+Taikyti
+Atgal į šią savaitę
+Kopijuoti kaip tekstą
+Bendrinti paveikslėlį
+Pasirink mėnesį: gausi kalendorių su pamainomis ir sumomis A4 lape spausdinti.
+Vėliau
+Atnaujinti
+Ekranas
+Ankstesnis mėnuo
+Kitas mėnuo
+Greitas įvedimas
+Rodinys
+Kalendoriaus rodinys
+Sąrašo rodinys
+Greitas žymėjimas
+Ieškoti pastabose ir žymose
+Metų suvestinė
+Ankstesni metai
+Kiti metai
+Dienos tipas
+Pusvalandžiu mažiau
+Pusvalandžiu daugiau
+Pvz., pamaina sukeista su Marium, skyrius B
+Tema
+Savaite mažiau
+Savaite daugiau
+Ankstesnė savaitė
+Kita savaitė
+Savaitės pamainų paveikslėlio peržiūra
+Anuliuoti
+{x}, globėjo šventė
+Globėjo šventė
+{x} (pakaitinė diena)
+Jokios konkrečios
+Nėra
+Kita data…
+Taisyklės, {c}: tarp dviejų pamainų bent {r} val. poilsio, vidutiniškai ne daugiau kaip {w} val. per savaitę, savaitės poilsis {k} val. Pirma savaitės diena: {d}.
+Šalis ir šventės
+Šalis
+Regionas ar apskritis
+Globėjas
+Diena
+Globėjo šventė skaičiuojama kaip šventė kalendoriuje, valandų banke ir atlyginime. Patikrink datą sutartyje ar savivaldybėje.
+{c}: tarp dviejų pamainų bent {r} val. poilsio, vidutiniškai ne daugiau kaip {w} val. per savaitę, savaitės poilsis {k} val. Pirma savaitės diena: {d}.
+Naktis {r}
+Pradėti
+Toliau
+Naujiena: kalba ir šalis
+Sveiki atvykę į {app}
+Pasirink kalbą ir šalį: programėlė nusistatys tinkamas taisykles ir šventes. Tavo pamainos lieka savo vietose.
+Tavo pamainų kalendorius. Pasirink kalbą.
+Kur dirbi?
+Nuo to priklauso šventės, minimalus poilsis, naktinės valandos ir valiuta.
+Ieškoti šalies
+Tavo vietovė
+Kai kurios šventės galioja tik regione ar mieste. Šį žingsnį gali praleisti ir pakeisti vėliau.
+Jei tavo miesto nėra, datą galėsi įvesti nustatymuose.
+Kiek trunka pamaina?
+Taip pasirenki tik pradžią, o pabaiga apskaičiuojama pati. Galima keisti bet kada.
+Įprasta pamaina
+Šeštadienio pamaina
+Viskas paruošta
+Taip nustatyta programėlė. Viską gali keisti nustatymuose.
+{w} val., šeštadienis {s}
+Minimalus poilsis
+Didžiausias vidurkis
+{h} val. per savaitę
+Įspėjimai apie poilsį ir valandas yra orientaciniai ir nepakeičia tavo sutarties.
+Atgal
+Taisyklės įspėjimams ir skaičiavimams
+val./sav.
+Naktis nuo
+Naktis iki
+Tavo sutartis gali būti palankesnė už įstatymą: čia gali pritaikyti taisykles.
+Atgal į šalies taisykles
+{x}, vietinė šventė
+Vietinė šventė
+Tavo savivaldybės ar sutarties šventė: skaičiuojama kaip šventė kalendoriuje, valandų banke ir atlyginime.
+Jei šventė sutampa su sekmadieniu, darbdavys paskiria pakaitinę dieną.
+Grundlovsdag (birželio 5 d.) ir Kūčios nėra įstatyminės šventės, bet daugelis sutarčių jas numato.
+Sekminių pirmadienis dažnai yra „solidarumo diena“ ir dirbama.
+Bavarijoje Žolinė yra šventė tik daugiausia katalikiškose savivaldybėse.
+Didysis penktadienis ir gegužės 5 d. laisvi tik jei tai numato kolektyvinė sutartis (CAO).
+Užgavėnių antradienis neprivalomas; kiekviena savivaldybė dar turi savo šventę.
+Nuo 2025 m. lapkričio 17 d. nebėra šventė; 2026 m. dirbama ir gegužės 8 d. bei rugsėjo 15 d.
+Kiekviena autonominė bendrija prideda savo šventes (dažnai Didįjį ketvirtadienį) ir kasmet jas keičia: pridėk savąją kaip vietinę šventę.
+Šventų vakarai (Midsommarafton, Julafton, Nyårsafton) nėra įstatyminės šventės, bet beveik visur laisvi.
+45 valandų riba taikoma pramonei, biurams, techniniam personalui ir didiesiems prekybos tinklams; kitiems ji 50. Kai kuriose savivaldybėse (Fribūras, Zoloturnas, Argau) šventės kitos: pridėk savąją kaip vietinę šventę.
+Jungtinėje Karalystėje bank holidays nėra įstatyminė teisė: tai priklauso nuo sutarties. 48 valandų ribos galima raštu atsisakyti (opt-out).
+Darbo ir poilsio laikas daugiausia atitinka San Marino kolektyvines sutartis: patikrink žemiau esančias reikšmes.
+Jei šventė sutampa su sekmadieniu, pirmadienis laisvas.
+45 valandų riba taikoma pramonei, biurams ir didiesiems prekybos tinklams; kitiems ji 50.
+{c}: įstatymas nenustato minimalaus poilsio tarp dviejų pamainų. Programėlė įspėja, kai mažiau nei {r} val. ir daugiau nei {w} val. per savaitę. Pirma savaitės diena: {d}.
+Federalinės šventės pagal įstatymą taikomos tik federaliniams darbuotojams: privačiame sektoriuje tai priklauso nuo sutarties. Kiekviena valstija turi savo šventes: pridėk savąją kaip vietinę šventę.
+Darbo ir poilsio laikas provincijose gali skirtis: patikrink žemiau esančias reikšmes. Niufaundlendas ir Labradoras dar neįtraukti.
+Federalinių ir vietos rinkimų dienos laisvos ir tiems, kurie turi balsuoti.
+Karnavalas ir Devintinės yra „ponto facultativo“; kiekviena valstija ir savivaldybė prideda savo šventes: pridėk savąją kaip vietinę šventę.
+Vyriausybė gali perkelti kilnojamas šventes (birželio 17, rugpjūčio 17, spalio 12, lapkričio 20) ir pridėti laisvų dienų: čia matai įstatymu nustatytas datas.
+Daugelis kolektyvinių sutarčių (awards) numato 10 val. poilsio tarp pamainų. Kai kurios šventės galioja tik tam tikrose vietovėse (Royal Show, Regatta, Recreation Day): savąją gali pridėti kaip vietinę šventę.
+Kiekviena provincija turi savo Anniversary Day: jei tavosios nėra sąraše, pridėk ją kaip vietinę šventę.
+Nėra
+Valandos ir sutartis
+Darbo laikas
+Pamainų trukmė, minimalus poilsis, naktinės valandos
+Kiek dienų ir valandų tau priklauso
+Sutarties valandos ir pradinis likutis
+Atlyginimo įvertis
+Valandinis atlygis ir priedai, tik tau
+Antras darbas
+Budėjimas
+Budėjimas įjungtas.
+Paliesk dienas, kad jį pridėtum ar pašalintum, ir poilsio dienomis. Gali jį pasirinkti kartu su pamaina.
+Kiekviena paliesta diena gauna pamainą ir budėjimą kartu.
+{h} val. iškvietimo
+Iškvietimo valandos
+Antras darbas skaičiuojamas atskirai: jis neįeina į pagrindinio darbo valandų banką, atostogas ir įspėjimus.
+Pagrindinis darbas
+Sukurta su {app} {d}.
+Greitosios pamainos {n} darbas
+{n} mėnuo
+{n} mėnesių ‖few: {n} mėnesiai ‖many: {n} mėnesio
+Pamainos: {x}
+<b>{n}</b> nuo {a} iki {b}.
+{n} įvykis
+{n} įvykių ‖few: {n} įvykiai ‖many: {n} įvykio
+Nuo {a} iki {b} nėra pamainų eksportuoti.
+Nuo
+Trukmė
+Iškvietimas
+Iškvietimo valandos laikomos dirbtomis, o atlyginimo įvertyje mokamos kaip viršvalandžiai.
+Pradžia
+Kitas darbas su savo laiku ir apskaita
+Eksportuoti į kalendorių
+Google, Apple arba Outlook kalendorius
+Turiu budėjimų
+Paprastai nuo
+Virš kalendoriaus atsiranda mygtukas Budėjimas: pasirink jį ir liesk dienas, ir poilsio. Iškvietimo valandas įrašai paliesdamas dieną.
+Priedas už budėjimą
+Už kiekvieną budėjimą. Iškvietimo valandos apmokamos kaip viršvalandžiai.
+Turiu antrą darbą
+Įprasta trukmė
+Antro darbo pamainos rodomos tomis pačiomis dienomis antroje eilutėje, su žalsvai mėlynu kvadratėliu. Jas priskiri antro darbo greitosiomis pamainomis arba paliesdamas dieną. Valandos ir atlyginimas skaičiuojami atskirai: neįeina į pagrindinio darbo valandų banką, atostogas ir įspėjimus.
+Kiekvienai greitajai pamainai pasirink, ar ji priklauso pagrindiniam, ar antram darbui. Antro darbo pamainos turi žalsvai mėlyną kvadratėlį.
+Sukurk failą su savo pamainomis, kurį atidarysi „Google“ kalendoriuje, „Apple“ kalendoriuje arba „Outlook“.
+Kiek mėnesių
+Ką eksportuoti
+Darbo pamainos
+Atostogos, laisvas laikas ir liga kaip visos dienos įvykiai
+Priminimas
+Prieš 30 minučių
+Prieš 1 valandą
+Prieš 2 valandas
+Kaip atidaryti kalendoriuje
+iPhone, iPad ir Mac.
+Atidaryk failą ir pasirink Pridėti visus, tada kalendorių, į kurį juos dėti.
+„Google“ kalendorius.
+Kompiuteryje atidaryk calendar.google.com, eik į Nustatymai, Importuoti ir eksportuoti, ir įkelk failą. „Android“ įrenginyje gali jį atidaryti ir tiesiai su „Google“ kalendoriumi.
+Outlook.
+Atidaryk failą su „Outlook“ arba outlook.com eik į kalendorių, Įtraukti kalendorių, Nusiųsti iš failo.
+Jei vėl eksportuosi tą patį laikotarpį, jau importuotos pamainos paprastai bus atnaujintos, o ne padvigubintos. Programėlėje išvalytas dienas reikia pašalinti rankiniu būdu. Patarimas: naudok atskirą kalendorių tik pamainoms, tada galėsi jį išvalyti ir importuoti iš naujo, kai jos pasikeis.
+Sukurti failą
+Pvz. Baras, Korepetavimas, Pristatymai
+Vienu mėnesiu mažiau
+Vienu mėnesiu daugiau
+Darbas
+Viršvalandžiai
+Panaudotos atostogos
+Panaudotas laisvas laikas
+Iš viso bruto
+{n} skirtumas nuo įrašytų valandų
+{n} skirtumų nuo įrašytų valandų ‖few: {n} skirtumai nuo įrašytų valandų ‖many: {n} skirtumo nuo įrašytų valandų
+Lapelio eilutės sutampa su tuo, ką įrašei.
+Įrašyta
+Lapelyje
+Lapelyje {v} mažiau
+Lapelyje {v} daugiau
+Programėlės įvertis, tik orientacinis
+Atlyginimo lapelis ({a}): valandos lyginamos su {b}.
+Atlyginimo lapelis: {m}
+įrašyta {a}, lapelyje {b}
+Išmokėti
+Atidaryti atlyginimo lapelį
+lapelis įvestas
+lapelio nėra
+Įkelti PDF: {m}
+Atlyginimo lapelis ištrintas: {m}.
+Skaitau atlyginimo lapelį…
+Neteisingas slaptažodis, bandyk dar kartą.
+PDF apsaugotas slaptažodžiu. Dažnai tai tavo asmens kodas arba darbdavio duotas slaptažodis.
+Nepavyksta įkelti PDF skaitytuvo. Patikrink ryšį ir bandyk dar kartą.
+Šio failo atidaryti nepavyksta. Ar tai PDF?
+Šiame PDF nėra teksto, gal tai skenuotas dokumentas ar nuotrauka. Įvesk skaičius ranka.
+Neatpažinau šio lapelio eilučių. Įvesk skaičius ranka: tik tuos, kurie tau rūpi.
+viršvalandžiai
+naktinis darbas
+sekmadieniai ir šventės
+panaudotos atostogos
+panaudotas laisvas laikas
+likusios atostogos
+likęs laisvas laikas
+iš viso bruto
+išmokėti
+Atlyginimo lapelis: {m}.
+Perskaičiau: {x}.
+Patikrink paryškintus skaičius ir trūkstamus įvesk ranka.
+Panašu į lapelį su papildomu atlyginimu: atidžiai patikrink bruto sumą.
+Failas per didelis atlyginimo lapeliui.
+Atlyginimo lapelis
+Tikrink apmokėtas valandas ir eilutes
+Įkelk atlyginimo lapelio PDF arba įvesk skaičius: programėlė juos palygins su įrašytomis valandomis.
+PDF slaptažodis
+Atidaryti
+PDF skaitomas tik šiame įrenginyje ir neišsaugomas: programėlė pasilieka tik toliau esančius skaičius.
+Atlyginimo lapelyje
+Likusios atostogos
+Viršvalandžiai ir priedai yra už praėjusį mėnesį
+Daug darbdavių už viršvalandžius, naktinį ir švenčių darbą moka kitą mėnesį. Jei taip ir pas tave, įjunk: palyginimui bus naudojamas tinkamas mėnuo.
+Ištrinti
+Pamainų žymėjimas
+Kaip pažymėti pamainą?
+Virš kalendoriaus pasirink greitąją pamainą, pavyzdžiui, {a}, ir liesk dienas: kiekviena gauna tą pamainą. Norėdamas baigti, dar kartą paliesk mygtuką. Kitam laikui paliesk dieną ir įrašyk pradžią bei trukmę.
+Kaip pakeisti ar išvalyti dieną?
+Paliesk dieną: kortelėje keiti tipą, laiką, valandas daugiau ar mažiau, žymas ir pastabą, ir viskas išsaugoma savaime. {a} ją ištrina. Norėdamas išvalyti daug dienų, virš kalendoriaus pasirink {b} ir liesk dienas. Po kiekvieno pakeitimo gali jį atšaukti apačioje esančiame pranešime.
+Kaip pažymėti poilsio dienas, atostogas, laisvą laiką ir ligą?
+{a} ir {b} turi savo mygtuką virš kalendoriaus: pasirink jį ir liesk dienas. {c} ar {d} pažymėsi paliesdamas dieną ir kortelėje pasirinkdamas tipą; laisvam laikui įrašai ir valandas.
+Kaip pažymėti viršvalandžius ar padalytą pamainą?
+Dienos kortelėje naudok {a} viršvalandžiams ar ankstesniam išėjimui. Su {b} nurodai abi dalis, pavyzdžiui, 8–12 ir 16–20.
+Kaip susikurti savo greitąsias pamainas?
+Atidaryk {p} ir kiekvienam mygtukui pasirink pavadinimą, pradžios laiką ir trukmę. Tai gali būti padalytos pamainos, o jei turi antrą darbą, jos gali priklausyti jam.
+Visada dirbu pagal tą patį grafiką: ar kalendorius gali užsipildyti pats?
+Taip: skiltyje {p} aprašyk schemą (pavyzdžiui, 5 rytai, 2 laisvos, 5 naktys, 2 laisvos), pradžios dieną ir iki kada. Su {q} vietoje to nukopijuoji vieną savaitę į kitą.
+Kam reikalingos žymos?
+Jos žymi skyrių, įrenginį ar darbo vietą. Jas sukuri skiltyje {p}; tada pasirenki virš kalendoriaus ir lieti dienas, taip pat kartu su pamaina.
+Kaip rasti dieną, pastabą ar žymą?
+Mygtuku šalia greitųjų pamainų pereik į sąrašo rodinį: atsiranda paieška pastabose ir žymose. Skirtukas {a} rodo visų metų sumas mėnuo po mėnesio.
+Valandos, sutartis ir atlyginimas
+Ką reiškia įspėjimai mėnesio pabaigoje?
+Programėlė tikrina tavo šalies taisykles: mažiausią poilsį tarp dviejų pamainų, vidutines valandas per savaitę, septynias darbo dienas iš eilės. Jei tavo sutartis kitokia, pakeisk reikšmes skiltyje {p}.
+Kaip veikia valandų bankas?
+Skiltyje {p} nurodyk sutarties valandas per savaitę, nuo kada skaičiuoti ir, jei reikia, pradinį likutį. Programėlė lygina dirbtas valandas su privalomomis ir rodo likutį mėnesio suvestinėje.
+Kaip sekti atostogas ir laisvą laiką?
+Skiltyje {p} įrašyk, kiek atostogų dienų ir laisvo laiko valandų tau priklauso per metus. Programėlė skaičiuoja panaudotas ir suplanuotas ir pasako, kiek liko.
+Kaip veikia atlyginimo įvertis?
+Skiltyje {p} įrašyk bruto valandinį atlygį ir priedus. Tai orientacinis įvertis tik tau: jis niekada nepatenka į PDF ar bendrinamus vaizdus, o sumas gali paslėpti.
+Kaip pažymėti budėjimą?
+Įjunk jį skiltyje {p}. Virš kalendoriaus atsiranda mygtukas {a}: pasirink jį ir liesk dienas, taip pat poilsio. Iškvietimo valandas įrašai dienos kortelėje; priedą nustatai skiltyje {q}.
+Turiu antrą darbą: kaip jį laikyti atskirai?
+Įjunk jį skiltyje {p}, su pavadinimu, trukme ir atlyginimu. Jo pamainos turi savo greituosius mygtukus ir rodomos dienose antroje eilutėje. Valandos ir atlyginimas skaičiuojami atskirai, o mėnesio PDF galima padaryti kiekvienam darbui.
+Kaip patikrinti atlyginimo lapelį?
+Skiltyje {p} pasirink mėnesį ir įkelk PDF: programėlė perskaito viršvalandžius, naktinį ir švenčių darbą, atostogas, laisvą laiką, bruto ir išmokamą sumą ir palygina su įrašytomis valandomis. Jei lapelis popierinis, įvesk skaičius ranka.
+Lapelis neperskaitomas arba skaičiai nesutampa: ką daryti?
+Jei PDF yra nuskenuotas ar nuotrauka, jame nėra teksto: įvesk skaičius ranka. Jei jis apsaugotas, programėlė paprašys slaptažodžio. Visada patikrink paryškintus skaičius ir įjunk {a}, jei įmonė viršvalandžius ir priedus moka kitą mėnesį.
+Bendrinimas ir eksportas
+Kaip kam nors nusiųsti savaitės pamainas?
+Skiltyje {p} pasirink savaitę ir nusiųsk ją kaip vaizdą ar tekstą, pavyzdžiui, pokalbyje.
+Kaip išspausdinti mėnesį?
+Skiltyje {p} pasirink mėnesį: gausi A4 lapą su kalendoriumi ir sumomis spausdinti ar siųsti.
+Kaip perkelti pamainas į „Google“ kalendorių, „Apple“ kalendorių ar „Outlook“?
+Skiltyje {p} pasirink, nuo kada, kiek mėnesių ir ką įtraukti, tada atidaryk failą savo kalendoriumi: tame pačiame ekrane rasi žingsnius kiekvienam. Jei vėl eksportuosi tą patį laikotarpį, pamainos paprastai bus atnaujintos, o ne padvigubintos.
+Duomenys, programėlė ir nustatymai
+Kur saugomos mano pamainos?
+Tik šiame įrenginyje, naršyklėje. Paskyros nereikia ir niekas nesiunčiama į serverį.
+Kaip padaryti kopiją ar pereiti į kitą telefoną?
+Su {p} gausi failą su pamainomis ir nustatymais. Kitame telefone atidaryk programėlę ir naudok {q}. Taškas ant {a} primena, kada laikas daryti kopiją.
+Jei ištrinsiu naršyklės duomenis, prarasiu pamainas?
+Taip, jei neturi kopijos. Todėl verta kartais ją išsaugoti, ypač prieš keičiant telefoną.
+Kaip įdiegti programėlę telefone?
+„iPhone“ atidaryk programėlę „Safari“, paliesk Bendrinti, tada Įtraukti į pradžios ekraną. „Android“ atidaryk „Chrome“ meniu ir pasirink Įdiegti programą arba Pridėti prie pagrindinio ekrano. Įdiegta ji veikia ir be interneto.
+Kaip atnaujinti programėlę?
+Kai yra nauja versija, viršuje atsiranda pranešimas: paliesk {a}. Tavo pamainos lieka savo vietose.
+Kaip pakeisti šalį, šventes, kalbą ar temą?
+Skiltyje {p} pasirink šalį ir regioną šventėms, kalbą ir šviesią ar tamsią temą. Vietines šventes, kurių programėlė nežino, pažymėk kaip poilsio dieną.
+Nuvesk mane ten
+Atidaryti vadovą
+Pagalba
+Vadovas ir dažni klausimai
+Kaip ką padaryti, žingsnis po žingsnio
+Vadovas
+Nieko nerasta. Pabandyk kitus žodžius.
+Ieškoti vadove
+Per minutę parodysiu, kaip tai veikia. Gali bet kada praleisti ir vėl peržiūrėti turą iš Vadovo.
+Pasirink pamainą ir liesk kalendoriaus dienas, kad ją priskirtum. Norėdamas baigti, dar kartą paliesk mygtuką. {a}, {b} ir {c} veikia taip pat.
+Kalendorius
+Paliesk dieną, kad atidarytum jos kortelę: laikas, viršvalandžiai, laisvas laikas, liga ir pastabos. Viskas išsaugoma savaime, o apačioje esančiame pranešime visada gali atšaukti.
+Kita pamaina
+Čia viršuje visada matai kitą pamainą arba vykstančią.
+Mėnesio suvestinė
+Mėnesio dirbtos valandos, viršvalandžiai, naktys ir šventės, su įspėjimais, kai pamaina pažeidžia poilsio taisykles.
+Kalendorius ir Metai
+Pereik į Metai, kad matytum visų metų sumas mėnuo po mėnesio.
+Čia rasi visa kita: grafiką, atostogas ir laisvą laiką, valandų banką, atlyginimo įvertį, atlyginimo lapelį, mėnesio PDF, eksportą į kalendorių, duomenų kopiją ir Vadovą.
+Šalis ir šventės, kalba ir šviesi ar tamsi tema.
+Pradėk pažymėdamas šios savaitės pamainas.
+{n} iš {m}
+Praleisti
+Pradedam
+Peržiūrėti turą dar kartą

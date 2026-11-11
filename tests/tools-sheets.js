@@ -1,0 +1,28 @@
+const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const ROOT=path.resolve(__dirname,'..'),OUT=process.env.OUT||path.join(os.tmpdir(),'iwork-tests');fs.mkdirSync(OUT,{recursive:true});
+
+(async()=>{const b=await chromium.launch();const errs=[];
+const p=await b.newPage({viewport:{width:390,height:844}});p.on('pageerror',e=>errs.push(e.message));
+await p.addInitScript(()=>{if(localStorage.getItem('cartellino-turni-v1'))return;localStorage.setItem('iwork-lang','it');const d={};['09','10','11'].forEach(x=>d['2026-11-'+x]={k:'w',s:'06:00'});
+ localStorage.setItem('cartellino-turni-v1',JSON.stringify({days:d,settings:{setup:1,country:'IT',rate:12}}));});
+await p.goto('file://'+ROOT+'/index.html');await p.waitForTimeout(500);
+const S=()=>p.evaluate(()=>JSON.parse(localStorage.getItem('cartellino-turni-v1')).settings);
+await p.click('#setBtn');await p.waitForTimeout(300);
+console.log('settings sections:',await p.$$eval('#stForm h3',x=>x.map(e=>e.textContent).join(' | ')));
+await p.screenshot({path:path.join(OUT,'new_settings.png')});await p.keyboard.press('Escape');await p.waitForTimeout(200);
+await p.click('#toolsBtn');await p.waitForTimeout(300);
+console.log('tools sections:',await p.$$eval('#tl .menu h3',x=>x.map(e=>e.textContent).join(' | ')));
+await p.screenshot({path:path.join(OUT,'new_tools.png')});
+await p.click('#whBtn');await p.waitForTimeout(300);console.log('tools closed:',!(await p.evaluate(()=>document.getElementById('tl').open)),'wh open:',await p.evaluate(()=>document.getElementById('wh').open));
+console.log('wd value:',await p.inputValue('#stWd'),'| rules:',(await p.textContent('#stRules')).slice(0,60));
+await p.screenshot({path:path.join(OUT,'new_wh.png')});
+await p.fill('#stSat','5');await p.waitForTimeout(600);console.log('sat saved:',(await S()).sat,'week auto:',(await S()).week);
+await p.fill('#stRRest','12');await p.dispatchEvent('#stRRest','change');await p.waitForTimeout(200);console.log('rules saved:',JSON.stringify((await S()).rules));
+await p.click('#wh button[type=submit]');await p.waitForTimeout(200);
+await p.click('#toolsBtn');await p.waitForTimeout(200);await p.click('#lvBtn');await p.waitForTimeout(200);await p.fill('#stFerie','26');await p.click('#lv button[type=submit]');await p.waitForTimeout(200);
+console.log('ferie saved on close:',(await S()).ferie);
+await p.click('#toolsBtn');await p.waitForTimeout(200);await p.click('#hbBtn');await p.waitForTimeout(200);await p.fill('#stBank0','4');await p.keyboard.press('Escape');await p.waitForTimeout(300);
+console.log('bank0 saved on Esc:',(await S()).bank0);
+await p.click('[data-set="stPOt"]');await p.waitForTimeout(400);console.log('pay link opens py:',await p.evaluate(()=>document.getElementById('py').open),'focus:',await p.evaluate(()=>document.activeElement.id));
+await p.fill('#stPOt','25');await p.waitForTimeout(600);console.log('pOt saved:',(await S()).pOt);
+await p.screenshot({path:path.join(OUT,'new_py.png')});
+console.log('errors',errs);await b.close()})();

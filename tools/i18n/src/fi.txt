@@ -1,0 +1,639 @@
+{n} pv
+{d} pv {h} t
+{h} t {m} min
+{h} t
+{m} min
+Vuoro
+ja
+Näytä summat
+Piilota summat
+Tehdyt tunnit
+Ylityö
+Yötyö
+Sunnuntai
+Pyhäpäivät
+Karkea bruttoarvio. Vain sinulle: se ei näy PDF:ssä eikä jaetuissa kuvissa.
+Lisää lisät
+Vuorosi tallennetaan tähän laitteeseen.
+ei vuoroa
+jaettu vuoro {r}
+vuoro {r}
+seuraavana päivänä
+{h} tunnin vapaa
+Vapaa
+Loma
+Tyhjennä
+Luo tunnisteita osastoille tai työpisteille
+Valitse vuoro, tunniste tai molemmat ja napauta sitten päiviä. Tai napauta päivää asettaaksesi ajat, muistiinpanot ja lisätunnit.
+Tyhjennys on päällä.
+Napauta tyhjennettäviä päiviä ja lopuksi painiketta uudelleen.
+Jokainen napauttamasi päivä saa vuoron ja tunnisteen kerralla.
+{x} on päällä.
+Napauta täytettäviä päiviä ja valitse halutessasi myös tunniste. Lopeta napauttamalla painiketta uudelleen.
+Napauta täytettäviä päiviä. Lopeta napauttamalla painiketta uudelleen.
+Tunniste {x} on päällä.
+Lisää tai poista se napauttamalla päiviä, joilla on vuoro.
+Vapaa
+lepo alle {n} t
+{x} lisää
+{n} päivä löytyi
+{n} päivää löytyi
+{h} t työtä
+Ei päiviä, joiden muistiinpanoissa tai tunnisteissa on ”{q}”.
+Lauantai {s} t, muut päivät {w} t.
+Muistiinpano
+Alle {n} t lepoa edellisestä vuorosta
+Tauolla
+Jatkuu <b>{x}</b> päästä. Jaettu vuoro: {r}.
+Seuraava vuoro
+Ei suunniteltuja vuoroja
+Napauta päivää kalenterissa ja valitse aloitusaika: loppu lasketaan itsestään.
+Tänään
+Huomenna
+Eilen
+Vuorossa nyt
+Loppuun <b>{a}</b>. Tehty {b}.
+Alkaa <b>{x}</b> päästä.
+Jaettu: {r}, yhteensä {h} t.
+Kesto {h} t.
+Vain {h} t lepoa välillä {a}–{b} (vähimmäis {n}).
+Seitsemän tai useampi työpäivä peräkkäin alkaen {d}.
+Viikko {d}: {h} t, yli {n}.
+Vuonna {y} olet merkinnyt {n} lomapäivän enemmän kuin sinulle kuuluu.
+Vuonna {y} olet merkinnyt {n} lomapäivää enemmän kuin sinulle kuuluu.
+Vuonna {y} olet merkinnyt {h} t vapaata enemmän kuin sinulle kuuluu.
+Yhteensä {m}
+t, {n} vuoro
+t, {n} vuoroa
+Lisätunnit
+Yötunnit, {r}
+Tehdyt lauantait
+Sunnuntait ja pyhät
+Loma tässä kuussa
+Lomaa jäljellä {y}
+Loma {y}
+Vapaat tässä kuussa
+Vapaata jäljellä
+Sairaus
+Tuntipankki kuun lopussa
+Tuntipankki tänään
+Palkka-arvio {m}
+Tunnit viikossa
+Palkki on täynnä {n} tunnin kohdalla.
+Tarkistettavaa
+Kuukauden yhteensä
+Ja {n} muuta huomautusta: löydät ne sovelluksesta.
+{h} t
+Vuorot
+Yötunnit
+Su ja pyhät
+Vapaat
+Tuntipankki
+Normaalivuoro {w} t, lauantai {s} t. Luotu sovelluksella {app} {d}.
+Vapaat ja poissaolot
+Yö
+Ilta
+Aamu
+Muokkaa tunnisteita
+Luo tunnisteita osastoille, koneille tai työpisteille
+{a} tunnin vuoro. Käytä normaalipituutta {b} t
+Tunteja enemmän tai vähemmän kuin {h}
+Koko päivä.
+Muu päivä lasketaan normaalisti tehdyksi. Vapaatunnit vähennetään sinulle kuuluvista.
+tauko {x}
+{h} yöllä
+Normaalivuoro {h} t, koska on lauantai.
+Normaalivuoro {h} t.
+Päivä tyhjennetty.
+Tunnisteet kuuluvat päiville, joilla on vuoro: valitse myös vuoro.
+Huomio: vuonna {y} olet ylittänyt sinulle kuuluvan loman.
+Olet käyttänyt kaiken vuoden {y} loman.
+Sinulla on {n} lomapäivä jäljellä vuonna {y}.
+Sinulla on {n} lomapäivää jäljellä vuonna {y}.
+Huomio: vuonna {y} olet ylittänyt sinulle kuuluvat vapaat.
+Sinulla on {h} t vapaata jäljellä vuonna {y}.
+t
+Pikavuoron {n} nimi
+Nimi
+Poista pikavuoro {n}
+Pikavuoron {n} alku
+Ensimmäisen osan kesto tunteina
+Pikavuoron {n} kesto tunteina
+Puolet
+Normaali
+Jaettu
+Jatkuu klo, pikavuoro {n}
+Toisen osan kesto tunteina
+Loput
+Enintään {n} pikavuoroa
++ Lisää pikavuoro
+Pikavuoro ”{x}” poistettu.
+Esim. Osasto A, Puristin 3, Kassa 2
+Tunniste {n}
+Poista tunniste {n}
+Tunniste ”{x}” poistettu {n} päivältä.
+Tunniste ”{x}” poistettu {n} päivältä.
+nimetön
+Tunniste ”{x}” poistettu.
+Vuosi
+Yhteensä {y}
+Merkityt vapaapäivät
+Palkka-arvio {y}
+Tunnisteet {y}
+{n} päivä
+{n} päivää
+Etsi yksittäisiä päiviä kalenterin luettelonäkymästä.
+Tämä vuosi ei ole vielä alkanut.
+Tuntipankki alkaa {d}.
+Saldo {d}.
+Saldo tähän päivään.
+Olet tehnyt enemmän tunteja kuin sopimuksessa.
+Olet tehnyt vähemmän tunteja kuin sopimuksessa.
+Olet tasan sopimuksen mukaisesti.
+Sopimus <b>{h} t</b> viikossa
+Alkaen <b>{d}</b>
+Alku <b>{h} t</b>
+Muuta tuntipankin asetuksia
+Käytetty
+Käytetty
+Suunniteltu
+Suunniteltu
+Kuuluu
+päivää merkitty {y}
+tuntia merkitty {y}
+Aseta, mitä sinulle kuuluu
+päivää liikaa
+tuntia liikaa
+päivää jäljellä / {x}
+tuntia jäljellä / {x}
+{a} käytetty, {b} suunniteltu / {c}
+Olet merkinnyt enemmän lomaa kuin sinulle kuuluu.
+Olet merkinnyt enemmän vapaata kuin sinulle kuuluu.
+Kaikki käytetty.
+Kaikki käytetty.
+Melkein lopussa.
+Melkein lopussa.
+Tunnit kuukaudessa
+{m}: {h} t. Avaa kuukausi
+Kuukausi
+Tunnit
+Lisä
+Vapaa
+Pankki
+Yhteensä
+Kuukausi kerrallaan
+Napauta kuukautta avataksesi sen kalenterissa. Pankki-sarake näyttää, paljonko kukin kuukausi lisäsi tai vähensi.
+Vaihe {n}
+Päivä vähemmän
+Päivä enemmän
+Poista vaihe {n}
+Näillä valinnoilla ei ole täytettäviä päiviä.
+Valitse aloituspäivä.
+<b>{a}</b> jakso. Täytän <b>{b}</b> {c}–{d}:
+Käytä {n} päivään
+Käytä {n} päivään
+{n} viikko
+{n} viikkoa
+Kierto lisätty {n} päivään.
+Kierto lisätty {n} päivään.
+Vuoroni, viikko {d}:
+vapaa
+Vuoroni
+{h} t, {n} vuoro
+{h} t, {n} vuoroa
+Luotu sovelluksella {app}
+Tämä viikko
+Ensi viikko
+Viime viikko
+{n} viikon päästä
+{n} viikon päästä
+{n} viikko sitten
+{n} viikkoa sitten
+Vuorot kopioitu: liitä ne viestiin.
+Kopiointi ei ole mahdollista täällä.
+Kuvan luominen ei onnistunut.
+Toistettavaa viikkoa ei vielä ole.
+Seuraava viikko on jo täytetty.
+Viikko {a} toistettu viikolle {b}.
+Viimeisin kopio tallennettu {d}.
+Et ole vielä tallentanut kopiota.
+Vuorosi ({n} päivä) ovat vain tässä laitteessa: tallenna kopio silloin tällöin esimerkiksi iCloud Driveen, Google Driveen tai sähköpostiin itsellesi, ettet menetä niitä puhelinta vaihtaessasi.
+Vuorosi ({n} päivää) ovat vain tässä laitteessa: tallenna kopio silloin tällöin esimerkiksi iCloud Driveen, Google Driveen tai sähköpostiin itsellesi, ettet menetä niitä puhelinta vaihtaessasi.
+Tiedosto ladattu.
+Lataus epäonnistui.
+{n} vuoro
+{n} vuoroa
+tyhjä
+Luo PDF: {m}
+PDF:n luominen ei onnistunut.
+{app}-vuorojen kopio
+Kopio tallennettu. Säilytä se turvallisessa paikassa.
+Tiedostossa on {n} päivä
+Tiedostossa on {n} päivää
+{a}–{b}
+tallennettu {d}
+Ne korvaavat nykyiset vuorosi ({n} päivä) asetuksineen.
+Ne korvaavat nykyiset vuorosi ({n} päivää) asetuksineen.
+Ne ladataan asetusten kanssa.
+Tämä tiedosto ei ole {app}-kopio.
+Kopio ladattu: {n} päivä.
+Kopio ladattu: {n} päivää.
+Versio {v}.
+Avaa sovellus sen verkko-osoitteesta saadaksesi päivityksiä.
+Versio {v} on saatavilla.
+Tarkistettu viimeksi: {d}.
+Automaattinen tarkistus on päällä.
+{app} {v} on saatavilla
+Päivitä saadaksesi uusimmat ominaisuudet. Vuorosi pysyvät paikallaan.
+Avaa sovellus sen verkko-osoitteesta etsiäksesi päivityksiä.
+Tarkistetaan…
+Sinulla on jo uusin versio ({v}).
+Päivityksiä ei voi tarkistaa: tarkista yhteys.
+Etsi päivityksiä
+Päivitetään…
+Vapaa
+Sair.
+Uudenvuodenpäivä
+Loppiainen
+Vapautuksen päivä
+Työn päivä
+Tasavallan päivä
+Neitsyt Marian taivaaseenastuminen
+Pyhäinpäivä
+Neitsyt Marian perisynnittömyys
+Joulupäivä
+Tapaninpäivä
+Pyhän Franciscuksen päivä
+Pääsiäispäivä
+2. pääsiäispäivä
+iWork
+Kalenteri
+Muutokset tallentuvat itsestään.
+Vuoron alku
+Jaettu vuoro, kahdessa osassa
+Ensimmäinen osa
+Jatkuu klo
+Toinen osa
+Vuoron loppu
+Tunteja enemmän tai vähemmän
+Vapaatunnit
+Tunnisteet
+Tyhjennä päivä
+Valmis
+Asetukset
+Jokainen muutos tallentuu itsestään.
+Normaalivuoron tunnit
+Lauantaivuoron tunnit
+Pikavuorot ja tunnisteet luodaan ja muokataan Työkaluissa, kolmen pisteen painikkeessa.
+Loma ja vapaat
+Loma vuodessa
+päivää
+Vapaat vuodessa
+Mitä sinulle kuuluu vuodessa, mukaan lukien edellisestä vuodesta siirtyneet. Arvolla 0 laskuri on pois päältä.
+Sopimuksen viikkotunnit
+Laske alkaen
+Alkusaldo
+Tuntipankki vertaa tehtyjä tunteja sopimuksen tunteihin päivä päivältä tähän päivään asti. Loma, vapaat, sairaus, sunnuntait ja pyhät eivät ole puuttuvia tunteja.
+Palkka
+Bruttotuntipalkka
+€/t
+Yö 22–06
+Lisät lasketaan yhteen: yötunti sunnuntaina saa sekä yö- että sunnuntailisän. Jos pyhä osuu sunnuntaille, vain pyhälisä on voimassa. Arvio pysyy tässä laitteessa eikä näy PDF:ssä eikä jaetuissa kuvissa.
+Kieli
+Ulkoasu
+Automaattinen
+Vaalea
+Tumma
+Päivitykset
+Työkalut
+Täytä vuoroja
+Vuorokierto
+Kuvio, joka toistuu usean viikon ajan
+Toista viime viikko
+Kopioi vuorot seuraavalle viikolle
+Muokkaa
+Pikavuorot
+Painikkeet vuoron lisäämiseen yhdellä napautuksella
+Osastot, koneet, työpisteet yhdellä napautuksella
+Jaa ja vie
+Jaa viikko
+Kuva tai teksti, mikä tahansa viikko
+Kuukauden PDF
+Haluamasi kuukausi tulostusvalmiina
+Varmuuskopio
+Tallenna kopio vuoroista
+Tiedosto, jossa on kaikki vuorot ja asetukset
+Lataa kopio
+Palauta vuorot aiemmin tallennetusta tiedostosta
+Sulje
+Nämä ovat kalenterin yläpuolella olevat painikkeet: valitse yksi ja napauta päiviä lisätäksesi sen. Täällä luot ne, nimeät ne ja muutat aikoja ja kestoa. Jokainen muutos tallentuu itsestään.
+Jätä kesto tyhjäksi käyttääksesi normaalipituutta (8 t, lauantaina 6). Oma kesto pätee kaikkina päivinä. ”Jaettu”-valinnalla vuorossa on kaksi osaa, esimerkiksi 8–12 ja 16–20.
+Osastot, koneet, työpisteet tai mitä tarvitsetkin. Ne näkyvät toisella rivillä kalenterin yläpuolella: valitse yksi ja napauta päiviä lisätäksesi sen, myös vuoron kanssa. Jokainen muutos tallentuu itsestään.
++ Lisää tunniste
+Ladataanko tämä kopio?
+Peruuta
+Korvaa vuorot
+Rakenna toistuva kuvio, esimerkiksi 5 aamua, 2 vapaata, 5 iltaa, 2 vapaata, ja käytä sitä usealle viikolle kerralla.
+Kuvio
++ Lisää vaihe
+Alkaen
+Montako viikkoa
+Älä muuta jo täytettyjä päiviä
+Jätä sunnuntait vapaiksi
+Käytä
+Takaisin tähän viikkoon
+Kopioi tekstinä
+Jaa kuva
+Valitse kuukausi: saat kalenterin vuoroineen ja summineen A4-arkille tulostettavaksi.
+Myöhemmin
+Päivitä
+Näyttö
+Edellinen kuukausi
+Seuraava kuukausi
+Pikasyöttö
+Näkymä
+Kalenterinäkymä
+Luettelonäkymä
+Pikatunnisteet
+Hae muistiinpanoista ja tunnisteista
+Vuoden yhteenveto
+Edellinen vuosi
+Seuraava vuosi
+Päivän tyyppi
+Puoli tuntia vähemmän
+Puoli tuntia enemmän
+Esim. vuoro vaihdettu Markun kanssa, osasto B
+Teema
+Viikko vähemmän
+Viikko enemmän
+Edellinen viikko
+Seuraava viikko
+Esikatselu kuvasta, jossa on viikon vuorot
+Kumoa
+{x}, suojeluspyhimyksen päivä
+Suojeluspyhimyksen päivä
+{x} (korvaava päivä)
+Ei mitään erityistä
+Ei mitään
+Muu päivämäärä…
+Säännöt, {c}: vähintään {r} t lepoa kahden vuoron välillä, keskimäärin enintään {w} t viikossa, viikkolepo {k} t. Viikon ensimmäinen päivä: {d}.
+Maa ja pyhäpäivät
+Maa
+Alue tai maakunta
+Suojeluspyhimys
+Päivä
+Suojeluspyhimyksen päivä lasketaan pyhäksi kalenterissa, tuntipankissa ja palkassa. Tarkista päivämäärä sopimuksestasi tai kunnastasi.
+{c}: vähintään {r} t lepoa kahden vuoron välillä, keskimäärin enintään {w} t viikossa, viikkolepo {k} t. Viikon ensimmäinen päivä: {d}.
+Yö {r}
+Aloita
+Seuraava
+Uutta: kieli ja maa
+Tervetuloa, {app}
+Valitse kieli ja maa: sovellus asettaa oikeat säännöt ja pyhäpäivät. Vuorosi pysyvät paikallaan.
+Vuorojesi kalenteri. Valitse kieli.
+Missä työskentelet?
+Tästä riippuvat pyhät, vähimmäislepo, yötunnit ja valuutta.
+Hae maata
+Alueesi
+Jotkin pyhät ovat voimassa vain tietyllä alueella tai paikkakunnalla. Voit ohittaa tämän vaiheen ja muuttaa sitä myöhemmin.
+Jos kaupunkisi puuttuu, voit syöttää päivämäärän Asetuksissa.
+Kuinka pitkä vuoro on?
+Silloin valitset vain alkamisajan ja loppu lasketaan itsestään. Voit muuttaa sitä milloin vain.
+Normaalivuoro
+Lauantaivuoro
+Valmista
+Näin sovellus on asetettu. Voit muuttaa kaiken Asetuksissa.
+{w} t, lauantai {s}
+Vähimmäislepo
+Enimmäiskeskiarvo
+{h} t viikossa
+Huomautukset levosta ja tunneista ovat suuntaa antavia eivätkä korvaa sopimustasi.
+Takaisin
+Huomautusten ja laskelmien säännöt
+t/vko
+Yö alkaen
+Yö asti
+Sopimuksesi voi olla lakia parempi: täällä voit mukauttaa sääntöjä.
+Palaa maan sääntöihin
+{x}, paikallinen pyhä
+Paikallinen pyhä
+Kuntasi tai sopimuksesi pyhä: se lasketaan pyhäksi kalenterissa, tuntipankissa ja palkassa.
+Jos pyhä osuu sunnuntaille, työnantaja määrää korvaavan päivän.
+Grundlovsdag (5. kesäkuuta) ja jouluaatto eivät ole lakisääteisiä pyhiä, mutta monet sopimukset antavat ne vapaaksi.
+Helluntaimaanantai on usein ”solidaarisuuspäivä”, jolloin tehdään töitä.
+Baijerissa Neitsyt Marian taivaaseenastuminen on pyhä vain enimmäkseen katolisissa kunnissa.
+Pitkäperjantai ja 5. toukokuuta ovat vapaita vain, jos työehtosopimus (CAO) niin sanoo.
+Laskiaistiistai on vapaaehtoinen; jokaisella kunnalla on lisäksi oma pyhänsä.
+Vuodesta 2025 17. marraskuuta ei enää ole pyhä; vuonna 2026 töitä tehdään myös 8. toukokuuta ja 15. syyskuuta.
+Jokainen itsehallintoalue lisää omia pyhiään (usein kiirastorstain) ja muuttaa niitä vuosittain: lisää omasi paikallisena pyhänä.
+Aatot (Midsommarafton, Julafton, Nyårsafton) eivät ole lakisääteisiä pyhiä, mutta ne ovat vapaita lähes kaikkialla.
+45 tunnin raja koskee teollisuutta, toimistoja, teknistä henkilöstöä ja suuria kauppaketjuja; muille se on 50. Joissain kunnissa (Fribourg, Solothurn, Aargau) pyhät ovat erilaiset: lisää omasi paikallisena pyhänä.
+Isossa-Britanniassa bank holidays eivät ole lakisääteinen oikeus: se riippuu sopimuksesta. 48 tunnin rajasta voi luopua kirjallisesti (opt-out).
+Työ- ja lepoajat noudattavat lähinnä San Marinon työehtosopimuksia: tarkista alla olevat arvot.
+Jos pyhä osuu sunnuntaille, maanantai on vapaa.
+45 tunnin raja koskee teollisuutta, toimistoja ja suuria kauppaketjuja; muille se on 50.
+{c}: laki ei määrää vähimmäislepoa kahden vuoron välille. Sovellus varoittaa alle {r} tunnin ja yli {w} tunnin viikossa. Viikon ensimmäinen päivä: {d}.
+Liittovaltion pyhät koskevat lain mukaan vain liittovaltion työntekijöitä: yksityisellä sektorilla se riippuu sopimuksesta. Jokaisella osavaltiolla on omat pyhänsä: lisää omasi paikallisena pyhänä.
+Työ- ja lepoajat voivat vaihdella provinsseittain: tarkista alla olevat arvot. Newfoundland ja Labrador ei ole vielä mukana.
+Liittovaltion ja paikallisten vaalien päivät ovat vapaita myös äänestäville.
+Karnevaali ja Kristuksen ruumiin juhla ovat ”ponto facultativo”; jokainen osavaltio ja kunta lisää omia pyhiään: lisää omasi paikallisena pyhänä.
+Hallitus voi siirtää siirrettäviä pyhiä (17. kesäkuuta, 17. elokuuta, 12. lokakuuta, 20. marraskuuta) ja lisätä vapaapäiviä: tässä näet lain määräämät päivämäärät.
+Monet työehtosopimukset (awards) edellyttävät 10 tunnin lepoa vuorojen välillä. Jotkin pyhät koskevat vain tiettyjä alueita (Royal Show, Regatta, Recreation Day): voit lisätä omasi paikallisena pyhänä.
+Jokaisella provinssilla on oma Anniversary Day: jos omasi puuttuu luettelosta, lisää se paikallisena pyhänä.
+Ei mitään
+Tunnit ja sopimus
+Työaika
+Vuorojen pituus, vähimmäislepo, yötunnit
+Montako päivää ja tuntia sinulle kuuluu
+Sopimuksen tunnit ja alkusaldo
+Palkka-arvio
+Tuntipalkka ja lisät, vain sinulle
+Toinen työ
+Varallaolo
+Varallaolo päällä.
+Napauta päiviä lisätäksesi tai poistaaksesi sen, myös vapaapäivinä. Voit valita sen yhdessä vuoron kanssa.
+Jokainen napautettu päivä saa vuoron ja varallaolon yhdessä.
+{h} h hälytystyötä
+Hälytystyön tunnit
+Toinen työ lasketaan erikseen: se ei vaikuta päätyön tuntipankkiin, lomiin eikä varoituksiin.
+Päätyö
+Luotu sovelluksella {app} {d}.
+Pikavuoron {n} työ
+{n} kuukausi
+{n} kuukautta
+Vuorot: {x}
+<b>{n}</b> välillä {a}–{b}.
+{n} tapahtuma
+{n} tapahtumaa
+Ei vietäviä vuoroja välillä {a}–{b}.
+Alkaen
+Kesto
+Hälytystyö
+Hälytystyön tunnit lasketaan tehdyiksi, ja palkka-arviossa ne maksetaan ylityönä.
+Alku
+Toinen työ omilla ajoillaan ja laskuillaan
+Vie kalenteriin
+Google-, Apple- tai Outlook-kalenteri
+Teen varallaoloa
+Yleensä alkaen
+Kalenterin yläpuolelle tulee painike Varallaolo: valitse se ja napauta päiviä, myös vapaapäiviä. Hälytystyön tunnit merkitset napauttamalla päivää.
+Varallaolokorvaus
+Jokaisesta varallaolosta. Hälytystyön tunnit maksetaan ylityönä.
+Minulla on toinen työ
+Tavallinen kesto
+Toisen työn vuorot näkyvät samoina päivinä toisella rivillä, turkoosilla neliöllä. Merkitset ne toisen työn pikavuoroilla tai napauttamalla päivää. Tunnit ja palkka lasketaan erikseen: ne eivät vaikuta päätyön tuntipankkiin, lomiin eikä varoituksiin.
+Valitse jokaiselle pikavuorolle, kuuluuko se päätyöhön vai toiseen työhön. Toisen työn vuoroilla on turkoosi neliö.
+Luo tiedosto vuoroistasi avattavaksi Google-kalenterissa, Applen Kalenterissa tai Outlookissa.
+Montako kuukautta
+Mitä viedään
+Työvuorot
+Loma, vapaat ja sairaus, koko päivän tapahtumina
+Muistutus
+30 minuuttia ennen
+1 tunti ennen
+2 tuntia ennen
+Näin avaat sen kalenterissa
+iPhone, iPad ja Mac.
+Avaa tiedosto ja valitse Lisää kaikki, sitten kalenteri, johon ne laitetaan.
+Google-kalenteri.
+Avaa tietokoneella calendar.google.com, mene Asetukset, Tuonti ja vienti, ja lataa tiedosto. Androidissa voit myös avata sen suoraan Google-kalenterilla.
+Outlook.
+Avaa tiedosto Outlookilla tai mene outlook.comissa kalenteriin, Lisää kalenteri, Lataa tiedostosta.
+Jos viet saman jakson uudelleen, jo tuodut vuorot yleensä päivittyvät eivätkä kahdennu. Sovelluksessa tyhjennetyt päivät pitää poistaa käsin. Vinkki: käytä vain vuoroille omaa kalenteria, niin voit tyhjentää sen ja tuoda uudelleen, kun ne muuttuvat.
+Luo tiedosto
+Esim. baari, tuntiopetus, kuljetukset
+Kuukausi vähemmän
+Kuukausi enemmän
+Työ
+Ylityö
+Pidetty loma
+Pidetyt vapaat
+Brutto yhteensä
+{n} ero merkitsemiisi tunteihin
+{n} eroa merkitsemiisi tunteihin
+Palkkalaskelman rivit vastaavat merkintöjäsi.
+Merkitty
+Laskelmassa
+Laskelmassa {v} vähemmän
+Laskelmassa {v} enemmän
+Sovelluksen arvio, suuntaa antava
+Palkkalaskelma ({a}): tunteja verrataan kuukauteen {b}.
+Palkkalaskelma: {m}
+merkitty {a}, laskelmassa {b}
+Maksetaan
+Avaa palkkalaskelma
+laskelma lisätty
+ei laskelmaa
+Lataa PDF: {m}
+Palkkalaskelma poistettu: {m}.
+Luen palkkalaskelmaa…
+Väärä salasana, yritä uudelleen.
+PDF on suojattu salasanalla. Usein se on henkilötunnuksesi tai työnantajan antama salasana.
+PDF-lukijaa ei voi ladata. Tarkista yhteys ja yritä uudelleen.
+Tiedostoa ei voi avata. Onko se PDF?
+Tässä PDF:ssä ei ole tekstiä, ehkä se on skannaus tai valokuva. Syötä luvut käsin.
+En tunnistanut tämän palkkalaskelman rivejä. Syötä luvut käsin: vain ne, joista olet kiinnostunut.
+ylityö
+yötyö
+sunnuntait ja pyhät
+pidetty loma
+pidetyt vapaat
+lomaa jäljellä
+vapaata jäljellä
+brutto yhteensä
+nettopalkka
+Palkkalaskelma: {m}.
+Luin: {x}.
+Tarkista korostetut luvut ja täydennä puuttuvat käsin.
+Tämä näyttää laskelmalta, jossa on lomaraha tai lisäpalkka: tarkista brutto huolella.
+Tiedosto on liian suuri palkkalaskelmaksi.
+Palkkalaskelma
+Tarkista maksetut tunnit ja rivit
+Lataa palkkalaskelman PDF tai syötä luvut: sovellus vertaa niitä merkitsemiisi tunteihin.
+PDF:n salasana
+Avaa
+PDF luetaan vain tällä laitteella eikä sitä tallenneta: sovellus säilyttää vain alla olevat luvut.
+Palkkalaskelmassa
+Lomaa jäljellä
+Ylityöt ja lisät ovat edellisen kuun
+Monet työnantajat maksavat ylityöt, yö- ja pyhätyöt seuraavassa kuussa. Jos näin on sinulla, ota tämä käyttöön: vertailu käyttää oikeaa kuukautta.
+Poista
+Vuorojen merkitseminen
+Miten merkitsen vuoron?
+Valitse kalenterin yläpuolelta pikavuoro, esimerkiksi {a}, ja napauta päiviä: jokainen saa sen vuoron. Lopeta napauttamalla painiketta uudelleen. Muita aikoja varten napauta päivää ja kirjoita alku ja kesto.
+Miten muutan tai tyhjennän päivän?
+Napauta päivää: kortilla muutat tyyppiä, aikaa, tunteja enemmän tai vähemmän, tunnisteita ja muistiinpanoa, ja kaikki tallentuu itsestään. {a} poistaa sen. Useamman tyhjentämiseksi valitse kalenterin yläpuolelta {b} ja napauta päiviä. Jokaisen muutoksen voi perua alareunan viestistä.
+Miten merkitsen vapaapäivät, loman, vapaat ja sairauden?
+{a} ja {b} ovat omina painikkeinaan kalenterin yläpuolella: valitse painike ja napauta päiviä. {c} tai {d} merkitään napauttamalla päivää ja valitsemalla tyyppi kortilta; vapaalle kirjoitat myös tunnit.
+Miten merkitsen ylityön tai jaetun vuoron?
+Käytä päivän kortilla {a} ylityöhön tai aikaisempaan lähtöön. {b} avulla merkitset molemmat osat, esimerkiksi 8–12 ja 16–20.
+Miten luon omat pikavuoroni?
+Avaa {p} ja valitse jokaiselle painikkeelle nimi, alkamisaika ja kesto. Ne voivat olla jaettuja vuoroja ja, jos sinulla on toinen työ, kuulua siihen.
+Teen aina samaa kiertoa: voiko kalenteri täyttyä itsestään?
+Kyllä: kuvaa kohdassa {p} kierto (esimerkiksi 5 aamua, 2 vapaata, 5 yötä, 2 vapaata), aloituspäivä ja mihin asti. {q} kopioi sen sijaan yhden viikon seuraavalle.
+Mihin tunnisteita käytetään?
+Ne merkitsevät osaston, koneen tai työpisteen. Luot ne kohdassa {p}; sitten valitset ne kalenterin yläpuolelta ja napautat päiviä, myös vuoron kanssa.
+Miten löydän päivän, muistiinpanon tai tunnisteen?
+Vaihda luettelonäkymään pikavuorojen vieressä olevalla painikkeella: esiin tulee haku muistiinpanoista ja tunnisteista. Välilehti {a} näyttää koko vuoden summat kuukausittain.
+Tunnit, sopimus ja palkka
+Mitä kuukauden lopun varoitukset tarkoittavat?
+Sovellus tarkistaa maasi säännöt: vähimmäislevon kahden vuoron välillä, keskimääräiset viikkotunnit ja seitsemän työpäivää putkeen. Jos sopimuksesi on erilainen, muuta arvoja kohdassa {p}.
+Miten tuntipankki toimii?
+Kirjoita kohtaan {p} sopimuksen viikkotunnit, mistä lähtien lasketaan ja mahdollinen alkusaldo. Sovellus vertaa tehtyjä tunteja vaadittuihin ja näyttää saldon kuukauden yhteenvedossa.
+Miten seuraan lomia ja vapaita?
+Kirjoita kohtaan {p}, montako lomapäivää ja vapaatuntia sinulle kuuluu vuodessa. Sovellus laskee käytetyt ja suunnitellut ja kertoo, montako on jäljellä.
+Miten palkka-arvio toimii?
+Kirjoita kohtaan {p} bruttotuntipalkka ja lisät. Se on suuntaa antava arvio vain sinulle: se ei näy PDF:ssä eikä jaetuissa kuvissa, ja summat voi piilottaa.
+Miten merkitsen varallaolon?
+Ota se käyttöön kohdassa {p}. Kalenterin yläpuolelle tulee painike {a}: valitse se ja napauta päiviä, myös vapaapäiviä. Hälytystyön tunnit kirjoitat päivän kortille; korvaus asetetaan kohdassa {q}.
+Minulla on toinen työ: miten pidän sen erillään?
+Ota se käyttöön kohdassa {p} nimen, keston ja palkan kanssa. Sen vuoroilla on omat pikapainikkeet ja ne näkyvät päivissä toisella rivillä. Tunnit ja palkka lasketaan erikseen, ja kuukauden PDF:n voi tehdä kummastakin työstä.
+Miten tarkistan palkkalaskelman?
+Valitse kohdassa {p} kuukausi ja lataa PDF: sovellus lukee ylityöt, yötyön, pyhät, lomat, vapaat, bruttopalkan ja maksettavan summan ja vertaa niitä merkitsemiisi tunteihin. Jos laskelma on paperilla, syötä luvut käsin.
+Palkkalaskelmaa ei lueta tai luvut eivät täsmää: mitä teen?
+Jos PDF on skannaus tai valokuva, siinä ei ole luettavaa tekstiä: syötä luvut käsin. Jos se on suojattu, sovellus kysyy salasanaa. Tarkista aina korostetut luvut ja ota {a} käyttöön, jos työnantaja maksaa ylityöt ja lisät seuraavassa kuussa.
+Jakaminen ja vienti
+Miten lähetän jollekulle viikon vuoroni?
+Valitse kohdassa {p} viikko ja lähetä se kuvana tai tekstinä, esimerkiksi keskusteluun.
+Miten tulostan kuukauden?
+Valitse kohdassa {p} kuukausi: saat A4-sivun kalenterista ja summista tulostettavaksi tai lähetettäväksi.
+Miten saan vuoroni Google-kalenteriin, Applen Kalenteriin tai Outlookiin?
+Valitse kohdassa {p} alku, montako kuukautta ja mitä mukaan otetaan, ja avaa tiedosto kalenterillasi: samalla näytöllä ovat ohjeet kullekin. Jos viet saman jakson uudelleen, vuorot yleensä päivittyvät eivätkä kahdennu.
+Tiedot, sovellus ja asetukset
+Mihin vuoroni tallentuvat?
+Vain tähän laitteeseen, selaimeen. Tiliä ei tarvita eikä mitään lähetetä palvelimelle.
+Miten teen kopion tai siirryn toiseen puhelimeen?
+{p} antaa tiedoston, jossa ovat vuorot ja asetukset. Avaa sovellus toisessa puhelimessa ja käytä kohtaa {q}. Piste kohdassa {a} muistuttaa, kun on aika tehdä kopio.
+Menetänkö vuoroni, jos tyhjennän selaimen tiedot?
+Kyllä, jos sinulla ei ole kopiota. Siksi kannattaa tallentaa sellainen aina välillä, varsinkin ennen puhelimen vaihtoa.
+Miten asennan sovelluksen puhelimeen?
+iPhonessa avaa sovellus Safarissa, napauta Jaa ja sitten Lisää Koti-valikkoon. Androidissa avaa Chromen valikko ja valitse Asenna sovellus tai Lisää aloitusnäytölle. Asennettuna se toimii myös ilman verkkoa.
+Miten päivitän sovelluksen?
+Kun uusi versio on saatavilla, ylös tulee ilmoitus: napauta {a}. Vuorosi pysyvät paikallaan.
+Miten vaihdan maan, pyhät, kielen tai teeman?
+Valitse kohdassa {p} maa ja alue pyhiä varten, kieli sekä vaalea tai tumma teema. Paikalliset pyhät, joita sovellus ei tunne, merkitse vapaapäiviksi.
+Vie minut sinne
+Avaa ohje
+Ohje
+Ohje ja usein kysytyt kysymykset
+Miten asiat tehdään, vaihe vaiheelta
+Ohje
+Vastausta ei löytynyt. Kokeile muita sanoja.
+Hae ohjeesta
+Näytän minuutissa, miten tämä toimii. Voit ohittaa milloin tahansa ja katsoa esittelyn uudelleen Ohjeesta.
+Valitse vuoro ja napauta kalenterin päiviä merkitäksesi sen. Lopeta napauttamalla painiketta uudelleen. {a}, {b} ja {c} toimivat samalla tavalla.
+Kalenteri
+Napauta päivää avataksesi sen kortin: aika, ylityöt, vapaat, sairaus ja muistiinpanot. Kaikki tallentuu itsestään ja voit aina perua alareunan viestistä.
+Seuraava vuoro
+Täällä ylhäällä näet aina seuraavan vuorosi tai meneillään olevan.
+Kuukauden yhteenveto
+Kuukauden työtunnit, ylityöt, yöt ja pyhät, sekä varoitukset, kun vuoro rikkoo lepoaikasääntöjä.
+Kalenteri ja Vuosi
+Siirry Vuosi-välilehdelle nähdäksesi koko vuoden summat kuukausittain.
+Täältä löytyy kaikki muu: vuorokierto, lomat ja vapaat, tuntipankki, palkka-arvio, palkkalaskelma, kuukauden PDF, vienti kalenteriin, tietojen kopio ja Ohje.
+Maa ja pyhät, kieli sekä vaalea tai tumma teema.
+Aloita merkitsemällä tämän viikon vuorot.
+{n}/{m}
+Ohita
+Aloitetaan
+Katso esittely uudelleen

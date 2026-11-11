@@ -1,0 +1,639 @@
+{n} z
+{d} z {h} h
+{h} h {m} min
+{h} h
+{m} min
+Tură
+și
+Arată sumele
+Ascunde sumele
+Ore lucrate
+Ore suplimentare
+Muncă de noapte
+Duminică
+Sărbători legale
+Estimare brută orientativă. E doar pentru tine: nu apare în PDF și nici în imaginile partajate.
+Adaugă sporurile
+Turele tale sunt salvate pe acest dispozitiv.
+nicio tură
+tură fracționată {r}
+tură {r}
+din ziua următoare
+învoire de {h} h
+Liber
+Concediu
+Șterge
+Creează etichete pentru secții sau posturi
+Alege o tură, o etichetă sau pe amândouă, apoi atinge zilele. Sau atinge o zi pentru ore, note și ore în plus.
+Ștergerea e activă.
+Atinge zilele de golit, apoi atinge din nou butonul ca să termini.
+Fiecare zi atinsă primește tura și eticheta împreună.
+{x} e activ.
+Atinge zilele de completat și, dacă vrei, alege și o etichetă. Atinge din nou butonul ca să termini.
+Atinge zilele de completat. Atinge din nou butonul ca să termini.
+Eticheta {x} e activă.
+Atinge zilele cu tură ca să o adaugi sau să o scoți.
+Liber
+odihnă sub {n} h
+{x} în plus
+{n} zi găsită
+{n} de zile găsite ‖few: {n} zile găsite
+{h} h de lucru
+Nicio zi cu „{q}” în note sau etichete.
+Sâmbătă {s} h, în celelalte zile {w} h.
+Notă
+Mai puțin de {n} h de odihnă de la tura anterioară
+În pauză
+Revii peste <b>{x}</b>. Tură fracționată: {r}.
+Următoarea tură
+Nicio tură planificată
+Atinge o zi din calendar și alege ora de început: sfârșitul se calculează singur.
+Azi
+Mâine
+Ieri
+În tură acum
+Mai sunt <b>{a}</b> până la final. Ai făcut {b}.
+Începe peste <b>{x}</b>.
+Fracționată: {r}, {h} h în total.
+Durează {h} h.
+Doar {h} h de odihnă între {a} și {b} (minimul este {n}).
+Șapte sau mai multe zile de lucru la rând din {d}.
+Săptămâna din {d}: {h} h, peste {n}.
+În {y} ai marcat {n} zi de concediu peste cele cuvenite.
+În {y} ai marcat {n} de zile de concediu peste cele cuvenite. ‖few: În {y} ai marcat {n} zile de concediu peste cele cuvenite.
+În {y} ai marcat {h} h de învoire peste cele cuvenite.
+Total {m}
+ore în {n} tură
+ore în {n} de ture ‖few: ore în {n} ture
+Ore în plus
+Ore de noapte, {r}
+Sâmbete lucrate
+Duminici și sărbători
+Concediu în lună
+Concediu rămas în {y}
+Concediu în {y}
+Învoiri în lună
+Învoiri rămase
+Boală
+Banca de ore la final de lună
+Banca de ore azi
+Estimare salariu {m}
+Ore pe săptămână
+Bara e plină la {n} h.
+De verificat
+Totalul lunii
+Alte avertismente: {n}. Le găsești în aplicație.
+{h} h
+Ture
+Ore de noapte
+Dum. și sărb.
+Învoiri
+Banca de ore
+Tură normală {w} h, sâmbătă {s} h. Creat cu {app} pe {d}.
+Liber și absențe
+Noapte
+După-amiază
+Dimineață
+Editează etichetele
+Creează etichete pentru secții, mașini sau posturi
+Tură de {a} ore. Folosește durata standard de {b} ore
+Ore în plus sau în minus față de {h}
+Zi întreagă.
+Restul zilei contează ca lucrat normal. Orele de învoire se scad din cele cuvenite.
+pauză {x}
+{h} noaptea
+Tură standard de {h} h, fiindcă e sâmbătă.
+Tură standard de {h} h.
+Zi golită.
+Etichetele se pun pe zilele cu tură: alege și o tură.
+Atenție: în {y} ai depășit concediul cuvenit.
+Ai folosit tot concediul din {y}.
+Îți mai rămâne {n} zi de concediu în {y}.
+Îți mai rămân {n} de zile de concediu în {y}. ‖few: Îți mai rămân {n} zile de concediu în {y}.
+Atenție: în {y} ai depășit învoirile cuvenite.
+Îți mai rămân {h} h de învoire în {y}.
+ore
+Numele turei rapide {n}
+Nume
+Șterge tura rapidă {n}
+Începutul turei rapide {n}
+Durata primei părți în ore
+Durata turei rapide {n} în ore
+Jumătate
+Standard
+Fracționată
+Reia la, tura rapidă {n}
+Durata părții a doua în ore
+Restul
+Maximum {n} ture rapide
++ Adaugă tură rapidă
+Tura rapidă „{x}” a fost ștearsă.
+Ex. Secția A, Presa 3, Casa 2
+Eticheta {n}
+Șterge eticheta {n}
+Eticheta „{x}” a fost scoasă de pe {n} zi.
+Eticheta „{x}” a fost scoasă de pe {n} de zile. ‖few: Eticheta „{x}” a fost scoasă de pe {n} zile.
+fără nume
+Eticheta „{x}” a fost ștearsă.
+An
+Total {y}
+Zile libere marcate
+Estimare salariu {y}
+Etichete în {y}
+{n} zi
+{n} de zile ‖few: {n} zile
+Ca să cauți zile anume, folosește vizualizarea listă din calendar.
+Anul acesta încă n-a început.
+Banca de ore începe pe {d}.
+Sold la {d}.
+Sold până azi.
+Ai lucrat mai multe ore decât prevede contractul.
+Ai lucrat mai puține ore decât prevede contractul.
+Ești la zi cu contractul.
+Contract <b>{h} h</b> pe săptămână
+Din <b>{d}</b>
+Start <b>{h} h</b>
+Schimbă setările băncii de ore
+Folosite
+Folosite
+Planificate
+Planificate
+Cuvenite
+zile marcate în {y}
+ore marcate în {y}
+Setează câte ți se cuvin
+zile peste limită
+ore peste limită
+zile rămase din {x}
+ore rămase din {x}
+{a} folosite, {b} planificate din {c}
+Ai marcat mai mult concediu decât ți se cuvine.
+Ai marcat mai multe învoiri decât ți se cuvin.
+S-au terminat.
+S-au terminat.
+Sunt pe terminate.
+Sunt pe terminate.
+Ore pe lună
+{m}: {h} h. Deschide luna
+Lună
+Ore
+În plus
+Înv.
+Bancă
+Total
+Lună cu lună
+Atinge o lună ca s-o deschizi în calendar. Coloana Bancă arată cât a adăugat sau a scăzut fiecare lună.
+Pasul {n}
+O zi mai puțin
+O zi mai mult
+Șterge pasul {n}
+Cu aceste opțiuni nu sunt zile de completat.
+Alege ziua de început.
+Ciclu de <b>{a}</b>. Completez <b>{b}</b> de la {c} la {d}:
+Aplică la {n} zi
+Aplică la {n} de zile ‖few: Aplică la {n} zile
+{n} săptămână
+{n} de săptămâni ‖few: {n} săptămâni
+Rotație aplicată la {n} zi.
+Rotație aplicată la {n} de zile. ‖few: Rotație aplicată la {n} zile.
+Turele mele, săptămâna din {d}:
+liber
+Turele mele
+{h} h în {n} tură
+{h} h în {n} de ture ‖few: {h} h în {n} ture
+Creat cu {app}
+Săptămâna asta
+Săptămâna viitoare
+Săptămâna trecută
+Peste {n} săptămână
+Peste {n} de săptămâni ‖few: Peste {n} săptămâni
+Acum {n} săptămână
+Acum {n} de săptămâni ‖few: Acum {n} săptămâni
+Ture copiate: lipește-le într-un mesaj.
+Copierea nu e disponibilă aici.
+Nu am reușit să creez imaginea.
+Încă nu există o săptămână de repetat.
+Săptămâna următoare e deja completată.
+Săptămâna din {a} repetată în cea din {b}.
+Ultima copie salvată pe {d}.
+Încă n-ai salvat nicio copie.
+Turele tale ({n} zi) sunt doar pe acest dispozitiv: salvează din când în când o copie, de exemplu în iCloud Drive, Google Drive sau într-un e-mail către tine, ca să nu le pierzi dacă schimbi telefonul.
+Turele tale ({n} de zile) sunt doar pe acest dispozitiv: salvează din când în când o copie, de exemplu în iCloud Drive, Google Drive sau într-un e-mail către tine, ca să nu le pierzi dacă schimbi telefonul. ‖few: Turele tale ({n} zile) sunt doar pe acest dispozitiv: salvează din când în când o copie, de exemplu în iCloud Drive, Google Drive sau într-un e-mail către tine, ca să nu le pierzi dacă schimbi telefonul.
+Fișier descărcat.
+Descărcarea a eșuat.
+{n} tură
+{n} de ture ‖few: {n} ture
+gol
+Creează PDF-ul pentru {m}
+Nu am reușit să creez PDF-ul.
+Copie ture {app}
+Copie salvată. Păstreaz-o într-un loc sigur.
+Fișierul conține {n} zi
+Fișierul conține {n} de zile ‖few: Fișierul conține {n} zile
+de la {a} la {b}
+salvate pe {d}
+Vor înlocui turele pe care le ai acum ({n} zi), împreună cu setările.
+Vor înlocui turele pe care le ai acum ({n} de zile), împreună cu setările. ‖few: Vor înlocui turele pe care le ai acum ({n} zile), împreună cu setările.
+Vor fi încărcate împreună cu setările.
+Acest fișier nu e o copie {app}.
+Copie încărcată: {n} zi.
+Copie încărcată: {n} de zile. ‖few: Copie încărcată: {n} zile.
+Versiunea {v}.
+Deschide aplicația de la adresa ei web ca să primești actualizări.
+Este disponibilă versiunea {v}.
+Ultima verificare: {d}.
+Verificare automată activă.
+Este disponibilă {app} {v}
+Actualizează ca să ai ultimele noutăți. Turele tale rămân unde sunt.
+Deschide aplicația de la adresa ei web ca să cauți actualizări.
+Verific…
+Ai deja cea mai nouă versiune ({v}).
+Nu pot verifica actualizările: verifică conexiunea.
+Caută actualizări
+Actualizez…
+Învoire
+Boală
+Anul Nou
+Boboteaza
+Ziua Eliberării
+Ziua Muncii
+Ziua Republicii
+Adormirea Maicii Domnului
+Ziua Tuturor Sfinților
+Imaculata Concepție
+Crăciunul
+Sfântul Ștefan
+Sfântul Francisc
+Paștele
+A doua zi de Paște
+iWork
+Calendar
+Modificările se salvează singure.
+Începutul turei
+Tură fracționată, în două părți
+Prima parte
+Reia la
+A doua parte
+Sfârșitul turei
+Ore în plus sau în minus
+Ore de învoire
+Etichete
+Golește ziua
+Gata
+Setări
+Fiecare modificare se salvează singură.
+Ore tură normală
+Ore tură de sâmbătă
+Turele rapide și etichetele se creează și se modifică din Instrumente, butonul cu trei puncte.
+Concediu și învoiri
+Concediu pe an
+zile
+Învoiri pe an
+Cât ți se cuvine într-un an, inclusiv ce a rămas din anul trecut. Cu 0 contorul rămâne oprit.
+Ore pe săptămână din contract
+Numără de la
+Sold inițial
+Banca de ore compară orele lucrate cu cele din contract, zi de zi până azi. Concediul, învoirile, boala, duminicile și sărbătorile nu contează ca ore lipsă.
+Salariu
+Salariu brut pe oră
+€/h
+Noapte 22–06
+Sporurile se adună: o oră de noapte duminica primește și sporul de noapte, și pe cel de duminică. Dacă o sărbătoare cade duminica, se aplică doar sporul de sărbătoare. Estimarea rămâne pe acest dispozitiv și nu apare în PDF și nici în imaginile partajate.
+Limbă
+Aspect
+Automat
+Luminos
+Întunecat
+Actualizări
+Instrumente
+Completează turele
+Rotație ciclică
+Un model care se repetă, pe mai multe săptămâni
+Repetă ultima săptămână
+Copiază turele în săptămâna următoare
+Personalizează
+Ture rapide
+Butoanele pentru a pune o tură dintr-o atingere
+Secții, mașini, posturi de atribuit dintr-o atingere
+Partajează și exportă
+Partajează săptămâna
+Imagine sau text, orice săptămână
+PDF-ul lunii
+Luna dorită, gata de tipărit
+Copie de siguranță
+Salvează o copie a turelor
+Un fișier cu toate turele și setările
+Încarcă o copie
+Recuperează turele dintr-un fișier salvat înainte
+Închide
+Sunt butoanele de deasupra calendarului: alegi unul și atingi zilele ca să-l pui. Aici le creezi, le redenumești și schimbi orele și durata. Fiecare modificare se salvează singură.
+Lasă durata goală ca să folosești durata standard (8 ore, 6 sâmbăta). O durată proprie e valabilă în toate zilele. Cu „Fracționată” tura are două părți, de exemplu 8–12 și 16–20.
+Secții, mașini, posturi sau ce-ți trebuie. Apar pe al doilea rând deasupra calendarului: alegi una și atingi zilele ca s-o atribui, și împreună cu o tură. Fiecare modificare se salvează singură.
++ Adaugă etichetă
+Încarci această copie?
+Anulează
+Înlocuiește turele
+Construiește modelul care se repetă, de exemplu 5 dimineți, 2 libere, 5 după-amiezi, 2 libere, și aplică-l pe mai multe săptămâni deodată.
+Model
++ Adaugă pas
+Din ziua
+Pentru câte săptămâni
+Nu atinge zilele deja completate
+Lasă duminicile libere
+Aplică
+Înapoi la săptămâna asta
+Copiază ca text
+Partajează imaginea
+Alege luna: primești calendarul cu turele și totalurile pe o foaie A4 de tipărit.
+Mai târziu
+Actualizează
+Ecran
+Luna anterioară
+Luna următoare
+Introducere rapidă
+Vizualizare
+Vizualizare calendar
+Vizualizare listă
+Etichetare rapidă
+Caută în note și etichete
+Rezumatul anului
+Anul anterior
+Anul următor
+Tipul zilei
+Jumătate de oră mai puțin
+Jumătate de oră mai mult
+Ex. schimb de tură cu Marius, secția B
+Temă
+O săptămână mai puțin
+O săptămână mai mult
+Săptămâna anterioară
+Săptămâna următoare
+Previzualizarea imaginii cu turele săptămânii
+Anulează
+{x}, hramul localității
+Hramul localității
+{x} (zi recuperată)
+Niciuna anume
+Niciunul
+Altă dată…
+Reguli pentru {c}: cel puțin {r} h de odihnă între două ture, în medie cel mult {w} h pe săptămână, repaus săptămânal de {k} h. Prima zi a săptămânii: {d}.
+Țară și sărbători
+Țară
+Regiune sau provincie
+Sfânt ocrotitor
+Zi
+Hramul contează ca sărbătoare în calendar, în banca de ore și la salariu. Verifică data în contract sau la primărie.
+{c}: cel puțin {r} h de odihnă între două ture, în medie cel mult {w} h pe săptămână, repaus săptămânal de {k} h. Prima zi a săptămânii: {d}.
+Noapte {r}
+Începe
+Înainte
+Nou: limbă și țară
+Bun venit în {app}
+Alege limba și țara: aplicația se setează cu regulile și sărbătorile potrivite. Turele tale rămân unde sunt.
+Calendarul turelor tale. Alege limba.
+Unde lucrezi?
+De aici vin sărbătorile, odihna minimă, orele de noapte și moneda.
+Caută o țară
+Zona ta
+Unele sărbători sunt valabile doar într-o regiune sau un oraș. Poți sări peste acest pas și îl poți schimba mai târziu.
+Dacă orașul tău nu e în listă, poți introduce data în Setări.
+Cât durează o tură?
+Așa alegi doar ora de început, iar sfârșitul se calculează singur. Se poate schimba oricând.
+Tură normală
+Tură de sâmbătă
+Totul e gata
+Așa e setată aplicația. Poți schimba totul în Setări.
+{w} h, sâmbătă {s}
+Odihnă minimă
+Media maximă
+{h} h pe săptămână
+Avertismentele despre odihnă și ore sunt orientative și nu înlocuiesc contractul.
+Înapoi
+Reguli folosite la avertismente și calcule
+h/săpt.
+Noapte de la
+Noapte până la
+Contractul tău poate fi mai favorabil decât legea: aici poți adapta regulile.
+Înapoi la regulile țării
+{x}, sărbătoare locală
+Sărbătoare locală
+O sărbătoare a localității sau din contract: contează ca sărbătoare în calendar, în banca de ore și la salariu.
+Dacă o sărbătoare cade duminica, angajatorul stabilește o zi recuperată.
+Grundlovsdag (5 iunie) și Ajunul Crăciunului nu sunt zile libere prin lege, dar multe contracte le prevăd.
+Lunea Rusaliilor e adesea „ziua solidarității” și se lucrează.
+În Bavaria, Adormirea Maicii Domnului e liberă doar în comunele cu majoritate catolică.
+Vinerea Mare și 5 mai sunt libere doar dacă o prevede contractul colectiv (CAO).
+Marțea de Carnaval e opțională; fiecare comună are și propria sărbătoare.
+Din 2025, 17 noiembrie nu mai e zi liberă; în 2026 se lucrează și pe 8 mai și 15 septembrie.
+Fiecare comunitate autonomă adaugă sărbătorile ei (adesea Joia Mare) și le schimbă de la an la an: adaug-o pe a ta ca sărbătoare locală.
+Ajunurile (Midsommarafton, Julafton, Nyårsafton) nu sunt libere prin lege, dar sunt libere aproape peste tot.
+Limita de 45 de ore se aplică în industrie, birouri, personal tehnic și marile magazine; pentru ceilalți e 50. În unele comune (Fribourg, Solothurn, Argovia) sărbătorile diferă: adaug-o pe a ta ca sărbătoare locală.
+În Regatul Unit, bank holidays nu sunt un drept legal: depind de contract. La limita de 48 de ore se poate renunța în scris (opt-out).
+Programul și odihna urmează mai ales contractele colective din San Marino: verifică valorile de mai jos.
+Dacă o sărbătoare cade duminica, lunea e liberă.
+Limita de 45 de ore se aplică în industrie, birouri și marile magazine; pentru ceilalți e 50.
+{c}: legea nu stabilește o odihnă minimă între două ture. Aplicația avertizează sub {r} h și peste {w} h pe săptămână. Prima zi a săptămânii: {d}.
+Sărbătorile federale se aplică prin lege doar angajaților federali: în privat depinde de contract. Fiecare stat are sărbătorile lui: adaug-o pe a ta ca sărbătoare locală.
+Programul și odihna pot diferi de la o provincie la alta: verifică valorile de mai jos. Newfoundland și Labrador nu e încă inclusă.
+Zilele de alegeri federale și locale sunt libere și pentru cei care trebuie să voteze.
+Carnavalul și Corpus Christi sunt „ponto facultativo”; fiecare stat și comună adaugă sărbătorile ei: adaug-o pe a ta ca sărbătoare locală.
+Guvernul poate muta sărbătorile mobile (17 iunie, 17 august, 12 octombrie, 20 noiembrie) și poate adăuga zile libere: aici vezi datele stabilite prin lege.
+Multe contracte colective (awards) prevăd 10 ore de odihnă între două ture. Unele sărbători sunt doar în anumite zone (Royal Show, Regatta, Recreation Day): poți adăuga sărbătoarea ta ca sărbătoare locală.
+Fiecare provincie are Anniversary Day-ul ei: dacă a ta nu e în listă, adaug-o ca sărbătoare locală.
+Niciuna
+Ore și contract
+Program de lucru
+Durata turelor, odihna minimă, ore de noapte
+Câte zile și ore ți se cuvin
+Ore din contract și sold inițial
+Estimare salariu
+Salariu pe oră și sporuri, doar pentru tine
+Al doilea loc de muncă
+Gardă
+Gardă activă.
+Atinge zilele ca s-o adaugi sau s-o scoți, inclusiv în zilele libere. O poți alege împreună cu o tură.
+Fiecare zi atinsă primește tura și garda împreună.
+{h} h de intervenție
+Ore de intervenție
+Al doilea loc de muncă are socoteli separate: nu intră în banca de ore, concediu și avertizările locului de muncă principal.
+Locul de muncă principal
+Creat cu {app} pe {d}.
+Locul de muncă al turei rapide {n}
+{n} lună
+{n} de luni ‖few: {n} luni
+Ture {x}
+<b>{n}</b> între {a} și {b}.
+{n} eveniment
+{n} de evenimente ‖few: {n} evenimente
+Nicio tură de exportat între {a} și {b}.
+De la
+Durată
+Intervenție
+Orele de intervenție contează ca lucrate și, în estimarea salariului, sunt plătite ca ore suplimentare.
+Început
+Alt loc de muncă, cu orar și socoteli separate
+Exportă în calendar
+Google, Apple sau Outlook Calendar
+Fac ture de gardă
+De obicei de la
+Deasupra calendarului apare butonul Gardă: alege-l și atinge zilele, inclusiv cele libere. Orele de intervenție le notezi atingând ziua.
+Indemnizație de gardă
+Pentru fiecare gardă. Orele de intervenție sunt plătite ca ore suplimentare.
+Am un al doilea loc de muncă
+Durată obișnuită
+Turele celui de-al doilea loc de muncă apar pe un al doilea rând în aceleași zile, cu un pătrățel verde-albăstrui. Le atribui cu turele rapide ale celui de-al doilea loc de muncă sau atingând o zi. Orele și salariul se socotesc separat: nu intră în banca de ore, concediu și avertizările locului de muncă principal.
+Alege pentru fiecare tură rapidă dacă ține de locul de muncă principal sau de al doilea. Turele celui de-al doilea loc de muncă au un pătrățel verde-albăstrui.
+Creează un fișier cu turele tale de deschis în Google Calendar, Calendarul Apple sau Outlook.
+Câte luni
+Ce exporți
+Ture de lucru
+Concediu, învoiri și boală, ca zi întreagă
+Memento
+Cu 30 de minute înainte
+Cu 1 oră înainte
+Cu 2 ore înainte
+Cum îl deschizi în calendar
+iPhone, iPad și Mac.
+Deschide fișierul și alege Adaugă tot, apoi calendarul în care să le pui.
+Google Calendar.
+De pe computer deschide calendar.google.com, mergi la Setări, Import și export, și încarcă fișierul. Pe Android îl poți deschide și direct cu Google Calendar.
+Outlook.
+Deschide fișierul cu Outlook sau, pe outlook.com, mergi în calendar, Adăugare calendar, Încărcare din fișier.
+Dacă exporți din nou aceeași perioadă, turele deja importate de obicei se actualizează în loc să se dubleze. Zilele golite în aplicație trebuie șterse de mână. Sfat: folosește un calendar doar pentru ture, ca să-l poți goli și reimporta când se schimbă.
+Creează fișierul
+Ex. Bar, Meditații, Livrări
+O lună mai puțin
+O lună mai mult
+Loc de muncă
+Ore suplimentare
+Concediu efectuat
+Învoiri folosite
+Total brut
+{n} diferență față de orele notate
+{n} de diferențe față de orele notate ‖few: {n} diferențe față de orele notate
+Elementele din fluturaș se potrivesc cu ce ai notat.
+Notate
+Pe fluturaș
+{v} mai puțin pe fluturaș
+{v} mai mult pe fluturaș
+Estimarea aplicației, orientativă
+Fluturașul pe {a}: orele sunt comparate cu {b}.
+Fluturaș de salariu: {m}
+notate {a}, pe fluturaș {b}
+Rest de plată
+Deschide fluturașul
+fluturaș adăugat
+fără fluturaș
+Încarcă PDF-ul pe {m}
+Fluturașul pe {m} a fost șters.
+Citesc fluturașul…
+Parolă greșită, încearcă din nou.
+PDF-ul e protejat cu parolă. Deseori e CNP-ul tău sau o parolă primită de la firmă.
+Nu pot încărca cititorul de PDF. Verifică conexiunea și încearcă din nou.
+Nu pot deschide acest fișier. Este un PDF?
+Acest PDF nu conține text, poate e o scanare sau o poză. Scrie numerele de mână.
+Nu am recunoscut elementele acestui fluturaș. Scrie numerele de mână: doar pe cele care te interesează.
+ore suplimentare
+muncă de noapte
+duminici și sărbători
+concediu efectuat
+învoiri folosite
+concediu rămas
+învoiri rămase
+total brut
+rest de plată
+Fluturașul pe {m}.
+Am citit: {x}.
+Verifică numerele evidențiate și completează de mână ce lipsește.
+Pare un fluturaș cu o primă de salariu în plus: verifică bine totalul brut.
+Fișierul e prea mare pentru un fluturaș de salariu.
+Fluturaș de salariu
+Verifică orele și elementele plătite
+Încarcă PDF-ul fluturașului sau scrie numerele: aplicația le compară cu orele notate.
+Parola PDF-ului
+Deschide
+PDF-ul e citit doar pe acest dispozitiv și nu e salvat: aplicația păstrează doar numerele de mai jos.
+Pe fluturașul de salariu
+Concediu rămas
+Orele suplimentare și sporurile sunt din luna anterioară
+Multe firme plătesc orele suplimentare, munca de noapte și sărbătorile în luna următoare. Dacă e cazul tău, activează: comparația va folosi luna potrivită.
+Șterge
+Notarea turelor
+Cum notez o tură?
+Deasupra calendarului alege o tură rapidă, de exemplu {a}, și atinge zilele: fiecare primește tura. Atinge din nou butonul ca să termini. Pentru alt orar, atinge ziua și scrie începutul și durata.
+Cum modific sau golesc o zi?
+Atinge ziua: în fișă schimbi tipul, orarul, orele în plus sau în minus, etichetele și nota, și totul se salvează singur. {a} o șterge. Ca să golești mai multe, alege {b} deasupra calendarului și atinge zilele. După fiecare modificare poți anula din mesajul de jos.
+Cum notez zile libere, concediu, învoiri și boală?
+{a} și {b} au butonul lor deasupra calendarului: alege-l și atinge zilele. Pentru {c} sau {d} atinge ziua și alege tipul în fișă; la învoire scrii și orele.
+Cum notez ore suplimentare sau o tură fracționată?
+În fișa zilei folosește {a} pentru ore suplimentare sau plecare mai devreme. Cu {b} indici cele două părți, de exemplu 8–12 și 16–20.
+Cum îmi creez turele rapide?
+Deschide {p} și alege numele, ora de început și durata fiecărui buton. Pot fi ture fracționate și, dacă ai un al doilea loc de muncă, pot ține de acesta.
+Lucrez mereu după aceeași rotație: se poate completa calendarul singur?
+Da: în {p} descrie schema (de exemplu 5 dimineți, 2 libere, 5 nopți, 2 libere), ziua de început și până când. Cu {q} copiezi în schimb o săptămână peste următoarea.
+La ce folosesc etichetele?
+Marchează secția, mașina sau postul. Le creezi în {p}; apoi le alegi deasupra calendarului și atingi zilele, și împreună cu o tură.
+Cum găsesc o zi, o notă sau o etichetă?
+Treci la vizualizarea listă cu butonul de lângă turele rapide: apare căutarea în note și etichete. Fila {a} arată totalurile pe tot anul, lună de lună.
+Ore, contract și salariu
+Ce înseamnă avertizările de la finalul lunii?
+Aplicația verifică regulile țării tale: repausul minim între două ture, media orelor pe săptămână, șapte zile de muncă la rând. Dacă contractul tău e diferit, schimbă valorile în {p}.
+Cum funcționează banca de ore?
+În {p} indică orele săptămânale din contract, de când să numere și un eventual sold inițial. Aplicația compară orele lucrate cu cele datorate și arată soldul în rezumatul lunii.
+Cum țin evidența concediului și a învoirilor?
+În {p} scrie câte zile de concediu și câte ore de învoire ai pe an. Aplicația numără cele folosite și cele programate și îți spune câte au rămas.
+Cum funcționează estimarea salariului?
+În {p} scrie salariul brut pe oră și sporurile. E o estimare orientativă, doar pentru tine: nu apare niciodată în PDF sau în imaginile partajate și poți ascunde sumele.
+Cum notez gărzile?
+Activează-le în {p}. Deasupra calendarului apare butonul {a}: alege-l și atinge zilele, și pe cele libere. Orele de intervenție le scrii în fișa zilei; indemnizația se setează în {q}.
+Am un al doilea loc de muncă: cum îl țin separat?
+Activează-l în {p}, cu nume, durată și salariu. Turele lui au butoane rapide proprii și apar pe un al doilea rând în zile. Orele și salariul se socotesc separat, iar PDF-ul lunii se poate face pentru fiecare loc de muncă.
+Cum verific fluturașul de salariu?
+În {p} alege luna și încarcă PDF-ul: aplicația citește orele suplimentare, munca de noapte, sărbătorile, concediul, învoirile, brutul și restul de plată și le compară cu orele notate. Dacă fluturașul e pe hârtie, scrie numerele de mână.
+Fluturașul nu e citit sau numerele nu se potrivesc: ce fac?
+Dacă PDF-ul e o scanare sau o poză, nu are text de citit: scrie numerele de mână. Dacă e protejat, aplicația cere parola. Verifică mereu numerele evidențiate și activează {a} dacă firma plătește orele suplimentare și sporurile luna următoare.
+Partajare și export
+Cum trimit cuiva turele mele din săptămână?
+În {p} alege săptămâna și trimite-o ca imagine sau ca text, de exemplu într-o conversație.
+Cum tipăresc o lună?
+În {p} alege luna: primești o foaie A4 cu calendarul și totalurile, de tipărit sau de trimis.
+Cum pun turele în Google Calendar, Calendarul Apple sau Outlook?
+În {p} alege de când, câte luni și ce să includă, apoi deschide fișierul cu calendarul tău: în același ecran găsești pașii pentru fiecare. Dacă exporți din nou aceeași perioadă, turele de obicei se actualizează în loc să se dubleze.
+Date, aplicație și setări
+Unde sunt salvate turele mele?
+Doar pe acest dispozitiv, în browser. Nu ai nevoie de cont și nimic nu e trimis pe un server.
+Cum fac o copie sau trec pe alt telefon?
+Cu {p} obții un fișier cu turele și setările. Pe celălalt telefon deschide aplicația și folosește {q}. Punctul de pe {a} îți amintește când e momentul să faci una.
+Dacă șterg datele browserului, pierd turele?
+Da, dacă nu ai o copie. De aceea merită să salvezi una din când în când, mai ales înainte de a schimba telefonul.
+Cum instalez aplicația pe telefon?
+Pe iPhone deschide aplicația în Safari, atinge Partajează și apoi Adaugă pe ecranul principal. Pe Android deschide meniul Chrome și alege Instalează aplicația sau Adaugă pe ecranul de pornire. După instalare funcționează și fără internet.
+Cum actualizez aplicația?
+Când există o versiune nouă apare un mesaj sus: atinge {a}. Turele tale rămân unde sunt.
+Cum schimb țara, sărbătorile, limba sau tema?
+În {p} alege țara și regiunea pentru sărbători, limba și tema deschisă sau întunecată. Sărbătorile locale pe care aplicația nu le știe notează-le ca zi liberă.
+Du-mă acolo
+Deschide ghidul
+Ajutor
+Ghid și întrebări frecvente
+Cum faci lucrurile, pas cu pas
+Ghid
+Niciun răspuns găsit. Încearcă alte cuvinte.
+Caută în ghid
+Îți arăt într-un minut cum funcționează. Poți sări oricând și poți revedea turul din Ghid.
+Alege o tură și atinge zilele din calendar ca s-o atribui. Atinge din nou butonul ca să termini. {a}, {b} și {c} funcționează la fel.
+Calendarul
+Atinge o zi ca să-i deschizi fișa: orar, ore suplimentare, învoiri, boală și note. Totul se salvează singur și poți oricând anula din mesajul de jos.
+Următoarea tură
+Aici sus vezi mereu următoarea tură sau pe cea în desfășurare.
+Rezumatul lunii
+Ore lucrate, ore suplimentare, nopți și sărbători din lună, cu avertizări când o tură nu respectă regulile de repaus.
+Calendar și An
+Treci la An ca să vezi totalurile întregului an, lună de lună.
+Aici găsești tot restul: rotația, concediul și învoirile, banca de ore, estimarea salariului, fluturașul, PDF-ul lunii, exportul în calendar, copia datelor și Ghidul.
+Țara și sărbătorile, limba și tema deschisă sau întunecată.
+Începe prin a nota turele din această săptămână.
+{n} din {m}
+Sari peste
+Să începem
+Revezi turul ghidat
