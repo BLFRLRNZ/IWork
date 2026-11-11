@@ -296,6 +296,18 @@ dialog:focus{outline:none}
 .bplist li{padding:8px 12px;border-radius:12px;background:color-mix(in srgb,var(--warn) 10%,transparent)}
 .bpsum.ok{color:var(--good)}.bpsum.diff{color:var(--warn)}
 .months button.has small{color:var(--good)}
+#hp{height:92%}
+.hpsearch{display:flex;align-items:center;gap:8px;background:var(--sunken);border-radius:14px;padding:0 12px;min-height:46px}
+.hpsearch svg{width:18px;height:18px;flex:none;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round}
+.hpsearch input{border:0;background:transparent;flex:1;min-width:0;font:inherit;font-size:16px;color:var(--ink);padding:10px 0;outline:none}
+.hpsec h3{font:500 11px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 2px}
+.hpq{border-top:1px solid var(--line)}
+.hpq summary{list-style:none;cursor:pointer;padding:13px 26px 13px 0;font-weight:600;font-size:15px;line-height:1.35;position:relative}
+.hpq summary::-webkit-details-marker{display:none}
+.hpq summary::after{content:"";position:absolute;right:4px;top:18px;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .15s}
+.hpq[open] summary::after{transform:rotate(-135deg);top:21px}
+.hpq p{margin:0 0 10px;font-size:14.5px;line-height:1.5;color:var(--ink)}
+.hpq .linkbtn{margin:0 0 14px}
 .ichelp{background:var(--bg);border-radius:14px;padding:12px 14px;font-size:14px;line-height:1.45}
 .ichelp summary{cursor:pointer;font-weight:600}
 .ichelp p{margin:10px 0 0}
@@ -620,6 +632,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 
     <h3 class="sect">Aggiornamenti</h3>
     <div class="uprow"><span id="upInfo"></span><button type="button" class="btn" id="upCheck">Cerca aggiornamenti</button></div>
+    <button type="button" class="linkbtn" id="stHelp">Apri la guida</button>
 
     <div class="actions">
       <button type="submit" class="btn primary" style="flex:1">Fatto</button>
@@ -653,6 +666,8 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <button type="button" class="mi" id="resBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 19h14"/></svg></span><span><b>Carica una copia</b><small>Recupera i turni da un file salvato prima</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <p class="bkinfo" id="bkInfo"></p>
       <input type="file" id="resFile" accept=".json,application/json" hidden>
+      <h3>Aiuto</h3>
+      <button type="button" class="mi" id="helpBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6M12 16.6v.2"/></svg></span><span><b>Guida e domande frequenti</b><small>Come fare le cose, passo per passo</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
     </div>
     <div class="actions"><button type="button" class="btn ghost" id="tlClose" style="flex:1">Chiudi</button></div>
   </div>
@@ -749,6 +764,16 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       </div>
     </div>
     <p class="help">I turni del secondo lavoro compaiono come seconda riga negli stessi giorni, con il quadratino verde acqua. Li assegni con i turni rapidi del secondo lavoro oppure toccando un giorno. Ore e paga si contano a parte: non entrano nella banca ore, nelle ferie e negli avvisi del lavoro principale.</p>
+    <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
+  </form>
+</dialog>
+
+<dialog id="hp" aria-labelledby="hpTitle">
+  <form class="sheet" method="dialog">
+    <h2 id="hpTitle" style="text-transform:none">Guida</h2>
+    <label class="hpsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input type="search" id="hpQ" placeholder="Cerca nella guida" aria-label="Cerca nella guida" autocomplete="off"></label>
+    <div id="hpList"></div>
+    <p class="help" id="hpNone" hidden>Nessuna risposta trovata. Prova con altre parole.</p>
     <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
   </form>
 </dialog>
@@ -1021,7 +1046,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.3.1";
+const APP_VERSION="2.4.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1518,7 +1543,7 @@ function lockPage(){if(document.body.classList.contains("locked"))return;lockY=w
 function unlockPage(){if(document.querySelector("dialog[open]")||!document.body.classList.contains("locked"))return;document.body.classList.remove("locked");document.body.style.top="";window.scrollTo(0,lockY);}
 function openDlg(d){lockPage();if(d.open)return;d.tabIndex=-1;d.showModal();d.focus({preventScroll:true});}
 function showField(id){setTimeout(()=>{const el=$(id);if(!el)return;el.scrollIntoView({block:"center",behavior:"smooth"});const f=el.closest(".field")||el;f.classList.remove("flash");void f.offsetWidth;f.classList.add("flash");},120);}
-[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
+[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp"),$("hp")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
 /* niente zoom con due dita o doppio tocco (Safari ignora user-scalable) */
 ["gesturestart","gesturechange","gestureend"].forEach(t=>document.addEventListener(t,ev=>ev.preventDefault(),{passive:false}));
 document.addEventListener("touchmove",ev=>{if(ev.touches.length>1)ev.preventDefault();},{passive:false});
@@ -1784,6 +1809,53 @@ $("cyForm").addEventListener("submit",ev=>{ev.preventDefault();const plan=cyPlan
   S.settings.cycle=cyDraft.map(c=>({v:c.v,c:c.c}));mark("settings","s");$("cy").close();
   const f=dateOf(plan[0][0]);view=new Date(f.getFullYear(),f.getMonth(),1);if(mode!=="cal")setMode("cal");
   apply(plan.map(x=>[x[0],cyEntry(x[1])]),tn(plan.length,"Turnazione applicata a {n} giorno.","Turnazione applicata a {n} giorni."));});
+
+/* ---------- guida e domande frequenti ---------- */
+function helpData(){const MK={a:"\u0001a\u0002",b:"\u0001b\u0002",c:"\u0001c\u0002",d:"\u0001d\u0002",p:"\u0001p\u0002",q:"\u0001q\u0002"},T=x=>t(x),P=(...k)=>k.map(T).join(" → "),tl=x=>P("Strumenti",x);return[
+  [t("Segnare i turni"),[
+    [t("Come segno un turno?"),[t("Sopra al calendario scegli un turno rapido, per esempio {a}, e tocca i giorni: ognuno riceve quel turno. Tocca di nuovo il pulsante per finire. Per un orario diverso tocca il giorno e scrivi inizio e durata.",MK),{a:(S.settings.presets[mainP()]||{}).n||T("Mattina")}]],
+    [t("Come cambio o svuoto un giorno?"),[t("Tocca il giorno: nella scheda cambi tipo, orario, ore in più o in meno, etichette e nota, e tutto si salva da solo. {a} lo cancella. Per svuotarne tanti scegli {b} sopra al calendario e tocca i giorni. Dopo ogni modifica puoi annullare dal messaggio in basso.",MK),{a:T("Svuota il giorno"),b:T("Cancella")}]],
+    [t("Come segno riposo, ferie, permessi e malattia?"),[t("{a} e {b} hanno il loro pulsante sopra al calendario: sceglilo e tocca i giorni. Per {c} o {d} tocca il giorno e scegli il tipo nella scheda; per un permesso indichi anche le ore.",MK),{a:T("Riposo"),b:T("Ferie"),c:T("Permesso"),d:T("Malattia")}]],
+    [t("Come segno gli straordinari o un turno spezzato?"),[t("Nella scheda del giorno usa {a} per gli straordinari o per un'uscita anticipata. Con {b} indichi le due fasce, per esempio 8–12 e 16–20.",MK),{a:T("Ore in più o in meno"),b:T("Turno spezzato, in due fasce")}]],
+    [t("Come creo i miei turni rapidi?"),[t("Apri {p} e scegli nome, orario d'inizio e durata di ogni pulsante. Possono essere turni spezzati e, se hai un secondo lavoro, appartenere a quel lavoro.",MK),{p:tl("Turni rapidi")}],"presetsBtn"],
+    [t("Faccio sempre la stessa rotazione: posso riempire il calendario in automatico?"),[t("Sì: in {p} descrivi lo schema (per esempio 5 mattine, 2 riposi, 5 notti, 2 riposi), il giorno di partenza e fino a quando. Con {q} copi invece una settimana su quella dopo.",MK),{p:tl("Turnazione ciclica"),q:tl("Ripeti l'ultima settimana")}],"cycleBtn"],
+    [t("A cosa servono le etichette?"),[t("Servono per segnare reparto, macchinario o postazione. Le crei in {p}; poi le scegli sopra al calendario e tocchi i giorni, anche insieme a un turno.",MK),{p:tl("Etichette")}],"labelsBtn"],
+    [t("Come trovo un giorno, una nota o un'etichetta?"),[t("Passa alla vista a elenco con il pulsante accanto ai turni rapidi: compare la ricerca nelle note e nelle etichette. La scheda {a} mostra i totali di tutto l'anno, mese per mese.",MK),{a:T("Anno")}]]]],
+  [t("Ore, contratto e paga"),[
+    [t("Cosa vogliono dire gli avvisi in fondo al mese?"),[t("L'app controlla le regole del tuo paese: riposo minimo tra due turni, media di ore settimanali, sette giorni di lavoro di fila. Se il tuo contratto è diverso, cambia i valori in {p}.",MK),{p:tl("Orario di lavoro")}],"whBtn"],
+    [t("Come funziona la banca ore?"),[t("In {p} indica le ore settimanali del contratto, da quando contare ed eventualmente il saldo iniziale. L'app confronta le ore lavorate con quelle dovute e mostra il saldo nel riepilogo del mese.",MK),{p:tl("Banca ore")}],"hbBtn"],
+    [t("Come tengo il conto di ferie e permessi?"),[t("In {p} scrivi quanti giorni di ferie e quante ore di permesso ti spettano all'anno. L'app conta quelli usati e quelli programmati e ti dice quanti ne restano.",MK),{p:tl("Ferie e permessi")}],"lvBtn"],
+    [t("Come funziona la stima paga?"),[t("In {p} scrivi la paga oraria lorda e le maggiorazioni. È una stima indicativa, solo per te: non compare nel PDF né nelle immagini condivise, e puoi nascondere gli importi.",MK),{p:tl("Stima paga")}],"pyBtn"],
+    [t("Come segno la reperibilità?"),[t("Attivala in {p}. Sopra al calendario compare il pulsante {a}: sceglilo e tocca i giorni, anche di riposo. Le ore di intervento le scrivi nella scheda del giorno; l'indennità si imposta in {q}.",MK),{p:tl("Orario di lavoro"),a:T("Reperibilità"),q:tl("Stima paga")}],"whBtn"],
+    [t("Ho un secondo lavoro: come lo tengo separato?"),[t("Attivalo in {p}, con nome, durata e paga. I suoi turni hanno pulsanti rapidi propri e compaiono come seconda riga nei giorni. Ore e paga si contano a parte e il PDF del mese si può fare per ciascun lavoro.",MK),{p:tl("Secondo lavoro")}],"j2Btn"],
+    [t("Come controllo la busta paga?"),[t("In {p} scegli il mese e carica il PDF: l'app legge straordinari, notturni, festivi, ferie, permessi, lordo e netto e li confronta con le ore segnate. Se la busta è di carta, scrivi i numeri a mano.",MK),{p:tl("Busta paga")}],"bpBtn"],
+    [t("La busta paga non viene letta o i numeri non tornano: cosa faccio?"),[t("Se il PDF è una scansione o una foto non ha testo da leggere: scrivi i numeri a mano. Se è protetto, l'app ti chiede la password. Controlla sempre i numeri evidenziati e attiva {a} se l'azienda paga straordinari e maggiorazioni il mese dopo.",MK),{a:T("Straordinari e maggiorazioni sono quelli del mese prima")}],"bpBtn"]]],
+  [t("Condividere ed esportare"),[
+    [t("Come mando i turni della settimana a qualcuno?"),[t("In {p} scegli la settimana e mandala come immagine o come testo, per esempio in una chat.",MK),{p:tl("Condividi la settimana")}],"shareBtn"],
+    [t("Come stampo un mese?"),[t("In {p} scegli il mese: ottieni un foglio A4 con calendario e totali, da stampare o inviare.",MK),{p:tl("PDF del mese")}],"pdfBtn"],
+    [t("Come metto i turni su Google Calendar, Calendario di Apple o Outlook?"),[t("In {p} scegli da quando, per quanti mesi e cosa includere, poi apri il file con il tuo calendario: nella stessa schermata trovi i passaggi per ognuno. Se riesporti lo stesso periodo, i turni di solito si aggiornano invece di duplicarsi.",MK),{p:tl("Esporta nel calendario")}],"icsBtn"]]],
+  [t("Dati, app e impostazioni"),[
+    [t("Dove sono salvati i miei turni?"),[t("Solo su questo dispositivo, nel browser. Non serve un account e niente viene inviato a un server.",MK),{}]],
+    [t("Come faccio una copia o passo a un altro telefono?"),[t("Con {p} ottieni un file con turni e impostazioni. Sull'altro telefono apri l'app e usa {q}. Il pallino su {a} ti ricorda quando è il momento di farne una.",MK),{p:tl("Salva una copia dei turni"),q:tl("Carica una copia"),a:T("Strumenti")}],"bakBtn"],
+    [t("Se cancello i dati del browser perdo i turni?"),[t("Sì, se non hai una copia. Per questo conviene salvarne una ogni tanto, soprattutto prima di cambiare telefono.",MK),{}]],
+    [t("Come installo l'app sul telefono?"),[t("Su iPhone apri l'app in Safari, tocca Condividi e poi Aggiungi alla schermata Home. Su Android apri il menu di Chrome e scegli Installa app o Aggiungi a schermata Home. Una volta installata funziona anche senza connessione.",MK),{}]],
+    [t("Come aggiorno l'app?"),[t("Quando c'è una nuova versione compare un avviso in alto: tocca {a}. I tuoi turni restano dove sono.",MK),{a:T("Aggiorna")}]],
+    [t("Come cambio paese, festività, lingua o tema?"),[t("In {p} scegli paese e regione per le festività, la lingua e il tema chiaro o scuro. Le feste locali che l'app non conosce segnale come riposo.",MK),{p:T("Impostazioni")}],"setBtn"]]]];}
+/* risposta: i nomi di pulsanti e schermate arrivano dalle traduzioni dell'interfaccia e vanno in grassetto */
+function helpA([str,v]){let h=esc(str),p=str;
+  Object.keys(v).forEach(k=>{const m="\u0001"+k+"\u0002";h=h.split(m).join("<b>"+esc(v[k])+"</b>");p=p.split(m).join(v[k]);});return[h,p];}
+function renderHelp(){let h="";
+  helpData().forEach(([sec,qs])=>{h+='<section class="hpsec"><h3>'+esc(sec)+"</h3>";
+    qs.forEach(([q,A,go])=>{const[a,pl]=helpA(A);h+='<details class="hpq" data-f="'+esc(fold(q+" "+pl))+'"><summary>'+esc(q)+"</summary><p>"+a+"</p>"+(go?'<button type="button" class="linkbtn" data-go="'+go+'">'+t("Portami lì")+"</button>":"")+"</details>";});
+    h+="</section>";});
+  $("hpList").innerHTML=h;helpFilter();}
+function helpFilter(){const q=fold($("hpQ").value.trim()),w=q.split(/\s+/).filter(Boolean);let any=false;
+  $("hpList").querySelectorAll(".hpsec").forEach(sec=>{let n=0;sec.querySelectorAll(".hpq").forEach(d=>{const ok=w.every(x=>d.dataset.f.includes(x));d.hidden=!ok;if(ok)n++;if(w.length)d.open=ok&&n<=3;});sec.hidden=!n;if(n)any=true;});
+  $("hpNone").hidden=any;}
+function openHelp(){if($("tl").open)$("tl").close();if($("st").open)$("st").close();$("hpQ").value="";renderHelp();openDlg($("hp"));}
+$("helpBtn").onclick=openHelp;$("stHelp").onclick=openHelp;
+$("hpQ").addEventListener("input",helpFilter);
+$("hpList").addEventListener("click",ev=>{const b=ev.target.closest("[data-go]");if(!b)return;const id=b.dataset.go;$("hp").close();setTimeout(()=>{if(id==="setBtn")openSettings();else $(id).click();},60);});
 
 /* ---------- busta paga ---------- */
 let bpY=0,bpM=0,bpBuf=null,bpT=null,bpFound=[];

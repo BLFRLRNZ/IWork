@@ -1,12 +1,12 @@
 {
-  "version": "2.3.1",
+  "version": "2.4.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "La lettura delle buste paga ora riconosce i modelli di tutti i 41 paesi dell'app, nelle loro lingue e formati.",
-    "en": "Payslip reading now recognises the payslip layouts of all 41 countries in the app, in their languages and formats.",
-    "fr": "La lecture des bulletins de paie reconnaît désormais les modèles des 41 pays de l'app, dans leurs langues et formats.",
-    "de": "Das Einlesen von Lohnabrechnungen erkennt jetzt die Vorlagen aller 41 Länder der App, in ihren Sprachen und Formaten.",
-    "es": "La lectura de nóminas reconoce ahora los modelos de los 41 países de la app, en sus idiomas y formatos.",
-    "pt": "A leitura de recibos de vencimento reconhece agora os modelos dos 41 países da app, nas suas línguas e formatos."
+    "it": "Nuova Guida con le domande frequenti: come fare ogni cosa, passo per passo, con la ricerca e un pulsante che ti porta allo strumento giusto. La trovi in Strumenti e nelle Impostazioni.",
+    "en": "New Guide with FAQ: how to do everything, step by step, with search and a button that takes you to the right tool. Find it in Tools and Settings.",
+    "fr": "Nouveau guide avec les questions fréquentes : comment tout faire, étape par étape, avec la recherche et un bouton qui mène au bon outil. Dans Outils et Réglages.",
+    "de": "Neue Anleitung mit häufigen Fragen: wie alles geht, Schritt für Schritt, mit Suche und einer Schaltfläche, die dich zum richtigen Werkzeug bringt. In Werkzeuge und Einstellungen.",
+    "es": "Nueva guía con preguntas frecuentes: cómo hacerlo todo, paso a paso, con búsqueda y un botón que te lleva a la herramienta adecuada. En Herramientas y Ajustes.",
+    "pt": "Novo guia com perguntas frequentes: como fazer tudo, passo a passo, com pesquisa e um botão que leva à ferramenta certa. Em Ferramentas e Definições."
   }
 }
