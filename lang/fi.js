@@ -319,7 +319,7 @@
 "San Francesco": "Pyhän Franciscuksen päivä",
 "Pasqua": "Pääsiäispäivä",
 "Lunedì dell'Angelo": "2. pääsiäispäivä",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalenteri",
 "Le modifiche si salvano da sole.": "Muutokset tallentuvat itsestään.",
 "Inizio turno": "Vuoron alku",

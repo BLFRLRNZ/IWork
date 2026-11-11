@@ -319,7 +319,7 @@
 "San Francesco": "Sankt Frans",
 "Pasqua": "Påskedag",
 "Lunedì dell'Angelo": "2. påskedag",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Ændringer gemmes automatisk.",
 "Inizio turno": "Vagtstart",

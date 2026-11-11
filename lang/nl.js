@@ -319,7 +319,7 @@
 "San Francesco": "Sint-Franciscus",
 "Pasqua": "Pasen",
 "Lunedì dell'Angelo": "Paasmaandag",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Wijzigingen worden vanzelf bewaard.",
 "Inizio turno": "Begin dienst",

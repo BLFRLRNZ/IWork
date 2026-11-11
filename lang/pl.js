@@ -351,7 +351,7 @@
 "San Francesco": "Św. Franciszka",
 "Pasqua": "Wielkanoc",
 "Lunedì dell'Angelo": "Poniedziałek Wielkanocny",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalendarz",
 "Le modifiche si salvano da sole.": "Zmiany zapisują się same.",
 "Inizio turno": "Początek zmiany",

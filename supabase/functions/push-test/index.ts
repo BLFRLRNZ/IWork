@@ -10,7 +10,7 @@ Deno.serve(async (req) => {
   const jwt = (req.headers.get("authorization") ?? "").replace(/^Bearer /, "");
   const { data: u } = await sb.auth.getUser(jwt);
   if (!u?.user) return new Response("no", { status: 401, headers: CORS });
-  const { title = "iWork", body = "" } = await req.json().catch(() => ({}));
+  const { title = "MyTurn", body = "" } = await req.json().catch(() => ({}));
   const { data: cfg } = await sb.from("app_config").select("k,v");
   const C = Object.fromEntries((cfg ?? []).map((r) => [r.k, r.v])) as Record<string, string>;
   webpush.setVapidDetails(C.vapid_subject, C.vapid_public, C.vapid_private);

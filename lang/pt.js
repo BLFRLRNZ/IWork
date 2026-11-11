@@ -319,7 +319,7 @@
 "San Francesco": "São Francisco",
 "Pasqua": "Domingo de Páscoa",
 "Lunedì dell'Angelo": "Segunda-feira de Páscoa",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Calendário",
 "Le modifiche si salvano da sole.": "As alterações são guardadas automaticamente.",
 "Inizio turno": "Início do turno",

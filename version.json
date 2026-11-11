@@ -1,12 +1,12 @@
 {
-  "version": "2.6.0",
+  "version": "2.7.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "Arrivano l'account e i promemoria prima dei turni, anche ad app chiusa. Per ora sono in prova e verranno aperti a tutti più avanti. Senza account l'app funziona come sempre e i dati restano sul telefono.",
-    "en": "Accounts and reminders before your shifts are coming, even with the app closed. They are in testing for now and will open to everyone later. Without an account the app works as always and your data stays on your phone.",
-    "fr": "Le compte et les rappels avant vos postes arrivent, même app fermée. Ils sont en test pour l'instant et seront ouverts à tous plus tard. Sans compte, l'app fonctionne comme toujours et vos données restent sur le téléphone.",
-    "de": "Konto und Erinnerungen vor deinen Schichten kommen, auch wenn die App geschlossen ist. Sie sind noch im Test und werden später für alle freigeschaltet. Ohne Konto funktioniert die App wie immer und deine Daten bleiben auf dem Handy.",
-    "es": "Llegan la cuenta y los recordatorios antes de tus turnos, incluso con la app cerrada. Por ahora están en pruebas y se abrirán a todos más adelante. Sin cuenta la app funciona como siempre y tus datos se quedan en el teléfono.",
-    "pt": "Chegam a conta e os lembretes antes dos seus turnos, mesmo com a app fechada. Por agora estão em teste e serão abertos a todos mais tarde. Sem conta a app funciona como sempre e os seus dados ficam no telemóvel."
+    "it": "L'app ora si chiama MyTurn. I tuoi turni e le impostazioni restano tutti dove sono. Sull'iPhone l'icona già aggiunta alla schermata Home tiene il vecchio nome finché non la aggiungi di nuovo.",
+    "en": "The app is now called MyTurn. Your shifts and settings all stay where they are. On iPhone, the icon already on your Home Screen keeps the old name until you add it again.",
+    "fr": "L'app s'appelle désormais MyTurn. Vos postes et vos réglages restent tous en place. Sur iPhone, l'icône déjà sur l'écran d'accueil garde l'ancien nom tant que vous ne l'ajoutez pas à nouveau.",
+    "de": "Die App heißt jetzt MyTurn. Deine Schichten und Einstellungen bleiben alle erhalten. Auf dem iPhone behält das Symbol auf dem Home-Bildschirm den alten Namen, bis du es neu hinzufügst.",
+    "es": "La app ahora se llama MyTurn. Tus turnos y ajustes se quedan donde están. En iPhone, el icono que ya está en la pantalla de inicio mantiene el nombre antiguo hasta que lo vuelvas a añadir.",
+    "pt": "A app agora chama-se MyTurn. Os seus turnos e definições ficam todos onde estão. No iPhone, o ícone já no ecrã principal mantém o nome antigo até o adicionar de novo."
   }
 }

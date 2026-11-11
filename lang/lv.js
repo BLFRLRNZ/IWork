@@ -319,7 +319,7 @@
 "San Francesco": "Svētais Francisks",
 "Pasqua": "Lieldienas",
 "Lunedì dell'Angelo": "Otrās Lieldienas",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalendārs",
 "Le modifiche si salvano da sole.": "Izmaiņas saglabājas pašas.",
 "Inizio turno": "Maiņas sākums",

@@ -325,7 +325,7 @@
 "San Francesco": "Sveti Franjo",
 "Pasqua": "Uskrs",
 "Lunedì dell'Angelo": "Uskrsni ponedjeljak",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalendar",
 "Le modifiche si salvano da sole.": "Promjene se spremaju same.",
 "Inizio turno": "Početak smjene",

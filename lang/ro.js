@@ -336,7 +336,7 @@
 "San Francesco": "Sfântul Francisc",
 "Pasqua": "Paștele",
 "Lunedì dell'Angelo": "A doua zi de Paște",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Calendar",
 "Le modifiche si salvano da sole.": "Modificările se salvează singure.",
 "Inizio turno": "Începutul turei",

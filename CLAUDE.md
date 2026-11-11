@@ -1,4 +1,4 @@
-# iWork: istruzioni per Claude
+# MyTurn: istruzioni per Claude
 
 Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va letto prima di toccare il codice.
 
@@ -11,9 +11,10 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 
 ## Cos'è
 
-PWA per segnare i turni di lavoro (calendario dei turni con ore, straordinari, ferie, permessi, banca ore, stima paga e altro).
+**MyTurn** (fino alla 2.6 si chiamava iWork) è una PWA per segnare i turni di lavoro (calendario dei turni con ore, straordinari, ferie, permessi, banca ore, stima paga e altro).
 
-- **Repository:** BLFRLRNZ/IWork, pubblicato con GitHub Pages.
+- **Repository:** BLFRLRNZ/IWork, pubblicato con GitHub Pages su `https://blfrlrnz.github.io/IWork/`. Il repository ha ancora il vecchio nome: rinominarlo cambierebbe l'indirizzo e l'app già installata sui telefoni smetterebbe di aggiornarsi. Va deciso con il proprietario.
+- **Nomi interni rimasti "iwork":** le chiavi di `localStorage` (`cartellino-turni-v1`, `iwork-*`), la cache `iwork-vN`, `IWORK_I18N`, `IWORK_COUNTRIES`, `iworkDebug`, il font `iWorkSansPDF`, gli UID `@iwork.app` del file .ics e `app:"iwork"` nei backup. **Non vanno cambiati**: servono a non perdere dati e a non duplicare gli eventi nel calendario. Il nome visibile è `APP` in `index.html`.
 - **Lingue:** 23.
 - **Paesi:** 41, con le loro festività e le regole sul riposo.
 - **Versione:** è in `APP_VERSION` dentro `index.html` e in `version.json`.
@@ -159,7 +160,6 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 
 ## Cose ancora aperte (da decidere con il proprietario)
 
-- **Nome dell'app:** "iWork" è un marchio di Apple.
 - **Traduzioni da far rivedere** a chi parla la lingua: et, lv, lt, hu, sl; il termine per "reperibilità" in ogni lingua; i nomi dei menu di iPhone e Android nella Guida.
 - **Etichetta della versione 2.0.0 su GitHub:** va creata a mano.
 - **Festività mancanti:** quelle dei singoli stati di USA e Brasile, la provincia di Terranova e Labrador in Canada, i ponti decisi ogni anno dai governi.
@@ -177,3 +177,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.4 | Guida e domande frequenti |
 | 2.5 | Tour guidato alla prima apertura |
 | 2.6 | Account e promemoria con Supabase (nascosti: 7 tocchi sulla versione) |
+| 2.7 | Nuovo nome: MyTurn |

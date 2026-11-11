@@ -319,7 +319,7 @@
 "San Francesco": "Szent Ferenc",
 "Pasqua": "Húsvétvasárnap",
 "Lunedì dell'Angelo": "Húsvéthétfő",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Naptár",
 "Le modifiche si salvano da sole.": "A változtatások maguktól mentődnek.",
 "Inizio turno": "Műszak kezdete",

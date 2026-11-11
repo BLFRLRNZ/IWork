@@ -319,7 +319,7 @@
 "San Francesco": "Αγίου Φραγκίσκου",
 "Pasqua": "Κυριακή του Πάσχα",
 "Lunedì dell'Angelo": "Δευτέρα του Πάσχα",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Ημερολόγιο",
 "Le modifiche si salvano da sole.": "Οι αλλαγές αποθηκεύονται αυτόματα.",
 "Inizio turno": "Έναρξη βάρδιας",

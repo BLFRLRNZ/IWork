@@ -1,4 +1,4 @@
--- iWork: account e promemoria.
+-- MyTurn: account e promemoria.
 -- Sul server vanno solo: le preferenze dei promemoria, le iscrizioni alle notifiche
 -- e i turni dei prossimi 45 giorni (orario e testo della notifica). Tutto il resto resta sul telefono.
 

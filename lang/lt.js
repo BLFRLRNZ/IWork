@@ -351,7 +351,7 @@
 "San Francesco": "Šv. Pranciškus",
 "Pasqua": "Velykos",
 "Lunedì dell'Angelo": "Antroji Velykų diena",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalendorius",
 "Le modifiche si salvano da sole.": "Pakeitimai išsaugomi patys.",
 "Inizio turno": "Pamainos pradžia",

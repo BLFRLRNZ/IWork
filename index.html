@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<title>iWork</title>
-<meta name="description" content="iWork: il calendario dei tuoi turni di lavoro. Scegli l'inizio, la fine si calcola da sola.">
+<title>MyTurn</title>
+<meta name="description" content="MyTurn: il calendario dei tuoi turni di lavoro. Scegli l'inizio, la fine si calcola da sola.">
 <meta name="theme-color" content="#f1f2f6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090a0e" media="(prefers-color-scheme: dark)">
 <script>try{var t=localStorage.getItem("iwork-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
@@ -12,7 +12,7 @@
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="iWork">
+<meta name="apple-mobile-web-app-title" content="MyTurn">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
@@ -458,7 +458,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 <body>
 <div class="app">
   <header class="top">
-    <div class="brand"><svg class="logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="iwg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1f2a"/><stop offset="1" stop-color="#0a0b10"/></linearGradient></defs><rect width="512" height="512" rx="118" fill="url(#iwg1)"/><path d="M206.6 103.8A160 160 0 0 1 412.5 222.7" stroke="#7C7FFF" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M412.5 289.3A160 160 0 0 1 206.6 408.2" stroke="#FFB61D" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M148.9 374.9A160 160 0 0 1 148.9 137.1" stroke="#FF6B3D" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M256 256L256.0 172.0" stroke="#fff" stroke-width="30" stroke-linecap="round"/><path d="M256 256L308.0 286.0" stroke="#fff" stroke-width="30" stroke-linecap="round"/><circle cx="256" cy="256" r="22" fill="#fff"/></svg><span class="bname">iWork</span></div>
+    <div class="brand"><svg class="logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="iwg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1f2a"/><stop offset="1" stop-color="#0a0b10"/></linearGradient></defs><rect width="512" height="512" rx="118" fill="url(#iwg1)"/><path d="M206.6 103.8A160 160 0 0 1 412.5 222.7" stroke="#7C7FFF" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M412.5 289.3A160 160 0 0 1 206.6 408.2" stroke="#FFB61D" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M148.9 374.9A160 160 0 0 1 148.9 137.1" stroke="#FF6B3D" stroke-width="48" stroke-linecap="round" fill="none"/><path d="M256 256L256.0 172.0" stroke="#fff" stroke-width="30" stroke-linecap="round"/><path d="M256 256L308.0 286.0" stroke="#fff" stroke-width="30" stroke-linecap="round"/><circle cx="256" cy="256" r="22" fill="#fff"/></svg><span class="bname">MyTurn</span></div>
     <nav class="tabs" role="tablist" aria-label="Schermata"><button type="button" role="tab" id="tabCal" aria-selected="true">Calendario</button><button type="button" role="tab" id="tabYear" aria-selected="false">Anno</button></nav>
     <button class="btn round" id="toolsBtn" aria-label="Strumenti"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="18.5" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg><i class="badge" id="toolsBadge" hidden></i></button>
     <button class="btn round" id="setBtn" aria-label="Impostazioni"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg></button>
@@ -1038,7 +1038,7 @@ const monday=d=>addDays(d,-((d.getDay()-WS+7)%7));
 const weekOrder=()=>[0,1,2,3,4,5,6].map(i=>(WS+i)%7);
 const toMin=t=>{const p=t.split(":");return +p[0]*60+ +p[1];};
 const hm=d=>pad(d.getHours())+":"+pad(d.getMinutes());
-const APP="iWork";
+const APP="MyTurn";
 /* ---------- lingua e formati ---------- */
 const I18N=window.IWORK_I18N=window.IWORK_I18N||{};
 const LANGS={it:{n:"Italiano",loc:"it-IT"},en:{n:"English",loc:"en-GB"},fr:{n:"Français",loc:"fr-FR"},de:{n:"Deutsch",loc:"de-DE"},es:{n:"Español",loc:"es-ES"},pt:{n:"Português",loc:"pt-PT"},"pt-BR":{n:"Português (Brasil)",loc:"pt-BR"},
@@ -1110,7 +1110,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.6.0";
+const APP_VERSION="2.7.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -2315,7 +2315,7 @@ function icEvents(){const f=$("icFrom").value,ev=[];if(!isK(f))return ev;const e
 function icsText(ev){const z=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d+/,""),esc2=x=>String(x).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\r?\n/g,"\\n");
   const now=z(new Date()),seq=Math.max(0,Math.floor((Date.now()-1.7e12)/1000)),A=+$("icA").value,L=[];
   const fold=line=>{const out=[];let cur="",n=0;for(const ch of line){const b=new TextEncoder().encode(ch).length;if(n+b>(out.length?74:75)){out.push(cur);cur="";n=0;}cur+=ch;n+=b;}out.push(cur);return out.join("\r\n ");};
-  L.push("BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//iWork//Shift calendar//"+LANG.toUpperCase(),"CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:"+esc2(APP+" – "+t("Turni")));
+  L.push("BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//MyTurn//Shift calendar//"+LANG.toUpperCase(),"CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:"+esc2(APP+" – "+t("Turni")));
   ev.forEach(e=>{L.push("BEGIN:VEVENT","UID:"+e.uid+"@iwork.app","DTSTAMP:"+now,"SEQUENCE:"+seq);
     if(e.day){const d=dateOf(e.day),nx=keyOf(addDays(d,1));L.push("DTSTART;VALUE=DATE:"+e.day.replace(/-/g,""),"DTEND;VALUE=DATE:"+nx.replace(/-/g,""),"TRANSP:TRANSPARENT");}
     else{L.push("DTSTART:"+z(e.s),"DTEND:"+z(e.e));if(e.free)L.push("TRANSP:TRANSPARENT");}
@@ -2333,7 +2333,7 @@ $("icMMinus").onclick=()=>{icM=Math.max(1,icM-1);icSum();};
 $("icMPlus").onclick=()=>{icM=Math.min(12,icM+1);icSum();};
 ["icFrom","icW","icJ","icO","icL"].forEach(id=>$(id).addEventListener("input",icSum));
 $("icCancel").onclick=()=>$("ic").close();
-$("icForm").addEventListener("submit",ev=>{ev.preventDefault();const e=icEvents();if(!e.length)return;$("ic").close();saveFile("iwork-"+$("icFrom").value+".ics",icsText(e),"text/calendar");});
+$("icForm").addEventListener("submit",ev=>{ev.preventDefault();const e=icEvents();if(!e.length)return;$("ic").close();saveFile("myturn-"+$("icFrom").value+".ics",icsText(e),"text/calendar");});
 
 /* ---------- condividi la settimana ---------- */
 let shOff=0;
@@ -2386,7 +2386,7 @@ $("shNext").onclick=()=>{shOff++;shRender();};
 $("shNow").onclick=()=>{shOff=0;shRender();};
 $("shText").onclick=()=>{const txt=weekText(shMonday());
   (navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>toast(t("Turni copiati: incollali in un messaggio.")),()=>toast(t("Copia non disponibile qui.")));};
-$("shForm").addEventListener("submit",ev=>{ev.preventDefault();if(!shCanvas)return;const mon=shMonday(),name="iwork-turni-"+keyOf(mon)+".png";
+$("shForm").addEventListener("submit",ev=>{ev.preventDefault();if(!shCanvas)return;const mon=shMonday(),name="myturn-turni-"+keyOf(mon)+".png";
   shCanvas.toBlob(async blob=>{if(!blob){toast(t("Non sono riuscito a creare l'immagine."));return;}
     const file=new File([blob],name,{type:"image/png"});
     if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:t("I miei turni")});$("sh").close();}catch(e){if(e&&e.name!=="AbortError")saveFile(name,blob,"image/png");}}
@@ -2436,10 +2436,10 @@ $("pdJob").addEventListener("change",pdRender);
 $("pdForm").addEventListener("submit",async ev=>{ev.preventDefault();$("pd").close();
   if(!PDFF)await Promise.race([loadPdfFonts(),new Promise(r=>setTimeout(r,4000))]);
   const J=pdJob();let bytes=null;try{bytes=monthPdf(pdY,pdM,J);}catch(e){toast(t("Non sono riuscito a creare il PDF."));return;}
-  saveFile("iwork-"+pdY+"-"+pad(pdM+1)+"-"+MONTHS[pdM]+(J===2?"-"+fileSafe(j2Name()):"")+".pdf",bytes,"application/pdf");});
+  saveFile("myturn-"+pdY+"-"+pad(pdM+1)+"-"+MONTHS[pdM]+(J===2?"-"+fileSafe(j2Name()):"")+".pdf",bytes,"application/pdf");});
 const fileSafe=x=>String(x).normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^\w-]+/g,"-").replace(/^-+|-+$/g,"").toLowerCase()||"2";
 $("bakBtn").onclick=async()=>{const json=JSON.stringify({app:"iwork",v:1,saved:new Date().toISOString(),settings:S.settings,days:S.days,oc:S.oc,j2:S.j2,bp:S.bp},null,1);
-  const ok=await shareOrSave("iwork-copia-"+keyOf(new Date())+".json",json,"application/json",t("Copia dei turni {app}",{app:APP}));
+  const ok=await shareOrSave("myturn-copia-"+keyOf(new Date())+".json",json,"application/json",t("Copia dei turni {app}",{app:APP}));
   if(ok){try{localStorage.setItem("iwork-lastbackup",String(Date.now()));}catch(e){}bkRender();toast(t("Copia salvata. Tienila in un posto sicuro."));}};
 $("resBtn").onclick=()=>$("resFile").click();
 let rcData=null;

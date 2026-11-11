@@ -1,5 +1,5 @@
 // Rete prima (senza cache HTTP, così gli aggiornamenti arrivano subito), copia salvata se sei offline.
-const CACHE = "iwork-v30";
+const CACHE = "iwork-v31";
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(["./", "index.html", "countries.js", "manifest.webmanifest", "icon.svg", "fonts/pdf-Regular.ttf", "fonts/pdf-Bold.ttf"])));
   self.skipWaiting();
@@ -25,7 +25,7 @@ self.addEventListener("fetch", e => {
 self.addEventListener("push", e => {
   let d = {};
   try { d = e.data ? e.data.json() : {}; } catch (_) { d = { body: e.data ? e.data.text() : "" }; }
-  e.waitUntil(self.registration.showNotification(d.title || "iWork", {
+  e.waitUntil(self.registration.showNotification(d.title || "MyTurn", {
     body: d.body || "", tag: d.tag || undefined, renotify: !!d.tag,
     icon: "icon-192.png", badge: "icon-192.png", data: { url: d.url || "./" }
   }));

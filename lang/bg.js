@@ -319,7 +319,7 @@
 "San Francesco": "Свети Франциск",
 "Pasqua": "Великден",
 "Lunedì dell'Angelo": "Велики понеделник",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Календар",
 "Le modifiche si salvano da sole.": "Промените се запазват сами.",
 "Inizio turno": "Начало на смяната",

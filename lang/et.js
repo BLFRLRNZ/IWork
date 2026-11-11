@@ -319,7 +319,7 @@
 "San Francesco": "Püha Franciscus",
 "Pasqua": "Ülestõusmispühade 1. püha",
 "Lunedì dell'Angelo": "Ülestõusmispühade 2. püha",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Muudatused salvestuvad ise.",
 "Inizio turno": "Vahetuse algus",

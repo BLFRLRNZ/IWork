@@ -319,7 +319,7 @@
 "San Francesco": "Franz von Assisi",
 "Pasqua": "Ostersonntag",
 "Lunedì dell'Angelo": "Ostermontag",
-"iWork": "iWork",
+"MyTurn": "MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Änderungen werden automatisch gespeichert.",
 "Inizio turno": "Schichtbeginn",

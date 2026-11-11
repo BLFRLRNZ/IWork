@@ -1,6 +1,6 @@
 {
-  "name": "iWork",
-  "short_name": "iWork",
+  "name": "MyTurn",
+  "short_name": "MyTurn",
   "description": "Il calendario dei tuoi turni di lavoro.",
   "lang": "it",
   "start_url": "./",

@@ -319,7 +319,7 @@
 "San Francesco": "Saint François",
 "Pasqua": "Pâques",
 "Lunedì dell'Angelo": "Lundi de Pâques",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Calendrier",
 "Le modifiche si salvano da sole.": "Les modifications s'enregistrent toutes seules.",
 "Inizio turno": "Début du poste",

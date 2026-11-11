@@ -266,7 +266,7 @@ Tapaninpäivä
 Pyhän Franciscuksen päivä
 Pääsiäispäivä
 2. pääsiäispäivä
-iWork
+MyTurn
 Kalenteri
 Muutokset tallentuvat itsestään.
 Vuoron alku

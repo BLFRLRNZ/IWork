@@ -268,7 +268,7 @@
 "San Francesco": "St Francis' Day",
 "Pasqua": "Easter Sunday",
 "Lunedì dell'Angelo": "Easter Monday",
-"iWork": "iWork",
+"MyTurn":"MyTurn",
 "Calendario": "Calendar",
 "Le modifiche si salvano da sole.": "Changes save automatically.",
 "Inizio turno": "Shift start",
