@@ -8,7 +8,7 @@ Il calendario dei tuoi turni di lavoro. Scegli solo l'orario d'inizio: la fine s
 
 Al primo avvio una breve procedura chiede lingua (23 lingue: italiano, inglese, francese, tedesco, spagnolo, portoghese e portoghese del Brasile, olandese, polacco, rumeno, bulgaro, croato, ceco, danese, estone, finlandese, greco, ungherese, lettone, lituano, slovacco, sloveno, svedese), paese, zona e durata del turno.
 
-L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono le scelte di base (paese e festività, lingua, aspetto, aggiornamenti); in **Strumenti** tutto ciò che riguarda il lavoro: turni rapidi, etichette, turnazione, orario e regole, ferie e permessi, banca ore, stima paga, condivisione e backup.
+L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono le scelte di base (paese e festività, lingua, aspetto, aggiornamenti); in **Strumenti** tutto ciò che riguarda il lavoro: turni rapidi, etichette, turnazione, orario e regole, ferie e permessi, banca ore, stima paga, busta paga, secondo lavoro, condivisione, esportazione nel calendario, backup e la guida.
 
 **Calendario**
 - **Inserimento rapido**: scegli un turno rapido, un'etichetta o tutti e due, e con un tocco sul giorno assegni turno ed etichetta insieme.
@@ -45,6 +45,8 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - Stima paga: paga oraria, maggiorazioni e indennità di reperibilità.
 - Busta paga: confronto con le ore segnate, anche quando straordinari e maggiorazioni arrivano il mese dopo.
 - Secondo lavoro.
+
+**Guida** (in Strumenti e nelle Impostazioni): domande frequenti su tutte le funzioni, con ricerca e un pulsante che porta allo strumento giusto.
 
 **Impostazioni**
 - Paese e festività, lingua, tema automatico, chiaro o scuro, aggiornamenti.
