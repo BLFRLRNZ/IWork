@@ -18,8 +18,12 @@ Le regole di accesso (RLS) sono attive su tutte le tabelle: ognuno vede solo le 
 | Funzione | Cosa fa | Controllo del token di accesso |
 |---|---|---|
 | `send-reminders` | La chiama `pg_cron` ogni minuto. Manda le notifiche dei turni in arrivo e cancella le iscrizioni non più valide. | spento: è protetta dal segreto del cron |
-| `push-test` | Manda la notifica di prova dalla scheda Promemoria. | acceso |
-| `delete-account` | Elimina l'account e tutti i suoi dati. | acceso |
+| `push-test` | Manda la notifica di prova dalla scheda Promemoria. | spento: controlla da sola il token dell'utente |
+| `delete-account` | Elimina l'account e tutti i suoi dati. | spento: controlla da sola il token dell'utente |
+
+## Progetto attuale
+
+Progetto `iwork` (`jszgiqdylsachclshyqm`), Francoforte, piano gratuito. `vapid_subject` è l'indirizzo dell'app (`https://blfrlrnz.github.io/IWork/`).
 
 ## Configurazione da fare una volta
 
@@ -31,11 +35,14 @@ Le regole di accesso (RLS) sono attive su tutte le tabelle: ognuno vede solo le 
    select cron.schedule('iwork-reminders', '* * * * *', $$
      select net.http_post(
        url := 'https://<progetto>.supabase.co/functions/v1/send-reminders',
-       headers := jsonb_build_object('Content-Type','application/json','x-cron-secret','<cron_secret>'),
-       body := '{}'::jsonb)
+       headers := jsonb_build_object('Content-Type','application/json',
+         'x-cron-secret',(select v from public.app_config where k='cron_secret')),
+       body := '{}'::jsonb,
+       timeout_milliseconds := 20000)
    $$);
    ```
-5. In **Authentication → Email Templates → Magic Link**, mettere il codice a 6 cifre (`{{ .Token }}`) nel testo dell'email. L'app chiede il codice invece del link, perché su iPhone il link aprirebbe Safari e non l'app installata.
+   Il segreto viene letto dalla tabella, così non compare nel testo del job.
+5. In **Authentication → Emails → Templates**, mettere il codice a 6 cifre (`{{ .Token }}`) nel testo di **Magic link** e di **Confirm sign up** (la seconda arriva al primo accesso di un indirizzo nuovo). L'app chiede il codice invece del link, perché su iPhone il link aprirebbe Safari e non l'app installata.
 6. Nell'app, impostare in `SUPA` (dentro `index.html`) l'URL del progetto e la chiave pubblica (anon). La chiave pubblica può stare nel codice: la protezione la danno le regole RLS.
 
 ## Email

@@ -1,12 +1,12 @@
 {
-  "version": "2.5.0",
+  "version": "2.6.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "Nuovo tour guidato: alla prima apertura l'app ti mostra in un minuto dove sono le cose. Puoi rivederlo quando vuoi dalla Guida.",
-    "en": "New guided tour: the first time you open the app, it shows you around in a minute. Replay it any time from the Guide.",
-    "fr": "Nouvelle visite guidée : à la première ouverture, l'app vous montre où sont les choses en une minute. Revoyez-la quand vous voulez depuis le Guide.",
-    "de": "Neue geführte Tour: Beim ersten Öffnen zeigt dir die App in einer Minute, wo alles ist. In der Anleitung kannst du sie jederzeit wiederholen.",
-    "es": "Nuevo tour guiado: la primera vez que abres la app te enseña en un minuto dónde está cada cosa. Puedes volver a verlo desde la Guía.",
-    "pt": "Nova visita guiada: na primeira abertura a app mostra-lhe num minuto onde estão as coisas. Pode revê-la quando quiser no Guia."
+    "it": "Arrivano l'account e i promemoria prima dei turni, anche ad app chiusa. Per ora sono in prova e verranno aperti a tutti più avanti. Senza account l'app funziona come sempre e i dati restano sul telefono.",
+    "en": "Accounts and reminders before your shifts are coming, even with the app closed. They are in testing for now and will open to everyone later. Without an account the app works as always and your data stays on your phone.",
+    "fr": "Le compte et les rappels avant vos postes arrivent, même app fermée. Ils sont en test pour l'instant et seront ouverts à tous plus tard. Sans compte, l'app fonctionne comme toujours et vos données restent sur le téléphone.",
+    "de": "Konto und Erinnerungen vor deinen Schichten kommen, auch wenn die App geschlossen ist. Sie sind noch im Test und werden später für alle freigeschaltet. Ohne Konto funktioniert die App wie immer und deine Daten bleiben auf dem Handy.",
+    "es": "Llegan la cuenta y los recordatorios antes de tus turnos, incluso con la app cerrada. Por ahora están en pruebas y se abrirán a todos más adelante. Sin cuenta la app funciona como siempre y tus datos se quedan en el teléfono.",
+    "pt": "Chegam a conta e os lembretes antes dos seus turnos, mesmo com a app fechada. Por agora estão em teste e serão abertos a todos mais tarde. Sem conta a app funciona como sempre e os seus dados ficam no telemóvel."
   }
 }

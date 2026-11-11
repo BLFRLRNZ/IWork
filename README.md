@@ -51,11 +51,15 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 **Impostazioni**
 - Paese e festività, lingua, tema automatico, chiaro o scuro, aggiornamenti.
 
+**Account e promemoria** (in prova)
+- Con un account, accesso con un codice di 6 cifre ricevuto via email, il telefono avvisa prima di ogni turno anche ad app chiusa: da 15 minuti a 3 ore prima, anche per il secondo lavoro e la reperibilità. Sull'iPhone serve l'app aggiunta alla schermata Home.
+- Per ora la sezione è nascosta: si accende toccando 7 volte la riga della versione in Impostazioni. Verrà aperta a tutti quando le email di accesso potranno arrivare a chiunque.
+
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in 23 lingue (le traduzioni sono nella cartella `lang/`).
 
 ## Dove sono i dati
 
-I turni restano nel browser del dispositivo che usi (`localStorage`). Non c'è nessun server. Per non perderli e per spostarli su un altro dispositivo usa **Strumenti → Salva una copia dei turni** e poi **Carica una copia**.
+I turni restano nel browser del dispositivo che usi (`localStorage`). Il server ([Supabase](supabase/README.md), nell'Unione Europea) serve solo a chi crea un account per i promemoria: riceve l'email e i turni dei prossimi 45 giorni, con orario e nome del turno. Note, etichette, busta paga e stima paga non lasciano mai il dispositivo. Per non perderli e per spostarli su un altro dispositivo usa **Strumenti → Salva una copia dei turni** e poi **Carica una copia**.
 
 ## Usarla
 
@@ -70,6 +74,7 @@ I turni restano nel browser del dispositivo che usi (`localStorage`). Non c'è n
 - `fonts/`: il carattere incorporato nel PDF (sottoinsieme di Liberation Sans rinominato "iWork Sans PDF", licenza SIL Open Font License in `fonts/OFL.txt`), con latino, greco e cirillico.
 - `lang/`: le traduzioni (l'italiano è nel codice).
 - `version.json`: l'ultima versione pubblicata.
+- `supabase/`: tabelle e funzioni del server per account e promemoria.
 
 ## Pubblicare un aggiornamento
 

@@ -1110,7 +1110,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.5.0";
+const APP_VERSION="2.6.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1877,8 +1877,11 @@ $("cyForm").addEventListener("submit",ev=>{ev.preventDefault();const plan=cyPlan
 /* ---------- account (Supabase) e promemoria ----------
    Senza configurazione (SUPA.url vuoto) tutto questo resta nascosto e l'app funziona solo in locale.
    Accesso con codice a 6 cifre via email: su iPhone il link aprirebbe Safari invece dell'app installata. */
-const SUPA=Object.assign({url:"",key:"",vapid:""},window.__IWORK_SUPA||{});  /* __IWORK_SUPA: solo per i test */
-const SB_ON=()=>!!(SUPA.url&&SUPA.key);
+const SUPA=Object.assign({url:"https://jszgiqdylsachclshyqm.supabase.co",key:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpzemdpcWR5bHNhY2hjbHNoeXFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQzOTEwMTksImV4cCI6MjEwOTk2NzAxOX0._PCOzth9FWOGj4IrsEwewR257b_oQGh3thlZ1LSVaqY",vapid:"BDmXWQ6ZaCZKiOeqJibaZrCj9HK0nkXlqptYBdL53UFRVYddd5GF-xqcx-5Tu7E2yGzdmPA1jAk1_9UcosIrfps"},window.__IWORK_SUPA||{});  /* __IWORK_SUPA: solo per i test */
+/* Finché le email arrivano solo ai membri del progetto Supabase, account e promemoria si accendono a mano:
+   7 tocchi sulla riga della versione in Impostazioni (localStorage "iwork-acct"). */
+const SB_ON=()=>{if(!(SUPA.url&&SUPA.key))return false;if(window.__IWORK_SUPA)return true;try{return localStorage.getItem("iwork-acct")==="1";}catch(e){return false;}};
+let acTaps=0,acTapT=0;$("upInfo").addEventListener("click",()=>{const n=Date.now();acTaps=n-acTapT<1500?acTaps+1:1;acTapT=n;if(acTaps<7)return;acTaps=0;try{localStorage.setItem("iwork-acct",localStorage.getItem("iwork-acct")==="1"?"0":"1");}catch(e){}renderAccount();});
 const AUTH_K="iwork-auth";let AU=null;
 try{AU=JSON.parse(localStorage.getItem(AUTH_K)||"null");}catch(e){AU=null;}
 function auSave(){try{if(AU)localStorage.setItem(AUTH_K,JSON.stringify(AU));else localStorage.removeItem(AUTH_K);}catch(e){}}

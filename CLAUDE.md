@@ -90,14 +90,17 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
 
 ## Server (Supabase)
 
-- Serve solo per **accesso** (codice di 6 cifre via email) e **promemoria** (notifiche push prima dei turni). Piano gratuito, regione UE.
+- Serve solo per **accesso** (codice di 6 cifre via email) e **promemoria** (notifiche push prima dei turni). Progetto `iwork` (`jszgiqdylsachclshyqm`), organizzazione BLFRLRNZ/Team, piano gratuito, Francoforte.
+- **Ancora nascosto:** `SB_ON()` è vero solo se `localStorage["iwork-acct"]==="1"`, che si attiva con 7 tocchi su `#upInfo` (la riga della versione in Impostazioni). Il motivo: il servizio email incluso in Supabase manda solo ai membri del progetto. Quando ci sarà un SMTP, togliere la condizione e fare un rilascio.
 - Il collegamento sta in `index.html`, nell'oggetto `SUPA={url,key,vapid}`: indirizzo del progetto, chiave pubblica "anon" e chiave pubblica VAPID. Se è vuoto, la sezione Account e il pulsante Promemoria restano nascosti e l'app non chiama nessun server.
 - Il client è scritto a mano con `fetch` (`sbFetch`, `auToken`), senza librerie. La sessione sta in `localStorage["iwork-auth"]`.
 - L'app calcola da sola i promemoria dei prossimi 45 giorni (`remItems`), già tradotti e con l'ora di invio, e li manda al server con `set_shifts` ogni volta che i dati cambiano (`mark()` → `remSync`).
-- Sul server: `pg_cron` chiama ogni minuto la funzione `send-reminders`, che manda le notifiche con Web Push. `sw.js` le mostra (`push`, `notificationclick`).
+- Sul server: il job `iwork-reminders` di `pg_cron` chiama ogni minuto la funzione `send-reminders` con `pg_net`, passando il `cron_secret` letto da `app_config`. Le notifiche partono con Web Push; `sw.js` le mostra (`push`, `notificationclick`). Le risposte si vedono in `net._http_response`.
+- Le tre funzioni hanno la verifica del token spenta: controllano da sole il segreto del cron o il token dell'utente.
+- Lo strumento di Supabase annulla da solo le modifiche che chiedono una conferma (per esempio con `drop`): applicare le modifiche al database a pezzi piccoli e senza `drop`.
 - Restano **solo sul dispositivo**: note, etichette, busta paga, stima paga e tutto il resto.
 - **Segreti:** la chiave privata VAPID, il `cron_secret` e la chiave `service_role` stanno solo nella tabella `app_config` di Supabase. Non vanno mai nel repository né chiesti in chat.
-- **Email:** il servizio email incluso in Supabase manda solo ai membri del progetto. Per utenti veri serve un SMTP (per esempio Resend o Brevo). Il modello dell'email "Magic Link" deve contenere `{{ .Token }}`.
+- **Email:** il servizio email incluso in Supabase manda solo ai membri del progetto. Per utenti veri serve un SMTP (per esempio Resend o Brevo). I modelli delle email "Magic link" e "Confirm sign up" devono contenere `{{ .Token }}`.
 - Le istruzioni passo per passo sono in `supabase/README.md`.
 
 ## Traduzioni
@@ -160,6 +163,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 - **Traduzioni da far rivedere** a chi parla la lingua: et, lv, lt, hu, sl; il termine per "reperibilità" in ogni lingua; i nomi dei menu di iPhone e Android nella Guida.
 - **Etichetta della versione 2.0.0 su GitHub:** va creata a mano.
 - **Festività mancanti:** quelle dei singoli stati di USA e Brasile, la provincia di Terranova e Labrador in Canada, i ponti decisi ogni anno dai governi.
+- **Email per tutti:** collegare un SMTP (Resend o Brevo) a Supabase, poi togliere l'interruttore nascosto.
 - **Funzioni del server ancora da fare:** sincronizzazione tra dispositivi, calendario in abbonamento, condivisione con i colleghi.
 
 ## Storia delle versioni
@@ -172,3 +176,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.3 | Busta paga, con la lettura dei modelli di 41 paesi |
 | 2.4 | Guida e domande frequenti |
 | 2.5 | Tour guidato alla prima apertura |
+| 2.6 | Account e promemoria con Supabase (nascosti: 7 tocchi sulla versione) |
