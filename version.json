@@ -1,12 +1,12 @@
 {
-  "version": "2.3.0",
+  "version": "2.3.1",
   "date": "2026-11-11",
   "notes": {
-    "it": "Nuovo: busta paga. Carica il PDF (anche con password) o scrivi i numeri: l'app controlla straordinari, notturni, festivi, ferie e permessi rispetto alle ore che hai segnato.",
-    "en": "New: payslip check. Upload the PDF (password-protected too) or type the numbers: the app checks overtime, night, holiday work and leave against the hours you logged.",
-    "fr": "Nouveau : bulletin de paie. Chargez le PDF (même protégé) ou saisissez les chiffres : l'app vérifie heures sup., nuits, jours fériés, congés et absences par rapport à vos heures.",
-    "de": "Neu: Lohnabrechnung. Lade das PDF (auch mit Passwort) oder gib die Zahlen ein: Die App prüft Überstunden, Nacht- und Feiertagsarbeit, Urlaub und Freistellung gegen deine Stunden.",
-    "es": "Nuevo: nómina. Carga el PDF (también con contraseña) o escribe los números: la app comprueba horas extra, nocturnidad, festivos, vacaciones y permisos con tus horas.",
-    "pt": "Novo: recibo de vencimento. Carregue o PDF (mesmo com palavra-passe) ou escreva os números: a app verifica horas extra, noturno, feriados, férias e dispensas face às suas horas."
+    "it": "La lettura delle buste paga ora riconosce i modelli di tutti i 41 paesi dell'app, nelle loro lingue e formati.",
+    "en": "Payslip reading now recognises the payslip layouts of all 41 countries in the app, in their languages and formats.",
+    "fr": "La lecture des bulletins de paie reconnaît désormais les modèles des 41 pays de l'app, dans leurs langues et formats.",
+    "de": "Das Einlesen von Lohnabrechnungen erkennt jetzt die Vorlagen aller 41 Länder der App, in ihren Sprachen und Formaten.",
+    "es": "La lectura de nóminas reconoce ahora los modelos de los 41 países de la app, en sus idiomas y formatos.",
+    "pt": "A leitura de recibos de vencimento reconhece agora os modelos dos 41 países da app, nas suas línguas e formatos."
   }
 }

@@ -1021,7 +1021,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.3.0";
+const APP_VERSION="2.3.1";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1860,86 +1860,130 @@ function bpSplit(c){const raw=c.s.replace(/(^|\s)(\d{1,3}) (?=\d{3}(?:[.,]\d+)?(
   starts.forEach((st,j)=>{const en=j+1<starts.length?starts[j+1]:toks.length,a=toks[st].i,z=toks[en-1].i+toks[en-1].s.length;
     out.push({x:c.x+c.w*a/len,w:c.w*(z-a)/len,s:raw.slice(a,z).replace(/\s+/g," ").trim()});});
   return out;}
-const bpDec=()=>{try{const p=new Intl.NumberFormat(LOC).formatToParts(1.5).find(x=>x.type==="decimal");return p?p.value:",";}catch(e){return",";}};
-function bpNum(s0,dec){let s=String(s0).replace(/ | /g," ").replace(/€|\$|£|EUR|CHF|PLN|RON|BGN|CZK|HUF|SEK|DKK|kr\.?|Kč|zł|lei|Ft|лв\.?/gi,"").trim();
+const bpLoc=()=>{const c=S.settings.country,C=CTRYS[c]||{};return(C.lang||"en")+"-"+c;};
+const bpDec=()=>{const l=bpLoc();try{if(Intl.NumberFormat.supportedLocalesOf([l.split("-")[0]]).length){const p=new Intl.NumberFormat(l).formatToParts(1.5).find(x=>x.type==="decimal");if(p)return p.value;}}catch(e){}
+  return /^en-(US|GB|IE|MT|CA|AU|NZ)$|^es-MX$|^de-(CH|LI)$/.test(l)?".":",";};
+/* numeri come sulle buste di ogni paese: 1.234,56 · 1,234.56 · 1 234,56 · 1'234.56 · 7:30 (ore) · 12,00- (negativo) · "156,00 uur" */
+const BPUNIT=/\s*(h|hh|hrs?|hours?|ore|uur|uren|std\.?|stunden|timer|tim|tim\.|godz\.?|hod\.?|óra|ora|tunti|tuntia|gg|g|giorni|gg\.|days?|dagen|dagar|dage|jours?|j|tage|dias|días|dni|dny|dnů|dní|dňa|dana|d|zile|päeva|päevad|dienas|dienos|napok?|nap)\.?$/i;
+function bpNum(s0,dec){let s=String(s0).replace(/[   ]/g," ").replace(/€|\$|£|R\$|US\$|EUR|USD|GBP|CHF|PLN|RON|BGN|CZK|HUF|SEK|DKK|NOK|ISK|MXN|ARS|BRL|AUD|NZD|CAD|kr\.?|Kč|zł|lei|Ft|лв\.?|Fr\.?/gi,"").trim();
   let neg=false;if(/^-|-$|^\(.*\)$/.test(s)){neg=true;s=s.replace(/^-|-$|^\(|\)$/g,"").trim();}
-  const hm=s.match(/^(\d{1,3})[:.]([0-5]\d)\s*(h|hh|ore)?$/i);if(hm&&/[:]/.test(s))return+hm[1]+hm[2]/60;
-  s=s.replace(/\s*(h|hh|ore|gg|g)$/i,"");
+  const hm=s.match(/^(\d{1,3}):([0-5]\d)(\s*h)?$/i);if(hm)return+hm[1]+hm[2]/60;
+  s=s.replace(BPUNIT,"").trim();
   if(!/^(\d{1,3}([.,'’ ]\d{3})+|\d+)([.,]\d{1,5})?$/.test(s))return null;
   const lc=Math.max(s.lastIndexOf(","),s.lastIndexOf("."));let ip=s,dp="";
   if(lc>=0){const tail=s.slice(lc+1),both=s.includes(",")&&s.includes(".");if(both||tail.length!==3||s[lc]===dec){ip=s.slice(0,lc);dp=tail;}}
   const v=+(ip.replace(/[.,'’ ]/g,"")+(dp?"."+dp:""));return isFinite(v)?(neg?-v:v):null;}
-const bpLo=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+const bpLo=s=>String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/ø/g,"o").replace(/æ/g,"ae").replace(/ß/g,"ss").replace(/ł/g,"l").replace(/đ/g,"d").replace(/þ/g,"th").replace(/ð/g,"d");
+/* Vocabolario delle buste paga dei 41 paesi dell'app, con le parole già senza accenti (vedi bpLo).
+   Modelli di riferimento: cedolino italiano (LUL), Entgeltabrechnung DE/AT/CH, bulletin de paie clarifié FR/BE/LU/MC,
+   nómina ES, recibo de sueldo AR, recibo de nómina MX, recibo de vencimento PT, holerite BR, loonstrook NL/BE,
+   payslip GB/IE/MT/AU/NZ, pay stub US/CA, lönespecifikation SE, lønseddel DK, lønnsslipp NO, launaseðill IS,
+   palkkalaskelma FI e le buste di PL, CZ, SK, HU, RO, BG, HR, SI, EE, LV, LT, GR/CY. */
+const bpRx=(a)=>new RegExp(a);
 const BPX={
-  qty:/(^|[^a-z])(ore|ore\/gg|cuantia|unidades|unid\.?|gg\/ore|q\.?\s?ta|quantita|qty|quantity|hours|hrs|heures|nombre|stunden|anzahl|menge|horas|cantidad|unita|riferimento|rif\.?|gg|giorni|uds|aantal|ilosc|liczba|cantitate|pocet|mnozstvi|maara|tunnit|antal|timer|timmar|mennyiseg|ora|kolicina|sati|stevilo|ure|daudzums|stundas|kiekis|valandos|kogus|tunnid|ποσοτ|ωρες|количество|часове)([^a-z]|$)/,
-  amt:/compet|import|amount|montant|betrag|importe|valor|bedrag|kwota|suma|castig|summa|belob|belopp|osszeg|iznos|znesek|ποσο|сума|retribu|earning|gains|bezuge|devengo|abono|vencimento/,
-  ot:/straord|supplementar|overtime|heures? sup|uberstund|mehrarbeit|horas? extra|trabalho suplementar|overuren|overwerk|nadgodzin|nadliczb|ore suplimentare|prescas|nadcas|ylityo|lisatyo|overarbejde|overtid|ovetid|tulora|prekovremen|nadur|virsstund|virsvaland|uletunn|υπερωρ|извънред/,
-  night:/nott|night|nuit|nacht|noctur|notur|nocn|nocni|yotyo|yolisa|natt|nat-|nattillaeg|ejszak|nakts|naktin|ootoo|ootasu|νυχτ|нощ/,
-  fest:/festivo|festivi|festiva|lav\.? fest|domenic|sunday|public holiday|bank holiday|dimanche|jour ferie|jours feries|sonntag|feiertag|domingo|feriado|zondag|feestdag|niedziel|swiat|duminic|sarbator|nedel|svatk|sviat|pyha|sunnuntai|sondag|sondag|helligdag|helgdag|vasarnap|unnep|nedjelj|blagdan|praznik|svetdien|svetku|sekmadien|svent|puhapaev|κυριακ|αργι|недел|празни/,
-  festNo:/festivita|soppress|non god|abolit|ex.?fest|retribuit/,
-  ferie:/ferie|annual leave|vacation|holiday (taken|pay)|conges|urlaub|vacacion|ferias|vakantie|urlop|concediu|dovolen|vuosiloma|lomapaiv|ferie|semester|szabadsag|godisnji|dopust|atvalinaj|atostog|puhkus|αδει|отпуск/,
-  perm:/permess|(^|[^a-z])r\.?o\.?l\.?([^a-z]|$)|riduz.*orar|ex.?fest|time off|toil|rtt|freistell|permiso|dispensa|verlof|adv-|zwolnien|invoir|nahradni volno|nahradne volno|vapaa|afspadser|kompledig|szabadido|slobodn|prosti dan|brivdien|laisv|vaba aeg|ολιγωρ|кратк/,
-  used:/god|fruit|usufr|utilizz|taken|used|pris|genommen|verbraucht|disfrut|gozad|usufruid|opgenomen|wykorzyst|efectuat|cerpan|cerpa|pidetty|kaytetty|afholdt|uttag|kivett|iskoriste|izkoris|izmantot|panaudot|kasutat|ληφθ|ползван/,
-  res:/resid|saldo|spettant|balance|remaining|restant|solde|rest|pendiente|disponib|pozost|ramas|zbyv|jaljella|resterend|tilbage|kvar|maradek|preostal|ostane|atlik|likut|jaak|υπολοιπ|остат/,
-  resNo:/a\.?\s?p\.?($|[^a-z])|anno prec|prec\.|previous|preced|vorjahr|anterior|vorig|poprzedn|anterior|predchoz|edellinen|forrige|foregaende|elozo|prethodn|prejsn|ieprieks|praejus|eelmis|προηγ|предход/,
-  hours:/(^|[^a-z])(ore|h|hh|hours|hrs|heures|stunden|std|horas|uren|godz|ore|hod|tuntia|timer|timmar|ora|sati|ur|stundas|val|tundi|ωρες|часа)([^a-z]|$)/,
-  days:/(^|[^a-z])(gg|giorni|gg\.|days|jours|jrs|tage|dias|dagen|dni|zile|dny|dni|paivaa|dage|dagar|nap|dana|dni|dienas|dienos|paeva|ημερ|дни)([^a-z]|$)/,
-  gross:/totale competenze|tot\.?\s?competenze|totale lordo|lordo|retribuzione lorda|gross|brut|bruttolohn|bruttoentgelt|gesamtbrutto|devengado|ilíquido|iliquido|remuneracao bruta|brutoloon|brutto|venit brut|hruba|bruttopalkka|bruttolon|brutto|bruto|bruto|μικτ|бруто/,
-  net:/netto|net pay|net to pay|net a payer|net paye|nettoverdienst|auszahlung|liquido|neto|nettoloon|do wyplaty|rest de plata|k vyplate|cista mzda|nettopalkka|udbetal|att betala|netto|isplat|izmaksai|ismoket|valja makstav|καθαρ|нето|net$|^net /,
-  netNo:/imponib|arrotond|rounding|base|irpef/,
-  extra:/tredicesim|13\s?\^?a mensil|xiii|mensilita aggiuntiva|quattordicesim|14\s?\^?a mensil/};
+  qty:bpRx("(^|[^a-z])(quantidade|qtde?|ore|ore\\/gg|gg\\/ore|ore\\/giorni|cuantia|cantidad|unidades|unid\\.?|q\\.?\\s?ta|quantita|qty|quantity|units?|hours?|hrs|hours\\/units|heures|nombre|nbre|stunden|std\\.?|anzahl|menge|horas|dias\\/horas|referencia|ref\\.?|riferimento|rif\\.?|unita|gg|giorni|aantal|uren|ilosc|liczba|cantitate|nr\\.? ore|pocet|mnozstvi|jednotky|maara|kpl|tunnit|antal|antall|timer|timmar|fjoldi|einingar|mennyiseg|ora|kolicina|sati|stevilo|ure|daudzums|stundas|kiekis|valandos|kogus|tunnid|ποσοτ|ωρες|μοναδ|количество|часове|бр\\.?)([^a-z]|$)"),
+  amt:bpRx("compet|import|amount|montant|betrag|importe|valor|bedrag|kwota|suma|castig|summa|belob|belopp|upphaed|osszeg|iznos|znesek|ποσο|сума|retribu|earning|gains|bezuge|devengo|abono|vencimento|provento|current|this period|rate|tarif|taux|satz|faktor|precio|tarifa|stawka|sazba|hinta|a-pris|a pris|sats|rata|cijena|cena|likme|tarifas|ставка|τιμη|gain|retenue|deduct|trattenut|abzug|deducc|desconto|inhouding"),
+  ot:bpRx("straord|supplementar|overtime|(^|[^a-z])ot([^a-z]|$)|time and a half|double ?time|heures? sup|h\\.? ?sup|(^|[^a-z])hs([^a-z]|$)|heures? compl|temps supplementaire|temps double|temps et demi|uberstund|ueberstund|uberzeit|mehrarbeit|horas? extra|h\\.? ?extra|tiempo extra|horas dobles|horas triples|(^|[^a-z])he ?\\d|trabalho suplementar|overuren|overwerk|meeruren|nadgodzin|nadliczb|ore suplimentare|prescas|nadcas|ylityo|lisatyo|overarbejde|overtid|yfirvinn|tulora|prekovremen|nadur|virsstund|virsvaland|uletunn|υπερωρ|извънред"),
+  otNo:bpRx("trattenut|recuper|banca|accanton|forfett|forfait|pauschal|dsr|reflexo|repos compensateur|ytd|saldo|balance|zeitkonto|stundenkonto|flex"),
+  otM:bpRx("maggior|premium|zuschlag|majoration|recargo|acrescimo|adicional|toeslag|tillaeg|tillagg|tillegg|lisa|dodatek|priplatek|priplatok|potlek|spor|dodatak|piemaksa|priedas|lisatasu|προσαυξ|добавк"),
+  night:bpRx("nott|night|nuit|nacht|noctur|notur|nocn|nocni|za noc|noapte|yotyo|yolisa|natt|naetur|ejszak|nakts|naktin|ootoo|ooaja|ootasu|νυχτ|нощ|graveyard"),
+  fest:bpRx("poilsio dien|festivo|festivi|festiva|lav\\.? fest|domenic|sunday|public holiday|bank holiday|holiday worked|holiday premium|stat holiday worked|dimanche|jours? feries?( travaill)?|majoration ferie|sonntag|feiertag|domingo|dominical|feriado|zondag|feestdag|niedziel|swiat|swiet|duminic|sarbator|nedel|svat|sviat|pyha|sunnuntai|sondag|helligdag|helgdag|helg|sunnudag|helgidag|storhatid|vasarnap|unnep|nedjelj|blagdan|praznik|svetdien|svetku|sekmadien|svent|puhapaev|riigipuha|κυριακ|αργι|недел|празни"),
+  festNo:bpRx("festivita|soppress|non god|abolit|ex.?fest|retribuit|not worked|non travaill|dsr|descanso semanal"),
+  ferie:bpRx("ferie|annual leave|vacation|(^|[^a-z])hol([^a-z]|$)|holiday pay|holiday taken|holiday entitlement|holiday balance|(^|[^a-z])pto([^a-z]|$)|conges|urlaub|vacacion|ferias|vakantie|urlop|concediu|dovolen|vuosiloma|loma|semester|orlof|szabadsag|godisnji|dopust|atvalinaj|atostog|puhkus|αδει|отпуск"),
+  ferieNo:bpRx("geld|allowance|indennita|indemnite|subsid|zuschuss|remuneration|premie|bonus|toelage|tillaeg|tillagg|feriepenge|semesterersattning|semesterlon|lomaraha|regres|dodatek urlop|prima vacacional|aguinaldo|loading|accrual rate|1\\/3|terco"),
+  perm:bpRx("permess|(^|[^a-z])r\\.?o\\.?l\\.?([^a-z]|$)|riduz.*orar|ex.?fest|time off|toil|(^|[^a-z])rtt([^a-z]|$)|freistell|permiso|dispensa|verlof|(^|[^a-z])adv([^a-z]|$)|zwolnien|invoir|nahradni volno|nahradne volno|afspadser|kompledig|szabadido|slobodn|prosti dan|brivdien|laisv|vaba aeg|ολιγωρ|кратк"),
+  used:bpRx("opname|god|fruit|usufr|utilizz|taken|used|pris|genommen|verbraucht|disfrut|gozad|usufruid|opgenomen|(^|[^a-z])af([^a-z]|$)|wykorzyst|efectuat|cerpan|cerpa|pidetty|kaytetty|afholdt|uttag|avviklet|tekid|kivett|igenybe|iskoriste|izkoris|izrabljen|izmantot|panaudot|kasutat|ληφθ|ползван"),
+  res:bpRx("por gozar|por disfrutar|resid|saldo|spettant|balance|remaining|restant|solde|(^|[^a-z])rest|resturlaub|pendiente|disponib|pozost|ramas|zbyv|zustatek|zostatok|jaljella|resterend|resterande|tilbage|kvar|gjenstaende|eftir|maradek|preostal|ostane|atlik|likut|jaak|υπολοιπ|остат"),
+  matur:bpRx("opbouw|matur|spett|accru|acquis|erworb|anspruch|devengad|adquirid|opgebouwd|(^|[^a-z])bij([^a-z]|$)|nabyt|acumulat|narok|kertyny|optjent|intjan|opptjent|szerzett|steceno|uzkrat|sukaup|kogunenud|entitle"),
+  resNo:bpRx("begin|a\\.?\\s?p\\.?($|[^a-z])|anno prec|prec\\.|previous|preced|vorjahr|anterior|vorig|poprzedn|predchoz|edellinen|forrige|foregaende|fyrra|elozo|prethodn|prejsn|ieprieks|praejus|eelmis|προηγ|предход|n-1|sparade|saved"),
+  hours:bpRx("(^|[^a-z])(ore|h|hh|hours|hrs|heures|stunden|std|horas|uren|uur|godz|ore|hod|tuntia|tunnit|timer|timmar|klst|ora|sati|ur|stundas|val|tundi|ωρες|часа|часове)([^a-z]|$)"),
+  days:bpRx("(^|[^a-z])(d|dnu|dana|gg|giorni|gg\\.|days|jours|jrs|j|tage|dias|dagen|dni|zile|dny|dni|paivaa|pv|dage|dagar|dagen|nap|napok|dana|dni|dienas|dienos|paeva|ημερ|дни)([^a-z]|$)"),
+  grossStrong:bpRx("totale competenze|tot\\.?\\s?competenze|totale lordo|total brut|salaire brut|gesamtbrutto|summe brutto|summe der brutto|brutto gesamt|gross pay|total gross|gross earnings|total earnings|total devengado|total percepciones|total haberes|total remunerativo|total de vencimentos|total de proventos|total iliquido|totaal bruto|brutoloon|bruttolon|bruttopalkka|bruttolonn|heildarlaun|razem brutto|wynagrodzenie brutto|hruba mzda|bruto placa|bruto placa|venit brut|total brut|μικτες αποδοχες|брутно възнаграждение|bruto alga|bruto darbo|brutopalk|priskaiciuota"),
+  gross:bpRx("lordo|gross|brut|bruto|brutto|bruttó|μικτ|бруто|брутн|devengado|percepciones|haberes|vencimentos|proventos"),
+  grossNo:bpRx("trattenut|imponib|contribut|deduct|ritenut|ytd|year to date|to date|cumul|progressiv|jahres|acumulad|annu|taxable|steuerpflicht|sv-brutto|st-brutto|lst-brutto|kv-brutto|abzug|minus"),
+  netStrong:bpRx("netto in busta|netto a pagare|netto da pagare|netto del mese|netto da corrispondere|net pay|net to pay|take home|amount paid|net paye|net verse|net a payer(?! avant)|auszahlung|uberweisung|liquido a percibir|liquido total|liquido a receber|valor liquido|neto a pagar|neto a cobrar|neto del recibo|neto a percibir|te betalen|uit te betalen|netto te betalen|do wyplaty|rest de plata|k vyplate|kifizetend|kifizetes|za isplatu|za izplacil|за получаване|valjamakstav|valja makstav|izmaksajam|ismoketi|ismoketa|πληρωτ|udbetalt|til udbetaling|att utbetala|utbetalt|utbetales|maksetaan|maksettava|utborgad|greitt"),
+  net:bpRx("netto|net$|^net |(^|[^a-z])net([^a-z]|$)|liquido|neto|nettó|καθαρ|нето|нетн|nettoloon|nettolon|nettopalkka|nettolonn"),
+  netNo:bpRx("imponib|arrotond|rounding|base|irpef|steuer|tax|avant imp|ytd|year to date|to date|cumul|progressiv|jahr|acumulad|annu|anno"),
+  extra:bpRx("tredicesim|13\\s?\\^?a mensil|xiii|mensilita aggiuntiva|quattordicesim|14\\s?\\^?a mensil|weihnachts|urlaubszuschuss|urlaubsgeld|sonderzahlung|13\\.? ?gehalt|14\\.? ?gehalt|aguinaldo|paga extra|pagas? extraordinaria|subsidio de natal|13o salario|decimo terceiro|uitbetaling vakantiegeld|vakantiegeld uitbetal|feriepenge|lomaraha|regres|δωρο|prima vacacional|sueldo anual complementario|(^|[^a-z])sac([^a-z]|$)|13th month|14th month|christmas bonus")};
+/* nomi dei mesi in tutte le lingue delle buste (forme lunghe, al genitivo e abbreviate), per riconoscere il periodo di paga */
+let BPMN=null,BPMNk="";
+function bpMonths(){const c=S.settings.country,first=[(CTRYS[c]||{}).lang,LANG.split("-")[0],"en","it"].filter(Boolean),key=first.join();if(BPMN&&BPMNk===key)return BPMN;
+  const L=[...new Set(first.concat(["it","en","fr","de","es","pt","nl","pl","ro","bg","hr","cs","da","et","fi","el","hu","lv","lt","sk","sl","sv","nb","is"]))],out=[];
+  L.forEach(l=>{const o=[];for(let i=0;i<12;i++){const d=new Date(2026,i,15);
+    [{month:"long"},{month:"short"}].forEach(f=>{try{o.push([bpLo(new Intl.DateTimeFormat(l,f).format(d)).replace(/\.$/,""),i]);}catch(e){}});
+    try{const p=new Intl.DateTimeFormat(l,{day:"numeric",month:"long"}).formatToParts(d).find(x=>x.type==="month");if(p)o.push([bpLo(p.value),i]);}catch(e){}}
+    if(l==="it")["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"].forEach((n,i)=>o.push([n,i]));
+    const seen=new Set();out.push(o.filter(([n])=>n.length>=3&&!/^\d/.test(n)&&!seen.has(n)&&seen.add(n)).sort((a,b)=>b[0].length-a[0].length));});
+  BPMN=out;BPMNk=key;return BPMN;}
+const bpMDY=()=>{try{const p=new Intl.DateTimeFormat(bpLoc()).formatToParts(new Date(2026,10,25)).map(x=>x.type);return p.indexOf("month")<p.indexOf("day");}catch(e){return false;}};
 function bpParse(rows){const dec=bpDec(),wd=S.settings.wd||8,R={},src={};
   rows.forEach(r=>{r.nums=r.cells.map(c=>({c,v:bpNum(c.s,dec),cx:c.x+c.w/2,x0:c.x,x1:c.x+c.w})).filter(n=>n.v!==null);r.labs=r.cells.filter(c=>bpNum(c.s,dec)===null);r.lab=bpLo(r.labs.map(c=>c.s).join(" "));r.lt=bpLo(r.cells.map(c=>c.s).join(" "));});
-  const decs=n=>{const m=n.c.s.match(/[.,](\d+)\D*$/);return m?m[1].length:0;};
-  /* intestazione della tabella delle voci: colonna delle quantità */
-  let qc=null;const hdr=rows.find(r=>!r.nums.length&&r.cells.some(c=>BPX.qty.test(bpLo(c.s)))&&r.cells.some(c=>BPX.amt.test(bpLo(c.s))));
-  if(hdr){const c=hdr.cells.find(c=>BPX.qty.test(bpLo(c.s)));qc={x0:c.x,x1:c.x+c.w,cx:c.x+c.w/2,u:BPX.days.test(bpLo(c.s))&&!BPX.hours.test(bpLo(c.s))?"d":BPX.hours.test(bpLo(c.s))&&!BPX.days.test(bpLo(c.s))?"h":""};}
-  const qty=r=>{const lend=r.labs.length?Math.max(...r.labs.map(c=>c.x)):0;let c=r.nums.filter(n=>n.x0>lend-1&&decs(n)<=2&&n.v>=0&&n.v<500);
+  const decs=n=>{const m=n.c.s.replace(BPUNIT,"").match(/[.,](\d+)\D*$/);return m?m[1].length:0;};
+  /* intestazione della tabella delle voci: colonna delle quantità (ore, Menge, Hours, Base nel bulletin francese…) */
+  let qc=null;const hdr=rows.find(r=>!r.nums.length&&r.cells.length>=3&&r.cells.some(c=>BPX.qty.test(bpLo(c.s)))&&r.cells.some(c=>BPX.amt.test(bpLo(c.s))))
+    ||rows.find(r=>!r.nums.length&&r.cells.some(c=>/^base$/.test(bpLo(c.s)))&&r.cells.some(c=>/taux|rate|tasa/.test(bpLo(c.s))));
+  if(hdr){const c=hdr.cells.find(c=>BPX.qty.test(bpLo(c.s))&&!BPX.amt.test(bpLo(c.s)))||hdr.cells.find(c=>BPX.qty.test(bpLo(c.s)))||hdr.cells.find(c=>/^base$/.test(bpLo(c.s)));const ct=bpLo(c.s);qc={x0:c.x,x1:c.x+c.w,cx:c.x+c.w/2,y:hdr.y,u:BPX.days.test(ct)&&!BPX.hours.test(ct)?"d":BPX.hours.test(ct)&&!BPX.days.test(ct)?"h":""};}
+  const qty=r=>{const lend=r.labs.length?Math.max(...r.labs.map(c=>c.x)):0;let c=r.nums.filter(n=>n.x0>lend-1&&decs(n)<=3&&n.v>=0&&n.v<500);
     if(qc){const near=c.filter(n=>n.x1>=qc.x0-25&&n.x0<=qc.x1+25).sort((a,b)=>Math.abs(a.cx-qc.cx)-Math.abs(b.cx-qc.cx));return near.length?near[0].v:null;}
     return c.length?c[0].v:null;};
-  const add=(f,v,how)=>{if(v===null||v===undefined||!isFinite(v))return;R[f]=Math.round(((R[f]||0)+v)*100)/100;src[f]=how;};
-  const set=(f,v,how,prio)=>{if(v===null||v===undefined||!isFinite(v))return;if(src[f]&&(src[f+"P"]||0)>prio)return;R[f]=Math.round(v*100)/100;src[f]=how;src[f+"P"]=prio;};
-  const unit=(txt,v,f)=>{const h=BPX.hours.test(txt),d=BPX.days.test(txt);if(h&&!d)return"h";if(d&&!h)return"d";if(qc&&qc.u)return qc.u;return f==="perm"?"h":v>=wd&&Math.abs(v/wd-Math.round(v/wd))<.01?"h":"d";};
-  const toF=(v,u,f)=>f==="perm"||f==="permRes"?(u==="d"?v*wd:v):(u==="h"?v/wd:v);
-  /* voci a quantità: straordinario, notturno, festivo */
+  const add=(f,v)=>{if(v===null||v===undefined||!isFinite(v))return;R[f]=Math.round(((R[f]||0)+v)*100)/100;};
+  const set=(f,v,prio)=>{if(v===null||v===undefined||!isFinite(v))return;if((src[f]||0)>prio)return;R[f]=Math.round(v*100)/100;src[f]=prio;};
+  const unit=(txt,v,f,col)=>{const h=BPX.hours.test(txt),d=BPX.days.test(txt);if(h&&!d)return"h";if(d&&!h)return"d";if(col&&qc&&qc.u)return qc.u;return/^perm/.test(f)?"h":v>=wd&&Math.abs(v/wd-Math.round(v/wd))<.01?"h":"d";};
+  const toF=(v,u,f)=>/^perm/.test(f)?(u==="d"?v*wd:v):(u==="h"?v/wd:v);
+  const leaveF=t=>BPX.ferie.test(t)&&!/ex.?fest/.test(t)&&!BPX.ferieNo.test(t)?"ferie":BPX.perm.test(t)&&!BPX.ferieNo.test(t)?"perm":null;
+  const kwHits=r=>r.cells.filter(c=>{const t=bpLo(c.s);return BPX.used.test(t)||BPX.res.test(t)||BPX.matur.test(t);}).length;
+  /* tabelle ferie/permessi con intestazione (Residuo/Maturato/Goduto/Saldo, Anspruch/Genommen/Rest, Acquis/Pris/Solde…) */
+  const done=new Set();
+  rows.forEach((H,hi)=>{if(H.nums.length||kwHits(H)<2)return;
+    const title=leaveF(H.lt)||(hi>0&&!rows[hi-1].nums.length?leaveF(rows[hi-1].lt):null);
+    const used={},res={};let any=false;
+    for(let j=hi+1;j<rows.length&&j<=hi+6;j++){const r=rows[j];if(!r.nums.length){if(kwHits(r)>=2)break;continue;}
+      const f=leaveF(r.lab)||title;if(!f)continue;const u=unit(r.lt+" "+H.lt,Math.max(...r.nums.map(n=>n.v)),f),prev=BPX.resNo.test(r.lab);
+      r.nums.forEach(n=>{const hc=H.cells.slice().sort((a,b)=>Math.abs(a.x+a.w/2-n.cx)-Math.abs(b.x+b.w/2-n.cx))[0],ht=bpLo(hc.s);
+        if(BPX.used.test(ht)&&!BPX.res.test(ht)){if(!prev)used[f]=(used[f]||0)+toF(n.v,u,f);}
+        else if(BPX.res.test(ht)&&!BPX.resNo.test(ht)&&!BPX.matur.test(ht))res[f]=(res[f]||0)+toF(n.v,u,f+"Res");});
+      done.add(r);any=true;}
+    if(any){for(const f in used)set(f,used[f],3);for(const f in res)set(f+"Res",res[f],3);}});
+  /* voci a quantità: straordinario, notturno, festivo; righe ferie/permessi senza tabella */
   const ot=[],otM=[];
-  rows.forEach(r=>{if(!r.nums.length||!r.lab)return;const L=r.lab;
-    if(BPX.ot.test(L)){if(/trattenut|recuper|banca|accanton|forfett|forfait|pauschal/.test(L))return;const q=qty(r);if(q!==null)(/maggior|premium|zuschlag|majoration|recargo|acrescimo/.test(L)?otM:ot).push(q);return;}
-    if(BPX.ferie.test(L)||BPX.perm.test(L)){
-      const f=BPX.ferie.test(L)&&!/ex.?fest/.test(L)?"ferie":"perm";
-      /* tabella con intestazione sopra (Residuo, Maturato, Goduto, Saldo) */
-      const i=rows.indexOf(r);let H=null;for(let j=i-1;j>=Math.max(0,i-5);j--){const hr=rows[j];if(hr.nums.length)continue;const hits=hr.cells.filter(c=>BPX.used.test(bpLo(c.s))||BPX.res.test(bpLo(c.s))||/matur|spett|accru|acquis|erworb|devengad|adquirid|opgebouwd|nabyt|acumulat|narok|kertyny|optjent|intjan|szerzett|steceno|uzkrat|uzkrat|sukaup|kogunenud/.test(bpLo(c.s)));if(hits.length>=2){H=hr;break;}}
-      if(H&&r.nums.length>=2){const u=unit(L+" "+bpLo(H.cells.map(c=>c.s).join(" ")),Math.max(...r.nums.map(n=>n.v)),f);let resC=null,resP=-1;
-        r.nums.forEach(n=>{const hc=H.cells.slice().sort((a,b)=>Math.abs(a.x+a.w/2-n.cx)-Math.abs(b.x+b.w/2-n.cx))[0],ht=bpLo(hc.s);
-          if(BPX.used.test(ht))set(f,toF(n.v,u,f),"t",3);
-          else if(BPX.res.test(ht)||/saldo/.test(ht)){const pr=BPX.resNo.test(ht)?0:/saldo|balance|solde/.test(ht)?2:1;if(pr>resP){resP=pr;resC=n;}}});
-        if(resC&&resP>0)set(f+"Res",toF(resC.v,u,f+"Res"),"t",3);return;}
-      /* più etichette sulla stessa riga: abbina ogni etichetta al numero alla sua destra */
+  rows.forEach(r=>{if(done.has(r)||!r.nums.length||!r.lab)return;const L=r.lab;
+    if(BPX.ot.test(L)){if(BPX.otNo.test(L))return;const q=qty(r);if(q!==null)(BPX.otM.test(L)?otM:ot).push(q);return;}
+    let f=leaveF(L);
+    if(!f&&(BPX.used.test(L)||BPX.res.test(L))&&!BPX.ot.test(L)){const i=rows.indexOf(r);let tf=null;for(let j=i-1;j>=Math.max(0,i-5)&&!tf;j--)if(!rows[j].nums.length)tf=leaveF(rows[j].lt);
+      if(tf){const tot=r.nums.filter(n=>decs(n)<=2).reduce((a,n)=>a+n.v,0),u=unit(r.lt,tot,tf);
+        if(BPX.used.test(L)&&!BPX.res.test(L))set(tf,toF(tot,u,tf),2);else if(BPX.res.test(L)&&!BPX.resNo.test(L)&&!BPX.matur.test(L))set(tf+"Res",toF(tot,u,tf+"Res"),2);return;}}
+    if(f||(BPX.ferie.test(L)||BPX.perm.test(L))&&!BPX.ferieNo.test(L)){
       r.labs.forEach(lc=>{const lt=bpLo(lc.s),n=r.nums.filter(n=>n.x0>lc.x).sort((a,b)=>a.x0-b.x0)[0];if(!n)return;
-        const ff=BPX.ferie.test(lt)&&!/ex.?fest/.test(lt)?"ferie":BPX.perm.test(lt)?"perm":(BPX.used.test(lt)||BPX.res.test(lt))?f:null;if(!ff)return;const u=unit(lt,n.v,ff);
-        if(BPX.res.test(lt)&&!BPX.used.test(lt)){if(!BPX.resNo.test(lt))set(ff+"Res",toF(n.v,u,ff+"Res"),"r",2);}
-        else if(BPX.used.test(lt)||qc){const q=BPX.used.test(lt)?n.v:qty(r);if(q!==null)set(ff,toF(q,unit(lt,q,ff),ff),"v",BPX.used.test(lt)?2:1);}});
+        const ff=leaveF(lt)||((BPX.used.test(lt)||BPX.res.test(lt))?f:null);if(!ff)return;
+        if(BPX.res.test(lt)&&!BPX.used.test(lt)){if(!BPX.resNo.test(lt)&&!BPX.matur.test(lt))set(ff+"Res",toF(n.v,unit(lt+" "+bpLo(n.c.s)+" "+r.lt,n.v,ff),ff+"Res"),2);}
+        else if(BPX.used.test(lt)||qc){const q=BPX.used.test(lt)?n.v:qty(r),bal=r.labs.some(c=>BPX.res.test(bpLo(c.s))||BPX.matur.test(bpLo(c.s)));if(q!==null)set(ff,toF(q,unit(lt+" "+bpLo(n.c.s)+" "+r.lt,q,ff,!BPX.used.test(lt)||qc&&n.x1>=qc.x0-25&&n.x0<=qc.x1+25),ff),BPX.used.test(lt)?(bal?.5:2):1);}});
       return;}
-    if(BPX.night.test(L)){const q=qty(r);if(q!==null)add("night",q,"v");return;}
-    if(BPX.fest.test(L)&&!BPX.festNo.test(L)){const q=qty(r);if(q!==null)add("fest",q,"v");return;}});
+    if(BPX.night.test(L)){const q=qty(r);if(q!==null)add("night",q);return;}
+    if(BPX.fest.test(L)&&!BPX.festNo.test(L)){const q=qty(r);if(q!==null)add("fest",q);return;}});
   if(ot.length||otM.length)R.ot=Math.round((ot.length?ot:otM).reduce((a,b)=>a+b,0)*100)/100;
-  /* totali: sulla stessa riga a destra, oppure sotto l'etichetta */
-  const total=(rx,no,f)=>{for(let i=0;i<rows.length&&R[f]===undefined;i++){const r=rows[i];
-    for(const lc of r.cells){const lt=bpLo(lc.s);if(bpNum(lc.s,dec)!==null||!rx.test(lt)||no&&no.test(lt))continue;
-      if(f==="gross"&&!/total|tot\.|lord|gross|brut/.test(lt))continue;
-      const same=r.nums.filter(n=>n.x0>lc.x+lc.w-2&&decs(n)===2).sort((a,b)=>a.x0-b.x0)[0];if(same){R[f]=same.v;src[f]="r";break;}
-      const cx=lc.x+lc.w/2;for(let j=i+1;j<=Math.min(rows.length-1,i+3);j++){const c=rows[j].nums.filter(n=>decs(n)===2&&n.x1>=lc.x-30&&n.x0<=lc.x+lc.w+30).sort((a,b)=>Math.abs(a.cx-cx)-Math.abs(b.cx-cx))[0];if(c){R[f]=c.v;src[f]="b";break;}}
-      if(R[f]!==undefined)break;}}};
-  total(BPX.gross,/trattenut|imponib|contribut|deduct|ritenut/,"gross");total(BPX.net,BPX.netNo,"net");
-  /* periodo di paga */
-  const MN=[["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"],["january","february","march","april","may","june","july","august","september","october","november","december"],MONTHS.map(bpLo)];
-  let ym=null;const near=/periodo|mese|retribu|competenz|paga|cedolino|period|mois|monat|mes |mes:|maand|miesiac|luna|mesic|kuukausi|maned|manad|honap|mjesec|mesec|menes|menuo|kuu|μηνα|месец/;
+  /* totali: prima le diciture più precise ("Netto in busta", "Auszahlungsbetrag", "Net pay"), poi quelle generiche;
+     il valore è il primo importo a destra sulla stessa riga (la colonna del periodo, non quella progressiva) o quello sotto l'etichetta */
+  const curDig=(()=>{try{return new Intl.NumberFormat("en",{style:"currency",currency:CUR}).resolvedOptions().maximumFractionDigits;}catch(e){return 2;}})();
+  const isAmt=n=>decs(n)===2||curDig===0&&n.v>=100&&!/[.,]\d{1,2}$/.test(n.c.s.trim());
+  const total=(list,no,f)=>{for(const rx of list){for(let i=0;i<rows.length;i++){const r=rows[i];
+      for(const lc of r.cells){const lt=bpLo(lc.s);if(bpNum(lc.s,dec)!==null||!rx.test(lt)||no.test(lt))continue;
+        const same=r.nums.filter(n=>n.x0>lc.x+lc.w-2&&isAmt(n)).sort((a,b)=>a.x0-b.x0)[0];if(same){R[f]=same.v;return;}
+        const cx=lc.x+lc.w/2;for(let j=i+1;j<=Math.min(rows.length-1,i+3);j++){if(rows[j].labs.some(c=>{const t=bpLo(c.s);return c.x<lc.x+lc.w&&c.x+c.w>lc.x&&t.length>3;}))break;
+          const c=rows[j].nums.filter(n=>isAmt(n)&&n.x1>=lc.x-30&&n.x0<=lc.x+lc.w+30).sort((a,b)=>Math.abs(a.cx-cx)-Math.abs(b.cx-cx))[0];if(c){R[f]=c.v;return;}}}}}};
+  total([BPX.grossStrong,BPX.gross],BPX.grossNo,"gross");total([BPX.netStrong,BPX.net],BPX.netNo,"net");
+  /* periodo di paga: prima le righe con "periodo/mese/period/Abrechnungsmonat…", poi il resto */
+  const near=/mes\/ano|competencia|periodo|mese|retribu|competenz|paga|cedolino|period|mois|monat|abrechnung|mes |mes:|mes de|maand|periode|miesiac|okres|luna|mesic|obdobi|kuukausi|palkkakausi|maned|manad|loneperiod|lonnsperiode|honap|idoszak|mjesec|razdoblje|mesec|obdobje|menes|periods|menuo|laikotarpis|kuu|periood|μηνα|περιοδ|месец|период|pay date|pay period|tax period|month|launatimabil|tímabil/;
+  const MN=bpMonths(),mdy=bpMDY();let ym=null;
   const cand=rows.map(r=>r.lt).sort((a,b)=>(near.test(b)?1:0)-(near.test(a)?1:0));
-  const rxe=x=>x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
-  outer:for(const L of cand){for(const list of MN)for(let i=0;i<12;i++){const m=L.match(new RegExp("(^|[^a-z])("+rxe(list[i])+"|"+rxe(list[i].slice(0,3))+"\\.?)[^0-9a-z]{0,4}(20\\d\\d)"));if(m){ym=m[3]+"-"+pad(i+1);break outer;}}
+  const LET=/[a-z\u0370-\u03ff\u0400-\u04ff\u00c0-\u024f]/;
+  outer:for(const L of cand){for(const grp of MN)for(const[n,i]of grp){let k=-1;while((k=L.indexOf(n,k+1))>=0){if(k>0&&LET.test(L[k-1]))continue;
+      const m=L.slice(k+n.length).match(/^\.?\s*(de|del|of|di|d'|du|von|van|z|за)?\s*[^0-9a-z]{0,3}(20\d\d)(?![0-9])/);if(m){ym=m[2]+"-"+pad(i+1);break outer;}
+      const b=L.slice(0,k).match(/(20\d\d)\.?\s*(m\.|metu|gada|g\.|г\.|evi?)?\s*[^0-9a-z]{0,2}$/);if(b){ym=b[1]+"-"+pad(i+1);break outer;}}}
     if(!near.test(L))continue;
-    const re=/(^|[^0-9\/.\-])(0?[1-9]|1[0-2])\s?[\/.\-]\s?(20\d\d)(?![0-9])/g;let mm;while((mm=re.exec(L))){ym=mm[3]+"-"+pad(+mm[2]);break outer;}
-    const fd=L.match(/(^|[^0-9])(0?[1-9]|[12]\d|3[01])[\/.\-](0?[1-9]|1[0-2])[\/.\-](20\d\d)(?![0-9])/);if(fd){ym=fd[4]+"-"+pad(+fd[3]);break outer;}}
+    let m=L.match(/(^|[^0-9])(20\d\d)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])(?![0-9])/);if(m){const all=[...L.matchAll(/(20\d\d)-(0[1-9]|1[0-2])-(\d\d)/g)];const z=all[all.length-1];ym=z[1]+"-"+z[2];break;}
+    const re=/(^|[^0-9\/.\-])(0?[1-9]|1[0-2])\s?[\/.\-]\s?(20\d\d)(?![0-9])/g;let mm;if((mm=re.exec(L))){ym=mm[3]+"-"+pad(+mm[2]);break;}
+    const fds=[...L.matchAll(/(^|[^0-9])(\d{1,2})[\/.\-](\d{1,2})[\/.\-](20\d\d)(?![0-9])/g)];
+    if(fds.length){const z=fds[fds.length-1],a=+z[2],b=+z[3];const mo=mdy?(a<=12?a:b):(b<=12?b:a);if(mo>=1&&mo<=12){ym=z[4]+"-"+pad(mo);break;}}}
   return{R,ym,extra:rows.some(r=>BPX.extra.test(r.lt))};}
 async function bpRead(pw){if(!bpBuf)return;bpStatus(t("Leggo la busta paga…"));let rows;
   try{rows=await bpLines(bpBuf.slice(0),pw);}
