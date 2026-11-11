@@ -1,4 +1,4 @@
-(window.IWORK_COUNTRIES=window.IWORK_COUNTRIES||{}).IT={
+(window.MYTURN_COUNTRIES=window.MYTURN_COUNTRIES||{}).IT={
   n:{it:"Italia",en:"Italy"},lang:"it",cur:"EUR",ws:1,
   rules:{rest:11,maxWeek:48,weeklyRest:24,night:[22,6]},
   src:"D.Lgs. 66/2003 (orario di lavoro, ministero del Lavoro); L. 260/1949 e succ.; L. 151/2025 (San Francesco dal 2026)",

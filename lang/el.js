@@ -1,5 +1,5 @@
 /* Ελληνικά */
-(window.IWORK_I18N=window.IWORK_I18N||{})["el"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["el"]={
 "{n} g": "{n} ημ.",
 "{d} g {h} h": "{d} ημ. {h} ώ",
 "{h} h {m} min": "{h} ώ {m} λ",

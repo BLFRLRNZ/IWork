@@ -1,6 +1,6 @@
-Liberation Sans (subset for iWork PDF export: Latin, Greek, Cyrillic).
+Liberation Sans (subset for MyTurn PDF export: Latin, Greek, Cyrillic).
 Digitized data copyright (c) 2010 Google Corporation. Copyright (c) 2012 Red Hat, Inc.
-Reserved Font Names: Liberation, Arimo, Tinos, Cousine. This subset is a Modified Version and is therefore renamed "iWork Sans PDF".
+Reserved Font Names: Liberation, Arimo, Tinos, Cousine. This subset is a Modified Version and is therefore renamed "MyTurn Sans PDF".
 
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 

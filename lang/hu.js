@@ -1,5 +1,5 @@
 /* Magyar */
-(window.IWORK_I18N=window.IWORK_I18N||{})["hu"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["hu"]={
 "{n} g": "{n} n",
 "{d} g {h} h": "{d} n {h} ó",
 "{h} h {m} min": "{h} ó {m} p",

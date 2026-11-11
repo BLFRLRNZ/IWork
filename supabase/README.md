@@ -23,7 +23,7 @@ Le regole di accesso (RLS) sono attive su tutte le tabelle: ognuno vede solo le 
 
 ## Progetto attuale
 
-Progetto `iwork` (`jszgiqdylsachclshyqm`), Francoforte, piano gratuito. `vapid_subject` è l'indirizzo dell'app (`https://blfrlrnz.github.io/IWork/`).
+Progetto `jszgiqdylsachclshyqm` (nel pannello si chiama "iwork"), Francoforte, piano gratuito. `vapid_subject` è l'indirizzo dell'app (`https://blfrlrnz.github.io/MyTurn/`).
 
 ## Configurazione da fare una volta
 
@@ -32,7 +32,7 @@ Progetto `iwork` (`jszgiqdylsachclshyqm`), Francoforte, piano gratuito. `vapid_s
 3. Scrivere in `app_config` le chiavi VAPID (`vapid_public`, `vapid_private`, `vapid_subject`) e `cron_secret`. **La chiave privata non va mai nel repository.**
 4. Attivare `pg_cron` e `pg_net` e programmare la chiamata a `send-reminders`:
    ```sql
-   select cron.schedule('iwork-reminders', '* * * * *', $$
+   select cron.schedule('myturn-reminders', '* * * * *', $$
      select net.http_post(
        url := 'https://<progetto>.supabase.co/functions/v1/send-reminders',
        headers := jsonb_build_object('Content-Type','application/json',

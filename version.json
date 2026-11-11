@@ -2,11 +2,11 @@
   "version": "2.7.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "L'app ora si chiama MyTurn. I tuoi turni e le impostazioni restano tutti dove sono. Sull'iPhone l'icona già aggiunta alla schermata Home tiene il vecchio nome finché non la aggiungi di nuovo.",
-    "en": "The app is now called MyTurn. Your shifts and settings all stay where they are. On iPhone, the icon already on your Home Screen keeps the old name until you add it again.",
-    "fr": "L'app s'appelle désormais MyTurn. Vos postes et vos réglages restent tous en place. Sur iPhone, l'icône déjà sur l'écran d'accueil garde l'ancien nom tant que vous ne l'ajoutez pas à nouveau.",
-    "de": "Die App heißt jetzt MyTurn. Deine Schichten und Einstellungen bleiben alle erhalten. Auf dem iPhone behält das Symbol auf dem Home-Bildschirm den alten Namen, bis du es neu hinzufügst.",
-    "es": "La app ahora se llama MyTurn. Tus turnos y ajustes se quedan donde están. En iPhone, el icono que ya está en la pantalla de inicio mantiene el nombre antiguo hasta que lo vuelvas a añadir.",
-    "pt": "A app agora chama-se MyTurn. Os seus turnos e definições ficam todos onde estão. No iPhone, o ícone já no ecrã principal mantém o nome antigo até o adicionar de novo."
+    "it": "L'app ora si chiama MyTurn e ha un nuovo indirizzo: blfrlrnz.github.io/MyTurn. Sull'iPhone toglila dalla schermata Home e aggiungila di nuovo dal nuovo indirizzo.",
+    "en": "The app is now called MyTurn and has a new address: blfrlrnz.github.io/MyTurn. On iPhone, remove it from the Home Screen and add it again from the new address.",
+    "fr": "L'app s'appelle désormais MyTurn et a une nouvelle adresse : blfrlrnz.github.io/MyTurn. Sur iPhone, retirez-la de l'écran d'accueil et ajoutez-la à nouveau depuis la nouvelle adresse.",
+    "de": "Die App heißt jetzt MyTurn und hat eine neue Adresse: blfrlrnz.github.io/MyTurn. Entferne sie auf dem iPhone vom Home-Bildschirm und füge sie über die neue Adresse wieder hinzu.",
+    "es": "La app ahora se llama MyTurn y tiene una nueva dirección: blfrlrnz.github.io/MyTurn. En iPhone, quítala de la pantalla de inicio y vuelve a añadirla desde la nueva dirección.",
+    "pt": "A app agora chama-se MyTurn e tem um novo endereço: blfrlrnz.github.io/MyTurn. No iPhone, remova-a do ecrã principal e adicione-a de novo a partir do novo endereço."
   }
 }

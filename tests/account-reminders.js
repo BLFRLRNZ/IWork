@@ -1,5 +1,5 @@
 // Account e promemoria con un Supabase finto (le risposte del server sono simulate).
-const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const OUT=process.env.OUT||path.join(os.tmpdir(),'iwork-tests');fs.mkdirSync(OUT,{recursive:true});
+const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const OUT=process.env.OUT||path.join(os.tmpdir(),'myturn-tests');fs.mkdirSync(OUT,{recursive:true});
 (async()=>{const b=await chromium.launch();const errs=[],calls=[];
 const ctx=await b.newContext({viewport:{width:390,height:844},timezoneId:'Europe/Rome'});const p=await ctx.newPage();
 p.on('pageerror',e=>errs.push(e.message));
@@ -11,10 +11,10 @@ await p.route('https://test.supabase.co/**',async r=>{const u=new URL(r.request(
   if(u.pathname==='/functions/v1/delete-account')return J({deleted:true});
   if(u.pathname==='/auth/v1/logout')return r.fulfill({status:204,body:''});
   return J(1);});
-await p.addInitScript(()=>{window.__IWORK_SUPA={url:'https://test.supabase.co',key:'anon',vapid:'BEl62iUYgUivxIkv69yViEuiBIa-Ib9-SkvMeAtA3LFgDzkrxZJjSgSnfckjBJuBkr3qBUYIHBQFLXYp5Nksh8U'};
-  localStorage.setItem('iwork-lang','it');localStorage.setItem('iwork-tour','1');
+await p.addInitScript(()=>{window.__MYTURN_SUPA={url:'https://test.supabase.co',key:'anon',vapid:'BEl62iUYgUivxIkv69yViEuiBIa-Ib9-SkvMeAtA3LFgDzkrxZJjSgSnfckjBJuBkr3qBUYIHBQFLXYp5Nksh8U'};
+  localStorage.setItem('myturn-lang','it');localStorage.setItem('myturn-tour','1');
   const d={};const t0=new Date();for(let i=0;i<10;i++){const x=new Date(t0.getFullYear(),t0.getMonth(),t0.getDate()+i);d[x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0')]=i%3?{k:'w',s:'06:00'}:{k:'r'};}
-  localStorage.setItem('cartellino-turni-v1',JSON.stringify({days:d,settings:{setup:1,country:'IT',ocOn:1,j2:{on:1,n:'Bar'}},oc:{},j2:{}}));
+  localStorage.setItem('myturn-v1',JSON.stringify({days:d,settings:{setup:1,country:'IT',ocOn:1,j2:{on:1,n:'Bar'}},oc:{},j2:{}}));
   // finto service worker e push (in prova la pagina non è https)
   const fakeSub={endpoint:'https://push.example/abc',toJSON:()=>({keys:{p256dh:'P',auth:'K'}}),unsubscribe:async()=>true};
   const reg={pushManager:{getSubscription:async()=>window.__sub||null,subscribe:async()=>(window.__sub=fakeSub)}};
@@ -41,13 +41,13 @@ await p.click('#rmTest');await p.waitForTimeout(300);console.log('test:',await p
 await p.screenshot({path:path.join(OUT,'rm_on.png')});
 const ss=calls.filter(c=>c.startsWith('/rest/v1/rpc/set_shifts'));console.log('set_shifts calls',ss.length);
 // full payload from page
-const items=await p.evaluate(()=>iworkDebug.remItems());console.log('items',items.length,JSON.stringify(items[0]));
+const items=await p.evaluate(()=>myturnDebug.remItems());console.log('items',items.length,JSON.stringify(items[0]));
 await p.keyboard.press('Escape');
 // edit a day -> sync after debounce
-console.log('saved settings rem',await p.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('cartellino-turni-v1')).settings.rem)));
+console.log('saved settings rem',await p.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('myturn-v1')).settings.rem)));
 // logout
 await p.click('#setBtn');await p.waitForTimeout(200);await p.click('#acBtn');await p.waitForTimeout(200);
 await p.click('#acDelete');await p.waitForTimeout(100);console.log('arm:',await p.textContent('#acDelete'));
-await p.click('#acLogout');await p.waitForTimeout(400);console.log('logout:',await p.textContent('#acStatus'),'| auth',await p.evaluate(()=>localStorage.getItem('iwork-auth')));
+await p.click('#acLogout');await p.waitForTimeout(400);console.log('logout:',await p.textContent('#acStatus'),'| auth',await p.evaluate(()=>localStorage.getItem('myturn-auth')));
 console.log('calls:',calls.map(c=>c.split(' ')[0]).join(', '));
 console.log('errors',errs);await b.close()})();

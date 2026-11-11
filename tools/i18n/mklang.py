@@ -4,7 +4,7 @@ ROOT=os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),'..
 SRC=os.path.join(os.path.dirname(os.path.abspath(__file__)),'src')
 lang,name=sys.argv[1],sys.argv[2]
 J=lambda code:json.loads(subprocess.check_output(['node','-e',code]))
-keys=json.loads(subprocess.check_output(['node','-e','global.window={};require(process.argv[1]);console.log(JSON.stringify(Object.keys(window.IWORK_I18N.en)))',os.path.join(ROOT,'lang','en.js')]))
+keys=json.loads(subprocess.check_output(['node','-e','global.window={};require(process.argv[1]);console.log(JSON.stringify(Object.keys(window.MYTURN_I18N.en)))',os.path.join(ROOT,'lang','en.js')]))
 html=open(os.path.join(ROOT,'index.html'),encoding='utf-8').read()
 pairs=dict((o,n) for n,o in re.findall(r'tn\([^,]*,"([^"]*)","([^"]*)"',html))  # other -> one
 vals=[l.rstrip('\n') for l in open(os.path.join(SRC,lang+'.txt'),encoding='utf-8')]
@@ -27,5 +27,5 @@ for o,n in pairs.items():
     if o in D and n in D:
         if not isinstance(D[o],dict):D[o]={'other':D[o]}
         D[o].setdefault('one',D[n])
-open(os.path.join(ROOT,'lang',f'{lang}.js'),'w',encoding='utf-8').write(f'/* {name} */\n(window.IWORK_I18N=window.IWORK_I18N||{{}})["{lang}"]='+json.dumps(D,ensure_ascii=False,indent=0)+';\n')
+open(os.path.join(ROOT,'lang',f'{lang}.js'),'w',encoding='utf-8').write(f'/* {name} */\n(window.MYTURN_I18N=window.MYTURN_I18N||{{}})["{lang}"]='+json.dumps(D,ensure_ascii=False,indent=0)+';\n')
 print(lang,len(D),'bad',bad,'plural objects',sum(isinstance(x,dict) for x in D.values()))

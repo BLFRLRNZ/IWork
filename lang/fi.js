@@ -1,5 +1,5 @@
 /* Suomi */
-(window.IWORK_I18N=window.IWORK_I18N||{})["fi"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["fi"]={
 "{n} g": "{n} pv",
 "{d} g {h} h": "{d} pv {h} t",
 "{h} h {m} min": "{h} t {m} min",

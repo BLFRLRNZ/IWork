@@ -1,5 +1,5 @@
 /* Eesti */
-(window.IWORK_I18N=window.IWORK_I18N||{})["et"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["et"]={
 "{n} g": "{n} p",
 "{d} g {h} h": "{d} p {h} t",
 "{h} h {m} min": "{h} t {m} min",

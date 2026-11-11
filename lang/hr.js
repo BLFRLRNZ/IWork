@@ -1,5 +1,5 @@
 /* Hrvatski */
-(window.IWORK_I18N=window.IWORK_I18N||{})["hr"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["hr"]={
 "{n} g": "{n} d",
 "{d} g {h} h": "{d} d {h} h",
 "{h} h {m} min": "{h} h {m} min",

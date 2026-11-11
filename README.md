@@ -73,7 +73,7 @@ I turni restano nel browser del dispositivo che usi (`localStorage`). Il server 
 - `manifest.webmanifest`, `sw.js`, icone: installazione sul telefono e uso offline.
 - `countries.js`: regole di lavoro e festività di ogni paese, con le fonti.
 - `lang/`: le traduzioni (l'italiano è dentro `index.html`).
-- `fonts/`: il carattere incorporato nel PDF (sottoinsieme di Liberation Sans rinominato "iWork Sans PDF", nome interno rimasto dalla prima versione, licenza SIL Open Font License in `fonts/OFL.txt`), con latino, greco e cirillico.
+- `fonts/`: il carattere incorporato nel PDF (sottoinsieme di Liberation Sans rinominato "MyTurn Sans PDF", licenza SIL Open Font License in `fonts/OFL.txt`), con latino, greco e cirillico.
 - `lang/`: le traduzioni (l'italiano è nel codice).
 - `version.json`: l'ultima versione pubblicata.
 - `supabase/`: tabelle e funzioni del server per account e promemoria.

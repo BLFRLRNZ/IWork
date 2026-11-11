@@ -1,5 +1,5 @@
 /* Português */
-(window.IWORK_I18N=window.IWORK_I18N||{})["pt"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["pt"]={
 "{n} g": "{n} d",
 "{d} g {h} h": "{d} d {h} h",
 "{h} h {m} min": "{h} h {m} min",

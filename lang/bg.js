@@ -1,5 +1,5 @@
 /* Български */
-(window.IWORK_I18N=window.IWORK_I18N||{})["bg"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["bg"]={
 "{n} g": "{n} д",
 "{d} g {h} h": "{d} д {h} ч",
 "{h} h {m} min": "{h} ч {m} мин",

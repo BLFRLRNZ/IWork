@@ -1,5 +1,5 @@
 /* Română */
-(window.IWORK_I18N=window.IWORK_I18N||{})["ro"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["ro"]={
 "{n} g": "{n} z",
 "{d} g {h} h": "{d} z {h} h",
 "{h} h {m} min": "{h} h {m} min",

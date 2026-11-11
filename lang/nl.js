@@ -1,5 +1,5 @@
 /* Nederlands */
-(window.IWORK_I18N=window.IWORK_I18N||{})["nl"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["nl"]={
 "{n} g": "{n} d",
 "{d} g {h} h": "{d} d {h} u",
 "{h} h {m} min": "{h} u {m} min",

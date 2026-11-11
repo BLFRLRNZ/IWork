@@ -1,5 +1,5 @@
 /* Lietuvių */
-(window.IWORK_I18N=window.IWORK_I18N||{})["lt"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["lt"]={
 "{n} g": "{n} d.",
 "{d} g {h} h": "{d} d. {h} val.",
 "{h} h {m} min": "{h} val. {m} min",

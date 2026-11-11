@@ -11,10 +11,10 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 
 ## Cos'è
 
-**MyTurn** (fino alla 2.6 si chiamava iWork) è una PWA per segnare i turni di lavoro (calendario dei turni con ore, straordinari, ferie, permessi, banca ore, stima paga e altro).
+**MyTurn** (fino alla 2.6 si chiamava iWork, che è un marchio di Apple) è una PWA per segnare i turni di lavoro (calendario dei turni con ore, straordinari, ferie, permessi, banca ore, stima paga e altro).
 
-- **Repository:** BLFRLRNZ/IWork, pubblicato con GitHub Pages su `https://blfrlrnz.github.io/IWork/`. Il repository ha ancora il vecchio nome: rinominarlo cambierebbe l'indirizzo e l'app già installata sui telefoni smetterebbe di aggiornarsi. Va deciso con il proprietario.
-- **Nomi interni rimasti "iwork":** le chiavi di `localStorage` (`cartellino-turni-v1`, `iwork-*`), la cache `iwork-vN`, `IWORK_I18N`, `IWORK_COUNTRIES`, `iworkDebug`, il font `iWorkSansPDF`, gli UID `@iwork.app` del file .ics e `app:"iwork"` nei backup. **Non vanno cambiati**: servono a non perdere dati e a non duplicare gli eventi nel calendario. Il nome visibile è `APP` in `index.html`.
+- **Repository:** BLFRLRNZ/MyTurn (prima BLFRLRNZ/IWork), pubblicato con GitHub Pages su `https://blfrlrnz.github.io/MyTurn/`.
+- **Nomi interni:** tutto usa il prefisso `myturn`: dati in `localStorage["myturn-v1"]`, altre chiavi `myturn-*`, cache `myturn-vN`, `MYTURN_I18N`, `MYTURN_COUNTRIES`, `myturnDebug`. Il nome visibile è `APP` in `index.html`.
 - **Lingue:** 23.
 - **Paesi:** 41, con le loro festività e le regole sul riposo.
 - **Versione:** è in `APP_VERSION` dentro `index.html` e in `version.json`.
@@ -25,10 +25,10 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 |---|---|
 | `index.html` | Tutta l'app: HTML, CSS e JS in un unico file, senza build. |
 | `countries.js` | Profili dei paesi: festività, regioni, regole, valuta, lingua. **Generato** da `tools/countries/` (vedi sotto). |
-| `lang/xx.js` | Traduzioni: `(window.IWORK_I18N=…)["xx"]={…}`. Le chiavi sono le frasi italiane. **Generati** da `tools/i18n/`. |
+| `lang/xx.js` | Traduzioni: `(window.MYTURN_I18N=…)["xx"]={…}`. Le chiavi sono le frasi italiane. **Generati** da `tools/i18n/`. |
 | `fonts/pdf-*.ttf` | Font del PDF del mese, con lettere latine, greche e cirilliche (licenza OFL). |
 | `vendor/pdfjs/` | pdf.js 6.2.108, versione "legacy" (Apache-2.0). Si carica solo quando si legge una busta paga. |
-| `sw.js` | Service worker: prima prova la rete, poi la cache. La cache si chiama `iwork-vN`: N va aumentato a ogni rilascio. |
+| `sw.js` | Service worker: prima prova la rete, poi la cache. La cache si chiama `myturn-vN`: N va aumentato a ogni rilascio. |
 | `version.json` | Versione, data e note di rilascio (it, en, fr, de, es, pt). L'app la usa per proporre l'aggiornamento. |
 | `supabase/` | Server: tabelle (`migrations/`), funzioni (`functions/`) e istruzioni (`README.md`). |
 | `docs/` | `CONTROLLO-FESTIVITA.md` (verifica delle festività), `BUSTE-PAGA.md` (come vengono lette le buste paga). |
@@ -38,7 +38,7 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 
 ### Stato e salvataggio
 
-- I dati sono in `localStorage["cartellino-turni-v1"]` e hanno questa forma: `S={days,settings,oc,j2,bp}`.
+- I dati sono in `localStorage["myturn-v1"]` e hanno questa forma: `S={days,settings,oc,j2,bp}`.
   - `days["AAAA-MM-GG"]`: un giorno, con `k` (`w` turno, `r` riposo, `f` ferie, `p` permesso, `m` malattia) e poi `s`, `d`, `s2`, `d2` (orari e durate), `ot` (ore in più o in meno), `n` (nota), `l` (etichette), `h` (ore di permesso).
   - `oc`: reperibilità, `{s,d,x}` dove `x` sono le ore di intervento.
   - `j2`: turni del secondo lavoro, `{s,d,n?}`.
@@ -74,7 +74,7 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 | `helpData` | Contiene il testo della Guida. |
 | `startTour` / `tourSteps` | Avviano e descrivono il tour guidato. |
 
-`window.iworkDebug` espone `remItems`, `startTour`, `t`, `tn`, `bpLines`, `bpParse`, `bpNum`, `holFor`, `holidays` e altre funzioni per i test.
+`window.myturnDebug` espone `remItems`, `startTour`, `t`, `tn`, `bpLines`, `bpParse`, `bpNum`, `holFor`, `holidays` e altre funzioni per i test.
 
 ### Festività
 
@@ -91,12 +91,12 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
 
 ## Server (Supabase)
 
-- Serve solo per **accesso** (codice di 6 cifre via email) e **promemoria** (notifiche push prima dei turni). Progetto `iwork` (`jszgiqdylsachclshyqm`), organizzazione BLFRLRNZ/Team, piano gratuito, Francoforte.
-- **Ancora nascosto:** `SB_ON()` è vero solo se `localStorage["iwork-acct"]==="1"`, che si attiva con 7 tocchi su `#upInfo` (la riga della versione in Impostazioni). Il motivo: il servizio email incluso in Supabase manda solo ai membri del progetto. Quando ci sarà un SMTP, togliere la condizione e fare un rilascio.
+- Serve solo per **accesso** (codice di 6 cifre via email) e **promemoria** (notifiche push prima dei turni). Progetto Supabase `jszgiqdylsachclshyqm` (nome mostrato nel pannello: "iwork"), organizzazione BLFRLRNZ/Team, piano gratuito, Francoforte.
+- **Ancora nascosto:** `SB_ON()` è vero solo se `localStorage["myturn-acct"]==="1"`, che si attiva con 7 tocchi su `#upInfo` (la riga della versione in Impostazioni). Il motivo: il servizio email incluso in Supabase manda solo ai membri del progetto. Quando ci sarà un SMTP, togliere la condizione e fare un rilascio.
 - Il collegamento sta in `index.html`, nell'oggetto `SUPA={url,key,vapid}`: indirizzo del progetto, chiave pubblica "anon" e chiave pubblica VAPID. Se è vuoto, la sezione Account e il pulsante Promemoria restano nascosti e l'app non chiama nessun server.
-- Il client è scritto a mano con `fetch` (`sbFetch`, `auToken`), senza librerie. La sessione sta in `localStorage["iwork-auth"]`.
+- Il client è scritto a mano con `fetch` (`sbFetch`, `auToken`), senza librerie. La sessione sta in `localStorage["myturn-auth"]`.
 - L'app calcola da sola i promemoria dei prossimi 45 giorni (`remItems`), già tradotti e con l'ora di invio, e li manda al server con `set_shifts` ogni volta che i dati cambiano (`mark()` → `remSync`).
-- Sul server: il job `iwork-reminders` di `pg_cron` chiama ogni minuto la funzione `send-reminders` con `pg_net`, passando il `cron_secret` letto da `app_config`. Le notifiche partono con Web Push; `sw.js` le mostra (`push`, `notificationclick`). Le risposte si vedono in `net._http_response`.
+- Sul server: il job `myturn-reminders` di `pg_cron` chiama ogni minuto la funzione `send-reminders` con `pg_net`, passando il `cron_secret` letto da `app_config`. Le notifiche partono con Web Push; `sw.js` le mostra (`push`, `notificationclick`). Le risposte si vedono in `net._http_response`.
 - Le tre funzioni hanno la verifica del token spenta: controllano da sole il segreto del cron o il token dell'utente.
 - Lo strumento di Supabase annulla da solo le modifiche che chiedono una conferma (per esempio con `drop`): applicare le modifiche al database a pezzi piccoli e senza `drop`.
 - Restano **solo sul dispositivo**: note, etichette, busta paga, stima paga e tutto il resto.
@@ -132,7 +132,7 @@ python3 tools/countries/build.py eu noneu amoc it_block.js   # rigenera countrie
 
 ## Test
 
-I test usano Playwright, che è già installato. Alcuni test leggono file con `fetch`: in quel caso bisogna avviare prima un server dalla cartella principale del progetto, con `python3 -m http.server 8765`. Le immagini prodotte vanno in `$OUT` (di solito `/tmp/iwork-tests`).
+I test usano Playwright, che è già installato. Alcuni test leggono file con `fetch`: in quel caso bisogna avviare prima un server dalla cartella principale del progetto, con `python3 -m http.server 8765`. Le immagini prodotte vanno in `$OUT` (di solito `/tmp/myturn-tests`).
 
 | Test | Cosa prova | Serve il server |
 |---|---|---|
@@ -153,7 +153,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 ## Rilascio
 
 1. Aumentare `APP_VERSION` in `index.html` e `version` in `version.json`, scrivendo le note in it, en, fr, de, es e pt.
-2. Cambiare `iwork-vN` in `sw.js` in `iwork-v(N+1)`.
+2. Cambiare `myturn-vN` in `sw.js` in `myturn-v(N+1)`.
 3. Se cambia qualcosa che l'utente vede, aggiornare il `README.md`.
 4. Lanciare i test che riguardano la modifica e controllare gli screenshot.
 5. Fare il commit con un messaggio in italiano che termina con le righe di attribuzione richieste, poi `git push origin main`. I tag non si possono inviare (errore 403): il proprietario li crea da GitHub.
@@ -177,4 +177,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.4 | Guida e domande frequenti |
 | 2.5 | Tour guidato alla prima apertura |
 | 2.6 | Account e promemoria con Supabase (nascosti: 7 tocchi sulla versione) |
-| 2.7 | Nuovo nome: MyTurn |
+| 2.7 | Nuovo nome: MyTurn, anche nei nomi interni e nell'indirizzo |

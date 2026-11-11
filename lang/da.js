@@ -1,5 +1,5 @@
 /* Dansk */
-(window.IWORK_I18N=window.IWORK_I18N||{})["da"]={
+(window.MYTURN_I18N=window.MYTURN_I18N||{})["da"]={
 "{n} g": "{n} d",
 "{d} g {h} h": "{d} d {h} t",
 "{h} h {m} min": "{h} t {m} min",

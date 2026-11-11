@@ -1,4 +1,4 @@
-const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const ROOT=path.resolve(__dirname,'..'),OUT=process.env.OUT||path.join(os.tmpdir(),'iwork-tests');fs.mkdirSync(OUT,{recursive:true});
+const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const ROOT=path.resolve(__dirname,'..'),OUT=process.env.OUT||path.join(os.tmpdir(),'myturn-tests');fs.mkdirSync(OUT,{recursive:true});
 
 const CASES=[["busta_a.pdf","IT","it",{ot:14,night:22,fest:8,ferie:2,perm:4,ferieRes:4.67,permRes:22,gross:2293.46,net:1669},"2026-10"],
 ["busta_b.pdf","IT","it",{ot:9.5,night:18,fest:12,ferie:2,perm:3,ferieRes:12.5,permRes:18,gross:2008.9,net:1523},"2026-10"],
@@ -16,10 +16,10 @@ const CASES=[["busta_a.pdf","IT","it",{ot:14,night:22,fest:8,ferie:2,perm:4,feri
 ["at.pdf","AT","de",{ot:10,gross:6134.7,net:4010.55},"2026-10",true]];
 (async()=>{const b=await chromium.launch();let fail=0;
 for(const [f,C,L,exp,ym,extra] of CASES){const p=await b.newPage();
- await p.addInitScript(([C,L])=>{localStorage.setItem('iwork-lang',L);localStorage.setItem('cartellino-turni-v1',JSON.stringify({days:{},settings:{setup:1,country:C}}));},[C,L]);
+ await p.addInitScript(([C,L])=>{localStorage.setItem('myturn-lang',L);localStorage.setItem('myturn-v1',JSON.stringify({days:{},settings:{setup:1,country:C}}));},[C,L]);
  await p.goto('http://localhost:8765/index.html');await p.waitForTimeout(300);
  fs.copyFileSync(path.join(__dirname,'payslip')+'/'+f,ROOT+'/_t.pdf');
- const P=await p.evaluate(async()=>{const buf=await (await fetch('_t.pdf?'+Math.random())).arrayBuffer();const r=await iworkDebug.bpLines(buf);return iworkDebug.bpParse(r);});
+ const P=await p.evaluate(async()=>{const buf=await (await fetch('_t.pdf?'+Math.random())).arrayBuffer();const r=await myturnDebug.bpLines(buf);return myturnDebug.bpParse(r);});
  const bad=[];for(const k in exp)if(Math.abs((P.R[k]??NaN)-exp[k])>0.011)bad.push(k+": got "+P.R[k]+" want "+exp[k]);
  for(const k in P.R)if(!(k in exp))bad.push("extra "+k+"="+P.R[k]);
  if(P.ym!==ym)bad.push("ym "+P.ym);if(!!extra!==P.extra)bad.push("extra flag "+P.extra);

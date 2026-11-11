@@ -7,7 +7,7 @@
 <meta name="description" content="MyTurn: il calendario dei tuoi turni di lavoro. Scegli l'inizio, la fine si calcola da sola.">
 <meta name="theme-color" content="#f1f2f6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090a0e" media="(prefers-color-scheme: dark)">
-<script>try{var t=localStorage.getItem("iwork-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script>try{var t=localStorage.getItem("myturn-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -1040,7 +1040,7 @@ const toMin=t=>{const p=t.split(":");return +p[0]*60+ +p[1];};
 const hm=d=>pad(d.getHours())+":"+pad(d.getMinutes());
 const APP="MyTurn";
 /* ---------- lingua e formati ---------- */
-const I18N=window.IWORK_I18N=window.IWORK_I18N||{};
+const I18N=window.MYTURN_I18N=window.MYTURN_I18N||{};
 const LANGS={it:{n:"Italiano",loc:"it-IT"},en:{n:"English",loc:"en-GB"},fr:{n:"Français",loc:"fr-FR"},de:{n:"Deutsch",loc:"de-DE"},es:{n:"Español",loc:"es-ES"},pt:{n:"Português",loc:"pt-PT"},"pt-BR":{n:"Português (Brasil)",loc:"pt-BR"},
   nl:{n:"Nederlands",loc:"nl-NL"},pl:{n:"Polski",loc:"pl-PL"},ro:{n:"Română",loc:"ro-RO"},bg:{n:"Български",loc:"bg-BG"},hr:{n:"Hrvatski",loc:"hr-HR"},
   cs:{n:"Čeština",loc:"cs-CZ"},da:{n:"Dansk",loc:"da-DK"},et:{n:"Eesti",loc:"et-EE"},fi:{n:"Suomi",loc:"fi-FI"},el:{n:"Ελληνικά",loc:"el-GR"},
@@ -1049,7 +1049,7 @@ const LANGS={it:{n:"Italiano",loc:"it-IT"},en:{n:"English",loc:"en-GB"},fr:{n:"F
 const LOCS={it:"IT CH SM",en:"GB IE MT US CA AU NZ",fr:"FR BE CH LU MC CA",de:"DE AT CH LI LU BE",es:"ES MX AR US",pt:"PT BR",nl:"NL BE",pl:"PL",ro:"RO",bg:"BG",hr:"HR",cs:"CZ",da:"DK",et:"EE",fi:"FI",el:"GR CY",hu:"HU",lv:"LV",lt:"LT",sk:"SK",sl:"SI",sv:"SE FI"};
 function setLoc(){let c="";try{c=S.settings.country||"";}catch(e){}LOC=LANG.includes("-")?LANGS[LANG].loc:c&&(LOCS[LANG]||"").split(" ").includes(c)?LANG+"-"+c:LANGS[LANG].loc;}
 let LANG="it",LOC="it-IT",CUR="EUR";
-try{const l=localStorage.getItem("iwork-lang");if(l&&LANGS[l])LANG=l;}catch(e){}
+try{const l=localStorage.getItem("myturn-lang");if(l&&LANGS[l])LANG=l;}catch(e){}
 LOC=LANGS[LANG].loc;
 const fill=(r,v)=>v?String(r).replace(/\{(\w+)\}/g,(m,k)=>v[k]!=null?v[k]:m):r;
 /* una chiave può avere un contesto dopo "|" (es. "Annulla|undo"): in italiano si mostra senza */
@@ -1087,7 +1087,7 @@ const span=min=>{min=Math.max(0,Math.round(min));const h=Math.floor(min/60),m=mi
   return h>=24?t("{d} g {h} h",{d:Math.floor(h/24),h:h%24}):h?(m?t("{h} h {m} min",{h,m}):t("{h} h",{h})):t("{m} min",{m});};
 /* regole del paese (per ora Italia; il punto 2 della scaletta le rende variabili) */
 const RULES={rest:11,maxWeek:48,weeklyRest:24,nightFrom:22,nightTo:6};
-const CTRYS=window.IWORK_COUNTRIES||{};
+const CTRYS=window.MYTURN_COUNTRIES||{};
 const ctry=()=>CTRYS[S.settings.country]||CTRYS.IT||{n:{it:"Italia"},cur:"EUR",ws:1,rules:{},hol:[]};
 const locName=n=>!n?"":typeof n==="string"?n:n[LANG]||n.en||n[Object.keys(n)[0]];
 /* nome del paese nella lingua dell'app: prima i nomi scritti a mano, poi quelli del browser */
@@ -1125,7 +1125,7 @@ function normSettings(s){s=s||{};const wd=num(s.wd,0.5,16,DEF.wd),sat=num(s.sat,
   const o={wd,sat,rate:num(s.rate,0,9999,0),week:num(s.week,1,80,Math.round((5*wd+sat)*100)/100),ferie:num(s.ferie,0,80,0),perm:num(s.perm,0,400,0),
     bankFrom:isK(s.bankFrom)?s.bankFrom:"",bank0:num(s.bank0,-999,999,0),presets:[],cycle:[],labels:[],
     pOt:num(s.pOt,0,300,0),pNight:num(s.pNight,0,300,0),pSun:num(s.pSun,0,300,0),pHol:num(s.pHol,0,300,0),
-    country:typeof s.country==="string"&&(window.IWORK_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null,setup:s.setup?1:0,rules:null,
+    country:typeof s.country==="string"&&(window.MYTURN_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null,setup:s.setup?1:0,rules:null,
     rem:(r=>({on:r.on?1:0,min:[15,30,60,90,120,180].includes(+r.min)?+r.min:60,j2:r.j2===0?0:1,oc:r.oc===0?0:1}))(s.rem||{}),payLag:s.payLag?1:0,ocOn:s.ocOn?1:0,ocS:okT(s.ocS)?s.ocS:"20:00",ocD:num(s.ocD,0.5,24,12),ocPay:num(s.ocPay,0,9999,0),j2:null};
   /* secondo lavoro: nome, durata standard, paga oraria */
   const j=s.j2&&typeof s.j2==="object"?s.j2:{};o.j2={on:j.on?1:0,n:String(j.n||"").trim().slice(0,24),d:num(j.d,0.5,16,4),rate:num(j.rate,0,9999,0)};
@@ -1155,7 +1155,7 @@ function normBp(o){const r={};if(!o||typeof o!=="object")return r;
     if(Object.keys(e).length){if(v.src==="pdf")e.src="pdf";r[k]=e;}}
   return r;}
 const S={days:{},settings:normSettings(),oc:{},j2:{},bp:{}};
-const LS="cartellino-turni-v1";
+const LS="myturn-v1";
 try{const raw=JSON.parse(localStorage.getItem(LS)||"null");if(raw){S.days=normDays(raw.days);S.settings=normSettings(raw.settings);S.oc=normOc(raw.oc);S.j2=normJ2(raw.j2);S.bp=normBp(raw.bp);}}catch(e){}
 function saveLocal(){try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){}}
 
@@ -1199,7 +1199,7 @@ const OC_ICON='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2
 const presetSub=p=>p.t2?p.t+" · "+p.t2:p.t+(p.d?" · "+hrs(p.d)+" h":"");
 function lblMap(){const m={};S.settings.labels.forEach(l=>m[l.id]=l.n);return m;}
 const labelsOf=(e,M)=>(e&&e.l||[]).map(id=>M[id]).filter(Boolean);
-function payHidden(){try{return localStorage.getItem("iwork-hidepay")==="1";}catch(e){return false;}}
+function payHidden(){try{return localStorage.getItem("myturn-hidepay")==="1";}catch(e){return false;}}
 function payFor(list,pre){const s=S.settings,r=s.rate,o={h:0,ot:0,night:0,sun:0,hol:0};
   list.forEach(x=>{const e=S.days[x.k];o.h+=x.dur;if(e.ot>0)o.ot+=e.ot;o.night+=x.night;o.sun+=x.sunH;o.hol+=x.holH;});
   /* reperibilità: indennità per ogni turno, le ore di intervento sono lavoro pagato come straordinario */
@@ -1218,7 +1218,7 @@ function payHtml(title,P){const s=S.settings,hide=payHidden(),cur=v=>hide?"•�
   h+='</dl><p class="note">'+t("Stima lorda indicativa. È solo per te: non compare nel PDF né nelle immagini condivise.")+'</p>';
   if(!(s.pOt||s.pNight||s.pSun||s.pHol))h+='<button type="button" class="linkbtn" data-set="stPOt">'+t("Aggiungi le maggiorazioni")+'</button>';
   return h;}
-document.addEventListener("click",ev=>{const t=ev.target.closest("[data-paytoggle]");if(!t)return;try{localStorage.setItem("iwork-hidepay",payHidden()?"0":"1");}catch(e){}render();});
+document.addEventListener("click",ev=>{const t=ev.target.closest("[data-paytoggle]");if(!t)return;try{localStorage.setItem("myturn-hidepay",payHidden()?"0":"1");}catch(e){}render();});
 function slot(s){const h=toMin(s)/60;return h>=4&&h<12?"m":h>=12&&h<20?"p":"n";}
 const tint=e=>e.k==="w"?slot(e.s):e.k==="f"?"f":"x";
 function easter(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da);}
@@ -1313,7 +1313,7 @@ function renderChips(){const p=S.settings.presets;let h="";
   else if(lbrush)h2="<b>"+t("Etichetta {x} attiva.",{x:esc(ln)})+"</b> "+t("Tocca i giorni con un turno per aggiungerla o toglierla.");
   $("hint").innerHTML=h2;}
 /* ---------- vista elenco e ricerca ---------- */
-function listView(){try{return localStorage.getItem("iwork-view")==="list";}catch(e){return false;}}
+function listView(){try{return localStorage.getItem("myturn-view")==="list";}catch(e){return false;}}
 const fold=t=>String(t).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 function hl(text,q){const t=esc(text);if(!q)return t;try{const re=new RegExp("("+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","gi");return t.replace(re,"<mark>$1</mark>");}catch(e){return t;}}
 function listRow(k,e,flags,LM,q,showMonth){const d=dateOf(k),hol=holiday(k)||d.getDay()===0,today=k===todayK();
@@ -1445,7 +1445,7 @@ function ttfParse(buf){const v=new DataView(buf),T={};for(let i=0,n=v.getUint16(
     cap:os2&&v.getUint16(os2)>=2?sc(v.getInt16(os2+88)):700,bytes:new Uint8Array(buf)};}
 async function deflate(u){if(typeof CompressionStream!=="function")return null;try{const s=new Blob([u]).stream().pipeThrough(new CompressionStream("deflate"));return new Uint8Array(await new Response(s).arrayBuffer());}catch(e){return null;}}
 function loadPdfFonts(){if(PDFF)return Promise.resolve(PDFF);if(pdffP)return pdffP;
-  pdffP=Promise.all(["Regular","Bold"].map(async n=>{const r=await fetch("fonts/pdf-"+n+".ttf");if(!r.ok)throw 0;const F=ttfParse(await r.arrayBuffer());F.name="iWorkSansPDF-"+n;F.z=await deflate(F.bytes);return F;}))
+  pdffP=Promise.all(["Regular","Bold"].map(async n=>{const r=await fetch("fonts/pdf-"+n+".ttf");if(!r.ok)throw 0;const F=ttfParse(await r.arrayBuffer());F.name="MyTurnSansPDF-"+n;F.z=await deflate(F.bytes);return F;}))
     .then(a=>PDFF=a).catch(()=>{pdffP=null;return null;});return pdffP;}
 const latin1=u=>{let s="";for(let i=0;i<u.length;i+=8192)s+=String.fromCharCode.apply(null,u.subarray(i,i+8192));return s;};
 const utf16hex=s=>{let h="";for(let i=0;i<s.length;i++)h+=s.charCodeAt(i).toString(16).padStart(4,"0");return h;};
@@ -1630,7 +1630,7 @@ function dayClick(ev){if(swiped){swiped=false;return;}const b=ev.target.closest(
     else{const l=new Set(e.l||[]);if(brush)l.add(lbrush);else if(l.has(lbrush))l.delete(lbrush);else l.add(lbrush);e.l=[...l];if(!e.l.length)delete e.l;}}
   ch.push([k,normEntry(e)]);apply(ch,null);if(brush==="f")leaveToast(k);}
 $("grid").addEventListener("click",dayClick);$("list").addEventListener("click",dayClick);
-function setView(list){try{localStorage.setItem("iwork-view",list?"list":"cal");}catch(e){}render();}
+function setView(list){try{localStorage.setItem("myturn-view",list?"list":"cal");}catch(e){}render();}
 $("vCal").onclick=()=>setView(false);$("vList").onclick=()=>setView(true);
 let qT=null;$("q").addEventListener("input",()=>{clearTimeout(qT);qT=setTimeout(render,120);});
 function leaveToast(k){const y=+k.slice(0,4),L=leaveYear(y);
@@ -1648,11 +1648,11 @@ $("grid").addEventListener("touchend",ev=>{const dx=ev.changedTouches[0].clientX
   if(Math.abs(dx)>60&&Math.abs(dy)<40){swiped=true;shift(dx<0?1:-1);setTimeout(()=>{swiped=false;},400);}},{passive:true});
 
 /* ---------- tema ---------- */
-function getTheme(){try{const t=localStorage.getItem("iwork-theme");return t==="light"||t==="dark"?t:"auto";}catch(e){return"auto";}}
+function getTheme(){try{const t=localStorage.getItem("myturn-theme");return t==="light"||t==="dark"?t:"auto";}catch(e){return"auto";}}
 function applyTheme(t){const r=document.documentElement;if(t==="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",t);
   const dark=t==="dark"||(t==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches);
   document.querySelectorAll('meta[name="theme-color"]').forEach(m=>{m.setAttribute("content",dark?"#090a0e":"#f1f2f6");m.removeAttribute("media");});}
-document.addEventListener("change",ev=>{if(ev.target.name==="theme"){const t=ev.target.value;try{localStorage.setItem("iwork-theme",t);}catch(e){}applyTheme(t);}});
+document.addEventListener("change",ev=>{if(ev.target.name==="theme"){const t=ev.target.value;try{localStorage.setItem("myturn-theme",t);}catch(e){}applyTheme(t);}});
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>applyTheme(getTheme()));
 
 /* ---------- impostazioni ---------- */
@@ -1877,12 +1877,12 @@ $("cyForm").addEventListener("submit",ev=>{ev.preventDefault();const plan=cyPlan
 /* ---------- account (Supabase) e promemoria ----------
    Senza configurazione (SUPA.url vuoto) tutto questo resta nascosto e l'app funziona solo in locale.
    Accesso con codice a 6 cifre via email: su iPhone il link aprirebbe Safari invece dell'app installata. */
-const SUPA=Object.assign({url:"https://jszgiqdylsachclshyqm.supabase.co",key:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpzemdpcWR5bHNhY2hjbHNoeXFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQzOTEwMTksImV4cCI6MjEwOTk2NzAxOX0._PCOzth9FWOGj4IrsEwewR257b_oQGh3thlZ1LSVaqY",vapid:"BDmXWQ6ZaCZKiOeqJibaZrCj9HK0nkXlqptYBdL53UFRVYddd5GF-xqcx-5Tu7E2yGzdmPA1jAk1_9UcosIrfps"},window.__IWORK_SUPA||{});  /* __IWORK_SUPA: solo per i test */
+const SUPA=Object.assign({url:"https://jszgiqdylsachclshyqm.supabase.co",key:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpzemdpcWR5bHNhY2hjbHNoeXFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQzOTEwMTksImV4cCI6MjEwOTk2NzAxOX0._PCOzth9FWOGj4IrsEwewR257b_oQGh3thlZ1LSVaqY",vapid:"BDmXWQ6ZaCZKiOeqJibaZrCj9HK0nkXlqptYBdL53UFRVYddd5GF-xqcx-5Tu7E2yGzdmPA1jAk1_9UcosIrfps"},window.__MYTURN_SUPA||{});  /* __MYTURN_SUPA: solo per i test */
 /* Finché le email arrivano solo ai membri del progetto Supabase, account e promemoria si accendono a mano:
-   7 tocchi sulla riga della versione in Impostazioni (localStorage "iwork-acct"). */
-const SB_ON=()=>{if(!(SUPA.url&&SUPA.key))return false;if(window.__IWORK_SUPA)return true;try{return localStorage.getItem("iwork-acct")==="1";}catch(e){return false;}};
-let acTaps=0,acTapT=0;$("upInfo").addEventListener("click",()=>{const n=Date.now();acTaps=n-acTapT<1500?acTaps+1:1;acTapT=n;if(acTaps<7)return;acTaps=0;try{localStorage.setItem("iwork-acct",localStorage.getItem("iwork-acct")==="1"?"0":"1");}catch(e){}renderAccount();});
-const AUTH_K="iwork-auth";let AU=null;
+   7 tocchi sulla riga della versione in Impostazioni (localStorage "myturn-acct"). */
+const SB_ON=()=>{if(!(SUPA.url&&SUPA.key))return false;if(window.__MYTURN_SUPA)return true;try{return localStorage.getItem("myturn-acct")==="1";}catch(e){return false;}};
+let acTaps=0,acTapT=0;$("upInfo").addEventListener("click",()=>{const n=Date.now();acTaps=n-acTapT<1500?acTaps+1:1;acTapT=n;if(acTaps<7)return;acTaps=0;try{localStorage.setItem("myturn-acct",localStorage.getItem("myturn-acct")==="1"?"0":"1");}catch(e){}renderAccount();});
+const AUTH_K="myturn-auth";let AU=null;
 try{AU=JSON.parse(localStorage.getItem(AUTH_K)||"null");}catch(e){AU=null;}
 function auSave(){try{if(AU)localStorage.setItem(AUTH_K,JSON.stringify(AU));else localStorage.removeItem(AUTH_K);}catch(e){}}
 function auSet(j){AU={access_token:j.access_token,refresh_token:j.refresh_token,expires_at:j.expires_at||Math.floor(Date.now()/1000)+(j.expires_in||3600),user:{id:j.user.id,email:j.user.email}};auSave();}
@@ -1980,12 +1980,12 @@ let remT=null,remLast="";
 function remSync(now){if(!SB_ON()||!AU||!S.settings.rem.on)return Promise.resolve();clearTimeout(remT);
   return new Promise(res=>{remT=setTimeout(async()=>{const items=remItems(),sig=JSON.stringify(items);
     if(sig===remLast&&!now){res();return;}
-    try{await sbFetch("/rest/v1/rpc/set_shifts",{body:{items}});remLast=sig;try{localStorage.setItem("iwork-remsync",String(Date.now()));}catch(e){}}catch(e){}res();},now?0:4000);});}
-document.addEventListener("visibilitychange",()=>{if(document.visibilityState!=="visible")return;let l=0;try{l=+localStorage.getItem("iwork-remsync")||0;}catch(e){}if(Date.now()-l>6*3600e3)remSync(true);});
+    try{await sbFetch("/rest/v1/rpc/set_shifts",{body:{items}});remLast=sig;try{localStorage.setItem("myturn-remsync",String(Date.now()));}catch(e){}}catch(e){}res();},now?0:4000);});}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState!=="visible")return;let l=0;try{l=+localStorage.getItem("myturn-remsync")||0;}catch(e){}if(Date.now()-l>6*3600e3)remSync(true);});
 renderAccount();setTimeout(()=>remSync(true),3000);
 
 /* ---------- tour guidato (una volta, dopo la prima configurazione; si rivede dalla Guida) ---------- */
-const TOUR_K="iwork-tour";let TR=null;
+const TOUR_K="myturn-tour";let TR=null;
 function tourSteps(){const vis=id=>{const e=$(id);return e&&!e.hidden&&e.offsetParent!==null?e:null;};return[
   [null,t("Benvenuto in {app}",{app:APP}),t("Ti mostro in un minuto come funziona. Puoi saltare quando vuoi e rivedere il tour dalla Guida.")],
   [()=>vis("chips"),t("Turni rapidi"),t("Scegli un turno e tocca i giorni del calendario per assegnarlo. Tocca di nuovo il pulsante per finire. {a}, {b} e {c} funzionano allo stesso modo.",{a:t("Riposo"),b:t("Ferie"),c:t("Cancella")})],
@@ -2316,7 +2316,7 @@ function icsText(ev){const z=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\
   const now=z(new Date()),seq=Math.max(0,Math.floor((Date.now()-1.7e12)/1000)),A=+$("icA").value,L=[];
   const fold=line=>{const out=[];let cur="",n=0;for(const ch of line){const b=new TextEncoder().encode(ch).length;if(n+b>(out.length?74:75)){out.push(cur);cur="";n=0;}cur+=ch;n+=b;}out.push(cur);return out.join("\r\n ");};
   L.push("BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//MyTurn//Shift calendar//"+LANG.toUpperCase(),"CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:"+esc2(APP+" – "+t("Turni")));
-  ev.forEach(e=>{L.push("BEGIN:VEVENT","UID:"+e.uid+"@iwork.app","DTSTAMP:"+now,"SEQUENCE:"+seq);
+  ev.forEach(e=>{L.push("BEGIN:VEVENT","UID:"+e.uid+"@myturn.app","DTSTAMP:"+now,"SEQUENCE:"+seq);
     if(e.day){const d=dateOf(e.day),nx=keyOf(addDays(d,1));L.push("DTSTART;VALUE=DATE:"+e.day.replace(/-/g,""),"DTEND;VALUE=DATE:"+nx.replace(/-/g,""),"TRANSP:TRANSPARENT");}
     else{L.push("DTSTART:"+z(e.s),"DTEND:"+z(e.e));if(e.free)L.push("TRANSP:TRANSPARENT");}
     L.push("SUMMARY:"+esc2(e.sum));if(e.desc)L.push("DESCRIPTION:"+esc2(e.desc));
@@ -2403,11 +2403,11 @@ $("repeatBtn").onclick=()=>{const keys=Object.keys(S.days).sort();if(!keys.lengt
 function fromMenu(){if($("tl").open)setTimeout(()=>$("tl").close(),0);}
 ["cycleBtn","shareBtn","pdfBtn","icsBtn","rmBtn"].forEach(id=>$(id).addEventListener("click",fromMenu));
 $("repeatBtn").addEventListener("click",()=>$("tl").close());
-$("toolsBtn").onclick=()=>{bkRender();try{localStorage.setItem("iwork-bkseen",String(Date.now()));}catch(e){}$("toolsBadge").hidden=true;openDlg($("tl"));};
+$("toolsBtn").onclick=()=>{bkRender();try{localStorage.setItem("myturn-bkseen",String(Date.now()));}catch(e){}$("toolsBadge").hidden=true;openDlg($("tl"));};
 $("tlClose").onclick=()=>$("tl").close();
 /* backup */
-function bkLast(){try{return +localStorage.getItem("iwork-lastbackup")||0;}catch(e){return 0;}}
-function bkSeen(){try{return +localStorage.getItem("iwork-bkseen")||0;}catch(e){return 0;}}
+function bkLast(){try{return +localStorage.getItem("myturn-lastbackup")||0;}catch(e){return 0;}}
+function bkSeen(){try{return +localStorage.getItem("myturn-bkseen")||0;}catch(e){return 0;}}
 function bkDue(){return Object.keys(S.days).length>=7&&Date.now()-bkLast()>30*864e5;}
 function bkBadge(){return bkDue()&&Date.now()-bkSeen()>30*864e5;}
 function bkRender(){const l=bkLast(),n=Object.keys(S.days).length,el=$("bkInfo");
@@ -2438,9 +2438,9 @@ $("pdForm").addEventListener("submit",async ev=>{ev.preventDefault();$("pd").clo
   const J=pdJob();let bytes=null;try{bytes=monthPdf(pdY,pdM,J);}catch(e){toast(t("Non sono riuscito a creare il PDF."));return;}
   saveFile("myturn-"+pdY+"-"+pad(pdM+1)+"-"+MONTHS[pdM]+(J===2?"-"+fileSafe(j2Name()):"")+".pdf",bytes,"application/pdf");});
 const fileSafe=x=>String(x).normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^\w-]+/g,"-").replace(/^-+|-+$/g,"").toLowerCase()||"2";
-$("bakBtn").onclick=async()=>{const json=JSON.stringify({app:"iwork",v:1,saved:new Date().toISOString(),settings:S.settings,days:S.days,oc:S.oc,j2:S.j2,bp:S.bp},null,1);
+$("bakBtn").onclick=async()=>{const json=JSON.stringify({app:"myturn",v:1,saved:new Date().toISOString(),settings:S.settings,days:S.days,oc:S.oc,j2:S.j2,bp:S.bp},null,1);
   const ok=await shareOrSave("myturn-copia-"+keyOf(new Date())+".json",json,"application/json",t("Copia dei turni {app}",{app:APP}));
-  if(ok){try{localStorage.setItem("iwork-lastbackup",String(Date.now()));}catch(e){}bkRender();toast(t("Copia salvata. Tienila in un posto sicuro."));}};
+  if(ok){try{localStorage.setItem("myturn-lastbackup",String(Date.now()));}catch(e){}bkRender();toast(t("Copia salvata. Tienila in un posto sicuro."));}};
 $("resBtn").onclick=()=>$("resFile").click();
 let rcData=null;
 $("resFile").addEventListener("change",()=>{const f=$("resFile").files[0];if(!f)return;const r=new FileReader();
@@ -2462,7 +2462,7 @@ $("rcGo").onclick=()=>{if(!rcData)return;const nd=rcData.nd,keys=new Set(Object.
 /* ---------- aggiornamenti ---------- */
 const UP_EVERY=30*60000;
 let upLast=0,upLatest=null,upBusy=false;
-try{upLast=+localStorage.getItem("iwork-upcheck")||0;}catch(e){}
+try{upLast=+localStorage.getItem("myturn-upcheck")||0;}catch(e){}
 const canCheck=()=>/^https?:$/.test(location.protocol);
 function newer(a,b){const x=String(a).split(".").map(Number),y=String(b).split(".").map(Number);for(let i=0;i<3;i++){if((x[i]||0)!==(y[i]||0))return (x[i]||0)>(y[i]||0);}return false;}
 function renderUpInfo(){$("upCheck").hidden=!canCheck();
@@ -2472,7 +2472,7 @@ function renderUpInfo(){$("upCheck").hidden=!canCheck();
   else if(upLast)s+=t("Ultimo controllo: {d}.",{d:new Date(upLast).toLocaleString(LOC,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})});
   else s+=t("Controllo automatico attivo.");
   $("upInfo").textContent=s;}
-function showUpdate(){let dis="";try{dis=sessionStorage.getItem("iwork-up-later")||"";}catch(e){}
+function showUpdate(){let dis="";try{dis=sessionStorage.getItem("myturn-up-later")||"";}catch(e){}
   if(dis===upLatest.version)return;
   const notes=upLatest.notes&&typeof upLatest.notes==="object"?upLatest.notes[LANG]||upLatest.notes.en||upLatest.notes.it:LANG==="it"?upLatest.notes:"";
   $("upTitle").textContent=t("È disponibile {app} {v}",{app:APP,v:upLatest.version});
@@ -2482,18 +2482,18 @@ async function checkUpdate(manual){
   if(!canCheck()){if(manual)toast(t("Apri l'app dal suo indirizzo web per cercare aggiornamenti."));return;}
   if(upBusy)return;upBusy=true;if(manual)$("upCheck").textContent=t("Controllo…");
   try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;const j=await r.json();
-    upLast=Date.now();try{localStorage.setItem("iwork-upcheck",String(upLast));}catch(e){}
-    if(j&&j.version&&newer(j.version,APP_VERSION)){upLatest=j;if(manual){try{sessionStorage.removeItem("iwork-up-later");}catch(e){}$("st").close();}showUpdate();}
+    upLast=Date.now();try{localStorage.setItem("myturn-upcheck",String(upLast));}catch(e){}
+    if(j&&j.version&&newer(j.version,APP_VERSION)){upLatest=j;if(manual){try{sessionStorage.removeItem("myturn-up-later");}catch(e){}$("st").close();}showUpdate();}
     else if(manual)toast(t("Hai già l'ultima versione ({v}).",{v:APP_VERSION}));
   }catch(e){if(manual)toast(t("Non riesco a controllare gli aggiornamenti: verifica la connessione."));}
   upBusy=false;$("upCheck").textContent=t("Cerca aggiornamenti");renderUpInfo();}
 async function doUpdate(){$("upGo").textContent=t("Aggiorno…");$("upGo").disabled=true;
   try{if(navigator.serviceWorker){const regs=await navigator.serviceWorker.getRegistrations();await Promise.all(regs.map(r=>r.update().catch(()=>{})));}
-    if(window.caches){const ks=await caches.keys();await Promise.all(ks.filter(k=>k.startsWith("iwork")).map(k=>caches.delete(k)));}}catch(e){}
+    if(window.caches){const ks=await caches.keys();await Promise.all(ks.filter(k=>k.startsWith("iwork")||k.startsWith("myturn")).map(k=>caches.delete(k)));}}catch(e){}
   location.reload();}
 $("upCheck").onclick=()=>checkUpdate(true);
 $("upGo").onclick=doUpdate;
-$("upLater").onclick=()=>{$("upBar").hidden=true;try{sessionStorage.setItem("iwork-up-later",upLatest?upLatest.version:"");}catch(e){}};
+$("upLater").onclick=()=>{$("upBar").hidden=true;try{sessionStorage.setItem("myturn-up-later",upLatest?upLatest.version:"");}catch(e){}};
 if(canCheck()){
   setTimeout(()=>checkUpdate(false),3000);
   setInterval(()=>checkUpdate(false),UP_EVERY);
@@ -2509,9 +2509,9 @@ function relabelPresets(){let ch=false;const ps=S.settings.presets||[];
     ps.forEach(p=>{if(p.n!==now&&names.has(p.n)){p.n=now;ch=true;}});});
   if(ch)mark();}
 async function setLang(l){if(!LANGS[l])l="it";await loadLang(l);if(l!=="it"&&!I18N[l])l="it";
-  LANG=l;setLoc();try{localStorage.setItem("iwork-lang",l);}catch(e){}relabelPresets();
+  LANG=l;setLoc();try{localStorage.setItem("myturn-lang",l);}catch(e){}relabelPresets();
   setNames();translateDom();setStatus();render();renderUpInfo();bkRender();if($("st").open)renderCountryUI();if($("ob").open)obRender();}
-window.iworkSetLang=setLang;
+window.myturnSetLang=setLang;
 /* ---------- benvenuto: lingua, paese, regione, ore del turno ---------- */
 const OB={step:0,lang:"it",country:"IT",region:"",patron:null,wd:8,sat:6,q:"",existing:false};
 function guessSetup(){const nl=(navigator.languages&&navigator.languages[0]||navigator.language||"it-IT");
@@ -2562,7 +2562,7 @@ function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
   if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
 
-window.iworkDebug={remItems,startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
+window.myturnDebug={remItems,startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();relabelPresets();setNames();translateDom();

@@ -1,11 +1,11 @@
-const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const ROOT=path.resolve(__dirname,'..'),OUT=process.env.OUT||path.join(os.tmpdir(),'iwork-tests');fs.mkdirSync(OUT,{recursive:true});
+const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const ROOT=path.resolve(__dirname,'..'),OUT=process.env.OUT||path.join(os.tmpdir(),'myturn-tests');fs.mkdirSync(OUT,{recursive:true});
 
 (async()=>{const b=await chromium.launch();const errs=[];
 const p=await b.newPage({viewport:{width:390,height:844}});p.on('pageerror',e=>errs.push(e.message));
-await p.addInitScript(()=>{if(localStorage.getItem('cartellino-turni-v1'))return;localStorage.setItem('iwork-lang','it');const d={};['09','10','11'].forEach(x=>d['2026-11-'+x]={k:'w',s:'06:00'});
- localStorage.setItem('cartellino-turni-v1',JSON.stringify({days:d,settings:{setup:1,country:'IT',rate:12}}));});
+await p.addInitScript(()=>{if(localStorage.getItem('myturn-v1'))return;localStorage.setItem('myturn-lang','it');const d={};['09','10','11'].forEach(x=>d['2026-11-'+x]={k:'w',s:'06:00'});
+ localStorage.setItem('myturn-v1',JSON.stringify({days:d,settings:{setup:1,country:'IT',rate:12}}));});
 await p.goto('file://'+ROOT+'/index.html');await p.waitForTimeout(500);
-const S=()=>p.evaluate(()=>JSON.parse(localStorage.getItem('cartellino-turni-v1')).settings);
+const S=()=>p.evaluate(()=>JSON.parse(localStorage.getItem('myturn-v1')).settings);
 await p.click('#setBtn');await p.waitForTimeout(300);
 console.log('settings sections:',await p.$$eval('#stForm h3',x=>x.map(e=>e.textContent).join(' | ')));
 await p.screenshot({path:path.join(OUT,'new_settings.png')});await p.keyboard.press('Escape');await p.waitForTimeout(200);
