@@ -9,14 +9,15 @@ const day=o=>{const d=new Date();d.setDate(d.getDate()+o);return d.getFullYear()
   const ctx=await b.newContext({viewport:{width:430,height:932},locale:'it-IT'});const p=await ctx.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));
   const days={};for(let i=0;i<80;i++)days[day(i)]={k:'w',s:'06:00',s2:'15:00',d:3,d2:3};
   await p.addInitScript(days=>{
-    const log=window.__nat={sched:[],cancel:0,files:[],share:[],bars:[],perm:'prompt'};
+    const log=window.__nat={wg:[],sched:[],cancel:0,files:[],share:[],bars:[],perm:'prompt'};
     window.Capacitor={isNativePlatform:()=>true,getPlatform:()=>'android',Plugins:{
       LocalNotifications:{checkPermissions:async()=>({display:log.perm}),requestPermissions:async()=>{log.perm='granted';return{display:'granted'};},
         getPending:async()=>({notifications:log.sched.map(n=>({id:n.id}))}),cancel:async({notifications})=>{log.cancel+=notifications.length;const ids=new Set(notifications.map(n=>n.id));log.sched=log.sched.filter(n=>!ids.has(n.id));},
         schedule:async({notifications})=>{log.sched.push(...notifications);return{notifications:notifications.map(n=>({id:n.id}))};}},
       Filesystem:{writeFile:async o=>{log.files.push({path:o.path,len:o.data.length,dir:o.directory});return{uri:'file:///cache/'+o.path};}},
       Share:{share:async o=>{log.share.push(o);return{};}},
-      SystemBars:{setStyle:async o=>{log.bars.push(o.style);}}}};
+      SystemBars:{setStyle:async o=>{log.bars.push(o.style);}},
+      MyTurnNative:{setData:async o=>{log.wg.push(JSON.parse(o.json));}}}};
     localStorage.setItem('myturn-tour','1');
     localStorage.setItem('myturn-v1',JSON.stringify({days,settings:{setup:1,country:'IT'}}));
   },days);
@@ -47,5 +48,11 @@ const day=o=>{const d=new Date();d.setDate(d.getDate()+o);return d.getFullYear()
   // file: calendario .ics → menu Condividi
   await p.click('#toolsBtn');await p.waitForTimeout(150);await p.click('#icsBtn');await p.waitForTimeout(250);await p.click('#icGo');await p.waitForTimeout(600);
   const f=await p.evaluate(()=>__nat);ok(f.files.length===1&&/\.ics$/.test(f.files[0].path)&&f.files[0].dir==='CACHE'&&f.share.length===1&&f.share[0].files[0].startsWith('file://'),'.ics salvato e condiviso '+JSON.stringify(f.files));
+  // widget e orologio: dati dei prossimi 14 giorni passati al codice nativo
+  const wg=await p.evaluate(()=>__nat.wg);const last=wg[wg.length-1];
+  ok(wg.length>=1&&last.days.length===14&&last.s.today==='Oggi','dati per widget: '+wg.length+' invii, '+(last&&last.days.length)+' giorni');
+  ok(last&&last.days[1].k==='r'&&last.days[2].k==='w'&&/^06:00–09:00 · 15:00–18:00$/.test(last.days[2].h)&&last.days[2].c==='#f2a900'&&last.days[2].s>0,'giorno 2 '+JSON.stringify(last&&last.days[2]));
+  const n0=wg.length;await p.evaluate(k=>{myturnDebug.apply([[k,{k:'f'}]],'x');},day(3));await p.waitForTimeout(1500);
+  const wg2=await p.evaluate(()=>__nat.wg);ok(wg2.length===n0+1&&wg2[wg2.length-1].days[3].k==='f','dopo una modifica il widget si aggiorna');
   ok(!errs.length,'nessun errore '+errs.join(' | '));
   console.log(fail?fail+' FALLITI':'tutto ok');await b.close();process.exit(fail?1:0);})();

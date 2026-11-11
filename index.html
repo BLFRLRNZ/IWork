@@ -1199,7 +1199,7 @@ function normBp(o){const r={};if(!o||typeof o!=="object")return r;
 const S={days:{},settings:normSettings(),oc:{},j2:{},bp:{}};
 const LS="myturn-v1";
 try{const raw=JSON.parse(localStorage.getItem(LS)||"null");if(raw){S.days=normDays(raw.days);S.settings=normSettings(raw.settings);S.oc=normOc(raw.oc);S.j2=normJ2(raw.j2);S.bp=normBp(raw.bp);}}catch(e){}
-function saveLocal(){try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){}}
+function saveLocal(){try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){}try{wgSync();}catch(e){}}
 
 const now0=new Date();
 let view=new Date(now0.getFullYear(),now0.getMonth(),1);
@@ -2099,6 +2099,25 @@ function remSync(now){if(NATIVE&&!S.settings.rem.on)return Promise.resolve();if(
     try{await sbFetch("/rest/v1/rpc/set_shifts",{body:{items}});remLast=sig;try{localStorage.setItem("myturn-remsync",String(Date.now()));}catch(e){}}catch(e){}res();},now?0:4000);});}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState!=="visible")return;let l=0;try{l=+localStorage.getItem("myturn-remsync")||0;}catch(e){}if(Date.now()-l>6*3600e3)remSync(true);});
 renderAccount();setTimeout(()=>remSync(true),3000);
+/* widget e orologio (solo nell'app): i prossimi 14 giorni già pronti da mostrare, con i testi tradotti.
+   Il codice nativo li legge dal plugin MyTurnNative (iPhone: App Group + Apple Watch; Android: SharedPreferences). */
+const WG_TONE={m:"#f2a900",p:"#ff6b3d",n:"#6a6ff5",f:"#22b062",x:"#9aa1b2"};
+function wgData(){const t0=new Date();t0.setHours(0,0,0,0);const days=[];
+  for(let i=0;i<14;i++){const d=addDays(t0,i),k=keyOf(d),e=S.days[k],o={d:k,wd:df(d,{weekday:"short"}),dn:String(d.getDate()),k:"",t:t("Libero"),h:"",c:WG_TONE.x};
+    if(e&&e.k==="w"){const I=info(k,e);o.k="w";o.t=presetName(e);o.h=I.segs.map(g=>hm(g.start)+"–"+hm(g.end)).join(" · ");o.c=WG_TONE[slot(e.s)];o.s=+I.start;o.e=+I.end;}
+    else if(e){o.k=e.k;o.t=kind(e.k);if(e.k==="p"&&e.h)o.h=hrs(e.h)+" h";o.c=e.k==="f"?WG_TONE.f:WG_TONE.x;}
+    const x=[],hol=holiday(k);if(hol)x.push(hol);
+    if(J2on()&&S.j2[k]){const I=info(k,j2Entry(k));x.push(j2Name()+" "+hm(I.start)+"–"+hm(I.end));}
+    if(S.settings.ocOn&&S.oc[k])x.push(t("Reperibilità")+" "+ocTxt(k));
+    if(x.length)o.x=x.join(" · ");days.push(o);}
+  return{v:1,gen:Date.now(),lang:LANG,days,s:{today:t("Oggi"),tomorrow:t("Domani"),next:t("Prossimo turno"),free:t("Libero"),app:APP}};}
+let wgT=0,wgLast="";
+function wgPlugin(){return CAP.MyTurnNative||(NATIVE&&Capacitor.registerPlugin?(CAP.MyTurnNative=Capacitor.registerPlugin("MyTurnNative")):null);}
+function wgSync(now){if(!NATIVE)return;clearTimeout(wgT);wgT=setTimeout(()=>{try{const P=wgPlugin();if(!P)return;const d=wgData(),sig=JSON.stringify(Object.assign({},d,{gen:0}));
+    if(sig===wgLast)return;wgLast=sig;P.setData({json:JSON.stringify(d)}).catch(()=>{wgLast="";});}catch(e){}},now?0:800);}
+setTimeout(()=>wgSync(true),1500);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")wgSync(true);});
+
 
 
 /* ---------- sincronizzazione tra dispositivi (cifrata sul dispositivo) ----------
@@ -2769,7 +2788,7 @@ function relabelPresets(){let ch=false;const ps=S.settings.presets||[];
   if(ch)mark();}
 async function setLang(l){if(!LANGS[l])l="it";await loadLang(l);if(l!=="it"&&!I18N[l])l="it";
   LANG=l;setLoc();try{localStorage.setItem("myturn-lang",l);}catch(e){}relabelPresets();
-  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();try{renderAccount();}catch(e){}if($("st").open)renderCountryUI();if($("ob").open)obRender();}
+  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();try{renderAccount();}catch(e){}try{wgSync(true);}catch(e){}if($("st").open)renderCountryUI();if($("ob").open)obRender();}
 window.myturnSetLang=setLang;
 /* ---------- benvenuto: lingua, paese, regione, ore del turno ---------- */
 const OB={step:0,lang:"it",country:"IT",region:"",patron:null,wd:8,sat:6,q:"",existing:false,acct:false};
@@ -2830,7 +2849,7 @@ function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
   if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
 
-window.myturnDebug={remItems,syItems,syHash,syRun:()=>syRun(),S,apply,mark,startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
+window.myturnDebug={remItems,wgData,syItems,syHash,syRun:()=>syRun(),S,apply,mark,startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();relabelPresets();setNames();translateDom();

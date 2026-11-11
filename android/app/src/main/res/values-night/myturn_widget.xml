@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="myturn_widget_bg">#14161C</color>
+    <color name="myturn_widget_ink">#F3F4F8</color>
+    <color name="myturn_widget_muted">#8E95A8</color>
+</resources>
