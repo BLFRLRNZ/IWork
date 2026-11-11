@@ -319,7 +319,7 @@
 "San Francesco": "São Francisco",
 "Pasqua": "Domingo de Páscoa",
 "Lunedì dell'Angelo": "Segunda-feira de Páscoa",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Calendário",
 "Le modifiche si salvano da sole.": "As alterações são salvas automaticamente.",
 "Inizio turno": "Início do turno",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Também para o sobreaviso",
 "Manda una notifica di prova": "Enviar uma notificação de teste",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Para os lembretes, os turnos dos próximos 45 dias ficam salvos no servidor, com horário e nome do turno. Se você mudar um turno, o lembrete se atualiza sozinho.",
-"nome@esempio.it": "nome@exemplo.com.br"
+"nome@esempio.it": "nome@exemplo.com.br",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Aqui você encontra todo o resto: escala de turnos, férias e folgas, banco de horas, estimativa de salário, holerite, lembretes antes dos turnos, PDF do mês, exportação para o calendário, cópia dos dados e o Guia.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "País e feriados, idioma, tema claro ou escuro e a conta para os lembretes.",
+"Account e promemoria": "Conta e lembretes",
+"Come ricevo un avviso prima dei turni?": "Como recebo um aviso antes dos meus turnos?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Abra {p}, entre com o seu e-mail e ative {a}: escolha com quanta antecedência quer o aviso, também para o segundo emprego e o sobreaviso. A notificação chega mesmo com o app fechado. Com {b} você confere na hora se funciona.",
+"Come creo un account? Serve una password?": "Como crio uma conta? Preciso de senha?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Não precisa de senha. Em {p} toque em {a}, digite o seu e-mail e o código de 6 dígitos que você receber. Se não encontrar, olhe na pasta de spam. A conta serve só para os lembretes: sem ela o app funciona como sempre.",
+"Le notifiche non arrivano: cosa faccio?": "As notificações não chegam: o que eu faço?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "No iPhone as notificações só chegam se o app estiver na Tela de Início e você abri-lo por lá. Confira também se as notificações do {app} estão permitidas nos ajustes do celular; depois desative e ative de novo {a} e teste com {b}.",
+"Cosa viene salvato sul server?": "O que fica salvo no servidor?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Só o seu e-mail e, se você ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisar você. Notas, etiquetas, holerites e estimativa de salário ficam no celular. Você pode excluir a conta e os dados no servidor em {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Só neste dispositivo, no navegador. Sem conta nada é enviado para um servidor; com os lembretes ativos, só os turnos dos próximos 45 dias vão para o servidor."
 };

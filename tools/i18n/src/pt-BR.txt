@@ -705,3 +705,15 @@ Também para o sobreaviso
 Enviar uma notificação de teste
 Para os lembretes, os turnos dos próximos 45 dias ficam salvos no servidor, com horário e nome do turno. Se você mudar um turno, o lembrete se atualiza sozinho.
 nome@exemplo.com.br
+Aqui você encontra todo o resto: escala de turnos, férias e folgas, banco de horas, estimativa de salário, holerite, lembretes antes dos turnos, PDF do mês, exportação para o calendário, cópia dos dados e o Guia.
+País e feriados, idioma, tema claro ou escuro e a conta para os lembretes.
+Conta e lembretes
+Como recebo um aviso antes dos meus turnos?
+Abra {p}, entre com o seu e-mail e ative {a}: escolha com quanta antecedência quer o aviso, também para o segundo emprego e o sobreaviso. A notificação chega mesmo com o app fechado. Com {b} você confere na hora se funciona.
+Como crio uma conta? Preciso de senha?
+Não precisa de senha. Em {p} toque em {a}, digite o seu e-mail e o código de 6 dígitos que você receber. Se não encontrar, olhe na pasta de spam. A conta serve só para os lembretes: sem ela o app funciona como sempre.
+As notificações não chegam: o que eu faço?
+No iPhone as notificações só chegam se o app estiver na Tela de Início e você abri-lo por lá. Confira também se as notificações do {app} estão permitidas nos ajustes do celular; depois desative e ative de novo {a} e teste com {b}.
+O que fica salvo no servidor?
+Só o seu e-mail e, se você ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisar você. Notas, etiquetas, holerites e estimativa de salário ficam no celular. Você pode excluir a conta e os dados no servidor em {p}.
+Só neste dispositivo, no navegador. Sem conta nada é enviado para um servidor; com os lembretes ativos, só os turnos dos próximos 45 dias vão para o servidor.

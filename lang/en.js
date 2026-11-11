@@ -268,7 +268,7 @@
 "San Francesco": "St Francis' Day",
 "Pasqua": "Easter Sunday",
 "Lunedì dell'Angelo": "Easter Monday",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Calendar",
 "Le modifiche si salvano da sole.": "Changes save automatically.",
 "Inizio turno": "Shift start",
@@ -706,5 +706,17 @@
 "Anche per la reperibilità": "Also for on call",
 "Manda una notifica di prova": "Send a test notification",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "For reminders, the shifts of the next 45 days are stored on the server, with time and shift name. If you change a shift, the reminder updates by itself.",
-"nome@esempio.it": "name@example.com"
+"nome@esempio.it": "name@example.com",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Here you'll find everything else: shift rotation, leave and time off, hour bank, pay estimate, payslip, reminders before shifts, monthly PDF, calendar export, data backup and the Guide.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Country and holidays, language, light or dark theme and the account for reminders.",
+"Account e promemoria": "Account and reminders",
+"Come ricevo un avviso prima dei turni?": "How do I get a notification before my shifts?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Open {p}, sign in with your email and turn on {a}: choose how early you want the notification, also for your second job and on call. It arrives even with the app closed. With {b} you can check right away that it works.",
+"Come creo un account? Serve una password?": "How do I create an account? Do I need a password?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "No password needed. In {p} tap {a}, enter your email and type the 6-digit code you receive. If you can't find it, check your spam folder. The account is only for reminders: without it the app works as always.",
+"Le notifiche non arrivano: cosa faccio?": "Notifications don't arrive: what should I do?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "On iPhone, notifications only arrive if the app is added to the Home Screen and you open it from there. Also check that notifications for {app} are allowed in your phone settings, then turn {a} off and on again and try {b}.",
+"Cosa viene salvato sul server?": "What is stored on the server?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Only your email and, if you turn on reminders, the shifts of the next 45 days with time and shift name, so we know when to notify you. Notes, labels, payslips and pay estimate stay on your phone. You can delete the account and the data on the server from {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Only on this device, in the browser. Without an account nothing is sent to a server; with reminders on, only the shifts of the next 45 days go to the server."
 };

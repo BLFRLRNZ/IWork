@@ -319,7 +319,7 @@
 "San Francesco": "Püha Franciscus",
 "Pasqua": "Ülestõusmispühade 1. püha",
 "Lunedì dell'Angelo": "Ülestõusmispühade 2. püha",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Muudatused salvestuvad ise.",
 "Inizio turno": "Vahetuse algus",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Ka valve jaoks",
 "Manda una notifica di prova": "Saada testteavitus",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Meeldetuletuste jaoks hoitakse serveris järgmise 45 päeva vahetusi koos kellaaja ja vahetuse nimega. Kui muudad vahetust, uueneb meeldetuletus ise.",
-"nome@esempio.it": "nimi@naide.ee"
+"nome@esempio.it": "nimi@naide.ee",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Siit leiad kõik muu: vahetuste rotatsiooni, puhkused ja vabad tunnid, tundide panga, palgahinnangu, palgalehe, meeldetuletused enne vahetusi, kuu PDF-i, kalendrisse ekspordi, andmete koopia ja Juhendi.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Riik ja pühad, keel, hele või tume teema ning konto meeldetuletuste jaoks.",
+"Account e promemoria": "Konto ja meeldetuletused",
+"Come ricevo un avviso prima dei turni?": "Kuidas saada teavitus enne vahetusi?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Ava {p}, logi sisse oma e-postiga ja lülita sisse {a}: vali, kui palju varem soovid teavitust, ka teise töö ja valve jaoks. Teavitus tuleb ka siis, kui rakendus on suletud. Nupuga {b} kontrollid kohe, kas see töötab.",
+"Come creo un account? Serve una password?": "Kuidas konto luua? Kas on vaja parooli?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Parooli pole vaja. Puuduta jaotises {p} nuppu {a}, sisesta oma e-post ja seejärel saadud 6-kohaline kood. Kui sa seda ei leia, vaata rämpsposti kausta. Konto on vaid meeldetuletuste jaoks: ilma selleta töötab rakendus nagu alati.",
+"Le notifiche non arrivano: cosa faccio?": "Teavitused ei tule: mida teha?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "iPhone'is tulevad teavitused ainult siis, kui rakendus on avakuval ja avad selle sealt. Kontrolli ka, et {app} teavitused oleksid telefoni seadetes lubatud, siis lülita {a} välja ja uuesti sisse ning proovi nuppu {b}.",
+"Cosa viene salvato sul server?": "Mida serveris hoitakse?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Ainult sinu e-posti ja, kui lülitad meeldetuletused sisse, järgmise 45 päeva vahetusi koos kellaaja ja vahetuse nimega, et teada, millal sulle teada anda. Märkmed, sildid, palgalehed ja palgahinnang jäävad telefoni. Konto ja serveris olevad andmed saad kustutada jaotises {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Ainult selles seadmes, brauseris. Ilma kontota ei saadeta midagi serverisse; sisselülitatud meeldetuletustega lähevad serverisse ainult järgmise 45 päeva vahetused."
 };

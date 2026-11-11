@@ -351,7 +351,7 @@
 "San Francesco": "Św. Franciszka",
 "Pasqua": "Wielkanoc",
 "Lunedì dell'Angelo": "Poniedziałek Wielkanocny",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalendarz",
 "Le modifiche si salvano da sole.": "Zmiany zapisują się same.",
 "Inizio turno": "Początek zmiany",
@@ -819,5 +819,17 @@
 "Anche per la reperibilità": "Także dla dyżurów",
 "Manda una notifica di prova": "Wyślij powiadomienie testowe",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Na potrzeby przypomnień zmiany z najbliższych 45 dni są zapisywane na serwerze, z godziną i nazwą zmiany. Gdy coś zmienisz w grafiku, przypomnienie zaktualizuje się samo.",
-"nome@esempio.it": "imie@przyklad.pl"
+"nome@esempio.it": "imie@przyklad.pl",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Tutaj znajdziesz wszystko inne: grafik cykliczny, urlopy i wolne godziny, bank godzin, szacunkową płacę, pasek wypłaty, przypomnienia przed zmianami, PDF miesiąca, eksport do kalendarza, kopię danych i Przewodnik.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Kraj i święta, język, jasny lub ciemny motyw oraz konto do przypomnień.",
+"Account e promemoria": "Konto i przypomnienia",
+"Come ricevo un avviso prima dei turni?": "Jak dostać powiadomienie przed zmianami?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Otwórz {p}, zaloguj się adresem e-mail i włącz {a}: wybierz, z jakim wyprzedzeniem chcesz powiadomienie, także dla drugiej pracy i dyżurów. Powiadomienie przychodzi nawet przy zamkniętej aplikacji. Przyciskiem {b} od razu sprawdzisz, czy działa.",
+"Come creo un account? Serve una password?": "Jak założyć konto? Czy potrzebne jest hasło?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Hasło nie jest potrzebne. W {p} dotknij {a}, wpisz swój e-mail, a potem 6-cyfrowy kod, który dostaniesz. Jeśli go nie widzisz, sprawdź folder spam. Konto służy tylko do przypomnień: bez niego aplikacja działa jak zawsze.",
+"Le notifiche non arrivano: cosa faccio?": "Powiadomienia nie przychodzą: co robić?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "Na iPhonie powiadomienia przychodzą tylko wtedy, gdy aplikacja jest na ekranie początkowym i otwierasz ją stamtąd. Sprawdź też, czy powiadomienia {app} są dozwolone w ustawieniach telefonu, potem wyłącz i włącz {a} i wypróbuj {b}.",
+"Cosa viene salvato sul server?": "Co jest zapisywane na serwerze?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Tylko twój e-mail i, jeśli włączysz przypomnienia, zmiany z najbliższych 45 dni z godziną i nazwą zmiany, żeby wiedzieć, kiedy cię powiadomić. Notatki, etykiety, paski wypłaty i szacunkowa płaca zostają w telefonie. Konto i dane na serwerze możesz usunąć w {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Tylko na tym urządzeniu, w przeglądarce. Bez konta nic nie trafia na serwer; przy włączonych przypomnieniach na serwer trafiają tylko zmiany z najbliższych 45 dni."
 };

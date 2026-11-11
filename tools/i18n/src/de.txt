@@ -705,3 +705,15 @@ Auch für Bereitschaft
 Testmitteilung senden
 Für die Erinnerungen werden die Schichten der nächsten 45 Tage mit Uhrzeit und Schichtname auf dem Server gespeichert. Wenn du eine Schicht änderst, wird die Erinnerung automatisch angepasst.
 name@beispiel.de
+Hier findest du alles andere: Schichtrotation, Urlaub und Freistunden, Stundenkonto, Lohnschätzung, Lohnabrechnung, Erinnerungen vor Schichten, Monats-PDF, Kalenderexport, Datensicherung und die Anleitung.
+Land und Feiertage, Sprache, helles oder dunkles Design und das Konto für Erinnerungen.
+Konto und Erinnerungen
+Wie bekomme ich eine Mitteilung vor meinen Schichten?
+Öffne {p}, melde dich mit deiner E-Mail an und schalte {a} ein: Wähle, wie früh du erinnert werden willst, auch für den Zweitjob und die Bereitschaft. Die Mitteilung kommt auch, wenn die App geschlossen ist. Mit {b} prüfst du sofort, ob es funktioniert.
+Wie erstelle ich ein Konto? Brauche ich ein Passwort?
+Du brauchst kein Passwort. Tippe in {p} auf {a}, gib deine E-Mail ein und dann den 6-stelligen Code, den du bekommst. Wenn du ihn nicht findest, schau im Spam-Ordner nach. Das Konto ist nur für Erinnerungen: Ohne Konto funktioniert die App wie immer.
+Die Mitteilungen kommen nicht an: Was tun?
+Auf dem iPhone kommen Mitteilungen nur an, wenn die App auf dem Home-Bildschirm ist und du sie von dort öffnest. Prüfe auch, ob Mitteilungen für {app} in den Einstellungen des Handys erlaubt sind, schalte dann {a} aus und wieder ein und probiere {b}.
+Was wird auf dem Server gespeichert?
+Nur deine E-Mail und, wenn du Erinnerungen einschaltest, die Schichten der nächsten 45 Tage mit Uhrzeit und Schichtname, damit wir wissen, wann wir dich erinnern. Notizen, Etiketten, Lohnabrechnungen und Lohnschätzung bleiben auf dem Handy. Konto und Daten auf dem Server kannst du unter {p} löschen.
+Nur auf diesem Gerät, im Browser. Ohne Konto wird nichts an einen Server geschickt; mit eingeschalteten Erinnerungen gehen nur die Schichten der nächsten 45 Tage an den Server.

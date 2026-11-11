@@ -163,7 +163,6 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 - **Etichetta della versione 2.0.0 su GitHub:** va creata a mano.
 - **Festività mancanti:** quelle dei singoli stati di USA e Brasile, la provincia di Terranova e Labrador in Canada, i ponti decisi ogni anno dai governi.
 - **Dominio proprio per le email** (per esempio myturn.it), da collegare a Brevo, quando l'app si apre a molti utenti.
-- **Guida e tour:** non spiegano ancora Account e Promemoria.
 - **Funzioni del server ancora da fare:** sincronizzazione tra dispositivi, calendario in abbonamento, condivisione con i colleghi.
 
 ## Storia delle versioni
@@ -178,4 +177,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.5 | Tour guidato alla prima apertura |
 | 2.6 | Account e promemoria con Supabase (nascosti) |
 | 2.7 | Nuovo nome: MyTurn, anche nei nomi interni e nell'indirizzo |
-| 2.8 | Account e promemoria aperti a tutti (email tramite Brevo) |
+| 2.8 | Account e promemoria aperti a tutti (email tramite Brevo); 2.8.1: Guida e tour li spiegano |

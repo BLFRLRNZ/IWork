@@ -705,3 +705,15 @@ Arī dežūrām
 Sūtīt testa paziņojumu
 Atgādinājumiem nākamo 45 dienu maiņas tiek saglabātas serverī ar laiku un maiņas nosaukumu. Ja maini maiņu, atgādinājums atjaunojas pats.
 vards@piemers.lv
+Šeit atradīsi visu pārējo: maiņu rotāciju, atvaļinājumu un brīvās stundas, stundu banku, algas aprēķinu, algas lapiņu, atgādinājumus pirms maiņām, mēneša PDF, eksportu uz kalendāru, datu kopiju un Ceļvedi.
+Valsts un svētku dienas, valoda, gaišs vai tumšs motīvs un konts atgādinājumiem.
+Konts un atgādinājumi
+Kā saņemt paziņojumu pirms maiņām?
+Atver {p}, piesakies ar savu e-pastu un ieslēdz {a}: izvēlies, cik laicīgi vēlies paziņojumu, arī otrajam darbam un dežūrām. Paziņojums pienāk arī tad, ja lietotne ir aizvērta. Ar {b} uzreiz pārbaudīsi, vai tas darbojas.
+Kā izveidot kontu? Vai vajag paroli?
+Parole nav vajadzīga. Sadaļā {p} pieskaries {a}, ieraksti savu e-pastu un pēc tam saņemto 6 ciparu kodu. Ja to neatrodi, pārbaudi surogātpasta mapi. Konts vajadzīgs tikai atgādinājumiem: bez tā lietotne darbojas kā vienmēr.
+Paziņojumi nepienāk: ko darīt?
+iPhone tālrunī paziņojumi pienāk tikai tad, ja lietotne ir sākuma ekrānā un tu to atver no turienes. Pārbaudi arī, vai {app} paziņojumi ir atļauti tālruņa iestatījumos, tad izslēdz un atkal ieslēdz {a} un izmēģini {b}.
+Kas tiek saglabāts serverī?
+Tikai tavs e-pasts un, ja ieslēdz atgādinājumus, nākamo 45 dienu maiņas ar laiku un maiņas nosaukumu, lai zinātu, kad tev atgādināt. Piezīmes, birkas, algas lapiņas un algas aprēķins paliek tālrunī. Kontu un datus serverī vari izdzēst sadaļā {p}.
+Tikai šajā ierīcē, pārlūkprogrammā. Bez konta nekas netiek sūtīts uz serveri; ar ieslēgtiem atgādinājumiem uz serveri nonāk tikai nākamo 45 dienu maiņas.

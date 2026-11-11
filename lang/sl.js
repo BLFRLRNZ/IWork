@@ -351,7 +351,7 @@
 "San Francesco": "Sveti Frančišek",
 "Pasqua": "Velika noč",
 "Lunedì dell'Angelo": "Velikonočni ponedeljek",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Koledar",
 "Le modifiche si salvano da sole.": "Spremembe se shranijo same.",
 "Inizio turno": "Začetek izmene",
@@ -819,5 +819,17 @@
 "Anche per la reperibilità": "Tudi za pripravljenost",
 "Manda una notifica di prova": "Pošlji preizkusno obvestilo",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Za opomnike se izmene za naslednjih 45 dni shranijo na strežnik, s časom in imenom izmene. Če izmeno spremeniš, se opomnik sam posodobi.",
-"nome@esempio.it": "ime@primer.si"
+"nome@esempio.it": "ime@primer.si",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Tukaj najdeš vse ostalo: menjavo izmen, dopust in proste ure, banko ur, oceno plače, plačilno listo, opomnike pred izmenami, PDF meseca, izvoz v koledar, kopijo podatkov in Vodnik.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Država in prazniki, jezik, svetla ali temna tema ter račun za opomnike.",
+"Account e promemoria": "Račun in opomniki",
+"Come ricevo un avviso prima dei turni?": "Kako dobim obvestilo pred izmenami?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Odpri {p}, prijavi se s svojim e-naslovom in vklopi {a}: izberi, koliko prej želiš obvestilo, tudi za drugo službo in pripravljenost. Obvestilo pride, tudi ko je aplikacija zaprta. Z {b} takoj preveriš, ali deluje.",
+"Come creo un account? Serve una password?": "Kako ustvarim račun? Ali potrebujem geslo?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Gesla ne potrebuješ. V {p} tapni {a}, vpiši svoj e-naslov in nato 6-mestno kodo, ki jo prejmeš. Če je ne najdeš, poglej v mapo z neželeno pošto. Račun je samo za opomnike: brez njega aplikacija deluje kot vedno.",
+"Le notifiche non arrivano: cosa faccio?": "Obvestila ne prihajajo: kaj naj naredim?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "Na iPhonu obvestila prihajajo samo, če je aplikacija na začetnem zaslonu in jo odpiraš od tam. Preveri tudi, ali so obvestila za {app} dovoljena v nastavitvah telefona, nato izklopi in znova vklopi {a} in poskusi {b}.",
+"Cosa viene salvato sul server?": "Kaj se shrani na strežnik?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Samo tvoj e-naslov in, če vklopiš opomnike, izmene za naslednjih 45 dni s časom in imenom izmene, da vemo, kdaj te opomniti. Zapiski, oznake, plačilne liste in ocena plače ostanejo na telefonu. Račun in podatke na strežniku lahko izbrišeš v {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Samo v tej napravi, v brskalniku. Brez računa se nič ne pošlje na strežnik; z vklopljenimi opomniki gredo na strežnik samo izmene za naslednjih 45 dni."
 };

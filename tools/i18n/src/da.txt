@@ -705,3 +705,15 @@ Også for tilkaldevagt
 Send en testnotifikation
 Til påmindelserne gemmes vagterne for de næste 45 dage på serveren, med tidspunkt og vagtnavn. Hvis du ændrer en vagt, opdateres påmindelsen af sig selv.
 navn@eksempel.dk
+Her finder du alt det andet: vagtrotation, ferie og fritimer, timebank, lønskøn, lønseddel, påmindelser før vagter, månedens PDF, eksport til kalenderen, kopi af dataene og Guiden.
+Land og helligdage, sprog, lyst eller mørkt tema og kontoen til påmindelser.
+Konto og påmindelser
+Hvordan får jeg en notifikation før mine vagter?
+Åbn {p}, log ind med din e-mail og slå {a} til: vælg, hvor lang tid før du vil have besked, også for dit andet job og tilkaldevagt. Notifikationen kommer også, når appen er lukket. Med {b} tjekker du med det samme, at det virker.
+Hvordan opretter jeg en konto? Skal jeg bruge en adgangskode?
+Du skal ikke bruge nogen adgangskode. Tryk på {a} i {p}, skriv din e-mail, og indtast den 6-cifrede kode, du får. Kan du ikke finde den, så kig i spammappen. Kontoen er kun til påmindelser: uden den virker appen som altid.
+Notifikationerne kommer ikke: hvad gør jeg?
+På iPhone kommer notifikationer kun, hvis appen ligger på hjemmeskærmen, og du åbner den derfra. Tjek også, at notifikationer for {app} er tilladt i telefonens indstillinger, og slå derefter {a} fra og til igen, og prøv {b}.
+Hvad gemmes der på serveren?
+Kun din e-mail og, hvis du slår påmindelser til, vagterne for de næste 45 dage med tidspunkt og vagtnavn, så vi ved, hvornår du skal have besked. Noter, etiketter, lønsedler og lønskøn bliver på telefonen. Du kan slette kontoen og dataene på serveren under {p}.
+Kun på denne enhed, i browseren. Uden konto sendes intet til en server; med påmindelser slået til sendes kun vagterne for de næste 45 dage til serveren.

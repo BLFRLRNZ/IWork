@@ -319,7 +319,7 @@
 "San Francesco": "Szent Ferenc",
 "Pasqua": "Húsvétvasárnap",
 "Lunedì dell'Angelo": "Húsvéthétfő",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Naptár",
 "Le modifiche si salvano da sole.": "A változtatások maguktól mentődnek.",
 "Inizio turno": "Műszak kezdete",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Készenlét esetén is",
 "Manda una notifica di prova": "Tesztértesítés küldése",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Az emlékeztetőkhöz a következő 45 nap műszakjait a szerveren tároljuk, időponttal és a műszak nevével. Ha módosítasz egy műszakot, az emlékeztető magától frissül.",
-"nome@esempio.it": "nev@pelda.hu"
+"nome@esempio.it": "nev@pelda.hu",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Itt találsz minden mást: műszakbeosztást, szabadságot és szabad órákat, órabankot, bérbecslést, bérjegyzéket, emlékeztetőket a műszakok előtt, havi PDF-et, naptárexportot, adatmentést és az Útmutatót.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Ország és ünnepnapok, nyelv, világos vagy sötét téma és a fiók az emlékeztetőkhöz.",
+"Account e promemoria": "Fiók és emlékeztetők",
+"Come ricevo un avviso prima dei turni?": "Hogyan kapok értesítést a műszakjaim előtt?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Nyisd meg ezt: {p}, jelentkezz be az e-mail-címeddel, és kapcsold be ezt: {a}. Válaszd ki, mennyivel előtte kérsz értesítést, a második munkához és a készenléthez is. Az értesítés akkor is megérkezik, ha az app be van zárva. Ezzel: {b} rögtön ellenőrizheted, hogy működik-e.",
+"Come creo un account? Serve una password?": "Hogyan hozok létre fiókot? Kell jelszó?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Nem kell jelszó. Itt: {p} koppints erre: {a}, írd be az e-mail-címedet, majd a kapott 6 jegyű kódot. Ha nem találod, nézd meg a levélszemét mappát. A fiók csak az emlékeztetőkhöz kell: nélküle az app ugyanúgy működik, mint eddig.",
+"Le notifiche non arrivano: cosa faccio?": "Nem érkeznek meg az értesítések: mit tegyek?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "iPhone-on az értesítések csak akkor érkeznek meg, ha az app a főképernyőn van, és onnan nyitod meg. Ellenőrizd azt is, hogy a(z) {app} értesítései engedélyezve vannak-e a telefon beállításaiban, aztán kapcsold ki és újra be ezt: {a}, és próbáld ki ezt: {b}.",
+"Cosa viene salvato sul server?": "Mit tárolunk a szerveren?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Csak az e-mail-címedet és, ha bekapcsolod az emlékeztetőket, a következő 45 nap műszakjait időponttal és a műszak nevével, hogy tudjuk, mikor értesítsünk. A jegyzetek, címkék, bérjegyzékek és a bérbecslés a telefonon maradnak. A fiókot és a szerveren tárolt adatokat itt törölheted: {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Csak ezen az eszközön, a böngészőben. Fiók nélkül semmi sem kerül szerverre; bekapcsolt emlékeztetőkkel csak a következő 45 nap műszakjai kerülnek a szerverre."
 };

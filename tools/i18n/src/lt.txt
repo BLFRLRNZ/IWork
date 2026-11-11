@@ -705,3 +705,15 @@ Ir budėjimui
 Siųsti bandomąjį pranešimą
 Priminimams artimiausių 45 dienų pamainos saugomos serveryje su laiku ir pamainos pavadinimu. Jei pakeisi pamainą, priminimas atsinaujins pats.
 vardas@pavyzdys.lt
+Čia rasi visa kita: pamainų rotaciją, atostogas ir laisvas valandas, valandų banką, atlyginimo įvertį, atlyginimo lapelį, priminimus prieš pamainas, mėnesio PDF, eksportą į kalendorių, duomenų kopiją ir Vadovą.
+Šalis ir šventės, kalba, šviesi ar tamsi tema ir paskyra priminimams.
+Paskyra ir priminimai
+Kaip gauti pranešimą prieš pamainas?
+Atidaryk {p}, prisijunk savo el. paštu ir įjunk {a}: pasirink, kiek anksčiau nori pranešimo, taip pat antram darbui ir budėjimui. Pranešimas ateina net kai programėlė uždaryta. Su {b} iškart patikrinsi, ar veikia.
+Kaip susikurti paskyrą? Ar reikia slaptažodžio?
+Slaptažodžio nereikia. Skiltyje {p} paliesk {a}, įrašyk savo el. paštą ir gautą 6 skaitmenų kodą. Jei jo nerandi, patikrink šlamšto aplanką. Paskyra reikalinga tik priminimams: be jos programėlė veikia kaip visada.
+Pranešimai neateina: ką daryti?
+„iPhone“ pranešimai ateina tik tada, kai programėlė yra pradžios ekrane ir ją atidarai iš ten. Taip pat patikrink, ar {app} pranešimai leidžiami telefono nustatymuose, tada išjunk ir vėl įjunk {a} ir išbandyk {b}.
+Kas saugoma serveryje?
+Tik tavo el. paštas ir, jei įjungsi priminimus, artimiausių 45 dienų pamainos su laiku ir pamainos pavadinimu, kad žinotume, kada tau priminti. Pastabos, žymos, atlyginimo lapeliai ir atlyginimo įvertis lieka telefone. Paskyrą ir duomenis serveryje gali ištrinti skiltyje {p}.
+Tik šiame įrenginyje, naršyklėje. Be paskyros niekas nesiunčiama į serverį; įjungus priminimus, į serverį keliauja tik artimiausių 45 dienų pamainos.

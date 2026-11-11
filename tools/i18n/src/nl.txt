@@ -705,3 +705,15 @@ Ook voor bereikbaarheid
 Stuur een testmelding
 Voor de herinneringen worden de diensten van de komende 45 dagen op de server opgeslagen, met tijd en naam van de dienst. Als je een dienst wijzigt, wordt de herinnering vanzelf bijgewerkt.
 naam@voorbeeld.nl
+Hier vind je al het andere: roosterschema, verlof en vrije uren, urenbank, loonschatting, loonstrook, herinneringen voor diensten, PDF van de maand, export naar de agenda, back-up van je gegevens en de Gids.
+Land en feestdagen, taal, licht of donker thema en het account voor herinneringen.
+Account en herinneringen
+Hoe krijg ik een melding voor mijn diensten?
+Open {p}, log in met je e-mailadres en zet {a} aan: kies hoe lang van tevoren je een melding wilt, ook voor je tweede baan en bereikbaarheid. De melding komt ook als de app dicht is. Met {b} controleer je meteen of het werkt.
+Hoe maak ik een account? Heb ik een wachtwoord nodig?
+Je hebt geen wachtwoord nodig. Tik in {p} op {a}, vul je e-mailadres in en daarna de 6-cijferige code die je krijgt. Vind je hem niet, kijk dan in je spammap. Het account is alleen voor herinneringen: zonder account werkt de app zoals altijd.
+Meldingen komen niet aan: wat moet ik doen?
+Op de iPhone komen meldingen alleen binnen als de app op het beginscherm staat en je hem vanaf daar opent. Controleer ook of meldingen voor {app} zijn toegestaan in de instellingen van je telefoon, zet dan {a} uit en weer aan en probeer {b}.
+Wat wordt er op de server opgeslagen?
+Alleen je e-mailadres en, als je herinneringen aanzet, de diensten van de komende 45 dagen met tijd en naam van de dienst, zodat we weten wanneer we je moeten waarschuwen. Notities, labels, loonstroken en loonschatting blijven op je telefoon. Je kunt het account en de gegevens op de server verwijderen via {p}.
+Alleen op dit apparaat, in de browser. Zonder account wordt er niets naar een server gestuurd; met herinneringen aan gaan alleen de diensten van de komende 45 dagen naar de server.

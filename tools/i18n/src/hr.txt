@@ -705,3 +705,15 @@ I za pripravnost
 Pošalji probnu obavijest
 Za podsjetnike se smjene za sljedećih 45 dana spremaju na poslužitelj, s vremenom i nazivom smjene. Ako promijeniš smjenu, podsjetnik se sam ažurira.
 ime@primjer.hr
+Ovdje nalaziš sve ostalo: rotaciju smjena, godišnji odmor i slobodne sate, banku sati, procjenu plaće, platnu listu, podsjetnike prije smjena, PDF mjeseca, izvoz u kalendar, kopiju podataka i Vodič.
+Država i blagdani, jezik, svijetla ili tamna tema i račun za podsjetnike.
+Račun i podsjetnici
+Kako dobiti obavijest prije smjena?
+Otvori {p}, prijavi se svojom e-poštom i uključi {a}: odaberi koliko ranije želiš obavijest, i za drugi posao i pripravnost. Obavijest stiže i kad je aplikacija zatvorena. S {b} odmah provjeriš radi li.
+Kako napraviti račun? Treba li lozinka?
+Lozinka nije potrebna. U {p} dodirni {a}, upiši svoju e-poštu i kôd od 6 znamenki koji ti stigne. Ako ga ne nađeš, pogledaj u neželjenu poštu. Račun služi samo za podsjetnike: bez njega aplikacija radi kao i uvijek.
+Obavijesti ne stižu: što učiniti?
+Na iPhoneu obavijesti stižu samo ako je aplikacija na početnom zaslonu i otvaraš je odande. Provjeri i jesu li obavijesti za {app} dopuštene u postavkama telefona, zatim isključi i ponovno uključi {a} i probaj {b}.
+Što se sprema na poslužitelj?
+Samo tvoja e-pošta i, ako uključiš podsjetnike, smjene za sljedećih 45 dana s vremenom i nazivom smjene, da znamo kada te obavijestiti. Bilješke, oznake, platne liste i procjena plaće ostaju na telefonu. Račun i podatke na poslužitelju možeš izbrisati u {p}.
+Samo na ovom uređaju, u pregledniku. Bez računa ništa se ne šalje na poslužitelj; s uključenim podsjetnicima na poslužitelj idu samo smjene za sljedećih 45 dana.

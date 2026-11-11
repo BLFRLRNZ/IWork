@@ -319,7 +319,7 @@
 "San Francesco": "Свети Франциск",
 "Pasqua": "Великден",
 "Lunedì dell'Angelo": "Велики понеделник",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Календар",
 "Le modifiche si salvano da sole.": "Промените се запазват сами.",
 "Inizio turno": "Начало на смяната",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "И за дежурствата",
 "Manda una notifica di prova": "Изпрати тестово известие",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "За напомнянията смените за следващите 45 дни се пазят на сървъра, с час и име на смяната. Ако промениш смяна, напомнянето се обновява само.",
-"nome@esempio.it": "ime@primer.bg"
+"nome@esempio.it": "ime@primer.bg",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Тук намираш всичко останало: ротация на смените, отпуски и почивни часове, банка часове, оценка на заплатата, фиш за заплата, напомняния преди смените, PDF за месеца, износ в календара, копие на данните и Ръководството.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Държава и празници, език, светла или тъмна тема и профилът за напомнянията.",
+"Account e promemoria": "Профил и напомняния",
+"Come ricevo un avviso prima dei turni?": "Как да получавам известие преди смените?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Отвори {p}, влез с имейла си и включи {a}: избери колко по-рано да е известието, също за втората работа и дежурствата. Известието идва дори когато приложението е затворено. С {b} веднага проверяваш дали работи.",
+"Come creo un account? Serve una password?": "Как да си направя профил? Трябва ли парола?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Не е нужна парола. В {p} докосни {a}, въведи имейла си и после 6-цифрения код, който получиш. Ако не го намираш, провери папката за спам. Профилът е само за напомнянията: без него приложението работи както винаги.",
+"Le notifiche non arrivano: cosa faccio?": "Известията не идват: какво да направя?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "На iPhone известията идват само ако приложението е на началния екран и го отваряш оттам. Провери също дали известията за {app} са разрешени в настройките на телефона, после изключи и включи отново {a} и опитай {b}.",
+"Cosa viene salvato sul server?": "Какво се пази на сървъра?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Само имейлът ти и, ако включиш напомнянията, смените за следващите 45 дни с час и име на смяната, за да знаем кога да те уведомим. Бележките, етикетите, фишовете за заплата и оценката на заплатата остават на телефона. Можеш да изтриеш профила и данните на сървъра от {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Само на това устройство, в браузъра. Без профил нищо не се изпраща на сървър; с включени напомняния на сървъра отиват само смените за следващите 45 дни."
 };

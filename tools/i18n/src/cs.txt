@@ -705,3 +705,15 @@ Také pro pohotovost
 Poslat zkušební oznámení
 Kvůli připomenutím se směny na příštích 45 dní ukládají na server, s časem a názvem směny. Když směnu změníš, připomenutí se samo aktualizuje.
 jmeno@priklad.cz
+Tady najdeš všechno ostatní: rotaci směn, dovolenou a volno, banku hodin, odhad mzdy, výplatní pásku, připomenutí před směnami, PDF měsíce, export do kalendáře, zálohu dat a Průvodce.
+Země a svátky, jazyk, světlý nebo tmavý motiv a účet pro připomenutí.
+Účet a připomenutí
+Jak dostanu upozornění před směnami?
+Otevři {p}, přihlas se svým e-mailem a zapni {a}: vyber, jak dlouho předem chceš upozornění, i pro druhou práci a pohotovost. Oznámení přijde, i když je aplikace zavřená. Pomocí {b} hned ověříš, že to funguje.
+Jak si založím účet? Potřebuju heslo?
+Heslo nepotřebuješ. V {p} klepni na {a}, zadej svůj e-mail a pak 6místný kód, který ti přijde. Pokud ho nenajdeš, podívej se do nevyžádané pošty. Účet slouží jen pro připomenutí: bez něj aplikace funguje jako vždy.
+Oznámení nechodí: co mám dělat?
+Na iPhonu chodí oznámení jen tehdy, když je aplikace na ploše a otevíráš ji odtamtud. Zkontroluj také, že jsou oznámení pro {app} povolená v nastavení telefonu, pak vypni a znovu zapni {a} a zkus {b}.
+Co se ukládá na server?
+Jen tvůj e-mail a, pokud zapneš připomenutí, směny na příštích 45 dní s časem a názvem směny, abychom věděli, kdy tě upozornit. Poznámky, štítky, výplatní pásky a odhad mzdy zůstávají v telefonu. Účet a data na serveru můžeš smazat v {p}.
+Jen v tomto zařízení, v prohlížeči. Bez účtu se nic neposílá na server; se zapnutými připomenutími jdou na server jen směny na příštích 45 dní.

@@ -705,3 +705,15 @@ Także dla dyżurów
 Wyślij powiadomienie testowe
 Na potrzeby przypomnień zmiany z najbliższych 45 dni są zapisywane na serwerze, z godziną i nazwą zmiany. Gdy coś zmienisz w grafiku, przypomnienie zaktualizuje się samo.
 imie@przyklad.pl
+Tutaj znajdziesz wszystko inne: grafik cykliczny, urlopy i wolne godziny, bank godzin, szacunkową płacę, pasek wypłaty, przypomnienia przed zmianami, PDF miesiąca, eksport do kalendarza, kopię danych i Przewodnik.
+Kraj i święta, język, jasny lub ciemny motyw oraz konto do przypomnień.
+Konto i przypomnienia
+Jak dostać powiadomienie przed zmianami?
+Otwórz {p}, zaloguj się adresem e-mail i włącz {a}: wybierz, z jakim wyprzedzeniem chcesz powiadomienie, także dla drugiej pracy i dyżurów. Powiadomienie przychodzi nawet przy zamkniętej aplikacji. Przyciskiem {b} od razu sprawdzisz, czy działa.
+Jak założyć konto? Czy potrzebne jest hasło?
+Hasło nie jest potrzebne. W {p} dotknij {a}, wpisz swój e-mail, a potem 6-cyfrowy kod, który dostaniesz. Jeśli go nie widzisz, sprawdź folder spam. Konto służy tylko do przypomnień: bez niego aplikacja działa jak zawsze.
+Powiadomienia nie przychodzą: co robić?
+Na iPhonie powiadomienia przychodzą tylko wtedy, gdy aplikacja jest na ekranie początkowym i otwierasz ją stamtąd. Sprawdź też, czy powiadomienia {app} są dozwolone w ustawieniach telefonu, potem wyłącz i włącz {a} i wypróbuj {b}.
+Co jest zapisywane na serwerze?
+Tylko twój e-mail i, jeśli włączysz przypomnienia, zmiany z najbliższych 45 dni z godziną i nazwą zmiany, żeby wiedzieć, kiedy cię powiadomić. Notatki, etykiety, paski wypłaty i szacunkowa płaca zostają w telefonie. Konto i dane na serwerze możesz usunąć w {p}.
+Tylko na tym urządzeniu, w przeglądarce. Bez konta nic nie trafia na serwer; przy włączonych przypomnieniach na serwer trafiają tylko zmiany z najbliższych 45 dni.

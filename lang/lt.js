@@ -351,7 +351,7 @@
 "San Francesco": "Šv. Pranciškus",
 "Pasqua": "Velykos",
 "Lunedì dell'Angelo": "Antroji Velykų diena",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalendorius",
 "Le modifiche si salvano da sole.": "Pakeitimai išsaugomi patys.",
 "Inizio turno": "Pamainos pradžia",
@@ -819,5 +819,17 @@
 "Anche per la reperibilità": "Ir budėjimui",
 "Manda una notifica di prova": "Siųsti bandomąjį pranešimą",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Priminimams artimiausių 45 dienų pamainos saugomos serveryje su laiku ir pamainos pavadinimu. Jei pakeisi pamainą, priminimas atsinaujins pats.",
-"nome@esempio.it": "vardas@pavyzdys.lt"
+"nome@esempio.it": "vardas@pavyzdys.lt",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Čia rasi visa kita: pamainų rotaciją, atostogas ir laisvas valandas, valandų banką, atlyginimo įvertį, atlyginimo lapelį, priminimus prieš pamainas, mėnesio PDF, eksportą į kalendorių, duomenų kopiją ir Vadovą.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Šalis ir šventės, kalba, šviesi ar tamsi tema ir paskyra priminimams.",
+"Account e promemoria": "Paskyra ir priminimai",
+"Come ricevo un avviso prima dei turni?": "Kaip gauti pranešimą prieš pamainas?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Atidaryk {p}, prisijunk savo el. paštu ir įjunk {a}: pasirink, kiek anksčiau nori pranešimo, taip pat antram darbui ir budėjimui. Pranešimas ateina net kai programėlė uždaryta. Su {b} iškart patikrinsi, ar veikia.",
+"Come creo un account? Serve una password?": "Kaip susikurti paskyrą? Ar reikia slaptažodžio?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Slaptažodžio nereikia. Skiltyje {p} paliesk {a}, įrašyk savo el. paštą ir gautą 6 skaitmenų kodą. Jei jo nerandi, patikrink šlamšto aplanką. Paskyra reikalinga tik priminimams: be jos programėlė veikia kaip visada.",
+"Le notifiche non arrivano: cosa faccio?": "Pranešimai neateina: ką daryti?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "„iPhone“ pranešimai ateina tik tada, kai programėlė yra pradžios ekrane ir ją atidarai iš ten. Taip pat patikrink, ar {app} pranešimai leidžiami telefono nustatymuose, tada išjunk ir vėl įjunk {a} ir išbandyk {b}.",
+"Cosa viene salvato sul server?": "Kas saugoma serveryje?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Tik tavo el. paštas ir, jei įjungsi priminimus, artimiausių 45 dienų pamainos su laiku ir pamainos pavadinimu, kad žinotume, kada tau priminti. Pastabos, žymos, atlyginimo lapeliai ir atlyginimo įvertis lieka telefone. Paskyrą ir duomenis serveryje gali ištrinti skiltyje {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Tik šiame įrenginyje, naršyklėje. Be paskyros niekas nesiunčiama į serverį; įjungus priminimus, į serverį keliauja tik artimiausių 45 dienų pamainos."
 };

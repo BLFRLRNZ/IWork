@@ -319,7 +319,7 @@
 "San Francesco": "San Francisco",
 "Pasqua": "Domingo de Pascua",
 "Lunedì dell'Angelo": "Lunes de Pascua",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Calendario",
 "Le modifiche si salvano da sole.": "Los cambios se guardan solos.",
 "Inizio turno": "Inicio del turno",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "También para las guardias",
 "Manda una notifica di prova": "Enviar una notificación de prueba",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Para los recordatorios, los turnos de los próximos 45 días se guardan en el servidor, con horario y nombre del turno. Si cambias un turno, el recordatorio se actualiza solo.",
-"nome@esempio.it": "nombre@ejemplo.es"
+"nome@esempio.it": "nombre@ejemplo.es",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Aquí encuentras todo lo demás: rotación de turnos, vacaciones y permisos, bolsa de horas, estimación de nómina, nómina, recordatorios antes de los turnos, PDF del mes, exportación al calendario, copia de los datos y la Guía.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "País y festivos, idioma, tema claro u oscuro y la cuenta para los recordatorios.",
+"Account e promemoria": "Cuenta y recordatorios",
+"Come ricevo un avviso prima dei turni?": "¿Cómo recibo un aviso antes de mis turnos?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Abre {p}, inicia sesión con tu correo y activa {a}: elige con cuánta antelación quieres el aviso, también para el segundo empleo y las guardias. La notificación llega incluso con la app cerrada. Con {b} compruebas enseguida que funciona.",
+"Come creo un account? Serve una password?": "¿Cómo creo una cuenta? ¿Necesito contraseña?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "No necesitas contraseña. En {p} toca {a}, escribe tu correo e introduce el código de 6 cifras que te llega. Si no lo encuentras, mira en la carpeta de spam. La cuenta solo sirve para los recordatorios: sin ella la app funciona como siempre.",
+"Le notifiche non arrivano: cosa faccio?": "Las notificaciones no llegan: ¿qué hago?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "En iPhone las notificaciones solo llegan si la app está en la pantalla de inicio y la abres desde allí. Comprueba también que las notificaciones de {app} estén permitidas en los ajustes del teléfono; luego desactiva y vuelve a activar {a} y prueba con {b}.",
+"Cosa viene salvato sul server?": "¿Qué se guarda en el servidor?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Solo tu correo y, si activas los recordatorios, los turnos de los próximos 45 días con horario y nombre del turno, para saber cuándo avisarte. Notas, etiquetas, nóminas y estimación de nómina se quedan en el teléfono. Puedes eliminar la cuenta y los datos del servidor desde {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Solo en este dispositivo, en el navegador. Sin cuenta no se envía nada a ningún servidor; con los recordatorios activados, al servidor solo van los turnos de los próximos 45 días."
 };

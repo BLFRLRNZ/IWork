@@ -705,3 +705,15 @@ Cu 3 ore înainte
 Trimite o notificare de test
 Pentru mementouri, turele din următoarele 45 de zile sunt salvate pe server, cu ora și numele turei. Dacă schimbi o tură, mementoul se actualizează singur.
 nume@exemplu.ro
+Aici găsești tot restul: rotația turelor, concedii și învoiri, banca de ore, estimarea salariului, fluturașul de salariu, mementouri înainte de ture, PDF-ul lunii, exportul în calendar, copia datelor și Ghidul.
+Țara și sărbătorile, limba, tema deschisă sau întunecată și contul pentru mementouri.
+Cont și mementouri
+Cum primesc o notificare înainte de ture?
+Deschide {p}, conectează-te cu e-mailul tău și activează {a}: alege cu cât timp înainte vrei notificarea, și pentru al doilea loc de muncă și gardă. Notificarea sosește chiar și cu aplicația închisă. Cu {b} verifici imediat că funcționează.
+Cum îmi fac un cont? Am nevoie de parolă?
+Nu ai nevoie de parolă. În {p} atinge {a}, scrie e-mailul și introdu codul de 6 cifre pe care îl primești. Dacă nu-l găsești, uită-te în dosarul de spam. Contul servește doar pentru mementouri: fără el, aplicația funcționează ca întotdeauna.
+Notificările nu sosesc: ce fac?
+Pe iPhone notificările sosesc doar dacă aplicația este pe ecranul principal și o deschizi de acolo. Verifică și că notificările pentru {app} sunt permise în setările telefonului, apoi oprește și repornește {a} și încearcă {b}.
+Ce se salvează pe server?
+Doar e-mailul tău și, dacă activezi mementourile, turele din următoarele 45 de zile cu ora și numele turei, ca să știm când să te anunțăm. Notițele, etichetele, fluturașii de salariu și estimarea salariului rămân pe telefon. Poți șterge contul și datele de pe server din {p}.
+Doar pe acest dispozitiv, în browser. Fără cont nu se trimite nimic pe un server; cu mementourile active, pe server ajung doar turele din următoarele 45 de zile.

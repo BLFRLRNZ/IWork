@@ -319,7 +319,7 @@
 "San Francesco": "Αγίου Φραγκίσκου",
 "Pasqua": "Κυριακή του Πάσχα",
 "Lunedì dell'Angelo": "Δευτέρα του Πάσχα",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Ημερολόγιο",
 "Le modifiche si salvano da sole.": "Οι αλλαγές αποθηκεύονται αυτόματα.",
 "Inizio turno": "Έναρξη βάρδιας",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Και για την εφημερία",
 "Manda una notifica di prova": "Αποστολή δοκιμαστικής ειδοποίησης",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Για τις υπενθυμίσεις, οι βάρδιες των επόμενων 45 ημερών αποθηκεύονται στον διακομιστή, με ώρα και όνομα βάρδιας. Αν αλλάξεις μια βάρδια, η υπενθύμιση ενημερώνεται μόνη της.",
-"nome@esempio.it": "onoma@paradeigma.gr"
+"nome@esempio.it": "onoma@paradeigma.gr",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Εδώ βρίσκεις όλα τα υπόλοιπα: εναλλαγή βαρδιών, άδειες και ώρες άδειας, τράπεζα ωρών, εκτίμηση μισθού, εκκαθαριστικό, υπενθυμίσεις πριν από τις βάρδιες, PDF του μήνα, εξαγωγή στο ημερολόγιο, αντίγραφο των δεδομένων και τον Οδηγό.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Χώρα και αργίες, γλώσσα, φωτεινό ή σκούρο θέμα και ο λογαριασμός για τις υπενθυμίσεις.",
+"Account e promemoria": "Λογαριασμός και υπενθυμίσεις",
+"Come ricevo un avviso prima dei turni?": "Πώς παίρνω ειδοποίηση πριν από τις βάρδιές μου;",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Άνοιξε {p}, συνδέσου με το email σου και ενεργοποίησε {a}: διάλεξε πόσο νωρίτερα θέλεις την ειδοποίηση, και για τη δεύτερη δουλειά και την εφημερία. Η ειδοποίηση έρχεται ακόμη και με την εφαρμογή κλειστή. Με {b} ελέγχεις αμέσως ότι λειτουργεί.",
+"Come creo un account? Serve una password?": "Πώς φτιάχνω λογαριασμό; Χρειάζεται κωδικός πρόσβασης;",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Δεν χρειάζεται κωδικός πρόσβασης. Στο {p} πάτα {a}, γράψε το email σου και τον 6ψήφιο κωδικό που θα λάβεις. Αν δεν τον βρίσκεις, κοίτα στα ανεπιθύμητα. Ο λογαριασμός χρειάζεται μόνο για τις υπενθυμίσεις: χωρίς αυτόν η εφαρμογή λειτουργεί όπως πάντα.",
+"Le notifiche non arrivano: cosa faccio?": "Οι ειδοποιήσεις δεν έρχονται: τι κάνω;",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "Στο iPhone οι ειδοποιήσεις έρχονται μόνο αν η εφαρμογή είναι στην οθόνη Αφετηρίας και την ανοίγεις από εκεί. Έλεγξε επίσης ότι οι ειδοποιήσεις του {app} επιτρέπονται στις ρυθμίσεις του τηλεφώνου, μετά απενεργοποίησε και ενεργοποίησε ξανά το {a} και δοκίμασε το {b}.",
+"Cosa viene salvato sul server?": "Τι αποθηκεύεται στον διακομιστή;",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Μόνο το email σου και, αν ενεργοποιήσεις τις υπενθυμίσεις, οι βάρδιες των επόμενων 45 ημερών με ώρα και όνομα βάρδιας, για να ξέρουμε πότε να σε ειδοποιήσουμε. Σημειώσεις, ετικέτες, εκκαθαριστικά και εκτίμηση μισθού μένουν στο τηλέφωνο. Μπορείς να διαγράψεις τον λογαριασμό και τα δεδομένα στον διακομιστή από {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Μόνο σε αυτή τη συσκευή, στο πρόγραμμα περιήγησης. Χωρίς λογαριασμό δεν στέλνεται τίποτα σε διακομιστή· με ενεργές υπενθυμίσεις, στον διακομιστή πηγαίνουν μόνο οι βάρδιες των επόμενων 45 ημερών."
 };

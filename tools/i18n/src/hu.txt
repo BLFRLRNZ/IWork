@@ -705,3 +705,15 @@ Készenlét esetén is
 Tesztértesítés küldése
 Az emlékeztetőkhöz a következő 45 nap műszakjait a szerveren tároljuk, időponttal és a műszak nevével. Ha módosítasz egy műszakot, az emlékeztető magától frissül.
 nev@pelda.hu
+Itt találsz minden mást: műszakbeosztást, szabadságot és szabad órákat, órabankot, bérbecslést, bérjegyzéket, emlékeztetőket a műszakok előtt, havi PDF-et, naptárexportot, adatmentést és az Útmutatót.
+Ország és ünnepnapok, nyelv, világos vagy sötét téma és a fiók az emlékeztetőkhöz.
+Fiók és emlékeztetők
+Hogyan kapok értesítést a műszakjaim előtt?
+Nyisd meg ezt: {p}, jelentkezz be az e-mail-címeddel, és kapcsold be ezt: {a}. Válaszd ki, mennyivel előtte kérsz értesítést, a második munkához és a készenléthez is. Az értesítés akkor is megérkezik, ha az app be van zárva. Ezzel: {b} rögtön ellenőrizheted, hogy működik-e.
+Hogyan hozok létre fiókot? Kell jelszó?
+Nem kell jelszó. Itt: {p} koppints erre: {a}, írd be az e-mail-címedet, majd a kapott 6 jegyű kódot. Ha nem találod, nézd meg a levélszemét mappát. A fiók csak az emlékeztetőkhöz kell: nélküle az app ugyanúgy működik, mint eddig.
+Nem érkeznek meg az értesítések: mit tegyek?
+iPhone-on az értesítések csak akkor érkeznek meg, ha az app a főképernyőn van, és onnan nyitod meg. Ellenőrizd azt is, hogy a(z) {app} értesítései engedélyezve vannak-e a telefon beállításaiban, aztán kapcsold ki és újra be ezt: {a}, és próbáld ki ezt: {b}.
+Mit tárolunk a szerveren?
+Csak az e-mail-címedet és, ha bekapcsolod az emlékeztetőket, a következő 45 nap műszakjait időponttal és a műszak nevével, hogy tudjuk, mikor értesítsünk. A jegyzetek, címkék, bérjegyzékek és a bérbecslés a telefonon maradnak. A fiókot és a szerveren tárolt adatokat itt törölheted: {p}.
+Csak ezen az eszközön, a böngészőben. Fiók nélkül semmi sem kerül szerverre; bekapcsolt emlékeztetőkkel csak a következő 45 nap műszakjai kerülnek a szerverre.

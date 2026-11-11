@@ -319,7 +319,7 @@
 "San Francesco": "São Francisco",
 "Pasqua": "Domingo de Páscoa",
 "Lunedì dell'Angelo": "Segunda-feira de Páscoa",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Calendário",
 "Le modifiche si salvano da sole.": "As alterações são guardadas automaticamente.",
 "Inizio turno": "Início do turno",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Também para a prevenção",
 "Manda una notifica di prova": "Enviar uma notificação de teste",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Para os lembretes, os turnos dos próximos 45 dias são guardados no servidor, com horário e nome do turno. Se alterar um turno, o lembrete atualiza-se sozinho.",
-"nome@esempio.it": "nome@exemplo.pt"
+"nome@esempio.it": "nome@exemplo.pt",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Aqui encontra tudo o resto: rotação de turnos, férias e licenças, banco de horas, estimativa de salário, recibo de vencimento, lembretes antes dos turnos, PDF do mês, exportação para o calendário, cópia dos dados e o Guia.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "País e feriados, idioma, tema claro ou escuro e a conta para os lembretes.",
+"Account e promemoria": "Conta e lembretes",
+"Come ricevo un avviso prima dei turni?": "Como recebo um aviso antes dos meus turnos?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Abra {p}, inicie sessão com o seu e-mail e ative {a}: escolha com que antecedência quer o aviso, também para o segundo emprego e a prevenção. A notificação chega mesmo com a app fechada. Com {b} verifica logo se funciona.",
+"Come creo un account? Serve una password?": "Como crio uma conta? É precisa uma palavra-passe?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Não é precisa nenhuma palavra-passe. Em {p} toque em {a}, escreva o seu e-mail e introduza o código de 6 dígitos que recebe. Se não o encontrar, veja na pasta de spam. A conta serve apenas para os lembretes: sem ela a app funciona como sempre.",
+"Le notifiche non arrivano: cosa faccio?": "As notificações não chegam: o que faço?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "No iPhone as notificações só chegam se a app estiver no ecrã principal e a abrir a partir daí. Verifique também se as notificações da {app} estão permitidas nas definições do telemóvel; depois desative e volte a ativar {a} e experimente {b}.",
+"Cosa viene salvato sul server?": "O que é guardado no servidor?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Apenas o seu e-mail e, se ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisá-lo. Notas, etiquetas, recibos de vencimento e estimativa de salário ficam no telemóvel. Pode eliminar a conta e os dados no servidor a partir de {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Apenas neste dispositivo, no navegador. Sem conta nada é enviado para um servidor; com os lembretes ativos, só os turnos dos próximos 45 dias vão para o servidor."
 };

@@ -705,3 +705,15 @@ Aussi pour l'astreinte
 Envoyer une notification de test
 Pour les rappels, les postes des 45 prochains jours sont enregistrés sur le serveur, avec l'horaire et le nom du poste. Si vous modifiez un poste, le rappel se met à jour tout seul.
 nom@exemple.fr
+Vous y trouverez tout le reste : roulement, congés et absences, banque d'heures, estimation de la paie, bulletin de paie, rappels avant les postes, PDF du mois, export vers le calendrier, sauvegarde des données et le Guide.
+Pays et jours fériés, langue, thème clair ou sombre et le compte pour les rappels.
+Compte et rappels
+Comment recevoir une notification avant mes postes ?
+Ouvrez {p}, connectez-vous avec votre e-mail et activez {a} : choisissez combien de temps avant vous voulez être prévenu, aussi pour le deuxième emploi et l'astreinte. La notification arrive même app fermée. Avec {b}, vous vérifiez tout de suite que cela fonctionne.
+Comment créer un compte ? Faut-il un mot de passe ?
+Aucun mot de passe n'est nécessaire. Dans {p}, touchez {a}, saisissez votre e-mail puis le code à 6 chiffres que vous recevez. Si vous ne le trouvez pas, regardez dans les courriers indésirables. Le compte sert seulement aux rappels : sans compte, l'app fonctionne comme toujours.
+Les notifications n'arrivent pas : que faire ?
+Sur iPhone, les notifications n'arrivent que si l'app est sur l'écran d'accueil et que vous l'ouvrez depuis là. Vérifiez aussi que les notifications de {app} sont autorisées dans les réglages du téléphone, puis désactivez et réactivez {a} et essayez {b}.
+Qu'est-ce qui est enregistré sur le serveur ?
+Uniquement votre e-mail et, si vous activez les rappels, les postes des 45 prochains jours avec l'horaire et le nom du poste, pour savoir quand vous prévenir. Notes, étiquettes, bulletins de paie et estimation de la paie restent sur le téléphone. Vous pouvez supprimer le compte et les données sur le serveur depuis {p}.
+Uniquement sur cet appareil, dans le navigateur. Sans compte, rien n'est envoyé à un serveur ; avec les rappels activés, seuls les postes des 45 prochains jours vont sur le serveur.

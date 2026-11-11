@@ -1110,7 +1110,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.8.0";
+const APP_VERSION="2.8.1";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1990,8 +1990,8 @@ function tourSteps(){const vis=id=>{const e=$(id);return e&&!e.hidden&&e.offsetP
   [()=>vis("nextCard"),t("Il prossimo turno"),t("Qui in alto vedi sempre il prossimo turno, o quello in corso.")],
   [()=>vis("sumCard"),t("Il riepilogo del mese"),t("Ore lavorate, straordinari, notti e festivi del mese, con gli avvisi quando un turno non rispetta le regole sul riposo.")],
   [()=>document.querySelector(".tabs"),t("Calendario e Anno"),t("Passa ad Anno per vedere i totali di tutto l'anno, mese per mese.")],
-  [()=>$("toolsBtn"),t("Strumenti"),t("Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.")],
-  [()=>$("setBtn"),t("Impostazioni"),t("Paese e festività, lingua e tema chiaro o scuro.")],
+  [()=>$("toolsBtn"),t("Strumenti"),t("Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.")],
+  [()=>$("setBtn"),t("Impostazioni"),t("Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.")],
   [null,t("Tutto pronto"),t("Comincia segnando i turni di questa settimana.")]];}
 function startTour(){if(TR)return;if(document.querySelector("dialog[open]"))document.querySelectorAll("dialog[open]").forEach(d=>d.close());
   if(mode==="yr")$("tabCal").click();
@@ -2052,8 +2052,13 @@ function helpData(){const MK={a:"\u0001a\u0002",b:"\u0001b\u0002",c:"\u0001c\u00
     [t("Come mando i turni della settimana a qualcuno?"),[t("In {p} scegli la settimana e mandala come immagine o come testo, per esempio in una chat.",MK),{p:tl("Condividi la settimana")}],"shareBtn"],
     [t("Come stampo un mese?"),[t("In {p} scegli il mese: ottieni un foglio A4 con calendario e totali, da stampare o inviare.",MK),{p:tl("PDF del mese")}],"pdfBtn"],
     [t("Come metto i turni su Google Calendar, Calendario di Apple o Outlook?"),[t("In {p} scegli da quando, per quanti mesi e cosa includere, poi apri il file con il tuo calendario: nella stessa schermata trovi i passaggi per ognuno. Se riesporti lo stesso periodo, i turni di solito si aggiornano invece di duplicarsi.",MK),{p:tl("Esporta nel calendario")}],"icsBtn"]]],
+  [t("Account e promemoria"),[
+    [t("Come ricevo un avviso prima dei turni?"),[t("Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.",MK),{p:tl("Promemoria"),a:T("Avvisami prima dei turni"),b:T("Manda una notifica di prova")}],"rmBtn"],
+    [t("Come creo un account? Serve una password?"),[t("Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.",MK),{p:P("Impostazioni","Account"),a:T("Accedi")}],"setBtn"],
+    [t("Le notifiche non arrivano: cosa faccio?"),[t("Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.",Object.assign({app:APP},MK)),{a:T("Avvisami prima dei turni"),b:T("Manda una notifica di prova")}],"rmBtn"],
+    [t("Cosa viene salvato sul server?"),[t("Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.",MK),{p:P("Impostazioni","Account")}],"setBtn"]]],
   [t("Dati, app e impostazioni"),[
-    [t("Dove sono salvati i miei turni?"),[t("Solo su questo dispositivo, nel browser. Non serve un account e niente viene inviato a un server.",MK),{}]],
+    [t("Dove sono salvati i miei turni?"),[t("Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.",MK),{}]],
     [t("Come faccio una copia o passo a un altro telefono?"),[t("Con {p} ottieni un file con turni e impostazioni. Sull'altro telefono apri l'app e usa {q}. Il pallino su {a} ti ricorda quando è il momento di farne una.",MK),{p:tl("Salva una copia dei turni"),q:tl("Carica una copia"),a:T("Strumenti")}],"bakBtn"],
     [t("Se cancello i dati del browser perdo i turni?"),[t("Sì, se non hai una copia. Per questo conviene salvarne una ogni tanto, soprattutto prima di cambiare telefono.",MK),{}]],
     [t("Come installo l'app sul telefono?"),[t("Su iPhone apri l'app in Safari, tocca Condividi e poi Aggiungi alla schermata Home. Su Android apri il menu di Chrome e scegli Installa app o Aggiungi a schermata Home. Una volta installata funziona anche senza connessione.",MK),{}]],

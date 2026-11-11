@@ -705,3 +705,15 @@ Ka valve jaoks
 Saada testteavitus
 Meeldetuletuste jaoks hoitakse serveris järgmise 45 päeva vahetusi koos kellaaja ja vahetuse nimega. Kui muudad vahetust, uueneb meeldetuletus ise.
 nimi@naide.ee
+Siit leiad kõik muu: vahetuste rotatsiooni, puhkused ja vabad tunnid, tundide panga, palgahinnangu, palgalehe, meeldetuletused enne vahetusi, kuu PDF-i, kalendrisse ekspordi, andmete koopia ja Juhendi.
+Riik ja pühad, keel, hele või tume teema ning konto meeldetuletuste jaoks.
+Konto ja meeldetuletused
+Kuidas saada teavitus enne vahetusi?
+Ava {p}, logi sisse oma e-postiga ja lülita sisse {a}: vali, kui palju varem soovid teavitust, ka teise töö ja valve jaoks. Teavitus tuleb ka siis, kui rakendus on suletud. Nupuga {b} kontrollid kohe, kas see töötab.
+Kuidas konto luua? Kas on vaja parooli?
+Parooli pole vaja. Puuduta jaotises {p} nuppu {a}, sisesta oma e-post ja seejärel saadud 6-kohaline kood. Kui sa seda ei leia, vaata rämpsposti kausta. Konto on vaid meeldetuletuste jaoks: ilma selleta töötab rakendus nagu alati.
+Teavitused ei tule: mida teha?
+iPhone'is tulevad teavitused ainult siis, kui rakendus on avakuval ja avad selle sealt. Kontrolli ka, et {app} teavitused oleksid telefoni seadetes lubatud, siis lülita {a} välja ja uuesti sisse ning proovi nuppu {b}.
+Mida serveris hoitakse?
+Ainult sinu e-posti ja, kui lülitad meeldetuletused sisse, järgmise 45 päeva vahetusi koos kellaaja ja vahetuse nimega, et teada, millal sulle teada anda. Märkmed, sildid, palgalehed ja palgahinnang jäävad telefoni. Konto ja serveris olevad andmed saad kustutada jaotises {p}.
+Ainult selles seadmes, brauseris. Ilma kontota ei saadeta midagi serverisse; sisselülitatud meeldetuletustega lähevad serverisse ainult järgmise 45 päeva vahetused.

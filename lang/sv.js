@@ -319,7 +319,7 @@
 "San Francesco": "Sankt Franciskus",
 "Pasqua": "Påskdagen",
 "Lunedì dell'Angelo": "Annandag påsk",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Ändringar sparas automatiskt.",
 "Inizio turno": "Passets start",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Även för beredskap",
 "Manda una notifica di prova": "Skicka en testnotis",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "För påminnelserna sparas passen de kommande 45 dagarna på servern, med tid och passnamn. Om du ändrar ett pass uppdateras påminnelsen av sig själv.",
-"nome@esempio.it": "namn@exempel.se"
+"nome@esempio.it": "namn@exempel.se",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Här hittar du allt annat: passrotation, semester och lediga timmar, timbank, löneuppskattning, lönebesked, påminnelser före pass, månadens PDF, export till kalendern, kopia av data och Guiden.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Land och helgdagar, språk, ljust eller mörkt tema och kontot för påminnelser.",
+"Account e promemoria": "Konto och påminnelser",
+"Come ricevo un avviso prima dei turni?": "Hur får jag en notis före mina pass?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Öppna {p}, logga in med din e-post och slå på {a}: välj hur långt innan du vill få notisen, även för andra jobbet och beredskap. Notisen kommer även när appen är stängd. Med {b} kontrollerar du direkt att det fungerar.",
+"Come creo un account? Serve una password?": "Hur skapar jag ett konto? Behövs ett lösenord?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Inget lösenord behövs. Tryck på {a} i {p}, skriv din e-post och sedan den 6-siffriga koden du får. Hittar du den inte, titta i skräpposten. Kontot behövs bara för påminnelser: utan det fungerar appen som vanligt.",
+"Le notifiche non arrivano: cosa faccio?": "Notiserna kommer inte: vad gör jag?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "På iPhone kommer notiser bara om appen ligger på hemskärmen och du öppnar den därifrån. Kontrollera också att notiser för {app} är tillåtna i telefonens inställningar, slå sedan av och på {a} igen och prova {b}.",
+"Cosa viene salvato sul server?": "Vad sparas på servern?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Bara din e-post och, om du slår på påminnelser, passen de kommande 45 dagarna med tid och passnamn, så att vi vet när vi ska påminna dig. Anteckningar, etiketter, lönebesked och löneuppskattning stannar i telefonen. Du kan radera kontot och uppgifterna på servern under {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Bara på den här enheten, i webbläsaren. Utan konto skickas inget till en server; med påminnelser på skickas bara passen de kommande 45 dagarna till servern."
 };

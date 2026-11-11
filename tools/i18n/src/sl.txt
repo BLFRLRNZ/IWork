@@ -705,3 +705,15 @@ Tudi za pripravljenost
 Pošlji preizkusno obvestilo
 Za opomnike se izmene za naslednjih 45 dni shranijo na strežnik, s časom in imenom izmene. Če izmeno spremeniš, se opomnik sam posodobi.
 ime@primer.si
+Tukaj najdeš vse ostalo: menjavo izmen, dopust in proste ure, banko ur, oceno plače, plačilno listo, opomnike pred izmenami, PDF meseca, izvoz v koledar, kopijo podatkov in Vodnik.
+Država in prazniki, jezik, svetla ali temna tema ter račun za opomnike.
+Račun in opomniki
+Kako dobim obvestilo pred izmenami?
+Odpri {p}, prijavi se s svojim e-naslovom in vklopi {a}: izberi, koliko prej želiš obvestilo, tudi za drugo službo in pripravljenost. Obvestilo pride, tudi ko je aplikacija zaprta. Z {b} takoj preveriš, ali deluje.
+Kako ustvarim račun? Ali potrebujem geslo?
+Gesla ne potrebuješ. V {p} tapni {a}, vpiši svoj e-naslov in nato 6-mestno kodo, ki jo prejmeš. Če je ne najdeš, poglej v mapo z neželeno pošto. Račun je samo za opomnike: brez njega aplikacija deluje kot vedno.
+Obvestila ne prihajajo: kaj naj naredim?
+Na iPhonu obvestila prihajajo samo, če je aplikacija na začetnem zaslonu in jo odpiraš od tam. Preveri tudi, ali so obvestila za {app} dovoljena v nastavitvah telefona, nato izklopi in znova vklopi {a} in poskusi {b}.
+Kaj se shrani na strežnik?
+Samo tvoj e-naslov in, če vklopiš opomnike, izmene za naslednjih 45 dni s časom in imenom izmene, da vemo, kdaj te opomniti. Zapiski, oznake, plačilne liste in ocena plače ostanejo na telefonu. Račun in podatke na strežniku lahko izbrišeš v {p}.
+Samo v tej napravi, v brskalniku. Brez računa se nič ne pošlje na strežnik; z vklopljenimi opomniki gredo na strežnik samo izmene za naslednjih 45 dni.

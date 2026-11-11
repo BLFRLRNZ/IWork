@@ -319,7 +319,7 @@
 "San Francesco": "Svētais Francisks",
 "Pasqua": "Lieldienas",
 "Lunedì dell'Angelo": "Otrās Lieldienas",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalendārs",
 "Le modifiche si salvano da sole.": "Izmaiņas saglabājas pašas.",
 "Inizio turno": "Maiņas sākums",
@@ -778,5 +778,17 @@
 "Anche per la reperibilità": "Arī dežūrām",
 "Manda una notifica di prova": "Sūtīt testa paziņojumu",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Atgādinājumiem nākamo 45 dienu maiņas tiek saglabātas serverī ar laiku un maiņas nosaukumu. Ja maini maiņu, atgādinājums atjaunojas pats.",
-"nome@esempio.it": "vards@piemers.lv"
+"nome@esempio.it": "vards@piemers.lv",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Šeit atradīsi visu pārējo: maiņu rotāciju, atvaļinājumu un brīvās stundas, stundu banku, algas aprēķinu, algas lapiņu, atgādinājumus pirms maiņām, mēneša PDF, eksportu uz kalendāru, datu kopiju un Ceļvedi.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Valsts un svētku dienas, valoda, gaišs vai tumšs motīvs un konts atgādinājumiem.",
+"Account e promemoria": "Konts un atgādinājumi",
+"Come ricevo un avviso prima dei turni?": "Kā saņemt paziņojumu pirms maiņām?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Atver {p}, piesakies ar savu e-pastu un ieslēdz {a}: izvēlies, cik laicīgi vēlies paziņojumu, arī otrajam darbam un dežūrām. Paziņojums pienāk arī tad, ja lietotne ir aizvērta. Ar {b} uzreiz pārbaudīsi, vai tas darbojas.",
+"Come creo un account? Serve una password?": "Kā izveidot kontu? Vai vajag paroli?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Parole nav vajadzīga. Sadaļā {p} pieskaries {a}, ieraksti savu e-pastu un pēc tam saņemto 6 ciparu kodu. Ja to neatrodi, pārbaudi surogātpasta mapi. Konts vajadzīgs tikai atgādinājumiem: bez tā lietotne darbojas kā vienmēr.",
+"Le notifiche non arrivano: cosa faccio?": "Paziņojumi nepienāk: ko darīt?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "iPhone tālrunī paziņojumi pienāk tikai tad, ja lietotne ir sākuma ekrānā un tu to atver no turienes. Pārbaudi arī, vai {app} paziņojumi ir atļauti tālruņa iestatījumos, tad izslēdz un atkal ieslēdz {a} un izmēģini {b}.",
+"Cosa viene salvato sul server?": "Kas tiek saglabāts serverī?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Tikai tavs e-pasts un, ja ieslēdz atgādinājumus, nākamo 45 dienu maiņas ar laiku un maiņas nosaukumu, lai zinātu, kad tev atgādināt. Piezīmes, birkas, algas lapiņas un algas aprēķins paliek tālrunī. Kontu un datus serverī vari izdzēst sadaļā {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Tikai šajā ierīcē, pārlūkprogrammā. Bez konta nekas netiek sūtīts uz serveri; ar ieslēgtiem atgādinājumiem uz serveri nonāk tikai nākamo 45 dienu maiņas."
 };

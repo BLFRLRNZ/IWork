@@ -1,5 +1,5 @@
 // Rete prima (senza cache HTTP, così gli aggiornamenti arrivano subito), copia salvata se sei offline.
-const CACHE = "myturn-v33";
+const CACHE = "myturn-v34";
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(["./", "index.html", "countries.js", "manifest.webmanifest", "icon.svg", "fonts/pdf-Regular.ttf", "fonts/pdf-Bold.ttf"])));
   self.skipWaiting();

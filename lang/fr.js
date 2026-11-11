@@ -319,7 +319,7 @@
 "San Francesco": "Saint François",
 "Pasqua": "Pâques",
 "Lunedì dell'Angelo": "Lundi de Pâques",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Calendrier",
 "Le modifiche si salvano da sole.": "Les modifications s'enregistrent toutes seules.",
 "Inizio turno": "Début du poste",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Aussi pour l'astreinte",
 "Manda una notifica di prova": "Envoyer une notification de test",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Pour les rappels, les postes des 45 prochains jours sont enregistrés sur le serveur, avec l'horaire et le nom du poste. Si vous modifiez un poste, le rappel se met à jour tout seul.",
-"nome@esempio.it": "nom@exemple.fr"
+"nome@esempio.it": "nom@exemple.fr",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Vous y trouverez tout le reste : roulement, congés et absences, banque d'heures, estimation de la paie, bulletin de paie, rappels avant les postes, PDF du mois, export vers le calendrier, sauvegarde des données et le Guide.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Pays et jours fériés, langue, thème clair ou sombre et le compte pour les rappels.",
+"Account e promemoria": "Compte et rappels",
+"Come ricevo un avviso prima dei turni?": "Comment recevoir une notification avant mes postes ?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Ouvrez {p}, connectez-vous avec votre e-mail et activez {a} : choisissez combien de temps avant vous voulez être prévenu, aussi pour le deuxième emploi et l'astreinte. La notification arrive même app fermée. Avec {b}, vous vérifiez tout de suite que cela fonctionne.",
+"Come creo un account? Serve una password?": "Comment créer un compte ? Faut-il un mot de passe ?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Aucun mot de passe n'est nécessaire. Dans {p}, touchez {a}, saisissez votre e-mail puis le code à 6 chiffres que vous recevez. Si vous ne le trouvez pas, regardez dans les courriers indésirables. Le compte sert seulement aux rappels : sans compte, l'app fonctionne comme toujours.",
+"Le notifiche non arrivano: cosa faccio?": "Les notifications n'arrivent pas : que faire ?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "Sur iPhone, les notifications n'arrivent que si l'app est sur l'écran d'accueil et que vous l'ouvrez depuis là. Vérifiez aussi que les notifications de {app} sont autorisées dans les réglages du téléphone, puis désactivez et réactivez {a} et essayez {b}.",
+"Cosa viene salvato sul server?": "Qu'est-ce qui est enregistré sur le serveur ?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Uniquement votre e-mail et, si vous activez les rappels, les postes des 45 prochains jours avec l'horaire et le nom du poste, pour savoir quand vous prévenir. Notes, étiquettes, bulletins de paie et estimation de la paie restent sur le téléphone. Vous pouvez supprimer le compte et les données sur le serveur depuis {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Uniquement sur cet appareil, dans le navigateur. Sans compte, rien n'est envoyé à un serveur ; avec les rappels activés, seuls les postes des 45 prochains jours vont sur le serveur."
 };

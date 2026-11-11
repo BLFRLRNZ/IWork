@@ -705,3 +705,15 @@ Hur långt innan
 Skicka en testnotis
 För påminnelserna sparas passen de kommande 45 dagarna på servern, med tid och passnamn. Om du ändrar ett pass uppdateras påminnelsen av sig själv.
 namn@exempel.se
+Här hittar du allt annat: passrotation, semester och lediga timmar, timbank, löneuppskattning, lönebesked, påminnelser före pass, månadens PDF, export till kalendern, kopia av data och Guiden.
+Land och helgdagar, språk, ljust eller mörkt tema och kontot för påminnelser.
+Konto och påminnelser
+Hur får jag en notis före mina pass?
+Öppna {p}, logga in med din e-post och slå på {a}: välj hur långt innan du vill få notisen, även för andra jobbet och beredskap. Notisen kommer även när appen är stängd. Med {b} kontrollerar du direkt att det fungerar.
+Hur skapar jag ett konto? Behövs ett lösenord?
+Inget lösenord behövs. Tryck på {a} i {p}, skriv din e-post och sedan den 6-siffriga koden du får. Hittar du den inte, titta i skräpposten. Kontot behövs bara för påminnelser: utan det fungerar appen som vanligt.
+Notiserna kommer inte: vad gör jag?
+På iPhone kommer notiser bara om appen ligger på hemskärmen och du öppnar den därifrån. Kontrollera också att notiser för {app} är tillåtna i telefonens inställningar, slå sedan av och på {a} igen och prova {b}.
+Vad sparas på servern?
+Bara din e-post och, om du slår på påminnelser, passen de kommande 45 dagarna med tid och passnamn, så att vi vet när vi ska påminna dig. Anteckningar, etiketter, lönebesked och löneuppskattning stannar i telefonen. Du kan radera kontot och uppgifterna på servern under {p}.
+Bara på den här enheten, i webbläsaren. Utan konto skickas inget till en server; med påminnelser på skickas bara passen de kommande 45 dagarna till servern.

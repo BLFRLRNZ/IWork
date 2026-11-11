@@ -351,7 +351,7 @@
 "San Francesco": "Svätý František",
 "Pasqua": "Veľkonočná nedeľa",
 "Lunedì dell'Angelo": "Veľkonočný pondelok",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalendár",
 "Le modifiche si salvano da sole.": "Zmeny sa ukladajú samy.",
 "Inizio turno": "Začiatok zmeny",
@@ -817,5 +817,17 @@
 "Anche per la reperibilità": "Aj pre pohotovosť",
 "Manda una notifica di prova": "Poslať skúšobné upozornenie",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Kvôli pripomienkam sa zmeny na najbližších 45 dní ukladajú na server, s časom a názvom zmeny. Keď zmenu upravíš, pripomienka sa sama aktualizuje.",
-"nome@esempio.it": "meno@priklad.sk"
+"nome@esempio.it": "meno@priklad.sk",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Tu nájdeš všetko ostatné: rotáciu zmien, dovolenku a voľno, banku hodín, odhad mzdy, výplatnú pásku, pripomienky pred zmenami, PDF mesiaca, export do kalendára, zálohu údajov a Sprievodcu.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Krajina a sviatky, jazyk, svetlý alebo tmavý motív a účet na pripomienky.",
+"Account e promemoria": "Účet a pripomienky",
+"Come ricevo un avviso prima dei turni?": "Ako dostanem upozornenie pred zmenami?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Otvor {p}, prihlás sa svojím e-mailom a zapni {a}: vyber, ako dlho vopred chceš upozornenie, aj pre druhú prácu a pohotovosť. Upozornenie príde, aj keď je aplikácia zatvorená. Pomocou {b} hneď overíš, že to funguje.",
+"Come creo un account? Serve una password?": "Ako si založím účet? Potrebujem heslo?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Heslo nepotrebuješ. V {p} ťukni na {a}, zadaj svoj e-mail a potom 6-miestny kód, ktorý ti príde. Ak ho nenájdeš, pozri sa do nevyžiadanej pošty. Účet slúži len na pripomienky: bez neho aplikácia funguje ako vždy.",
+"Le notifiche non arrivano: cosa faccio?": "Upozornenia neprichádzajú: čo mám robiť?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "Na iPhone prichádzajú upozornenia, len keď je aplikácia na ploche a otváraš ju odtiaľ. Skontroluj aj, či sú upozornenia pre {app} povolené v nastaveniach telefónu, potom vypni a znova zapni {a} a skús {b}.",
+"Cosa viene salvato sul server?": "Čo sa ukladá na server?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Len tvoj e-mail a, ak zapneš pripomienky, zmeny na najbližších 45 dní s časom a názvom zmeny, aby sme vedeli, kedy ťa upozorniť. Poznámky, štítky, výplatné pásky a odhad mzdy zostávajú v telefóne. Účet a údaje na serveri môžeš vymazať v {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Len v tomto zariadení, v prehliadači. Bez účtu sa nič neposiela na server; so zapnutými pripomienkami idú na server len zmeny na najbližších 45 dní."
 };

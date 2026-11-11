@@ -705,3 +705,15 @@ Aj pre pohotovosť
 Poslať skúšobné upozornenie
 Kvôli pripomienkam sa zmeny na najbližších 45 dní ukladajú na server, s časom a názvom zmeny. Keď zmenu upravíš, pripomienka sa sama aktualizuje.
 meno@priklad.sk
+Tu nájdeš všetko ostatné: rotáciu zmien, dovolenku a voľno, banku hodín, odhad mzdy, výplatnú pásku, pripomienky pred zmenami, PDF mesiaca, export do kalendára, zálohu údajov a Sprievodcu.
+Krajina a sviatky, jazyk, svetlý alebo tmavý motív a účet na pripomienky.
+Účet a pripomienky
+Ako dostanem upozornenie pred zmenami?
+Otvor {p}, prihlás sa svojím e-mailom a zapni {a}: vyber, ako dlho vopred chceš upozornenie, aj pre druhú prácu a pohotovosť. Upozornenie príde, aj keď je aplikácia zatvorená. Pomocou {b} hneď overíš, že to funguje.
+Ako si založím účet? Potrebujem heslo?
+Heslo nepotrebuješ. V {p} ťukni na {a}, zadaj svoj e-mail a potom 6-miestny kód, ktorý ti príde. Ak ho nenájdeš, pozri sa do nevyžiadanej pošty. Účet slúži len na pripomienky: bez neho aplikácia funguje ako vždy.
+Upozornenia neprichádzajú: čo mám robiť?
+Na iPhone prichádzajú upozornenia, len keď je aplikácia na ploche a otváraš ju odtiaľ. Skontroluj aj, či sú upozornenia pre {app} povolené v nastaveniach telefónu, potom vypni a znova zapni {a} a skús {b}.
+Čo sa ukladá na server?
+Len tvoj e-mail a, ak zapneš pripomienky, zmeny na najbližších 45 dní s časom a názvom zmeny, aby sme vedeli, kedy ťa upozorniť. Poznámky, štítky, výplatné pásky a odhad mzdy zostávajú v telefóne. Účet a údaje na serveri môžeš vymazať v {p}.
+Len v tomto zariadení, v prehliadači. Bez účtu sa nič neposiela na server; so zapnutými pripomienkami idú na server len zmeny na najbližších 45 dní.

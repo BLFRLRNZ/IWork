@@ -336,7 +336,7 @@
 "San Francesco": "Sfântul Francisc",
 "Pasqua": "Paștele",
 "Lunedì dell'Angelo": "A doua zi de Paște",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Calendar",
 "Le modifiche si salvano da sole.": "Modificările se salvează singure.",
 "Inizio turno": "Începutul turei",
@@ -798,5 +798,17 @@
 "Anche per la reperibilità": "Și pentru gardă",
 "Manda una notifica di prova": "Trimite o notificare de test",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Pentru mementouri, turele din următoarele 45 de zile sunt salvate pe server, cu ora și numele turei. Dacă schimbi o tură, mementoul se actualizează singur.",
-"nome@esempio.it": "nume@exemplu.ro"
+"nome@esempio.it": "nume@exemplu.ro",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Aici găsești tot restul: rotația turelor, concedii și învoiri, banca de ore, estimarea salariului, fluturașul de salariu, mementouri înainte de ture, PDF-ul lunii, exportul în calendar, copia datelor și Ghidul.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Țara și sărbătorile, limba, tema deschisă sau întunecată și contul pentru mementouri.",
+"Account e promemoria": "Cont și mementouri",
+"Come ricevo un avviso prima dei turni?": "Cum primesc o notificare înainte de ture?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Deschide {p}, conectează-te cu e-mailul tău și activează {a}: alege cu cât timp înainte vrei notificarea, și pentru al doilea loc de muncă și gardă. Notificarea sosește chiar și cu aplicația închisă. Cu {b} verifici imediat că funcționează.",
+"Come creo un account? Serve una password?": "Cum îmi fac un cont? Am nevoie de parolă?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Nu ai nevoie de parolă. În {p} atinge {a}, scrie e-mailul și introdu codul de 6 cifre pe care îl primești. Dacă nu-l găsești, uită-te în dosarul de spam. Contul servește doar pentru mementouri: fără el, aplicația funcționează ca întotdeauna.",
+"Le notifiche non arrivano: cosa faccio?": "Notificările nu sosesc: ce fac?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "Pe iPhone notificările sosesc doar dacă aplicația este pe ecranul principal și o deschizi de acolo. Verifică și că notificările pentru {app} sunt permise în setările telefonului, apoi oprește și repornește {a} și încearcă {b}.",
+"Cosa viene salvato sul server?": "Ce se salvează pe server?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Doar e-mailul tău și, dacă activezi mementourile, turele din următoarele 45 de zile cu ora și numele turei, ca să știm când să te anunțăm. Notițele, etichetele, fluturașii de salariu și estimarea salariului rămân pe telefon. Poți șterge contul și datele de pe server din {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Doar pe acest dispozitiv, în browser. Fără cont nu se trimite nimic pe un server; cu mementourile active, pe server ajung doar turele din următoarele 45 de zile."
 };

@@ -705,3 +705,15 @@ Myös varallaololle
 Lähetä testi-ilmoitus
 Muistutuksia varten seuraavan 45 päivän vuorot tallennetaan palvelimelle kellonaikoineen ja vuoron nimineen. Jos muutat vuoroa, muistutus päivittyy itsestään.
 nimi@esimerkki.fi
+Täältä löydät kaiken muun: vuorokierron, lomat ja vapaat tunnit, tuntipankin, palkka-arvion, palkkalaskelman, muistutukset ennen vuoroja, kuukauden PDF:n, viennin kalenteriin, tietojen varmuuskopion ja Oppaan.
+Maa ja juhlapyhät, kieli, vaalea tai tumma teema sekä tili muistutuksia varten.
+Tili ja muistutukset
+Miten saan ilmoituksen ennen vuorojani?
+Avaa {p}, kirjaudu sähköpostillasi ja ota käyttöön {a}: valitse, kuinka paljon aiemmin haluat ilmoituksen, myös toiselle työlle ja varallaololle. Ilmoitus tulee, vaikka sovellus olisi suljettu. Painikkeella {b} tarkistat heti, että se toimii.
+Miten luon tilin? Tarvitaanko salasana?
+Salasanaa ei tarvita. Napauta kohdassa {p} painiketta {a}, kirjoita sähköpostisi ja sitten saamasi 6-numeroinen koodi. Jos et löydä sitä, katso roskapostikansio. Tili on vain muistutuksia varten: ilman sitä sovellus toimii kuten aina.
+Ilmoitukset eivät tule: mitä teen?
+iPhonessa ilmoitukset tulevat vain, jos sovellus on Koti-valikossa ja avaat sen sieltä. Tarkista myös, että {app}-ilmoitukset on sallittu puhelimen asetuksissa, ja kytke sitten {a} pois ja takaisin päälle ja kokeile painiketta {b}.
+Mitä palvelimelle tallennetaan?
+Vain sähköpostisi ja, jos otat muistutukset käyttöön, seuraavan 45 päivän vuorot kellonaikoineen ja vuoron nimineen, jotta tiedetään, milloin sinua muistutetaan. Muistiinpanot, tunnisteet, palkkalaskelmat ja palkka-arvio pysyvät puhelimessa. Voit poistaa tilin ja palvelimen tiedot kohdassa {p}.
+Vain tällä laitteella, selaimessa. Ilman tiliä mitään ei lähetetä palvelimelle; kun muistutukset ovat päällä, palvelimelle menevät vain seuraavan 45 päivän vuorot.

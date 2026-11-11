@@ -319,7 +319,7 @@
 "San Francesco": "Sankt Frans",
 "Pasqua": "Påskedag",
 "Lunedì dell'Angelo": "2. påskedag",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Ændringer gemmes automatisk.",
 "Inizio turno": "Vagtstart",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Også for tilkaldevagt",
 "Manda una notifica di prova": "Send en testnotifikation",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Til påmindelserne gemmes vagterne for de næste 45 dage på serveren, med tidspunkt og vagtnavn. Hvis du ændrer en vagt, opdateres påmindelsen af sig selv.",
-"nome@esempio.it": "navn@eksempel.dk"
+"nome@esempio.it": "navn@eksempel.dk",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Her finder du alt det andet: vagtrotation, ferie og fritimer, timebank, lønskøn, lønseddel, påmindelser før vagter, månedens PDF, eksport til kalenderen, kopi af dataene og Guiden.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Land og helligdage, sprog, lyst eller mørkt tema og kontoen til påmindelser.",
+"Account e promemoria": "Konto og påmindelser",
+"Come ricevo un avviso prima dei turni?": "Hvordan får jeg en notifikation før mine vagter?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Åbn {p}, log ind med din e-mail og slå {a} til: vælg, hvor lang tid før du vil have besked, også for dit andet job og tilkaldevagt. Notifikationen kommer også, når appen er lukket. Med {b} tjekker du med det samme, at det virker.",
+"Come creo un account? Serve una password?": "Hvordan opretter jeg en konto? Skal jeg bruge en adgangskode?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Du skal ikke bruge nogen adgangskode. Tryk på {a} i {p}, skriv din e-mail, og indtast den 6-cifrede kode, du får. Kan du ikke finde den, så kig i spammappen. Kontoen er kun til påmindelser: uden den virker appen som altid.",
+"Le notifiche non arrivano: cosa faccio?": "Notifikationerne kommer ikke: hvad gør jeg?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "På iPhone kommer notifikationer kun, hvis appen ligger på hjemmeskærmen, og du åbner den derfra. Tjek også, at notifikationer for {app} er tilladt i telefonens indstillinger, og slå derefter {a} fra og til igen, og prøv {b}.",
+"Cosa viene salvato sul server?": "Hvad gemmes der på serveren?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Kun din e-mail og, hvis du slår påmindelser til, vagterne for de næste 45 dage med tidspunkt og vagtnavn, så vi ved, hvornår du skal have besked. Noter, etiketter, lønsedler og lønskøn bliver på telefonen. Du kan slette kontoen og dataene på serveren under {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Kun på denne enhed, i browseren. Uden konto sendes intet til en server; med påmindelser slået til sendes kun vagterne for de næste 45 dage til serveren."
 };

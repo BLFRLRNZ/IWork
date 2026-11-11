@@ -319,7 +319,7 @@
 "San Francesco": "Pyhän Franciscuksen päivä",
 "Pasqua": "Pääsiäispäivä",
 "Lunedì dell'Angelo": "2. pääsiäispäivä",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalenteri",
 "Le modifiche si salvano da sole.": "Muutokset tallentuvat itsestään.",
 "Inizio turno": "Vuoron alku",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Myös varallaololle",
 "Manda una notifica di prova": "Lähetä testi-ilmoitus",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Muistutuksia varten seuraavan 45 päivän vuorot tallennetaan palvelimelle kellonaikoineen ja vuoron nimineen. Jos muutat vuoroa, muistutus päivittyy itsestään.",
-"nome@esempio.it": "nimi@esimerkki.fi"
+"nome@esempio.it": "nimi@esimerkki.fi",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Täältä löydät kaiken muun: vuorokierron, lomat ja vapaat tunnit, tuntipankin, palkka-arvion, palkkalaskelman, muistutukset ennen vuoroja, kuukauden PDF:n, viennin kalenteriin, tietojen varmuuskopion ja Oppaan.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Maa ja juhlapyhät, kieli, vaalea tai tumma teema sekä tili muistutuksia varten.",
+"Account e promemoria": "Tili ja muistutukset",
+"Come ricevo un avviso prima dei turni?": "Miten saan ilmoituksen ennen vuorojani?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Avaa {p}, kirjaudu sähköpostillasi ja ota käyttöön {a}: valitse, kuinka paljon aiemmin haluat ilmoituksen, myös toiselle työlle ja varallaololle. Ilmoitus tulee, vaikka sovellus olisi suljettu. Painikkeella {b} tarkistat heti, että se toimii.",
+"Come creo un account? Serve una password?": "Miten luon tilin? Tarvitaanko salasana?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Salasanaa ei tarvita. Napauta kohdassa {p} painiketta {a}, kirjoita sähköpostisi ja sitten saamasi 6-numeroinen koodi. Jos et löydä sitä, katso roskapostikansio. Tili on vain muistutuksia varten: ilman sitä sovellus toimii kuten aina.",
+"Le notifiche non arrivano: cosa faccio?": "Ilmoitukset eivät tule: mitä teen?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "iPhonessa ilmoitukset tulevat vain, jos sovellus on Koti-valikossa ja avaat sen sieltä. Tarkista myös, että {app}-ilmoitukset on sallittu puhelimen asetuksissa, ja kytke sitten {a} pois ja takaisin päälle ja kokeile painiketta {b}.",
+"Cosa viene salvato sul server?": "Mitä palvelimelle tallennetaan?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Vain sähköpostisi ja, jos otat muistutukset käyttöön, seuraavan 45 päivän vuorot kellonaikoineen ja vuoron nimineen, jotta tiedetään, milloin sinua muistutetaan. Muistiinpanot, tunnisteet, palkkalaskelmat ja palkka-arvio pysyvät puhelimessa. Voit poistaa tilin ja palvelimen tiedot kohdassa {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Vain tällä laitteella, selaimessa. Ilman tiliä mitään ei lähetetä palvelimelle; kun muistutukset ovat päällä, palvelimelle menevät vain seuraavan 45 päivän vuorot."
 };

@@ -319,7 +319,7 @@
 "San Francesco": "Sint-Franciscus",
 "Pasqua": "Pasen",
 "Lunedì dell'Angelo": "Paasmaandag",
-"MyTurn":"MyTurn",
+"MyTurn": "MyTurn",
 "Calendario": "Kalender",
 "Le modifiche si salvano da sole.": "Wijzigingen worden vanzelf bewaard.",
 "Inizio turno": "Begin dienst",
@@ -775,5 +775,17 @@
 "Anche per la reperibilità": "Ook voor bereikbaarheid",
 "Manda una notifica di prova": "Stuur een testmelding",
 "Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.": "Voor de herinneringen worden de diensten van de komende 45 dagen op de server opgeslagen, met tijd en naam van de dienst. Als je een dienst wijzigt, wordt de herinnering vanzelf bijgewerkt.",
-"nome@esempio.it": "naam@voorbeeld.nl"
+"nome@esempio.it": "naam@voorbeeld.nl",
+"Qui trovi tutto il resto: turnazione ciclica, ferie e permessi, banca ore, stima paga, busta paga, promemoria prima dei turni, PDF del mese, esportazione nel calendario, copia dei dati e la Guida.": "Hier vind je al het andere: roosterschema, verlof en vrije uren, urenbank, loonschatting, loonstrook, herinneringen voor diensten, PDF van de maand, export naar de agenda, back-up van je gegevens en de Gids.",
+"Paese e festività, lingua, tema chiaro o scuro e l'account per i promemoria.": "Land en feestdagen, taal, licht of donker thema en het account voor herinneringen.",
+"Account e promemoria": "Account en herinneringen",
+"Come ricevo un avviso prima dei turni?": "Hoe krijg ik een melding voor mijn diensten?",
+"Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.": "Open {p}, log in met je e-mailadres en zet {a} aan: kies hoe lang van tevoren je een melding wilt, ook voor je tweede baan en bereikbaarheid. De melding komt ook als de app dicht is. Met {b} controleer je meteen of het werkt.",
+"Come creo un account? Serve una password?": "Hoe maak ik een account? Heb ik een wachtwoord nodig?",
+"Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.": "Je hebt geen wachtwoord nodig. Tik in {p} op {a}, vul je e-mailadres in en daarna de 6-cijferige code die je krijgt. Vind je hem niet, kijk dan in je spammap. Het account is alleen voor herinneringen: zonder account werkt de app zoals altijd.",
+"Le notifiche non arrivano: cosa faccio?": "Meldingen komen niet aan: wat moet ik doen?",
+"Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.": "Op de iPhone komen meldingen alleen binnen als de app op het beginscherm staat en je hem vanaf daar opent. Controleer ook of meldingen voor {app} zijn toegestaan in de instellingen van je telefoon, zet dan {a} uit en weer aan en probeer {b}.",
+"Cosa viene salvato sul server?": "Wat wordt er op de server opgeslagen?",
+"Solo la tua email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti. Note, etichette, busta paga e stima paga restano sul telefono. Puoi eliminare l'account e i dati sul server da {p}.": "Alleen je e-mailadres en, als je herinneringen aanzet, de diensten van de komende 45 dagen met tijd en naam van de dienst, zodat we weten wanneer we je moeten waarschuwen. Notities, labels, loonstroken en loonschatting blijven op je telefoon. Je kunt het account en de gegevens op de server verwijderen via {p}.",
+"Solo su questo dispositivo, nel browser. Senza account niente viene inviato a un server; con i promemoria attivi, sul server vanno solo i turni dei prossimi 45 giorni.": "Alleen op dit apparaat, in de browser. Zonder account wordt er niets naar een server gestuurd; met herinneringen aan gaan alleen de diensten van de komende 45 dagen naar de server."
 };

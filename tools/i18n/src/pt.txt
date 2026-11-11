@@ -705,3 +705,15 @@ Também para a prevenção
 Enviar uma notificação de teste
 Para os lembretes, os turnos dos próximos 45 dias são guardados no servidor, com horário e nome do turno. Se alterar um turno, o lembrete atualiza-se sozinho.
 nome@exemplo.pt
+Aqui encontra tudo o resto: rotação de turnos, férias e licenças, banco de horas, estimativa de salário, recibo de vencimento, lembretes antes dos turnos, PDF do mês, exportação para o calendário, cópia dos dados e o Guia.
+País e feriados, idioma, tema claro ou escuro e a conta para os lembretes.
+Conta e lembretes
+Como recebo um aviso antes dos meus turnos?
+Abra {p}, inicie sessão com o seu e-mail e ative {a}: escolha com que antecedência quer o aviso, também para o segundo emprego e a prevenção. A notificação chega mesmo com a app fechada. Com {b} verifica logo se funciona.
+Como crio uma conta? É precisa uma palavra-passe?
+Não é precisa nenhuma palavra-passe. Em {p} toque em {a}, escreva o seu e-mail e introduza o código de 6 dígitos que recebe. Se não o encontrar, veja na pasta de spam. A conta serve apenas para os lembretes: sem ela a app funciona como sempre.
+As notificações não chegam: o que faço?
+No iPhone as notificações só chegam se a app estiver no ecrã principal e a abrir a partir daí. Verifique também se as notificações da {app} estão permitidas nas definições do telemóvel; depois desative e volte a ativar {a} e experimente {b}.
+O que é guardado no servidor?
+Apenas o seu e-mail e, se ativar os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisá-lo. Notas, etiquetas, recibos de vencimento e estimativa de salário ficam no telemóvel. Pode eliminar a conta e os dados no servidor a partir de {p}.
+Apenas neste dispositivo, no navegador. Sem conta nada é enviado para um servidor; com os lembretes ativos, só os turnos dos próximos 45 dias vão para o servidor.

@@ -1,12 +1,12 @@
 {
-  "version": "2.8.0",
+  "version": "2.8.1",
   "date": "2026-11-11",
   "notes": {
-    "it": "Nuovi promemoria: con un account, il telefono ti avvisa prima di ogni turno, anche con l'app chiusa. Accedi da Impostazioni → Account con un codice che ricevi via email, poi attivali in Strumenti → Promemoria. Senza account l'app funziona come sempre.",
-    "en": "New reminders: with an account, your phone notifies you before each shift, even with the app closed. Sign in from Settings → Account with a code sent by email, then turn them on in Tools → Reminders. Without an account the app works as always.",
-    "fr": "Nouveaux rappels : avec un compte, votre téléphone vous prévient avant chaque poste, même app fermée. Connectez-vous dans Réglages → Compte avec un code reçu par e-mail, puis activez-les dans Outils → Rappels. Sans compte, l'app fonctionne comme toujours.",
-    "de": "Neue Erinnerungen: Mit einem Konto meldet sich dein Handy vor jeder Schicht, auch wenn die App geschlossen ist. Melde dich unter Einstellungen → Konto mit einem Code per E-Mail an und schalte sie unter Werkzeuge → Erinnerungen ein. Ohne Konto funktioniert die App wie immer.",
-    "es": "Nuevos recordatorios: con una cuenta, el teléfono te avisa antes de cada turno, incluso con la app cerrada. Inicia sesión en Ajustes → Cuenta con un código que recibes por correo y actívalos en Herramientas → Recordatorios. Sin cuenta la app funciona como siempre.",
-    "pt": "Novos lembretes: com uma conta, o telemóvel avisa-o antes de cada turno, mesmo com a app fechada. Inicie sessão em Definições → Conta com um código recebido por e-mail e ative-os em Ferramentas → Lembretes. Sem conta a app funciona como sempre."
+    "it": "La Guida ha una nuova sezione su account e promemoria: come accedere, come ricevere gli avvisi prima dei turni, cosa fare se le notifiche non arrivano e cosa viene salvato sul server.",
+    "en": "The Guide has a new section on account and reminders: how to sign in, how to get notified before your shifts, what to do if notifications don't arrive and what is stored on the server.",
+    "fr": "Le Guide a une nouvelle section sur le compte et les rappels : comment se connecter, comment être prévenu avant vos postes, que faire si les notifications n'arrivent pas et ce qui est enregistré sur le serveur.",
+    "de": "Die Anleitung hat einen neuen Abschnitt zu Konto und Erinnerungen: wie du dich anmeldest, wie du vor Schichten erinnert wirst, was zu tun ist, wenn keine Mitteilungen kommen, und was auf dem Server gespeichert wird.",
+    "es": "La Guía tiene una nueva sección sobre la cuenta y los recordatorios: cómo iniciar sesión, cómo recibir avisos antes de los turnos, qué hacer si no llegan las notificaciones y qué se guarda en el servidor.",
+    "pt": "O Guia tem uma nova secção sobre a conta e os lembretes: como iniciar sessão, como receber avisos antes dos turnos, o que fazer se as notificações não chegarem e o que é guardado no servidor."
   }
 }
