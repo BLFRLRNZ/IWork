@@ -154,8 +154,8 @@ jobs:
       - name: Foto nel registro
         if: always()
         run: |
-          for f in shots/*.png; do [ -s "$f" ] || continue; convert "$f" -resize 1000x1000 -quality 70 "${f%.png}.jpg"
-            echo "FOTO-INIZIO $(basename "${f%.png}")"; base64 -w 4000 "${f%.png}.jpg"; echo; echo "FOTO-FINE"; done
+          for f in shots/*.png; do [ -s "$f" ] || continue
+            echo "FOTO-INIZIO $(basename "${f%.png}")"; base64 -w 4000 "$f"; echo; echo "FOTO-FINE"; done
       - uses: actions/upload-artifact@v4
         if: always()
         with:
