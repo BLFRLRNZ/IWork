@@ -763,3 +763,48 @@ Hoe het werkt
 Voordat ze vertrekken, worden je gegevens op dit apparaat versleuteld met je wachtwoord: ze komen onleesbaar op de server aan en niemand kan ze lezen.
 Het wachtwoord wordt nergens bewaard. Als je het vergeet, is de kopie op de server niet terug te halen, maar je gegevens blijven op je apparaten en je kunt opnieuw beginnen met een nieuw wachtwoord.
 Als je dezelfde dag op twee apparaten wijzigt, geldt de meest recente wijziging. Thema en herinneringen blijven keuzes per apparaat.
+Minstens 8 tekens. Hetzelfde wachtwoord beschermt je gesynchroniseerde gegevens: niemand kan het terughalen, dus bewaar het goed.
+Wachtwoord
+Wachtwoord vergeten?
+Nog geen account? Maak er een
+Account maken
+Heb je al een account? Inloggen
+We hebben een 6-cijferige code gestuurd naar {e}. Kijk ook in je spammap. Heeft dit e-mailadres al een account, ga dan terug en kies Inloggen.
+Bevestigen
+Stuur me een nieuwe code
+We sturen je per e-mail een code om een nieuw wachtwoord te kiezen. De kopie van de gegevens op de server wordt opnieuw gemaakt met de gegevens van dit apparaat, omdat de oude alleen met het oude wachtwoord opengaat.
+Terug naar inloggen
+We hebben een 6-cijferige code gestuurd naar {e}. Kijk ook in je spammap.
+Nieuw wachtwoord
+Nieuw wachtwoord opslaan
+Ingelogd. Je gegevens worden klaargezet…
+We hebben je een nieuwe code gestuurd.
+Vul het wachtwoord in.
+Inloggen…
+Bevestig eerst je e-mailadres met de code die we je hebben gestuurd.
+E-mailadres of wachtwoord onjuist. Heb je het account alleen met een e-mailcode gemaakt, kies er dan een via Wachtwoord vergeten?.
+Inloggen is niet gelukt. Controleer de verbinding en probeer het opnieuw.
+Account wordt gemaakt…
+Het account kon niet worden gemaakt. Controleer de verbinding en probeer het opnieuw.
+Het nieuwe wachtwoord kon niet worden opgeslagen. Controleer de verbinding en probeer het opnieuw.
+Er is geen account met dit e-mailadres.
+Ingelogd. Je gegevens zijn gesynchroniseerd op dit apparaat.
+Ingelogd. De gegevens op de server zijn beschermd met een ander wachtwoord: open Synchronisatie om vanaf dit apparaat opnieuw te beginnen.
+Ingelogd, maar de synchronisatie is niet gestart. Probeer het opnieuw via Synchronisatie.
+Vul het wachtwoord van je account in om de synchronisatie op dit apparaat aan te zetten.
+De gegevens op de server zijn beschermd met een ander wachtwoord, misschien een oud. Je kunt opnieuw beginnen: de kopie op de server wordt vervangen door de gegevens van dit apparaat, en je andere apparaten vragen om het huidige wachtwoord.
+Het wachtwoord is op een ander apparaat gewijzigd. Vul het nieuwe in.
+Hoe maak ik een account?
+Tik in {p} op {a} en dan op {b}: vul e-mailadres en wachtwoord in en bevestig met de 6-cijferige code die je per e-mail krijgt. Dat kan ook op het eerste scherm, na de taal. Hetzelfde wachtwoord beschermt je gesynchroniseerde gegevens. Zonder account werkt de app zoals altijd.
+Log op elk apparaat in met hetzelfde e-mailadres en wachtwoord, ook al op het eerste scherm na de taal: diensten, notities en instellingen komen vanzelf binnen en blijven daarna bijgewerkt. Op een apparaat waar je al bent ingelogd, zet je de synchronisatie aan via {p}. Thema en herinneringen blijven keuzes per apparaat.
+Ik ben mijn wachtwoord vergeten: wat nu?
+Tik in {p} op {a}: je krijgt een code per e-mail en kiest een nieuw wachtwoord. Niemand kan het oude terughalen, dus de kopie van je gegevens op de server wordt opnieuw gemaakt vanaf het apparaat dat je gebruikt: doe het op het meest actuele. Log op je andere apparaten in met het nieuwe wachtwoord.
+Doorgaan zonder account
+Heb je al een account?
+Log in om je diensten en instellingen hier terug te vinden. Ben je hier voor het eerst, dan kun je een account maken of zonder doorgaan.
+Welkom terug! Je diensten en instellingen zijn geladen.
+Met een account krijg je herinneringen voor je diensten en heb je dezelfde diensten op al je apparaten. Zonder account werkt de app zoals altijd.
+Je e-mailadres; met herinneringen de diensten van de komende 45 dagen met tijd en naam van de dienst, zodat we weten wanneer we je moeten waarschuwen; met synchronisatie al je gegevens, maar op het apparaat versleuteld met je wachtwoord en dus onleesbaar.
+Je wachtwoord verlaat nooit het apparaat: de server krijgt alleen een afgeleide sleutel om in te loggen, waarmee je gegevens niet open kunnen. Je kunt het account en alle gegevens op de server altijd verwijderen, hier.
+Wachtwoord van het account
+Het is het wachtwoord van je account en wordt nergens bewaard. Vergeet je het, dan kies je een nieuw met een e-mailcode: de kopie op de server is niet terug te halen, maar je gegevens blijven op je apparaten en de kopie wordt van hieruit opnieuw gemaakt.

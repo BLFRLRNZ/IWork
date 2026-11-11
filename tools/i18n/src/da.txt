@@ -763,3 +763,48 @@ Sådan virker det
 Før de sendes, krypteres dine data på denne enhed med din adgangskode: de når serveren ulæselige, og ingen kan læse dem.
 Adgangskoden gemmes ingen steder. Hvis du glemmer den, kan kopien på serveren ikke gendannes, men dine data bliver på dine enheder, og du kan starte forfra med en ny adgangskode.
 Hvis du ændrer samme dag på to enheder, gælder den nyeste ændring. Tema og påmindelser forbliver valg på hver enhed.
+Mindst 8 tegn. Den samme adgangskode beskytter dine synkroniserede data: ingen kan gendanne den, så pas godt på den.
+Adgangskode
+Glemt adgangskoden?
+Ingen konto? Opret en
+Opret konto
+Har du allerede en konto? Log ind
+Vi har sendt en 6-cifret kode til {e}. Tjek også din spammappe. Hvis denne e-mail allerede har en konto, så gå tilbage og vælg Log ind.
+Bekræft
+Send mig en ny kode
+Vi sender dig en kode på e-mail, så du kan vælge en ny adgangskode. Kopien af dataene på serveren genskabes med dataene fra denne enhed, fordi den gamle kun kan åbnes med den gamle adgangskode.
+Tilbage til log ind
+Vi har sendt en 6-cifret kode til {e}. Tjek også din spammappe.
+Ny adgangskode
+Gem den nye adgangskode
+Du er logget ind. Gør dine data klar…
+Vi har sendt dig en ny kode.
+Skriv adgangskoden.
+Logger ind…
+Bekræft først din e-mail med den kode, vi har sendt dig.
+Forkert e-mail eller adgangskode. Hvis du oprettede kontoen kun med en e-mailkode, så vælg en via Glemt adgangskoden?.
+Kunne ikke logge ind. Tjek forbindelsen, og prøv igen.
+Opretter kontoen…
+Kontoen kunne ikke oprettes. Tjek forbindelsen, og prøv igen.
+Den nye adgangskode kunne ikke gemmes. Tjek forbindelsen, og prøv igen.
+Der findes ingen konto med denne e-mail.
+Du er logget ind. Dine data er synkroniseret på denne enhed.
+Du er logget ind. Dataene på serveren er beskyttet af en anden adgangskode: åbn Synkronisering for at starte forfra fra denne enhed.
+Du er logget ind, men synkroniseringen startede ikke. Prøv igen fra Synkronisering.
+Skriv adgangskoden til din konto for at slå synkronisering til på denne enhed.
+Dataene på serveren er beskyttet af en anden adgangskode, måske en gammel. Du kan starte forfra: kopien på serveren erstattes af dataene på denne enhed, og dine andre enheder beder om den aktuelle adgangskode.
+Adgangskoden er ændret på en anden enhed. Skriv den nye.
+Hvordan opretter jeg en konto?
+Tryk på {a} i {p} og derefter på {b}: skriv e-mail og adgangskode, og bekræft med den 6-cifrede kode, du får på e-mail. Du kan også gøre det fra den første skærm, efter sproget. Den samme adgangskode beskytter de synkroniserede data. Uden konto virker appen som altid.
+Log ind med samme e-mail og adgangskode på hver enhed, også fra den første skærm efter sproget: vagter, noter og indstillinger kommer af sig selv og holdes derefter opdateret. På en enhed, hvor du allerede er logget ind, slår du synkronisering til under {p}. Tema og påmindelser forbliver valg på hver enhed.
+Jeg har glemt min adgangskode: hvad gør jeg?
+Tryk på {a} i {p}: du får en kode på e-mail og vælger en ny adgangskode. Ingen kan gendanne den gamle, så kopien af dine data på serveren genskabes fra den enhed, du bruger: gør det fra den mest opdaterede. Log ind med den nye adgangskode på dine andre enheder.
+Fortsæt uden konto
+Har du allerede en konto?
+Log ind for at få dine vagter og indstillinger her. Hvis det er første gang, kan du oprette en konto eller fortsætte uden.
+Velkommen tilbage! Dine vagter og indstillinger er hentet.
+Med en konto får du påmindelser før dine vagter og har de samme vagter på alle dine enheder. Uden konto virker appen som altid.
+Din e-mail; med påmindelser vagterne for de næste 45 dage med tidspunkt og vagtnavn, så vi ved, hvornår du skal have besked; med synkronisering alle dine data, men krypteret på enheden med din adgangskode og derfor ulæselige.
+Adgangskoden forlader aldrig enheden: serveren får kun en nøgle, der er afledt til log ind, og som ikke kan åbne dine data. Du kan slette kontoen og alle data på serveren når som helst, herfra.
+Kontoens adgangskode
+Det er adgangskoden til din konto, og den gemmes ingen steder. Hvis du glemmer den, vælger du en ny med en e-mailkode: kopien på serveren kan ikke gendannes, men dine data bliver på dine enheder, og kopien genskabes herfra.

@@ -236,6 +236,19 @@ input[type=time],input[type=number],input[type=text],input[type=date],input[type
 input:focus-visible,textarea:focus-visible{outline:2px solid var(--ink);outline-offset:0}
 #sySet:not([hidden]){display:flex;flex-direction:column;gap:12px}#sySet .linkbtn{align-self:flex-start}
 #syOnBox:not([hidden]){display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+/* gruppi dentro i pannelli: stessa spaziatura del pannello */
+#acOut:not([hidden]),#acIn:not([hidden]){display:flex;flex-direction:column;gap:14px}
+#acIn:not([hidden]){align-items:flex-start}
+.auth{display:flex;flex-direction:column;gap:14px}.auth>.btn{min-height:46px}.aulinks{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin-top:-4px}.auth .linkbtn{margin:0}.auth .austat{margin:0}
+#acSect:not([hidden]){display:flex;flex-direction:column;gap:10px}
+#acSect .sect{margin-bottom:0}
+/* nelle righe da tre campi l'orario ha bisogno di più spazio degli altri */
+#splitBox>.field,#ocRow .row>.field{flex:1 1 88px}#splitBox>.field:has(input[type=time]),#ocRow .row>.field:has(input[type=time]){flex:1.5 1 112px}
+@media(max-width:389px){#splitBox>.field:has(input[type=time]),#ocRow .row>.field:has(input[type=time]){flex-basis:100%}#splitBox>.field:has(input[type=time]){order:3}}
+/* telefoni stretti (fino a 389 px): le celle del calendario stringono il testo invece di tagliarlo */
+@media(max-width:389px){.dow,.grid{gap:3px}.day{padding:5px 2px 5px 3px;border-radius:10px}
+  .day .s{font-size:11.5px;letter-spacing:-.04em}.day .e{font-size:10px;letter-spacing:-.03em}
+  .day .w{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.02em}}
 #edStart{font-weight:700;font-size:30px;letter-spacing:-.02em;text-align:center;min-height:64px;border-radius:16px}
 textarea{resize:vertical;min-height:60px}
 .span{border-radius:16px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
@@ -644,7 +657,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <div id="acSect" hidden>
       <h3 class="sect">Account</h3>
       <div class="uprow"><span id="acInfo"></span><button type="button" class="btn" id="acBtn">Accedi</button></div>
-      <div class="uprow"><span id="syLine"></span><button type="button" class="btn" id="syBtn">Attiva</button></div>
+      <div class="uprow" id="syRow"><span id="syLine"></span><button type="button" class="btn" id="syBtn">Attiva</button></div>
     </div>
     <h3 class="sect">Aggiornamenti</h3>
     <div class="uprow"><span id="upInfo"></span><button type="button" class="btn" id="upCheck">Cerca aggiornamenti</button></div>
@@ -789,14 +802,8 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
   <form class="sheet" id="acForm" method="dialog">
     <h2 id="acTitle" style="text-transform:none">Account</h2>
     <div id="acOut">
-      <p class="sub">Con un account ricevi i promemoria prima dei turni e puoi avere gli stessi turni su tutti i tuoi dispositivi. Senza account l'app funziona come sempre.</p>
-      <div class="field" id="acEmailBox"><label class="eyebrow" for="acEmail">Email</label><input type="email" id="acEmail" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" placeholder="nome@esempio.it"></div>
-      <div class="field" id="acCodeBox" hidden>
-        <label class="eyebrow" for="acCode">Codice ricevuto via email</label>
-        <input type="text" id="acCode" inputmode="numeric" autocomplete="one-time-code" maxlength="10">
-        <p class="help" id="acCodeHelp"></p>
-        <button type="button" class="linkbtn" id="acChange">Usa un'altra email</button>
-      </div>
+      <p class="sub">Con un account ricevi i promemoria prima dei turni e hai gli stessi turni su tutti i tuoi dispositivi. Senza account l'app funziona come sempre.</p>
+      <div id="acAuth"></div>
     </div>
     <div id="acIn" hidden>
       <p class="sub" id="acWho"></p>
@@ -805,12 +812,11 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     </div>
     <p class="bpst" id="acStatus" aria-live="polite" hidden></p>
     <details class="ichelp"><summary>Cosa viene salvato sul server</summary>
-      <p>Solo il tuo indirizzo email e, se attivi i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti.</p>
-      <p>Tutto il resto resta solo su questo dispositivo, a meno che tu non attivi la sincronizzazione: in quel caso viaggia cifrato con la tua password e sul server è illeggibile. Puoi eliminare l'account e i dati sul server quando vuoi, da qui.</p>
+      <p>La tua email; con i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti; con la sincronizzazione, tutti i dati, ma cifrati sul dispositivo con la tua password, quindi illeggibili.</p>
+      <p>La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.</p>
     </details>
     <div class="actions">
-      <button type="button" class="btn ghost" id="acClose">Chiudi</button>
-      <button type="submit" class="btn primary" id="acGo">Mandami il codice</button>
+      <button type="button" class="btn ghost" id="acClose" style="flex:1">Chiudi</button>
     </div>
   </form>
 </dialog>
@@ -841,9 +847,9 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <div class="bpst err" id="syNeed" hidden></div>
     <div id="sySet" hidden>
       <p class="help" id="syIntro"></p>
-      <div class="field"><label class="eyebrow" for="syPw">Password di sincronizzazione</label><input type="password" id="syPw" autocomplete="new-password" autocapitalize="off" spellcheck="false"></div>
+      <div class="field" id="syPwBox"><label class="eyebrow" for="syPw">Password dell'account</label><input type="password" id="syPw" autocomplete="current-password" autocapitalize="off" spellcheck="false"></div>
       <div class="field" id="syPw2Box"><label class="eyebrow" for="syPw2">Ripeti la password</label><input type="password" id="syPw2" autocomplete="new-password" autocapitalize="off" spellcheck="false"></div>
-      <button type="button" class="linkbtn" id="syForgot">Ho dimenticato la password</button>
+      <button type="button" class="linkbtn" id="syForgot">Password dimenticata?</button>
     </div>
     <div id="syOnBox" hidden>
       <p class="sub" id="syInfo"></p>
@@ -853,7 +859,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <p class="bpst" id="syStatus" aria-live="polite" hidden></p>
     <details class="ichelp"><summary>Come funziona</summary>
       <p>Prima di partire, i dati vengono cifrati su questo dispositivo con la tua password: sul server arrivano illeggibili, e nessuno può leggerli.</p>
-      <p>La password non viene salvata da nessuna parte. Se la dimentichi, la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e puoi ricominciare con una password nuova.</p>
+      <p>È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.</p>
       <p>Se cambi lo stesso giorno su due dispositivi, vale la modifica più recente. Il tema e i promemoria restano scelte di ogni dispositivo.</p>
     </details>
     <div class="actions">
@@ -1142,7 +1148,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.9.0";
+const APP_VERSION="2.10.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1746,7 +1752,7 @@ function workVis(){$("stOcBox").hidden=$("stOcHelp").hidden=!$("stOcOn").checked
 const WK={stOcS:"wh",stOcD:"wh",stOcPay:"py",stJ2N:"j2",stJ2R:"j2",stWd:"wh",stSat:"wh",stFerie:"lv",stPerm:"lv",stWeek:"hb",stBankFrom:"hb",stBank0:"hb",stRate:"py",stPOt:"py",stPNight:"py",stPSun:"py",stPHol:"py"};
 function openWork(id,focus){fillWork();if($("tl").open)$("tl").close();openDlg($(id));
   if(focus)showField(focus);}
-function openSettings(focus){if(focus&&WK[focus])return openWork(WK[focus],focus);renderUpInfo();renderCountryUI();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
+function openSettings(focus){if(focus&&WK[focus])return openWork(WK[focus],focus);try{renderAccount();}catch(e){}renderUpInfo();renderCountryUI();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
   $("stFerie").value=s.ferie||"";$("stPerm").value=s.perm||"";$("stWeek").value=s.week;$("stBankFrom").value=s.bankFrom||bankStart();$("stBank0").value=s.bank0||"";
   $("stPOt").value=s.pOt||"";$("stPNight").value=s.pNight||"";$("stPSun").value=s.pSun||"";$("stPHol").value=s.pHol||"";$("th-"+getTheme()).checked=true;openDlg($("st"));
   if(focus)showField(focus);}
@@ -1927,32 +1933,97 @@ async function auToken(){if(!AU)return null;if(Date.now()/1000<AU.expires_at-60)
     catch(e){if(e.status===400||e.status===401){AU=null;auSave();renderAccount();}throw e;}finally{auRef=null;}})();
   await auRef;return AU&&AU.access_token;}
 const acEmailOk=v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
-let acStep="email",acBusy=false,acDelArm=0;
+let acDelArm=0;
 function acStat(msg,cls){const e=$("acStatus");e.hidden=!msg;e.className="bpst"+(cls?" "+cls:"");e.textContent=msg||"";}
-function renderAccount(){const on=SB_ON();$("acSect").hidden=!on;$("rmBtn").hidden=!on;if(!on)return;try{syRender();}catch(e){}
+/* ---------- accesso con email e password ----------
+   La password non lascia mai il dispositivo così com'è. Se ne ricavano due chiavi diverse:
+   - per l'accesso: PBKDF2 con sale "myturn-login|email" → è questa la "password" che riceve Supabase;
+   - per i dati sincronizzati: PBKDF2 con il sale casuale di sync_meta (vedi syDerive).
+   Chi gestisce il server conosce solo la prima e non può ricavare la seconda. */
+async function authSecret(email,pw){const base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw.normalize("NFC")),"PBKDF2",false,["deriveBits"]);
+  const b=new Uint8Array(await crypto.subtle.deriveBits({name:"PBKDF2",salt:new TextEncoder().encode("myturn-login|"+email.trim().toLowerCase()),iterations:600000,hash:"SHA-256"},base,256));
+  return Array.from(b,x=>x.toString(16).padStart(2,"0")).join("");}
+async function authLogin(em,pw){auSet(await sbFetch("/auth/v1/token?grant_type=password",{auth:false,body:{email:em,password:await authSecret(em,pw)}}));}
+async function authSignup(em,pw){const j=await sbFetch("/auth/v1/signup",{auth:false,body:{email:em,password:await authSecret(em,pw)}});if(j&&j.access_token){auSet(j);return true;}return false;}
+async function authVerify(em,code,kind){let j;try{j=await sbFetch("/auth/v1/verify",{auth:false,body:{type:"email",email:em,token:code}});}
+  catch(e){if(kind!=="signup")throw e;j=await sbFetch("/auth/v1/verify",{auth:false,body:{type:"signup",email:em,token:code}});}auSet(j);}
+async function authSetPw(pw){await sbFetch("/auth/v1/user",{method:"PUT",body:{password:await authSecret(AU.user.email,pw)}});}
+/* dopo l'accesso la sincronizzazione parte da sola, con la stessa password */
+async function authSync(pw,reset){try{await syEnable(pw,reset);return"ok";}catch(e){if(e&&e.wrong){syLost=true;try{syRender();}catch(x){}return"mismatch";}return"net";}}
+const authErr=(e,net)=>e&&e.status===429?t("Troppe richieste. Aspetta qualche minuto e riprova."):net;
+/* modulo di accesso riusato dalla schermata iniziale e dal pannello Account.
+   modi: login, signup, code (conferma della registrazione), forgot, fcode (codice + nuova password) */
+function authUI(box,o){const P=box.id;const A=Object.assign({mode:"login",email:"",pw:"",kind:"",busy:false},o);box._auth=A;
+  const f=(id,lab,type,ac,extra)=>'<div class="field"><label class="eyebrow" for="'+id+'">'+esc(lab)+'</label><input type="'+type+'" id="'+id+'" autocomplete="'+ac+'" autocapitalize="off" spellcheck="false"'+(extra||"")+'></div>';
+  const lk=(a,txt)=>'<button type="button" class="linkbtn" data-a="'+a+'">'+esc(txt)+"</button>";
+  const go=txt=>'<button type="button" class="btn primary" data-a="go">'+esc(txt)+"</button>";
+  const emF=()=>f(P+"Email",t("Email"),"email","username",' inputmode="email" placeholder="'+esc(t("nome@esempio.it"))+'"');
+  const pwHint='<p class="help">'+esc(t("Almeno 8 caratteri. La stessa password protegge i tuoi dati sincronizzati: nessuno può recuperarla, quindi conservala bene."))+"</p>";
+  function stat(msg,cls){const e=box.querySelector(".austat");if(!e)return;e.hidden=!msg;e.className="bpst austat"+(cls?" "+cls:"");e.textContent=msg||"";}
+  function busy(b){A.busy=b;box.querySelectorAll("button,input").forEach(x=>x.disabled=b);}
+  function draw(msg,cls){const m=A.mode;let h="";
+    if(m==="login")h=emF()+f(P+"Pw",t("Password"),"password","current-password")+go(t("Accedi"))+'<div class="aulinks">'+lk("forgot",t("Password dimenticata?"))+lk("signup",t("Non hai un account? Creane uno"))+"</div>";
+    else if(m==="signup")h=emF()+f(P+"Pw",t("Password"),"password","new-password")+f(P+"Pw2",t("Ripeti la password"),"password","new-password")+pwHint+go(t("Crea l'account"))+'<div class="aulinks">'+lk("login",t("Hai già un account? Accedi"))+"</div>";
+    else if(m==="code")h='<p class="help">'+esc(t("Ti abbiamo mandato un codice di 6 cifre a {e}. Controlla anche la posta indesiderata. Se questa email ha già un account, torna indietro e scegli Accedi.",{e:A.email}))+"</p>"
+      +f(P+"Code",t("Codice ricevuto via email"),"text","one-time-code",' inputmode="numeric" maxlength="10"')+go(t("Conferma"))+'<div class="aulinks">'+lk("resend",t("Mandami un nuovo codice"))+lk("login",t("Usa un'altra email"))+"</div>";
+    else if(m==="forgot")h='<p class="help">'+esc(t("Ti mandiamo un codice via email per scegliere una nuova password. La copia dei dati sul server verrà ricreata con i dati di questo dispositivo, perché quella vecchia si apre solo con la password vecchia."))+"</p>"
+      +emF()+go(t("Mandami il codice"))+'<div class="aulinks">'+lk("login",t("Torna all'accesso"))+"</div>";
+    else if(m==="fcode")h='<p class="help">'+esc(t("Ti abbiamo mandato un codice di 6 cifre a {e}. Controlla anche la posta indesiderata.",{e:A.email}))+"</p>"
+      +f(P+"Code",t("Codice ricevuto via email"),"text","one-time-code",' inputmode="numeric" maxlength="10"')+f(P+"Pw",t("Nuova password"),"password","new-password")+f(P+"Pw2",t("Ripeti la password"),"password","new-password")+pwHint
+      +go(t("Salva la nuova password"))+'<div class="aulinks">'+lk("forgot",t("Mandami un nuovo codice"))+lk("login",t("Torna all'accesso"))+"</div>";
+    box.innerHTML='<div class="auth">'+h+'<p class="bpst austat" aria-live="polite" hidden></p></div>';
+    const em=box.querySelector("#"+P+"Email");if(em)em.value=A.email;stat(msg,cls);}
+  const val=id=>{const e=box.querySelector("#"+id);return e?e.value:"";};
+  async function done(kind,pw){stat(t("Accesso eseguito. Preparo i tuoi dati…"),"ok");try{remSync(true);}catch(e){}try{renderAccount();}catch(e){}
+    await (A.onDone?A.onDone(kind,pw,stat):null);}
+  async function act(a){if(A.busy)return;const em=(val(P+"Email")||A.email).trim().toLowerCase();
+    if(a==="signup"||a==="login"||a==="forgot"){if(box.querySelector("#"+P+"Email"))A.email=em;A.mode=a;draw();return;}
+    if(a==="resend"){busy(true);try{await sbFetch("/auth/v1/resend",{auth:false,body:{type:"signup",email:A.email}});stat(t("Ti abbiamo mandato un nuovo codice."),"ok");}
+      catch(e){stat(authErr(e,t("Non sono riuscito a mandare il codice. Controlla la connessione e riprova.")),"err");}busy(false);return;}
+    const m=A.mode;
+    if(m==="login"||m==="signup"||m==="forgot"){if(!acEmailOk(em)){stat(t("Scrivi un indirizzo email valido."),"err");return;}A.email=em;}
+    if(m==="login"){const pw=val(P+"Pw");if(!pw){stat(t("Scrivi la password."),"err");return;}
+      busy(true);stat(t("Accesso in corso…"));
+      try{await authLogin(em,pw);busy(false);await done("login",pw);return;}
+      catch(e){busy(false);
+        if(e.code==="email_not_confirmed"){A.pw=pw;A.kind="signup";try{await sbFetch("/auth/v1/resend",{auth:false,body:{type:"signup",email:em}});}catch(x){}A.mode="code";draw(t("Prima conferma la tua email con il codice che ti abbiamo mandato."));return;}
+        stat(e.status===400||e.code==="invalid_credentials"?t("Email o password sbagliate. Se hai creato l'account con il solo codice via email, usa Password dimenticata? per sceglierne una."):authErr(e,t("Non sono riuscito ad accedere. Controlla la connessione e riprova.")),"err");return;}}
+    if(m==="signup"||m==="fcode"){const pw=val(P+"Pw");
+      if(pw.length<8){stat(t("La password deve avere almeno 8 caratteri."),"err");return;}
+      if(pw!==val(P+"Pw2")){stat(t("Le due password non coincidono."),"err");return;}
+      if(m==="signup"){busy(true);stat(t("Creo l'account…"));
+        try{const ok=await authSignup(em,pw);busy(false);if(ok){await done("signup",pw);return;}A.pw=pw;A.kind="signup";A.mode="code";draw();}
+        catch(e){busy(false);stat(authErr(e,t("Non sono riuscito a creare l'account. Controlla la connessione e riprova.")),"err");}return;}
+      const code=val(P+"Code").replace(/\D/g,"");if(code.length<6){stat(t("Scrivi il codice di 6 cifre che hai ricevuto."),"err");return;}
+      busy(true);stat(t("Controllo il codice…"));
+      try{await authVerify(A.email,code,"login");await authSetPw(pw);busy(false);await done("reset",pw);}
+      catch(e){busy(false);stat(e.status>=400&&e.status<500&&e.status!==429&&!AU?t("Codice sbagliato o scaduto. Riprova o fatti mandare un nuovo codice."):authErr(e,t("Non sono riuscito a salvare la nuova password. Controlla la connessione e riprova.")),"err");}return;}
+    if(m==="code"){const code=val(P+"Code").replace(/\D/g,"");if(code.length<6){stat(t("Scrivi il codice di 6 cifre che hai ricevuto."),"err");return;}
+      busy(true);stat(t("Controllo il codice…"));
+      try{await authVerify(A.email,code,A.kind);busy(false);await done(A.kind==="signup"?"signup":"login",A.pw);}
+      catch(e){busy(false);stat(e.status>=400&&e.status<500&&e.status!==429?t("Codice sbagliato o scaduto. Riprova o fatti mandare un nuovo codice."):authErr(e,t("Non sono riuscito a controllare il codice. Controlla la connessione e riprova.")),"err");}return;}
+    if(m==="forgot"){busy(true);stat(t("Invio del codice…"));
+      try{await sbFetch("/auth/v1/otp",{auth:false,body:{email:em,create_user:false}});busy(false);A.mode="fcode";draw();}
+      catch(e){busy(false);stat(e.status===422||e.status===400||e.status===404?t("Non c'è un account con questa email."):authErr(e,t("Non sono riuscito a mandare il codice. Controlla la connessione e riprova.")),"err");}}}
+  box.onclick=ev=>{const b=ev.target.closest("[data-a]");if(b&&box.contains(b))act(b.dataset.a);};
+  box.onkeydown=ev=>{if(ev.key==="Enter"&&ev.target.tagName==="INPUT"){ev.preventDefault();act("go");}};
+  draw();return A;}
+/* messaggio finale dopo l'accesso, uguale per la schermata iniziale e per il pannello */
+function authResult(r){return r==="ok"?[t("Accesso eseguito. I tuoi dati sono sincronizzati su questo dispositivo."),"ok"]:
+  r==="mismatch"?[t("Accesso eseguito. I dati sul server sono protetti da un'altra password: apri Sincronizzazione per ricominciare da questo dispositivo."),"err"]:
+  [t("Accesso eseguito, ma la sincronizzazione non è partita. Riprova da Sincronizzazione."),"err"];}
+function renderAccount(){const on=SB_ON();$("acSect").hidden=!on;$("rmBtn").hidden=!on;if(!on)return;
+  $("syRow").hidden=!AU;try{syRender();}catch(e){}
   $("acInfo").textContent=AU?t("Accesso come {e}",{e:AU.user.email}):t("Nessun account: i dati restano solo su questo dispositivo.");
   $("acBtn").textContent=AU?t("Gestisci"):t("Accedi");
   if(!$("ac").open)return;
-  $("acOut").hidden=!!AU;$("acIn").hidden=!AU;$("acGo").hidden=!!AU;
-  if(AU){$("acWho").textContent=t("Hai effettuato l'accesso come {e}.",{e:AU.user.email});$("acDelete").textContent=acDelArm>Date.now()?t("Tocca di nuovo per eliminare tutto"):t("Elimina l'account e i dati sul server");return;}
-  $("acEmailBox").hidden=acStep!=="email";$("acCodeBox").hidden=acStep!=="code";
-  $("acGo").textContent=acStep==="email"?t("Mandami il codice"):t("Entra");$("acGo").disabled=acBusy;
-  $("acCodeHelp").textContent=t("L'abbiamo mandato a {e}. Controlla anche la posta indesiderata.",{e:$("acEmail").value.trim()});}
-function openAccount(){if($("st").open)$("st").close();if($("tl").open)$("tl").close();acStep="email";acBusy=false;acDelArm=0;acStat("");$("acCode").value="";renderAccount();openDlg($("ac"));renderAccount();}
-$("acBtn").onclick=openAccount;
+  $("acOut").hidden=!!AU;$("acIn").hidden=!AU;
+  if(AU){$("acWho").textContent=t("Hai effettuato l'accesso come {e}.",{e:AU.user.email});$("acDelete").textContent=acDelArm>Date.now()?t("Tocca di nuovo per eliminare tutto"):t("Elimina l'account e i dati sul server");}}
+function openAccount(mode){if($("st").open)$("st").close();if($("tl").open)$("tl").close();if($("sy").open)$("sy").close();acDelArm=0;acStat("");
+  authUI($("acAuth"),{mode:typeof mode==="string"?mode:"login",onDone:async(kind,pw,stat)=>{const r=await authSync(pw,kind==="reset");const[m,c]=authResult(r);renderAccount();acStat(m,c);try{render();}catch(e){}}});
+  renderAccount();openDlg($("ac"));renderAccount();}
+$("acBtn").onclick=()=>openAccount();
 $("acClose").onclick=()=>$("ac").close();
-$("acChange").onclick=()=>{acStep="email";acStat("");renderAccount();};
-$("acForm").addEventListener("submit",async ev=>{ev.preventDefault();if(acBusy||AU)return;const em=$("acEmail").value.trim().toLowerCase();
-  if(acStep==="email"){if(!acEmailOk(em)){acStat(t("Scrivi un indirizzo email valido."),"err");return;}
-    acBusy=true;renderAccount();acStat(t("Invio del codice…"));
-    try{await sbFetch("/auth/v1/otp",{auth:false,body:{email:em,create_user:true}});acStep="code";acStat("");}
-    catch(e){acStat(e.status===429?t("Troppe richieste. Aspetta qualche minuto e riprova."):t("Non sono riuscito a mandare il codice. Controlla la connessione e riprova."),"err");}
-    acBusy=false;renderAccount();return;}
-  const code=$("acCode").value.replace(/\D/g,"");if(code.length<6){acStat(t("Scrivi il codice di 6 cifre che hai ricevuto."),"err");return;}
-  acBusy=true;renderAccount();acStat(t("Controllo il codice…"));
-  try{const j=await sbFetch("/auth/v1/verify",{auth:false,body:{type:"email",email:em,token:code}});auSet(j);acStat(t("Accesso eseguito."),"ok");renderAccount();remSync(true);}
-  catch(e){acStat(e.status===401||e.status===403||e.status===400?t("Codice sbagliato o scaduto. Riprova o fatti mandare un nuovo codice."):t("Non sono riuscito a controllare il codice. Controlla la connessione e riprova."),"err");}
-  acBusy=false;renderAccount();});
 async function pushSub(){try{const r=await navigator.serviceWorker.getRegistration();return r&&await r.pushManager.getSubscription();}catch(e){return null;}}
 $("acLogout").onclick=async()=>{const sub=await pushSub();
   try{if(sub)await sbFetch("/rest/v1/rpc/forget_push",{body:{p_endpoint:sub.endpoint}});}catch(e){}
@@ -2101,7 +2172,7 @@ async function syEnable(pw,reset){
     SY=nsy;SYB={};SYD={};const it=syItems();for(const id in it)SYD[id]={t:0,h:syHash(it[id])};}
   syLost=false;sySave();await syRun();}
 /* ---- schermata ---- */
-let syMode="",syBusyUI=false;
+let syMode="",syBusyUI=false,syPend="";
 function syStat(msg,cls){const e=$("syStatus");e.hidden=!msg;e.className="bpst"+(cls?" "+cls:"");e.textContent=msg||"";}
 const syWhen=ts=>{if(!ts)return"";const d=new Date(ts),n=new Date();return d.toDateString()===n.toDateString()?hm(d):fDMYl(d)+" "+hm(d);};
 function syRender(){
@@ -2109,36 +2180,38 @@ function syRender(){
   $("syBtn").textContent=syOn()?t("Gestisci"):t("Attiva");
   if(!$("sy").open)return;
   const on=syOn();$("syNeed").hidden=!!AU;if(!AU)$("syNeed").textContent=t("Per sincronizzare serve un account.");
-  $("sySet").hidden=!AU||on||!syMode;$("syOnBox").hidden=!on;
-  $("syPw2Box").hidden=syMode==="join";$("syForgot").hidden=syMode!=="join";
-  $("syIntro").textContent=syMode==="new"?t("Scegli una password per proteggere i tuoi dati. Ti servirà per attivare la sincronizzazione sugli altri dispositivi."):
-    syMode==="join"?t("Inserisci la password di sincronizzazione che hai scelto sull'altro dispositivo."):
-    syMode==="reset"?t("Scegli una nuova password. La copia sul server verrà cancellata e sostituita con i dati di questo dispositivo; sugli altri dispositivi dovrai inserire la nuova password."):"";
+  $("sySet").hidden=!AU||on||!syMode;$("syOnBox").hidden=!on;$("syPw2Box").hidden=true;
+  $("syPwBox").hidden=syMode==="reset"&&!!syPend;$("syForgot").hidden=syMode==="reset";
+  $("syIntro").textContent=syMode==="enable"?t("Per attivare la sincronizzazione su questo dispositivo scrivi la password del tuo account."):
+    syMode==="reset"?t("I dati sul server sono protetti da un'altra password, forse una vecchia. Puoi ricominciare: la copia sul server verrà sostituita con i dati di questo dispositivo, e sugli altri dispositivi ti verrà chiesta la password attuale."):"";
   if(on)$("syInfo").textContent=SY.last?t("Sincronizzazione attiva. Ultimo aggiornamento: {h}.",{h:syWhen(SY.last)}):t("Sincronizzazione attiva.");
   $("syGo").hidden=on||(!!AU&&!syMode);$("syGo").textContent=!AU?t("Accedi"):syMode==="reset"?t("Ricomincia"):t("Attiva");$("syGo").disabled=syBusyUI;}
-async function openSync(){if($("st").open)$("st").close();syMode="";syBusyUI=false;$("syPw").value="";$("syPw2").value="";
-  syStat(syLost?t("La password di sincronizzazione è stata cambiata su un altro dispositivo. Inseriscila di nuovo."):"",syLost?"err":"");
-  openDlg($("sy"));syRender();
-  if(AU&&!syOn()){if(!syLost)syStat(t("Controllo…"));try{syMode=(await syMeta())?"join":"new";if(!syLost)syStat("");}catch(e){syStat(t("Non sono riuscito a collegarmi. Controlla la connessione e riprova."),"err");}syRender();}}
+function openSync(){if($("st").open)$("st").close();syMode=AU&&!syOn()?"enable":"";syBusyUI=false;syPend="";$("syPw").value="";$("syPw2").value="";
+  syStat(syLost?t("La password è stata cambiata su un altro dispositivo. Scrivi quella nuova."):"",syLost?"err":"");openDlg($("sy"));syRender();}
 $("syBtn").onclick=openSync;
 $("syClose").onclick=()=>$("sy").close();
-$("syForgot").onclick=()=>{syMode="reset";syStat("");$("syPw").value="";$("syPw2").value="";syRender();};
+$("sy").addEventListener("close",()=>{syPend="";$("syPw").value="";});
+$("syForgot").onclick=()=>{$("sy").close();openAccount("forgot");};
 $("syNow").onclick=async()=>{syStat(t("Sincronizzo…"));try{await syRun();syStat(syOn()?t("Fatto: tutto aggiornato."):"",syOn()?"ok":"");}catch(e){syStat(t("Non sono riuscito a sincronizzare. Controlla la connessione e riprova."),"err");}};
-$("syOff").onclick=()=>{syStop();syLost=false;syStat(t("Sincronizzazione disattivata su questo dispositivo. I dati restano qui."),"ok");syMode="";syRender();renderAccount();};
+$("syOff").onclick=()=>{syStop();syLost=false;syStat(t("Sincronizzazione disattivata su questo dispositivo. I dati restano qui."),"ok");syMode="enable";syRender();renderAccount();};
 $("syForm").addEventListener("submit",async ev=>{ev.preventDefault();if(syBusyUI)return;
   if(!AU){$("sy").close();openAccount();return;}if(!syMode||syOn())return;
-  const pw=$("syPw").value;
-  if(pw.length<8){syStat(t("La password deve avere almeno 8 caratteri."),"err");return;}
-  if(syMode!=="join"&&pw!==$("syPw2").value){syStat(t("Le due password non coincidono."),"err");return;}
-  syBusyUI=true;syRender();syStat(syMode==="join"?t("Controllo la password e scarico i dati…"):t("Cifro e invio i dati…"));
-  try{await syEnable(pw,syMode==="reset");$("syPw").value="";$("syPw2").value="";syMode="";
-    syStat(t("Sincronizzazione attiva su questo dispositivo."),"ok");}
-  catch(e){syStat(e&&e.wrong?t("Password sbagliata. Riprova."):t("Non sono riuscito a sincronizzare. Controlla la connessione e riprova."),"err");}
+  const net=t("Non sono riuscito a sincronizzare. Controlla la connessione e riprova.");
+  if(syMode==="enable"){const pw=$("syPw").value;if(!pw){syStat(t("Scrivi la password."),"err");return;}
+    syBusyUI=true;syRender();syStat(t("Controllo la password e scarico i dati…"));
+    try{await authLogin(AU.user.email,pw);}catch(e){syBusyUI=false;syRender();syStat(e.status===400?t("Password sbagliata. Riprova."):net,"err");return;}
+    try{await syEnable(pw,false);syMode="";$("syPw").value="";syStat(t("Sincronizzazione attiva su questo dispositivo."),"ok");}
+    catch(e){if(e&&e.wrong){syPend=pw;syMode="reset";syStat("");}else syStat(net,"err");}}
+  else{const pw=syPend||$("syPw").value;if(!pw){syStat(t("Scrivi la password."),"err");return;}
+    syBusyUI=true;syRender();syStat(t("Cifro e invio i dati…"));
+    try{if(!syPend)await authLogin(AU.user.email,pw);await syEnable(pw,true);syPend="";syMode="";$("syPw").value="";syStat(t("Sincronizzazione attiva su questo dispositivo."),"ok");}
+    catch(e){syStat(e&&e.status===400?t("Password sbagliata. Riprova."):net,"err");}}
   syBusyUI=false;syRender();renderAccount();});
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")syRun().catch(()=>{});});
 addEventListener("online",()=>syRun().catch(()=>{}));
 setInterval(()=>{if(document.visibilityState==="visible")syRun().catch(()=>{});},120000);
 setTimeout(()=>syRun().catch(()=>{}),2500);
+try{syRender();}catch(e){}
 
 /* ---------- tour guidato (una volta, dopo la prima configurazione; si rivede dalla Guida) ---------- */
 const TOUR_K="myturn-tour";let TR=null;
@@ -2213,10 +2286,10 @@ function helpData(){const MK={a:"\u0001a\u0002",b:"\u0001b\u0002",c:"\u0001c\u00
     [t("Come metto i turni su Google Calendar, Calendario di Apple o Outlook?"),[t("In {p} scegli da quando, per quanti mesi e cosa includere, poi apri il file con il tuo calendario: nella stessa schermata trovi i passaggi per ognuno. Se riesporti lo stesso periodo, i turni di solito si aggiornano invece di duplicarsi.",MK),{p:tl("Esporta nel calendario")}],"icsBtn"]]],
   [t("Account, promemoria e sincronizzazione"),[
     [t("Come ricevo un avviso prima dei turni?"),[t("Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.",MK),{p:tl("Promemoria"),a:T("Avvisami prima dei turni"),b:T("Manda una notifica di prova")}],"rmBtn"],
-    [t("Come creo un account? Serve una password?"),[t("Non serve nessuna password. In {p} tocca {a}, scrivi la tua email e inserisci il codice di 6 cifre che ti arriva. Se non lo trovi, guarda nella posta indesiderata. L'account serve solo per i promemoria: senza, l'app funziona come sempre.",MK),{p:P("Impostazioni","Account"),a:T("Accedi")}],"setBtn"],
+    [t("Come creo un account?"),[t("In {p} tocca {a}, poi {b}: scrivi email e password e conferma con il codice di 6 cifre che ti arriva via email. Puoi farlo anche dalla prima schermata, dopo la lingua. La stessa password protegge i dati sincronizzati. Senza account l'app funziona come sempre.",MK),{p:P("Impostazioni","Account"),a:T("Accedi"),b:T("Non hai un account? Creane uno")}],"setBtn"],
     [t("Le notifiche non arrivano: cosa faccio?"),[t("Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.",Object.assign({app:APP},MK)),{a:T("Avvisami prima dei turni"),b:T("Manda una notifica di prova")}],"rmBtn"],
-    [t("Come uso MyTurn su più dispositivi?"),[t("Accedi con la stessa email su ogni dispositivo. Sul primo apri {p}, tocca {a} e scegli una password di sincronizzazione; sugli altri inserisci la stessa password. Da lì turni, note e impostazioni si aggiornano da soli. Il tema e i promemoria restano scelte di ogni dispositivo.",MK),{p:P("Impostazioni","Account"),a:T("Attiva")}],"setBtn"],
-    [t("Ho dimenticato la password di sincronizzazione: cosa faccio?"),[t("Nessuno può recuperarla, perché non viene salvata da nessuna parte. I tuoi dati però restano sui dispositivi: su quello più aggiornato tocca {a}, scegli una nuova password e la copia sul server viene sostituita. Sugli altri dispositivi inserisci la password nuova.",MK),{a:T("Ho dimenticato la password")}],"setBtn"],
+    [t("Come uso MyTurn su più dispositivi?"),[t("Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati. Su un dispositivo dove hai già fatto l'accesso, la sincronizzazione si accende da {p}. Il tema e i promemoria restano scelte di ogni dispositivo.",MK),{p:P("Impostazioni","Account")}],"setBtn"],
+    [t("Ho dimenticato la password: cosa faccio?"),[t("In {p} tocca {a}: ti arriva un codice via email e scegli una nuova password. Nessuno può recuperare quella vecchia, quindi la copia dei dati sul server viene ricreata con i dati del dispositivo che stai usando: fallo da quello più aggiornato. Sugli altri dispositivi accedi con la password nuova.",MK),{p:P("Impostazioni","Account"),a:T("Password dimenticata?")}],"setBtn"],
     [t("Cosa viene salvato sul server?"),[t("La tua email; con i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti; con la sincronizzazione, tutti i dati, ma cifrati con la tua password, quindi illeggibili. Puoi eliminare l'account e tutti i dati sul server da {p}.",MK),{p:P("Impostazioni","Account")}],"setBtn"]]],
   [t("Dati, app e impostazioni"),[
     [t("Dove sono salvati i miei turni?"),[t("Su questo dispositivo, nel browser. Senza account niente viene inviato a un server. Con la sincronizzazione una copia cifrata con la tua password va sul server; con i promemoria ci vanno i turni dei prossimi 45 giorni.",MK),{}]],
@@ -2673,21 +2746,25 @@ function relabelPresets(){let ch=false;const ps=S.settings.presets||[];
   if(ch)mark();}
 async function setLang(l){if(!LANGS[l])l="it";await loadLang(l);if(l!=="it"&&!I18N[l])l="it";
   LANG=l;setLoc();try{localStorage.setItem("myturn-lang",l);}catch(e){}relabelPresets();
-  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();if($("st").open)renderCountryUI();if($("ob").open)obRender();}
+  setNames();translateDom();setStatus();render();renderUpInfo();bkRender();try{renderAccount();}catch(e){}if($("st").open)renderCountryUI();if($("ob").open)obRender();}
 window.myturnSetLang=setLang;
 /* ---------- benvenuto: lingua, paese, regione, ore del turno ---------- */
-const OB={step:0,lang:"it",country:"IT",region:"",patron:null,wd:8,sat:6,q:"",existing:false};
+const OB={step:0,lang:"it",country:"IT",region:"",patron:null,wd:8,sat:6,q:"",existing:false,acct:false};
 function guessSetup(){const nl=(navigator.languages&&navigator.languages[0]||navigator.language||"it-IT");
   const two=nl.slice(0,2).toLowerCase(),c=(nl.split("-")[1]||"").toUpperCase(),full=two+"-"+c,l=LANGS[full]?full:LANGS[two]?two:"en";
   const home={en:"GB",fr:"FR",de:"DE",es:"ES",pt:"PT",nl:"NL",pl:"PL",ro:"RO",bg:"BG",hr:"HR",cs:"CZ",da:"DK",et:"EE",fi:"FI",el:"GR",hu:"HU",lv:"LV",lt:"LT",sk:"SK",sl:"SI",sv:"SE"}[two];
   return{lang:l,country:CTRYS[c]?c:CTRYS[home]?home:"IT"};}
-function obSteps(){const C=CTRYS[OB.country]||{};const st=["lang","country"];if(C.reg||C.patrons)st.push("place");st.push("hours","done");return st;}
+function obSteps(){const C=CTRYS[OB.country]||{};const st=["lang"];if(OB.acct)st.push("account");st.push("country");if(C.reg||C.patrons)st.push("place");st.push("hours","done");return st;}
 function obRender(){const steps=obSteps(),cur=steps[OB.step],C=CTRYS[OB.country]||{},opt=(v,l,sel,sub)=>'<button type="button" class="opt" data-v="'+esc(v)+'" aria-pressed="'+!!sel+'"><span>'+esc(l)+"</span>"+(sub?"<small>"+esc(sub)+"</small>":"")+"</button>";
   $("obDots").innerHTML=steps.map((_,i)=>'<i class="'+(i<=OB.step?"on":"")+'"></i>').join("");
-  $("obBack").hidden=OB.step===0;$("obNext").textContent=cur==="done"?t("Inizia"):t("Avanti");let h="";
+  $("obBack").hidden=OB.step===0;$("obNext").textContent=cur==="done"?t("Inizia"):cur==="account"&&!AU?t("Continua senza account"):t("Avanti");
+  $("obNext").classList.toggle("primary",!(cur==="account"&&!AU));$("obNext").classList.toggle("ghost",cur==="account"&&!AU);let h="";
   if(cur==="lang"){$("obTitle").textContent=OB.existing?t("Novità: lingua e paese"):t("Benvenuto in {app}",{app:APP});
     $("obSub").textContent=OB.existing?t("Scegli lingua e paese: l'app si imposta con le regole e le festività giuste. I tuoi turni restano dove sono."):t("Il calendario dei tuoi turni. Scegli la lingua.");
     h='<div class="optlist" data-k="lang">'+Object.keys(LANGS).map(l=>opt(l,LANGS[l].n,l===OB.lang)).join("")+"</div>";}
+  else if(cur==="account"){$("obTitle").textContent=t("Hai già un account?");
+    $("obSub").textContent=t("Accedi per ritrovare qui turni e impostazioni. Se è la prima volta, puoi creare un account oppure continuare senza.");
+    h=AU?'<p class="bpst ok">'+esc(t("Hai effettuato l'accesso come {e}.",{e:AU.user.email}))+"</p>":'<div id="obAuth"></div>';}
   else if(cur==="country"){$("obTitle").textContent=t("Dove lavori?");$("obSub").textContent=t("Servono per festività, riposi minimi, ore notturne e valuta.");
     const list=Object.keys(CTRYS).map(c=>[c,ctryName(c),CTRYS[c].n[CTRYS[c].lang]]).sort((a,b)=>a[1].localeCompare(b[1],LOC)).filter(x=>!OB.q||fold(x[1]+" "+(x[2]||"")).includes(fold(OB.q)));
     h=(Object.keys(CTRYS).length>8?'<div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input type="search" id="obQ" placeholder="'+esc(t("Cerca un paese"))+'" aria-label="'+esc(t("Cerca un paese"))+'" value="'+esc(OB.q)+'" autocomplete="off"></div>':"")
@@ -2702,7 +2779,7 @@ function obRender(){const steps=obSteps(),cur=steps[OB.step],C=CTRYS[OB.country]
       +(OB.region?"<dt>"+t("Regione o provincia")+"</dt><dd>"+esc(locName(C.reg[OB.region].n))+"</dd>":"")+(OB.patron?"<dt>"+t("Santo patrono")+"</dt><dd>"+esc(OB.patron.c)+"</dd>":"")
       +"<dt>"+t("Turno")+"</dt><dd>"+t("{w} ore, sabato {s}",{w:hrs(OB.wd),s:hrs(OB.sat)})+"</dd><dt>"+t("Riposo minimo")+"</dt><dd>"+t("{h} ore",{h:r.rest||11})+"</dd><dt>"+t("Media massima")+"</dt><dd>"+t("{h} ore a settimana",{h:r.maxWeek||48})+"</dd><dt>"+t("Ore notturne")+"</dt><dd>"+pad(nt[0])+"–"+pad(nt[1])+"</dd></dl>"
       +'<p class="help">'+t("Gli avvisi su riposi e ore sono indicativi e non sostituiscono il tuo contratto.")+"</p>";}
-  $("obBody").innerHTML=h;const q=$("obQ");if(q&&OB.qFocus){q.focus();q.setSelectionRange(q.value.length,q.value.length);}}
+  $("obBody").innerHTML=h;if($("obAuth"))authUI($("obAuth"),{mode:"login",onDone:obAuthDone});const q=$("obQ");if(q&&OB.qFocus){q.focus();q.setSelectionRange(q.value.length,q.value.length);}}
 $("obBody").addEventListener("click",async ev=>{const b=ev.target.closest(".opt");if(!b)return;const k=b.parentNode.dataset.k,v=b.dataset.v;
   if(k==="lang"){OB.lang=v;if(v!==LANG)await setLang(v);}else if(k==="country"){if(OB.country!==v){OB.country=v;OB.region="";OB.patron=null;}}obRender();});
 $("obBody").addEventListener("input",ev=>{const id=ev.target.id;
@@ -2719,7 +2796,12 @@ function obFinish(){const s=S.settings,fresh=!OB.existing;
   if(fresh)o.presets=DEF.presets.map(p=>({n:t(p.n),t:p.t}));
   S.settings=normSettings(o);applyCountry();mark();$("ob").close();render();
   if(fresh&&!tourSeen())setTimeout(startTour,450);}
-function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels.length;
+/* accesso dalla schermata iniziale: chi ha già i dati sincronizzati salta il resto della configurazione */
+async function obAuthDone(kind,pw,stat){const r=await authSync(pw,kind==="reset");
+  if(r==="ok"&&kind!=="signup"&&S.settings.setup){try{localStorage.setItem(TOUR_K,"1");}catch(e){}$("ob").close();applyCountry();render();renderAccount();
+    toast(t("Bentornato! Turni e impostazioni sono stati caricati."));return;}
+  OB.step++;obRender();if(r!=="ok")toast(authResult(r)[0]);}
+function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels.length;OB.acct=SB_ON()&&!OB.existing&&!AU;
   if(OB.existing){OB.lang=LANG;OB.country=S.settings.country;OB.region=S.settings.region;OB.patron=S.settings.patron&&S.settings.patron.c?S.settings.patron:null;}
   else{const g=guessSetup();OB.lang=LANG!=="it"?LANG:g.lang;OB.country=g.country;}
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));

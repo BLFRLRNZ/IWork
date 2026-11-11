@@ -763,3 +763,48 @@ Cómo funciona
 Antes de salir, tus datos se cifran en este dispositivo con tu contraseña: llegan al servidor ilegibles y nadie puede leerlos.
 La contraseña no se guarda en ningún sitio. Si la olvidas, la copia del servidor no se puede recuperar, pero tus datos siguen en tus dispositivos y puedes empezar de nuevo con otra contraseña.
 Si cambias el mismo día en dos dispositivos, vale el cambio más reciente. El tema y los recordatorios son elección de cada dispositivo.
+Al menos 8 caracteres. La misma contraseña protege tus datos sincronizados: nadie puede recuperarla, así que guárdala bien.
+Contraseña
+¿Has olvidado la contraseña?
+¿No tienes cuenta? Crea una
+Crear la cuenta
+¿Ya tienes cuenta? Inicia sesión
+Hemos enviado un código de 6 cifras a {e}. Revisa también la carpeta de spam. Si este correo ya tiene cuenta, vuelve atrás y elige Iniciar sesión.
+Confirmar
+Envíame un código nuevo
+Te enviamos un código por correo para elegir una contraseña nueva. La copia de los datos del servidor se volverá a crear con los datos de este dispositivo, porque la antigua solo se abre con la contraseña antigua.
+Volver al inicio de sesión
+Hemos enviado un código de 6 cifras a {e}. Revisa también la carpeta de spam.
+Contraseña nueva
+Guardar la contraseña nueva
+Sesión iniciada. Preparando tus datos…
+Te hemos enviado un código nuevo.
+Escribe la contraseña.
+Iniciando sesión…
+Primero confirma tu correo con el código que te hemos enviado.
+Correo o contraseña incorrectos. Si creaste la cuenta solo con un código por correo, usa ¿Has olvidado la contraseña? para elegir una.
+No he podido iniciar sesión. Revisa la conexión y vuelve a intentarlo.
+Creando la cuenta…
+No he podido crear la cuenta. Revisa la conexión y vuelve a intentarlo.
+No he podido guardar la contraseña nueva. Revisa la conexión y vuelve a intentarlo.
+No hay ninguna cuenta con este correo.
+Sesión iniciada. Tus datos están sincronizados en este dispositivo.
+Sesión iniciada. Los datos del servidor están protegidos con otra contraseña: abre Sincronización para empezar de nuevo desde este dispositivo.
+Sesión iniciada, pero la sincronización no ha arrancado. Vuelve a intentarlo desde Sincronización.
+Para activar la sincronización en este dispositivo, escribe la contraseña de tu cuenta.
+Los datos del servidor están protegidos con otra contraseña, quizá una antigua. Puedes empezar de nuevo: la copia del servidor se sustituirá por los datos de este dispositivo, y tus otros dispositivos te pedirán la contraseña actual.
+La contraseña se ha cambiado en otro dispositivo. Escribe la nueva.
+¿Cómo creo una cuenta?
+En {p} toca {a} y luego {b}: escribe correo y contraseña y confirma con el código de 6 cifras que te llega por correo. También puedes hacerlo desde la primera pantalla, después del idioma. La misma contraseña protege tus datos sincronizados. Sin cuenta la app funciona como siempre.
+Inicia sesión con el mismo correo y la misma contraseña en cada dispositivo, incluso desde la primera pantalla después del idioma: turnos, notas y ajustes llegan solos y luego se mantienen al día. En un dispositivo donde ya has iniciado sesión, la sincronización se activa desde {p}. El tema y los recordatorios son elección de cada dispositivo.
+He olvidado la contraseña: ¿qué hago?
+En {p} toca {a}: te llega un código por correo y eliges una contraseña nueva. Nadie puede recuperar la antigua, así que la copia de tus datos del servidor se vuelve a crear con el dispositivo que estás usando: hazlo desde el más actualizado. En los otros dispositivos inicia sesión con la contraseña nueva.
+Continuar sin cuenta
+¿Ya tienes cuenta?
+Inicia sesión para recuperar aquí tus turnos y ajustes. Si es la primera vez, puedes crear una cuenta o continuar sin ella.
+¡Bienvenido de nuevo! Se han cargado tus turnos y ajustes.
+Con una cuenta recibes recordatorios antes de tus turnos y tienes los mismos turnos en todos tus dispositivos. Sin cuenta la app funciona como siempre.
+Tu correo; con los recordatorios, los turnos de los próximos 45 días con horario y nombre del turno, para saber cuándo avisarte; con la sincronización, todos tus datos, pero cifrados en el dispositivo con tu contraseña y, por tanto, ilegibles.
+La contraseña nunca sale del dispositivo: el servidor solo recibe una clave derivada para iniciar sesión, que no sirve para abrir tus datos. Puedes eliminar la cuenta y todos los datos del servidor cuando quieras, desde aquí.
+Contraseña de la cuenta
+Es la contraseña de tu cuenta y no se guarda en ningún sitio. Si la olvidas, eliges una nueva con un código por correo: la copia del servidor no se puede recuperar, pero tus datos siguen en tus dispositivos y la copia se vuelve a crear desde aquí.

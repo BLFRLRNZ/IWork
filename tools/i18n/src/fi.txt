@@ -763,3 +763,48 @@ Näin se toimii
 Ennen lähtöä tietosi salataan tällä laitteella salasanallasi: ne saapuvat palvelimelle lukukelvottomina, eikä kukaan voi lukea niitä.
 Salasanaa ei tallenneta mihinkään. Jos unohdat sen, palvelimen kopiota ei voi palauttaa, mutta tiedot pysyvät laitteillasi ja voit aloittaa alusta uudella salasanalla.
 Jos muutat samaa päivää kahdella laitteella, uusin muutos jää voimaan. Teema ja muistutukset ovat jokaisen laitteen omia valintoja.
+Vähintään 8 merkkiä. Sama salasana suojaa synkronoituja tietojasi: kukaan ei voi palauttaa sitä, joten säilytä se hyvin.
+Salasana
+Unohtuiko salasana?
+Ei tiliä? Luo uusi
+Luo tili
+Onko sinulla jo tili? Kirjaudu
+Lähetimme 6-numeroisen koodin osoitteeseen {e}. Katso myös roskapostikansio. Jos tällä sähköpostilla on jo tili, palaa takaisin ja valitse Kirjaudu.
+Vahvista
+Lähetä uusi koodi
+Lähetämme sinulle sähköpostilla koodin uuden salasanan valitsemista varten. Palvelimella oleva kopio luodaan uudelleen tämän laitteen tiedoista, koska vanha avautuu vain vanhalla salasanalla.
+Takaisin kirjautumiseen
+Lähetimme 6-numeroisen koodin osoitteeseen {e}. Katso myös roskapostikansio.
+Uusi salasana
+Tallenna uusi salasana
+Kirjautuminen onnistui. Valmistellaan tietojasi…
+Lähetimme sinulle uuden koodin.
+Kirjoita salasana.
+Kirjaudutaan…
+Vahvista ensin sähköpostisi koodilla, jonka lähetimme sinulle.
+Väärä sähköposti tai salasana. Jos loit tilin pelkällä sähköpostikoodilla, valitse salasana kohdasta Unohtuiko salasana?.
+Kirjautuminen ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Luodaan tiliä…
+Tilin luominen ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Uuden salasanan tallennus ei onnistunut. Tarkista yhteys ja yritä uudelleen.
+Tällä sähköpostilla ei ole tiliä.
+Kirjautuminen onnistui. Tietosi on synkronoitu tälle laitteelle.
+Kirjautuminen onnistui. Palvelimen tiedot on suojattu toisella salasanalla: avaa Synkronointi ja aloita alusta tältä laitteelta.
+Kirjautuminen onnistui, mutta synkronointi ei käynnistynyt. Yritä uudelleen kohdasta Synkronointi.
+Ota synkronointi käyttöön tällä laitteella kirjoittamalla tilisi salasana.
+Palvelimen tiedot on suojattu toisella salasanalla, ehkä vanhalla. Voit aloittaa alusta: palvelimen kopio korvataan tämän laitteen tiedoilla, ja muut laitteet kysyvät nykyistä salasanaa.
+Salasana on vaihdettu toisella laitteella. Kirjoita uusi.
+Miten luon tilin?
+Napauta kohdassa {p} {a} ja sitten {b}: kirjoita sähköposti ja salasana ja vahvista sähköpostiin tulevalla 6-numeroisella koodilla. Voit tehdä sen myös ensimmäisellä näytöllä kielen valinnan jälkeen. Sama salasana suojaa synkronoituja tietoja. Ilman tiliä sovellus toimii kuten aina.
+Kirjaudu jokaisella laitteella samalla sähköpostilla ja salasanalla, jo ensimmäisellä näytöllä kielen jälkeen: vuorot, muistiinpanot ja asetukset tulevat itsestään ja pysyvät sitten ajan tasalla. Laitteella, jolla olet jo kirjautunut, synkronointi otetaan käyttöön kohdassa {p}. Teema ja muistutukset ovat jokaisen laitteen omia valintoja.
+Unohdin salasanani: mitä teen?
+Napauta kohdassa {p} {a}: saat koodin sähköpostiin ja valitset uuden salasanan. Kukaan ei voi palauttaa vanhaa, joten palvelimen kopio tiedoistasi luodaan uudelleen käyttämältäsi laitteelta: tee se ajantasaisimmalla. Kirjaudu muilla laitteilla uudella salasanalla.
+Jatka ilman tiliä
+Onko sinulla jo tili?
+Kirjaudu, niin löydät vuorosi ja asetuksesi täältä. Jos olet täällä ensimmäistä kertaa, voit luoda tilin tai jatkaa ilman.
+Tervetuloa takaisin! Vuorot ja asetukset on ladattu.
+Tilin avulla saat muistutukset ennen vuoroja ja samat vuorot kaikille laitteillesi. Ilman tiliä sovellus toimii kuten aina.
+Sähköpostisi; muistutuksilla seuraavan 45 päivän vuorot kellonaikoineen ja vuoron nimineen, jotta tiedetään, milloin sinua muistutetaan; synkronoinnilla kaikki tiedot, mutta laitteella salasanallasi salattuina eli lukukelvottomina.
+Salasana ei koskaan poistu laitteelta: palvelin saa vain kirjautumista varten johdetun avaimen, jolla tietojasi ei voi avata. Voit poistaa tilin ja kaikki palvelimen tiedot milloin tahansa, täältä.
+Tilin salasana
+Se on tilisi salasana, eikä sitä tallenneta mihinkään. Jos unohdat sen, valitset uuden sähköpostikoodin avulla: palvelimen kopiota ei voi palauttaa, mutta tiedot pysyvät laitteillasi ja kopio luodaan uudelleen täältä.

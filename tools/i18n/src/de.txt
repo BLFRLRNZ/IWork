@@ -763,3 +763,48 @@ So funktioniert es
 Bevor sie das Gerät verlassen, werden deine Daten hier mit deinem Passwort verschlüsselt: Auf dem Server kommen sie unlesbar an, und niemand kann sie lesen.
 Das Passwort wird nirgends gespeichert. Wenn du es vergisst, lässt sich die Kopie auf dem Server nicht wiederherstellen, aber deine Daten bleiben auf deinen Geräten und du kannst mit einem neuen Passwort neu beginnen.
 Wenn du denselben Tag auf zwei Geräten änderst, gilt die neueste Änderung. Design und Erinnerungen bleiben Einstellungen des jeweiligen Geräts.
+Mindestens 8 Zeichen. Dasselbe Passwort schützt deine synchronisierten Daten: Niemand kann es wiederherstellen, also bewahre es gut auf.
+Passwort
+Passwort vergessen?
+Noch kein Konto? Erstelle eins
+Konto erstellen
+Schon ein Konto? Anmelden
+Wir haben einen 6-stelligen Code an {e} geschickt. Schau auch im Spam-Ordner nach. Wenn diese E-Mail schon ein Konto hat, geh zurück und wähle Anmelden.
+Bestätigen
+Neuen Code senden
+Wir schicken dir per E-Mail einen Code, um ein neues Passwort zu wählen. Die Kopie der Daten auf dem Server wird mit den Daten dieses Geräts neu erstellt, weil sich die alte nur mit dem alten Passwort öffnen lässt.
+Zurück zur Anmeldung
+Wir haben einen 6-stelligen Code an {e} geschickt. Schau auch im Spam-Ordner nach.
+Neues Passwort
+Neues Passwort speichern
+Angemeldet. Deine Daten werden vorbereitet…
+Wir haben dir einen neuen Code geschickt.
+Gib das Passwort ein.
+Anmeldung läuft…
+Bestätige zuerst deine E-Mail mit dem Code, den wir dir geschickt haben.
+E-Mail oder Passwort falsch. Wenn du das Konto nur mit einem E-Mail-Code erstellt hast, wähle mit Passwort vergessen? eins aus.
+Die Anmeldung hat nicht geklappt. Prüfe die Verbindung und versuch es nochmal.
+Konto wird erstellt…
+Das Konto konnte nicht erstellt werden. Prüfe die Verbindung und versuch es nochmal.
+Das neue Passwort konnte nicht gespeichert werden. Prüfe die Verbindung und versuch es nochmal.
+Mit dieser E-Mail gibt es kein Konto.
+Angemeldet. Deine Daten sind auf diesem Gerät synchronisiert.
+Angemeldet. Die Daten auf dem Server sind mit einem anderen Passwort geschützt: Öffne Synchronisierung, um von diesem Gerät aus neu zu beginnen.
+Angemeldet, aber die Synchronisierung ist nicht gestartet. Versuch es unter Synchronisierung nochmal.
+Um die Synchronisierung auf diesem Gerät einzuschalten, gib das Passwort deines Kontos ein.
+Die Daten auf dem Server sind mit einem anderen Passwort geschützt, vielleicht einem alten. Du kannst neu beginnen: Die Kopie auf dem Server wird durch die Daten dieses Geräts ersetzt, und deine anderen Geräte fragen nach dem aktuellen Passwort.
+Das Passwort wurde auf einem anderen Gerät geändert. Gib das neue ein.
+Wie erstelle ich ein Konto?
+Tippe in {p} auf {a}, dann auf {b}: Gib E-Mail und Passwort ein und bestätige mit dem 6-stelligen Code, den du per E-Mail bekommst. Das geht auch auf dem ersten Bildschirm, nach der Sprache. Dasselbe Passwort schützt deine synchronisierten Daten. Ohne Konto funktioniert die App wie immer.
+Melde dich auf jedem Gerät mit derselben E-Mail und demselben Passwort an, auch schon auf dem ersten Bildschirm nach der Sprache: Schichten, Notizen und Einstellungen kommen von selbst und bleiben dann aktuell. Auf einem Gerät, auf dem du schon angemeldet bist, schaltest du die Synchronisierung unter {p} ein. Design und Erinnerungen bleiben Einstellungen des jeweiligen Geräts.
+Ich habe mein Passwort vergessen: Was tun?
+Tippe in {p} auf {a}: Du bekommst einen Code per E-Mail und wählst ein neues Passwort. Niemand kann das alte wiederherstellen, deshalb wird die Kopie deiner Daten auf dem Server mit dem Gerät neu erstellt, das du gerade benutzt: Mach es auf dem aktuellsten. Auf den anderen Geräten meldest du dich mit dem neuen Passwort an.
+Ohne Konto weiter
+Schon ein Konto?
+Melde dich an, um deine Schichten und Einstellungen hier wiederzufinden. Wenn du zum ersten Mal hier bist, kannst du ein Konto erstellen oder ohne weitermachen.
+Willkommen zurück! Schichten und Einstellungen wurden geladen.
+Mit einem Konto bekommst du Erinnerungen vor deinen Schichten und hast dieselben Schichten auf all deinen Geräten. Ohne Konto funktioniert die App wie immer.
+Deine E-Mail; mit Erinnerungen die Schichten der nächsten 45 Tage mit Uhrzeit und Schichtname, damit wir wissen, wann wir dich erinnern; mit Synchronisierung alle Daten, aber auf dem Gerät mit deinem Passwort verschlüsselt und daher unlesbar.
+Das Passwort verlässt nie das Gerät: Der Server bekommt nur einen für die Anmeldung abgeleiteten Schlüssel, mit dem sich deine Daten nicht öffnen lassen. Du kannst das Konto und alle Daten auf dem Server jederzeit hier löschen.
+Passwort des Kontos
+Es ist das Passwort deines Kontos und wird nirgends gespeichert. Wenn du es vergisst, wählst du mit einem E-Mail-Code ein neues: Die Kopie auf dem Server lässt sich nicht wiederherstellen, aber deine Daten bleiben auf deinen Geräten und die Kopie wird von hier aus neu erstellt.

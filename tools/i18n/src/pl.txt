@@ -763,3 +763,48 @@ Jak to działa
 Zanim dane opuszczą to urządzenie, są szyfrowane twoim hasłem: na serwer trafiają nieczytelne i nikt nie może ich odczytać.
 Hasło nie jest nigdzie zapisywane. Jeśli je zapomnisz, kopii na serwerze nie da się odzyskać, ale dane zostają na twoich urządzeniach i możesz zacząć od nowa z nowym hasłem.
 Jeśli zmienisz ten sam dzień na dwóch urządzeniach, obowiązuje najnowsza zmiana. Motyw i przypomnienia pozostają ustawieniami każdego urządzenia.
+Co najmniej 8 znaków. To samo hasło chroni twoje zsynchronizowane dane: nikt nie może go odzyskać, więc dobrze je zapamiętaj.
+Hasło
+Nie pamiętasz hasła?
+Nie masz konta? Załóż je
+Załóż konto
+Masz już konto? Zaloguj się
+Wysłaliśmy 6-cyfrowy kod na {e}. Sprawdź też folder spam. Jeśli ten e-mail ma już konto, wróć i wybierz Zaloguj się.
+Potwierdź
+Wyślij nowy kod
+Wyślemy ci kod e-mailem, żeby wybrać nowe hasło. Kopia danych na serwerze zostanie odtworzona z danych tego urządzenia, bo starą można otworzyć tylko starym hasłem.
+Wróć do logowania
+Wysłaliśmy 6-cyfrowy kod na {e}. Sprawdź też folder spam.
+Nowe hasło
+Zapisz nowe hasło
+Zalogowano. Przygotowuję twoje dane…
+Wysłaliśmy ci nowy kod.
+Wpisz hasło.
+Logowanie…
+Najpierw potwierdź e-mail kodem, który ci wysłaliśmy.
+Błędny e-mail lub hasło. Jeśli konto zostało założone tylko z kodem e-mail, wybierz hasło przez Nie pamiętasz hasła?.
+Nie udało się zalogować. Sprawdź połączenie i spróbuj ponownie.
+Zakładam konto…
+Nie udało się założyć konta. Sprawdź połączenie i spróbuj ponownie.
+Nie udało się zapisać nowego hasła. Sprawdź połączenie i spróbuj ponownie.
+Nie ma konta z tym adresem e-mail.
+Zalogowano. Twoje dane są zsynchronizowane na tym urządzeniu.
+Zalogowano. Dane na serwerze są chronione innym hasłem: otwórz Synchronizacja, aby zacząć od nowa z tego urządzenia.
+Zalogowano, ale synchronizacja nie ruszyła. Spróbuj ponownie w Synchronizacja.
+Aby włączyć synchronizację na tym urządzeniu, wpisz hasło do konta.
+Dane na serwerze są chronione innym hasłem, może starym. Możesz zacząć od nowa: kopia na serwerze zostanie zastąpiona danymi z tego urządzenia, a inne urządzenia poproszą o aktualne hasło.
+Hasło zostało zmienione na innym urządzeniu. Wpisz nowe.
+Jak założyć konto?
+W {p} dotknij {a}, a potem {b}: wpisz e-mail i hasło i potwierdź 6-cyfrowym kodem, który dostaniesz e-mailem. Możesz to zrobić także na pierwszym ekranie, po wyborze języka. To samo hasło chroni zsynchronizowane dane. Bez konta aplikacja działa jak zawsze.
+Zaloguj się tym samym e-mailem i hasłem na każdym urządzeniu, nawet na pierwszym ekranie po wyborze języka: zmiany, notatki i ustawienia przyjdą same i potem będą aktualne. Na urządzeniu, na którym już się zalogowałeś, synchronizację włączysz w {p}. Motyw i przypomnienia pozostają ustawieniami każdego urządzenia.
+Zapomniałem hasła: co robić?
+W {p} dotknij {a}: dostaniesz kod e-mailem i wybierzesz nowe hasło. Nikt nie odzyska starego, więc kopia danych na serwerze zostanie odtworzona z urządzenia, którego używasz: zrób to na najbardziej aktualnym. Na pozostałych urządzeniach zaloguj się nowym hasłem.
+Kontynuuj bez konta
+Masz już konto?
+Zaloguj się, żeby odzyskać tutaj swoje zmiany i ustawienia. Jeśli jesteś tu pierwszy raz, możesz założyć konto albo kontynuować bez niego.
+Witaj z powrotem! Zmiany i ustawienia zostały wczytane.
+Z kontem dostajesz przypomnienia przed zmianami i masz te same zmiany na wszystkich swoich urządzeniach. Bez konta aplikacja działa jak zawsze.
+Twój e-mail; przy przypomnieniach zmiany z najbliższych 45 dni z godziną i nazwą zmiany, żeby wiedzieć, kiedy cię powiadomić; przy synchronizacji wszystkie dane, ale zaszyfrowane na urządzeniu twoim hasłem, więc nieczytelne.
+Hasło nigdy nie opuszcza urządzenia: serwer dostaje tylko klucz wyprowadzony do logowania, którym nie da się otworzyć twoich danych. Konto i wszystkie dane na serwerze możesz usunąć w każdej chwili, stąd.
+Hasło do konta
+To hasło do twojego konta i nie jest nigdzie zapisywane. Jeśli je zapomnisz, wybierzesz nowe za pomocą kodu e-mail: kopii na serwerze nie da się odzyskać, ale dane zostają na twoich urządzeniach, a kopia zostanie odtworzona stąd.

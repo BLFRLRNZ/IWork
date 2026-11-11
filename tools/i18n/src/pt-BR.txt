@@ -763,3 +763,48 @@ Como funciona
 Antes de sair, seus dados são criptografados neste dispositivo com a sua senha: chegam ao servidor ilegíveis e ninguém consegue lê-los.
 A senha não fica salva em lugar nenhum. Se você esquecer, a cópia no servidor não pode ser recuperada, mas seus dados continuam nos dispositivos e você pode recomeçar com uma nova senha.
 Se você mudar o mesmo dia em dois dispositivos, vale a mudança mais recente. O tema e os lembretes continuam sendo escolhas de cada dispositivo.
+Pelo menos 8 caracteres. A mesma senha protege seus dados sincronizados: ninguém consegue recuperá-la, então guarde-a bem.
+Senha
+Esqueceu a senha?
+Não tem conta? Crie uma
+Criar a conta
+Já tem conta? Entre
+Enviamos um código de 6 dígitos para {e}. Confira também a pasta de spam. Se este e-mail já tem conta, volte e escolha Entrar.
+Confirmar
+Enviar um novo código
+Vamos enviar um código por e-mail para você escolher uma nova senha. A cópia dos dados no servidor será recriada com os dados deste dispositivo, porque a antiga só abre com a senha antiga.
+Voltar para o login
+Enviamos um código de 6 dígitos para {e}. Confira também a pasta de spam.
+Nova senha
+Salvar a nova senha
+Login feito. Preparando seus dados…
+Enviamos um novo código.
+Digite a senha.
+Entrando…
+Primeiro confirme seu e-mail com o código que enviamos.
+E-mail ou senha errados. Se você criou a conta só com um código por e-mail, use Esqueceu a senha? para escolher uma.
+Não foi possível entrar. Verifique a conexão e tente de novo.
+Criando a conta…
+Não foi possível criar a conta. Verifique a conexão e tente de novo.
+Não foi possível salvar a nova senha. Verifique a conexão e tente de novo.
+Não existe conta com este e-mail.
+Login feito. Seus dados estão sincronizados neste dispositivo.
+Login feito. Os dados no servidor estão protegidos por outra senha: abra Sincronização para recomeçar a partir deste dispositivo.
+Login feito, mas a sincronização não começou. Tente de novo em Sincronização.
+Para ativar a sincronização neste dispositivo, digite a senha da sua conta.
+Os dados no servidor estão protegidos por outra senha, talvez uma antiga. Você pode recomeçar: a cópia no servidor será substituída pelos dados deste dispositivo, e os outros dispositivos vão pedir a senha atual.
+A senha foi alterada em outro dispositivo. Digite a nova.
+Como crio uma conta?
+Em {p} toque em {a} e depois em {b}: digite e-mail e senha e confirme com o código de 6 dígitos que chega por e-mail. Você também pode fazer isso na primeira tela, depois do idioma. A mesma senha protege os dados sincronizados. Sem conta o app funciona como sempre.
+Entre com o mesmo e-mail e a mesma senha em cada dispositivo, inclusive na primeira tela depois do idioma: turnos, notas e ajustes chegam sozinhos e depois continuam atualizados. Num dispositivo em que você já entrou, a sincronização se ativa em {p}. O tema e os lembretes continuam sendo escolhas de cada dispositivo.
+Esqueci a senha: o que eu faço?
+Em {p} toque em {a}: chega um código por e-mail e você escolhe uma nova senha. Ninguém consegue recuperar a antiga, então a cópia dos dados no servidor é recriada a partir do dispositivo que você está usando: faça isso no mais atualizado. Nos outros dispositivos entre com a nova senha.
+Continuar sem conta
+Já tem conta?
+Entre para encontrar aqui seus turnos e ajustes. Se é a primeira vez, você pode criar uma conta ou continuar sem.
+Bem-vindo de volta! Seus turnos e ajustes foram carregados.
+Com uma conta você recebe lembretes antes dos turnos e tem os mesmos turnos em todos os seus dispositivos. Sem conta o app funciona como sempre.
+Seu e-mail; com os lembretes, os turnos dos próximos 45 dias com horário e nome do turno, para saber quando avisar você; com a sincronização, todos os dados, mas criptografados no dispositivo com a sua senha e, portanto, ilegíveis.
+A senha nunca sai do dispositivo: o servidor recebe só uma chave derivada para o login, que não serve para abrir seus dados. Você pode excluir a conta e todos os dados no servidor quando quiser, por aqui.
+Senha da conta
+É a senha da sua conta e não fica salva em lugar nenhum. Se você esquecer, escolhe uma nova com um código por e-mail: a cópia no servidor não pode ser recuperada, mas seus dados continuam nos dispositivos e a cópia é recriada a partir daqui.

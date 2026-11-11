@@ -763,3 +763,48 @@ Cum funcționează
 Înainte să plece, datele sunt criptate pe acest dispozitiv cu parola ta: ajung pe server ilizibile și nimeni nu le poate citi.
 Parola nu este salvată nicăieri. Dacă o uiți, copia de pe server nu se poate recupera, dar datele rămân pe dispozitivele tale și poți începe din nou cu o parolă nouă.
 Dacă modifici aceeași zi pe două dispozitive, se păstrează modificarea cea mai recentă. Tema și mementourile rămân alegeri ale fiecărui dispozitiv.
+Cel puțin 8 caractere. Aceeași parolă îți protejează datele sincronizate: nimeni nu o poate recupera, așa că păstreaz-o bine.
+Parolă
+Ai uitat parola?
+Nu ai cont? Creează unul
+Creează contul
+Ai deja cont? Conectează-te
+Am trimis un cod de 6 cifre la {e}. Verifică și dosarul de spam. Dacă acest e-mail are deja cont, întoarce-te și alege Conectează-te.
+Confirmă
+Trimite-mi un cod nou
+Îți trimitem un cod pe e-mail ca să alegi o parolă nouă. Copia datelor de pe server va fi recreată cu datele de pe acest dispozitiv, pentru că cea veche se deschide doar cu parola veche.
+Înapoi la conectare
+Am trimis un cod de 6 cifre la {e}. Verifică și dosarul de spam.
+Parolă nouă
+Salvează parola nouă
+Te-ai conectat. Îți pregătesc datele…
+Ți-am trimis un cod nou.
+Scrie parola.
+Conectare…
+Mai întâi confirmă e-mailul cu codul pe care ți l-am trimis.
+E-mail sau parolă greșite. Dacă ai creat contul doar cu un cod pe e-mail, folosește Ai uitat parola? ca să alegi una.
+Nu m-am putut conecta. Verifică conexiunea și încearcă din nou.
+Se creează contul…
+Nu am reușit să creez contul. Verifică conexiunea și încearcă din nou.
+Nu am reușit să salvez parola nouă. Verifică conexiunea și încearcă din nou.
+Nu există niciun cont cu acest e-mail.
+Te-ai conectat. Datele tale sunt sincronizate pe acest dispozitiv.
+Te-ai conectat. Datele de pe server sunt protejate de altă parolă: deschide Sincronizare ca să începi din nou de pe acest dispozitiv.
+Te-ai conectat, dar sincronizarea nu a pornit. Încearcă din nou din Sincronizare.
+Ca să activezi sincronizarea pe acest dispozitiv, scrie parola contului.
+Datele de pe server sunt protejate de altă parolă, poate una veche. Poți începe din nou: copia de pe server va fi înlocuită cu datele de pe acest dispozitiv, iar celelalte dispozitive îți vor cere parola actuală.
+Parola a fost schimbată pe alt dispozitiv. Scrie-o pe cea nouă.
+Cum îmi creez un cont?
+În {p} atinge {a}, apoi {b}: scrie e-mailul și parola și confirmă cu codul de 6 cifre primit pe e-mail. Poți face asta și din primul ecran, după limbă. Aceeași parolă protejează datele sincronizate. Fără cont aplicația funcționează ca întotdeauna.
+Conectează-te cu același e-mail și aceeași parolă pe fiecare dispozitiv, chiar din primul ecran după limbă: turele, notițele și setările sosesc singure și apoi rămân la zi. Pe un dispozitiv unde ești deja conectat, sincronizarea se activează din {p}. Tema și mementourile rămân alegeri ale fiecărui dispozitiv.
+Am uitat parola: ce fac?
+În {p} atinge {a}: primești un cod pe e-mail și alegi o parolă nouă. Nimeni nu o poate recupera pe cea veche, așa că copia datelor de pe server este recreată de pe dispozitivul pe care îl folosești: fă asta de pe cel mai actualizat. Pe celelalte dispozitive conectează-te cu parola nouă.
+Continuă fără cont
+Ai deja cont?
+Conectează-te ca să-ți regăsești aici turele și setările. Dacă e prima dată, poți crea un cont sau poți continua fără.
+Bine ai revenit! Turele și setările au fost încărcate.
+Cu un cont primești mementouri înainte de ture și ai aceleași ture pe toate dispozitivele tale. Fără cont aplicația funcționează ca întotdeauna.
+E-mailul tău; cu mementourile, turele din următoarele 45 de zile cu ora și numele turei, ca să știm când să te anunțăm; cu sincronizarea, toate datele, dar criptate pe dispozitiv cu parola ta, deci ilizibile.
+Parola nu părăsește niciodată dispozitivul: serverul primește doar o cheie derivată pentru conectare, care nu poate deschide datele tale. Poți șterge contul și toate datele de pe server oricând, de aici.
+Parola contului
+Este parola contului tău și nu este salvată nicăieri. Dacă o uiți, alegi una nouă cu un cod pe e-mail: copia de pe server nu se poate recupera, dar datele rămân pe dispozitivele tale și copia este recreată de aici.

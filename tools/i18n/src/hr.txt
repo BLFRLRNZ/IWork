@@ -763,3 +763,48 @@ Kako radi
 Prije nego što krenu, podaci se šifriraju na ovom uređaju tvojom lozinkom: na poslužitelj stižu nečitljivi i nitko ih ne može pročitati.
 Lozinka se nigdje ne sprema. Ako je zaboraviš, kopija na poslužitelju ne može se vratiti, ali podaci ostaju na tvojim uređajima i možeš početi ispočetka s novom lozinkom.
 Ako promijeniš isti dan na dva uređaja, vrijedi najnovija promjena. Tema i podsjetnici ostaju izbor svakog uređaja.
+Najmanje 8 znakova. Ista lozinka štiti tvoje sinkronizirane podatke: nitko je ne može vratiti, pa je dobro čuvaj.
+Lozinka
+Zaboravljena lozinka?
+Nemaš račun? Napravi ga
+Napravi račun
+Već imaš račun? Prijavi se
+Poslali smo 6-znamenkasti kôd na {e}. Provjeri i neželjenu poštu. Ako ova e-pošta već ima račun, vrati se i odaberi Prijavi se.
+Potvrdi
+Pošalji mi novi kôd
+Poslat ćemo ti kôd e-poštom za odabir nove lozinke. Kopija podataka na poslužitelju bit će ponovno stvorena s podacima s ovog uređaja, jer se stara otvara samo starom lozinkom.
+Natrag na prijavu
+Poslali smo 6-znamenkasti kôd na {e}. Provjeri i neželjenu poštu.
+Nova lozinka
+Spremi novu lozinku
+Prijava uspjela. Pripremam tvoje podatke…
+Poslali smo ti novi kôd.
+Upiši lozinku.
+Prijava u tijeku…
+Najprije potvrdi e-poštu kôdom koji smo ti poslali.
+Pogrešna e-pošta ili lozinka. Ako si račun napravio samo kôdom e-poštom, odaberi lozinku putem Zaboravljena lozinka?.
+Nisam se uspio prijaviti. Provjeri vezu i pokušaj ponovno.
+Izrađujem račun…
+Nisam uspio napraviti račun. Provjeri vezu i pokušaj ponovno.
+Nisam uspio spremiti novu lozinku. Provjeri vezu i pokušaj ponovno.
+Nema računa s ovom e-poštom.
+Prijava uspjela. Tvoji podaci su sinkronizirani na ovom uređaju.
+Prijava uspjela. Podaci na poslužitelju zaštićeni su drugom lozinkom: otvori Sinkronizacija da počneš ispočetka s ovog uređaja.
+Prijava uspjela, ali sinkronizacija nije krenula. Pokušaj ponovno u Sinkronizacija.
+Za uključivanje sinkronizacije na ovom uređaju upiši lozinku svog računa.
+Podaci na poslužitelju zaštićeni su drugom lozinkom, možda starom. Možeš početi ispočetka: kopija na poslužitelju bit će zamijenjena podacima s ovog uređaja, a drugi uređaji tražit će trenutačnu lozinku.
+Lozinka je promijenjena na drugom uređaju. Upiši novu.
+Kako napraviti račun?
+U {p} dodirni {a}, zatim {b}: upiši e-poštu i lozinku i potvrdi 6-znamenkastim kôdom koji ti stigne e-poštom. Možeš to učiniti i na prvom zaslonu, nakon jezika. Ista lozinka štiti sinkronizirane podatke. Bez računa aplikacija radi kao i uvijek.
+Prijavi se istom e-poštom i lozinkom na svakom uređaju, čak i na prvom zaslonu nakon jezika: smjene, bilješke i postavke stižu same i zatim ostaju ažurne. Na uređaju na kojem si već prijavljen sinkronizaciju uključuješ u {p}. Tema i podsjetnici ostaju izbor svakog uređaja.
+Zaboravio sam lozinku: što učiniti?
+U {p} dodirni {a}: stiže ti kôd e-poštom i biraš novu lozinku. Nitko ne može vratiti staru, pa se kopija podataka na poslužitelju ponovno stvara s uređaja koji koristiš: učini to na najažurnijem. Na ostalim uređajima prijavi se novom lozinkom.
+Nastavi bez računa
+Već imaš račun?
+Prijavi se da ovdje pronađeš svoje smjene i postavke. Ako si ovdje prvi put, možeš napraviti račun ili nastaviti bez njega.
+Dobro došao natrag! Smjene i postavke su učitane.
+S računom primaš podsjetnike prije smjena i imaš iste smjene na svim svojim uređajima. Bez računa aplikacija radi kao i uvijek.
+Tvoja e-pošta; s podsjetnicima smjene za sljedećih 45 dana s vremenom i nazivom smjene, da znamo kada te obavijestiti; sa sinkronizacijom svi podaci, ali šifrirani na uređaju tvojom lozinkom, dakle nečitljivi.
+Lozinka nikad ne napušta uređaj: poslužitelj dobiva samo ključ izveden za prijavu, kojim se tvoji podaci ne mogu otvoriti. Račun i sve podatke na poslužitelju možeš izbrisati kad god želiš, odavde.
+Lozinka računa
+To je lozinka tvog računa i nigdje se ne sprema. Ako je zaboraviš, biraš novu kôdom e-poštom: kopija na poslužitelju ne može se vratiti, ali podaci ostaju na tvojim uređajima i kopija se ponovno stvara odavde.

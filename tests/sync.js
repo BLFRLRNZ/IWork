@@ -1,7 +1,7 @@
 // Sincronizzazione cifrata tra due dispositivi, con un Supabase finto in memoria.
 // Prova: prima attivazione, password sbagliata, unione dei dati, modifiche e cancellazioni nei due sensi,
 // conflitto (vince la modifica più recente), password dimenticata, e che sul server non ci sia niente in chiaro.
-const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');
+const {chromium}=require('playwright');const crypto=require('crypto');const SECRET=(em,pw)=>crypto.pbkdf2Sync(pw,'myturn-login|'+em,600000,32,'sha256').toString('hex');let PW='password-giusta';const path=require('path'),os=require('os'),fs=require('fs');
 const OUT=process.env.OUT||path.join(os.tmpdir(),'myturn-tests');fs.mkdirSync(OUT,{recursive:true});
 const URL0=process.env.URL||'http://localhost:8765/index.html';
 const DB={meta:null,items:new Map(),seq:0};const UID='u1';
@@ -13,6 +13,7 @@ async function fake(r){const u=new URL(r.request().url()),m=r.request().method()
       return J([...DB.items.values()].filter(x=>x.seq>gt).sort((a,b)=>a.seq-b.seq).slice(0,lim));}
     if(m==='POST'){for(const x of JSON.parse(b)){if(x.user_id!==UID)return J({message:'rls'},403);DB.items.set(x.k,{k:x.k,iv:x.iv,data:x.data,seq:++DB.seq});}return r.fulfill({status:201,body:''});}
     if(m==='DELETE'){DB.items.clear();return r.fulfill({status:204,body:''});}}
+  if(u.pathname==='/auth/v1/token'){const q=JSON.parse(b);return q.password===SECRET('mario@esempio.it',PW)?J({access_token:'A',refresh_token:'R',expires_in:3600,user:{id:UID,email:'mario@esempio.it'}}):J({code:400,error_code:'invalid_credentials',msg:'Invalid login credentials'},400);}
   if(u.pathname.startsWith('/rest/v1/rpc/'))return J(null);
   return J({});}
 const day=o=>{const d=new Date();d.setDate(d.getDate()+o);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');};
@@ -30,19 +31,18 @@ async function syncNow(p){await p.evaluate(()=>myturnDebug.syRun());await p.wait
   const A=await device(b,'A',{[day(1)]:{k:'w',s:'06:00'},[day(2)]:{k:'w',s:'14:00',n:'nota segreta'}});
   const B=await device(b,'B',{[day(3)]:{k:'f'},[day(1)]:{k:'w',s:'22:00'}});
   // A: prima attivazione
-  await openSy(A);ok(await A.isVisible('#syPw2Box'),'A: chiede la password due volte (prima attivazione)');
-  await A.fill('#syPw','corta');await A.click('#syGo');await A.waitForTimeout(150);ok(/almeno 8/.test(await A.textContent('#syStatus')),'A: password troppo corta');
-  await A.fill('#syPw','password-giusta');await A.fill('#syPw2','password-diversa');await A.click('#syGo');await A.waitForTimeout(150);ok(/non coincidono/.test(await A.textContent('#syStatus')),'A: password diverse');
-  await A.fill('#syPw2','password-giusta');await A.click('#syGo');await A.waitForTimeout(4000);
+  await openSy(A);ok(await A.isVisible('#syPw')&&!(await A.isVisible('#syPw2Box')),'A: chiede la password dell\'account, una volta sola');
+  await A.click('#syGo');await A.waitForTimeout(150);ok(/Scrivi la password/.test(await A.textContent('#syStatus')),'A: password vuota');
+  await A.fill('#syPw','password-sbagliata');await A.click('#syGo');await A.waitForTimeout(3000);ok(/sbagliata/.test(await A.textContent('#syStatus')),'A: password sbagliata');
+  await A.fill('#syPw','password-giusta');await A.click('#syGo');await A.waitForTimeout(6000);
   ok(/attiva/.test(await A.textContent('#syStatus')),'A: attivata → '+await A.textContent('#syStatus'));
   await A.screenshot({path:path.join(OUT,'sync_on.png')});await A.click('#syClose');await A.waitForTimeout(150);
   ok(DB.meta&&DB.items.size>=3,'server: meta e '+DB.items.size+' elementi');
   const dump=JSON.stringify([...DB.items.values()])+JSON.stringify(DB.meta);
   ok(!/nota segreta|06:00|14:00|2026-|settings|days/.test(dump),'server: nessun dato in chiaro');
   // B: password sbagliata, poi giusta
-  await openSy(B);ok(!(await B.isVisible('#syPw2Box'))&&await B.isVisible('#syForgot'),'B: chiede solo la password (si unisce)');
-  await B.fill('#syPw','password-sbagliata');await B.click('#syGo');await B.waitForTimeout(4000);ok(/sbagliata/.test(await B.textContent('#syStatus')),'B: password sbagliata');
-  await B.fill('#syPw','password-giusta');await B.click('#syGo');await B.waitForTimeout(4500);
+  await openSy(B);ok(await B.isVisible('#syForgot'),'B: c\'è Password dimenticata?');
+  await B.fill('#syPw','password-giusta');await B.click('#syGo');await B.waitForTimeout(6000);
   let dB=await daysOf(B);
   ok(dB[day(1)]&&dB[day(1)].s==='06:00','B: nel conflitto vince il dato già sincronizzato (06:00)');
   ok(dB[day(2)]&&dB[day(2)].n==='nota segreta','B: ha ricevuto il giorno di A con la nota');
@@ -62,10 +62,13 @@ async function syncNow(p){await p.evaluate(()=>myturnDebug.syRun());await p.wait
   // impostazioni: tema/promemoria locali, il resto si sincronizza
   await A.evaluate(()=>{const s=myturnDebug.S.settings;s.wd=7.5;myturnDebug.mark();});await A.waitForTimeout(5000);await syncNow(B);
   ok(await B.evaluate(()=>myturnDebug.S.settings.wd)===7.5,'B: riceve le impostazioni (durata del turno 7,5)');
-  // password dimenticata su B → A deve reinserirla
-  await openSy(B);await B.click('#syOff');await B.waitForTimeout(200);await B.click('#syClose');await openSy(B);await B.waitForTimeout(500);
-  await B.click('#syForgot');await B.fill('#syPw','nuova-password-1');await B.fill('#syPw2','nuova-password-1');await B.click('#syGo');await B.waitForTimeout(4500);
-  ok(/attiva/.test(await B.textContent('#syStatus')),'B: ricominciato con una nuova password');
+  // la password dell'account cambia, ma la copia sul server è ancora quella vecchia: B ricomincia, A se ne accorge
+  await openSy(B);await B.click('#syOff');await B.waitForTimeout(200);PW='nuova-password-1';
+  await B.fill('#syPw','nuova-password-1');await B.click('#syGo');await B.waitForTimeout(6000);
+  ok(await B.isVisible('#syGo')&&/Ricomincia/.test(await B.textContent('#syGo'))&&/altra password/.test(await B.textContent('#syIntro')),'B: avvisa che la copia sul server ha un\'altra password');
+  await B.screenshot({path:path.join(OUT,'sync_mismatch.png')});
+  await B.click('#syGo');await B.waitForTimeout(6000);
+  ok(/attiva/.test(await B.textContent('#syStatus')),'B: ricominciato con la nuova password');
   await syncNow(A);await A.click('#setBtn');await A.waitForTimeout(200);
   ok(/riattivare/.test(await A.textContent('#syLine')),'A: avvisa che la sincronizzazione va riattivata → '+await A.textContent('#syLine'));
   await A.screenshot({path:path.join(OUT,'sync_lost.png')});

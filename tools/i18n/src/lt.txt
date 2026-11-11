@@ -763,3 +763,48 @@ Kaip tai veikia
 Prieš išsiunčiant duomenys šiame įrenginyje užšifruojami tavo slaptažodžiu: į serverį jie atkeliauja neįskaitomi ir niekas negali jų perskaityti.
 Slaptažodis niekur nesaugomas. Jei jį pamirši, kopijos serveryje atkurti nepavyks, bet duomenys liks tavo įrenginiuose ir galėsi pradėti iš naujo su nauju slaptažodžiu.
 Jei tą pačią dieną pakeisi dviejuose įrenginiuose, galioja naujausias pakeitimas. Tema ir priminimai lieka kiekvieno įrenginio pasirinkimas.
+Bent 8 simboliai. Tas pats slaptažodis saugo tavo sinchronizuotus duomenis: niekas negali jo atkurti, todėl gerai jį saugok.
+Slaptažodis
+Pamiršai slaptažodį?
+Neturi paskyros? Susikurk
+Sukurti paskyrą
+Jau turi paskyrą? Prisijunk
+Išsiuntėme 6 skaitmenų kodą adresu {e}. Patikrink ir šlamšto aplanką. Jei šis el. paštas jau turi paskyrą, grįžk ir pasirink Prisijungti.
+Patvirtinti
+Atsiųsk naują kodą
+Atsiųsime kodą el. paštu, kad pasirinktum naują slaptažodį. Duomenų kopija serveryje bus sukurta iš naujo iš šio įrenginio duomenų, nes senoji atsidaro tik su senuoju slaptažodžiu.
+Atgal į prisijungimą
+Išsiuntėme 6 skaitmenų kodą adresu {e}. Patikrink ir šlamšto aplanką.
+Naujas slaptažodis
+Išsaugoti naują slaptažodį
+Prisijungta. Ruošiami tavo duomenys…
+Išsiuntėme tau naują kodą.
+Įrašyk slaptažodį.
+Jungiamasi…
+Pirmiausia patvirtink el. paštą kodu, kurį tau atsiuntėme.
+Neteisingas el. paštas arba slaptažodis. Jei paskyrą sukūrei tik su el. pašto kodu, pasirink slaptažodį per Pamiršai slaptažodį?.
+Nepavyko prisijungti. Patikrink ryšį ir bandyk dar kartą.
+Kuriama paskyra…
+Nepavyko sukurti paskyros. Patikrink ryšį ir bandyk dar kartą.
+Nepavyko išsaugoti naujo slaptažodžio. Patikrink ryšį ir bandyk dar kartą.
+Su šiuo el. paštu paskyros nėra.
+Prisijungta. Tavo duomenys šiame įrenginyje sinchronizuoti.
+Prisijungta. Duomenys serveryje apsaugoti kitu slaptažodžiu: atidaryk Sinchronizavimas ir pradėk iš naujo iš šio įrenginio.
+Prisijungta, bet sinchronizavimas neprasidėjo. Bandyk dar kartą skiltyje Sinchronizavimas.
+Kad įjungtum sinchronizavimą šiame įrenginyje, įrašyk savo paskyros slaptažodį.
+Duomenys serveryje apsaugoti kitu, galbūt senu, slaptažodžiu. Gali pradėti iš naujo: kopija serveryje bus pakeista šio įrenginio duomenimis, o kiti įrenginiai paprašys dabartinio slaptažodžio.
+Slaptažodis pakeistas kitame įrenginyje. Įrašyk naująjį.
+Kaip susikurti paskyrą?
+Skiltyje {p} paliesk {a}, tada {b}: įrašyk el. paštą ir slaptažodį ir patvirtink el. paštu gautu 6 skaitmenų kodu. Tai galima padaryti ir pirmame ekrane, po kalbos. Tas pats slaptažodis saugo sinchronizuotus duomenis. Be paskyros programėlė veikia kaip visada.
+Kiekviename įrenginyje prisijunk tuo pačiu el. paštu ir slaptažodžiu, net pirmame ekrane po kalbos: pamainos, pastabos ir nustatymai ateina patys ir paskui lieka atnaujinti. Įrenginyje, kuriame jau esi prisijungęs, sinchronizavimą įjunk skiltyje {p}. Tema ir priminimai lieka kiekvieno įrenginio pasirinkimas.
+Pamiršau slaptažodį: ką daryti?
+Skiltyje {p} paliesk {a}: gausi kodą el. paštu ir pasirinksi naują slaptažodį. Senojo niekas negali atkurti, todėl duomenų kopija serveryje sukuriama iš naujo iš įrenginio, kurį naudoji: daryk tai naujausiame. Kituose įrenginiuose prisijunk nauju slaptažodžiu.
+Tęsti be paskyros
+Jau turi paskyrą?
+Prisijunk ir rasi čia savo pamainas bei nustatymus. Jei esi čia pirmą kartą, gali susikurti paskyrą arba tęsti be jos.
+Sveikas sugrįžęs! Pamainos ir nustatymai įkelti.
+Su paskyra gauni priminimus prieš pamainas ir turi tas pačias pamainas visuose savo įrenginiuose. Be paskyros programėlė veikia kaip visada.
+Tavo el. paštas; su priminimais – artimiausių 45 dienų pamainos su laiku ir pamainos pavadinimu, kad žinotume, kada tau priminti; su sinchronizavimu – visi duomenys, bet įrenginyje užšifruoti tavo slaptažodžiu, todėl neįskaitomi.
+Slaptažodis niekada nepalieka įrenginio: serveris gauna tik prisijungimui išvestą raktą, kuriuo tavo duomenų atidaryti negalima. Paskyrą ir visus duomenis serveryje gali ištrinti bet kada, čia.
+Paskyros slaptažodis
+Tai tavo paskyros slaptažodis, ir jis niekur nesaugomas. Jei jį pamirši, pasirinksi naują su el. pašto kodu: kopijos serveryje atkurti nepavyks, bet duomenys liks tavo įrenginiuose ir kopija bus sukurta iš naujo iš čia.

@@ -763,3 +763,48 @@ Kā tas darbojas
 Pirms nosūtīšanas dati šajā ierīcē tiek šifrēti ar tavu paroli: serverī tie nonāk nesalasāmi, un neviens tos nevar izlasīt.
 Parole nekur netiek glabāta. Ja to aizmirsīsi, kopiju serverī nevarēs atjaunot, bet dati paliks tavās ierīcēs un varēsi sākt no jauna ar jaunu paroli.
 Ja maini to pašu dienu divās ierīcēs, spēkā ir jaunākās izmaiņas. Motīvs un atgādinājumi paliek katras ierīces izvēle.
+Vismaz 8 rakstzīmes. Tā pati parole aizsargā tavus sinhronizētos datus: neviens to nevar atjaunot, tāpēc glabā to labi.
+Parole
+Aizmirsi paroli?
+Nav konta? Izveido to
+Izveidot kontu
+Jau ir konts? Piesakies
+Mēs nosūtījām 6 ciparu kodu uz {e}. Pārbaudi arī surogātpasta mapi. Ja šim e-pastam jau ir konts, atgriezies un izvēlies Pieteikties.
+Apstiprināt
+Sūtīt man jaunu kodu
+Mēs tev nosūtīsim kodu pa e-pastu, lai izvēlētos jaunu paroli. Datu kopija serverī tiks izveidota no jauna ar šīs ierīces datiem, jo vecā atveras tikai ar veco paroli.
+Atpakaļ uz pieteikšanos
+Mēs nosūtījām 6 ciparu kodu uz {e}. Pārbaudi arī surogātpasta mapi.
+Jaunā parole
+Saglabāt jauno paroli
+Pieteikšanās izdevās. Sagatavoju tavus datus…
+Mēs tev nosūtījām jaunu kodu.
+Ieraksti paroli.
+Piesakās…
+Vispirms apstiprini savu e-pastu ar kodu, ko tev nosūtījām.
+Nepareizs e-pasts vai parole. Ja kontu izveidoji tikai ar e-pasta kodu, izvēlies paroli, izmantojot Aizmirsi paroli?.
+Neizdevās pieteikties. Pārbaudi savienojumu un mēģini vēlreiz.
+Izveido kontu…
+Neizdevās izveidot kontu. Pārbaudi savienojumu un mēģini vēlreiz.
+Neizdevās saglabāt jauno paroli. Pārbaudi savienojumu un mēģini vēlreiz.
+Ar šo e-pastu nav konta.
+Pieteikšanās izdevās. Tavi dati šajā ierīcē ir sinhronizēti.
+Pieteikšanās izdevās. Dati serverī ir aizsargāti ar citu paroli: atver Sinhronizācija, lai sāktu no jauna no šīs ierīces.
+Pieteikšanās izdevās, bet sinhronizācija nesākās. Mēģini vēlreiz sadaļā Sinhronizācija.
+Lai ieslēgtu sinhronizāciju šajā ierīcē, ieraksti sava konta paroli.
+Dati serverī ir aizsargāti ar citu paroli, varbūt vecu. Vari sākt no jauna: kopija serverī tiks aizstāta ar šīs ierīces datiem, un citas ierīces prasīs pašreizējo paroli.
+Parole tika nomainīta citā ierīcē. Ieraksti jauno.
+Kā izveidot kontu?
+Sadaļā {p} pieskaries {a}, tad {b}: ieraksti e-pastu un paroli un apstiprini ar 6 ciparu kodu, ko saņemsi pa e-pastu. To var izdarīt arī pirmajā ekrānā pēc valodas. Tā pati parole aizsargā sinhronizētos datus. Bez konta lietotne darbojas kā vienmēr.
+Katrā ierīcē piesakies ar to pašu e-pastu un paroli, pat pirmajā ekrānā pēc valodas: maiņas, piezīmes un iestatījumi pienāk paši un pēc tam paliek atjaunināti. Ierīcē, kurā jau esi pieteicies, sinhronizāciju ieslēdz sadaļā {p}. Motīvs un atgādinājumi paliek katras ierīces izvēle.
+Aizmirsu paroli: ko darīt?
+Sadaļā {p} pieskaries {a}: saņemsi kodu pa e-pastu un izvēlēsies jaunu paroli. Veco neviens nevar atjaunot, tāpēc datu kopija serverī tiek izveidota no jauna no ierīces, kuru izmanto: dari to visjaunākajā. Citās ierīcēs piesakies ar jauno paroli.
+Turpināt bez konta
+Jau ir konts?
+Piesakies, lai šeit atrastu savas maiņas un iestatījumus. Ja esi šeit pirmo reizi, vari izveidot kontu vai turpināt bez tā.
+Laipni lūdzam atpakaļ! Maiņas un iestatījumi ir ielādēti.
+Ar kontu tu saņem atgādinājumus pirms maiņām un redzi tās pašas maiņas visās savās ierīcēs. Bez konta lietotne darbojas kā vienmēr.
+Tavs e-pasts; ar atgādinājumiem nākamo 45 dienu maiņas ar laiku un maiņas nosaukumu, lai zinātu, kad tev atgādināt; ar sinhronizāciju visi dati, bet ierīcē šifrēti ar tavu paroli, tātad nesalasāmi.
+Parole nekad nepamet ierīci: serveris saņem tikai pieteikšanās atslēgu, kas no tās atvasināta un ar kuru tavus datus nevar atvērt. Kontu un visus datus serverī vari izdzēst jebkurā laikā, šeit.
+Konta parole
+Tā ir tava konta parole, un tā nekur netiek glabāta. Ja to aizmirsīsi, izvēlēsies jaunu ar e-pasta kodu: kopiju serverī nevar atjaunot, bet dati paliek tavās ierīcēs un kopija tiek izveidota no jauna no šejienes.

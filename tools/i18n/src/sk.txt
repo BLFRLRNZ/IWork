@@ -763,3 +763,48 @@ Ako to funguje
 Skôr než údaje odídu, zašifrujú sa v tomto zariadení tvojím heslom: na server dorazia nečitateľné a nikto ich nemôže prečítať.
 Heslo sa nikde neukladá. Ak ho zabudneš, kópiu na serveri nemožno obnoviť, ale údaje zostávajú na tvojich zariadeniach a môžeš začať odznova s novým heslom.
 Ak zmeníš ten istý deň na dvoch zariadeniach, platí najnovšia zmena. Motív a pripomienky zostávajú voľbou každého zariadenia.
+Aspoň 8 znakov. Rovnaké heslo chráni tvoje synchronizované údaje: nikto ho nemôže obnoviť, tak si ho dobre uschovaj.
+Heslo
+Zabudol si heslo?
+Nemáš účet? Vytvor si ho
+Vytvoriť účet
+Už máš účet? Prihlás sa
+Poslali sme 6-miestny kód na {e}. Pozri sa aj do nevyžiadanej pošty. Ak tento e-mail už účet má, vráť sa a zvoľ Prihlásiť sa.
+Potvrdiť
+Pošli mi nový kód
+Pošleme ti e-mailom kód na výber nového hesla. Kópia údajov na serveri sa znova vytvorí z údajov tohto zariadenia, pretože stará sa otvorí len starým heslom.
+Späť na prihlásenie
+Poslali sme 6-miestny kód na {e}. Pozri sa aj do nevyžiadanej pošty.
+Nové heslo
+Uložiť nové heslo
+Prihlásenie prebehlo. Pripravujem tvoje údaje…
+Poslali sme ti nový kód.
+Zadaj heslo.
+Prihlasujem…
+Najprv potvrď e-mail kódom, ktorý sme ti poslali.
+Nesprávny e-mail alebo heslo. Ak si účet vytvoril len s kódom z e-mailu, zvoľ si heslo cez Zabudol si heslo?.
+Prihlásenie sa nepodarilo. Skontroluj pripojenie a skús to znova.
+Vytváram účet…
+Účet sa nepodarilo vytvoriť. Skontroluj pripojenie a skús to znova.
+Nové heslo sa nepodarilo uložiť. Skontroluj pripojenie a skús to znova.
+S týmto e-mailom neexistuje žiadny účet.
+Prihlásenie prebehlo. Tvoje údaje sú na tomto zariadení synchronizované.
+Prihlásenie prebehlo. Údaje na serveri sú chránené iným heslom: otvor Synchronizácia a začni odznova z tohto zariadenia.
+Prihlásenie prebehlo, ale synchronizácia sa nespustila. Skús to znova v Synchronizácia.
+Na zapnutie synchronizácie na tomto zariadení zadaj heslo svojho účtu.
+Údaje na serveri sú chránené iným heslom, možno starým. Môžeš začať odznova: kópia na serveri sa nahradí údajmi z tohto zariadenia a ostatné zariadenia si vypýtajú aktuálne heslo.
+Heslo bolo zmenené na inom zariadení. Zadaj nové.
+Ako si vytvorím účet?
+V {p} ťukni na {a}, potom na {b}: zadaj e-mail a heslo a potvrď 6-miestnym kódom, ktorý ti príde e-mailom. Dá sa to aj na prvej obrazovke, po výbere jazyka. Rovnaké heslo chráni synchronizované údaje. Bez účtu aplikácia funguje ako vždy.
+Prihlás sa na každom zariadení rovnakým e-mailom a heslom, pokojne už na prvej obrazovke po výbere jazyka: zmeny, poznámky a nastavenia prídu samy a potom zostávajú aktuálne. Na zariadení, kde už si prihlásený, zapneš synchronizáciu v {p}. Motív a pripomienky zostávajú voľbou každého zariadenia.
+Zabudol som heslo: čo mám robiť?
+V {p} ťukni na {a}: príde ti kód e-mailom a zvolíš nové heslo. Staré nikto neobnoví, takže kópia údajov na serveri sa znova vytvorí zo zariadenia, ktoré používaš: urob to na tom najaktuálnejšom. Na ostatných zariadeniach sa prihlás novým heslom.
+Pokračovať bez účtu
+Už máš účet?
+Prihlás sa a nájdeš tu svoje zmeny a nastavenia. Ak si tu prvýkrát, môžeš si vytvoriť účet alebo pokračovať bez neho.
+Vitaj späť! Zmeny a nastavenia sú načítané.
+S účtom ti chodia pripomienky pred zmenami a máš rovnaké zmeny na všetkých svojich zariadeniach. Bez účtu aplikácia funguje ako vždy.
+Tvoj e-mail; s pripomienkami zmeny na najbližších 45 dní s časom a názvom zmeny, aby sme vedeli, kedy ťa upozorniť; so synchronizáciou všetky údaje, ale zašifrované v zariadení tvojím heslom, teda nečitateľné.
+Heslo nikdy neopustí zariadenie: server dostane len kľúč odvodený na prihlásenie, ktorým sa tvoje údaje otvoriť nedajú. Účet a všetky údaje na serveri môžeš kedykoľvek vymazať, tu.
+Heslo k účtu
+Je to heslo k tvojmu účtu a nikde sa neukladá. Ak ho zabudneš, zvolíš si nové pomocou kódu z e-mailu: kópiu na serveri nemožno obnoviť, ale údaje zostávajú na tvojich zariadeniach a kópia sa znova vytvorí odtiaľto.

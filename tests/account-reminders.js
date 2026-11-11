@@ -1,10 +1,12 @@
 // Account e promemoria con un Supabase finto (le risposte del server sono simulate).
-const {chromium}=require('playwright');const path=require('path'),os=require('os'),fs=require('fs');const OUT=process.env.OUT||path.join(os.tmpdir(),'myturn-tests');fs.mkdirSync(OUT,{recursive:true});
+const {chromium}=require('playwright');const crypto=require('crypto');const SECRET=(em,pw)=>crypto.pbkdf2Sync(pw,'myturn-login|'+em,600000,32,'sha256').toString('hex');const path=require('path'),os=require('os'),fs=require('fs');const OUT=process.env.OUT||path.join(os.tmpdir(),'myturn-tests');fs.mkdirSync(OUT,{recursive:true});
 (async()=>{const b=await chromium.launch();const errs=[],calls=[];
 const ctx=await b.newContext({viewport:{width:390,height:844},timezoneId:'Europe/Rome'});const p=await ctx.newPage();
 p.on('pageerror',e=>errs.push(e.message));
 await p.route('https://test.supabase.co/**',async r=>{const u=new URL(r.request().url()),body=r.request().postData();calls.push(u.pathname+' '+(body||'').slice(0,300));
   const J=(o,st=200)=>r.fulfill({status:st,contentType:'application/json',body:JSON.stringify(o)});
+  if(u.pathname==='/auth/v1/token'&&u.searchParams.get('grant_type')==='password'){const q=JSON.parse(body);return q.password===SECRET('mario@esempio.it','password-giusta')?J({access_token:'A',refresh_token:'R',expires_in:3600,user:{id:'u1',email:'mario@esempio.it'}}):J({code:400,error_code:'invalid_credentials',msg:'Invalid login credentials'},400);}
+  if(u.pathname==='/rest/v1/sync_meta'||u.pathname==='/rest/v1/sync_items'){if(r.request().method()==='GET')return J([]);return r.fulfill({status:201,body:''});}
   if(u.pathname==='/auth/v1/otp')return J({});
   if(u.pathname==='/auth/v1/verify')return JSON.parse(body).token==='123456'?J({access_token:'A',refresh_token:'R',expires_in:3600,user:{id:'u1',email:'mario@esempio.it'}}):J({msg:'Token has expired or is invalid'},403);
   if(u.pathname==='/functions/v1/push-test')return J({sent:1,devices:1});
@@ -24,12 +26,10 @@ await p.goto('http://localhost:8765/index.html');await p.waitForTimeout(500);
 // settings: account row
 await p.click('#setBtn');await p.waitForTimeout(200);console.log('acSect visible',await p.isVisible('#acSect'),'|',await p.textContent('#acInfo'));
 await p.click('#acBtn');await p.waitForTimeout(250);console.log('active',await p.evaluate(()=>document.activeElement.id));
-await p.click('#acGo');await p.waitForTimeout(100);console.log('empty email:',await p.textContent('#acStatus'));
-await p.fill('#acEmail','mario@esempio.it');await p.click('#acGo');await p.waitForTimeout(300);
-console.log('code box',await p.isVisible('#acCodeBox'),'|',await p.textContent('#acCodeHelp'));
+await p.click('#acAuth [data-a=go]');await p.waitForTimeout(100);console.log('empty email:',await p.textContent('#acAuth .austat'));
+await p.fill('#acAuthEmail','mario@esempio.it');await p.fill('#acAuthPw','password-sbagliata');await p.click('#acAuth [data-a=go]');await p.waitForTimeout(3000);console.log('wrong pw:',await p.textContent('#acAuth .austat'));
 await p.screenshot({path:path.join(OUT,'ac_code.png')});
-await p.fill('#acCode','111111');await p.click('#acGo');await p.waitForTimeout(300);console.log('wrong code:',await p.textContent('#acStatus'));
-await p.fill('#acCode','123456');await p.click('#acGo');await p.waitForTimeout(300);console.log('ok:',await p.textContent('#acStatus'),'|',await p.textContent('#acWho'));
+await p.fill('#acAuthPw','password-giusta');await p.click('#acAuth [data-a=go]');await p.waitForTimeout(6000);console.log('ok:',await p.textContent('#acStatus'),'|',await p.textContent('#acWho'));
 await p.screenshot({path:path.join(OUT,'ac_in.png')});
 await p.click('#acClose');await p.waitForTimeout(200);
 // reminders

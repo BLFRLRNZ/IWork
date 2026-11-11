@@ -44,7 +44,9 @@ Progetto `jszgiqdylsachclshyqm` (nel pannello si chiama "iwork"), Francoforte, p
    $$);
    ```
    Il segreto viene letto dalla tabella, così non compare nel testo del job.
-5. In **Authentication → Emails → Templates**, mettere il codice a 6 cifre (`{{ .Token }}`) nel testo di **Magic link** e di **Confirm sign up** (la seconda arriva al primo accesso di un indirizzo nuovo). L'app chiede il codice invece del link, perché su iPhone il link aprirebbe Safari e non l'app installata.
+5. In **Authentication → Emails → Templates**, mettere il codice a 6 cifre (`{{ .Token }}`) nel testo di **Confirm sign up** (conferma della registrazione) e di **Magic link** (codice per "Password dimenticata?"). Lasciare attiva la conferma dell'email (Authentication → Sign In / Providers → Email → Confirm email).
+
+L'app accede con email e password, ma a Supabase non arriva mai la password vera: arriva una chiave ricavata sul dispositivo (PBKDF2 con l'email come sale). La chiave che cifra i dati sincronizzati è un'altra, ricavata con un sale diverso, e il server non la vede mai. L'app chiede il codice invece del link, perché su iPhone il link aprirebbe Safari e non l'app installata.
 6. Nell'app, impostare in `SUPA` (dentro `index.html`) l'URL del progetto e la chiave pubblica (anon). La chiave pubblica può stare nel codice: la protezione la danno le regole RLS.
 
 ## Email

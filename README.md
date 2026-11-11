@@ -53,9 +53,11 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 **Impostazioni**
 - Paese e festività, lingua, tema automatico, chiaro o scuro, aggiornamenti.
 
-**Account e promemoria**
-- Con un account (Impostazioni → Account, accesso con un codice di 6 cifre ricevuto via email) il telefono avvisa prima di ogni turno anche ad app chiusa: da 15 minuti a 3 ore prima, anche per il secondo lavoro e la reperibilità. Si attivano in Strumenti → Promemoria. Sull'iPhone serve l'app aggiunta alla schermata Home.
-- **Sincronizzazione** (Impostazioni → Account): gli stessi turni, note, etichette, busta paga e impostazioni su tutti i dispositivi dove si accede con la stessa email. I dati vengono cifrati sul dispositivo con una password scelta dall'utente (AES-GCM, chiave ricavata con PBKDF2) e sul server sono illeggibili; la password non viene salvata da nessuna parte. Se lo stesso giorno cambia su due dispositivi vale la modifica più recente; tema e promemoria restano di ogni dispositivo.
+**Account, promemoria e sincronizzazione**
+- **Accesso con email e password**, anche dalla prima schermata subito dopo la lingua: si accede, si crea un account (confermato con un codice di 6 cifre via email) oppure si continua senza. Chi accede su un nuovo telefono ritrova subito turni e impostazioni e salta il resto della configurazione. "Password dimenticata?" manda un codice via email per sceglierne una nuova.
+- La password non lascia mai il dispositivo: da essa si ricavano due chiavi diverse, una per l'accesso (l'unica che riceve il server) e una per cifrare i dati sincronizzati, che il server quindi non può leggere.
+- **Promemoria** (Strumenti → Promemoria): il telefono avvisa prima di ogni turno anche ad app chiusa, da 15 minuti a 3 ore prima, anche per il secondo lavoro e la reperibilità. Sull'iPhone serve l'app aggiunta alla schermata Home.
+- **Sincronizzazione**: si accende da sola all'accesso. Turni, note, etichette, busta paga e impostazioni restano uguali su tutti i dispositivi; se lo stesso giorno cambia su due dispositivi vale la modifica più recente; tema e promemoria restano di ogni dispositivo.
 - Senza account l'app funziona come sempre.
 
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in 23 lingue (le traduzioni sono nella cartella `lang/`).

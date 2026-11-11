@@ -763,3 +763,48 @@ Kako deluje
 Preden odidejo, se podatki na tej napravi šifrirajo s tvojim geslom: na strežnik prispejo neberljivi in nihče jih ne more prebrati.
 Geslo ni nikjer shranjeno. Če ga pozabiš, kopije na strežniku ni mogoče obnoviti, a podatki ostanejo na tvojih napravah in lahko začneš znova z novim geslom.
 Če isti dan spremeniš na dveh napravah, velja najnovejša sprememba. Tema in opomniki ostanejo izbira vsake naprave.
+Vsaj 8 znakov. Isto geslo ščiti tvoje sinhronizirane podatke: nihče ga ne more obnoviti, zato ga dobro hrani.
+Geslo
+Si pozabil geslo?
+Nimaš računa? Ustvari ga
+Ustvari račun
+Že imaš račun? Prijavi se
+Na {e} smo poslali 6-mestno kodo. Preveri tudi mapo z neželeno pošto. Če ima ta e-naslov že račun, se vrni in izberi Prijava.
+Potrdi
+Pošlji mi novo kodo
+Po e-pošti ti bomo poslali kodo za izbiro novega gesla. Kopija podatkov na strežniku bo ponovno ustvarjena s podatki s te naprave, ker se stara odpre samo s starim geslom.
+Nazaj na prijavo
+Na {e} smo poslali 6-mestno kodo. Preveri tudi mapo z neželeno pošto.
+Novo geslo
+Shrani novo geslo
+Prijava uspela. Pripravljam tvoje podatke…
+Poslali smo ti novo kodo.
+Vpiši geslo.
+Prijavljam…
+Najprej potrdi e-naslov s kodo, ki smo ti jo poslali.
+Napačen e-naslov ali geslo. Če si račun ustvaril samo s kodo po e-pošti, izberi geslo prek Si pozabil geslo?.
+Prijava ni uspela. Preveri povezavo in poskusi znova.
+Ustvarjam račun…
+Računa ni bilo mogoče ustvariti. Preveri povezavo in poskusi znova.
+Novega gesla ni bilo mogoče shraniti. Preveri povezavo in poskusi znova.
+S tem e-naslovom ni računa.
+Prijava uspela. Tvoji podatki so na tej napravi sinhronizirani.
+Prijava uspela. Podatki na strežniku so zaščiteni z drugim geslom: odpri Sinhronizacija in začni znova s te naprave.
+Prijava uspela, a sinhronizacija se ni začela. Poskusi znova v Sinhronizacija.
+Za vklop sinhronizacije na tej napravi vpiši geslo svojega računa.
+Podatki na strežniku so zaščiteni z drugim, morda starim geslom. Lahko začneš znova: kopija na strežniku bo nadomeščena s podatki s te naprave, druge naprave pa bodo zahtevale trenutno geslo.
+Geslo je bilo spremenjeno na drugi napravi. Vpiši novo.
+Kako ustvarim račun?
+V {p} tapni {a}, nato {b}: vpiši e-naslov in geslo ter potrdi s 6-mestno kodo, ki jo prejmeš po e-pošti. To lahko narediš tudi na prvem zaslonu, po izbiri jezika. Isto geslo ščiti sinhronizirane podatke. Brez računa aplikacija deluje kot vedno.
+Na vsaki napravi se prijavi z istim e-naslovom in geslom, že na prvem zaslonu po izbiri jezika: izmene, zapiski in nastavitve pridejo sami in nato ostanejo posodobljeni. Na napravi, kjer si že prijavljen, sinhronizacijo vklopiš v {p}. Tema in opomniki ostanejo izbira vsake naprave.
+Pozabil sem geslo: kaj naj naredim?
+V {p} tapni {a}: po e-pošti prejmeš kodo in izbereš novo geslo. Starega nihče ne more obnoviti, zato se kopija podatkov na strežniku ponovno ustvari z naprave, ki jo uporabljaš: naredi to na najbolj posodobljeni. Na drugih napravah se prijavi z novim geslom.
+Nadaljuj brez računa
+Že imaš račun?
+Prijavi se, da tukaj najdeš svoje izmene in nastavitve. Če si tu prvič, lahko ustvariš račun ali nadaljuješ brez njega.
+Dobrodošel nazaj! Izmene in nastavitve so naložene.
+Z računom prejemaš opomnike pred izmenami in imaš iste izmene na vseh svojih napravah. Brez računa aplikacija deluje kot vedno.
+Tvoj e-naslov; z opomniki izmene za naslednjih 45 dni s časom in imenom izmene, da vemo, kdaj te opomniti; s sinhronizacijo vsi podatki, a na napravi šifrirani s tvojim geslom, torej neberljivi.
+Geslo nikoli ne zapusti naprave: strežnik dobi samo ključ, izpeljan za prijavo, s katerim tvojih podatkov ni mogoče odpreti. Račun in vse podatke na strežniku lahko kadar koli izbrišeš, tukaj.
+Geslo računa
+To je geslo tvojega računa in ni nikjer shranjeno. Če ga pozabiš, izbereš novo s kodo po e-pošti: kopije na strežniku ni mogoče obnoviti, a podatki ostanejo na tvojih napravah in kopija se ponovno ustvari od tukaj.

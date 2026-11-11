@@ -1,12 +1,12 @@
 {
-  "version": "2.9.0",
+  "version": "2.10.0",
   "date": "2026-11-11",
   "notes": {
-    "it": "Nuova sincronizzazione: gli stessi turni su telefono, tablet e computer. Attivala in Impostazioni → Account con una password tua: i dati vengono cifrati sul dispositivo e sul server sono illeggibili.",
-    "en": "New sync: the same shifts on phone, tablet and computer. Turn it on in Settings → Account with a password of your own: data is encrypted on the device and can't be read on the server.",
-    "fr": "Nouvelle synchronisation : les mêmes postes sur téléphone, tablette et ordinateur. Activez-la dans Réglages → Compte avec votre propre mot de passe : les données sont chiffrées sur l'appareil et illisibles sur le serveur.",
-    "de": "Neue Synchronisierung: dieselben Schichten auf Handy, Tablet und Computer. Schalte sie unter Einstellungen → Konto mit einem eigenen Passwort ein: Die Daten werden auf dem Gerät verschlüsselt und sind auf dem Server unlesbar.",
-    "es": "Nueva sincronización: los mismos turnos en el teléfono, la tableta y el ordenador. Actívala en Ajustes → Cuenta con una contraseña tuya: los datos se cifran en el dispositivo y en el servidor son ilegibles.",
-    "pt": "Nova sincronização: os mesmos turnos no telemóvel, tablet e computador. Ative-a em Definições → Conta com uma palavra-passe sua: os dados são cifrados no dispositivo e ilegíveis no servidor."
+    "it": "Accesso con email e password, anche dalla prima schermata: su un nuovo telefono ritrovi subito turni e impostazioni. La password protegge anche i dati sincronizzati e non lascia mai il dispositivo. Sistemati campi stretti o sovrapposti, soprattutto sui telefoni piccoli.",
+    "en": "Sign in with email and password, even from the first screen: on a new phone your shifts and settings are back right away. The password also protects your synced data and never leaves the device. Fixed cramped or overlapping fields, especially on small phones.",
+    "fr": "Connexion avec e-mail et mot de passe, dès le premier écran : sur un nouveau téléphone, vous retrouvez tout de suite vos postes et vos réglages. Le mot de passe protège aussi les données synchronisées et ne quitte jamais l'appareil. Champs trop serrés ou superposés corrigés, surtout sur les petits téléphones.",
+    "de": "Anmeldung mit E-Mail und Passwort, schon auf dem ersten Bildschirm: Auf einem neuen Handy sind Schichten und Einstellungen sofort wieder da. Das Passwort schützt auch die synchronisierten Daten und verlässt nie das Gerät. Enge oder überlappende Felder korrigiert, vor allem auf kleinen Handys.",
+    "es": "Inicio de sesión con correo y contraseña, ya desde la primera pantalla: en un teléfono nuevo recuperas enseguida turnos y ajustes. La contraseña también protege los datos sincronizados y nunca sale del dispositivo. Corregidos campos estrechos o superpuestos, sobre todo en teléfonos pequeños.",
+    "pt": "Início de sessão com e-mail e palavra-passe, logo no primeiro ecrã: num telemóvel novo recupera logo os turnos e as definições. A palavra-passe também protege os dados sincronizados e nunca sai do dispositivo. Corrigidos campos apertados ou sobrepostos, sobretudo em telemóveis pequenos."
   }
 }

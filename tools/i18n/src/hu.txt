@@ -763,3 +763,48 @@ Hogyan működik
 Mielőtt elindulnak, az adataidat ezen az eszközön titkosítjuk a jelszavaddal: olvashatatlanul érkeznek a szerverre, és senki sem tudja elolvasni őket.
 A jelszó sehol sincs elmentve. Ha elfelejted, a szerveren lévő másolat nem állítható vissza, de az adatok az eszközeiden maradnak, és új jelszóval újrakezdheted.
 Ha ugyanazt a napot két eszközön módosítod, a legutóbbi módosítás marad érvényben. A téma és az emlékeztetők eszközönként külön maradnak.
+Legalább 8 karakter. Ugyanez a jelszó védi a szinkronizált adataidat: senki sem tudja visszaállítani, ezért őrizd meg jól.
+Jelszó
+Elfelejtetted a jelszót?
+Nincs fiókod? Hozz létre egyet
+Fiók létrehozása
+Van már fiókod? Jelentkezz be
+Küldtünk egy 6 jegyű kódot ide: {e}. Nézd meg a levélszemét mappát is. Ha ehhez az e-mail-címhez már tartozik fiók, lépj vissza, és válaszd a Bejelentkezést.
+Megerősítés
+Küldj új kódot
+E-mailben küldünk egy kódot, hogy új jelszót választhass. A szerveren lévő adatmásolat ennek az eszköznek az adataiból készül újra, mert a régi csak a régi jelszóval nyílik.
+Vissza a bejelentkezéshez
+Küldtünk egy 6 jegyű kódot ide: {e}. Nézd meg a levélszemét mappát is.
+Új jelszó
+Új jelszó mentése
+Sikeres bejelentkezés. Előkészítem az adataidat…
+Küldtünk egy új kódot.
+Írd be a jelszót.
+Bejelentkezés…
+Előbb erősítsd meg az e-mail-címedet az általunk küldött kóddal.
+Hibás e-mail-cím vagy jelszó. Ha a fiókot csak e-mailes kóddal hoztad létre, válassz jelszót az Elfelejtetted a jelszót? lehetőséggel.
+Nem sikerült bejelentkezni. Ellenőrizd a kapcsolatot, és próbáld újra.
+Fiók létrehozása…
+Nem sikerült létrehozni a fiókot. Ellenőrizd a kapcsolatot, és próbáld újra.
+Nem sikerült menteni az új jelszót. Ellenőrizd a kapcsolatot, és próbáld újra.
+Ehhez az e-mail-címhez nem tartozik fiók.
+Sikeres bejelentkezés. Az adataid szinkronizálva vannak ezen az eszközön.
+Sikeres bejelentkezés. A szerveren lévő adatokat egy másik jelszó védi: nyisd meg a Szinkronizálást, és kezdd újra erről az eszközről.
+Sikeres bejelentkezés, de a szinkronizálás nem indult el. Próbáld újra a Szinkronizálásban.
+A szinkronizálás bekapcsolásához ezen az eszközön írd be a fiókod jelszavát.
+A szerveren lévő adatokat egy másik, talán régi jelszó védi. Újrakezdheted: a szerveren lévő másolat ennek az eszköznek az adataira cserélődik, a többi eszköz pedig a jelenlegi jelszót kéri majd.
+A jelszót egy másik eszközön megváltoztatták. Írd be az újat.
+Hogyan hozok létre fiókot?
+Itt: {p} koppints erre: {a}, majd erre: {b}. Írd be az e-mail-címet és a jelszót, és erősítsd meg az e-mailben kapott 6 jegyű kóddal. Az első képernyőn is megteheted, a nyelv után. Ugyanez a jelszó védi a szinkronizált adatokat. Fiók nélkül az app ugyanúgy működik, mint eddig.
+Minden eszközön ugyanazzal az e-mail-címmel és jelszóval jelentkezz be, akár már az első képernyőn a nyelv után: a műszakok, jegyzetek és beállítások maguktól megérkeznek, és utána naprakészek maradnak. Azon az eszközön, ahol már be vagy jelentkezve, itt kapcsolod be a szinkronizálást: {p}. A téma és az emlékeztetők eszközönként külön maradnak.
+Elfelejtettem a jelszavam: mit tegyek?
+Itt: {p} koppints erre: {a}. Kapsz egy kódot e-mailben, és új jelszót választasz. A régit senki sem tudja visszaállítani, ezért a szerveren lévő adatmásolat abból az eszközből készül újra, amelyet használsz: a legfrissebbről csináld. A többi eszközön az új jelszóval jelentkezz be.
+Folytatás fiók nélkül
+Van már fiókod?
+Jelentkezz be, és itt találod a műszakjaidat és beállításaidat. Ha először jársz itt, létrehozhatsz egy fiókot, vagy folytathatod nélküle.
+Üdv újra! A műszakok és beállítások betöltődtek.
+Fiókkal emlékeztetőt kapsz a műszakok előtt, és ugyanazok a műszakok vannak meg az összes eszközödön. Fiók nélkül az app ugyanúgy működik, mint eddig.
+Az e-mail-címed; emlékeztetőkkel a következő 45 nap műszakjai időponttal és a műszak nevével, hogy tudjuk, mikor értesítsünk; szinkronizálással az összes adatod, de az eszközön a jelszavaddal titkosítva, tehát olvashatatlanul.
+A jelszó soha nem hagyja el az eszközt: a szerver csak egy bejelentkezéshez származtatott kulcsot kap, amellyel az adataidat nem lehet megnyitni. A fiókot és a szerveren tárolt összes adatot bármikor törölheted, itt.
+A fiók jelszava
+Ez a fiókod jelszava, és sehol sincs elmentve. Ha elfelejted, e-mailes kóddal választasz újat: a szerveren lévő másolat nem állítható vissza, de az adatok az eszközeiden maradnak, és a másolat innen készül újra.

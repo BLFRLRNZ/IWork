@@ -763,3 +763,48 @@ Kuidas see töötab
 Enne teele minekut krüpteeritakse andmed selles seadmes sinu parooliga: serverisse jõuavad need loetamatult ja keegi ei saa neid lugeda.
 Parooli ei hoita kusagil. Kui see ununeb, ei saa serveris olevat koopiat taastada, kuid andmed jäävad sinu seadmetesse ja saad uue parooliga uuesti alustada.
 Kui muudad sama päeva kahes seadmes, kehtib kõige uuem muudatus. Teema ja meeldetuletused jäävad iga seadme enda valikuks.
+Vähemalt 8 märki. Sama parool kaitseb sinu sünkroonitud andmeid: keegi ei saa seda taastada, nii et hoia seda hästi.
+Parool
+Unustasid parooli?
+Kontot pole? Loo uus
+Loo konto
+Konto on juba olemas? Logi sisse
+Saatsime 6-kohalise koodi aadressile {e}. Vaata ka rämpsposti kausta. Kui sellel e-postil on juba konto, mine tagasi ja vali Logi sisse.
+Kinnita
+Saada mulle uus kood
+Saadame sulle e-postiga koodi uue parooli valimiseks. Serveris olev andmete koopia luuakse uuesti selle seadme andmetega, sest vana avaneb ainult vana parooliga.
+Tagasi sisselogimise juurde
+Saatsime 6-kohalise koodi aadressile {e}. Vaata ka rämpsposti kausta.
+Uus parool
+Salvesta uus parool
+Sisse logitud. Valmistan sinu andmeid ette…
+Saatsime sulle uue koodi.
+Sisesta parool.
+Sisselogimine…
+Kinnita kõigepealt oma e-post koodiga, mille sulle saatsime.
+Vale e-post või parool. Kui lõid konto ainult e-postiga saadud koodiga, vali parool nupuga Unustasid parooli?.
+Sisselogimine ei õnnestunud. Kontrolli ühendust ja proovi uuesti.
+Loon kontot…
+Kontot ei õnnestunud luua. Kontrolli ühendust ja proovi uuesti.
+Uut parooli ei õnnestunud salvestada. Kontrolli ühendust ja proovi uuesti.
+Selle e-postiga kontot pole.
+Sisse logitud. Sinu andmed on selles seadmes sünkroonitud.
+Sisse logitud. Serveris olevad andmed on kaitstud teise parooliga: ava Sünkroonimine, et selles seadmes uuesti alustada.
+Sisse logitud, kuid sünkroonimine ei käivitunud. Proovi uuesti jaotises Sünkroonimine.
+Sünkroonimise sisselülitamiseks selles seadmes sisesta oma konto parool.
+Serveris olevad andmed on kaitstud teise parooliga, võib-olla vanaga. Saad uuesti alustada: serveris olev koopia asendatakse selle seadme andmetega ja teised seadmed küsivad praegust parooli.
+Parooli muudeti teises seadmes. Sisesta uus.
+Kuidas konto luua?
+Puuduta jaotises {p} nuppu {a}, seejärel {b}: sisesta e-post ja parool ning kinnita e-postiga saadud 6-kohalise koodiga. Seda saab teha ka esimesel ekraanil pärast keele valimist. Sama parool kaitseb sünkroonitud andmeid. Ilma kontota töötab rakendus nagu alati.
+Logi igas seadmes sisse sama e-posti ja parooliga, juba esimesel ekraanil pärast keele valimist: vahetused, märkmed ja seaded tulevad ise ja püsivad siis ajakohased. Seadmes, kus oled juba sisse loginud, lülitad sünkroonimise sisse jaotises {p}. Teema ja meeldetuletused jäävad iga seadme enda valikuks.
+Unustasin parooli: mida teha?
+Puuduta jaotises {p} nuppu {a}: saad e-postiga koodi ja valid uue parooli. Vana parooli ei saa keegi taastada, seega luuakse serveris olev andmete koopia uuesti seadmest, mida kasutad: tee seda kõige värskemas. Teistes seadmetes logi sisse uue parooliga.
+Jätka ilma kontota
+Konto on juba olemas?
+Logi sisse, et leida siit oma vahetused ja seaded. Kui oled siin esimest korda, võid luua konto või jätkata ilma.
+Tere tulemast tagasi! Vahetused ja seaded on laaditud.
+Kontoga saad meeldetuletused enne vahetusi ja samad vahetused kõigis oma seadmetes. Ilma kontota töötab rakendus nagu alati.
+Sinu e-post; meeldetuletustega järgmise 45 päeva vahetused koos kellaaja ja vahetuse nimega, et teada, millal sulle teada anda; sünkroonimisega kõik andmed, kuid seadmes sinu parooliga krüpteeritult ehk loetamatult.
+Parool ei lahku kunagi seadmest: server saab ainult sisselogimiseks tuletatud võtme, millega sinu andmeid avada ei saa. Konto ja kõik serveris olevad andmed saad igal ajal siit kustutada.
+Konto parool
+See on sinu konto parool ja seda ei hoita kusagil. Kui see ununeb, valid e-postiga saadud koodiga uue: serveris olevat koopiat ei saa taastada, kuid andmed jäävad sinu seadmetesse ja koopia luuakse siit uuesti.
