@@ -59,6 +59,7 @@ func shiftSpan(_ from: Date, _ to: Date, _ locale: Locale) -> String {
     f.calendar = cal
     f.unitsStyle = .abbreviated
     f.maximumUnitCount = 2
+    f.zeroFormattingBehavior = .dropAll   // "4 h" invece di "4 h 0 min"
     f.allowedUnits = to.timeIntervalSince(from) >= 86400 ? [.day, .hour] : [.hour, .minute]
     return f.string(from: max(60, to.timeIntervalSince(from))) ?? ""
 }
