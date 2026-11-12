@@ -7,19 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14FD2A485FF55748325234BB /* ShiftViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC7EF4C1B651EFB36F2041 /* ShiftViews.swift */; };
+		221AAFAE4A9C9E1260101B3E /* ShiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4420B0F302FB9E899F9A /* ShiftData.swift */; };
+		2315FDCD07B3061D09887BFF /* ShiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4420B0F302FB9E899F9A /* ShiftData.swift */; };
+		247CB7B1A504469FB82ABF58 /* MyTurnWatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5A2A4BD28DD37CCB8D9CE /* MyTurnWatchWidget.swift */; };
 		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
+		3D60CC631510F1741B7543D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6D9BA134C522605CBA8B9D /* Foundation.framework */; };
+		4045D64A6D4FA258FABCBD59 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346716DC3A3B763076EB0C2 /* WidgetSnapshot.swift */; };
+		4579DA025611CADB9FC615B7 /* MyTurnWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD92B2D411E36C0D9A1200 /* MyTurnWatchApp.swift */; };
+		464FF88FC84E1F2AF89444CC /* ShiftViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC7EF4C1B651EFB36F2041 /* ShiftViews.swift */; };
 		4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 4D22ABE82AF431CB00220026 /* CapApp-SPM */; };
+		4D91E11272A705CCFD0CFBDB /* ShiftTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F25418FD75EA6D41D723 /* ShiftTimeline.swift */; };
 		50379B232058CBB4000EE86E /* capacitor.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 50379B222058CBB4000EE86E /* capacitor.config.json */; };
 		504EC3081FED79650016851F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EC3071FED79650016851F /* AppDelegate.swift */; };
 		504EC30D1FED79650016851F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30B1FED79650016851F /* Main.storyboard */; };
 		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
+		5C59635E18B2E49B5AC3E1C7 /* MyTurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23C792AAA625FD97A9EECE /* MyTurnViewController.swift */; };
+		63634060537D95D16B6D2AA1 /* MyTurnWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C3D461F18527369CD740123B /* MyTurnWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DCD40F47E1BB571D00AB5D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9FB8936FB8DD1D4F6DC7F8 /* Foundation.framework */; };
+		8B11CA735791B89D41885774 /* ShiftTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4F25418FD75EA6D41D723 /* ShiftTimeline.swift */; };
+		924987F52CD782AAC793A532 /* ShiftViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC7EF4C1B651EFB36F2041 /* ShiftViews.swift */; };
 		9582B6832FE993A70072D4E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9582B6822FE993A50072D4E8 /* SceneDelegate.swift */; };
+		AAC23706128E5990A4FE1777 /* MyTurnWatchWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AAF99981B2FC59E37C49A23C /* MyTurnWatchWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF90052DC98550203F955E53 /* MyTurnNativePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34B78FB71C789654F06970 /* MyTurnNativePlugin.swift */; };
+		BC416E275918840745401A73 /* MyTurnWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBC9340BE574B373828300 /* MyTurnWidget.swift */; };
+		D35E377F0C5D9D808A069B52 /* ShiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4420B0F302FB9E899F9A /* ShiftData.swift */; };
+		E5D17011C6F595C043ABF9F5 /* MyTurnWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF0BCE09086B198AC5E573D8 /* MyTurnWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F00987C171F4E2D64E8ECB41 /* ShiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4420B0F302FB9E899F9A /* ShiftData.swift */; };
+		F16DA5D80A40A89A23B4A7D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6D9BA134C522605CBA8B9D /* Foundation.framework */; };
+		F4F99CB62A2866BF5F71945E /* ShiftViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC7EF4C1B651EFB36F2041 /* ShiftViews.swift */; };
+		FF31F1A996026DB84CA93FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F8B3BF0694F8CB09799B9B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		731212073E6F620F24D46C68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EF38F437F6AEEAF61069599;
+			remoteInfo = MyTurnWidget;
+		};
+		7D3F1432ABE8086F2344C860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B538F5D3CEAC24388F37E57E;
+			remoteInfo = MyTurnWatch;
+		};
+		9F070C512A702CEC1123887F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591E898CB56EC6F111D629A0;
+			remoteInfo = MyTurnWatchWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		584E7181F6499BAB0BE26213 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AAC23706128E5990A4FE1777 /* MyTurnWatchWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8839C0E4E9822FC8B4602921 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E5D17011C6F595C043ABF9F5 /* MyTurnWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A3DF3C2DBA52A765A7CB5B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				63634060537D95D16B6D2AA1 /* MyTurnWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		05E007B3CA3464684F0032FB /* MyTurnWidget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = MyTurnWidget.entitlements; sourceTree = "<group>"; };
+		084684C50781C65F8EA9D478 /* MyTurnWatchWidget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = MyTurnWatchWidget.entitlements; sourceTree = "<group>"; };
+		0CBBC9340BE574B373828300 /* MyTurnWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnWidget.swift; sourceTree = "<group>"; };
+		0F6D9BA134C522605CBA8B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1F9FB8936FB8DD1D4F6DC7F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		28AF4420B0F302FB9E899F9A /* ShiftData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftData.swift; sourceTree = "<group>"; };
 		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		3BCD92B2D411E36C0D9A1200 /* MyTurnWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnWatchApp.swift; sourceTree = "<group>"; };
+		41EC7EF4C1B651EFB36F2041 /* ShiftViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftViews.swift; sourceTree = "<group>"; };
+		43DFBBBA2E27735AD12BF7E5 /* App.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		4CF5A2A4BD28DD37CCB8D9CE /* MyTurnWatchWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnWatchWidget.swift; sourceTree = "<group>"; };
 		50379B222058CBB4000EE86E /* capacitor.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capacitor.config.json; sourceTree = "<group>"; };
 		504EC3041FED79650016851F /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504EC3071FED79650016851F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,11 +121,31 @@
 		504EC3111FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		6346716DC3A3B763076EB0C2 /* WidgetSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
+		91AAB192FDE303300DCA7396 /* MyTurnWatch.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = MyTurnWatch.entitlements; sourceTree = "<group>"; };
+		9332A593E56DA158899F963D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9582B6822FE993A50072D4E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		9E3FB1435618A8C9AAEAEC3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA34B78FB71C789654F06970 /* MyTurnNativePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnNativePlugin.swift; sourceTree = "<group>"; };
+		AAF99981B2FC59E37C49A23C /* MyTurnWatchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTurnWatchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0BCE09086B198AC5E573D8 /* MyTurnWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTurnWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D2DACDD98D0628550A6EB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC23C792AAA625FD97A9EECE /* MyTurnViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnViewController.swift; sourceTree = "<group>"; };
+		C3D461F18527369CD740123B /* MyTurnWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTurnWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C4F25418FD75EA6D41D723 /* ShiftTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftTimeline.swift; sourceTree = "<group>"; };
+		E0F8B3BF0694F8CB09799B9B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		38507377919B16250B875CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16DA5D80A40A89A23B4A7D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		504EC3011FED79650016851F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,15 +154,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A78A51200C8737ACB9140A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCD40F47E1BB571D00AB5D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EE93A74DEACAA4F8D07280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D60CC631510F1741B7543D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08DC2ADE880F2633F9EEE088 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				0F6D9BA134C522605CBA8B9D /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		0E4B90846DC76994E84A0237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC8C85BB27C7788A204A5D7E /* iOS */,
+				08DC2ADE880F2633F9EEE088 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20B3E4EDA8DCFF6089FB5C93 /* MyTurnWatchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4CF5A2A4BD28DD37CCB8D9CE /* MyTurnWatchWidget.swift */,
+				9332A593E56DA158899F963D /* Info.plist */,
+				084684C50781C65F8EA9D478 /* MyTurnWatchWidget.entitlements */,
+			);
+			name = MyTurnWatchWidget;
+			path = MyTurnWatchWidget;
+			sourceTree = "<group>";
+		};
+		3775B8B0B3BD1B31AB3F4C82 /* MyTurnWatch */ = {
+			isa = PBXGroup;
+			children = (
+				E0F8B3BF0694F8CB09799B9B /* Assets.xcassets */,
+				3BCD92B2D411E36C0D9A1200 /* MyTurnWatchApp.swift */,
+				9E3FB1435618A8C9AAEAEC3A /* Info.plist */,
+				91AAB192FDE303300DCA7396 /* MyTurnWatch.entitlements */,
+			);
+			name = MyTurnWatch;
+			path = MyTurnWatch;
+			sourceTree = "<group>";
+		};
 		504EC2FB1FED79650016851F = {
 			isa = PBXGroup;
 			children = (
 				958DCC722DB07C7200EA8C5F /* debug.xcconfig */,
 				504EC3061FED79650016851F /* App */,
 				504EC3051FED79650016851F /* Products */,
+				0E4B90846DC76994E84A0237 /* Frameworks */,
+				B74F6E6B5C15FF498D2AA963 /* Shared */,
+				661504FE74DF0D931A3E16C7 /* SharedWidget */,
+				765CDBA5FEF7D38D3E6F504E /* MyTurnWidget */,
+				3775B8B0B3BD1B31AB3F4C82 /* MyTurnWatch */,
+				20B3E4EDA8DCFF6089FB5C93 /* MyTurnWatchWidget */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				504EC3041FED79650016851F /* App.app */,
+				AF0BCE09086B198AC5E573D8 /* MyTurnWidget.appex */,
+				C3D461F18527369CD740123B /* MyTurnWatch.app */,
+				AAF99981B2FC59E37C49A23C /* MyTurnWatchWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,13 +251,72 @@
 				504EC3131FED79650016851F /* Info.plist */,
 				2FAD9762203C412B000D30F8 /* config.xml */,
 				50B271D01FEDC1A000F3C39B /* public */,
+				AA34B78FB71C789654F06970 /* MyTurnNativePlugin.swift */,
+				BC23C792AAA625FD97A9EECE /* MyTurnViewController.swift */,
+				6346716DC3A3B763076EB0C2 /* WidgetSnapshot.swift */,
+				43DFBBBA2E27735AD12BF7E5 /* App.entitlements */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		661504FE74DF0D931A3E16C7 /* SharedWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4F25418FD75EA6D41D723 /* ShiftTimeline.swift */,
+			);
+			name = SharedWidget;
+			path = SharedWidget;
+			sourceTree = "<group>";
+		};
+		765CDBA5FEF7D38D3E6F504E /* MyTurnWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0CBBC9340BE574B373828300 /* MyTurnWidget.swift */,
+				B2D2DACDD98D0628550A6EB6 /* Info.plist */,
+				05E007B3CA3464684F0032FB /* MyTurnWidget.entitlements */,
+			);
+			name = MyTurnWidget;
+			path = MyTurnWidget;
+			sourceTree = "<group>";
+		};
+		B74F6E6B5C15FF498D2AA963 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				28AF4420B0F302FB9E899F9A /* ShiftData.swift */,
+				41EC7EF4C1B651EFB36F2041 /* ShiftViews.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EC8C85BB27C7788A204A5D7E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1F9FB8936FB8DD1D4F6DC7F8 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0EF38F437F6AEEAF61069599 /* MyTurnWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B17D8E20EED189E23388356 /* Build configuration list for PBXNativeTarget "MyTurnWidget" */;
+			buildPhases = (
+				8773C5D641C9A9A59AA5C6FF /* Sources */,
+				A78A51200C8737ACB9140A65 /* Frameworks */,
+				D0CFC0908D30434E72EC0CC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTurnWidget;
+			productName = MyTurnWidget;
+			productReference = AF0BCE09086B198AC5E573D8 /* MyTurnWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		504EC3031FED79650016851F /* App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */;
@@ -87,10 +324,14 @@
 				504EC3001FED79650016851F /* Sources */,
 				504EC3011FED79650016851F /* Frameworks */,
 				504EC3021FED79650016851F /* Resources */,
+				8839C0E4E9822FC8B4602921 /* Embed Foundation Extensions */,
+				96A3DF3C2DBA52A765A7CB5B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				032842485B2006EBB3C56779 /* PBXTargetDependency */,
+				627AA9DD506506810F0AA125 /* PBXTargetDependency */,
 			);
 			name = App;
 			packageProductDependencies = (
@@ -98,6 +339,42 @@
 			);
 			productName = App;
 			productReference = 504EC3041FED79650016851F /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		591E898CB56EC6F111D629A0 /* MyTurnWatchWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6196EBA0871BF78A0FA80B33 /* Build configuration list for PBXNativeTarget "MyTurnWatchWidget" */;
+			buildPhases = (
+				C0E469B69BFB8FFCA77829B8 /* Sources */,
+				38507377919B16250B875CD5 /* Frameworks */,
+				777E62E314FBB77288509FD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTurnWatchWidget;
+			productName = MyTurnWatchWidget;
+			productReference = AAF99981B2FC59E37C49A23C /* MyTurnWatchWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B538F5D3CEAC24388F37E57E /* MyTurnWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928614BCEAD82AC7F51990C6 /* Build configuration list for PBXNativeTarget "MyTurnWatch" */;
+			buildPhases = (
+				3C5E32A000B1B85C0D93D17C /* Sources */,
+				A9EE93A74DEACAA4F8D07280 /* Frameworks */,
+				B45714EC53D98AD0763749A2 /* Resources */,
+				584E7181F6499BAB0BE26213 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37FF97ED1C0A0F27D2295B3A /* PBXTargetDependency */,
+			);
+			name = MyTurnWatch;
+			productName = MyTurnWatch;
+			productReference = C3D461F18527369CD740123B /* MyTurnWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,6 +410,9 @@
 			projectRoot = "";
 			targets = (
 				504EC3031FED79650016851F /* App */,
+				0EF38F437F6AEEAF61069599 /* MyTurnWidget */,
+				B538F5D3CEAC24388F37E57E /* MyTurnWatch */,
+				591E898CB56EC6F111D629A0 /* MyTurnWatchWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -151,19 +431,99 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		777E62E314FBB77288509FD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45714EC53D98AD0763749A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF31F1A996026DB84CA93FAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CFC0908D30434E72EC0CC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C5E32A000B1B85C0D93D17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35E377F0C5D9D808A069B52 /* ShiftData.swift in Sources */,
+				F4F99CB62A2866BF5F71945E /* ShiftViews.swift in Sources */,
+				4579DA025611CADB9FC615B7 /* MyTurnWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		504EC3001FED79650016851F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
 				9582B6832FE993A70072D4E8 /* SceneDelegate.swift in Sources */,
+				AF90052DC98550203F955E53 /* MyTurnNativePlugin.swift in Sources */,
+				5C59635E18B2E49B5AC3E1C7 /* MyTurnViewController.swift in Sources */,
+				4045D64A6D4FA258FABCBD59 /* WidgetSnapshot.swift in Sources */,
+				2315FDCD07B3061D09887BFF /* ShiftData.swift in Sources */,
+				464FF88FC84E1F2AF89444CC /* ShiftViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8773C5D641C9A9A59AA5C6FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00987C171F4E2D64E8ECB41 /* ShiftData.swift in Sources */,
+				924987F52CD782AAC793A532 /* ShiftViews.swift in Sources */,
+				4D91E11272A705CCFD0CFBDB /* ShiftTimeline.swift in Sources */,
+				BC416E275918840745401A73 /* MyTurnWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E469B69BFB8FFCA77829B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221AAFAE4A9C9E1260101B3E /* ShiftData.swift in Sources */,
+				14FD2A485FF55748325234BB /* ShiftViews.swift in Sources */,
+				8B11CA735791B89D41885774 /* ShiftTimeline.swift in Sources */,
+				247CB7B1A504469FB82ABF58 /* MyTurnWatchWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032842485B2006EBB3C56779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyTurnWidget;
+			target = 0EF38F437F6AEEAF61069599 /* MyTurnWidget */;
+			targetProxy = 731212073E6F620F24D46C68 /* PBXContainerItemProxy */;
+		};
+		37FF97ED1C0A0F27D2295B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyTurnWatchWidget;
+			target = 591E898CB56EC6F111D629A0 /* MyTurnWatchWidget */;
+			targetProxy = 9F070C512A702CEC1123887F /* PBXContainerItemProxy */;
+		};
+		627AA9DD506506810F0AA125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyTurnWatch;
+			target = B538F5D3CEAC24388F37E57E /* MyTurnWatch */;
+			targetProxy = 7D3F1432ABE8086F2344C860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		504EC30B1FED79650016851F /* Main.storyboard */ = {
@@ -185,6 +545,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0689F090000701D24D02E186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = MyTurnWidget/MyTurnWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTurnWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTurn;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myturn.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42A32B2EDC964C8AF9B4E722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyTurnWatchWidget/MyTurnWatchWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTurnWatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTurn;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myturn.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		504EC3141FED79650016851F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
@@ -234,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -285,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -299,10 +716,11 @@
 			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,10 +739,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,9 +757,136 @@
 			};
 			name = Release;
 		};
+		63F8FBB6BC40A35B252A7B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = MyTurnWidget/MyTurnWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTurnWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTurn;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myturn.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88488668E62D241E5FE666D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyTurnWatch/MyTurnWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTurnWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTurn;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = app.myturn;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myturn.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		923401B98216E59FC6B48B68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyTurnWatchWidget/MyTurnWatchWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTurnWatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTurn;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myturn.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C2002CABF66EB654ABA90979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyTurnWatch/MyTurnWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTurnWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTurn;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = app.myturn;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.myturn.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B17D8E20EED189E23388356 /* Build configuration list for PBXNativeTarget "MyTurnWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F8FBB6BC40A35B252A7B9F /* Release */,
+				0689F090000701D24D02E186 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		504EC2FF1FED79650016851F /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -355,6 +901,24 @@
 			buildConfigurations = (
 				504EC3171FED79650016851F /* Debug */,
 				504EC3181FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6196EBA0871BF78A0FA80B33 /* Build configuration list for PBXNativeTarget "MyTurnWatchWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A32B2EDC964C8AF9B4E722 /* Release */,
+				923401B98216E59FC6B48B68 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928614BCEAD82AC7F51990C6 /* Build configuration list for PBXNativeTarget "MyTurnWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2002CABF66EB654ABA90979 /* Release */,
+				88488668E62D241E5FE666D1 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
