@@ -882,5 +882,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Parole nekad nepamet ierīci: serveris saņem tikai pieteikšanās atslēgu, kas no tās atvasināta un ar kuru tavus datus nevar atvērt. Kontu un visus datus serverī vari izdzēst jebkurā laikā, šeit.",
 "Password dell'account": "Konta parole",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Tā ir tava konta parole, un tā nekur netiek glabāta. Ja to aizmirsīsi, izvēlēsies jaunu ar e-pasta kodu: kopiju serverī nevar atjaunot, bet dati paliek tavās ierīcēs un kopija tiek izveidota no jauna no šejienes.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Atjauninājumi nāk no App Store vai Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Atjauninājumi nāk no App Store vai Google Play.",
+"Inizia tra {x}": "Sākas pēc {x}",
+"Finisce tra {x}": "Beidzas pēc {x}"
 };

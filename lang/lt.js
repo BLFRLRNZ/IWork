@@ -923,5 +923,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Slaptažodis niekada nepalieka įrenginio: serveris gauna tik prisijungimui išvestą raktą, kuriuo tavo duomenų atidaryti negalima. Paskyrą ir visus duomenis serveryje gali ištrinti bet kada, čia.",
 "Password dell'account": "Paskyros slaptažodis",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Tai tavo paskyros slaptažodis, ir jis niekur nesaugomas. Jei jį pamirši, pasirinksi naują su el. pašto kodu: kopijos serveryje atkurti nepavyks, bet duomenys liks tavo įrenginiuose ir kopija bus sukurta iš naujo iš čia.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Atnaujinimai ateina iš „App Store“ arba „Google Play“."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Atnaujinimai ateina iš „App Store“ arba „Google Play“.",
+"Inizia tra {x}": "Prasideda po {x}",
+"Finisce tra {x}": "Baigiasi po {x}"
 };

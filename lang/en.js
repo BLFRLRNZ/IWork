@@ -810,5 +810,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Your password never leaves the device: the server only gets a key derived for signing in, which can't open your data. You can delete the account and all data on the server whenever you want, from here.",
 "Password dell'account": "Account password",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "It's your account password, and it isn't stored anywhere. If you forget it, you choose a new one with an email code: the copy on the server can't be recovered, but your data stays on your devices and the copy is recreated from here.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Updates come from the App Store or Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Updates come from the App Store or Google Play.",
+"Inizia tra {x}": "Starts in {x}",
+"Finisce tra {x}": "Ends in {x}"
 };

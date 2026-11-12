@@ -809,3 +809,5 @@ A jelszó soha nem hagyja el az eszközt: a szerver csak egy bejelentkezéshez s
 A fiók jelszava
 Ez a fiókod jelszava, és sehol sincs elmentve. Ha elfelejted, e-mailes kóddal választasz újat: a szerveren lévő másolat nem állítható vissza, de az adatok az eszközeiden maradnak, és a másolat innen készül újra.
 A frissítések az App Store-ból vagy a Google Playről érkeznek.
+{x} múlva kezdődik
+{x} múlva ér véget

@@ -2103,19 +2103,24 @@ renderAccount();setTimeout(()=>remSync(true),3000);
    Il codice nativo li legge dal plugin MyTurnNative (iPhone: App Group + Apple Watch; Android: SharedPreferences). */
 const WG_TONE={m:"#f2a900",p:"#ff6b3d",n:"#6a6ff5",f:"#22b062",x:"#9aa1b2"};
 function wgData(){const t0=new Date();t0.setHours(0,0,0,0);const days=[];
-  for(let i=0;i<14;i++){const d=addDays(t0,i),k=keyOf(d),e=S.days[k],o={d:k,wd:df(d,{weekday:"short"}),dn:String(d.getDate()),k:"",t:t("Libero"),h:"",c:WG_TONE.x};
-    if(e&&e.k==="w"){const I=info(k,e);o.k="w";o.t=presetName(e);o.h=I.segs.map(g=>hm(g.start)+"–"+hm(g.end)).join(" · ");o.c=WG_TONE[slot(e.s)];o.s=+I.start;o.e=+I.end;}
-    else if(e){o.k=e.k;o.t=kind(e.k);if(e.k==="p"&&e.h)o.h=hrs(e.h)+" h";o.c=e.k==="f"?WG_TONE.f:WG_TONE.x;}
-    const x=[],hol=holiday(k);if(hol)x.push(hol);
+  /* da ieri (un turno di notte iniziato ieri può essere ancora in corso) a 13 giorni da oggi */
+  for(let i=-1;i<14;i++){const d=addDays(t0,i),k=keyOf(d),e=S.days[k],o={d:k,wd:df(d,{weekday:"short"}).replace(/\.$/,""),dn:String(d.getDate()),k:"",t:t("Libero"),h:"",c:WG_TONE.x,tn:"x"};
+    if(e&&e.k==="w"){const I=info(k,e);o.k="w";o.t=presetName(e);o.h=I.segs.map(g=>hm(g.start)+"–"+hm(g.end)).join(" · ");o.tn=slot(e.s);o.c=WG_TONE[o.tn];o.s=+I.start;o.e=+I.end;}
+    else if(e){o.k=e.k;o.t=kind(e.k);if(e.k==="p"&&e.h)o.h=hrs(e.h)+" h";o.tn=e.k==="f"?"f":"x";o.c=WG_TONE[o.tn];}
+    const x=[],hol=holiday(k);if(hol){x.push(hol);o.ho=1;}
     if(J2on()&&S.j2[k]){const I=info(k,j2Entry(k));x.push(j2Name()+" "+hm(I.start)+"–"+hm(I.end));}
     if(S.settings.ocOn&&S.oc[k])x.push(t("Reperibilità")+" "+ocTxt(k));
     if(x.length)o.x=x.join(" · ");days.push(o);}
-  return{v:1,gen:Date.now(),lang:LANG,days,s:{today:t("Oggi"),tomorrow:t("Domani"),next:t("Prossimo turno"),free:t("Libero"),app:APP}};}
+  return{v:1,gen:Date.now(),lang:LANG,days,s:{today:t("Oggi"),tomorrow:t("Domani"),next:t("Prossimo turno"),free:t("Libero"),app:APP,
+    now:t("In turno adesso"),none:t("Nessun turno in programma"),starts:t("Inizia tra {x}"),ends:t("Finisce tra {x}")}};}
 let wgT=0,wgLast="";
 function wgPlugin(){return CAP.MyTurnNative||(NATIVE&&Capacitor.registerPlugin?(CAP.MyTurnNative=Capacitor.registerPlugin("MyTurnNative")):null);}
 function wgSync(now){if(!NATIVE)return;clearTimeout(wgT);wgT=setTimeout(()=>{try{const P=wgPlugin();if(!P)return;const d=wgData(),sig=JSON.stringify(Object.assign({},d,{gen:0}));
     if(sig===wgLast)return;wgLast=sig;P.setData({json:JSON.stringify(d)}).catch(()=>{wgLast="";});}catch(e){}},now?0:800);}
 setTimeout(()=>wgSync(true),1500);
+function openDeep(u){const m=/^myturn:\/\/day\/(\d{4}-\d\d-\d\d)/.exec(u||"");if(!m)return;if($("ob").open)return;
+  document.querySelectorAll("dialog[open]").forEach(d=>d.close());const d=dateOf(m[1]);view=new Date(d.getFullYear(),d.getMonth(),1);render();openEditor(m[1]);}
+if(NATIVE&&CAP.App){try{CAP.App.addListener("appUrlOpen",e=>openDeep(e&&e.url));CAP.App.getLaunchUrl().then(r=>{if(r&&r.url)setTimeout(()=>openDeep(r.url),600);}).catch(()=>{});}catch(e){}}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")wgSync(true);});
 
 

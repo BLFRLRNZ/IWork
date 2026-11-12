@@ -923,5 +923,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Hasło nigdy nie opuszcza urządzenia: serwer dostaje tylko klucz wyprowadzony do logowania, którym nie da się otworzyć twoich danych. Konto i wszystkie dane na serwerze możesz usunąć w każdej chwili, stąd.",
 "Password dell'account": "Hasło do konta",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "To hasło do twojego konta i nie jest nigdzie zapisywane. Jeśli je zapomnisz, wybierzesz nowe za pomocą kodu e-mail: kopii na serwerze nie da się odzyskać, ale dane zostają na twoich urządzeniach, a kopia zostanie odtworzona stąd.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Aktualizacje przychodzą z App Store lub Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Aktualizacje przychodzą z App Store lub Google Play.",
+"Inizia tra {x}": "Zaczyna się za {x}",
+"Finisce tra {x}": "Kończy się za {x}"
 };

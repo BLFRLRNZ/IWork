@@ -921,5 +921,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Heslo nikdy neopustí zařízení: server dostane jen klíč odvozený pro přihlášení, kterým se tvoje data otevřít nedají. Účet a všechna data na serveru můžeš kdykoli smazat, tady.",
 "Password dell'account": "Heslo k účtu",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Je to heslo k tvému účtu a nikde se neukládá. Když ho zapomeneš, zvolíš si nové pomocí kódu z e-mailu: kopii na serveru nelze obnovit, ale data zůstávají na tvých zařízeních a kopie se znovu vytvoří odsud.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Aktualizace přicházejí z App Storu nebo Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Aktualizace přicházejí z App Storu nebo Google Play.",
+"Inizia tra {x}": "Začíná za {x}",
+"Finisce tra {x}": "Končí za {x}"
 };

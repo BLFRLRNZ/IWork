@@ -14,6 +14,6 @@ struct MyTurnWidget: Widget {
         }
         .configurationDisplayName("MyTurn")
         .description(ShiftFallback.description)
-        .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular, .accessoryCircular, .accessoryInline])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .accessoryRectangular, .accessoryCircular, .accessoryInline])
     }
 }

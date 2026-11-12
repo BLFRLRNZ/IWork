@@ -809,3 +809,5 @@ Parool ei lahku kunagi seadmest: server saab ainult sisselogimiseks tuletatud v�
 Konto parool
 See on sinu konto parool ja seda ei hoita kusagil. Kui see ununeb, valid e-postiga saadud koodiga uue: serveris olevat koopiat ei saa taastada, kuid andmed j채채vad sinu seadmetesse ja koopia luuakse siit uuesti.
 Uuendused tulevad App Store'ist v천i Google Playst.
+Algab {x} p채rast
+L천peb {x} p채rast

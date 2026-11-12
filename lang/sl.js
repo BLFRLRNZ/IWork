@@ -923,5 +923,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Geslo nikoli ne zapusti naprave: strežnik dobi samo ključ, izpeljan za prijavo, s katerim tvojih podatkov ni mogoče odpreti. Račun in vse podatke na strežniku lahko kadar koli izbrišeš, tukaj.",
 "Password dell'account": "Geslo računa",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "To je geslo tvojega računa in ni nikjer shranjeno. Če ga pozabiš, izbereš novo s kodo po e-pošti: kopije na strežniku ni mogoče obnoviti, a podatki ostanejo na tvojih napravah in kopija se ponovno ustvari od tukaj.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Posodobitve prihajajo iz App Store ali Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Posodobitve prihajajo iz App Store ali Google Play.",
+"Inizia tra {x}": "Začne se čez {x}",
+"Finisce tra {x}": "Konča se čez {x}"
 };

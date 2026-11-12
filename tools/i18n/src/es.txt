@@ -809,3 +809,5 @@ La contraseña nunca sale del dispositivo: el servidor solo recibe una clave der
 Contraseña de la cuenta
 Es la contraseña de tu cuenta y no se guarda en ningún sitio. Si la olvidas, eliges una nueva con un código por correo: la copia del servidor no se puede recuperar, pero tus datos siguen en tus dispositivos y la copia se vuelve a crear desde aquí.
 Las actualizaciones llegan desde la App Store o Google Play.
+Empieza en {x}
+Termina en {x}

@@ -809,3 +809,5 @@ Geslo nikoli ne zapusti naprave: strežnik dobi samo ključ, izpeljan za prijavo
 Geslo računa
 To je geslo tvojega računa in ni nikjer shranjeno. Če ga pozabiš, izbereš novo s kodo po e-pošti: kopije na strežniku ni mogoče obnoviti, a podatki ostanejo na tvojih napravah in kopija se ponovno ustvari od tukaj.
 Posodobitve prihajajo iz App Store ali Google Play.
+Začne se čez {x}
+Konča se čez {x}

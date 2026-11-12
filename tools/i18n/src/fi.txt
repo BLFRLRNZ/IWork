@@ -809,3 +809,5 @@ Salasana ei koskaan poistu laitteelta: palvelin saa vain kirjautumista varten jo
 Tilin salasana
 Se on tilisi salasana, eikä sitä tallenneta mihinkään. Jos unohdat sen, valitset uuden sähköpostikoodin avulla: palvelimen kopiota ei voi palauttaa, mutta tiedot pysyvät laitteillasi ja kopio luodaan uudelleen täältä.
 Päivitykset tulevat App Storesta tai Google Playsta.
+Alkaa {x} kuluttua
+Päättyy {x} kuluttua

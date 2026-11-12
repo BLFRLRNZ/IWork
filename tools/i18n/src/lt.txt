@@ -809,3 +809,5 @@ Slaptažodis niekada nepalieka įrenginio: serveris gauna tik prisijungimui išv
 Paskyros slaptažodis
 Tai tavo paskyros slaptažodis, ir jis niekur nesaugomas. Jei jį pamirši, pasirinksi naują su el. pašto kodu: kopijos serveryje atkurti nepavyks, bet duomenys liks tavo įrenginiuose ir kopija bus sukurta iš naujo iš čia.
 Atnaujinimai ateina iš „App Store“ arba „Google Play“.
+Prasideda po {x}
+Baigiasi po {x}

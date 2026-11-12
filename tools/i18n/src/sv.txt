@@ -809,3 +809,5 @@ Lösenordet lämnar aldrig enheten: servern får bara en nyckel som härletts f�
 Kontots lösenord
 Det är lösenordet till ditt konto och det sparas ingenstans. Om du glömmer det väljer du ett nytt med en e-postkod: kopian på servern kan inte återställas, men dina uppgifter finns kvar på dina enheter och kopian skapas om härifrån.
 Uppdateringar kommer från App Store eller Google Play.
+Börjar om {x}
+Slutar om {x}

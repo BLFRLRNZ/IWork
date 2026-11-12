@@ -879,5 +879,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Ο κωδικός δεν φεύγει ποτέ από τη συσκευή: ο διακομιστής λαμβάνει μόνο ένα κλειδί που προκύπτει για τη σύνδεση και δεν ανοίγει τα δεδομένα σου. Μπορείς να διαγράψεις τον λογαριασμό και όλα τα δεδομένα στον διακομιστή όποτε θέλεις, από εδώ.",
 "Password dell'account": "Κωδικός λογαριασμού",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Είναι ο κωδικός του λογαριασμού σου και δεν αποθηκεύεται πουθενά. Αν τον ξεχάσεις, διαλέγεις νέο με κωδικό από email: το αντίγραφο στον διακομιστή δεν ανακτάται, αλλά τα δεδομένα μένουν στις συσκευές σου και το αντίγραφο δημιουργείται ξανά από εδώ.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Οι ενημερώσεις έρχονται από το App Store ή το Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Οι ενημερώσεις έρχονται από το App Store ή το Google Play.",
+"Inizia tra {x}": "Ξεκινά σε {x}",
+"Finisce tra {x}": "Τελειώνει σε {x}"
 };

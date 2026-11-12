@@ -809,3 +809,5 @@ Heslo nikdy neopustí zařízení: server dostane jen klíč odvozený pro přih
 Heslo k účtu
 Je to heslo k tvému účtu a nikde se neukládá. Když ho zapomeneš, zvolíš si nové pomocí kódu z e-mailu: kopii na serveru nelze obnovit, ale data zůstávají na tvých zařízeních a kopie se znovu vytvoří odsud.
 Aktualizace přicházejí z App Storu nebo Google Play.
+Začíná za {x}
+Končí za {x}

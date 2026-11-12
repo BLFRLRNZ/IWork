@@ -809,3 +809,5 @@ Parola nu părăsește niciodată dispozitivul: serverul primește doar o cheie 
 Parola contului
 Este parola contului tău și nu este salvată nicăieri. Dacă o uiți, alegi una nouă cu un cod pe e-mail: copia de pe server nu se poate recupera, dar datele rămân pe dispozitivele tale și copia este recreată de aici.
 Actualizările vin din App Store sau Google Play.
+Începe în {x}
+Se termină în {x}

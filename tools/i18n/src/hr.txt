@@ -809,3 +809,5 @@ Lozinka nikad ne napušta uređaj: poslužitelj dobiva samo ključ izveden za pr
 Lozinka računa
 To je lozinka tvog računa i nigdje se ne sprema. Ako je zaboraviš, biraš novu kôdom e-poštom: kopija na poslužitelju ne može se vratiti, ali podaci ostaju na tvojim uređajima i kopija se ponovno stvara odavde.
 Ažuriranja stižu iz App Storea ili Google Playa.
+Počinje za {x}
+Završava za {x}

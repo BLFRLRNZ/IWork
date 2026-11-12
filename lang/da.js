@@ -879,5 +879,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Adgangskoden forlader aldrig enheden: serveren får kun en nøgle, der er afledt til log ind, og som ikke kan åbne dine data. Du kan slette kontoen og alle data på serveren når som helst, herfra.",
 "Password dell'account": "Kontoens adgangskode",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Det er adgangskoden til din konto, og den gemmes ingen steder. Hvis du glemmer den, vælger du en ny med en e-mailkode: kopien på serveren kan ikke gendannes, men dine data bliver på dine enheder, og kopien genskabes herfra.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Opdateringer kommer fra App Store eller Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Opdateringer kommer fra App Store eller Google Play.",
+"Inizia tra {x}": "Starter om {x}",
+"Finisce tra {x}": "Slutter om {x}"
 };

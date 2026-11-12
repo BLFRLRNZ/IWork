@@ -879,5 +879,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Je wachtwoord verlaat nooit het apparaat: de server krijgt alleen een afgeleide sleutel om in te loggen, waarmee je gegevens niet open kunnen. Je kunt het account en alle gegevens op de server altijd verwijderen, hier.",
 "Password dell'account": "Wachtwoord van het account",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Het is het wachtwoord van je account en wordt nergens bewaard. Vergeet je het, dan kies je een nieuw met een e-mailcode: de kopie op de server is niet terug te halen, maar je gegevens blijven op je apparaten en de kopie wordt van hieruit opnieuw gemaakt.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Updates komen via de App Store of Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Updates komen via de App Store of Google Play.",
+"Inizia tra {x}": "Begint over {x}",
+"Finisce tra {x}": "Eindigt over {x}"
 };

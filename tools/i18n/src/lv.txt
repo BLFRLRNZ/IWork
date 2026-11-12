@@ -809,3 +809,5 @@ Parole nekad nepamet ierīci: serveris saņem tikai pieteikšanās atslēgu, kas
 Konta parole
 Tā ir tava konta parole, un tā nekur netiek glabāta. Ja to aizmirsīsi, izvēlēsies jaunu ar e-pasta kodu: kopiju serverī nevar atjaunot, bet dati paliek tavās ierīcēs un kopija tiek izveidota no jauna no šejienes.
 Atjauninājumi nāk no App Store vai Google Play.
+Sākas pēc {x}
+Beidzas pēc {x}

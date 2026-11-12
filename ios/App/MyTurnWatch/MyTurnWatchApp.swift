@@ -47,13 +47,15 @@ struct WatchHome: View {
             if let d = link.data {
                 let days = d.from(tl.date)
                 List {
-                    if let today = days.first {
-                        WatchToday(data: d, day: today).listRowBackground(Color.clear)
-                    }
-                    ForEach(Array(days.dropFirst().prefix(13)), id: \.d) { day in
+                    WatchHero(data: d, date: tl.date)
+                        .listRowBackground(RoundedRectangle(cornerRadius: 18, style: .continuous).fill(Palette.bg(ShiftFocus(d, tl.date).tone, true)))
+                    ForEach(Array(days.prefix(14)), id: \.d) { day in
                         WatchRow(data: d, day: day, date: tl.date)
+                            .listRowBackground(RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(day.k.isEmpty ? Palette.sunken(true) : Palette.bg(day.tone, true)))
                     }
                 }
+                .environment(\.locale, d.locale)
             } else {
                 ScrollView {
                     VStack(spacing: 8) {
@@ -66,37 +68,51 @@ struct WatchHome: View {
     }
 }
 
-private struct WatchToday: View {
+/// in alto: il turno in corso o il prossimo, con orari, barra e conto alla rovescia
+private struct WatchHero: View {
     let data: ShiftData
-    let day: ShiftDay
+    let date: Date
     var body: some View {
-        VStack(alignment: .leading, spacing: 3) {
-            Text("\(data.s.today) · \(day.wd) \(day.dn)".uppercased()).font(.system(size: 12, weight: .semibold)).foregroundStyle(.secondary)
-            HStack(alignment: .top, spacing: 7) {
-                RoundedRectangle(cornerRadius: 2).fill(day.color).frame(width: 4)
-                VStack(alignment: .leading, spacing: 1) {
-                    Text(day.t).font(.system(size: 20, weight: .bold)).lineLimit(2)
-                    if !day.h.isEmpty { Text(day.h).font(.system(size: 15).monospacedDigit()) }
-                    if let x = day.x { Text(x).font(.system(size: 12)).foregroundStyle(.secondary) }
+        let f = ShiftFocus(data, date), fg = Palette.fg(f.tone, true)
+        VStack(alignment: .leading, spacing: 2) {
+            Text(f.eyebrow(data, date).uppercased()).font(.system(size: 12, weight: .bold)).foregroundStyle(fg.opacity(0.8)).lineLimit(1)
+            if let d = f.day {
+                Text(d.t).font(.system(size: 22, weight: .heavy)).foregroundStyle(fg).lineLimit(1).minimumScaleFactor(0.7)
+                Text(d.hoursText).font(.system(size: 16, weight: .semibold).monospacedDigit()).foregroundStyle(fg).lineLimit(1).minimumScaleFactor(0.7)
+                if f.isNow, let a = d.start, let b = d.end, a < b {
+                    Bar(value: min(1, max(0, date.timeIntervalSince(a) / b.timeIntervalSince(a))), color: fg).padding(.vertical, 4)
                 }
-            }.fixedSize(horizontal: false, vertical: true)
-        }.padding(.vertical, 4)
+                Countdown(data: data, focus: f, date: date).font(.system(size: 13, weight: .semibold)).foregroundStyle(fg.opacity(0.85))
+            } else {
+                Text(data.noneText).font(.system(size: 15, weight: .semibold)).foregroundStyle(fg)
+            }
+        }.padding(.vertical, 6)
     }
 }
 
+/// un giorno: colori del calendario, nome del turno e ora d'inizio
 private struct WatchRow: View {
     let data: ShiftData
     let day: ShiftDay
     let date: Date
     var body: some View {
-        HStack(spacing: 7) {
-            Circle().fill(day.color).frame(width: 8, height: 8)
+        let fg = day.k.isEmpty ? Palette.muted(true) : Palette.fg(day.tone, true)
+        HStack(spacing: 8) {
+            VStack(spacing: -1) {
+                Text(day.wd.prefix(3).capitalized).font(.system(size: 11, weight: .semibold)).foregroundStyle(fg.opacity(0.8))
+                Text(day.dn).font(.system(size: 17, weight: .bold).monospacedDigit())
+                    .foregroundStyle(day.holiday ? Palette.holiday(true) : fg)
+            }.frame(width: 30)
             VStack(alignment: .leading, spacing: 0) {
-                Text(data.label(day, date)).font(.system(size: 12)).foregroundStyle(.secondary)
-                Text(day.t).font(.system(size: 15, weight: .semibold)).lineLimit(1)
+                if day.d == ShiftStore.key(date) {
+                    Text(data.s.today).font(.system(size: 11, weight: .bold)).foregroundStyle(fg.opacity(0.8))
+                }
+                Text(day.t).font(.system(size: 16, weight: .bold)).foregroundStyle(fg).lineLimit(1).minimumScaleFactor(0.8)
+                if day.isShift {
+                    Text(day.hoursText).font(.system(size: 13, weight: .medium).monospacedDigit()).foregroundStyle(fg.opacity(0.9)).lineLimit(1).minimumScaleFactor(0.7)
+                }
             }
-            Spacer(minLength: 2)
-            Text(day.startText).font(.system(size: 14).monospacedDigit())
-        }
+            Spacer(minLength: 0)
+        }.padding(.vertical, 2)
     }
 }

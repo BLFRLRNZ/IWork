@@ -809,3 +809,5 @@ Das Passwort verlässt nie das Gerät: Der Server bekommt nur einen für die Anm
 Passwort des Kontos
 Es ist das Passwort deines Kontos und wird nirgends gespeichert. Wenn du es vergisst, wählst du mit einem E-Mail-Code ein neues: Die Kopie auf dem Server lässt sich nicht wiederherstellen, aber deine Daten bleiben auf deinen Geräten und die Kopie wird von hier aus neu erstellt.
 Updates kommen über den App Store oder Google Play.
+Beginnt in {x}
+Endet in {x}

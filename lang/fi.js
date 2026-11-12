@@ -879,5 +879,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Salasana ei koskaan poistu laitteelta: palvelin saa vain kirjautumista varten johdetun avaimen, jolla tietojasi ei voi avata. Voit poistaa tilin ja kaikki palvelimen tiedot milloin tahansa, täältä.",
 "Password dell'account": "Tilin salasana",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Se on tilisi salasana, eikä sitä tallenneta mihinkään. Jos unohdat sen, valitset uuden sähköpostikoodin avulla: palvelimen kopiota ei voi palauttaa, mutta tiedot pysyvät laitteillasi ja kopio luodaan uudelleen täältä.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Päivitykset tulevat App Storesta tai Google Playsta."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Päivitykset tulevat App Storesta tai Google Playsta.",
+"Inizia tra {x}": "Alkaa {x} kuluttua",
+"Finisce tra {x}": "Päättyy {x} kuluttua"
 };

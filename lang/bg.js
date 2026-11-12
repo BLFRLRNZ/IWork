@@ -879,5 +879,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Паролата никога не напуска устройството: сървърът получава само ключ, изведен за влизане, с който данните ти не могат да се отворят. Можеш да изтриеш профила и всички данни на сървъра по всяко време, оттук.",
 "Password dell'account": "Парола на профила",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Това е паролата на профила ти и не се пази никъде. Ако я забравиш, избираш нова с код по имейл: копието на сървъра не може да се възстанови, но данните остават на устройствата ти и копието се създава отново оттук.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Актуализациите идват от App Store или Google Play."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Актуализациите идват от App Store или Google Play.",
+"Inizia tra {x}": "Започва след {x}",
+"Finisce tra {x}": "Свършва след {x}"
 };

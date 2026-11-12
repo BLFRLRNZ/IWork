@@ -809,3 +809,5 @@ Le mot de passe ne quitte jamais l'appareil : le serveur ne reçoit qu'une clé 
 Mot de passe du compte
 C'est le mot de passe de votre compte, et il n'est enregistré nulle part. Si vous l'oubliez, vous en choisissez un nouveau avec un code par e-mail : la copie sur le serveur ne peut pas être récupérée, mais vos données restent sur vos appareils et la copie est recréée depuis ici.
 Les mises à jour arrivent par l'App Store ou Google Play.
+Commence dans {x}
+Se termine dans {x}

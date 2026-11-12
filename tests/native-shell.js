@@ -50,9 +50,9 @@ const day=o=>{const d=new Date();d.setDate(d.getDate()+o);return d.getFullYear()
   const f=await p.evaluate(()=>__nat);ok(f.files.length===1&&/\.ics$/.test(f.files[0].path)&&f.files[0].dir==='CACHE'&&f.share.length===1&&f.share[0].files[0].startsWith('file://'),'.ics salvato e condiviso '+JSON.stringify(f.files));
   // widget e orologio: dati dei prossimi 14 giorni passati al codice nativo
   const wg=await p.evaluate(()=>__nat.wg);const last=wg[wg.length-1];
-  ok(wg.length>=1&&last.days.length===14&&last.s.today==='Oggi','dati per widget: '+wg.length+' invii, '+(last&&last.days.length)+' giorni');
-  ok(last&&last.days[1].k==='r'&&last.days[2].k==='w'&&/^06:00–09:00 · 15:00–18:00$/.test(last.days[2].h)&&last.days[2].c==='#f2a900'&&last.days[2].s>0,'giorno 2 '+JSON.stringify(last&&last.days[2]));
+  ok(wg.length>=1&&last.days.length===15&&last.s.today==='Oggi','dati per widget: '+wg.length+' invii, '+(last&&last.days.length)+' giorni');
+  ok(last&&last.days[2].k==='r'&&last.days[3].k==='w'&&/^06:00–09:00 · 15:00–18:00$/.test(last.days[3].h)&&last.days[3].tn==='m'&&last.days[3].s>0&&/\{x\}/.test(last.s.starts),'giorno 2 '+JSON.stringify(last&&last.days[3]));
   const n0=wg.length;await p.evaluate(k=>{myturnDebug.apply([[k,{k:'f'}]],'x');},day(3));await p.waitForTimeout(1500);
-  const wg2=await p.evaluate(()=>__nat.wg);ok(wg2.length===n0+1&&wg2[wg2.length-1].days[3].k==='f','dopo una modifica il widget si aggiorna');
+  const wg2=await p.evaluate(()=>__nat.wg);ok(wg2.length===n0+1&&wg2[wg2.length-1].days[4].k==='f','dopo una modifica il widget si aggiorna');
   ok(!errs.length,'nessun errore '+errs.join(' | '));
   console.log(fail?fail+' FALLITI':'tutto ok');await b.close();process.exit(fail?1:0);})();

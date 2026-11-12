@@ -14,6 +14,8 @@ struct ShiftDay: Codable, Hashable {
     var t: String        // nome del turno o del tipo di giorno
     var h: String        // orari, es. "06:00–14:00"
     var c: String        // colore, es. "#f2a900"
+    var tn: String?      // tono come nel calendario: m mattina, p pomeriggio, n notte, f ferie, x il resto
+    var ho: Int?         // 1 se è festivo
     var x: String?       // festività, secondo lavoro, reperibilità
     var s: Double?       // inizio del turno (ms)
     var e: Double?       // fine del turno (ms)
@@ -23,7 +25,14 @@ struct ShiftDay: Codable, Hashable {
     var end: Date? { e.map { Date(timeIntervalSince1970: $0 / 1000) } }
     var isShift: Bool { k == "w" }
     /// ora d'inizio, es. "06:00"
-    var startText: String { h.isEmpty ? "" : String(h.prefix(5)) }
+    var startText: String { isShift ? String(h.prefix(5)) : "" }
+    /// ora di fine, es. "14:00"
+    var endText: String { isShift ? String(h.suffix(5)) : "" }
+    /// orari con la freccia, come nell'app: "06:00 → 14:00"
+    var hoursText: String { isShift && !h.contains("·") ? "\(startText) → \(endText)" : h }
+    var tone: String { tn ?? (isShift ? "m" : (k == "f" ? "f" : "x")) }
+    var holiday: Bool { (ho ?? 0) == 1 }
+    var deepLink: URL? { URL(string: "myturn://day/\(d)") }
 }
 
 struct ShiftStrings: Codable, Hashable {
@@ -32,6 +41,10 @@ struct ShiftStrings: Codable, Hashable {
     var next: String
     var free: String
     var app: String
+    var now: String?
+    var none: String?
+    var starts: String?
+    var ends: String?
 }
 
 struct ShiftData: Codable, Hashable {
@@ -40,6 +53,23 @@ struct ShiftData: Codable, Hashable {
     var lang: String?
     var days: [ShiftDay]
     var s: ShiftStrings
+
+    var nowText: String { s.now ?? s.next }
+    var noneText: String { s.none ?? "—" }
+    var startsText: String { s.starts ?? "{x}" }
+    var endsText: String { s.ends ?? "{x}" }
+    var locale: Locale { Locale(identifier: lang ?? Locale.current.identifier) }
+
+    /// il turno in corso, se c'è
+    func current(_ date: Date) -> ShiftDay? {
+        days.first { $0.isShift && ($0.start ?? .distantFuture) <= date && ($0.end ?? .distantPast) > date }
+    }
+    /// il prossimo turno che deve ancora iniziare
+    func upcoming(_ date: Date) -> ShiftDay? {
+        days.first { $0.isShift && ($0.start ?? .distantPast) > date }
+    }
+    /// il giorno di oggi
+    func today(_ date: Date) -> ShiftDay? { days.first { $0.d == ShiftStore.key(date) } }
 
     /// i giorni da `date` in avanti (oggi per primo)
     func from(_ date: Date) -> [ShiftDay] {
@@ -108,10 +138,12 @@ extension ShiftData {
             ("w", "Notte", "22:00–06:00", "#6a6ff5", 22, 30), ("w", "Notte", "22:00–06:00", "#6a6ff5", 22, 30),
             ("r", "Riposo", "", "#9aa1b2", 0, 0), ("f", "Ferie", "", "#22b062", 0, 0)]
         var days: [ShiftDay] = []
-        for i in 0..<14 {
+        for i in 0..<15 {
             let d = cal.date(byAdding: .day, value: i, to: t0)!, p = plan[i % plan.count]
             var day = ShiftDay(d: ShiftStore.key(d), wd: wd.string(from: d), dn: String(cal.component(.day, from: d)),
                                k: p.0, t: p.1, h: p.2, c: p.3)
+            day.tn = p.0 == "w" ? (p.4 < 12 ? "m" : p.4 < 20 ? "p" : "n") : (p.0 == "f" ? "f" : "x")
+            if i == 9 { day.ho = 1 }
             if p.0 == "w" {
                 day.s = d.addingTimeInterval(Double(p.4) * 3600).timeIntervalSince1970 * 1000
                 day.e = d.addingTimeInterval(Double(p.5) * 3600).timeIntervalSince1970 * 1000
@@ -120,7 +152,9 @@ extension ShiftData {
             days.append(day)
         }
         return ShiftData(v: 1, gen: Date().timeIntervalSince1970 * 1000, lang: "it", days: days,
-                         s: ShiftStrings(today: "Oggi", tomorrow: "Domani", next: "Prossimo turno", free: "Libero", app: "MyTurn"))
+                         s: ShiftStrings(today: "Oggi", tomorrow: "Domani", next: "Prossimo turno", free: "Libero", app: "MyTurn",
+                                         now: "In turno adesso", none: "Nessun turno in programma",
+                                         starts: "Inizia tra {x}", ends: "Finisce tra {x}"))
     }
 }
 

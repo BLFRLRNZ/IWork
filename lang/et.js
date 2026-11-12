@@ -879,5 +879,7 @@
 "La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.": "Parool ei lahku kunagi seadmest: server saab ainult sisselogimiseks tuletatud võtme, millega sinu andmeid avada ei saa. Konto ja kõik serveris olevad andmed saad igal ajal siit kustutada.",
 "Password dell'account": "Konto parool",
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "See on sinu konto parool ja seda ei hoita kusagil. Kui see ununeb, valid e-postiga saadud koodiga uue: serveris olevat koopiat ei saa taastada, kuid andmed jäävad sinu seadmetesse ja koopia luuakse siit uuesti.",
-"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Uuendused tulevad App Store'ist või Google Playst."
+"Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Uuendused tulevad App Store'ist või Google Playst.",
+"Inizia tra {x}": "Algab {x} pärast",
+"Finisce tra {x}": "Lõpeb {x} pärast"
 };
