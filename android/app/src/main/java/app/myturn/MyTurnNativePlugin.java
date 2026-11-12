@@ -29,13 +29,10 @@ public class MyTurnNativePlugin extends Plugin {
         call.resolve();
     }
 
-    // --- sveglie
+    // --- sveglie: su Android lo stato è "granted" oppure "prompt" (il pulsante porta dove si dà il permesso)
     private String alarmStateValue() {
         Context ctx = getContext();
-        if (!NotificationManagerCompat.from(ctx).areNotificationsEnabled()) {
-            boolean asked = ctx.getSharedPreferences(ShiftAlarms.PREFS, Context.MODE_PRIVATE).getBoolean("askedNotif", false);
-            return asked ? "denied" : "prompt";
-        }
+        if (!NotificationManagerCompat.from(ctx).areNotificationsEnabled()) return "prompt";
         return ShiftAlarms.canExact(ctx) ? "granted" : "prompt";
     }
 
@@ -46,20 +43,32 @@ public class MyTurnNativePlugin extends Plugin {
         call.resolve(r);
     }
 
-    /** chiede il permesso delle notifiche e, se serve, apre l'impostazione "Sveglie e promemoria" */
+    /** notifiche: chiede il permesso (o apre le impostazioni se non si può più chiedere); poi "Sveglie e promemoria" */
     @PluginMethod
     public void alarmRequest(PluginCall call) {
         Context ctx = getContext();
-        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(ctx, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-            ctx.getSharedPreferences(ShiftAlarms.PREFS, Context.MODE_PRIVATE).edit().putBoolean("askedNotif", true).apply();
-            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.POST_NOTIFICATIONS}, 4243);
+        boolean waiting = false; // la risposta arriva dopo: la pagina ricontrolla da sola
+        if (!NotificationManagerCompat.from(ctx).areNotificationsEnabled()) {
+            waiting = true;
+            android.content.SharedPreferences p = ctx.getSharedPreferences(ShiftAlarms.PREFS, Context.MODE_PRIVATE);
+            boolean asked = p.getBoolean("askedNotif", false);
+            if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(ctx, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+                    && (!asked || ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), Manifest.permission.POST_NOTIFICATIONS))) {
+                p.edit().putBoolean("askedNotif", true).apply();
+                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.POST_NOTIFICATIONS}, 4243);
+            } else {
+                Intent i = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, ctx.getPackageName());
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                ctx.startActivity(i);
+            }
         } else if (!ShiftAlarms.canExact(ctx) && Build.VERSION.SDK_INT >= 31) {
             Intent i = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM, Uri.parse("package:" + ctx.getPackageName()));
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             ctx.startActivity(i);
+            waiting = true;
         }
         JSObject r = new JSObject();
-        r.put("state", alarmStateValue());
+        r.put("state", waiting ? "prompt" : alarmStateValue());
         call.resolve(r);
     }
 

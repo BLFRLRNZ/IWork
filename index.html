@@ -2299,7 +2299,11 @@ function wgPlugin(){return CAP.MyTurnNative||(NATIVE&&Capacitor.registerPlugin?(
 function wgSync(now){if(!NATIVE)return;clearTimeout(wgT);wgT=setTimeout(()=>{try{const P=wgPlugin();if(!P)return;const d=wgData(),sig=JSON.stringify(Object.assign({},d,{gen:0}));
     if(sig===wgLast)return;wgLast=sig;P.setData({json:JSON.stringify(d)}).catch(()=>{wgLast="";});}catch(e){}},now?0:800);}
 setTimeout(()=>wgSync(true),1500);
-if(NATIVE){$("alBtn").hidden=false;setTimeout(()=>alSync(true),2000);document.addEventListener("visibilitychange",async()=>{if(document.visibilityState!=="visible")return;alSync(true);if($("al").open){const was=alState;await alCheck();if(alState!==was)alGranted();}});}
+if(NATIVE){$("alBtn").hidden=false;setTimeout(()=>alSync(true),2000);
+  /* tornando nell'app (anche dalle impostazioni del telefono) si rimettono le sveglie e si ricontrolla il permesso */
+  const alBack=async()=>{alSync(true);if($("al").open){const was=alState;await alCheck();if(alState!==was)alGranted();}};
+  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")alBack();});
+  try{if(CAP.App)CAP.App.addListener("resume",alBack);}catch(e){}}
 function openDeep(u){const m=/^myturn:\/\/day\/(\d{4}-\d\d-\d\d)/.exec(u||"");if(!m)return;if($("ob").open)return;
   document.querySelectorAll("dialog[open]").forEach(d=>d.close());const d=dateOf(m[1]);view=new Date(d.getFullYear(),d.getMonth(),1);render();openEditor(m[1]);}
 if(NATIVE&&CAP.App){try{CAP.App.addListener("appUrlOpen",e=>openDeep(e&&e.url));CAP.App.getLaunchUrl().then(r=>{if(r&&r.url)setTimeout(()=>openDeep(r.url),600);}).catch(()=>{});}catch(e){}}
