@@ -414,11 +414,6 @@ private struct CornerView: View {
 }
 
 extension View {
-    /// nella modalità a tinta unica di iOS il riquadro principale prende il colore scelto dall'utente
-    @ViewBuilder func widgetAccentable(_ on: Bool) -> some View {
-        if on { self.widgetAccentable() } else { self }
-    }
-
     /// sfondo dei widget: da iOS 17 / watchOS 10 lo gestisce il sistema
     @ViewBuilder func shiftWidgetBackground(_ color: Color, padded: Bool) -> some View {
         if #available(iOS 17.0, watchOS 10.0, *) {
