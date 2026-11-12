@@ -49,7 +49,8 @@ struct WatchHome: View {
                 List {
                     WatchHero(data: d, date: tl.date)
                         .listRowBackground(RoundedRectangle(cornerRadius: 18, style: .continuous).fill(Palette.bg(ShiftFocus(d, tl.date).tone, true)))
-                    ForEach(Array(days.prefix(14)), id: \.d) { day in
+                    // i giorni seguenti, senza ripetere quello già in alto
+                    ForEach(Array(days.filter { $0.d != ShiftFocus(d, tl.date).day?.d }.prefix(13)), id: \.d) { day in
                         WatchRow(data: d, day: day, date: tl.date)
                             .listRowBackground(RoundedRectangle(cornerRadius: 14, style: .continuous)
                                 .fill(day.k.isEmpty ? Palette.sunken(true) : Palette.bg(day.tone, true)))
