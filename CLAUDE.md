@@ -176,7 +176,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | `tests/editor-labels.js` | Scheda del giorno, etichette, annulla | no |
 | `tests/onboarding.js` | Schermata iniziale e regole del paese | no |
 | `tests/tools-sheets.js` | Schede degli Strumenti e salvataggio | no |
-| `tests/all-languages-320.js` | Tutti i pannelli in 23 lingue a 320 px, testo che esce o tagliato (circa 10 minuti) | sì |
+| `tests/all-languages-320.js` | Tutti i pannelli in 23 lingue a 320 px, testo che esce o tagliato (circa 10 minuti; le foto di fi e hu vanno in `s54/`). Nella turnazione le rotazioni pronte risultano "OFF": la riga scorre di lato, è voluto | sì |
 | `tests/payslip-models.js` | 14 buste paga: 4 italiane, poi Spagna, Stati Uniti, Regno Unito, Germania, Francia, Paesi Bassi, Svezia, Polonia, Brasile, Australia (Austria è nella riga sotto) | sì |
 | `tests/payslip-countries.js` | Le buste di altri 22 paesi, compresa l'Austria | sì |
 | `tests/payslip-sheet.js` | Scheda Busta paga, PDF con password, scansione | sì |
