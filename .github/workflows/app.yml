@@ -121,7 +121,7 @@ jobs:
           APP=$(find build/ios -name App.app -path '*iphonesimulator*' | head -1)
           ls "$APP/PlugIns" "$APP/Watch" "$APP/Watch/MyTurnWatch.app/PlugIns"
           xcrun simctl install "$W" "$APP/Watch/MyTurnWatch.app"
-          xcrun simctl launch "$W" app.myturn.watchkitapp -demo; sleep 12
+          xcrun simctl launch "$W" app.myturn.watchkitapp -demo; sleep 30
           xcrun simctl io "$W" screenshot shots/watch-1-app.png
       - name: Foto nel registro
         run: |

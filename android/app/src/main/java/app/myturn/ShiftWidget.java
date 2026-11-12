@@ -183,7 +183,9 @@ public class ShiftWidget extends AppWidgetProvider {
             v.setInt(id[1], "setColorFilter", col(filled ? t[0] : sunken));
             v.setViewVisibility(id[2], d.optString("d").equals(today) ? View.VISIBLE : View.GONE);
             String wd = d.optString("wd");
-            text(v, id[3], wd.length() > 3 ? wd.substring(0, 3) : wd, tfg);
+            wd = wd.length() > 3 ? wd.substring(0, 3) : wd;
+            if (!wd.isEmpty()) wd = wd.substring(0, 1).toUpperCase(Locale.getDefault()) + wd.substring(1);
+            text(v, id[3], wd, tfg);
             text(v, id[4], d.optString("dn"), d.optInt("ho", 0) == 1 ? col(dk ? "#ff8a7e" : "#cf3a2f") : (filled ? tfg : col(ink)));
             String tm = "w".equals(d.optString("k")) ? startOf(d) : filled ? first3(d.optString("t")) : "·";
             text(v, id[5], tm, tfg);

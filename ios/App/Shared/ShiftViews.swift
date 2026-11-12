@@ -106,10 +106,22 @@ struct ShiftProgress: View {
                 }
             } else {
                 let v = min(1, max(0, date.timeIntervalSince(a) / b.timeIntervalSince(a)))
-                if circular { ProgressView(value: v).progressViewStyle(.circular).tint(color) }
+                if circular { Ring(value: v, color: color) }
                 else { Bar(value: v, color: color) }
             }
         }
+    }
+}
+
+/// anello disegnato (per le foto)
+struct Ring: View {
+    let value: Double
+    let color: Color
+    var body: some View {
+        ZStack {
+            Circle().stroke(color.opacity(0.25), lineWidth: 4)
+            Circle().trim(from: 0, to: value).stroke(color, style: StrokeStyle(lineWidth: 4, lineCap: .round)).rotationEffect(.degrees(-90))
+        }.padding(2)
     }
 }
 
@@ -195,6 +207,7 @@ private struct HeroBlock: View {
     let date: Date
     let dark: Bool
     var big = false
+    var compact = false
 
     var body: some View {
         let f = ShiftFocus(data, date), fg = Palette.fg(f.tone, dark)
@@ -202,11 +215,20 @@ private struct HeroBlock: View {
             Text(f.eyebrow(data, date).uppercased())
                 .font(.system(size: 11, weight: .bold)).tracking(0.4).foregroundStyle(fg.opacity(0.78)).lineLimit(1)
             if let d = f.day {
-                Text(d.t).font(.system(size: big ? 24 : 20, weight: .heavy)).foregroundStyle(fg)
-                    .lineLimit(1).minimumScaleFactor(0.7).padding(.top, 3)
-                Text(d.hoursText).font(.system(size: big ? 17 : 15, weight: .semibold).monospacedDigit()).foregroundStyle(fg)
-                    .lineLimit(1).minimumScaleFactor(0.6)
-                Spacer(minLength: 4)
+                if compact {
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Text(d.t).font(.system(size: 19, weight: .heavy)).foregroundStyle(fg).lineLimit(1).minimumScaleFactor(0.7)
+                        Spacer(minLength: 4)
+                        Text(d.hoursText).font(.system(size: 16, weight: .bold).monospacedDigit()).foregroundStyle(fg)
+                            .lineLimit(1).minimumScaleFactor(0.6).layoutPriority(1)
+                    }.padding(.top, 2)
+                } else {
+                    Text(d.t).font(.system(size: big ? 24 : 20, weight: .heavy)).foregroundStyle(fg)
+                        .lineLimit(1).minimumScaleFactor(0.7).padding(.top, 3)
+                    Text(d.hoursText).font(.system(size: big ? 17 : 15, weight: .semibold).monospacedDigit()).foregroundStyle(fg)
+                        .lineLimit(1).minimumScaleFactor(0.6)
+                }
+                Spacer(minLength: compact ? 3 : 4)
                 if f.isNow { ShiftProgress(day: d, date: date, color: fg).padding(.bottom, 5) }
                 Countdown(data: data, focus: f, date: date)
                     .font(.system(size: 12, weight: .semibold)).foregroundStyle(fg.opacity(0.85)).lineLimit(1).minimumScaleFactor(0.7)
@@ -262,10 +284,11 @@ private struct HeroTile: View {
     let dark: Bool
     let tinted: Bool
     var big = false
+    var compact = false
     var body: some View {
         let f = ShiftFocus(data, date)
-        HeroBlock(data: data, date: date, dark: dark, big: big)
-            .padding(.horizontal, 12).padding(.vertical, 10)
+        HeroBlock(data: data, date: date, dark: dark, big: big, compact: compact)
+            .padding(.horizontal, 12).padding(.vertical, compact ? 8 : 10)
             .background(RoundedRectangle(cornerRadius: 14, style: .continuous)
                 .fill(tinted ? Color.primary.opacity(0.14) : Palette.bg(f.tone, dark)))
             .widgetAccentable(tinted)
@@ -279,14 +302,14 @@ private struct MediumView: View {
     let tinted: Bool
     var body: some View {
         let days = Array(data.from(date).prefix(7))
-        VStack(spacing: 8) {
+        VStack(spacing: 6) {
             Link(destination: ShiftWidgetView.link(data, date) ?? URL(string: "myturn://")!) {
-                HeroTile(data: data, date: date, dark: dark, tinted: tinted)
+                HeroTile(data: data, date: date, dark: dark, tinted: tinted, compact: true)
             }
             HStack(spacing: 4) {
                 ForEach(days, id: \.d) { d in
                     Link(destination: d.deepLink ?? URL(string: "myturn://")!) {
-                        DayTile(data: data, day: d, date: date, dark: dark, tinted: tinted, height: 56)
+                        DayTile(data: data, day: d, date: date, dark: dark, tinted: tinted, height: 54)
                     }
                 }
             }
@@ -303,7 +326,7 @@ private struct LargeView: View {
         let days = Array(data.from(date).prefix(14))
         let week1 = Array(days.prefix(7)), week2 = Array(days.dropFirst(7))
         let f = ShiftFocus(data, date)
-        let later = data.days.filter { $0.isShift && ($0.start ?? .distantPast) > (f.day?.start ?? date) }.prefix(3)
+        let later = data.days.filter { $0.isShift && ($0.start ?? .distantPast) > (f.day?.start ?? date) }.prefix(5)
         VStack(alignment: .leading, spacing: 8) {
             Link(destination: ShiftWidgetView.link(data, date) ?? URL(string: "myturn://")!) {
                 HeroTile(data: data, date: date, dark: dark, tinted: tinted, big: true).frame(height: 118)
