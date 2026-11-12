@@ -815,3 +815,26 @@ Baigiasi po {x}
 Užbaigti
 Įrašyk savo paskyros slaptažodį, kad užbaigtum prisijungimą šiame įrenginyje: nuo tada tavo duomenys visuose įrenginiuose bus vienodi.
 Kiekviename įrenginyje prisijunk tuo pačiu el. paštu ir slaptažodžiu, net pirmame ekrane po kalbos: pamainos, pastabos ir nustatymai ateina patys ir paskui lieka atnaujinti, nieko nereikia įjungti. Jei įrenginys paprašys slaptažodžio, įrašyk jį vieną kartą ir viskas. Tema ir priminimai lieka kiekvieno įrenginio pasirinkimas.
+{y} m. statistika
+Pamainų tipai
+Pamainos per mėnesį
+{m}: {a} rytas, {b} popietė, {c} naktis
+Papildomos, naktys ir šventės
+Savaitės dienos
+Vidutinė pamainos trukmė
+Daugiausia darbo dienų iš eilės
+Laisvi savaitgaliai
+Palyginti su {y} m.
+Pridėsiu prie tavo greitųjų pamainų: {x}. Gali jas bet kada pakeisti.
+Savaitė 5 + 2
+Rytas ir popietė pakaitomis
+Savaitinė rotacija 3 × 8
+Nepertraukiamas ciklas 2-2-2-2
+Rytas, popietė, naktis, 2 laisvos
+2-2-3 (Panama)
+Pitman
+DuPont
+4 ir 4
+Diena 12 val.
+Naktis 12 val.
+Paruošti grafikai

@@ -815,3 +815,26 @@ Upiši lozinku za sinkronizaciju ovog uređaja.
 Dovrši
 Upiši lozinku svog računa za dovršetak prijave na ovom uređaju: od tada tvoji podaci ostaju isti na svim uređajima.
 Prijavi se istom e-poštom i lozinkom na svakom uređaju, čak i na prvom zaslonu nakon jezika: smjene, bilješke i postavke stižu same i zatim ostaju ažurne, bez ičega za uključivanje. Ako te uređaj pita lozinku, upiši je jednom i to je sve. Tema i podsjetnici ostaju izbor svakog uređaja.
+Statistika za {y}.
+Vrste smjena
+Smjene po mjesecu
+{m}: {a} jutro, {b} popodne, {c} noć
+Dodatno, noći i blagdani
+Dani u tjednu
+Prosječno trajanje smjene
+Najviše radnih dana zaredom
+Slobodni vikendi
+U odnosu na {y}.
+Dodajem u tvoje brze smjene: {x}. Možeš ih promijeniti kad god želiš.
+Tjedan 5 + 2
+Jutro i popodne naizmjence
+Tjedna rotacija 3 × 8
+Kontinuirani ciklus 2-2-2-2
+Jutro, popodne, noć, 2 slobodna
+2-2-3 (Panama)
+Pitman
+DuPont
+4 i 4
+Dan 12 h
+Noć 12 h
+Gotovi rasporedi

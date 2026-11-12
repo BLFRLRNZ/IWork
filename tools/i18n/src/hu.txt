@@ -815,3 +815,26 @@ A frissítések az App Store-ból vagy a Google Playről érkeznek.
 Befejezés
 Írd be a fiókod jelszavát, hogy befejezd a bejelentkezést ezen az eszközön: ettől kezdve az adataid minden eszközödön ugyanazok maradnak.
 Minden eszközön ugyanazzal az e-mail-címmel és jelszóval jelentkezz be, akár már az első képernyőn a nyelv után: a műszakok, jegyzetek és beállítások maguktól megérkeznek, és utána naprakészek maradnak, semmit sem kell bekapcsolni. Ha egy eszköz kéri a jelszavad, írd be egyszer, és kész. A téma és az emlékeztetők eszközönként külön maradnak.
+{y}. év statisztikái
+Műszaktípusok
+Műszakok havonta
+{m}: {a} délelőtt, {b} délután, {c} éjszaka
+Plusz, éjszakák és ünnepek
+A hét napjai
+Átlagos műszakhossz
+Legtöbb munkanap egymás után
+Szabad hétvégék
+A(z) {y}. évhez képest
+Hozzáadom a gyorsműszakjaidhoz: {x}. Bármikor módosíthatod őket.
+5 + 2 hét
+Délelőtt és délután váltva
+Heti váltás 3 × 8
+Folyamatos 2-2-2-2
+Délelőtt, délután, éjszaka, 2 pihenő
+2-2-3 (Panama)
+Pitman
+DuPont
+4 és 4
+Nappal 12 ó
+Éjszaka 12 ó
+Kész beosztások

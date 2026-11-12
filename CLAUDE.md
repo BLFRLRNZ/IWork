@@ -79,6 +79,8 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 | `bpLines` / `bpParse` | Leggono la busta paga dal PDF. |
 | `helpData` | Contiene il testo della Guida. |
 | `startTour` / `tourSteps` | Avviano e descrivono il tour guidato. |
+| `ROT` / `ROLE` / `rotRole` | Rotazioni pronte della turnazione ciclica: schemi per ruolo (M, P, N da 8 ore; G, NN da 12 ore; R riposo). Ogni ruolo usa un turno rapido esistente (per orario e durata) o ne aggiunge uno (`new:X` finché non si applica). I nomi sono nella lista "values passed through variables" di `tools/i18n/extract.js`. |
+| `renderYStats` | Statistiche della vista Anno (`#yStats`), con i dati in più di `yearData` (`tm/tp/tn`, `wd`, `fe`, `streak`, `wkFree`). |
 
 `window.myturnDebug` espone `remItems`, `syItems`, `syRun`, `S`, `apply`, `mark`, `startTour`, `t`, `tn`, `bpLines`, `bpParse`, `bpNum`, `holFor`, `holidays` e altre funzioni per i test.
 
@@ -184,6 +186,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | `tests/auth-onboarding.js` | Due telefoni con un server finto: registrazione al primo avvio, accesso che ritrova tutto, password sbagliata, password dimenticata | sì |
 | `tests/layout-audit.js` | Apre ogni schermata e pannello e cerca campi sovrapposti, attaccati o che escono; foto in `$OUT/layout`. Uso: `node tests/layout-audit.js 430 it` (alcune segnalazioni sono volute: righe che scorrono, cifre sopra l'etichetta, tabelle) | sì |
 | `tests/native-shell.js` | L'app nativa simulata nel browser con plugin finti: niente service worker, promemoria locali, file condivisi, margini Android | sì |
+| `tests/rotations-stats.js` | Rotazioni pronte (turni esistenti e turni da 12 ore aggiunti) e statistiche della vista Anno a 430 e 320 px, anche scuro | sì |
 | `tests/sync.js` | Sincronizzazione tra due dispositivi con un server finto: password, unione, conflitti, cancellazioni, password dimenticata, niente in chiaro sul server | sì |
 
 - Le buste paga di prova sono in `tests/payslip/`. Si rigenerano con `gen.py`, `gen2.py` e `gen3.py`, che usano reportlab e pypdf.
@@ -221,3 +224,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.9 | Sincronizzazione cifrata tra dispositivi |
 | 2.10 | Accesso con email e password anche dalla prima schermata; una sola password per account e cifratura; campi sistemati sui telefoni piccoli |
 | 2.11 | Sincronizzazione automatica con l'account, senza niente da attivare; app per iPhone e Android (Capacitor) con widget e Apple Watch, non ancora negli store |
+| 2.12 | Rotazioni pronte nella turnazione ciclica (9 schemi); statistiche nella vista Anno |

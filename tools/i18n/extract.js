@@ -14,7 +14,9 @@ while((m=re.exec(js))){const fn=m[2];let i=m.index+m[0].length,depth=1,arg=0,str
     i++;}
   str.forEach(([a,v])=>{if(fn==='t'&&a===0)add(v,'js');if(fn==='tn'&&(a===1||a===2))add(v,'js');});}
 // values passed through variables
-["Riposo","Ferie","Permesso","Malattia","Perm.","Mal.","Mattina","Pomeriggio","Notte","Turno","Capodanno","Epifania","Liberazione","Festa del Lavoro","Festa della Repubblica","Ferragosto","Ognissanti","Immacolata","Natale","Santo Stefano","San Francesco","Pasqua","Lunedì dell'Angelo"].forEach(k=>add(k,'var'));
+["Riposo","Ferie","Permesso","Malattia","Perm.","Mal.","Mattina","Pomeriggio","Notte","Turno","Capodanno","Epifania","Liberazione","Festa del Lavoro","Festa della Repubblica","Ferragosto","Ognissanti","Immacolata","Natale","Santo Stefano","San Francesco","Pasqua","Lunedì dell'Angelo",
+ // rotazioni pronte e turni che aggiungono (ROT e ROLE in index.html)
+ "Settimana 5 + 2","Mattina e pomeriggio alternati","Rotazione settimanale 3 × 8","Ciclo continuo 2-2-2-2","In quinta","2-2-3 (Panama)","Pitman","DuPont","4 e 4","Giorno 12 h","Notte 12 h"].forEach(k=>add(k,'var'));
 (async()=>{const b=await chromium.launch();const p=await b.newPage();
   const stat=await p.evaluate(h=>{const d=new DOMParser().parseFromString(h,"text/html");d.querySelectorAll("script,style").forEach(x=>x.remove());const out=[];
     const w=d.createTreeWalker(d.body,NodeFilter.SHOW_TEXT);let n;while((n=w.nextNode())){const k=n.nodeValue.trim().replace(/\s+/g," ");if(k)out.push(k);}

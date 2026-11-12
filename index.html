@@ -287,6 +287,14 @@ textarea{resize:vertical;min-height:60px}
 .stepper.small output{min-width:58px;font-size:14px}
 .stepper.small button{width:36px}
 .strip{display:flex;flex-wrap:wrap;gap:3px}
+.rots{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;padding:2px 2px 6px;margin:0 -2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.rots::-webkit-scrollbar{display:none}
+.rot{flex:0 0 auto;width:158px;scroll-snap-align:start;text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:14px;padding:10px 11px;display:flex;flex-direction:column;gap:6px;font:inherit;cursor:pointer}
+.rot b{font-size:14px;font-weight:650;line-height:1.2}
+.rot small{font-size:12px;color:var(--muted)}
+.rot .dots{display:flex;flex-wrap:wrap;gap:2px}
+.rot .dots i{width:7px;height:7px;border-radius:2px}
+.rot[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
 .strip i{width:15px;height:15px;border-radius:4px}
 .sumline{background:var(--bg);border-radius:14px;padding:12px 14px;font-size:14px}
 .sumline b{font-weight:600}
@@ -431,6 +439,35 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 .warnline.neg{color:var(--danger)}
 .linkbtn{border:0;background:none;padding:0;color:var(--ink);text-decoration:underline;font-weight:500;align-self:flex-start;min-height:32px}
 .bars{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;height:170px}
+.ysub{font-size:13px;font-weight:650;margin:18px 0 8px;color:var(--ink)}
+#yStats .eyebrow+.ysub{margin-top:6px}
+.mix{display:flex;height:14px;border-radius:99px;overflow:hidden;gap:2px}
+.mix i{display:block;min-width:4px}
+.mixl{margin-top:8px}
+.mixl .dot{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:5px;vertical-align:0}
+.mixl .dot.d-m{background:var(--m-dot)}.mixl .dot.d-p{background:var(--p-dot)}.mixl .dot.d-n{background:var(--n-dot)}
+.sbars{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;height:132px}
+.sbars button{border:0;background:none;padding:0;height:100%;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0;color:var(--muted);font-size:11px;font:inherit;font-size:11px;cursor:pointer}
+.sbars .v{font-size:10.5px;color:var(--ink);font-weight:600;min-height:13px}
+.sbars .col{flex:1;width:100%;max-width:30px;display:flex;flex-direction:column;justify-content:flex-end;gap:1px}
+.sbars .col i{display:block;width:100%;border-radius:4px}
+.sbars button[aria-current] span:last-child{color:var(--ink);font-weight:700}
+.minis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.mini{background:var(--bg);border-radius:12px;padding:9px 10px;min-width:0}
+.minih{display:flex;flex-direction:column;gap:1px;font-size:11.5px;color:var(--muted);line-height:1.25}
+.minih b{font-size:15px;color:var(--ink);white-space:nowrap}
+.minib{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:2px;align-items:end;height:38px;margin-top:6px}
+.minib i{display:block;border-radius:2px;min-height:2px}
+.minib i.z{background:var(--line)!important;height:2px!important}
+.minib .bx{background:var(--ink)}
+.minib .bh{background:var(--holiday)}
+.wbars{display:flex;flex-direction:column;gap:6px}
+.wbars div{display:grid;grid-template-columns:44px minmax(0,1fr) 34px;gap:10px;align-items:center;font-size:13px}
+.wbars span:first-child{color:var(--muted);text-transform:capitalize}
+.wbars b{text-align:right;font-weight:650}
+.wbars .track{height:8px;border-radius:99px;background:var(--sunken);overflow:hidden}
+.wbars .track i{display:block;height:100%;border-radius:99px;background:var(--ink)}
+.ykey{margin-top:16px}
 .bars button{border:0;background:none;padding:0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px;min-width:0;color:var(--muted);font-size:11px}
 .bars i{display:block;width:100%;max-width:34px;border-radius:6px 6px 3px 3px;background:var(--ink);min-height:2px}
 .bars .zero i{background:var(--line)}
@@ -525,6 +562,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <section class="panel" id="yPay" hidden></section>
       <section class="panel" id="yLab" hidden></section>
       <section class="panel ywide" id="yLeave"></section>
+      <section class="panel ywide" id="yStats" hidden></section>
       <section class="panel ywide" id="yMonths"></section>
     </div>
   </section>
@@ -957,6 +995,10 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <h2 id="cyTitle" style="text-transform:none">Turnazione ciclica</h2>
     <p class="sub">Costruisci lo schema che si ripete, per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi, e applicalo a più settimane in una volta.</p>
     <div class="field">
+      <span class="eyebrow">Rotazioni pronte</span>
+      <div class="rots" id="cyRots"></div>
+    </div>
+    <div class="field">
       <span class="eyebrow">Schema</span>
       <div class="presets" id="cySteps"></div>
       <button type="button" class="btn add" id="cyAdd">+ Aggiungi passo</button>
@@ -974,6 +1016,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     </div>
     <label class="check"><input type="checkbox" id="cyKeep" checked> Non toccare i giorni già compilati</label>
     <label class="check"><input type="checkbox" id="cySun"> Lascia libere le domeniche</label>
+    <p class="help" id="cyNew" hidden></p>
     <div class="sumline" id="cySum" aria-live="polite"></div>
     <div class="actions">
       <button type="button" class="btn ghost" id="cyCancel">Annulla</button>
@@ -1152,7 +1195,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.11.0";
+const APP_VERSION="2.12.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1820,15 +1863,20 @@ $("tabYear").onclick=()=>{yv=view.getFullYear();setMode("yr");};
 $("yPrev").onclick=()=>{yv--;renderYear();};
 $("yNext").onclick=()=>{yv++;renderYear();};
 $("yNow").onclick=()=>{yv=new Date().getFullYear();renderYear();};
-function yearData(y){const t=todayK(),M=[];for(let i=0;i<12;i++)M.push({h:0,n:0,ot:0,night:0,f:0,ph:0,m:0,bank:null});
-  const T={h:0,n:0,ot:0,night:0,sat:0,fest:0,m:0,r:0};
+function yearData(y){const t=todayK(),M=[];for(let i=0;i<12;i++)M.push({h:0,n:0,ot:0,night:0,f:0,ph:0,m:0,bank:null,tm:0,tp:0,tn:0,fe:0});
+  const T={h:0,n:0,ot:0,night:0,sat:0,fest:0,m:0,r:0,dur:0,tm:0,tp:0,tn:0,wd:[0,0,0,0,0,0,0]};
   for(const k in S.days){if(!k.startsWith(y+"-"))continue;const e=S.days[k],mo=M[+k.slice(5,7)-1];
-    if(e.k==="w"){const i=info(k,e);mo.h+=i.dur;mo.n++;mo.night+=i.night;if(e.ot>0)mo.ot+=e.ot;T.h+=i.dur;T.n++;T.night+=i.night;if(e.ot>0)T.ot+=e.ot;const dow=dateOf(k).getDay();if(dow===6)T.sat++;if(dow===0||holiday(k))T.fest++;}
+    if(e.k==="w"){const i=info(k,e);mo.h+=i.dur;mo.n++;mo.night+=i.night;if(e.ot>0)mo.ot+=e.ot;T.h+=i.dur;T.n++;T.night+=i.night;if(e.ot>0)T.ot+=e.ot;const dow=dateOf(k).getDay();if(dow===6)T.sat++;if(dow===0||holiday(k)){T.fest++;mo.fe++;}
+      const sl=slot(e.s);mo["t"+sl]++;T["t"+sl]++;T.wd[dow]++;T.dur+=i.dur;}
     else if(e.k==="f")mo.f++;else if(e.k==="p")mo.ph+=permH(k,e);else if(e.k==="m"){mo.m++;T.m++;}else T.r++;}
   T.oc=0;T.j2=0;T.j2n=0;for(const k in S.oc){if(!k.startsWith(y+"-"))continue;const x=S.oc[k].x||0,mo=M[+k.slice(5,7)-1];T.oc++;mo.h+=x;mo.ot+=x;T.h+=x;T.ot+=x;}
   j2List().forEach(x=>{if(x.k.startsWith(y+"-")){T.j2+=x.dur;T.j2n++;}});
   const st=bankStart();let run=bankAt(keyOf(new Date(y,0,0)));
   M.forEach((mo,i)=>{const a=keyOf(new Date(y,i,1)),b=keyOf(new Date(y,i+1,0));if(b<st||a>t)return;const from=a<st?st:a,to=b<t?b:t;mo.bank=bankDiff(from,to);run+=mo.bank;mo.run=run;});
+  /* giorni di lavoro di fila (anche a cavallo dei mesi) e weekend liberi già passati */
+  let row=0;T.streak=0;T.wkFree=0;T.wkAll=0;
+  for(let d=new Date(y,0,1);d.getFullYear()===y;d=addDays(d,1)){const k=keyOf(d),w=S.days[k]&&S.days[k].k==="w";row=w?row+1:0;if(row>T.streak)T.streak=row;
+    if(d.getDay()===0&&d.getDate()>0){const sat=keyOf(addDays(d,-1));if(sat.startsWith(y+"-")&&k<=t){T.wkAll++;if(!w&&!(S.days[sat]&&S.days[sat].k==="w"))T.wkFree++;}}}
   return{M,T,L:leaveYear(y)};}
 function renderYear(){const y=yv,D=yearData(y),T=D.T,cur=new Date(),curY=cur.getFullYear();
   $("yTitle").innerHTML=t("Anno")+" <span>"+y+"</span>";
@@ -1868,6 +1916,7 @@ function renderYear(){const y=yv,D=yearData(y),T=D.T,cur=new Date(),curY=cur.get
   const max=Math.max(1,...D.M.map(m=>m.h));let bars='<div class="bars" role="group" aria-label="'+esc(t("Ore per mese"))+'">';
   D.M.forEach((m,i)=>{bars+='<button type="button" data-ym="'+i+'"'+(y===curY&&i===cur.getMonth()?' aria-current="date"':"")+(m.h?"":' class="zero"')+' aria-label="'+esc(t("{m}: {h} ore. Apri il mese",{m:MONTHS[i],h:hrs(m.h)}))+'"><span class="v">'+(m.h?Math.round(m.h):"")+'</span><i style="height:'+(m.h/max*120)+'px"></i><span>'+MONTHS[i][0].toUpperCase()+"</span></button>";});
   bars+="</div>";
+  renderYStats(y,D);
   const mu='<span class="muted">–</span>';
   let tb='<div class="tablewrap"><table class="ytable"><thead><tr><th>'+t("Mese")+'</th><th class="sm-hide">'+t("Turni")+"</th><th>"+t("Ore")+'</th><th class="sm-hide">'+t("Extra")+"</th><th>"+t("Ferie")+"</th><th>"+t("Perm.")+"</th><th>"+t("Banca")+"</th></tr></thead><tbody>";
   D.M.forEach((m,i)=>{tb+='<tr><td><button type="button" data-ym="'+i+'"><span class="mlong">'+MONTHS[i]+'</span><span class="mshort" aria-hidden="true">'+MON3[i]+'</span></button></td><td class="sm-hide">'+(m.n||'<span class="muted">0</span>')+"</td><td>"+hrs(m.h)+'</td><td class="sm-hide">'+(m.ot?hrs(m.ot):'<span class="muted">0</span>')+"</td><td>"+(m.f?dU(m.f):mu)+"</td><td>"+(m.ph?hrs(m.ph)+" h":mu)+"</td><td>"+(m.bank===null?mu:'<span class="'+(m.bank<-0.004?"neg":m.bank>0.004?"pos":"")+'">'+signed(m.bank)+"</span>")+"</td></tr>";});
@@ -1875,17 +1924,70 @@ function renderYear(){const y=yv,D=yearData(y),T=D.T,cur=new Date(),curY=cur.get
   tb+='</tbody><tfoot><tr><td>'+t("Totale")+'</td><td class="sm-hide">'+T.n+"</td><td>"+hrs(T.h)+'</td><td class="sm-hide">'+hrs(T.ot)+"</td><td>"+dU(L.fTot)+"</td><td>"+hrs(L.pTot)+" h</td><td>"+(anyBank?'<span class="'+(bankTot<-0.004?"neg":bankTot>0.004?"pos":"")+'">'+signed(bankTot)+"</span>":"–")+"</td></tr></tfoot></table></div>";
   $("yMonths").innerHTML='<div class="eyebrow">'+t("Mese per mese")+'</div>'+bars+tb+'<p class="note">'+t("Tocca un mese per aprirlo nel calendario. La colonna Banca ore mostra quanto ogni mese ha aggiunto o tolto.")+'</p>';
 }
+/* statistiche dell'anno: tipi di turno, turni per mese, extra/notti/festivi, giorni della settimana, cifre chiave */
+function renderYStats(y,D){const T=D.T,el=$("yStats");el.hidden=!T.n;if(!T.n){el.innerHTML="";return;}
+  const pc=v=>Math.round(v/T.n*100)+"%",SL=[["m",T.tm,t("Mattina")],["p",T.tp,t("Pomeriggio")],["n",T.tn,t("Notte")]].filter(x=>x[1]);
+  let h='<div class="eyebrow">'+t("Statistiche del {y}",{y})+'</div><h4 class="ysub">'+t("Tipi di turno")+'</h4>'
+    +'<div class="mix" role="img" aria-label="'+esc(SL.map(x=>x[2]+" "+x[1]).join(", "))+'">'+SL.map(x=>'<i class="d-'+x[0]+'" style="flex:'+x[1]+'"></i>').join("")+"</div>"
+    +'<div class="legend mixl">'+SL.map(x=>'<span><i class="dot d-'+x[0]+'"></i>'+esc(x[2])+" <b>"+x[1]+"</b> · "+pc(x[1])+"</span>").join("")+"</div>";
+  // turni per mese, divisi per tipo
+  const mx=Math.max(1,...D.M.map(m=>m.n)),cur=new Date();
+  h+='<h4 class="ysub">'+t("Turni per mese")+'</h4><div class="sbars">'+D.M.map((m,i)=>'<button type="button" data-ym="'+i+'"'+(y===cur.getFullYear()&&i===cur.getMonth()?' aria-current="date"':"")
+    +' aria-label="'+esc(t("{m}: {a} di mattina, {b} di pomeriggio, {c} di notte",{m:MONTHS[i],a:m.tm,b:m.tp,c:m.tn}))+'"><span class="v">'+(m.n||"")+'</span><span class="col">'
+    +(m.tn?'<i class="d-n" style="height:'+(m.tn/mx*100)+'%"></i>':"")+(m.tp?'<i class="d-p" style="height:'+(m.tp/mx*100)+'%"></i>':"")+(m.tm?'<i class="d-m" style="height:'+(m.tm/mx*100)+'%"></i>':"")
+    +'</span><span>'+MONTHS[i][0].toUpperCase()+"</span></button>").join("")+"</div>";
+  // extra, notti e festivi mese per mese
+  const mini=(lab,vals,fmt,cls)=>{const mv=Math.max(...vals);return '<div class="mini"><div class="minih"><span>'+esc(lab)+"</span><b>"+fmt(vals.reduce((a,b)=>a+b,0))+'</b></div><div class="minib" aria-hidden="true">'
+    +vals.map(v=>'<i class="'+cls+(v?"":" z")+'" style="height:'+(mv?Math.max(v/mv*100,v?8:0):0)+'%"></i>').join("")+"</div></div>";};
+  h+='<h4 class="ysub">'+t("Extra, notti e festivi")+'</h4><div class="minis">'
+    +mini(t("Ore extra"),D.M.map(m=>m.ot),v=>hrs(v)+" h","bx")+mini(t("Ore notturne"),D.M.map(m=>m.night),v=>hrs(v)+" h","d-n")+mini(t("Domeniche e festivi"),D.M.map(m=>m.fe),v=>String(v),"bh")+"</div>";
+  // giorni della settimana
+  const wmx=Math.max(1,...T.wd);
+  h+='<h4 class="ysub">'+t("Giorni della settimana")+'</h4><div class="wbars">'+[0,1,2,3,4,5,6].map(i=>{const dw=(WS+i)%7,d=addDays(new Date(2024,0,7),dw);
+    return '<div><span>'+esc(df(d,{weekday:"short"}))+'</span><span class="track"><i style="width:'+(T.wd[dw]/wmx*100)+'%"></i></span><b>'+T.wd[dw]+"</b></div>";}).join("")+"</div>";
+  // cifre chiave
+  const prev=yearData(y-1).T;
+  h+='<div class="tiles ykey"><div class="tile"><strong>'+hrs(T.dur/T.n)+" h</strong><span>"+t("Durata media del turno")+'</span></div><div class="tile"><strong>'+T.streak+"</strong><span>"+t("Giorni di lavoro di fila, al massimo")+"</span></div>"
+    +(T.wkAll?'<div class="tile"><strong>'+T.wkFree+" / "+T.wkAll+"</strong><span>"+t("Weekend liberi")+"</span></div>":"")
+    +(prev.n?'<div class="tile"><strong class="'+(T.h-prev.h<-0.004?"neg":T.h-prev.h>0.004?"pos":"")+'">'+signed(T.h-prev.h)+" h</strong><span>"+t("Rispetto al {y}",{y:y-1})+"</span></div>":"")+"</div>";
+  el.innerHTML=h;}
 $("yearView").addEventListener("click",ev=>{if(ev.target.closest("[data-paytoggle]"))return;const m=ev.target.closest("[data-ym]");if(m){view=new Date(yv,+m.dataset.ym,1);setMode("cal");return;}
   const s=ev.target.closest("[data-set]");if(s)openSettings(s.dataset.set);});
 
 /* ---------- turnazione ciclica ---------- */
-let cyDraft=[];
-const cyEntry=v=>v==="r"?{k:"r",n:""}:presetEntry(S.settings.presets[+v.slice(1)]||S.settings.presets[mainP()]);
+let cyDraft=[],cyRot="";
+/* rotazioni pronte. Ruoli: M mattina, P pomeriggio, N notte (8 ore), G giorno e NN notte da 12 ore, R riposo.
+   Ogni ruolo usa un turno rapido che c'è già (per orario e durata); se manca, viene aggiunto quando si applica. */
+const ROT=[
+  {id:"5x2",n:"Settimana 5 + 2",s:[["M",5],["R",2]]},
+  {id:"mp",n:"Mattina e pomeriggio alternati",s:[["M",5],["R",2],["P",5],["R",2]]},
+  {id:"3x8",n:"Rotazione settimanale 3 × 8",s:[["M",5],["R",2],["P",5],["R",2],["N",5],["R",2]]},
+  {id:"2222",n:"Ciclo continuo 2-2-2-2",s:[["M",2],["P",2],["N",2],["R",2]]},
+  {id:"q5",n:"In quinta",s:[["M",1],["P",1],["N",1],["R",2]]},
+  {id:"223",n:"2-2-3 (Panama)",s:[["G",2],["R",2],["G",3],["R",2],["G",2],["R",3]]},
+  {id:"pit",n:"Pitman",s:[["G",2],["R",2],["G",3],["R",2],["G",2],["R",3],["NN",2],["R",2],["NN",3],["R",2],["NN",2],["R",3]]},
+  {id:"dup",n:"DuPont",s:[["NN",4],["R",3],["G",3],["R",1],["NN",3],["R",3],["G",4],["R",7]]},
+  {id:"44",n:"4 e 4",s:[["G",4],["R",4],["NN",4],["R",4]]}];
+const ROLE={M:{n:"Mattina",t:"06:00",d:8},P:{n:"Pomeriggio",t:"14:00",d:8},N:{n:"Notte",t:"22:00",d:8},G:{n:"Giorno 12 h",t:"07:00",d:12},NN:{n:"Notte 12 h",t:"19:00",d:12}};
+const pDur=p=>p.d||S.settings.wd||8,pHr=p=>toMin(p.t)/60;
+const ROLE_OK={M:p=>pDur(p)<11&&slot(p.t)==="m",P:p=>pDur(p)<11&&slot(p.t)==="p",N:p=>pDur(p)<11&&slot(p.t)==="n",
+  G:p=>pDur(p)>=11&&pHr(p)>=5&&pHr(p)<12,NN:p=>pDur(p)>=11&&(pHr(p)>=17||pHr(p)<4)};
+function rotRole(r){const i=S.settings.presets.findIndex(p=>p.j!==2&&!p.t2&&ROLE_OK[r](p));return i>=0?"p"+i:"new:"+r;}
+const rotNew=r=>({n:t(ROLE[r].n),t:ROLE[r].t,d:ROLE[r].d});
+const cyPreset=v=>v.startsWith("new:")?rotNew(v.slice(4)):(S.settings.presets[+v.slice(1)]||S.settings.presets[mainP()]);
+const cyEntry=v=>v==="r"?{k:"r",n:""}:presetEntry(cyPreset(v));
+const cyName=v=>v==="r"?t("Riposo"):cyPreset(v).n;
+function rotRender(){$("cyRots").innerHTML=ROT.map(r=>{let len=0;const dots=[];r.s.forEach(([ro,c])=>{len+=c;for(let i=0;i<c;i++)dots.push(ro==="R"?"x":ro==="G"?"m":ro==="NN"?"n":ro.toLowerCase());});
+    return '<button type="button" class="rot" data-rot="'+r.id+'" aria-pressed="'+(cyRot===r.id)+'"><b>'+esc(t(r.n))+'</b><span class="dots" aria-hidden="true">'+dots.slice(0,28).map(d=>'<i class="d-'+d+'"></i>').join("")+"</span><small>"+tn(len,"{n} giorno","{n} giorni")+(r.s.some(x=>x[0]==="G"||x[0]==="NN")?" · 12 h":"")+"</small></button>";}).join("");
+  const nw=[...new Set(cyDraft.map(st=>st.v).filter(v=>v.startsWith("new:")))];
+  $("cyNew").hidden=!nw.length;if(nw.length)$("cyNew").textContent=t("Aggiungo ai tuoi turni rapidi: {x}. Puoi cambiarli quando vuoi.",{x:nw.map(v=>{const p=rotNew(v.slice(4));return p.n+" ("+p.t+", "+hrs(p.d)+" h)";}).join(", ")});}
+$("cyRots").addEventListener("click",ev=>{const b=ev.target.closest("[data-rot]");if(!b)return;const r=ROT.find(x=>x.id===b.dataset.rot);if(!r)return;
+  cyRot=r.id;cyDraft=r.s.map(([ro,c])=>({v:ro==="R"?"r":rotRole(ro),c}));cyRender();});
 function cyRender(){const P=S.settings.presets;
-  $("cySteps").innerHTML=cyDraft.map((st,i)=>'<div class="cy-row"><select id="cys-'+i+'" data-i="'+i+'" aria-label="'+esc(t("Passo {n}",{n:i+1}))+'">'+P.map((p,j)=>p.j===2?"":'<option value="p'+j+'"'+(st.v==="p"+j?" selected":"")+">"+esc(p.n)+" "+presetSub(p)+"</option>").join("")+'<option value="r"'+(st.v==="r"?" selected":"")+'>'+t("Riposo")+'</option></select>'
+  $("cySteps").innerHTML=cyDraft.map((st,i)=>'<div class="cy-row"><select id="cys-'+i+'" data-i="'+i+'" aria-label="'+esc(t("Passo {n}",{n:i+1}))+'">'+P.map((p,j)=>p.j===2?"":'<option value="p'+j+'"'+(st.v==="p"+j?" selected":"")+">"+esc(p.n)+" "+presetSub(p)+"</option>").join("")+(st.v.startsWith("new:")?'<option value="'+st.v+'" selected>'+esc(cyPreset(st.v).n)+" "+presetSub(cyPreset(st.v))+"</option>":"")+'<option value="r"'+(st.v==="r"?" selected":"")+'>'+t("Riposo")+'</option></select>'
     +'<div class="stepper small"><button type="button" data-dec="'+i+'" aria-label="'+esc(t("Un giorno in meno"))+'">−</button><output>'+tn(st.c,"{n} giorno","{n} giorni")+'</output><button type="button" data-inc="'+i+'" aria-label="'+esc(t("Un giorno in più"))+'">+</button></div>'
     +'<button type="button" class="del" data-del="'+i+'" aria-label="'+esc(t("Elimina passo {n}",{n:i+1}))+'"'+(cyDraft.length<=1?" disabled":"")+">×</button></div>").join("");
-  $("cyAdd").disabled=cyDraft.length>=12;cySummary();}
+  $("cyAdd").disabled=cyDraft.length>=12;rotRender();cySummary();}
 function cyPlan(){const out=[];const from=$("cyFrom").value,weeks=Math.max(1,Math.min(52,+$("cyWeeks").value||0));if(!isK(from)||!cyDraft.length)return out;
   const seq=[];cyDraft.forEach(st=>{for(let i=0;i<st.c;i++)seq.push(st.v);});
   let idx=0;for(let i=0,d=dateOf(from);i<weeks*7;i++,d=addDays(d,1)){if($("cySun").checked&&d.getDay()===0)continue;const k=keyOf(d),v=seq[idx%seq.length];idx++;
@@ -1895,24 +1997,27 @@ function cySummary(){const seq=[];cyDraft.forEach(st=>{for(let i=0;i<st.c;i++)se
   const plan=cyPlan();if(!plan.length){$("cySum").innerHTML=isK($("cyFrom").value)?t("Nessun giorno da compilare con queste scelte."):t("Scegli da quale giorno partire.");$("cyGo").disabled=true;return;}
   const cnt={};plan.forEach(x=>{cnt[x[1]]=(cnt[x[1]]||0)+1;});
   const last=plan[plan.length-1][0];
-  $("cySum").innerHTML=t("Ciclo di <b>{a}</b>. Compilo <b>{b}</b> dal {c} al {d}:",{a:tn(seq.length,"{n} giorno","{n} giorni"),b:tn(plan.length,"{n} giorno","{n} giorni"),c:dateIt(plan[0][0]),d:dateIt(last)})+" "+Object.keys(cnt).map(v=>esc(v==="r"?t("Riposo"):(S.settings.presets[+v.slice(1)]||S.settings.presets[mainP()]).n)+" "+cnt[v]).join(", ")+".";
+  $("cySum").innerHTML=t("Ciclo di <b>{a}</b>. Compilo <b>{b}</b> dal {c} al {d}:",{a:tn(seq.length,"{n} giorno","{n} giorni"),b:tn(plan.length,"{n} giorno","{n} giorni"),c:dateIt(plan[0][0]),d:dateIt(last)})+" "+Object.keys(cnt).map(v=>esc(cyName(v))+" "+cnt[v]).join(", ")+".";
   $("cyGo").disabled=false;$("cyGo").textContent=tn(plan.length,"Applica a {n} giorno","Applica a {n} giorni");}
-$("cySteps").addEventListener("change",ev=>{const i=+ev.target.dataset.i;if(!isNaN(i)){cyDraft[i].v=ev.target.value;cySummary();}});
+$("cySteps").addEventListener("change",ev=>{const i=+ev.target.dataset.i;if(!isNaN(i)){cyDraft[i].v=ev.target.value;cyRot="";rotRender();cySummary();}});
 $("cySteps").addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;
   if(b.dataset.inc){const st=cyDraft[+b.dataset.inc];st.c=Math.min(14,st.c+1);}else if(b.dataset.dec){const st=cyDraft[+b.dataset.dec];st.c=Math.max(1,st.c-1);}
-  else if(b.dataset.del&&cyDraft.length>1)cyDraft.splice(+b.dataset.del,1);else return;cyRender();});
-$("cyAdd").onclick=()=>{if(cyDraft.length>=12)return;const last=cyDraft[cyDraft.length-1];cyDraft.push({v:last&&last.v!=="r"?"r":"p"+mainP(),c:last&&last.v!=="r"?2:5});cyRender();};
+  else if(b.dataset.del&&cyDraft.length>1)cyDraft.splice(+b.dataset.del,1);else return;cyRot="";cyRender();});
+$("cyAdd").onclick=()=>{if(cyDraft.length>=12)return;cyRot="";const last=cyDraft[cyDraft.length-1];cyDraft.push({v:last&&last.v!=="r"?"r":"p"+mainP(),c:last&&last.v!=="r"?2:5});cyRender();};
 ["cyFrom","cyWeeks","cyKeep","cySun"].forEach(id=>$(id).addEventListener("input",cySummary));
 $("cycleBtn").onclick=()=>{const P=S.settings.presets,M=P.map((p,i)=>p.j===2?-1:i).filter(i=>i>=0),a="p"+M[0];
   cyDraft=S.settings.cycle.length?S.settings.cycle.map(c=>({v:c.v==="r"||P[+c.v.slice(1)]&&P[+c.v.slice(1)].j!==2?c.v:a,c:c.c})):(M.length>1?[{v:a,c:5},{v:"r",c:2},{v:"p"+M[1],c:5},{v:"r",c:2}]:[{v:a,c:5},{v:"r",c:2}]);
   const t=new Date(),f1=new Date(view.getFullYear(),view.getMonth(),1),isNow=view.getFullYear()===t.getFullYear()&&view.getMonth()===t.getMonth();
   $("cyFrom").value=keyOf(isNow?addDays(monday(t),7):f1.getDay()===WS?f1:addDays(monday(f1),7));
-  $("cyWeeks").value=4;cyWk();cyRender();openDlg($("cy"));};
+  cyRot="";$("cyWeeks").value=4;cyWk();cyRender();openDlg($("cy"));};
 function cyWk(){const w=+$("cyWeeks").value||4;$("cyWkOut").textContent=tn(w,"{n} settimana","{n} settimane");$("cyWkMinus").disabled=w<=1;$("cyWkPlus").disabled=w>=52;}
 $("cyWkMinus").onclick=()=>{$("cyWeeks").value=Math.max(1,(+$("cyWeeks").value||4)-1);cyWk();cySummary();};
 $("cyWkPlus").onclick=()=>{$("cyWeeks").value=Math.min(52,(+$("cyWeeks").value||4)+1);cyWk();cySummary();};
 $("cyCancel").onclick=()=>$("cy").close();
-$("cyForm").addEventListener("submit",ev=>{ev.preventDefault();const plan=cyPlan();if(!plan.length)return;
+$("cyForm").addEventListener("submit",ev=>{ev.preventDefault();if(!cyPlan().length)return;
+  const P=S.settings.presets,made={};
+  cyDraft.forEach(st=>{if(!st.v.startsWith("new:"))return;if(!(st.v in made)){if(P.length<MAX_PRESETS){P.push(rotNew(st.v.slice(4)));made[st.v]="p"+(P.length-1);}else made[st.v]="p"+mainP();}st.v=made[st.v];});
+  const plan=cyPlan();
   S.settings.cycle=cyDraft.map(c=>({v:c.v,c:c.c}));mark("settings","s");$("cy").close();
   const f=dateOf(plan[0][0]);view=new Date(f.getFullYear(),f.getMonth(),1);if(mode!=="cal")setMode("cal");
   apply(plan.map(x=>[x[0],cyEntry(x[1])]),tn(plan.length,"Turnazione applicata a {n} giorno.","Turnazione applicata a {n} giorni."));});

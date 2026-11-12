@@ -815,3 +815,26 @@ Skriv din adgangskode for at synkronisere denne enhed.
 Fuldfør
 Skriv adgangskoden til din konto for at fuldføre login på denne enhed: derefter er dine data de samme på alle dine enheder.
 Log ind med samme e-mail og adgangskode på hver enhed, også fra den første skærm efter sproget: vagter, noter og indstillinger kommer af sig selv og holdes derefter opdateret, uden noget at slå til. Hvis en enhed beder om din adgangskode, så skriv den én gang, og så er det klaret. Tema og påmindelser forbliver valg på hver enhed.
+Statistik for {y}
+Vagttyper
+Vagter pr. måned
+{m}: {a} dag, {b} aften, {c} nat
+Ekstra, nætter og helligdage
+Ugedage
+Gennemsnitlig vagtlængde
+Flest arbejdsdage i træk
+Fri weekender
+I forhold til {y}
+Jeg tilføjer til dine hurtigvagter: {x}. Du kan ændre dem når som helst.
+Uge 5 + 2
+Skiftevis dag og aften
+Ugentlig rotation 3 × 8
+Fuldkontinuerlig 2-2-2-2
+Dag, aften, nat, 2 fri
+2-2-3 (Panama)
+Pitman
+DuPont
+4 og 4
+Dag 12 t
+Nat 12 t
+Færdige vagtplaner

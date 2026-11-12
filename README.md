@@ -28,12 +28,13 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 
 **Anno**
 - Totale ore e turni dell'anno, grafico mese per mese e tabella con turni, ore, extra, ferie, permessi e banca ore.
+- **Statistiche**: quante mattine, pomeriggi e notti, i turni di ogni mese divisi per tipo, ore extra, ore notturne, domeniche e festivi mese per mese, i giorni della settimana in cui lavori di più, la durata media del turno, il massimo di giorni di lavoro di fila, i weekend liberi e il confronto con l'anno prima.
 - **Ferie e permessi residui**: usati, programmati e rimasti, con avviso quando stai per finirli.
 - **Banca ore**: ore lavorate meno ore da contratto, giorno per giorno fino a oggi. Ferie, permessi, malattia, domeniche e festivi non contano come ore mancanti.
 
 **Strumenti** (pulsante ⋯ in alto)
 - **Turni rapidi** ed **Etichette**: crei e modifichi i pulsanti che compaiono sopra al calendario.
-- **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane.
+- **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane. Ci sono 9 **rotazioni pronte** da scegliere con un tocco: settimana 5 + 2, mattina e pomeriggio alternati, rotazione settimanale 3 × 8, ciclo continuo 2-2-2-2, in quinta, 2-2-3 (Panama), Pitman, DuPont e 4 e 4. Usano i tuoi turni rapidi; se manca un turno (per esempio quelli da 12 ore) viene aggiunto, e lo puoi cambiare quando vuoi.
 - **Ripeti l'ultima settimana**.
 - **Condividi la settimana**: qualsiasi settimana, passata o futura, come immagine pronta da mandare oppure come testo da incollare.
 - **PDF del mese** a scelta, pronto da stampare, del lavoro principale o del secondo lavoro.

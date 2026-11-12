@@ -815,3 +815,26 @@ Vul je wachtwoord in om dit apparaat te synchroniseren.
 Voltooien
 Vul het wachtwoord van je account in om het inloggen op dit apparaat te voltooien: daarna blijven je gegevens op al je apparaten hetzelfde.
 Log op elk apparaat in met hetzelfde e-mailadres en wachtwoord, ook al op het eerste scherm na de taal: diensten, notities en instellingen komen vanzelf binnen en blijven daarna bijgewerkt, zonder iets aan te zetten. Vraagt een apparaat om je wachtwoord, vul het dan één keer in en klaar. Thema en herinneringen blijven keuzes per apparaat.
+Statistieken {y}
+Soorten diensten
+Diensten per maand
+{m}: {a} ochtend, {b} middag, {c} nacht
+Extra, nachten en feestdagen
+Dagen van de week
+Gemiddelde duur van een dienst
+Meeste werkdagen op rij
+Vrije weekenden
+Ten opzichte van {y}
+Ik voeg toe aan je snelle diensten: {x}. Je kunt ze altijd wijzigen.
+Week 5 + 2
+Ochtend en middag om en om
+Wekelijkse wisseling 3 × 8
+Volcontinu 2-2-2-2
+Ochtend, middag, nacht, 2 vrij
+2-2-3 (Panama)
+Pitman
+DuPont
+4 op, 4 af
+Dag 12 u
+Nacht 12 u
+Kant-en-klare roosters

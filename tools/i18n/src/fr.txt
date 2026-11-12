@@ -815,3 +815,26 @@ Saisissez votre mot de passe pour synchroniser cet appareil.
 Terminer
 Saisissez le mot de passe de votre compte pour terminer la connexion sur cet appareil : vos données resteront ensuite identiques sur tous vos appareils.
 Connectez-vous avec le même e-mail et le même mot de passe sur chaque appareil, même depuis le premier écran après la langue : postes, notes et réglages arrivent tout seuls et restent ensuite à jour, sans rien à activer. Si un appareil vous demande le mot de passe, saisissez-le une fois, c'est tout. Le thème et les rappels restent propres à chaque appareil.
+Statistiques {y}
+Types de postes
+Postes par mois
+{m} : {a} le matin, {b} l'après-midi, {c} la nuit
+Heures en plus, nuits et fériés
+Jours de la semaine
+Durée moyenne d'un poste
+Jours de travail d'affilée, au maximum
+Week-ends libres
+Par rapport à {y}
+Ajout à vos postes rapides : {x}. Vous pourrez les modifier quand vous voulez.
+Semaine 5 + 2
+Matin et après-midi en alternance
+Rotation hebdomadaire 3 × 8
+Cycle continu 2-2-2-2
+Matin, après-midi, nuit, 2 repos
+2-2-3 (Panama)
+Pitman
+DuPont
+4 et 4
+Jour 12 h
+Nuit 12 h
+Rotations prêtes

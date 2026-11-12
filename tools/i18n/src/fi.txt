@@ -815,3 +815,26 @@ Synkronoi tämä laite kirjoittamalla salasanasi.
 Viimeistele
 Viimeistele kirjautuminen tällä laitteella kirjoittamalla tilisi salasana: sen jälkeen tietosi pysyvät samoina kaikilla laitteillasi.
 Kirjaudu jokaisella laitteella samalla sähköpostilla ja salasanalla, jo ensimmäisellä näytöllä kielen jälkeen: vuorot, muistiinpanot ja asetukset tulevat itsestään ja pysyvät sitten ajan tasalla, mitään ei tarvitse ottaa käyttöön. Jos laite kysyy salasanaa, kirjoita se kerran, ja se on siinä. Teema ja muistutukset ovat jokaisen laitteen omia valintoja.
+Tilastot {y}
+Vuorotyypit
+Vuorot kuukausittain
+{m}: {a} aamu, {b} ilta, {c} yö
+Lisätunnit, yöt ja pyhät
+Viikonpäivät
+Vuoron keskipituus
+Eniten työpäiviä peräkkäin
+Vapaat viikonloput
+Verrattuna vuoteen {y}
+Lisään pikavuoroihisi: {x}. Voit muuttaa niitä milloin vain.
+Viikko 5 + 2
+Aamu ja ilta vuorotellen
+Viikoittainen kierto 3 × 8
+Keskeytymätön 2-2-2-2
+Aamu, ilta, yö, 2 vapaata
+2-2-3 (Panama)
+Pitman
+DuPont
+4 ja 4
+Päivä 12 h
+Yö 12 h
+Valmiit vuorokierrot

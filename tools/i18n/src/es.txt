@@ -815,3 +815,26 @@ Escribe tu contraseña para sincronizar este dispositivo.
 Completar
 Escribe la contraseña de tu cuenta para completar el inicio de sesión en este dispositivo: a partir de ahí tus datos serán los mismos en todos tus dispositivos.
 Inicia sesión con el mismo correo y la misma contraseña en cada dispositivo, incluso desde la primera pantalla después del idioma: turnos, notas y ajustes llegan solos y luego se mantienen al día, sin nada que activar. Si un dispositivo te pide la contraseña, escríbela una vez y listo. El tema y los recordatorios son elección de cada dispositivo.
+Estadísticas de {y}
+Tipos de turno
+Turnos por mes
+{m}: {a} de mañana, {b} de tarde, {c} de noche
+Extra, noches y festivos
+Días de la semana
+Duración media del turno
+Máximo de días seguidos de trabajo
+Fines de semana libres
+Respecto a {y}
+Añado a tus turnos rápidos: {x}. Puedes cambiarlos cuando quieras.
+Semana 5 + 2
+Mañana y tarde alternas
+Rotación semanal 3 × 8
+Ciclo continuo 2-2-2-2
+Mañana, tarde, noche, 2 libres
+2-2-3 (Panama)
+Pitman
+DuPont
+4 y 4
+Día 12 h
+Noche 12 h
+Rotaciones listas

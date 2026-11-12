@@ -815,3 +815,26 @@ Vpiši geslo za sinhronizacijo te naprave.
 Dokončaj
 Vpiši geslo svojega računa, da dokončaš prijavo na tej napravi: odslej ostanejo tvoji podatki enaki na vseh napravah.
 Na vsaki napravi se prijavi z istim e-naslovom in geslom, že na prvem zaslonu po izbiri jezika: izmene, zapiski in nastavitve pridejo sami in nato ostanejo posodobljeni, ničesar ni treba vklopiti. Če te naprava vpraša za geslo, ga vpiši enkrat in to je vse. Tema in opomniki ostanejo izbira vsake naprave.
+Statistika za leto {y}
+Vrste izmen
+Izmene po mesecih
+{m}: {a} jutro, {b} popoldne, {c} noč
+Dodatno, noči in prazniki
+Dnevi v tednu
+Povprečna dolžina izmene
+Največ delovnih dni zapored
+Prosti vikendi
+V primerjavi z letom {y}
+Dodam med tvoje hitre izmene: {x}. Spremeniš jih lahko kadar koli.
+Teden 5 + 2
+Jutro in popoldne izmenično
+Tedensko menjavanje 3 × 8
+Neprekinjeni cikel 2-2-2-2
+Jutro, popoldne, noč, 2 prosta
+2-2-3 (Panama)
+Pitman
+DuPont
+4 in 4
+Dan 12 ur
+Noč 12 ur
+Pripravljeni razporedi

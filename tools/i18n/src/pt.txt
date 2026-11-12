@@ -815,3 +815,26 @@ Introduza a sua palavra-passe para sincronizar este dispositivo.
 Concluir
 Introduza a palavra-passe da sua conta para concluir a sessão neste dispositivo: a partir daí os seus dados ficam iguais em todos os seus dispositivos.
 Inicie sessão com o mesmo e-mail e a mesma palavra-passe em cada dispositivo, mesmo no primeiro ecrã depois do idioma: turnos, notas e definições chegam sozinhos e depois mantêm-se atualizados, sem nada para ativar. Se um dispositivo lhe pedir a palavra-passe, introduza-a uma vez e pronto. O tema e os lembretes continuam a ser escolhas de cada dispositivo.
+Estatísticas de {y}
+Tipos de turno
+Turnos por mês
+{m}: {a} de manhã, {b} de tarde, {c} de noite
+Extra, noites e feriados
+Dias da semana
+Duração média do turno
+Máximo de dias seguidos de trabalho
+Fins de semana livres
+Em relação a {y}
+Vou adicionar aos seus turnos rápidos: {x}. Pode alterá-los quando quiser.
+Semana 5 + 2
+Manhã e tarde alternadas
+Rotação semanal 3 × 8
+Ciclo contínuo 2-2-2-2
+Manhã, tarde, noite, 2 folgas
+2-2-3 (Panama)
+Pitman
+DuPont
+4 e 4
+Dia 12 h
+Noite 12 h
+Rotações prontas

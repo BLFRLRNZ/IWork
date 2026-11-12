@@ -815,3 +815,26 @@ Gib dein Passwort ein, um dieses Gerät zu synchronisieren.
 Abschließen
 Gib das Passwort deines Kontos ein, um die Anmeldung auf diesem Gerät abzuschließen: Danach bleiben deine Daten auf allen Geräten gleich.
 Melde dich auf jedem Gerät mit derselben E-Mail und demselben Passwort an, auch schon auf dem ersten Bildschirm nach der Sprache: Schichten, Notizen und Einstellungen kommen von selbst und bleiben dann aktuell, ohne dass du etwas einschalten musst. Wenn ein Gerät nach deinem Passwort fragt, gib es einmal ein, das war's. Design und Erinnerungen bleiben Einstellungen des jeweiligen Geräts.
+Statistik {y}
+Schichtarten
+Schichten pro Monat
+{m}: {a} Früh, {b} Spät, {c} Nacht
+Zusatz, Nacht und Feiertage
+Wochentage
+Durchschnittliche Schichtdauer
+Höchstens Arbeitstage am Stück
+Freie Wochenenden
+Im Vergleich zu {y}
+Ich füge zu deinen Schnellschichten hinzu: {x}. Du kannst sie jederzeit ändern.
+5-Tage-Woche (5 + 2)
+Früh und Spät im Wechsel
+Wöchentlicher Wechsel 3 × 8
+Vollkonti 2-2-2-2
+Früh, Spät, Nacht, 2 frei
+2-2-3 (Panama)
+Pitman
+DuPont
+4 an, 4 frei
+Tag 12 h
+Nacht 12 h
+Fertige Schichtfolgen

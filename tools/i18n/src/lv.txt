@@ -815,3 +815,26 @@ Ieraksti paroli, lai sinhronizētu šo ierīci.
 Pabeigt
 Ieraksti sava konta paroli, lai pabeigtu pieteikšanos šajā ierīcē: turpmāk tavi dati paliks vienādi visās ierīcēs.
 Katrā ierīcē piesakies ar to pašu e-pastu un paroli, pat pirmajā ekrānā pēc valodas: maiņas, piezīmes un iestatījumi pienāk paši un pēc tam paliek atjaunināti, nekas nav jāieslēdz. Ja ierīce prasa paroli, ieraksti to vienreiz, un viss. Motīvs un atgādinājumi paliek katras ierīces izvēle.
+Statistika par {y}. gadu
+Maiņu veidi
+Maiņas pa mēnešiem
+{m}: {a} rīts, {b} pēcpusdiena, {c} nakts
+Papildu, naktis un svētki
+Nedēļas dienas
+Vidējais maiņas ilgums
+Visvairāk darba dienu pēc kārtas
+Brīvas nedēļas nogales
+Salīdzinot ar {y}. gadu
+Pievienošu tavām ātrajām maiņām: {x}. Vari tās mainīt jebkurā laikā.
+Nedēļa 5 + 2
+Rīts un pēcpusdiena pārmaiņus
+Iknedēļas rotācija 3 × 8
+Nepārtraukts cikls 2-2-2-2
+Rīts, pēcpusdiena, nakts, 2 brīvas
+2-2-3 (Panama)
+Pitman
+DuPont
+4 un 4
+Diena 12 h
+Nakts 12 h
+Gatavi grafiki

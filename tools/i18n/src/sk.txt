@@ -815,3 +815,26 @@ Zadaj heslo na synchronizáciu tohto zariadenia.
 Dokončiť
 Zadaj heslo svojho účtu a dokonči prihlásenie na tomto zariadení: odvtedy zostanú tvoje údaje rovnaké na všetkých zariadeniach.
 Prihlás sa na každom zariadení rovnakým e-mailom a heslom, pokojne už na prvej obrazovke po výbere jazyka: zmeny, poznámky a nastavenia prídu samy a potom zostávajú aktuálne, nič sa nezapína. Keď sa zariadenie spýta na heslo, zadaj ho raz a je hotovo. Motív a pripomienky zostávajú voľbou každého zariadenia.
+Štatistiky za rok {y}
+Druhy zmien
+Zmeny po mesiacoch
+{m}: {a} ráno, {b} poobede, {c} v noci
+Navyše, noci a sviatky
+Dni v týždni
+Priemerná dĺžka zmeny
+Najviac pracovných dní za sebou
+Voľné víkendy
+Oproti roku {y}
+Pridám do tvojich rýchlych zmien: {x}. Môžeš ich kedykoľvek zmeniť.
+Týždeň 5 + 2
+Ráno a poobedie striedavo
+Týždenné striedanie 3 × 8
+Nepretržitá prevádzka 2-2-2-2
+Ráno, poobedie, noc, 2 voľná
+2-2-3 (Panama)
+Pitman
+DuPont
+4 a 4
+Deň 12 h
+Noc 12 h
+Hotové rozpisy
