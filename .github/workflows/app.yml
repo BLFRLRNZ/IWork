@@ -119,6 +119,7 @@ jobs:
           print(c[0]['udid']);print(c[0]['name'],file=sys.stderr)")
           xcrun simctl boot "$W"; xcrun simctl bootstatus "$W" -b
           APP=$(find build/ios -name App.app -path '*iphonesimulator*' | head -1)
+          ls "$APP/PlugIns" "$APP/Watch" "$APP/Watch/MyTurnWatch.app/PlugIns"
           xcrun simctl install "$W" "$APP/Watch/MyTurnWatch.app"
           xcrun simctl launch "$W" app.myturn.watchkitapp -demo; sleep 12
           xcrun simctl io "$W" screenshot shots/watch-1-app.png
@@ -173,13 +174,14 @@ jobs:
           disable-animations: true
           script: |
             mkdir -p shots
+            adb shell settings put global hide_error_dialogs 1
             adb install -r android/app/build/outputs/apk/debug/app-debug.apk
             adb shell am start -n app.myturn/.MainActivity
             sleep 25
             adb exec-out screencap -p > shots/android-1-avvio.png
             adb shell am force-stop app.myturn
             adb shell am start -n app.myturn/.MainActivity --ez widgetPreview true
-            sleep 10
+            sleep 15
             adb exec-out screencap -p > shots/android-2-widget.png
       - name: Foto nel registro
         if: always()
