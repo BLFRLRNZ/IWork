@@ -105,7 +105,13 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
   - Promemoria: notifiche **locali** (LocalNotifications), programmate dal telefono senza server e senza account. `remLocal()` tiene le prime 60 (l'iPhone ne accetta 64), con id ≥ 1000; l'id 1 è la notifica di prova.
   - Margini: su Android Capacitor inietta `--safe-area-inset-*`; il CSS usa `var(--safe-area-inset-x,env(safe-area-inset-x,0px))`.
   - Barre di sistema: `SystemBars.setStyle` segue il tema in `applyTheme`.
-- **Prossimi passi (fase 1 della roadmap):** account Apple Developer e Google Play del proprietario; firma e invio a TestFlight dal workflow (chiave API di App Store Connect nei segreti di GitHub); 12 tester per 14 giorni su Google Play; widget (WidgetKit / App Widget), sveglie (AlarmKit da iOS 26 / AlarmManager), Apple Watch. I dati per widget e orologio andranno passati dall'app al codice nativo con un piccolo plugin.
+  - **Widget e orologio:** `wgData()` prepara i prossimi 14 giorni già tradotti (`{days:[{d,wd,dn,k,t,h,c,x?,s?,e?}],s:{today,tomorrow,next,free,app}}`); `wgSync()` li manda al plugin **MyTurnNative** (`setData({json})`) a ogni `saveLocal`, al cambio di lingua, all'avvio e quando l'app torna visibile.
+- **Codice nativo nostro** (non lo tocca Capacitor):
+  - iPhone, in `ios/App/`: `App/MyTurnNativePlugin.swift` (salva nell'App Group `group.app.myturn`, aggiorna i widget, manda i dati all'orologio con WatchConnectivity), `App/MyTurnViewController.swift` (registra il plugin; è la classe del controller in `Main.storyboard`), `App/WidgetSnapshot.swift` (solo Debug: con `-widgetSnapshot` disegna i widget in Documents per le foto). `Shared/` = modello e viste comuni; `SharedWidget/` = calendario dei widget; `MyTurnWidget/` = widget Home e schermata di blocco; `MyTurnWatch/` = app Apple Watch; `MyTurnWatchWidget/` = complicazioni.
+  - I target si aggiungono al progetto Xcode con `tools/app/ios-targets.rb` (gem xcodeproj, nel workflow): un file `.swift` nuovo in una di quelle cartelle entra da solo nei target giusti.
+  - Android, in `android/app/src/main/`: `MainActivity.java` (registra il plugin; con `--ez widgetPreview true` mostra l'anteprima del widget, solo nelle versioni di prova), `MyTurnNativePlugin.java`, `ShiftWidget.java`, `res/layout/myturn_widget.xml`, `res/xml/myturn_widget_info.xml`.
+  - Le foto del workflow (avvio, widget, orologio) finiscono nel registro: `tools/app/foto.sh cartella` le estrae.
+- **Prossimi passi (fase 1 della roadmap):** account Apple Developer e Google Play del proprietario; firma e invio a TestFlight dal workflow (chiave API di App Store Connect nei segreti di GitHub; App Group e identificativi `app.myturn`, `.widget`, `.watchkitapp`, `.watchkitapp.widget` da registrare); 12 tester per 14 giorni su Google Play; sveglie (AlarmKit da iOS 26 / AlarmManager); Wear OS; rotazioni pronte; calendario per la famiglia.
 
 ## Server (Supabase)
 
