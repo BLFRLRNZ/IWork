@@ -11,6 +11,7 @@
 		221AAFAE4A9C9E1260101B3E /* ShiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4420B0F302FB9E899F9A /* ShiftData.swift */; };
 		2315FDCD07B3061D09887BFF /* ShiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4420B0F302FB9E899F9A /* ShiftData.swift */; };
 		247CB7B1A504469FB82ABF58 /* MyTurnWatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5A2A4BD28DD37CCB8D9CE /* MyTurnWatchWidget.swift */; };
+		2592BB4C9AFC69C59DD97EBE /* ShiftAlarms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBC6DD3A3946FEC7C8BE5F /* ShiftAlarms.swift */; };
 		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
 		3D60CC631510F1741B7543D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6D9BA134C522605CBA8B9D /* Foundation.framework */; };
 		4045D64A6D4FA258FABCBD59 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346716DC3A3B763076EB0C2 /* WidgetSnapshot.swift */; };
@@ -105,6 +106,7 @@
 		05E007B3CA3464684F0032FB /* MyTurnWidget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = MyTurnWidget.entitlements; sourceTree = "<group>"; };
 		084684C50781C65F8EA9D478 /* MyTurnWatchWidget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = MyTurnWatchWidget.entitlements; sourceTree = "<group>"; };
 		0CBBC9340BE574B373828300 /* MyTurnWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnWidget.swift; sourceTree = "<group>"; };
+		0CFBC6DD3A3946FEC7C8BE5F /* ShiftAlarms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftAlarms.swift; sourceTree = "<group>"; };
 		0F6D9BA134C522605CBA8B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1F9FB8936FB8DD1D4F6DC7F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		28AF4420B0F302FB9E899F9A /* ShiftData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftData.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				BC23C792AAA625FD97A9EECE /* MyTurnViewController.swift */,
 				6346716DC3A3B763076EB0C2 /* WidgetSnapshot.swift */,
 				43DFBBBA2E27735AD12BF7E5 /* App.entitlements */,
+				0CFBC6DD3A3946FEC7C8BE5F /* ShiftAlarms.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				4045D64A6D4FA258FABCBD59 /* WidgetSnapshot.swift in Sources */,
 				2315FDCD07B3061D09887BFF /* ShiftData.swift in Sources */,
 				464FF88FC84E1F2AF89444CC /* ShiftViews.swift in Sources */,
+				2592BB4C9AFC69C59DD97EBE /* ShiftAlarms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
