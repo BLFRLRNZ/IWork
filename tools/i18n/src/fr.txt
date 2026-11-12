@@ -843,3 +843,20 @@ conditions d'utilisation
 politique de confidentialité
 Confidentialité
 Conditions d'utilisation
+Poste à {h}
+Arrêter
+Répéter
+Les vraies alarmes nécessitent iOS 26 ou plus récent. Vous pouvez utiliser les rappels.
+Les alarmes sont bloquées : autorisez-les dans les réglages du téléphone.
+Pour sonner, MyTurn a besoin de l'autorisation pour les alarmes.
+{t} avant
+Aucune alarme dans les 14 prochains jours.
+Prochaine alarme : {d} à {h}
+{n} alarme dans les 14 prochains jours.
+{n} alarmes dans les 14 prochains jours.
+Alarmes
+Une vraie alarme avant chaque poste
+Dans l'app, les rappels sont programmés sur le téléphone : rien n'arrive au serveur. Si vous modifiez un poste, le rappel se met à jour tout seul.
+Une vraie alarme avant chaque poste, qui sonne même quand le téléphone est en silencieux. Elle se met à jour toute seule quand vous modifiez vos postes.
+Autoriser les alarmes
+Alarme avant les postes

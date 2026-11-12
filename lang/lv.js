@@ -916,5 +916,26 @@
 "condizioni d'uso": "lietošanas noteikumiem",
 "informativa sulla privacy": "privātuma politika",
 "Privacy": "Privātums",
-"Condizioni d'uso": "Lietošanas noteikumi"
+"Condizioni d'uso": "Lietošanas noteikumi",
+"Turno alle {h}": "Maiņa plkst. {h}",
+"Ferma": "Apturēt",
+"Posticipa": "Atlikt",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Īstiem modinātājiem vajag iOS 26 vai jaunāku. Vari izmantot atgādinājumus.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Modinātāji ir bloķēti: atļauj tos tālruņa iestatījumos.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Lai zvanītu, MyTurn vajag atļauju modinātājiem.",
+"{t} prima": "{t} iepriekš",
+"Nessuna sveglia nei prossimi 14 giorni.": "Nākamajās 14 dienās modinātāju nav.",
+"Prossima sveglia: {d} alle {h}": "Nākamais modinātājs: {d} plkst. {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} modinātājs nākamajās 14 dienās.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} modinātāji nākamajās 14 dienās.",
+"zero": "{n} modinātāju nākamajās 14 dienās.",
+"one": "{n} modinātājs nākamajās 14 dienās."
+},
+"Sveglie": "Modinātāji",
+"Una sveglia vera prima di ogni turno": "Īsts modinātājs pirms katras maiņas",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "Lietotnē atgādinājumi tiek ieplānoti tālrunī: uz serveri nekas nenonāk. Ja maini maiņu, atgādinājums atjaunojas pats.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Īsts modinātājs pirms katras maiņas, kas zvana arī tad, ja tālrunis ir klusumā. Tas atjaunojas pats, kad maini maiņas.",
+"Consenti le sveglie": "Atļaut modinātājus",
+"Sveglia prima dei turni": "Modinātājs pirms maiņām"
 };

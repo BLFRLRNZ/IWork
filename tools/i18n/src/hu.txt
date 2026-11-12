@@ -843,3 +843,20 @@ felhasználási feltételeket
 adatvédelmi tájékoztatót
 Adatvédelem
 Felhasználási feltételek
+Műszak kezdete: {h}
+Leállítás
+Szundi
+A valódi ébresztőkhöz iOS 26 vagy újabb kell. Használhatod az emlékeztetőket.
+Az ébresztők le vannak tiltva: engedélyezd őket a telefon beállításaiban.
+A csörgéshez a MyTurnnek engedély kell az ébresztőkhöz.
+{t} előtte
+A következő 14 napban nincs ébresztő.
+Következő ébresztő: {d}, {h}
+{n} ébresztő a következő 14 napban.
+{n} ébresztő a következő 14 napban.
+Ébresztők
+Valódi ébresztő minden műszak előtt
+Az alkalmazásban az emlékeztetőket a telefon ütemezi: semmi sem kerül a szerverre. Ha módosítasz egy műszakot, az emlékeztető magától frissül.
+Valódi ébresztő minden műszak előtt, ami némított telefonon is szól. Magától frissül, amikor módosítod a műszakjaidat.
+Ébresztők engedélyezése
+Ébresztő a műszakok előtt

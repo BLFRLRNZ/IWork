@@ -913,5 +913,25 @@
 "condizioni d'uso": "όρους χρήσης",
 "informativa sulla privacy": "πολιτική απορρήτου",
 "Privacy": "Απόρρητο",
-"Condizioni d'uso": "Όροι χρήσης"
+"Condizioni d'uso": "Όροι χρήσης",
+"Turno alle {h}": "Βάρδια στις {h}",
+"Ferma": "Διακοπή",
+"Posticipa": "Αναβολή",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Τα πραγματικά ξυπνητήρια απαιτούν iOS 26 ή νεότερο. Μπορείς να χρησιμοποιήσεις τις υπενθυμίσεις.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Τα ξυπνητήρια είναι αποκλεισμένα: επίτρεψέ τα από τις ρυθμίσεις του τηλεφώνου.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Για να χτυπάει, το MyTurn χρειάζεται άδεια για ξυπνητήρια.",
+"{t} prima": "{t} πριν",
+"Nessuna sveglia nei prossimi 14 giorni.": "Κανένα ξυπνητήρι τις επόμενες 14 ημέρες.",
+"Prossima sveglia: {d} alle {h}": "Επόμενο ξυπνητήρι: {d} στις {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} ξυπνητήρι τις επόμενες 14 ημέρες.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} ξυπνητήρια τις επόμενες 14 ημέρες.",
+"one": "{n} ξυπνητήρι τις επόμενες 14 ημέρες."
+},
+"Sveglie": "Ξυπνητήρια",
+"Una sveglia vera prima di ogni turno": "Πραγματικό ξυπνητήρι πριν από κάθε βάρδια",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "Στην εφαρμογή οι υπενθυμίσεις προγραμματίζονται στο τηλέφωνο: τίποτα δεν φτάνει στον διακομιστή. Αν αλλάξεις μια βάρδια, η υπενθύμιση ενημερώνεται μόνη της.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Πραγματικό ξυπνητήρι πριν από κάθε βάρδια, που χτυπάει ακόμη και με το τηλέφωνο στο αθόρυβο. Ενημερώνεται μόνο του όταν αλλάζεις τις βάρδιες.",
+"Consenti le sveglie": "Επίτρεψε τα ξυπνητήρια",
+"Sveglia prima dei turni": "Ξυπνητήρι πριν από τις βάρδιες"
 };

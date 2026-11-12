@@ -10,7 +10,10 @@ public class MyTurnNativePlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "MyTurnNativePlugin"
     public let jsName = "MyTurnNative"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "setData", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "setData", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "alarmState", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "alarmRequest", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setAlarms", returnType: CAPPluginReturnPromise)
     ]
 
     override public func load() { WatchLink.shared.start() }
@@ -21,6 +24,21 @@ public class MyTurnNativePlugin: CAPPlugin, CAPBridgedPlugin {
         WidgetCenter.shared.reloadAllTimelines()
         WatchLink.shared.send(json)
         call.resolve()
+    }
+
+    // sveglie (AlarmKit, iOS 26+)
+    @objc func alarmState(_ call: CAPPluginCall) {
+        call.resolve(["state": ShiftAlarms.state()])
+    }
+
+    @objc func alarmRequest(_ call: CAPPluginCall) {
+        Task { call.resolve(["state": await ShiftAlarms.request()]) }
+    }
+
+    @objc func setAlarms(_ call: CAPPluginCall) {
+        let items = (call.getArray("items") ?? []).compactMap { $0 as? [String: Any] }
+        let stop = call.getString("stop") ?? "Stop", snooze = call.getString("snooze") ?? "Snooze"
+        Task { call.resolve(["scheduled": await ShiftAlarms.replace(items, stop: stop, snooze: snooze)]) }
     }
 }
 

@@ -913,5 +913,25 @@
 "condizioni d'uso": "gebruiksvoorwaarden",
 "informativa sulla privacy": "privacyverklaring",
 "Privacy": "Privacy",
-"Condizioni d'uso": "Gebruiksvoorwaarden"
+"Condizioni d'uso": "Gebruiksvoorwaarden",
+"Turno alle {h}": "Dienst om {h}",
+"Ferma": "Stoppen",
+"Posticipa": "Snooze",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Echte wekkers hebben iOS 26 of nieuwer nodig. Je kunt herinneringen gebruiken.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Wekkers zijn geblokkeerd: sta ze toe in de instellingen van je telefoon.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Om te kunnen afgaan heeft MyTurn toestemming voor wekkers nodig.",
+"{t} prima": "{t} van tevoren",
+"Nessuna sveglia nei prossimi 14 giorni.": "Geen wekkers in de komende 14 dagen.",
+"Prossima sveglia: {d} alle {h}": "Volgende wekker: {d} om {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} wekker in de komende 14 dagen.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} wekkers in de komende 14 dagen.",
+"one": "{n} wekker in de komende 14 dagen."
+},
+"Sveglie": "Wekkers",
+"Una sveglia vera prima di ogni turno": "Een echte wekker voor elke dienst",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "In de app worden herinneringen op de telefoon ingepland: er komt niets op de server. Als je een dienst wijzigt, past de herinnering zich vanzelf aan.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Een echte wekker voor elke dienst, die ook afgaat als je telefoon op stil staat. Hij past zich vanzelf aan als je je diensten wijzigt.",
+"Consenti le sveglie": "Wekkers toestaan",
+"Sveglia prima dei turni": "Wekker voor diensten"
 };

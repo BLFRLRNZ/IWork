@@ -843,3 +843,20 @@ kasutustingimustega
 privaatsuspoliitikat
 Privaatsus
 Kasutustingimused
+Vahetus kell {h}
+Peata
+Hiljem
+Päris äratused vajavad iOS 26 või uuemat. Saad kasutada meeldetuletusi.
+Äratused on blokeeritud: luba need telefoni seadetes.
+Helisemiseks vajab MyTurn äratuste luba.
+{t} enne
+Järgmise 14 päeva jooksul äratusi pole.
+Järgmine äratus: {d} kell {h}
+{n} äratus järgmise 14 päeva jooksul.
+{n} äratust järgmise 14 päeva jooksul.
+Äratused
+Päris äratus enne iga vahetust
+Rakenduses ajastatakse meeldetuletused telefonis: serverisse ei jõua midagi. Kui muudad vahetust, uueneb meeldetuletus ise.
+Päris äratus enne iga vahetust, mis heliseb ka siis, kui telefon on hääletu. See uueneb ise, kui muudad vahetusi.
+Luba äratused
+Äratus enne vahetusi

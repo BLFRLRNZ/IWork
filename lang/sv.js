@@ -913,5 +913,25 @@
 "condizioni d'uso": "användarvillkoren",
 "informativa sulla privacy": "integritetspolicyn",
 "Privacy": "Integritet",
-"Condizioni d'uso": "Användarvillkor"
+"Condizioni d'uso": "Användarvillkor",
+"Turno alle {h}": "Pass kl. {h}",
+"Ferma": "Stoppa",
+"Posticipa": "Snooza",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Riktiga larm kräver iOS 26 eller senare. Du kan använda påminnelser.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Larmen är blockerade: tillåt dem i telefonens inställningar.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "För att kunna ringa behöver MyTurn tillstånd för larm.",
+"{t} prima": "{t} före",
+"Nessuna sveglia nei prossimi 14 giorni.": "Inga larm de närmaste 14 dagarna.",
+"Prossima sveglia: {d} alle {h}": "Nästa larm: {d} kl. {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} larm de närmaste 14 dagarna.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} larm de närmaste 14 dagarna.",
+"one": "{n} larm de närmaste 14 dagarna."
+},
+"Sveglie": "Larm",
+"Una sveglia vera prima di ogni turno": "Ett riktigt larm före varje pass",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "I appen schemaläggs påminnelser på telefonen: inget når servern. Om du ändrar ett pass uppdateras påminnelsen av sig själv.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Ett riktigt larm före varje pass som ringer även när telefonen är på ljudlös. Det uppdateras av sig själv när du ändrar dina pass.",
+"Consenti le sveglie": "Tillåt larm",
+"Sveglia prima dei turni": "Larm före pass"
 };

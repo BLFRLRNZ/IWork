@@ -61,6 +61,10 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - **Sincronizzazione**: fa parte dell'account e parte da sola all'accesso, non c'è niente da attivare o spegnere (per smettere si esce dall'account). Se un dispositivo ha già l'accesso ma non ha mai ricevuto la password (accessi di prima della 2.10, o password cambiata altrove), all'apertura la chiede da solo, al massimo una volta al giorno. Turni, note, etichette, busta paga e impostazioni restano uguali su tutti i dispositivi; se lo stesso giorno cambia su due dispositivi vale la modifica più recente; tema e promemoria restano di ogni dispositivo.
 - Senza account l'app funziona come sempre.
 
+**App per iPhone e Android** (pronta, non ancora negli store; vedi "App per gli store" in `CLAUDE.md`)
+- È la stessa app dentro Capacitor, con in più i **widget** sulla schermata Home e sulla schermata di blocco, l'app per **Apple Watch** con le complicazioni, e i promemoria come notifiche del telefono, senza account.
+- **Sveglie** (Strumenti → Sveglie): una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso e si può fermare o posticipare di 10 minuti. Si sceglie per mattina, pomeriggio e notte se suona e quanto prima (da 30 minuti a 3 ore). Copre i prossimi 14 giorni e si aggiorna da sola quando cambiano i turni. Sull'iPhone serve iOS 26 (AlarmKit); su Android la sveglia compare anche a schermo intero sopra il blocco e torna dopo un riavvio.
+
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in 23 lingue (le traduzioni sono nella cartella `lang/`).
 
 ## Dove sono i dati

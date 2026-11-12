@@ -913,5 +913,25 @@
 "condizioni d'uso": "brugsbetingelserne",
 "informativa sulla privacy": "privatlivspolitikken",
 "Privacy": "Privatliv",
-"Condizioni d'uso": "Brugsbetingelser"
+"Condizioni d'uso": "Brugsbetingelser",
+"Turno alle {h}": "Vagt kl. {h}",
+"Ferma": "Stop",
+"Posticipa": "Snooze",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Rigtige alarmer kræver iOS 26 eller nyere. Du kan bruge påmindelser.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Alarmer er blokeret: tillad dem i telefonens indstillinger.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "For at ringe skal MyTurn have tilladelse til alarmer.",
+"{t} prima": "{t} før",
+"Nessuna sveglia nei prossimi 14 giorni.": "Ingen alarmer de næste 14 dage.",
+"Prossima sveglia: {d} alle {h}": "Næste alarm: {d} kl. {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} alarm de næste 14 dage.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} alarmer de næste 14 dage.",
+"one": "{n} alarm de næste 14 dage."
+},
+"Sveglie": "Alarmer",
+"Una sveglia vera prima di ogni turno": "En rigtig alarm før hver vagt",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "I appen planlægges påmindelser på telefonen: intet når serveren. Hvis du ændrer en vagt, opdateres påmindelsen af sig selv.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "En rigtig alarm før hver vagt, der ringer, selv når telefonen er på lydløs. Den opdateres af sig selv, når du ændrer dine vagter.",
+"Consenti le sveglie": "Tillad alarmer",
+"Sveglia prima dei turni": "Alarm før vagter"
 };

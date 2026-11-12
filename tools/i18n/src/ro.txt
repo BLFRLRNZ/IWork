@@ -843,3 +843,20 @@ condițiile de utilizare
 politica de confidențialitate
 Confidențialitate
 Condiții de utilizare
+Tura la {h}
+Oprește
+Amânare
+Alarmele adevărate necesită iOS 26 sau mai nou. Poți folosi mementourile.
+Alarmele sunt blocate: permite-le din setările telefonului.
+Ca să sune, MyTurn are nevoie de permisiunea pentru alarme.
+cu {t} înainte
+Nicio alarmă în următoarele 14 zile.
+Următoarea alarmă: {d} la {h}
+{n} alarmă în următoarele 14 zile.
+{n} de alarme în următoarele 14 zile. ‖few: {n} alarme în următoarele 14 zile.
+Alarme
+O alarmă adevărată înainte de fiecare tură
+În aplicație, mementourile sunt programate pe telefon: nimic nu ajunge la server. Dacă schimbi o tură, mementoul se actualizează singur.
+O alarmă adevărată înainte de fiecare tură, care sună chiar și cu telefonul pe silențios. Se actualizează singură când îți schimbi turele.
+Permite alarmele
+Alarmă înainte de ture

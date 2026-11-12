@@ -913,5 +913,25 @@
 "condizioni d'uso": "Nutzungsbedingungen",
 "informativa sulla privacy": "Datenschutzerklärung",
 "Privacy": "Datenschutz",
-"Condizioni d'uso": "Nutzungsbedingungen"
+"Condizioni d'uso": "Nutzungsbedingungen",
+"Turno alle {h}": "Schicht um {h}",
+"Ferma": "Stopp",
+"Posticipa": "Schlummern",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Echte Wecker brauchen iOS 26 oder neuer. Du kannst stattdessen Erinnerungen nutzen.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Wecker sind blockiert: Erlaube sie in den Einstellungen des Telefons.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Damit es klingelt, braucht MyTurn die Erlaubnis für Wecker.",
+"{t} prima": "{t} vorher",
+"Nessuna sveglia nei prossimi 14 giorni.": "Keine Wecker in den nächsten 14 Tagen.",
+"Prossima sveglia: {d} alle {h}": "Nächster Wecker: {d} um {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} Wecker in den nächsten 14 Tagen.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} Wecker in den nächsten 14 Tagen.",
+"one": "{n} Wecker in den nächsten 14 Tagen."
+},
+"Sveglie": "Wecker",
+"Una sveglia vera prima di ogni turno": "Ein echter Wecker vor jeder Schicht",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "In der App werden Erinnerungen auf dem Telefon geplant: Nichts gelangt zum Server. Wenn du eine Schicht änderst, passt sich die Erinnerung von selbst an.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Ein echter Wecker vor jeder Schicht, der auch bei stummgeschaltetem Telefon klingelt. Er passt sich von selbst an, wenn du deine Schichten änderst.",
+"Consenti le sveglie": "Wecker erlauben",
+"Sveglia prima dei turni": "Wecker vor den Schichten"
 };

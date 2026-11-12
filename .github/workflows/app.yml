@@ -183,6 +183,15 @@ jobs:
             adb shell am start -n app.myturn/.MainActivity --ez widgetPreview true
             sleep 15
             adb exec-out screencap -p > shots/android-2-widget.png
+            adb shell am force-stop app.myturn
+            adb shell pm grant app.myturn android.permission.POST_NOTIFICATIONS || true
+            adb shell am start -n app.myturn/.MainActivity --ez alarmPreview true
+            sleep 12
+            adb exec-out screencap -p > shots/android-3-sveglia.png
+            adb shell cmd statusbar expand-notifications || true
+            sleep 3
+            adb exec-out screencap -p > shots/android-4-sveglia-notifica.png
+            adb shell cmd statusbar collapse || true
       - name: Foto nel registro
         if: always()
         run: |

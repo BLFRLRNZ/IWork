@@ -913,5 +913,25 @@
 "condizioni d'uso": "käyttöehdot",
 "informativa sulla privacy": "tietosuojaselosteen",
 "Privacy": "Tietosuoja",
-"Condizioni d'uso": "Käyttöehdot"
+"Condizioni d'uso": "Käyttöehdot",
+"Turno alle {h}": "Vuoro klo {h}",
+"Ferma": "Pysäytä",
+"Posticipa": "Torkku",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Oikeat herätykset vaativat iOS 26:n tai uudemman. Voit käyttää muistutuksia.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Herätykset on estetty: salli ne puhelimen asetuksista.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Jotta herätys soi, MyTurn tarvitsee luvan herätyksiin.",
+"{t} prima": "{t} ennen",
+"Nessuna sveglia nei prossimi 14 giorni.": "Ei herätyksiä seuraavan 14 päivän aikana.",
+"Prossima sveglia: {d} alle {h}": "Seuraava herätys: {d} klo {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} herätys seuraavan 14 päivän aikana.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} herätystä seuraavan 14 päivän aikana.",
+"one": "{n} herätys seuraavan 14 päivän aikana."
+},
+"Sveglie": "Herätykset",
+"Una sveglia vera prima di ogni turno": "Oikea herätys ennen jokaista vuoroa",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "Sovelluksessa muistutukset ajastetaan puhelimessa: palvelimelle ei mene mitään. Jos muutat vuoroa, muistutus päivittyy itsestään.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Oikea herätys ennen jokaista vuoroa, joka soi, vaikka puhelin olisi äänettömällä. Se päivittyy itsestään, kun muutat vuorojasi.",
+"Consenti le sveglie": "Salli herätykset",
+"Sveglia prima dei turni": "Herätys ennen vuoroja"
 };

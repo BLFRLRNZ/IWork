@@ -936,5 +936,26 @@
 "condizioni d'uso": "condițiile de utilizare",
 "informativa sulla privacy": "politica de confidențialitate",
 "Privacy": "Confidențialitate",
-"Condizioni d'uso": "Condiții de utilizare"
+"Condizioni d'uso": "Condiții de utilizare",
+"Turno alle {h}": "Tura la {h}",
+"Ferma": "Oprește",
+"Posticipa": "Amânare",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Alarmele adevărate necesită iOS 26 sau mai nou. Poți folosi mementourile.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Alarmele sunt blocate: permite-le din setările telefonului.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Ca să sune, MyTurn are nevoie de permisiunea pentru alarme.",
+"{t} prima": "cu {t} înainte",
+"Nessuna sveglia nei prossimi 14 giorni.": "Nicio alarmă în următoarele 14 zile.",
+"Prossima sveglia: {d} alle {h}": "Următoarea alarmă: {d} la {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} alarmă în următoarele 14 zile.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} de alarme în următoarele 14 zile.",
+"few": "{n} alarme în următoarele 14 zile.",
+"one": "{n} alarmă în următoarele 14 zile."
+},
+"Sveglie": "Alarme",
+"Una sveglia vera prima di ogni turno": "O alarmă adevărată înainte de fiecare tură",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "În aplicație, mementourile sunt programate pe telefon: nimic nu ajunge la server. Dacă schimbi o tură, mementoul se actualizează singur.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "O alarmă adevărată înainte de fiecare tură, care sună chiar și cu telefonul pe silențios. Se actualizează singură când îți schimbi turele.",
+"Consenti le sveglie": "Permite alarmele",
+"Sveglia prima dei turni": "Alarmă înainte de ture"
 };

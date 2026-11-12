@@ -843,3 +843,20 @@ termos de utilização
 política de privacidade
 Privacidade
 Termos de utilização
+Turno às {h}
+Parar
+Adiar
+Os alarmes verdadeiros exigem o iOS 26 ou mais recente. Pode usar os lembretes.
+Os alarmes estão bloqueados: permita-os nas definições do telefone.
+Para tocar, o MyTurn precisa de autorização para os alarmes.
+{t} antes
+Nenhum alarme nos próximos 14 dias.
+Próximo alarme: {d} às {h}
+{n} alarme nos próximos 14 dias.
+{n} alarmes nos próximos 14 dias.
+Alarmes
+Um alarme verdadeiro antes de cada turno
+Na app, os lembretes são programados no telefone: nada chega ao servidor. Se alterar um turno, o lembrete atualiza-se sozinho.
+Um alarme verdadeiro antes de cada turno, que toca mesmo com o telefone em silêncio. Atualiza-se sozinho quando altera os turnos.
+Permitir alarmes
+Alarme antes dos turnos

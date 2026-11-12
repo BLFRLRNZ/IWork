@@ -843,3 +843,20 @@ gebruiksvoorwaarden
 privacyverklaring
 Privacy
 Gebruiksvoorwaarden
+Dienst om {h}
+Stoppen
+Snooze
+Echte wekkers hebben iOS 26 of nieuwer nodig. Je kunt herinneringen gebruiken.
+Wekkers zijn geblokkeerd: sta ze toe in de instellingen van je telefoon.
+Om te kunnen afgaan heeft MyTurn toestemming voor wekkers nodig.
+{t} van tevoren
+Geen wekkers in de komende 14 dagen.
+Volgende wekker: {d} om {h}
+{n} wekker in de komende 14 dagen.
+{n} wekkers in de komende 14 dagen.
+Wekkers
+Een echte wekker voor elke dienst
+In de app worden herinneringen op de telefoon ingepland: er komt niets op de server. Als je een dienst wijzigt, past de herinnering zich vanzelf aan.
+Een echte wekker voor elke dienst, die ook afgaat als je telefoon op stil staat. Hij past zich vanzelf aan als je je diensten wijzigt.
+Wekkers toestaan
+Wekker voor diensten

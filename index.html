@@ -15,8 +15,8 @@
 <meta name="apple-mobile-web-app-title" content="MyTurn">
 <style>
 /* caratteri Geist e Geist Mono (licenza OFL, fonts/OFL-Geist.txt) serviti dal sito stesso: niente richieste a Google */
-@font-face{font-family:"Geist";src:url("fonts/geist.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Geist Mono";src:url("fonts/geist-mono.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}:root{padding-top:var(--safe-area-inset-top,env(safe-area-inset-top,0px));padding-bottom:var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))}img{max-width:100%}</style>
+@font-face{font-family:"Geist";src:url("fonts/geist.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-036F,U+0400-1EFF,U+2000-FFFF}
+@font-face{font-family:"Geist Mono";src:url("fonts/geist-mono.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-036F,U+0400-1EFF,U+2000-FFFF}:root{padding-top:var(--safe-area-inset-top,env(safe-area-inset-top,0px));padding-bottom:var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))}img{max-width:100%}</style>
 <style>
 /* Layout: monochrome app chrome, colour only where there is a shift. Next shift leads, the month grid is the body, totals and tools follow (side rail on wide screens). */
 :root{
@@ -439,6 +439,14 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 .warnline.neg{color:var(--danger)}
 .linkbtn{border:0;background:none;padding:0;color:var(--ink);text-decoration:underline;font-weight:500;align-self:flex-start;min-height:32px}
 .legal{font-size:13px;color:var(--muted);margin:2px 0 0}
+.alrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
+.alrow .check{margin:0;flex:1;min-width:0}
+.alrow select{width:auto;min-width:104px;flex:0 0 auto}
+.alhd{display:flex;justify-content:space-between;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:10px 0 2px}
+.altn{display:inline-flex;align-items:center;gap:7px}
+.altn .dot{width:10px;height:10px;border-radius:3px;display:inline-block}
+.altn .dot.d-m{background:var(--m-dot)}.altn .dot.d-p{background:var(--p-dot)}.altn .dot.d-n{background:var(--n-dot)}
+#alNext{margin-top:12px}
 .legal a{color:var(--muted);text-decoration:underline;display:inline-block;min-height:32px;line-height:32px}
 .auth .legalnote{font-size:12.5px;color:var(--muted);margin:-2px 0 0}
 .auth .legalnote a{color:var(--muted)}
@@ -733,6 +741,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <button type="button" class="mi" id="shareBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></span><span><b>Condividi la settimana</b><small>Immagine o testo, qualsiasi settimana</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="pdfBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><span><b>PDF del mese</b><small>Il mese che vuoi, pronto da stampare</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="icsBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5L12 18l2.5-2.5"/></svg></span><span><b>Esporta nel calendario</b><small>Google, Apple o Outlook Calendar</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
+      <button type="button" class="mi" id="alBtn" hidden><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="7"/><path d="M12 9.5V13l2.5 1.5M5 4.5 3 6.5M19 4.5l2 2"/></svg></span><span><b>Sveglie</b><small>Una sveglia vera prima di ogni turno</small></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
       <button type="button" class="mi" id="rmBtn" hidden><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 16.5V11a5.5 5.5 0 0 1 11 0v5.5l1.5 2h-14zM10 20.5a2 2 0 0 0 4 0"/></svg></span><span><b>Promemoria</b><small>Una notifica prima di ogni turno</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <h3>Backup</h3>
       <button type="button" class="mi" id="bakBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M8 11l4 4 4-4"/><path d="M5 19h14"/></svg></span><span><b>Salva una copia dei turni</b><small>Un file con tutti i turni e le impostazioni</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
@@ -881,7 +890,26 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <button type="button" class="btn" id="rmTest">Manda una notifica di prova</button>
     </div>
     <p class="bpst" id="rmStatus" aria-live="polite" hidden></p>
-    <p class="help">Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.</p>
+    <p class="help" id="rmHelp">Per i promemoria i turni dei prossimi 45 giorni vengono salvati sul server, con orario e nome del turno. Se cambi un turno, il promemoria si aggiorna da solo.</p>
+    <p class="help" id="rmHelpN" hidden>Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.</p>
+    <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
+  </form>
+</dialog>
+
+<dialog id="al" aria-labelledby="alTitle">
+  <form class="sheet" method="dialog">
+    <h2 id="alTitle" style="text-transform:none">Sveglie</h2>
+    <p class="sub">Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.</p>
+    <div class="bpst err" id="alNeed" hidden></div>
+    <button type="button" class="btn" id="alAsk" hidden>Consenti le sveglie</button>
+    <label class="check"><input type="checkbox" id="alOn"> Sveglia prima dei turni</label>
+    <div id="alBox">
+      <div class="alhd" aria-hidden="true"><span>Turno</span><span>Quanto prima</span></div>
+      <div class="alrow" data-ty="m"><label class="check"><input type="checkbox" class="alT"> <span class="altn"><i class="dot d-m"></i>Mattina</span></label><select class="alM" aria-label="Quanto prima"></select></div>
+      <div class="alrow" data-ty="p"><label class="check"><input type="checkbox" class="alT"> <span class="altn"><i class="dot d-p"></i>Pomeriggio</span></label><select class="alM" aria-label="Quanto prima"></select></div>
+      <div class="alrow" data-ty="n"><label class="check"><input type="checkbox" class="alT"> <span class="altn"><i class="dot d-n"></i>Notte</span></label><select class="alM" aria-label="Quanto prima"></select></div>
+      <p class="sumline" id="alNext" aria-live="polite"></p>
+    </div>
     <div class="actions"><button type="submit" class="btn primary" style="flex:1">Fatto</button></div>
   </form>
 </dialog>
@@ -1208,7 +1236,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.12.0";
+const APP_VERSION="2.13.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1216,7 +1244,7 @@ function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/51
 /* ---------- state ---------- */
 const DEF={wd:8,sat:6,rate:0,presets:[{n:"Mattina",t:"06:00"},{n:"Pomeriggio",t:"14:00"},{n:"Notte",t:"22:00"}]};
 const okT=t=>typeof t==="string"&&/^([01]\d|2[0-3]):[0-5]\d$/.test(t);
-const MAX_PRESETS=12,MAX_LABELS=30;
+const MAX_PRESETS=12,MAX_LABELS=30,AL_MIN=[30,45,60,75,90,105,120,150,180];
 const isK=k=>typeof k==="string"&&/^\d{4}-\d\d-\d\d$/.test(k);
 const num=(v,lo,hi,dft)=>{v=+v;return v!==v||v<lo||v>hi?dft:Math.round(v*100)/100;};
 function normSettings(s){s=s||{};const wd=num(s.wd,0.5,16,DEF.wd),sat=num(s.sat,0.5,16,DEF.sat);
@@ -1224,7 +1252,8 @@ function normSettings(s){s=s||{};const wd=num(s.wd,0.5,16,DEF.wd),sat=num(s.sat,
     bankFrom:isK(s.bankFrom)?s.bankFrom:"",bank0:num(s.bank0,-999,999,0),presets:[],cycle:[],labels:[],
     pOt:num(s.pOt,0,300,0),pNight:num(s.pNight,0,300,0),pSun:num(s.pSun,0,300,0),pHol:num(s.pHol,0,300,0),
     country:typeof s.country==="string"&&(window.MYTURN_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null,setup:s.setup?1:0,rules:null,
-    rem:(r=>({on:r.on?1:0,min:[15,30,60,90,120,180].includes(+r.min)?+r.min:60,j2:r.j2===0?0:1,oc:r.oc===0?0:1}))(s.rem||{}),payLag:s.payLag?1:0,ocOn:s.ocOn?1:0,ocS:okT(s.ocS)?s.ocS:"20:00",ocD:num(s.ocD,0.5,24,12),ocPay:num(s.ocPay,0,9999,0),j2:null};
+    rem:(r=>({on:r.on?1:0,min:[15,30,60,90,120,180].includes(+r.min)?+r.min:60,j2:r.j2===0?0:1,oc:r.oc===0?0:1}))(s.rem||{}),
+    alarm:(a=>{const ok=(v,d)=>AL_MIN.includes(+v)?+v:d,ty=(o,d)=>({on:(o||{}).on===0?0:1,min:ok((o||{}).min,d)});return{on:a.on?1:0,m:ty(a.m,90),p:ty(a.p,60),n:ty(a.n,60)};})(s.alarm||{}),payLag:s.payLag?1:0,ocOn:s.ocOn?1:0,ocS:okT(s.ocS)?s.ocS:"20:00",ocD:num(s.ocD,0.5,24,12),ocPay:num(s.ocPay,0,9999,0),j2:null};
   /* secondo lavoro: nome, durata standard, paga oraria */
   const j=s.j2&&typeof s.j2==="object"?s.j2:{};o.j2={on:j.on?1:0,n:String(j.n||"").trim().slice(0,24),d:num(j.d,0.5,16,4),rate:num(j.rate,0,9999,0)};
   if(s.rules&&typeof s.rules==="object"){const r={};const a=num(s.rules.rest,0,24,null),b=num(s.rules.maxWeek,1,99,null),c=num(s.rules.nf,0,23,null),d=num(s.rules.nt,0,23,null);
@@ -1255,7 +1284,7 @@ function normBp(o){const r={};if(!o||typeof o!=="object")return r;
 const S={days:{},settings:normSettings(),oc:{},j2:{},bp:{}};
 const LS="myturn-v1";
 try{const raw=JSON.parse(localStorage.getItem(LS)||"null");if(raw){S.days=normDays(raw.days);S.settings=normSettings(raw.settings);S.oc=normOc(raw.oc);S.j2=normJ2(raw.j2);S.bp=normBp(raw.bp);}}catch(e){}
-function saveLocal(){try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){}try{wgSync();}catch(e){}}
+function saveLocal(){try{localStorage.setItem(LS,JSON.stringify(S));}catch(e){}try{wgSync();alSync();}catch(e){}}
 
 const now0=new Date();
 let view=new Date(now0.getFullYear(),now0.getMonth(),1);
@@ -1705,7 +1734,7 @@ function lockPage(){if(document.body.classList.contains("locked"))return;lockY=w
 function unlockPage(){if(document.querySelector("dialog[open]")||!document.body.classList.contains("locked"))return;document.body.classList.remove("locked");document.body.style.top="";window.scrollTo(0,lockY);}
 function openDlg(d){lockPage();if(d.open)return;d.tabIndex=-1;d.showModal();d.focus({preventScroll:true});}
 function showField(id){setTimeout(()=>{const el=$(id);if(!el)return;el.scrollIntoView({block:"center",behavior:"smooth"});const f=el.closest(".field")||el;f.classList.remove("flash");void f.offsetWidth;f.classList.add("flash");},120);}
-[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp"),$("hp"),$("ac"),$("rm"),$("sy")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
+[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp"),$("hp"),$("ac"),$("rm"),$("al"),$("sy")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
 /* niente zoom con due dita o doppio tocco (Safari ignora user-scalable) */
 ["gesturestart","gesturechange","gestureend"].forEach(t=>document.addEventListener(t,ev=>ev.preventDefault(),{passive:false}));
 document.addEventListener("touchmove",ev=>{if(ev.touches.length>1)ev.preventDefault();},{passive:false});
@@ -2174,7 +2203,7 @@ function rmStat(msg,cls){const e=$("rmStatus");e.hidden=!msg;e.className="bpst"+
 function renderRem(){const r=S.settings.rem,p=pushProblem();rmNeed(p);$("rmOn").checked=!!r.on&&!p;$("rmOn").disabled=p==="login"||p==="unsupported";
   $("rmBox").hidden=!$("rmOn").checked;$("rmMin").value=r.min;$("rmJ2L").hidden=!J2on();$("rmJ2T").textContent=t("Anche per {x}",{x:j2Name()});$("rmJ2").checked=!!r.j2;
   $("rmOcL").hidden=!S.settings.ocOn;$("rmOc").checked=!!r.oc;}
-$("rmBtn").onclick=()=>{rmStat("");renderRem();openDlg($("rm"));};
+$("rmBtn").onclick=()=>{rmStat("");$("rmHelp").hidden=NATIVE;$("rmHelpN").hidden=!NATIVE;renderRem();openDlg($("rm"));};
 const b64u=s=>{const p="=".repeat((4-s.length%4)%4),b=atob((s+p).replace(/-/g,"+").replace(/_/g,"/"));return Uint8Array.from(b,c=>c.charCodeAt(0));};
 async function remEnable(){const p=pushProblem();if(p){rmNeed(p);return false;}
   if(NATIVE){try{let q=await CAP.LocalNotifications.checkPermissions();if(q.display!=="granted")q=await CAP.LocalNotifications.requestPermissions();
@@ -2208,6 +2237,37 @@ function remItems(){const r=S.settings.rem,now=Date.now(),lim=now+45*864e5,ms=r.
   if(r.oc&&S.settings.ocOn)Object.keys(S.oc).forEach(k=>{const o=ocRange(k);push(o.start,"oc",t("Reperibilità dalle {h}",{h:hm(o.start)}),t("La reperibilità inizia tra {x}.",{x:minTxt(r.min)}))});
   const seen=new Set();return out.filter(i=>{const id=i.k+i.s;if(seen.has(id))return false;seen.add(id);return true;}).sort((a,b)=>a.s<b.s?-1:1).slice(0,400);}
 let remT=null,remLast="";
+/* ---------- sveglie (solo nell'app): una sveglia vera prima di ogni turno, per tipo di turno ----------
+   iPhone: AlarmKit (da iOS 26); Android: AlarmManager.setAlarmClock. Il codice nativo sostituisce ogni volta tutte le sveglie di MyTurn. */
+const alTxt=m=>(m>=60?Math.floor(m/60)+" h"+(m%60?" "+m%60+" min":""):m+" min");
+function alItems(){const A=S.settings.alarm,now=Date.now(),lim=now+14*864e5,out=[];if(!A.on)return out;
+  workList().forEach(x=>{const e=S.days[x.k];if(!e||!x.segs.length)return;const g=x.segs[0],ty=slot(e.s),c=A[ty];if(!c||!c.on)return;
+    const at=g.start.getTime()-c.min*6e4;if(at<=now+60e3||at>lim)return;
+    out.push({id:x.k,at,title:t("{n} alle {h}",{n:presetName(e),h:hm(g.start)}),body:t("Turno alle {h}",{h:hm(g.start)}),color:WG_TONE[ty]});});
+  return out.sort((a,b)=>a.at-b.at).slice(0,40);}
+let alT=0,alLast="",alState="";
+function alPlugin(){return wgPlugin();}
+function alSync(now){if(!NATIVE)return;clearTimeout(alT);alT=setTimeout(async()=>{const P=alPlugin();if(!P)return;const items=alItems(),sig=JSON.stringify(items);
+    if(sig===alLast&&!now)return;alLast=sig;try{await P.setAlarms({items,stop:t("Ferma"),snooze:t("Posticipa")});}catch(e){alLast="";}},now?0:900);}
+async function alCheck(){const P=alPlugin();if(!P){alState="unsupported";return alState;}try{alState=(await P.alarmState()).state||"unsupported";}catch(e){alState="unsupported";}return alState;}
+function renderAl(){const A=S.settings.alarm,st=alState;
+  const msg=st==="unsupported"?t("Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria."):st==="denied"?t("Le sveglie sono bloccate: consentile nelle impostazioni del telefono."):st==="prompt"?t("Per suonare, MyTurn ha bisogno del permesso per le sveglie."):"";
+  $("alNeed").hidden=!msg;$("alNeed").textContent=msg;$("alNeed").className="bpst"+(st==="prompt"?"":" err");$("alAsk").hidden=st!=="prompt";
+  $("alOn").checked=!!A.on&&st==="granted";$("alOn").disabled=st!=="granted";$("alBox").hidden=!$("alOn").checked;
+  document.querySelectorAll("#al .alrow").forEach(r=>{const c=A[r.dataset.ty],sel=r.querySelector(".alM");
+    if(!sel.options.length)sel.innerHTML=AL_MIN.map(m=>'<option value="'+m+'">'+esc(alTxt(m))+"</option>").join("");
+    r.querySelector(".alT").checked=!!c.on;sel.value=String(c.min);sel.disabled=!c.on;});
+  const it=alItems();
+  $("alNext").innerHTML=!it.length?esc(t("Nessuna sveglia nei prossimi 14 giorni.")):"<b>"+esc(t("Prossima sveglia: {d} alle {h}",{d:df(new Date(it[0].at),{weekday:"short",day:"numeric",month:"short"}),h:hm(new Date(it[0].at))}))+"</b><br>"+esc(it[0].title)+" · "+esc(tn(it.length,"{n} sveglia nei prossimi 14 giorni.","{n} sveglie nei prossimi 14 giorni."));}
+$("alBtn").onclick=async()=>{await alCheck();renderAl();openDlg($("al"));};
+function alGranted(){if(alState==="granted"&&!S.settings.alarm.on){S.settings.alarm.on=1;mark();alSync(true);}renderAl();}
+let alPoll=0;
+$("alAsk").onclick=async()=>{const P=alPlugin();if(!P)return;try{alState=(await P.alarmRequest()).state||alState;}catch(e){}alGranted();
+  /* su Android il permesso si dà in una finestra o nelle impostazioni: si ricontrolla per un minuto */
+  clearInterval(alPoll);let n=0;if(alState==="prompt")alPoll=setInterval(async()=>{const was=alState;await alCheck();if(alState!==was)alGranted();if(alState!=="prompt"||++n>40||!$("al").open)clearInterval(alPoll);},1500);};
+$("alOn").addEventListener("change",()=>{S.settings.alarm.on=$("alOn").checked?1:0;mark();alSync(true);renderAl();});
+$("al").addEventListener("change",ev=>{const r=ev.target.closest(".alrow");if(!r)return;const c=S.settings.alarm[r.dataset.ty];
+  c.on=r.querySelector(".alT").checked?1:0;c.min=+r.querySelector(".alM").value;mark();alSync(true);renderAl();});
 /* nell'app: iPhone tiene al massimo 64 notifiche in attesa, quindi le prime 60; si riprogrammano a ogni modifica e quando l'app torna visibile */
 async function remLocal(items){const L=CAP.LocalNotifications;if(!L)return;
   try{const p=(await L.getPending()).notifications.filter(n=>n.id>=1000);if(p.length)await L.cancel({notifications:p.map(n=>({id:n.id}))});
@@ -2239,6 +2299,7 @@ function wgPlugin(){return CAP.MyTurnNative||(NATIVE&&Capacitor.registerPlugin?(
 function wgSync(now){if(!NATIVE)return;clearTimeout(wgT);wgT=setTimeout(()=>{try{const P=wgPlugin();if(!P)return;const d=wgData(),sig=JSON.stringify(Object.assign({},d,{gen:0}));
     if(sig===wgLast)return;wgLast=sig;P.setData({json:JSON.stringify(d)}).catch(()=>{wgLast="";});}catch(e){}},now?0:800);}
 setTimeout(()=>wgSync(true),1500);
+if(NATIVE){$("alBtn").hidden=false;setTimeout(()=>alSync(true),2000);document.addEventListener("visibilitychange",async()=>{if(document.visibilityState!=="visible")return;alSync(true);if($("al").open){const was=alState;await alCheck();if(alState!==was)alGranted();}});}
 function openDeep(u){const m=/^myturn:\/\/day\/(\d{4}-\d\d-\d\d)/.exec(u||"");if(!m)return;if($("ob").open)return;
   document.querySelectorAll("dialog[open]").forEach(d=>d.close());const d=dateOf(m[1]);view=new Date(d.getFullYear(),d.getMonth(),1);render();openEditor(m[1]);}
 if(NATIVE&&CAP.App){try{CAP.App.addListener("appUrlOpen",e=>openDeep(e&&e.url));CAP.App.getLaunchUrl().then(r=>{if(r&&r.url)setTimeout(()=>openDeep(r.url),600);}).catch(()=>{});}catch(e){}}
@@ -2263,7 +2324,7 @@ function syHash(s){let a=0x811c9dc5,b=0x9747b28c;for(let i=0;i<s.length;i++){con
 function syItems(){const m={};
   for(const k in S.days)m["d|"+k]=S.days[k];for(const k in S.oc)m["o|"+k]=S.oc[k];
   for(const k in S.j2)m["j|"+k]=S.j2[k];for(const k in S.bp)m["b|"+k]=S.bp[k];
-  const st=Object.assign({},S.settings);delete st.rem;m.s=st;
+  const st=Object.assign({},S.settings);delete st.rem;delete st.alarm;m.s=st;
   const o={};for(const k in m)o[k]=JSON.stringify(m[k]);return o;}
 /* annota le modifiche locali rispetto all'ultima sincronizzazione */
 function syNote(){if(!syOn())return;const it=syItems(),now=Date.now();let ch=0;
@@ -2286,7 +2347,7 @@ async function syId(K,id){return syB64(new Uint8Array(await crypto.subtle.sign("
 async function syMeta(){const r=await sbFetch("/rest/v1/sync_meta?select=salt,check_iv,check_data",{method:"GET"});return r&&r[0]||null;}
 /* applica un valore arrivato da un altro dispositivo */
 function syApply(id,v){
-  if(id==="s"){if(!v||typeof v!=="object")return 0;const rem=S.settings.rem;S.settings=normSettings(Object.assign({},v,{rem}));return 2;}
+  if(id==="s"){if(!v||typeof v!=="object")return 0;const rem=S.settings.rem,alarm=S.settings.alarm;S.settings=normSettings(Object.assign({},v,{rem,alarm}));return 2;}
   const M={d:["days",normDays],o:["oc",normOc],j:["j2",normJ2],b:["bp",normBp]}[id[0]];if(!M||id[1]!=="|")return 0;
   const k=id.slice(2),nv=v==null?undefined:M[1]({[k]:v})[k];
   if(nv===undefined){if(!(k in S[M[0]]))return 0;delete S[M[0]][k];}else S[M[0]][k]=nv;return 1;}

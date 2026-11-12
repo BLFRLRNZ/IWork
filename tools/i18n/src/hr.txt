@@ -843,3 +843,20 @@ uvjete korištenja
 pravila privatnosti
 Privatnost
 Uvjeti korištenja
+Smjena u {h}
+Zaustavi
+Odgodi
+Prave budilice trebaju iOS 26 ili noviji. Možeš koristiti podsjetnike.
+Budilice su blokirane: dopusti ih u postavkama telefona.
+Da bi zvonio, MyTurn treba dopuštenje za budilice.
+{t} prije
+Nema budilica u sljedećih 14 dana.
+Sljedeća budilica: {d} u {h}
+{n} budilica u sljedećih 14 dana.
+{n} budilica u sljedećih 14 dana. ‖few: {n} budilice u sljedećih 14 dana.
+Budilice
+Prava budilica prije svake smjene
+U aplikaciji se podsjetnici zakazuju na telefonu: ništa ne stiže na poslužitelj. Ako promijeniš smjenu, podsjetnik se sam ažurira.
+Prava budilica prije svake smjene koja zvoni i kad je telefon utišan. Sama se ažurira kad promijeniš smjene.
+Dopusti budilice
+Budilica prije smjena

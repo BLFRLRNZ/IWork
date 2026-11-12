@@ -843,3 +843,20 @@ condiciones de uso
 política de privacidad
 Privacidad
 Condiciones de uso
+Turno a las {h}
+Detener
+Posponer
+Las alarmas de verdad requieren iOS 26 o posterior. Puedes usar los recordatorios.
+Las alarmas están bloqueadas: permítelas en los ajustes del teléfono.
+Para sonar, MyTurn necesita permiso para las alarmas.
+{t} antes
+Ninguna alarma en los próximos 14 días.
+Próxima alarma: {d} a las {h}
+{n} alarma en los próximos 14 días.
+{n} alarmas en los próximos 14 días.
+Alarmas
+Una alarma de verdad antes de cada turno
+En la app, los recordatorios se programan en el teléfono: no llega nada al servidor. Si cambias un turno, el recordatorio se actualiza solo.
+Una alarma de verdad antes de cada turno, que suena aunque el teléfono esté en silencio. Se actualiza sola cuando cambias tus turnos.
+Permitir alarmas
+Alarma antes de los turnos

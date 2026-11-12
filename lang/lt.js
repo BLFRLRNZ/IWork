@@ -957,5 +957,27 @@
 "condizioni d'uso": "naudojimo sąlygomis",
 "informativa sulla privacy": "privatumo politikoje",
 "Privacy": "Privatumas",
-"Condizioni d'uso": "Naudojimo sąlygos"
+"Condizioni d'uso": "Naudojimo sąlygos",
+"Turno alle {h}": "Pamaina {h}",
+"Ferma": "Sustabdyti",
+"Posticipa": "Atidėti",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Tikriems žadintuvams reikia iOS 26 ar naujesnės. Gali naudoti priminimus.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Žadintuvai užblokuoti: leisk juos telefono nustatymuose.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Kad skambėtų, MyTurn reikia leidimo žadintuvams.",
+"{t} prima": "prieš {t}",
+"Nessuna sveglia nei prossimi 14 giorni.": "Per artimiausias 14 dienų žadintuvų nėra.",
+"Prossima sveglia: {d} alle {h}": "Kitas žadintuvas: {d} {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} žadintuvas per artimiausias 14 dienų.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} žadintuvų per artimiausias 14 dienų.",
+"few": "{n} žadintuvai per artimiausias 14 dienų.",
+"many": "{n} žadintuvo per artimiausias 14 dienų.",
+"one": "{n} žadintuvas per artimiausias 14 dienų."
+},
+"Sveglie": "Žadintuvai",
+"Una sveglia vera prima di ogni turno": "Tikras žadintuvas prieš kiekvieną pamainą",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "Programėlėje priminimai suplanuojami telefone: į serverį nieko nepatenka. Pakeitus pamainą, priminimas atsinaujina pats.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Tikras žadintuvas prieš kiekvieną pamainą, skambantis net kai telefonas nutildytas. Jis atsinaujina pats, kai pakeiti pamainas.",
+"Consenti le sveglie": "Leisti žadintuvus",
+"Sveglia prima dei turni": "Žadintuvas prieš pamainas"
 };

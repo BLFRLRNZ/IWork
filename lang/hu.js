@@ -913,5 +913,25 @@
 "condizioni d'uso": "felhasználási feltételeket",
 "informativa sulla privacy": "adatvédelmi tájékoztatót",
 "Privacy": "Adatvédelem",
-"Condizioni d'uso": "Felhasználási feltételek"
+"Condizioni d'uso": "Felhasználási feltételek",
+"Turno alle {h}": "Műszak kezdete: {h}",
+"Ferma": "Leállítás",
+"Posticipa": "Szundi",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "A valódi ébresztőkhöz iOS 26 vagy újabb kell. Használhatod az emlékeztetőket.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Az ébresztők le vannak tiltva: engedélyezd őket a telefon beállításaiban.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "A csörgéshez a MyTurnnek engedély kell az ébresztőkhöz.",
+"{t} prima": "{t} előtte",
+"Nessuna sveglia nei prossimi 14 giorni.": "A következő 14 napban nincs ébresztő.",
+"Prossima sveglia: {d} alle {h}": "Következő ébresztő: {d}, {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} ébresztő a következő 14 napban.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} ébresztő a következő 14 napban.",
+"one": "{n} ébresztő a következő 14 napban."
+},
+"Sveglie": "Ébresztők",
+"Una sveglia vera prima di ogni turno": "Valódi ébresztő minden műszak előtt",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "Az alkalmazásban az emlékeztetőket a telefon ütemezi: semmi sem kerül a szerverre. Ha módosítasz egy műszakot, az emlékeztető magától frissül.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Valódi ébresztő minden műszak előtt, ami némított telefonon is szól. Magától frissül, amikor módosítod a műszakjaidat.",
+"Consenti le sveglie": "Ébresztők engedélyezése",
+"Sveglia prima dei turni": "Ébresztő a műszakok előtt"
 };

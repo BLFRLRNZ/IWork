@@ -15,5 +15,13 @@ public class MainActivity extends BridgeActivity {
                 && getIntent().getBooleanExtra("widgetPreview", false)) {
             ShiftWidget.showPreview(this);
         }
+        // solo per le prove automatiche: la sveglia come la vede chi la riceve
+        if ((getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0
+                && getIntent().getBooleanExtra("alarmPreview", false)) {
+            android.content.Intent a = new android.content.Intent().putExtra("title", "Mattina alle 06:00")
+                .putExtra("body", "Turno alle 06:00").putExtra("stop", "Ferma").putExtra("snooze", "Posticipa");
+            AlarmReceiver.show(this, a);
+            startActivity(new android.content.Intent(this, AlarmActivity.class).putExtras(a));
+        }
     }
 }

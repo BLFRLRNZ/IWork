@@ -843,3 +843,20 @@ användarvillkoren
 integritetspolicyn
 Integritet
 Användarvillkor
+Pass kl. {h}
+Stoppa
+Snooza
+Riktiga larm kräver iOS 26 eller senare. Du kan använda påminnelser.
+Larmen är blockerade: tillåt dem i telefonens inställningar.
+För att kunna ringa behöver MyTurn tillstånd för larm.
+{t} före
+Inga larm de närmaste 14 dagarna.
+Nästa larm: {d} kl. {h}
+{n} larm de närmaste 14 dagarna.
+{n} larm de närmaste 14 dagarna.
+Larm
+Ett riktigt larm före varje pass
+I appen schemaläggs påminnelser på telefonen: inget når servern. Om du ändrar ett pass uppdateras påminnelsen av sig själv.
+Ett riktigt larm före varje pass som ringer även när telefonen är på ljudlös. Det uppdateras av sig själv när du ändrar dina pass.
+Tillåt larm
+Larm före pass

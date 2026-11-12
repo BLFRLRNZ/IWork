@@ -913,5 +913,25 @@
 "condizioni d'uso": "termos de utilização",
 "informativa sulla privacy": "política de privacidade",
 "Privacy": "Privacidade",
-"Condizioni d'uso": "Termos de utilização"
+"Condizioni d'uso": "Termos de utilização",
+"Turno alle {h}": "Turno às {h}",
+"Ferma": "Parar",
+"Posticipa": "Adiar",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Os alarmes verdadeiros exigem o iOS 26 ou mais recente. Pode usar os lembretes.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Os alarmes estão bloqueados: permita-os nas definições do telefone.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Para tocar, o MyTurn precisa de autorização para os alarmes.",
+"{t} prima": "{t} antes",
+"Nessuna sveglia nei prossimi 14 giorni.": "Nenhum alarme nos próximos 14 dias.",
+"Prossima sveglia: {d} alle {h}": "Próximo alarme: {d} às {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} alarme nos próximos 14 dias.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} alarmes nos próximos 14 dias.",
+"one": "{n} alarme nos próximos 14 dias."
+},
+"Sveglie": "Alarmes",
+"Una sveglia vera prima di ogni turno": "Um alarme verdadeiro antes de cada turno",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "Na app, os lembretes são programados no telefone: nada chega ao servidor. Se alterar um turno, o lembrete atualiza-se sozinho.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Um alarme verdadeiro antes de cada turno, que toca mesmo com o telefone em silêncio. Atualiza-se sozinho quando altera os turnos.",
+"Consenti le sveglie": "Permitir alarmes",
+"Sveglia prima dei turni": "Alarme antes dos turnos"
 };

@@ -913,5 +913,25 @@
 "condizioni d'uso": "kasutustingimustega",
 "informativa sulla privacy": "privaatsuspoliitikat",
 "Privacy": "Privaatsus",
-"Condizioni d'uso": "Kasutustingimused"
+"Condizioni d'uso": "Kasutustingimused",
+"Turno alle {h}": "Vahetus kell {h}",
+"Ferma": "Peata",
+"Posticipa": "Hiljem",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Päris äratused vajavad iOS 26 või uuemat. Saad kasutada meeldetuletusi.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Äratused on blokeeritud: luba need telefoni seadetes.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Helisemiseks vajab MyTurn äratuste luba.",
+"{t} prima": "{t} enne",
+"Nessuna sveglia nei prossimi 14 giorni.": "Järgmise 14 päeva jooksul äratusi pole.",
+"Prossima sveglia: {d} alle {h}": "Järgmine äratus: {d} kell {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} äratus järgmise 14 päeva jooksul.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} äratust järgmise 14 päeva jooksul.",
+"one": "{n} äratus järgmise 14 päeva jooksul."
+},
+"Sveglie": "Äratused",
+"Una sveglia vera prima di ogni turno": "Päris äratus enne iga vahetust",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "Rakenduses ajastatakse meeldetuletused telefonis: serverisse ei jõua midagi. Kui muudad vahetust, uueneb meeldetuletus ise.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Päris äratus enne iga vahetust, mis heliseb ka siis, kui telefon on hääletu. See uueneb ise, kui muudad vahetusi.",
+"Consenti le sveglie": "Luba äratused",
+"Sveglia prima dei turni": "Äratus enne vahetusi"
 };

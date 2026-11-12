@@ -925,5 +925,26 @@
 "condizioni d'uso": "uvjete korištenja",
 "informativa sulla privacy": "pravila privatnosti",
 "Privacy": "Privatnost",
-"Condizioni d'uso": "Uvjeti korištenja"
+"Condizioni d'uso": "Uvjeti korištenja",
+"Turno alle {h}": "Smjena u {h}",
+"Ferma": "Zaustavi",
+"Posticipa": "Odgodi",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Prave budilice trebaju iOS 26 ili noviji. Možeš koristiti podsjetnike.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Budilice su blokirane: dopusti ih u postavkama telefona.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Da bi zvonio, MyTurn treba dopuštenje za budilice.",
+"{t} prima": "{t} prije",
+"Nessuna sveglia nei prossimi 14 giorni.": "Nema budilica u sljedećih 14 dana.",
+"Prossima sveglia: {d} alle {h}": "Sljedeća budilica: {d} u {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} budilica u sljedećih 14 dana.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} budilica u sljedećih 14 dana.",
+"few": "{n} budilice u sljedećih 14 dana.",
+"one": "{n} budilica u sljedećih 14 dana."
+},
+"Sveglie": "Budilice",
+"Una sveglia vera prima di ogni turno": "Prava budilica prije svake smjene",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "U aplikaciji se podsjetnici zakazuju na telefonu: ništa ne stiže na poslužitelj. Ako promijeniš smjenu, podsjetnik se sam ažurira.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Prava budilica prije svake smjene koja zvoni i kad je telefon utišan. Sama se ažurira kad promijeniš smjene.",
+"Consenti le sveglie": "Dopusti budilice",
+"Sveglia prima dei turni": "Budilica prije smjena"
 };

@@ -843,3 +843,20 @@ podmínky používání
 zásady ochrany soukromí
 Soukromí
 Podmínky používání
+Směna v {h}
+Zastavit
+Odložit
+Skutečné budíky vyžadují iOS 26 nebo novější. Můžeš použít připomenutí.
+Budíky jsou zablokované: povol je v nastavení telefonu.
+Aby mohl zvonit, potřebuje MyTurn povolení pro budíky.
+{t} předem
+V příštích 14 dnech žádný budík.
+Další budík: {d} v {h}
+{n} budík v příštích 14 dnech.
+{n} budíků v příštích 14 dnech. ‖few: {n} budíky v příštích 14 dnech. ‖many: {n} budíku v příštích 14 dnech.
+Budíky
+Skutečný budík před každou směnou
+V aplikaci se připomenutí plánují v telefonu: na server nic nejde. Když změníš směnu, připomenutí se samo upraví.
+Skutečný budík před každou směnou, který zvoní i při ztlumeném telefonu. Sám se upraví, když změníš směny.
+Povolit budíky
+Budík před směnami

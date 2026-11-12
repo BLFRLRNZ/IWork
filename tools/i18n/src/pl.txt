@@ -843,3 +843,20 @@ warunki korzystania
 polityka prywatności
 Prywatność
 Warunki korzystania
+Zmiana o {h}
+Zatrzymaj
+Drzemka
+Prawdziwe budziki wymagają iOS 26 lub nowszego. Możesz użyć przypomnień.
+Budziki są zablokowane: zezwól na nie w ustawieniach telefonu.
+Aby dzwonić, MyTurn potrzebuje zgody na budziki.
+{t} wcześniej
+Brak budzików w ciągu najbliższych 14 dni.
+Następny budzik: {d} o {h}
+{n} budzik w ciągu najbliższych 14 dni.
+{n} budzika w ciągu najbliższych 14 dni. ‖few: {n} budziki w ciągu najbliższych 14 dni. ‖many: {n} budzików w ciągu najbliższych 14 dni.
+Budziki
+Prawdziwy budzik przed każdą zmianą
+W aplikacji przypomnienia są planowane na telefonie: nic nie trafia na serwer. Gdy zmienisz zmianę, przypomnienie zaktualizuje się samo.
+Prawdziwy budzik przed każdą zmianą, który dzwoni nawet przy wyciszonym telefonie. Aktualizuje się sam, gdy zmieniasz grafik.
+Zezwól na budziki
+Budzik przed zmianami

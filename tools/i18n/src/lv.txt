@@ -843,3 +843,20 @@ lietošanas noteikumiem
 privātuma politika
 Privātums
 Lietošanas noteikumi
+Maiņa plkst. {h}
+Apturēt
+Atlikt
+Īstiem modinātājiem vajag iOS 26 vai jaunāku. Vari izmantot atgādinājumus.
+Modinātāji ir bloķēti: atļauj tos tālruņa iestatījumos.
+Lai zvanītu, MyTurn vajag atļauju modinātājiem.
+{t} iepriekš
+Nākamajās 14 dienās modinātāju nav.
+Nākamais modinātājs: {d} plkst. {h}
+{n} modinātājs nākamajās 14 dienās.
+{n} modinātāji nākamajās 14 dienās. ‖zero: {n} modinātāju nākamajās 14 dienās.
+Modinātāji
+Īsts modinātājs pirms katras maiņas
+Lietotnē atgādinājumi tiek ieplānoti tālrunī: uz serveri nekas nenonāk. Ja maini maiņu, atgādinājums atjaunojas pats.
+Īsts modinātājs pirms katras maiņas, kas zvana arī tad, ja tālrunis ir klusumā. Tas atjaunojas pats, kad maini maiņas.
+Atļaut modinātājus
+Modinātājs pirms maiņām

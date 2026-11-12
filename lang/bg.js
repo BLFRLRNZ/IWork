@@ -913,5 +913,25 @@
 "condizioni d'uso": "условията за ползване",
 "informativa sulla privacy": "политиката за поверителност",
 "Privacy": "Поверителност",
-"Condizioni d'uso": "Условия за ползване"
+"Condizioni d'uso": "Условия за ползване",
+"Turno alle {h}": "Смяна в {h}",
+"Ferma": "Спри",
+"Posticipa": "Отложи",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Истинските аларми изискват iOS 26 или по-нова версия. Можеш да използваш напомнянията.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Алармите са блокирани: разреши ги в настройките на телефона.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "За да звъни, MyTurn се нуждае от разрешение за аларми.",
+"{t} prima": "{t} преди",
+"Nessuna sveglia nei prossimi 14 giorni.": "Няма аларми през следващите 14 дни.",
+"Prossima sveglia: {d} alle {h}": "Следваща аларма: {d} в {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} аларма през следващите 14 дни.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} аларми през следващите 14 дни.",
+"one": "{n} аларма през следващите 14 дни."
+},
+"Sveglie": "Аларми",
+"Una sveglia vera prima di ogni turno": "Истинска аларма преди всяка смяна",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "В приложението напомнянията се насрочват на телефона: нищо не стига до сървъра. Ако промениш смяна, напомнянето се обновява само.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Истинска аларма преди всяка смяна, която звъни дори когато телефонът е на тих режим. Обновява се сама, когато промениш смените.",
+"Consenti le sveglie": "Разреши алармите",
+"Sveglia prima dei turni": "Аларма преди смените"
 };

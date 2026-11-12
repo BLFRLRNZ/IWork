@@ -843,3 +843,20 @@ termos de uso
 política de privacidade
 Privacidade
 Termos de uso
+Turno às {h}
+Parar
+Soneca
+Alarmes de verdade exigem o iOS 26 ou mais recente. Você pode usar os lembretes.
+Os alarmes estão bloqueados: permita nas configurações do celular.
+Para tocar, o MyTurn precisa de permissão para os alarmes.
+{t} antes
+Nenhum alarme nos próximos 14 dias.
+Próximo alarme: {d} às {h}
+{n} alarme nos próximos 14 dias.
+{n} alarmes nos próximos 14 dias.
+Alarmes
+Um alarme de verdade antes de cada turno
+No app, os lembretes são programados no celular: nada chega ao servidor. Se você mudar um turno, o lembrete se atualiza sozinho.
+Um alarme de verdade antes de cada turno, que toca mesmo com o celular no silencioso. Ele se atualiza sozinho quando você muda os turnos.
+Permitir alarmes
+Alarme antes dos turnos

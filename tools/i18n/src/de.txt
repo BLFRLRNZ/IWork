@@ -843,3 +843,20 @@ Nutzungsbedingungen
 Datenschutzerklärung
 Datenschutz
 Nutzungsbedingungen
+Schicht um {h}
+Stopp
+Schlummern
+Echte Wecker brauchen iOS 26 oder neuer. Du kannst stattdessen Erinnerungen nutzen.
+Wecker sind blockiert: Erlaube sie in den Einstellungen des Telefons.
+Damit es klingelt, braucht MyTurn die Erlaubnis für Wecker.
+{t} vorher
+Keine Wecker in den nächsten 14 Tagen.
+Nächster Wecker: {d} um {h}
+{n} Wecker in den nächsten 14 Tagen.
+{n} Wecker in den nächsten 14 Tagen.
+Wecker
+Ein echter Wecker vor jeder Schicht
+In der App werden Erinnerungen auf dem Telefon geplant: Nichts gelangt zum Server. Wenn du eine Schicht änderst, passt sich die Erinnerung von selbst an.
+Ein echter Wecker vor jeder Schicht, der auch bei stummgeschaltetem Telefon klingelt. Er passt sich von selbst an, wenn du deine Schichten änderst.
+Wecker erlauben
+Wecker vor den Schichten

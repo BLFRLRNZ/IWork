@@ -844,5 +844,22 @@
 "condizioni d'uso": "terms of use",
 "informativa sulla privacy": "privacy policy",
 "Privacy": "Privacy",
-"Condizioni d'uso": "Terms of use"
+"Condizioni d'uso": "Terms of use",
+"Turno alle {h}": "Shift at {h}",
+"Ferma": "Stop",
+"Posticipa": "Snooze",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Real alarms need iOS 26 or later. You can use reminders instead.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Alarms are blocked: allow them in your phone's settings.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "To ring, MyTurn needs permission for alarms.",
+"{t} prima": "{t} before",
+"Nessuna sveglia nei prossimi 14 giorni.": "No alarms in the next 14 days.",
+"Prossima sveglia: {d} alle {h}": "Next alarm: {d} at {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} alarm in the next 14 days.",
+"{n} sveglie nei prossimi 14 giorni.": "{n} alarms in the next 14 days.",
+"Sveglie": "Alarms",
+"Una sveglia vera prima di ogni turno": "A real alarm before every shift",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "In the app, reminders are scheduled on the phone: nothing reaches the server. If you change a shift, the reminder updates by itself.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "A real alarm before every shift that rings even when the phone is on silent. It updates by itself when you change your shifts.",
+"Consenti le sveglie": "Allow alarms",
+"Sveglia prima dei turni": "Alarm before shifts"
 };

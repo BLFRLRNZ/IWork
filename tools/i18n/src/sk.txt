@@ -843,3 +843,20 @@ podmienky používania
 zásady ochrany súkromia
 Súkromie
 Podmienky používania
+Zmena o {h}
+Zastaviť
+Odložiť
+Skutočné budíky vyžadujú iOS 26 alebo novší. Môžeš použiť pripomienky.
+Budíky sú zablokované: povoľ ich v nastaveniach telefónu.
+Aby mohol zvoniť, MyTurn potrebuje povolenie pre budíky.
+{t} vopred
+V najbližších 14 dňoch žiadny budík.
+Ďalší budík: {d} o {h}
+{n} budík v najbližších 14 dňoch.
+{n} budíkov v najbližších 14 dňoch. ‖few: {n} budíky v najbližších 14 dňoch. ‖many: {n} budíka v najbližších 14 dňoch.
+Budíky
+Skutočný budík pred každou zmenou
+V aplikácii sa pripomienky plánujú v telefóne: na server nič nejde. Keď zmeníš zmenu, pripomienka sa sama upraví.
+Skutočný budík pred každou zmenou, ktorý zvoní aj pri stlmenom telefóne. Sám sa upraví, keď zmeníš zmeny.
+Povoliť budíky
+Budík pred zmenami

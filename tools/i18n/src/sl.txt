@@ -843,3 +843,20 @@ pogoje uporabe
 politika zasebnosti
 Zasebnost
 Pogoji uporabe
+Izmena ob {h}
+Ustavi
+Dremež
+Prave budilke potrebujejo iOS 26 ali novejši. Uporabiš lahko opomnike.
+Budilke so blokirane: dovoli jih v nastavitvah telefona.
+Da lahko zvoni, MyTurn potrebuje dovoljenje za budilke.
+{t} prej
+V naslednjih 14 dneh ni budilk.
+Naslednja budilka: {d} ob {h}
+{n} budilka v naslednjih 14 dneh.
+{n} budilk v naslednjih 14 dneh. ‖two: {n} budilki v naslednjih 14 dneh. ‖few: {n} budilke v naslednjih 14 dneh.
+Budilke
+Prava budilka pred vsako izmeno
+V aplikaciji se opomniki načrtujejo na telefonu: na strežnik ne pride nič. Če spremeniš izmeno, se opomnik posodobi sam.
+Prava budilka pred vsako izmeno, ki zvoni tudi, ko je telefon utišan. Sama se posodobi, ko spremeniš izmene.
+Dovoli budilke
+Budilka pred izmenami

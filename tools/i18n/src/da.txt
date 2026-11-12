@@ -843,3 +843,20 @@ brugsbetingelserne
 privatlivspolitikken
 Privatliv
 Brugsbetingelser
+Vagt kl. {h}
+Stop
+Snooze
+Rigtige alarmer kræver iOS 26 eller nyere. Du kan bruge påmindelser.
+Alarmer er blokeret: tillad dem i telefonens indstillinger.
+For at ringe skal MyTurn have tilladelse til alarmer.
+{t} før
+Ingen alarmer de næste 14 dage.
+Næste alarm: {d} kl. {h}
+{n} alarm de næste 14 dage.
+{n} alarmer de næste 14 dage.
+Alarmer
+En rigtig alarm før hver vagt
+I appen planlægges påmindelser på telefonen: intet når serveren. Hvis du ændrer en vagt, opdateres påmindelsen af sig selv.
+En rigtig alarm før hver vagt, der ringer, selv når telefonen er på lydløs. Den opdateres af sig selv, når du ændrer dine vagter.
+Tillad alarmer
+Alarm før vagter

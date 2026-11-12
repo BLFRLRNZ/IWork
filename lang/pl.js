@@ -957,5 +957,27 @@
 "condizioni d'uso": "warunki korzystania",
 "informativa sulla privacy": "polityka prywatności",
 "Privacy": "Prywatność",
-"Condizioni d'uso": "Warunki korzystania"
+"Condizioni d'uso": "Warunki korzystania",
+"Turno alle {h}": "Zmiana o {h}",
+"Ferma": "Zatrzymaj",
+"Posticipa": "Drzemka",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Prawdziwe budziki wymagają iOS 26 lub nowszego. Możesz użyć przypomnień.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Budziki są zablokowane: zezwól na nie w ustawieniach telefonu.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Aby dzwonić, MyTurn potrzebuje zgody na budziki.",
+"{t} prima": "{t} wcześniej",
+"Nessuna sveglia nei prossimi 14 giorni.": "Brak budzików w ciągu najbliższych 14 dni.",
+"Prossima sveglia: {d} alle {h}": "Następny budzik: {d} o {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} budzik w ciągu najbliższych 14 dni.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} budzika w ciągu najbliższych 14 dni.",
+"few": "{n} budziki w ciągu najbliższych 14 dni.",
+"many": "{n} budzików w ciągu najbliższych 14 dni.",
+"one": "{n} budzik w ciągu najbliższych 14 dni."
+},
+"Sveglie": "Budziki",
+"Una sveglia vera prima di ogni turno": "Prawdziwy budzik przed każdą zmianą",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "W aplikacji przypomnienia są planowane na telefonie: nic nie trafia na serwer. Gdy zmienisz zmianę, przypomnienie zaktualizuje się samo.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Prawdziwy budzik przed każdą zmianą, który dzwoni nawet przy wyciszonym telefonie. Aktualizuje się sam, gdy zmieniasz grafik.",
+"Consenti le sveglie": "Zezwól na budziki",
+"Sveglia prima dei turni": "Budzik przed zmianami"
 };

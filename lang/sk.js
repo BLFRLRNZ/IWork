@@ -955,5 +955,27 @@
 "condizioni d'uso": "podmienky používania",
 "informativa sulla privacy": "zásady ochrany súkromia",
 "Privacy": "Súkromie",
-"Condizioni d'uso": "Podmienky používania"
+"Condizioni d'uso": "Podmienky používania",
+"Turno alle {h}": "Zmena o {h}",
+"Ferma": "Zastaviť",
+"Posticipa": "Odložiť",
+"Le sveglie vere richiedono iOS 26 o più recente. Puoi usare i promemoria.": "Skutočné budíky vyžadujú iOS 26 alebo novší. Môžeš použiť pripomienky.",
+"Le sveglie sono bloccate: consentile nelle impostazioni del telefono.": "Budíky sú zablokované: povoľ ich v nastaveniach telefónu.",
+"Per suonare, MyTurn ha bisogno del permesso per le sveglie.": "Aby mohol zvoniť, MyTurn potrebuje povolenie pre budíky.",
+"{t} prima": "{t} vopred",
+"Nessuna sveglia nei prossimi 14 giorni.": "V najbližších 14 dňoch žiadny budík.",
+"Prossima sveglia: {d} alle {h}": "Ďalší budík: {d} o {h}",
+"{n} sveglia nei prossimi 14 giorni.": "{n} budík v najbližších 14 dňoch.",
+"{n} sveglie nei prossimi 14 giorni.": {
+"other": "{n} budíkov v najbližších 14 dňoch.",
+"few": "{n} budíky v najbližších 14 dňoch.",
+"many": "{n} budíka v najbližších 14 dňoch.",
+"one": "{n} budík v najbližších 14 dňoch."
+},
+"Sveglie": "Budíky",
+"Una sveglia vera prima di ogni turno": "Skutočný budík pred každou zmenou",
+"Nell'app i promemoria sono programmati sul telefono: al server non arriva niente. Se cambi un turno, il promemoria si aggiorna da solo.": "V aplikácii sa pripomienky plánujú v telefóne: na server nič nejde. Keď zmeníš zmenu, pripomienka sa sama upraví.",
+"Una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso. Si aggiorna da sola quando cambi i turni.": "Skutočný budík pred každou zmenou, ktorý zvoní aj pri stlmenom telefóne. Sám sa upraví, keď zmeníš zmeny.",
+"Consenti le sveglie": "Povoliť budíky",
+"Sveglia prima dei turni": "Budík pred zmenami"
 };

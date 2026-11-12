@@ -843,3 +843,20 @@ naudojimo sąlygomis
 privatumo politikoje
 Privatumas
 Naudojimo sąlygos
+Pamaina {h}
+Sustabdyti
+Atidėti
+Tikriems žadintuvams reikia iOS 26 ar naujesnės. Gali naudoti priminimus.
+Žadintuvai užblokuoti: leisk juos telefono nustatymuose.
+Kad skambėtų, MyTurn reikia leidimo žadintuvams.
+prieš {t}
+Per artimiausias 14 dienų žadintuvų nėra.
+Kitas žadintuvas: {d} {h}
+{n} žadintuvas per artimiausias 14 dienų.
+{n} žadintuvų per artimiausias 14 dienų. ‖few: {n} žadintuvai per artimiausias 14 dienų. ‖many: {n} žadintuvo per artimiausias 14 dienų.
+Žadintuvai
+Tikras žadintuvas prieš kiekvieną pamainą
+Programėlėje priminimai suplanuojami telefone: į serverį nieko nepatenka. Pakeitus pamainą, priminimas atsinaujina pats.
+Tikras žadintuvas prieš kiekvieną pamainą, skambantis net kai telefonas nutildytas. Jis atsinaujina pats, kai pakeiti pamainas.
+Leisti žadintuvus
+Žadintuvas prieš pamainas

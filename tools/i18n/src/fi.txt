@@ -843,3 +843,20 @@ käyttöehdot
 tietosuojaselosteen
 Tietosuoja
 Käyttöehdot
+Vuoro klo {h}
+Pysäytä
+Torkku
+Oikeat herätykset vaativat iOS 26:n tai uudemman. Voit käyttää muistutuksia.
+Herätykset on estetty: salli ne puhelimen asetuksista.
+Jotta herätys soi, MyTurn tarvitsee luvan herätyksiin.
+{t} ennen
+Ei herätyksiä seuraavan 14 päivän aikana.
+Seuraava herätys: {d} klo {h}
+{n} herätys seuraavan 14 päivän aikana.
+{n} herätystä seuraavan 14 päivän aikana.
+Herätykset
+Oikea herätys ennen jokaista vuoroa
+Sovelluksessa muistutukset ajastetaan puhelimessa: palvelimelle ei mene mitään. Jos muutat vuoroa, muistutus päivittyy itsestään.
+Oikea herätys ennen jokaista vuoroa, joka soi, vaikka puhelin olisi äänettömällä. Se päivittyy itsestään, kun muutat vuorojasi.
+Salli herätykset
+Herätys ennen vuoroja
