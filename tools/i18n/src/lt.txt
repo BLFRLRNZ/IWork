@@ -811,3 +811,7 @@ Tai tavo paskyros slaptažodis, ir jis niekur nesaugomas. Jei jį pamirši, pasi
 Atnaujinimai ateina iš „App Store“ arba „Google Play“.
 Prasideda po {x}
 Baigiasi po {x}
+Įrašyk slaptažodį, kad šis įrenginys būtų sinchronizuojamas.
+Užbaigti
+Įrašyk savo paskyros slaptažodį, kad užbaigtum prisijungimą šiame įrenginyje: nuo tada tavo duomenys visuose įrenginiuose bus vienodi.
+Kiekviename įrenginyje prisijunk tuo pačiu el. paštu ir slaptažodžiu, net pirmame ekrane po kalbos: pamainos, pastabos ir nustatymai ateina patys ir paskui lieka atnaujinti, nieko nereikia įjungti. Jei įrenginys paprašys slaptažodžio, įrašyk jį vieną kartą ir viskas. Tema ir priminimai lieka kiekvieno įrenginio pasirinkimas.

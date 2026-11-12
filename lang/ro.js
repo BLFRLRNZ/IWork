@@ -904,5 +904,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Este parola contului tău și nu este salvată nicăieri. Dacă o uiți, alegi una nouă cu un cod pe e-mail: copia de pe server nu se poate recupera, dar datele rămân pe dispozitivele tale și copia este recreată de aici.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Actualizările vin din App Store sau Google Play.",
 "Inizia tra {x}": "Începe în {x}",
-"Finisce tra {x}": "Se termină în {x}"
+"Finisce tra {x}": "Se termină în {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Scrie parola ca să sincronizezi acest dispozitiv.",
+"Completa": "Finalizează",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Scrie parola contului ca să finalizezi conectarea pe acest dispozitiv: de acum datele tale rămân la fel pe toate dispozitivele.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Conectează-te cu același e-mail și aceeași parolă pe fiecare dispozitiv, chiar din primul ecran după limbă: turele, notițele și setările sosesc singure și apoi rămân la zi, fără nimic de activat. Dacă un dispozitiv îți cere parola, scrie-o o dată și gata. Tema și mementourile rămân alegeri ale fiecărui dispozitiv."
 };

@@ -134,6 +134,7 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
   - Modifiche locali: `mark()` → `syNote()` confronta con l'impronta dell'ultimo valore sincronizzato (`myturn-syncbase`) e annota le differenze con l'ora (`myturn-syncdirty`). `syRun()` scarica, applica (vince la modifica più recente), poi manda. Parte all'apertura, quando l'app torna visibile, ogni 2 minuti e qualche secondo dopo una modifica.
   - Un dispositivo che si aggiunge dà ora 0 ai suoi dati: nei conflitti vincono quelli già sincronizzati. "Password dimenticata?" (nel pannello Account) cancella la copia sul server e la ricrea; gli altri dispositivi se ne accorgono perché il sale è cambiato e chiedono di riattivare.
   - Tema e lingua sono già locali (`myturn-theme`, `myturn-lang`); le impostazioni dei promemoria (`settings.rem`) non si sincronizzano.
+  - **Dalla 2.11 la sincronizzazione è parte dell'account** (richiesta del proprietario): niente "Attiva" né "Disattiva". In Impostazioni la riga `#syRow` mostra solo lo stato; il pulsante `#syBtn` ("Completa") compare solo se serve la password. Nel pannello Account: stato (`#acSync`) e "Sincronizza ora" (`#syNow`). La finestra `#sy` serve solo a scrivere la password: `syAsk()` la apre da sola all'avvio o al ritorno nell'app se c'è l'accesso ma non la sincronizzazione (al massimo ogni 20 ore, `myturn-syask`); dopo un accesso con la copia sul server protetta da un'altra password si apre subito in modo "Ricomincia" (`openSync(pw)`).
 - Senza sincronizzazione restano **solo sul dispositivo**: note, etichette, busta paga, stima paga e tutto il resto.
 - **Segreti:** la chiave privata VAPID, il `cron_secret` e la chiave `service_role` stanno solo nella tabella `app_config` di Supabase. Non vanno mai nel repository né chiesti in chat.
 - Le istruzioni passo per passo sono in `supabase/README.md`.
@@ -219,3 +220,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.8 | Account e promemoria aperti a tutti (email tramite Brevo); 2.8.1: Guida e tour li spiegano |
 | 2.9 | Sincronizzazione cifrata tra dispositivi |
 | 2.10 | Accesso con email e password anche dalla prima schermata; una sola password per account e cifratura; campi sistemati sui telefoni piccoli |
+| 2.11 | Sincronizzazione automatica con l'account, senza niente da attivare; app per iPhone e Android (Capacitor) con widget e Apple Watch, non ancora negli store |

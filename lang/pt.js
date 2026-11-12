@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "É a palavra-passe da sua conta e não é guardada em lado nenhum. Se a esquecer, escolhe uma nova com um código por e-mail: a cópia no servidor não se recupera, mas os dados ficam nos seus dispositivos e a cópia é recriada a partir daqui.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "As atualizações chegam pela App Store ou pelo Google Play.",
 "Inizia tra {x}": "Começa daqui a {x}",
-"Finisce tra {x}": "Termina daqui a {x}"
+"Finisce tra {x}": "Termina daqui a {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Introduza a sua palavra-passe para sincronizar este dispositivo.",
+"Completa": "Concluir",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Introduza a palavra-passe da sua conta para concluir a sessão neste dispositivo: a partir daí os seus dados ficam iguais em todos os seus dispositivos.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Inicie sessão com o mesmo e-mail e a mesma palavra-passe em cada dispositivo, mesmo no primeiro ecrã depois do idioma: turnos, notas e definições chegam sozinhos e depois mantêm-se atualizados, sem nada para ativar. Se um dispositivo lhe pedir a palavra-passe, introduza-a uma vez e pronto. O tema e os lembretes continuam a ser escolhas de cada dispositivo."
 };

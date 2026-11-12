@@ -811,3 +811,7 @@ Tā ir tava konta parole, un tā nekur netiek glabāta. Ja to aizmirsīsi, izvē
 Atjauninājumi nāk no App Store vai Google Play.
 Sākas pēc {x}
 Beidzas pēc {x}
+Ieraksti paroli, lai sinhronizētu šo ierīci.
+Pabeigt
+Ieraksti sava konta paroli, lai pabeigtu pieteikšanos šajā ierīcē: turpmāk tavi dati paliks vienādi visās ierīcēs.
+Katrā ierīcē piesakies ar to pašu e-pastu un paroli, pat pirmajā ekrānā pēc valodas: maiņas, piezīmes un iestatījumi pienāk paši un pēc tam paliek atjaunināti, nekas nav jāieslēdz. Ja ierīce prasa paroli, ieraksti to vienreiz, un viss. Motīvs un atgādinājumi paliek katras ierīces izvēle.

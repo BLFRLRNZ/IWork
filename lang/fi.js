@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Se on tilisi salasana, eikä sitä tallenneta mihinkään. Jos unohdat sen, valitset uuden sähköpostikoodin avulla: palvelimen kopiota ei voi palauttaa, mutta tiedot pysyvät laitteillasi ja kopio luodaan uudelleen täältä.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Päivitykset tulevat App Storesta tai Google Playsta.",
 "Inizia tra {x}": "Alkaa {x} kuluttua",
-"Finisce tra {x}": "Päättyy {x} kuluttua"
+"Finisce tra {x}": "Päättyy {x} kuluttua",
+"Scrivi la password per sincronizzare questo dispositivo.": "Synkronoi tämä laite kirjoittamalla salasanasi.",
+"Completa": "Viimeistele",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Viimeistele kirjautuminen tällä laitteella kirjoittamalla tilisi salasana: sen jälkeen tietosi pysyvät samoina kaikilla laitteillasi.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Kirjaudu jokaisella laitteella samalla sähköpostilla ja salasanalla, jo ensimmäisellä näytöllä kielen jälkeen: vuorot, muistiinpanot ja asetukset tulevat itsestään ja pysyvät sitten ajan tasalla, mitään ei tarvitse ottaa käyttöön. Jos laite kysyy salasanaa, kirjoita se kerran, ja se on siinä. Teema ja muistutukset ovat jokaisen laitteen omia valintoja."
 };

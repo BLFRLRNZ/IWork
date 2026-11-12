@@ -60,9 +60,9 @@ const AUDIT=()=>{const root=[...document.querySelectorAll('dialog[open]')].pop()
     await p.evaluate(()=>document.querySelectorAll('dialog[open]').forEach(d=>d.close()));
     await p.click('#setBtn');await p.click('#acBtn');await check(p,'account con accesso');await p.context().close();}
   {const p=await page(S0);await p.click('#setBtn');await p.click('#acBtn');await check(p,'account senza accesso');
-    await p.fill('#acEmail','maria.rossi@esempio.it');await p.click('#acGo');await p.waitForTimeout(300);await check(p,'account codice');await p.context().close();}
+    await p.click('#acAuth [data-a=signup]').catch(()=>{});await p.waitForTimeout(200);await check(p,'account registrazione');await p.context().close();}
   {const p=await page(S0,{auth:true});await p.click('#setBtn');await p.click('#syBtn');await p.waitForTimeout(300);await check(p,'sincronizzazione prima volta');await p.context().close();}
   {const p=await page(S0,{auth:true,meta:true});await p.click('#setBtn');await p.click('#syBtn');await p.waitForTimeout(300);await check(p,'sincronizzazione altro dispositivo');await p.context().close();}
-  {const p=await page(S0,{auth:true,meta:true,sync:true});await p.click('#setBtn');await p.click('#syBtn');await p.waitForTimeout(300);await check(p,'sincronizzazione attiva');await p.context().close();}
+  {const p=await page(S0,{auth:true,meta:true,sync:true});await p.click('#setBtn');await p.waitForTimeout(200);await check(p,'impostazioni con sincronizzazione');await p.click('#acBtn');await p.waitForTimeout(300);await check(p,'account con sincronizzazione');await p.context().close();}
   const txt=report.map(x=>x.join('\n')).join('\n');fs.writeFileSync(path.join(OUT,'report-'+W+'-'+LANG+'.txt'),txt);
   console.log(txt);console.log('problemi:',report.reduce((n,x)=>n+x.length-1,0));await b.close();})();

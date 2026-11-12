@@ -811,3 +811,7 @@ To je lozinka tvog računa i nigdje se ne sprema. Ako je zaboraviš, biraš novu
 Ažuriranja stižu iz App Storea ili Google Playa.
 Počinje za {x}
 Završava za {x}
+Upiši lozinku za sinkronizaciju ovog uređaja.
+Dovrši
+Upiši lozinku svog računa za dovršetak prijave na ovom uređaju: od tada tvoji podaci ostaju isti na svim uređajima.
+Prijavi se istom e-poštom i lozinkom na svakom uređaju, čak i na prvom zaslonu nakon jezika: smjene, bilješke i postavke stižu same i zatim ostaju ažurne, bez ičega za uključivanje. Ako te uređaj pita lozinku, upiši je jednom i to je sve. Tema i podsjetnici ostaju izbor svakog uređaja.

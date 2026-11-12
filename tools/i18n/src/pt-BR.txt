@@ -811,3 +811,7 @@ Senha da conta
 As atualizações chegam pela App Store ou pelo Google Play.
 Começa em {x}
 Termina em {x}
+Digite sua senha para sincronizar este dispositivo.
+Concluir
+Digite a senha da sua conta para concluir a entrada neste dispositivo: a partir daí seus dados ficam iguais em todos os seus dispositivos.
+Entre com o mesmo e-mail e a mesma senha em cada dispositivo, inclusive na primeira tela depois do idioma: turnos, notas e ajustes chegam sozinhos e depois continuam atualizados, sem nada para ativar. Se um dispositivo pedir a senha, digite-a uma vez e pronto. O tema e os lembretes continuam sendo escolhas de cada dispositivo.

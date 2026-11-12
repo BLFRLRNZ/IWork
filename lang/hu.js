@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Ez a fiókod jelszava, és sehol sincs elmentve. Ha elfelejted, e-mailes kóddal választasz újat: a szerveren lévő másolat nem állítható vissza, de az adatok az eszközeiden maradnak, és a másolat innen készül újra.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "A frissítések az App Store-ból vagy a Google Playről érkeznek.",
 "Inizia tra {x}": "{x} múlva kezdődik",
-"Finisce tra {x}": "{x} múlva ér véget"
+"Finisce tra {x}": "{x} múlva ér véget",
+"Scrivi la password per sincronizzare questo dispositivo.": "Írd be a jelszavad, hogy ez az eszköz is szinkronizáljon.",
+"Completa": "Befejezés",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Írd be a fiókod jelszavát, hogy befejezd a bejelentkezést ezen az eszközön: ettől kezdve az adataid minden eszközödön ugyanazok maradnak.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Minden eszközön ugyanazzal az e-mail-címmel és jelszóval jelentkezz be, akár már az első képernyőn a nyelv után: a műszakok, jegyzetek és beállítások maguktól megérkeznek, és utána naprakészek maradnak, semmit sem kell bekapcsolni. Ha egy eszköz kéri a jelszavad, írd be egyszer, és kész. A téma és az emlékeztetők eszközönként külön maradnak."
 };

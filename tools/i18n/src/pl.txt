@@ -811,3 +811,7 @@ To hasło do twojego konta i nie jest nigdzie zapisywane. Jeśli je zapomnisz, w
 Aktualizacje przychodzą z App Store lub Google Play.
 Zaczyna się za {x}
 Kończy się za {x}
+Wpisz hasło, aby synchronizować to urządzenie.
+Dokończ
+Wpisz hasło do konta, aby dokończyć logowanie na tym urządzeniu: od tej chwili twoje dane będą takie same na wszystkich urządzeniach.
+Zaloguj się tym samym e-mailem i hasłem na każdym urządzeniu, nawet na pierwszym ekranie po wyborze języka: zmiany, notatki i ustawienia przyjdą same i potem będą aktualne, bez niczego do włączania. Jeśli urządzenie poprosi o hasło, wpisz je raz i gotowe. Motyw i przypomnienia pozostają ustawieniami każdego urządzenia.

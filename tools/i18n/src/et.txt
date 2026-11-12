@@ -811,3 +811,7 @@ See on sinu konto parool ja seda ei hoita kusagil. Kui see ununeb, valid e-posti
 Uuendused tulevad App Store'ist või Google Playst.
 Algab {x} pärast
 Lõpeb {x} pärast
+Selle seadme sünkroonimiseks sisesta oma parool.
+Lõpeta
+Sisesta oma konto parool, et selles seadmes sisselogimine lõpetada: edaspidi on sinu andmed kõigis seadmetes samad.
+Logi igas seadmes sisse sama e-posti ja parooliga, juba esimesel ekraanil pärast keele valimist: vahetused, märkmed ja seaded tulevad ise ja püsivad siis ajakohased, midagi pole vaja sisse lülitada. Kui seade küsib parooli, sisesta see üks kord ja ongi kõik. Teema ja meeldetuletused jäävad iga seadme enda valikuks.

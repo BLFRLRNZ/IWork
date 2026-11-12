@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Είναι ο κωδικός του λογαριασμού σου και δεν αποθηκεύεται πουθενά. Αν τον ξεχάσεις, διαλέγεις νέο με κωδικό από email: το αντίγραφο στον διακομιστή δεν ανακτάται, αλλά τα δεδομένα μένουν στις συσκευές σου και το αντίγραφο δημιουργείται ξανά από εδώ.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Οι ενημερώσεις έρχονται από το App Store ή το Google Play.",
 "Inizia tra {x}": "Ξεκινά σε {x}",
-"Finisce tra {x}": "Τελειώνει σε {x}"
+"Finisce tra {x}": "Τελειώνει σε {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Γράψε τον κωδικό σου για να συγχρονιστεί αυτή η συσκευή.",
+"Completa": "Ολοκλήρωση",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Γράψε τον κωδικό του λογαριασμού σου για να ολοκληρωθεί η σύνδεση σε αυτή τη συσκευή: από εκεί και πέρα τα δεδομένα σου μένουν ίδια σε όλες τις συσκευές.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Συνδέσου με το ίδιο email και τον ίδιο κωδικό σε κάθε συσκευή, ακόμη και από την πρώτη οθόνη μετά τη γλώσσα: βάρδιες, σημειώσεις και ρυθμίσεις έρχονται μόνες τους και μετά μένουν ενημερωμένες, χωρίς να ενεργοποιήσεις τίποτα. Αν μια συσκευή σού ζητήσει τον κωδικό, γράψ' τον μία φορά και τέλος. Το θέμα και οι υπενθυμίσεις μένουν επιλογές κάθε συσκευής."
 };

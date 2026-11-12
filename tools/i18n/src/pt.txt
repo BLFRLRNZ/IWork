@@ -811,3 +811,7 @@ Palavra-passe da conta
 As atualizações chegam pela App Store ou pelo Google Play.
 Começa daqui a {x}
 Termina daqui a {x}
+Introduza a sua palavra-passe para sincronizar este dispositivo.
+Concluir
+Introduza a palavra-passe da sua conta para concluir a sessão neste dispositivo: a partir daí os seus dados ficam iguais em todos os seus dispositivos.
+Inicie sessão com o mesmo e-mail e a mesma palavra-passe em cada dispositivo, mesmo no primeiro ecrã depois do idioma: turnos, notas e definições chegam sozinhos e depois mantêm-se atualizados, sem nada para ativar. Se um dispositivo lhe pedir a palavra-passe, introduza-a uma vez e pronto. O tema e os lembretes continuam a ser escolhas de cada dispositivo.

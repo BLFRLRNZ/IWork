@@ -811,3 +811,7 @@ Je to heslo k tvojmu účtu a nikde sa neukladá. Ak ho zabudneš, zvolíš si n
 Aktualizácie prichádzajú z App Store alebo Google Play.
 Začína o {x}
 Končí o {x}
+Zadaj heslo na synchronizáciu tohto zariadenia.
+Dokončiť
+Zadaj heslo svojho účtu a dokonči prihlásenie na tomto zariadení: odvtedy zostanú tvoje údaje rovnaké na všetkých zariadeniach.
+Prihlás sa na každom zariadení rovnakým e-mailom a heslom, pokojne už na prvej obrazovke po výbere jazyka: zmeny, poznámky a nastavenia prídu samy a potom zostávajú aktuálne, nič sa nezapína. Keď sa zariadenie spýta na heslo, zadaj ho raz a je hotovo. Motív a pripomienky zostávajú voľbou každého zariadenia.

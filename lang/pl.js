@@ -925,5 +925,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "To hasło do twojego konta i nie jest nigdzie zapisywane. Jeśli je zapomnisz, wybierzesz nowe za pomocą kodu e-mail: kopii na serwerze nie da się odzyskać, ale dane zostają na twoich urządzeniach, a kopia zostanie odtworzona stąd.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Aktualizacje przychodzą z App Store lub Google Play.",
 "Inizia tra {x}": "Zaczyna się za {x}",
-"Finisce tra {x}": "Kończy się za {x}"
+"Finisce tra {x}": "Kończy się za {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Wpisz hasło, aby synchronizować to urządzenie.",
+"Completa": "Dokończ",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Wpisz hasło do konta, aby dokończyć logowanie na tym urządzeniu: od tej chwili twoje dane będą takie same na wszystkich urządzeniach.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Zaloguj się tym samym e-mailem i hasłem na każdym urządzeniu, nawet na pierwszym ekranie po wyborze języka: zmiany, notatki i ustawienia przyjdą same i potem będą aktualne, bez niczego do włączania. Jeśli urządzenie poprosi o hasło, wpisz je raz i gotowe. Motyw i przypomnienia pozostają ustawieniami każdego urządzenia."
 };

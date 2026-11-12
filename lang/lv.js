@@ -884,5 +884,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Tā ir tava konta parole, un tā nekur netiek glabāta. Ja to aizmirsīsi, izvēlēsies jaunu ar e-pasta kodu: kopiju serverī nevar atjaunot, bet dati paliek tavās ierīcēs un kopija tiek izveidota no jauna no šejienes.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Atjauninājumi nāk no App Store vai Google Play.",
 "Inizia tra {x}": "Sākas pēc {x}",
-"Finisce tra {x}": "Beidzas pēc {x}"
+"Finisce tra {x}": "Beidzas pēc {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Ieraksti paroli, lai sinhronizētu šo ierīci.",
+"Completa": "Pabeigt",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Ieraksti sava konta paroli, lai pabeigtu pieteikšanos šajā ierīcē: turpmāk tavi dati paliks vienādi visās ierīcēs.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Katrā ierīcē piesakies ar to pašu e-pastu un paroli, pat pirmajā ekrānā pēc valodas: maiņas, piezīmes un iestatījumi pienāk paši un pēc tam paliek atjaunināti, nekas nav jāieslēdz. Ja ierīce prasa paroli, ieraksti to vienreiz, un viss. Motīvs un atgādinājumi paliek katras ierīces izvēle."
 };

@@ -811,3 +811,7 @@ Es ist das Passwort deines Kontos und wird nirgends gespeichert. Wenn du es verg
 Updates kommen über den App Store oder Google Play.
 Beginnt in {x}
 Endet in {x}
+Gib dein Passwort ein, um dieses Gerät zu synchronisieren.
+Abschließen
+Gib das Passwort deines Kontos ein, um die Anmeldung auf diesem Gerät abzuschließen: Danach bleiben deine Daten auf allen Geräten gleich.
+Melde dich auf jedem Gerät mit derselben E-Mail und demselben Passwort an, auch schon auf dem ersten Bildschirm nach der Sprache: Schichten, Notizen und Einstellungen kommen von selbst und bleiben dann aktuell, ohne dass du etwas einschalten musst. Wenn ein Gerät nach deinem Passwort fragt, gib es einmal ein, das war's. Design und Erinnerungen bleiben Einstellungen des jeweiligen Geräts.

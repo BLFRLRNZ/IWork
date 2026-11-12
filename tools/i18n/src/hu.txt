@@ -811,3 +811,7 @@ Ez a fiókod jelszava, és sehol sincs elmentve. Ha elfelejted, e-mailes kóddal
 A frissítések az App Store-ból vagy a Google Playről érkeznek.
 {x} múlva kezdődik
 {x} múlva ér véget
+Írd be a jelszavad, hogy ez az eszköz is szinkronizáljon.
+Befejezés
+Írd be a fiókod jelszavát, hogy befejezd a bejelentkezést ezen az eszközön: ettől kezdve az adataid minden eszközödön ugyanazok maradnak.
+Minden eszközön ugyanazzal az e-mail-címmel és jelszóval jelentkezz be, akár már az első képernyőn a nyelv után: a műszakok, jegyzetek és beállítások maguktól megérkeznek, és utána naprakészek maradnak, semmit sem kell bekapcsolni. Ha egy eszköz kéri a jelszavad, írd be egyszer, és kész. A téma és az emlékeztetők eszközönként külön maradnak.

@@ -811,3 +811,7 @@ To je geslo tvojega računa in ni nikjer shranjeno. Če ga pozabiš, izbereš no
 Posodobitve prihajajo iz App Store ali Google Play.
 Začne se čez {x}
 Konča se čez {x}
+Vpiši geslo za sinhronizacijo te naprave.
+Dokončaj
+Vpiši geslo svojega računa, da dokončaš prijavo na tej napravi: odslej ostanejo tvoji podatki enaki na vseh napravah.
+Na vsaki napravi se prijavi z istim e-naslovom in geslom, že na prvem zaslonu po izbiri jezika: izmene, zapiski in nastavitve pridejo sami in nato ostanejo posodobljeni, ničesar ni treba vklopiti. Če te naprava vpraša za geslo, ga vpiši enkrat in to je vse. Tema in opomniki ostanejo izbira vsake naprave.

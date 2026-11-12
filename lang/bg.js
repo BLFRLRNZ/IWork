@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Това е паролата на профила ти и не се пази никъде. Ако я забравиш, избираш нова с код по имейл: копието на сървъра не може да се възстанови, но данните остават на устройствата ти и копието се създава отново оттук.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Актуализациите идват от App Store или Google Play.",
 "Inizia tra {x}": "Започва след {x}",
-"Finisce tra {x}": "Свършва след {x}"
+"Finisce tra {x}": "Свършва след {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Въведи паролата си, за да синхронизираш това устройство.",
+"Completa": "Завърши",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Въведи паролата на профила си, за да завършиш влизането на това устройство: оттук нататък данните ти остават еднакви на всички устройства.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Влизай с един и същ имейл и парола на всяко устройство, дори от първия екран след езика: смените, бележките и настройките пристигат сами и после остават актуални, без нищо за включване. Ако устройство поиска паролата ти, въведи я веднъж и толкова. Темата и напомнянията остават избор на всяко устройство."
 };

@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Det er adgangskoden til din konto, og den gemmes ingen steder. Hvis du glemmer den, vælger du en ny med en e-mailkode: kopien på serveren kan ikke gendannes, men dine data bliver på dine enheder, og kopien genskabes herfra.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Opdateringer kommer fra App Store eller Google Play.",
 "Inizia tra {x}": "Starter om {x}",
-"Finisce tra {x}": "Slutter om {x}"
+"Finisce tra {x}": "Slutter om {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Skriv din adgangskode for at synkronisere denne enhed.",
+"Completa": "Fuldfør",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Skriv adgangskoden til din konto for at fuldføre login på denne enhed: derefter er dine data de samme på alle dine enheder.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Log ind med samme e-mail og adgangskode på hver enhed, også fra den første skærm efter sproget: vagter, noter og indstillinger kommer af sig selv og holdes derefter opdateret, uden noget at slå til. Hvis en enhed beder om din adgangskode, så skriv den én gang, og så er det klaret. Tema og påmindelser forbliver valg på hver enhed."
 };

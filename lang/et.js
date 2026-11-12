@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "See on sinu konto parool ja seda ei hoita kusagil. Kui see ununeb, valid e-postiga saadud koodiga uue: serveris olevat koopiat ei saa taastada, kuid andmed jäävad sinu seadmetesse ja koopia luuakse siit uuesti.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Uuendused tulevad App Store'ist või Google Playst.",
 "Inizia tra {x}": "Algab {x} pärast",
-"Finisce tra {x}": "Lõpeb {x} pärast"
+"Finisce tra {x}": "Lõpeb {x} pärast",
+"Scrivi la password per sincronizzare questo dispositivo.": "Selle seadme sünkroonimiseks sisesta oma parool.",
+"Completa": "Lõpeta",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Sisesta oma konto parool, et selles seadmes sisselogimine lõpetada: edaspidi on sinu andmed kõigis seadmetes samad.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Logi igas seadmes sisse sama e-posti ja parooliga, juba esimesel ekraanil pärast keele valimist: vahetused, märkmed ja seaded tulevad ise ja püsivad siis ajakohased, midagi pole vaja sisse lülitada. Kui seade küsib parooli, sisesta see üks kord ja ongi kõik. Teema ja meeldetuletused jäävad iga seadme enda valikuks."
 };

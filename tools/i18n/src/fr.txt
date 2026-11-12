@@ -811,3 +811,7 @@ C'est le mot de passe de votre compte, et il n'est enregistré nulle part. Si vo
 Les mises à jour arrivent par l'App Store ou Google Play.
 Commence dans {x}
 Se termine dans {x}
+Saisissez votre mot de passe pour synchroniser cet appareil.
+Terminer
+Saisissez le mot de passe de votre compte pour terminer la connexion sur cet appareil : vos données resteront ensuite identiques sur tous vos appareils.
+Connectez-vous avec le même e-mail et le même mot de passe sur chaque appareil, même depuis le premier écran après la langue : postes, notes et réglages arrivent tout seuls et restent ensuite à jour, sans rien à activer. Si un appareil vous demande le mot de passe, saisissez-le une fois, c'est tout. Le thème et les rappels restent propres à chaque appareil.

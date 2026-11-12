@@ -807,6 +807,8 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     </div>
     <div id="acIn" hidden>
       <p class="sub" id="acWho"></p>
+      <p class="help" id="acSync"></p>
+      <button type="button" class="btn" id="syNow">Sincronizza ora</button>
       <button type="button" class="btn" id="acLogout">Esci da questo dispositivo</button>
       <button type="button" class="linkbtn" id="acDelete">Elimina l'account e i dati sul server</button>
     </div>
@@ -853,8 +855,6 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     </div>
     <div id="syOnBox" hidden>
       <p class="sub" id="syInfo"></p>
-      <button type="button" class="btn" id="syNow">Sincronizza ora</button>
-      <button type="button" class="linkbtn" id="syOff">Disattiva su questo dispositivo</button>
     </div>
     <p class="bpst" id="syStatus" aria-live="polite" hidden></p>
     <details class="ichelp"><summary>Come funziona</summary>
@@ -864,7 +864,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     </details>
     <div class="actions">
       <button type="button" class="btn ghost" id="syClose">Chiudi</button>
-      <button type="submit" class="btn primary" id="syGo">Attiva</button>
+      <button type="submit" class="btn primary" id="syGo">Completa</button>
     </div>
   </form>
 </dialog>
@@ -1152,7 +1152,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.10.0";
+const APP_VERSION="2.11.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -2023,9 +2023,9 @@ function renderAccount(){const on=SB_ON();$("acSect").hidden=!on;$("rmBtn").hidd
   $("acBtn").textContent=AU?t("Gestisci"):t("Accedi");
   if(!$("ac").open)return;
   $("acOut").hidden=!!AU;$("acIn").hidden=!AU;
-  if(AU){$("acWho").textContent=t("Hai effettuato l'accesso come {e}.",{e:AU.user.email});$("acDelete").textContent=acDelArm>Date.now()?t("Tocca di nuovo per eliminare tutto"):t("Elimina l'account e i dati sul server");}}
+  if(AU){$("acWho").textContent=t("Hai effettuato l'accesso come {e}.",{e:AU.user.email});try{syRender();}catch(e){}$("acDelete").textContent=acDelArm>Date.now()?t("Tocca di nuovo per eliminare tutto"):t("Elimina l'account e i dati sul server");}}
 function openAccount(mode){if($("st").open)$("st").close();if($("tl").open)$("tl").close();if($("sy").open)$("sy").close();acDelArm=0;acStat("");
-  authUI($("acAuth"),{mode:typeof mode==="string"?mode:"login",onDone:async(kind,pw,stat)=>{const r=await authSync(pw,kind==="reset");const[m,c]=authResult(r);renderAccount();acStat(m,c);try{render();}catch(e){}}});
+  authUI($("acAuth"),{mode:typeof mode==="string"?mode:"login",onDone:async(kind,pw,stat)=>{const r=await authSync(pw,kind==="reset");const[m,c]=authResult(r);renderAccount();acStat(m,c);try{render();}catch(e){}if(r==="mismatch")openSync(pw);}});
   renderAccount();openDlg($("ac"));renderAccount();}
 $("acBtn").onclick=()=>openAccount();
 $("acClose").onclick=()=>$("ac").close();
@@ -2216,24 +2216,25 @@ let syMode="",syBusyUI=false,syPend="";
 function syStat(msg,cls){const e=$("syStatus");e.hidden=!msg;e.className="bpst"+(cls?" "+cls:"");e.textContent=msg||"";}
 const syWhen=ts=>{if(!ts)return"";const d=new Date(ts),n=new Date();return d.toDateString()===n.toDateString()?hm(d):fDMYl(d)+" "+hm(d);};
 function syRender(){
-  $("syLine").textContent=syOn()?(SY.last?t("Sincronizzazione attiva, ultima alle {h}",{h:syWhen(SY.last)}):t("Sincronizzazione attiva")):syLost?t("Sincronizzazione da riattivare"):t("Sincronizzazione spenta");
-  $("syBtn").textContent=syOn()?t("Gestisci"):t("Attiva");
+  $("syLine").textContent=syOn()?(SY.last?t("Sincronizzazione attiva, ultima alle {h}",{h:syWhen(SY.last)}):t("Sincronizzazione attiva")):syLost?t("Sincronizzazione da riattivare"):t("Scrivi la password per sincronizzare questo dispositivo.");
+  $("syBtn").textContent=t("Completa");$("syBtn").hidden=syOn();
+  if($("ac").open&&AU){$("acSync").textContent=syOn()?(SY.last?t("Sincronizzazione attiva. Ultimo aggiornamento: {h}.",{h:syWhen(SY.last)}):t("Sincronizzazione attiva.")):$("syLine").textContent;
+    $("syNow").textContent=syOn()?t("Sincronizza ora"):t("Completa");}
   if(!$("sy").open)return;
   const on=syOn();$("syNeed").hidden=!!AU;if(!AU)$("syNeed").textContent=t("Per sincronizzare serve un account.");
   $("sySet").hidden=!AU||on||!syMode;$("syOnBox").hidden=!on;$("syPw2Box").hidden=true;
   $("syPwBox").hidden=syMode==="reset"&&!!syPend;$("syForgot").hidden=syMode==="reset";
-  $("syIntro").textContent=syMode==="enable"?t("Per attivare la sincronizzazione su questo dispositivo scrivi la password del tuo account."):
+  $("syIntro").textContent=syMode==="enable"?t("Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi."):
     syMode==="reset"?t("I dati sul server sono protetti da un'altra password, forse una vecchia. Puoi ricominciare: la copia sul server verrà sostituita con i dati di questo dispositivo, e sugli altri dispositivi ti verrà chiesta la password attuale."):"";
   if(on)$("syInfo").textContent=SY.last?t("Sincronizzazione attiva. Ultimo aggiornamento: {h}.",{h:syWhen(SY.last)}):t("Sincronizzazione attiva.");
-  $("syGo").hidden=on||(!!AU&&!syMode);$("syGo").textContent=!AU?t("Accedi"):syMode==="reset"?t("Ricomincia"):t("Attiva");$("syGo").disabled=syBusyUI;}
-function openSync(){if($("st").open)$("st").close();syMode=AU&&!syOn()?"enable":"";syBusyUI=false;syPend="";$("syPw").value="";$("syPw2").value="";
+  $("syGo").hidden=on||(!!AU&&!syMode);$("syGo").textContent=!AU?t("Accedi"):syMode==="reset"?t("Ricomincia"):t("Completa");$("syGo").disabled=syBusyUI;}
+function openSync(resetPw){if($("st").open)$("st").close();if($("ac").open)$("ac").close();syMode=AU&&!syOn()?(resetPw?"reset":"enable"):"";syBusyUI=false;syPend=typeof resetPw==="string"?resetPw:"";$("syPw").value="";$("syPw2").value="";
   syStat(syLost?t("La password è stata cambiata su un altro dispositivo. Scrivi quella nuova."):"",syLost?"err":"");openDlg($("sy"));syRender();}
-$("syBtn").onclick=openSync;
+$("syBtn").onclick=()=>openSync();
 $("syClose").onclick=()=>$("sy").close();
 $("sy").addEventListener("close",()=>{syPend="";$("syPw").value="";});
 $("syForgot").onclick=()=>{$("sy").close();openAccount("forgot");};
-$("syNow").onclick=async()=>{syStat(t("Sincronizzo…"));try{await syRun();syStat(syOn()?t("Fatto: tutto aggiornato."):"",syOn()?"ok":"");}catch(e){syStat(t("Non sono riuscito a sincronizzare. Controlla la connessione e riprova."),"err");}};
-$("syOff").onclick=()=>{syStop();syLost=false;syStat(t("Sincronizzazione disattivata su questo dispositivo. I dati restano qui."),"ok");syMode="enable";syRender();renderAccount();};
+$("syNow").onclick=async()=>{if(!syOn()){openSync();return;}acStat(t("Sincronizzo…"));try{await syRun();acStat(t("Fatto: tutto aggiornato."),"ok");}catch(e){acStat(t("Non sono riuscito a sincronizzare. Controlla la connessione e riprova."),"err");}syRender();};
 $("syForm").addEventListener("submit",async ev=>{ev.preventDefault();if(syBusyUI)return;
   if(!AU){$("sy").close();openAccount();return;}if(!syMode||syOn())return;
   const net=t("Non sono riuscito a sincronizzare. Controlla la connessione e riprova.");
@@ -2251,6 +2252,13 @@ document.addEventListener("visibilitychange",()=>{if(document.visibilityState===
 addEventListener("online",()=>syRun().catch(()=>{}));
 setInterval(()=>{if(document.visibilityState==="visible")syRun().catch(()=>{});},120000);
 setTimeout(()=>syRun().catch(()=>{}),2500);
+let syAskPw="";
+function syAsk(){if(!SB_ON()||!AU||syOn()||document.querySelector("dialog[open]"))return;
+  if(!syAskPw){let last=0;try{last=+localStorage.getItem("myturn-syask")||0;}catch(e){}if(Date.now()-last<20*3600e3)return;}
+  try{localStorage.setItem("myturn-syask",String(Date.now()));}catch(e){}const pw=syAskPw;syAskPw="";openSync(pw||undefined);}
+setTimeout(syAsk,4000);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")setTimeout(syAsk,1500);});
+$("ob").addEventListener("close",()=>setTimeout(syAsk,1200));
 try{syRender();}catch(e){}
 
 /* ---------- tour guidato (una volta, dopo la prima configurazione; si rivede dalla Guida) ---------- */
@@ -2328,7 +2336,7 @@ function helpData(){const MK={a:"\u0001a\u0002",b:"\u0001b\u0002",c:"\u0001c\u00
     [t("Come ricevo un avviso prima dei turni?"),[t("Apri {p}, accedi con la tua email e attiva {a}: scegli quanto prima vuoi l'avviso, anche per il secondo lavoro e la reperibilità. La notifica arriva anche con l'app chiusa. Con {b} controlli subito che funzioni.",MK),{p:tl("Promemoria"),a:T("Avvisami prima dei turni"),b:T("Manda una notifica di prova")}],"rmBtn"],
     [t("Come creo un account?"),[t("In {p} tocca {a}, poi {b}: scrivi email e password e conferma con il codice di 6 cifre che ti arriva via email. Puoi farlo anche dalla prima schermata, dopo la lingua. La stessa password protegge i dati sincronizzati. Senza account l'app funziona come sempre.",MK),{p:P("Impostazioni","Account"),a:T("Accedi"),b:T("Non hai un account? Creane uno")}],"setBtn"],
     [t("Le notifiche non arrivano: cosa faccio?"),[t("Su iPhone le notifiche arrivano solo se l'app è aggiunta alla schermata Home e la apri da lì. Controlla anche che le notifiche di {app} siano consentite nelle impostazioni del telefono, poi spegni e riaccendi {a} e prova con {b}.",Object.assign({app:APP},MK)),{a:T("Avvisami prima dei turni"),b:T("Manda una notifica di prova")}],"rmBtn"],
-    [t("Come uso MyTurn su più dispositivi?"),[t("Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati. Su un dispositivo dove hai già fatto l'accesso, la sincronizzazione si accende da {p}. Il tema e i promemoria restano scelte di ogni dispositivo.",MK),{p:P("Impostazioni","Account")}],"setBtn"],
+    [t("Come uso MyTurn su più dispositivi?"),[t("Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.",MK),{}],"setBtn"],
     [t("Ho dimenticato la password: cosa faccio?"),[t("In {p} tocca {a}: ti arriva un codice via email e scegli una nuova password. Nessuno può recuperare quella vecchia, quindi la copia dei dati sul server viene ricreata con i dati del dispositivo che stai usando: fallo da quello più aggiornato. Sugli altri dispositivi accedi con la password nuova.",MK),{p:P("Impostazioni","Account"),a:T("Password dimenticata?")}],"setBtn"],
     [t("Cosa viene salvato sul server?"),[t("La tua email; con i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti; con la sincronizzazione, tutti i dati, ma cifrati con la tua password, quindi illeggibili. Puoi eliminare l'account e tutti i dati sul server da {p}.",MK),{p:P("Impostazioni","Account")}],"setBtn"]]],
   [t("Dati, app e impostazioni"),[
@@ -2847,7 +2855,7 @@ function obFinish(){const s=S.settings,fresh=!OB.existing;
 async function obAuthDone(kind,pw,stat){const r=await authSync(pw,kind==="reset");
   if(r==="ok"&&kind!=="signup"&&S.settings.setup){try{localStorage.setItem(TOUR_K,"1");}catch(e){}$("ob").close();applyCountry();render();renderAccount();
     toast(t("Bentornato! Turni e impostazioni sono stati caricati."));return;}
-  OB.step++;obRender();if(r!=="ok")toast(authResult(r)[0]);}
+  if(r==="mismatch")syAskPw=pw;OB.step++;obRender();if(r!=="ok")toast(authResult(r)[0]);}
 function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels.length;OB.acct=SB_ON()&&!OB.existing&&!AU;
   if(OB.existing){OB.lang=LANG;OB.country=S.settings.country;OB.region=S.settings.region;OB.patron=S.settings.patron&&S.settings.patron.c?S.settings.patron:null;}
   else{const g=guessSetup();OB.lang=LANG!=="it"?LANG:g.lang;OB.country=g.country;}

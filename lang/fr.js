@@ -881,5 +881,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "C'est le mot de passe de votre compte, et il n'est enregistré nulle part. Si vous l'oubliez, vous en choisissez un nouveau avec un code par e-mail : la copie sur le serveur ne peut pas être récupérée, mais vos données restent sur vos appareils et la copie est recréée depuis ici.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Les mises à jour arrivent par l'App Store ou Google Play.",
 "Inizia tra {x}": "Commence dans {x}",
-"Finisce tra {x}": "Se termine dans {x}"
+"Finisce tra {x}": "Se termine dans {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Saisissez votre mot de passe pour synchroniser cet appareil.",
+"Completa": "Terminer",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Saisissez le mot de passe de votre compte pour terminer la connexion sur cet appareil : vos données resteront ensuite identiques sur tous vos appareils.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Connectez-vous avec le même e-mail et le même mot de passe sur chaque appareil, même depuis le premier écran après la langue : postes, notes et réglages arrivent tout seuls et restent ensuite à jour, sans rien à activer. Si un appareil vous demande le mot de passe, saisissez-le une fois, c'est tout. Le thème et les rappels restent propres à chaque appareil."
 };

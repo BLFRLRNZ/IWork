@@ -925,5 +925,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "To je geslo tvojega računa in ni nikjer shranjeno. Če ga pozabiš, izbereš novo s kodo po e-pošti: kopije na strežniku ni mogoče obnoviti, a podatki ostanejo na tvojih napravah in kopija se ponovno ustvari od tukaj.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Posodobitve prihajajo iz App Store ali Google Play.",
 "Inizia tra {x}": "Začne se čez {x}",
-"Finisce tra {x}": "Konča se čez {x}"
+"Finisce tra {x}": "Konča se čez {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Vpiši geslo za sinhronizacijo te naprave.",
+"Completa": "Dokončaj",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Vpiši geslo svojega računa, da dokončaš prijavo na tej napravi: odslej ostanejo tvoji podatki enaki na vseh napravah.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Na vsaki napravi se prijavi z istim e-naslovom in geslom, že na prvem zaslonu po izbiri jezika: izmene, zapiski in nastavitve pridejo sami in nato ostanejo posodobljeni, ničesar ni treba vklopiti. Če te naprava vpraša za geslo, ga vpiši enkrat in to je vse. Tema in opomniki ostanejo izbira vsake naprave."
 };

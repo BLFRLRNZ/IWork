@@ -812,5 +812,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "It's your account password, and it isn't stored anywhere. If you forget it, you choose a new one with an email code: the copy on the server can't be recovered, but your data stays on your devices and the copy is recreated from here.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Updates come from the App Store or Google Play.",
 "Inizia tra {x}": "Starts in {x}",
-"Finisce tra {x}": "Ends in {x}"
+"Finisce tra {x}": "Ends in {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Enter your password to sync this device.",
+"Completa": "Complete",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Enter your account password to complete sign-in on this device: from then on your data stays the same on all your devices.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Sign in with the same email and password on each device, even from the first screen after the language: shifts, notes and settings arrive by themselves and then stay up to date, with nothing to turn on. If a device asks for your password, enter it once and that's it. Theme and reminders remain choices of each device."
 };

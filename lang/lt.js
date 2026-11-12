@@ -925,5 +925,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Tai tavo paskyros slaptažodis, ir jis niekur nesaugomas. Jei jį pamirši, pasirinksi naują su el. pašto kodu: kopijos serveryje atkurti nepavyks, bet duomenys liks tavo įrenginiuose ir kopija bus sukurta iš naujo iš čia.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Atnaujinimai ateina iš „App Store“ arba „Google Play“.",
 "Inizia tra {x}": "Prasideda po {x}",
-"Finisce tra {x}": "Baigiasi po {x}"
+"Finisce tra {x}": "Baigiasi po {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Įrašyk slaptažodį, kad šis įrenginys būtų sinchronizuojamas.",
+"Completa": "Užbaigti",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Įrašyk savo paskyros slaptažodį, kad užbaigtum prisijungimą šiame įrenginyje: nuo tada tavo duomenys visuose įrenginiuose bus vienodi.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Kiekviename įrenginyje prisijunk tuo pačiu el. paštu ir slaptažodžiu, net pirmame ekrane po kalbos: pamainos, pastabos ir nustatymai ateina patys ir paskui lieka atnaujinti, nieko nereikia įjungti. Jei įrenginys paprašys slaptažodžio, įrašyk jį vieną kartą ir viskas. Tema ir priminimai lieka kiekvieno įrenginio pasirinkimas."
 };

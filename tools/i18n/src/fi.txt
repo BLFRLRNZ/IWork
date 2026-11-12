@@ -811,3 +811,7 @@ Se on tilisi salasana, eikä sitä tallenneta mihinkään. Jos unohdat sen, vali
 Päivitykset tulevat App Storesta tai Google Playsta.
 Alkaa {x} kuluttua
 Päättyy {x} kuluttua
+Synkronoi tämä laite kirjoittamalla salasanasi.
+Viimeistele
+Viimeistele kirjautuminen tällä laitteella kirjoittamalla tilisi salasana: sen jälkeen tietosi pysyvät samoina kaikilla laitteillasi.
+Kirjaudu jokaisella laitteella samalla sähköpostilla ja salasanalla, jo ensimmäisellä näytöllä kielen jälkeen: vuorot, muistiinpanot ja asetukset tulevat itsestään ja pysyvät sitten ajan tasalla, mitään ei tarvitse ottaa käyttöön. Jos laite kysyy salasanaa, kirjoita se kerran, ja se on siinä. Teema ja muistutukset ovat jokaisen laitteen omia valintoja.

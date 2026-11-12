@@ -923,5 +923,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "Je to heslo k tvému účtu a nikde se neukládá. Když ho zapomeneš, zvolíš si nové pomocí kódu z e-mailu: kopii na serveru nelze obnovit, ale data zůstávají na tvých zařízeních a kopie se znovu vytvoří odsud.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Aktualizace přicházejí z App Storu nebo Google Play.",
 "Inizia tra {x}": "Začíná za {x}",
-"Finisce tra {x}": "Končí za {x}"
+"Finisce tra {x}": "Končí za {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Zadej heslo pro synchronizaci tohoto zařízení.",
+"Completa": "Dokončit",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Zadej heslo svého účtu a dokonči přihlášení na tomto zařízení: od té chvíle zůstanou tvoje data stejná na všech zařízeních.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Přihlas se na každém zařízení stejným e-mailem a heslem, klidně už na první obrazovce po výběru jazyka: směny, poznámky a nastavení dorazí samy a pak zůstávají aktuální, nic se nezapíná. Když se zařízení zeptá na heslo, zadej ho jednou a je hotovo. Motiv a připomenutí zůstávají volbou každého zařízení."
 };

@@ -811,3 +811,7 @@ Este parola contului tău și nu este salvată nicăieri. Dacă o uiți, alegi u
 Actualizările vin din App Store sau Google Play.
 Începe în {x}
 Se termină în {x}
+Scrie parola ca să sincronizezi acest dispozitiv.
+Finalizează
+Scrie parola contului ca să finalizezi conectarea pe acest dispozitiv: de acum datele tale rămân la fel pe toate dispozitivele.
+Conectează-te cu același e-mail și aceeași parolă pe fiecare dispozitiv, chiar din primul ecran după limbă: turele, notițele și setările sosesc singure și apoi rămân la zi, fără nimic de activat. Dacă un dispozitiv îți cere parola, scrie-o o dată și gata. Tema și mementourile rămân alegeri ale fiecărui dispozitiv.

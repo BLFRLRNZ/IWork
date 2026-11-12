@@ -1,6 +1,7 @@
 // Sincronizzazione cifrata tra due dispositivi, con un Supabase finto in memoria.
 // Prova: prima attivazione, password sbagliata, unione dei dati, modifiche e cancellazioni nei due sensi,
 // conflitto (vince la modifica più recente), password dimenticata, e che sul server non ci sia niente in chiaro.
+// Chi ha già l'accesso ma non ha mai scritto la password su un dispositivo se la vede chiedere da sola all'apertura.
 const {chromium}=require('playwright');const crypto=require('crypto');const SECRET=(em,pw)=>crypto.pbkdf2Sync(pw,'myturn-login|'+em,600000,32,'sha256').toString('hex');let PW='password-giusta';const path=require('path'),os=require('os'),fs=require('fs');
 const OUT=process.env.OUT||path.join(os.tmpdir(),'myturn-tests');fs.mkdirSync(OUT,{recursive:true});
 const URL0=process.env.URL||'http://localhost:8765/index.html';
@@ -40,8 +41,9 @@ async function syncNow(p){await p.evaluate(()=>myturnDebug.syRun());await p.wait
   ok(DB.meta&&DB.items.size>=3,'server: meta e '+DB.items.size+' elementi');
   const dump=JSON.stringify([...DB.items.values()])+JSON.stringify(DB.meta);
   ok(!/nota segreta|06:00|14:00|2026-|settings|days/.test(dump),'server: nessun dato in chiaro');
-  // B: password sbagliata, poi giusta
-  await openSy(B);ok(await B.isVisible('#syForgot'),'B: c\'è Password dimenticata?');
+  // B: ha già l'accesso ma non la sincronizzazione: all'apertura l'app chiede da sola la password
+  ok(await B.evaluate(()=>document.getElementById('sy').open)&&/Completa/.test(await B.textContent('#syGo')),'B: all\'apertura chiede da sola la password');
+  ok(await B.isVisible('#syForgot'),'B: c\'è Password dimenticata?');
   await B.fill('#syPw','password-giusta');await B.click('#syGo');await B.waitForTimeout(6000);
   let dB=await daysOf(B);
   ok(dB[day(1)]&&dB[day(1)].s==='06:00','B: nel conflitto vince il dato già sincronizzato (06:00)');
@@ -62,10 +64,16 @@ async function syncNow(p){await p.evaluate(()=>myturnDebug.syRun());await p.wait
   // impostazioni: tema/promemoria locali, il resto si sincronizza
   await A.evaluate(()=>{const s=myturnDebug.S.settings;s.wd=7.5;myturnDebug.mark();});await A.waitForTimeout(5000);await syncNow(B);
   ok(await B.evaluate(()=>myturnDebug.S.settings.wd)===7.5,'B: riceve le impostazioni (durata del turno 7,5)');
-  // la password dell'account cambia, ma la copia sul server è ancora quella vecchia: B ricomincia, A se ne accorge
-  await openSy(B);await B.click('#syOff');await B.waitForTimeout(200);PW='nuova-password-1';
-  await B.fill('#syPw','nuova-password-1');await B.click('#syGo');await B.waitForTimeout(6000);
-  ok(await B.isVisible('#syGo')&&/Ricomincia/.test(await B.textContent('#syGo'))&&/altra password/.test(await B.textContent('#syIntro')),'B: avvisa che la copia sul server ha un\'altra password');
+  // in Impostazioni la sincronizzazione è solo uno stato: niente da attivare o spegnere
+  await B.click('#setBtn');await B.waitForTimeout(200);
+  ok(/attiva/.test(await B.textContent('#syLine'))&&!(await B.isVisible('#syBtn')),'B: Impostazioni mostra solo lo stato → '+await B.textContent('#syLine'));
+  await B.click('#acBtn');await B.waitForTimeout(250);
+  ok(/attiva/.test(await B.textContent('#acSync'))&&/Sincronizza ora/.test(await B.textContent('#syNow')),'B: il pannello Account mostra lo stato e "Sincronizza ora"');
+  // la password dell'account cambia, ma la copia sul server è ancora quella vecchia: B esce, rientra e ricomincia; A se ne accorge
+  await B.click('#acLogout');await B.waitForTimeout(500);await B.click('#acClose');await B.waitForTimeout(150);PW='nuova-password-1';
+  await B.click('#setBtn');await B.waitForTimeout(150);await B.click('#acBtn');await B.waitForTimeout(200);
+  await B.fill('#acAuthEmail','mario@esempio.it');await B.fill('#acAuthPw','nuova-password-1');await B.click('#acAuth [data-a=go]');await B.waitForTimeout(7000);
+  ok(await B.evaluate(()=>document.getElementById('sy').open)&&/Ricomincia/.test(await B.textContent('#syGo'))&&/altra password/.test(await B.textContent('#syIntro')),'B: dopo l\'accesso propone subito di ricominciare');
   await B.screenshot({path:path.join(OUT,'sync_mismatch.png')});
   await B.click('#syGo');await B.waitForTimeout(6000);
   ok(/attiva/.test(await B.textContent('#syStatus')),'B: ricominciato con la nuova password');

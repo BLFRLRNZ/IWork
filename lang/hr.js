@@ -893,5 +893,9 @@
 "È la password del tuo account, e non viene salvata da nessuna parte. Se la dimentichi, ne scegli una nuova con un codice via email: la copia sul server non si recupera, ma i dati restano sui tuoi dispositivi e la copia viene ricreata da qui.": "To je lozinka tvog računa i nigdje se ne sprema. Ako je zaboraviš, biraš novu kôdom e-poštom: kopija na poslužitelju ne može se vratiti, ali podaci ostaju na tvojim uređajima i kopija se ponovno stvara odavde.",
 "Gli aggiornamenti arrivano dall'App Store o da Google Play.": "Ažuriranja stižu iz App Storea ili Google Playa.",
 "Inizia tra {x}": "Počinje za {x}",
-"Finisce tra {x}": "Završava za {x}"
+"Finisce tra {x}": "Završava za {x}",
+"Scrivi la password per sincronizzare questo dispositivo.": "Upiši lozinku za sinkronizaciju ovog uređaja.",
+"Completa": "Dovrši",
+"Scrivi la password del tuo account per completare l'accesso su questo dispositivo: da lì in poi i tuoi dati restano uguali su tutti i dispositivi.": "Upiši lozinku svog računa za dovršetak prijave na ovom uređaju: od tada tvoji podaci ostaju isti na svim uređajima.",
+"Accedi con la stessa email e password su ogni dispositivo, anche dalla prima schermata dopo la lingua: turni, note e impostazioni arrivano da soli e poi restano aggiornati, senza niente da attivare. Se un dispositivo ti chiede la password, scrivila una volta e basta. Il tema e i promemoria restano scelte di ogni dispositivo.": "Prijavi se istom e-poštom i lozinkom na svakom uređaju, čak i na prvom zaslonu nakon jezika: smjene, bilješke i postavke stižu same i zatim ostaju ažurne, bez ičega za uključivanje. Ako te uređaj pita lozinku, upiši je jednom i to je sve. Tema i podsjetnici ostaju izbor svakog uređaja."
 };

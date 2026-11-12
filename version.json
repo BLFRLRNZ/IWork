@@ -1,12 +1,12 @@
 {
-  "version": "2.10.0",
-  "date": "2026-11-11",
+  "version": "2.11.0",
+  "date": "2026-11-12",
   "notes": {
-    "it": "Accesso con email e password, anche dalla prima schermata: su un nuovo telefono ritrovi subito turni e impostazioni. La password protegge anche i dati sincronizzati e non lascia mai il dispositivo. Sistemati campi stretti o sovrapposti, soprattutto sui telefoni piccoli.",
-    "en": "Sign in with email and password, even from the first screen: on a new phone your shifts and settings are back right away. The password also protects your synced data and never leaves the device. Fixed cramped or overlapping fields, especially on small phones.",
-    "fr": "Connexion avec e-mail et mot de passe, dès le premier écran : sur un nouveau téléphone, vous retrouvez tout de suite vos postes et vos réglages. Le mot de passe protège aussi les données synchronisées et ne quitte jamais l'appareil. Champs trop serrés ou superposés corrigés, surtout sur les petits téléphones.",
-    "de": "Anmeldung mit E-Mail und Passwort, schon auf dem ersten Bildschirm: Auf einem neuen Handy sind Schichten und Einstellungen sofort wieder da. Das Passwort schützt auch die synchronisierten Daten und verlässt nie das Gerät. Enge oder überlappende Felder korrigiert, vor allem auf kleinen Handys.",
-    "es": "Inicio de sesión con correo y contraseña, ya desde la primera pantalla: en un teléfono nuevo recuperas enseguida turnos y ajustes. La contraseña también protege los datos sincronizados y nunca sale del dispositivo. Corregidos campos estrechos o superpuestos, sobre todo en teléfonos pequeños.",
-    "pt": "Início de sessão com e-mail e palavra-passe, logo no primeiro ecrã: num telemóvel novo recupera logo os turnos e as definições. A palavra-passe também protege os dados sincronizados e nunca sai do dispositivo. Corrigidos campos apertados ou sobrepostos, sobretudo em telemóveis pequenos."
+    "it": "La sincronizzazione fa parte dell'account: accedi con email e password e i tuoi dati restano uguali su tutti i dispositivi, senza niente da attivare. Se un dispositivo ha già l'accesso ma non la password, te la chiede da solo una volta.",
+    "en": "Sync is now part of your account: sign in with email and password and your data stays the same on all your devices, with nothing to turn on. If a device is already signed in but doesn't have your password yet, it asks for it once by itself.",
+    "fr": "La synchronisation fait partie du compte : connectez-vous avec e-mail et mot de passe et vos données restent identiques sur tous vos appareils, sans rien à activer. Si un appareil est déjà connecté mais n'a pas encore le mot de passe, il vous le demande une fois de lui-même.",
+    "de": "Die Synchronisierung gehört jetzt zum Konto: Melde dich mit E-Mail und Passwort an, und deine Daten bleiben auf allen Geräten gleich, ohne etwas einzuschalten. Ist ein Gerät schon angemeldet, kennt aber dein Passwort noch nicht, fragt es einmal von selbst danach.",
+    "es": "La sincronización forma parte de la cuenta: inicia sesión con correo y contraseña y tus datos serán los mismos en todos tus dispositivos, sin nada que activar. Si un dispositivo ya tiene la sesión iniciada pero no la contraseña, te la pide una vez por sí solo.",
+    "pt": "A sincronização faz parte da conta: inicie sessão com e-mail e palavra-passe e os seus dados ficam iguais em todos os dispositivos, sem nada para ativar. Se um dispositivo já tiver sessão iniciada mas ainda não tiver a palavra-passe, pede-a uma vez sozinho."
   }
 }
