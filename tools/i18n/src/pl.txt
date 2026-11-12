@@ -838,3 +838,8 @@ DuPont
 Dzień 12 h
 Noc 12 h
 Gotowe grafiki
+Tworząc konto, akceptujesz {a}; jak postępujemy z twoimi danymi, wyjaśnia {b}.
+warunki korzystania
+polityka prywatności
+Prywatność
+Warunki korzystania

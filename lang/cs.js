@@ -950,5 +950,10 @@
 "4 e 4": "4 a 4",
 "Giorno 12 h": "Den 12 h",
 "Notte 12 h": "Noc 12 h",
-"Rotazioni pronte": "Hotové rozpisy"
+"Rotazioni pronte": "Hotové rozpisy",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Vytvořením účtu přijímáš {a}; jak zacházíme s tvými údaji, vysvětlují {b}.",
+"condizioni d'uso": "podmínky používání",
+"informativa sulla privacy": "zásady ochrany soukromí",
+"Privacy": "Soukromí",
+"Condizioni d'uso": "Podmínky používání"
 };

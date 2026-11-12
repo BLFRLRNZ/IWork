@@ -838,3 +838,8 @@ DuPont
 Dag 12 h
 Natt 12 h
 Färdiga scheman
+Genom att skapa ett konto godkänner du {a} och bekräftar att du har läst {b}.
+användarvillkoren
+integritetspolicyn
+Integritet
+Användarvillkor

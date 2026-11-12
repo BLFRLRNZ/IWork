@@ -13,10 +13,10 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="MyTurn">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>:root{padding-top:var(--safe-area-inset-top,env(safe-area-inset-top,0px));padding-bottom:var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))}img{max-width:100%}</style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* caratteri Geist e Geist Mono (licenza OFL, fonts/OFL-Geist.txt) serviti dal sito stesso: niente richieste a Google */
+@font-face{font-family:"Geist";src:url("fonts/geist.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url("fonts/geist-mono.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}:root{padding-top:var(--safe-area-inset-top,env(safe-area-inset-top,0px));padding-bottom:var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))}img{max-width:100%}</style>
 <style>
 /* Layout: monochrome app chrome, colour only where there is a shift. Next shift leads, the month grid is the body, totals and tools follow (side rail on wide screens). */
 :root{
@@ -438,6 +438,10 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 .warnline{color:var(--warn);font-size:13.5px;font-weight:600;margin:0}
 .warnline.neg{color:var(--danger)}
 .linkbtn{border:0;background:none;padding:0;color:var(--ink);text-decoration:underline;font-weight:500;align-self:flex-start;min-height:32px}
+.legal{font-size:13px;color:var(--muted);margin:2px 0 0}
+.legal a{color:var(--muted);text-decoration:underline;display:inline-block;min-height:32px;line-height:32px}
+.auth .legalnote{font-size:12.5px;color:var(--muted);margin:-2px 0 0}
+.auth .legalnote a{color:var(--muted)}
 .bars{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;height:170px}
 .ysub{font-size:13px;font-weight:650;margin:18px 0 8px;color:var(--ink)}
 #yStats .eyebrow+.ysub{margin-top:6px}
@@ -700,6 +704,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <h3 class="sect">Aggiornamenti</h3>
     <div class="uprow"><span id="upInfo"></span><button type="button" class="btn" id="upCheck">Cerca aggiornamenti</button></div>
     <button type="button" class="linkbtn" id="stHelp">Apri la guida</button>
+    <p class="legal"><a class="lgP" target="_blank" rel="noopener">Privacy</a> · <a class="lgT" target="_blank" rel="noopener">Condizioni d'uso</a></p>
 
     <div class="actions">
       <button type="submit" class="btn primary" style="flex:1">Fatto</button>
@@ -854,6 +859,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
     <details class="ichelp"><summary>Cosa viene salvato sul server</summary>
       <p>La tua email; con i promemoria, i turni dei prossimi 45 giorni con orario e nome del turno, per sapere quando avvisarti; con la sincronizzazione, tutti i dati, ma cifrati sul dispositivo con la tua password, quindi illeggibili.</p>
       <p>La password non lascia mai il dispositivo: al server arriva solo una chiave ricavata per l'accesso, che non serve ad aprire i dati. Puoi eliminare l'account e tutti i dati sul server quando vuoi, da qui.</p>
+      <p class="legal"><a class="lgP" target="_blank" rel="noopener">Privacy</a> · <a class="lgT" target="_blank" rel="noopener">Condizioni d'uso</a></p>
     </details>
     <div class="actions">
       <button type="button" class="btn ghost" id="acClose" style="flex:1">Chiudi</button>
@@ -1109,6 +1115,13 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 (function(){
 "use strict";
 const $=id=>document.getElementById(id);
+/* informativa privacy e condizioni d'uso (pagine del sito, in italiano e in inglese) */
+const SITE="https://blfrlrnz.github.io/MyTurn-/";
+/* le pagine sono pronte in _bozze/ (non pubblicate): manca l'email di contatto. Quando c'è, spostarle nella cartella
+   principale e mettere LEGAL_READY=true: compaiono i collegamenti in Impostazioni, Account e registrazione */
+const LEGAL_READY=false;
+const legalURL=page=>(NATIVE?SITE:"")+page+".html?lang="+(LANG==="it"?"it":"en");
+function legalLinks(){document.querySelectorAll(".legal").forEach(e=>e.hidden=!LEGAL_READY);document.querySelectorAll(".lgP").forEach(a=>a.href=legalURL("privacy"));document.querySelectorAll(".lgT").forEach(a=>a.href=legalURL("termini"));}
 /* app per iPhone e Android (Capacitor): stesse pagine, con i plugin nativi in CAP */
 const NATIVE=!!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform());
 const CAP=NATIVE&&Capacitor.Plugins||{};
@@ -1802,7 +1815,7 @@ function openWork(id,focus){fillWork();if($("tl").open)$("tl").close();openDlg($
   if(focus)showField(focus);}
 function openSettings(focus){if(focus&&WK[focus])return openWork(WK[focus],focus);try{renderAccount();}catch(e){}renderUpInfo();renderCountryUI();$("stLang").innerHTML=Object.keys(LANGS).map(l=>'<option value="'+l+'"'+(l===LANG?" selected":"")+">"+LANGS[l].n+"</option>").join("");const s=S.settings;$("stWd").value=s.wd;$("stSat").value=s.sat;$("stRate").value=s.rate||"";
   $("stFerie").value=s.ferie||"";$("stPerm").value=s.perm||"";$("stWeek").value=s.week;$("stBankFrom").value=s.bankFrom||bankStart();$("stBank0").value=s.bank0||"";
-  $("stPOt").value=s.pOt||"";$("stPNight").value=s.pNight||"";$("stPSun").value=s.pSun||"";$("stPHol").value=s.pHol||"";$("th-"+getTheme()).checked=true;openDlg($("st"));
+  $("stPOt").value=s.pOt||"";$("stPNight").value=s.pNight||"";$("stPSun").value=s.pSun||"";$("stPHol").value=s.pHol||"";$("th-"+getTheme()).checked=true;legalLinks();openDlg($("st"));
   if(focus)showField(focus);}
 $("setBtn").onclick=()=>openSettings();
 $("stLang").addEventListener("change",ev=>{ev.stopPropagation();setLang(ev.target.value);});
@@ -2073,7 +2086,8 @@ function authUI(box,o){const P=box.id;const A=Object.assign({mode:"login",email:
   function busy(b){A.busy=b;box.querySelectorAll("button,input").forEach(x=>x.disabled=b);}
   function draw(msg,cls){const m=A.mode;let h="";
     if(m==="login")h=emF()+f(P+"Pw",t("Password"),"password","current-password")+go(t("Accedi"))+'<div class="aulinks">'+lk("forgot",t("Password dimenticata?"))+lk("signup",t("Non hai un account? Creane uno"))+"</div>";
-    else if(m==="signup")h=emF()+f(P+"Pw",t("Password"),"password","new-password")+f(P+"Pw2",t("Ripeti la password"),"password","new-password")+pwHint+go(t("Crea l'account"))+'<div class="aulinks">'+lk("login",t("Hai già un account? Accedi"))+"</div>";
+    else if(m==="signup")h=emF()+f(P+"Pw",t("Password"),"password","new-password")+f(P+"Pw2",t("Ripeti la password"),"password","new-password")+pwHint+(LEGAL_READY?'<p class="legalnote">':'<p class="legalnote" hidden>')+t("Creando l'account accetti le {a} e confermi di aver letto l'{b}.",{a:'<a href="'+esc(legalURL("termini"))+'" target="_blank" rel="noopener">'+esc(t("condizioni d'uso"))+"</a>",b:'<a href="'+esc(legalURL("privacy"))+'" target="_blank" rel="noopener">'+esc(t("informativa sulla privacy"))+"</a>"})+"</p>"
+      +go(t("Crea l'account"))+'<div class="aulinks">'+lk("login",t("Hai già un account? Accedi"))+"</div>";
     else if(m==="code")h='<p class="help">'+esc(t("Ti abbiamo mandato un codice di 6 cifre a {e}. Controlla anche la posta indesiderata. Se questa email ha già un account, torna indietro e scegli Accedi.",{e:A.email}))+"</p>"
       +f(P+"Code",t("Codice ricevuto via email"),"text","one-time-code",' inputmode="numeric" maxlength="10"')+go(t("Conferma"))+'<div class="aulinks">'+lk("resend",t("Mandami un nuovo codice"))+lk("login",t("Usa un'altra email"))+"</div>";
     else if(m==="forgot")h='<p class="help">'+esc(t("Ti mandiamo un codice via email per scegliere una nuova password. La copia dei dati sul server verrà ricreata con i dati di questo dispositivo, perché quella vecchia si apre solo con la password vecchia."))+"</p>"
@@ -2129,14 +2143,16 @@ function renderAccount(){const on=SB_ON();$("acSect").hidden=!on;$("rmBtn").hidd
   if(!$("ac").open)return;
   $("acOut").hidden=!!AU;$("acIn").hidden=!AU;
   if(AU){$("acWho").textContent=t("Hai effettuato l'accesso come {e}.",{e:AU.user.email});try{syRender();}catch(e){}$("acDelete").textContent=acDelArm>Date.now()?t("Tocca di nuovo per eliminare tutto"):t("Elimina l'account e i dati sul server");}}
-function openAccount(mode){if($("st").open)$("st").close();if($("tl").open)$("tl").close();if($("sy").open)$("sy").close();acDelArm=0;acStat("");
+function openAccount(mode){legalLinks();if($("st").open)$("st").close();if($("tl").open)$("tl").close();if($("sy").open)$("sy").close();acDelArm=0;acStat("");
   authUI($("acAuth"),{mode:typeof mode==="string"?mode:"login",onDone:async(kind,pw,stat)=>{const r=await authSync(pw,kind==="reset");const[m,c]=authResult(r);renderAccount();acStat(m,c);try{render();}catch(e){}if(r==="mismatch")openSync(pw);}});
   renderAccount();openDlg($("ac"));renderAccount();}
 $("acBtn").onclick=()=>openAccount();
 $("acClose").onclick=()=>$("ac").close();
 async function pushSub(){try{const r=await navigator.serviceWorker.getRegistration();return r&&await r.pushManager.getSubscription();}catch(e){return null;}}
 $("acLogout").onclick=async()=>{const sub=await pushSub();
+  /* uscendo, sul server non restano né l'indirizzo per le notifiche né i promemoria futuri */
   try{if(sub)await sbFetch("/rest/v1/rpc/forget_push",{body:{p_endpoint:sub.endpoint}});}catch(e){}
+  try{if(!NATIVE)await sbFetch("/rest/v1/rpc/set_shifts",{body:{items:[]}});}catch(e){}
   try{if(sub)await sub.unsubscribe();}catch(e){}
   try{await sbFetch("/auth/v1/logout",{});}catch(e){}
   syStop();AU=null;auSave();if(!NATIVE)S.settings.rem.on=0;mark();acStat(t("Sei uscito. I tuoi turni restano su questo dispositivo."),"ok");renderAccount();};

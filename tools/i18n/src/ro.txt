@@ -838,3 +838,8 @@ DuPont
 Zi 12 h
 Noapte 12 h
 Rotații gata făcute
+Creând contul, accepți {a} și confirmi că ai citit {b}.
+condițiile de utilizare
+politica de confidențialitate
+Confidențialitate
+Condiții de utilizare

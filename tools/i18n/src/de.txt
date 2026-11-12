@@ -838,3 +838,8 @@ DuPont
 Tag 12 h
 Nacht 12 h
 Fertige Schichtfolgen
+Mit dem Erstellen des Kontos akzeptierst du die {a} und bestätigst, die {b} gelesen zu haben.
+Nutzungsbedingungen
+Datenschutzerklärung
+Datenschutz
+Nutzungsbedingungen

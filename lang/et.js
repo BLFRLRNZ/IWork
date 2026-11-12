@@ -908,5 +908,10 @@
 "4 e 4": "4 ja 4",
 "Giorno 12 h": "Päev 12 h",
 "Notte 12 h": "Öö 12 h",
-"Rotazioni pronte": "Valmis graafikud"
+"Rotazioni pronte": "Valmis graafikud",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Konto luues nõustud {a} ja kinnitad, et oled lugenud {b}.",
+"condizioni d'uso": "kasutustingimustega",
+"informativa sulla privacy": "privaatsuspoliitikat",
+"Privacy": "Privaatsus",
+"Condizioni d'uso": "Kasutustingimused"
 };

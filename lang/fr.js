@@ -908,5 +908,10 @@
 "4 e 4": "4 et 4",
 "Giorno 12 h": "Jour 12 h",
 "Notte 12 h": "Nuit 12 h",
-"Rotazioni pronte": "Rotations prêtes"
+"Rotazioni pronte": "Rotations prêtes",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "En créant un compte, vous acceptez les {a} et confirmez avoir lu la {b}.",
+"condizioni d'uso": "conditions d'utilisation",
+"informativa sulla privacy": "politique de confidentialité",
+"Privacy": "Confidentialité",
+"Condizioni d'uso": "Conditions d'utilisation"
 };

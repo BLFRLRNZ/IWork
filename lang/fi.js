@@ -908,5 +908,10 @@
 "4 e 4": "4 ja 4",
 "Giorno 12 h": "Päivä 12 h",
 "Notte 12 h": "Yö 12 h",
-"Rotazioni pronte": "Valmiit vuorokierrot"
+"Rotazioni pronte": "Valmiit vuorokierrot",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Luomalla tilin hyväksyt {a} ja vahvistat lukeneesi {b}.",
+"condizioni d'uso": "käyttöehdot",
+"informativa sulla privacy": "tietosuojaselosteen",
+"Privacy": "Tietosuoja",
+"Condizioni d'uso": "Käyttöehdot"
 };

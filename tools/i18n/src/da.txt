@@ -838,3 +838,8 @@ DuPont
 Dag 12 t
 Nat 12 t
 Færdige vagtplaner
+Når du opretter en konto, accepterer du {a} og bekræfter, at du har læst {b}.
+brugsbetingelserne
+privatlivspolitikken
+Privatliv
+Brugsbetingelser

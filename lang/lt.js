@@ -952,5 +952,10 @@
 "4 e 4": "4 ir 4",
 "Giorno 12 h": "Diena 12 val.",
 "Notte 12 h": "Naktis 12 val.",
-"Rotazioni pronte": "Paruošti grafikai"
+"Rotazioni pronte": "Paruošti grafikai",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Kuriant paskyrą sutinki su {a}; kaip tvarkome tavo duomenis, paaiškinta {b}.",
+"condizioni d'uso": "naudojimo sąlygomis",
+"informativa sulla privacy": "privatumo politikoje",
+"Privacy": "Privatumas",
+"Condizioni d'uso": "Naudojimo sąlygos"
 };

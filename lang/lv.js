@@ -911,5 +911,10 @@
 "4 e 4": "4 un 4",
 "Giorno 12 h": "Diena 12 h",
 "Notte 12 h": "Nakts 12 h",
-"Rotazioni pronte": "Gatavi grafiki"
+"Rotazioni pronte": "Gatavi grafiki",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Izveidojot kontu, tu piekrīti {a}; kā mēs apstrādājam tavus datus, skaidro {b}.",
+"condizioni d'uso": "lietošanas noteikumiem",
+"informativa sulla privacy": "privātuma politika",
+"Privacy": "Privātums",
+"Condizioni d'uso": "Lietošanas noteikumi"
 };

@@ -838,3 +838,8 @@ DuPont
 Diena 12 h
 Nakts 12 h
 Gatavi grafiki
+Izveidojot kontu, tu piekrīti {a}; kā mēs apstrādājam tavus datus, skaidro {b}.
+lietošanas noteikumiem
+privātuma politika
+Privātums
+Lietošanas noteikumi

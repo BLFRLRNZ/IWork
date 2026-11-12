@@ -908,5 +908,10 @@
 "4 e 4": "4 op, 4 af",
 "Giorno 12 h": "Dag 12 u",
 "Notte 12 h": "Nacht 12 u",
-"Rotazioni pronte": "Kant-en-klare roosters"
+"Rotazioni pronte": "Kant-en-klare roosters",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Door een account aan te maken ga je akkoord met de {a} en bevestig je dat je de {b} hebt gelezen.",
+"condizioni d'uso": "gebruiksvoorwaarden",
+"informativa sulla privacy": "privacyverklaring",
+"Privacy": "Privacy",
+"Condizioni d'uso": "Gebruiksvoorwaarden"
 };

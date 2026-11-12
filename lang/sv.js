@@ -908,5 +908,10 @@
 "4 e 4": "4 och 4",
 "Giorno 12 h": "Dag 12 h",
 "Notte 12 h": "Natt 12 h",
-"Rotazioni pronte": "Färdiga scheman"
+"Rotazioni pronte": "Färdiga scheman",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Genom att skapa ett konto godkänner du {a} och bekräftar att du har läst {b}.",
+"condizioni d'uso": "användarvillkoren",
+"informativa sulla privacy": "integritetspolicyn",
+"Privacy": "Integritet",
+"Condizioni d'uso": "Användarvillkor"
 };

@@ -908,5 +908,10 @@
 "4 e 4": "4 на 4",
 "Giorno 12 h": "Ден 12 ч",
 "Notte 12 h": "Нощ 12 ч",
-"Rotazioni pronte": "Готови графици"
+"Rotazioni pronte": "Готови графици",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Като създадеш профил, приемаш {a}; как обработваме данните ти, обяснява {b}.",
+"condizioni d'uso": "условията за ползване",
+"informativa sulla privacy": "политиката за поверителност",
+"Privacy": "Поверителност",
+"Condizioni d'uso": "Условия за ползване"
 };

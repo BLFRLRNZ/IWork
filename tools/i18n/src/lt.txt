@@ -838,3 +838,8 @@ DuPont
 Diena 12 val.
 Naktis 12 val.
 Paruošti grafikai
+Kuriant paskyrą sutinki su {a}; kaip tvarkome tavo duomenis, paaiškinta {b}.
+naudojimo sąlygomis
+privatumo politikoje
+Privatumas
+Naudojimo sąlygos

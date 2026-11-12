@@ -839,5 +839,10 @@
 "4 e 4": "4 on, 4 off",
 "Giorno 12 h": "Day 12 h",
 "Notte 12 h": "Night 12 h",
-"Rotazioni pronte": "Ready-made rotations"
+"Rotazioni pronte": "Ready-made rotations",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "By creating an account you accept the {a} and confirm you have read the {b}.",
+"condizioni d'uso": "terms of use",
+"informativa sulla privacy": "privacy policy",
+"Privacy": "Privacy",
+"Condizioni d'uso": "Terms of use"
 };

@@ -908,5 +908,10 @@
 "4 e 4": "4 és 4",
 "Giorno 12 h": "Nappal 12 ó",
 "Notte 12 h": "Éjszaka 12 ó",
-"Rotazioni pronte": "Kész beosztások"
+"Rotazioni pronte": "Kész beosztások",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "A fiók létrehozásával elfogadod a {a}, és megerősíted, hogy elolvastad az {b}.",
+"condizioni d'uso": "felhasználási feltételeket",
+"informativa sulla privacy": "adatvédelmi tájékoztatót",
+"Privacy": "Adatvédelem",
+"Condizioni d'uso": "Felhasználási feltételek"
 };

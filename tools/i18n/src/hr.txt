@@ -838,3 +838,8 @@ DuPont
 Dan 12 h
 Noć 12 h
 Gotovi rasporedi
+Izradom računa prihvaćaš {a}, a {b} objašnjavaju kako postupamo s tvojim podacima.
+uvjete korištenja
+pravila privatnosti
+Privatnost
+Uvjeti korištenja

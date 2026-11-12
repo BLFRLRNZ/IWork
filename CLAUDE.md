@@ -28,6 +28,8 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 | `countries.js` | Profili dei paesi: festività, regioni, regole, valuta, lingua. **Generato** da `tools/countries/` (vedi sotto). |
 | `lang/xx.js` | Traduzioni: `(window.MYTURN_I18N=…)["xx"]={…}`. Le chiavi sono le frasi italiane. **Generati** da `tools/i18n/`. |
 | `fonts/pdf-*.ttf` | Font del PDF del mese, con lettere latine, greche e cirilliche (licenza OFL). |
+| `fonts/geist.woff2`, `fonts/geist-mono.woff2` | Caratteri dell'app (Geist, licenza OFL in `fonts/OFL-Geist.txt`), serviti dal sito: dalla 2.12 niente Google Fonts, quindi nessuna richiesta a server esterni. |
+| `_bozze/` | Informativa privacy (`privacy.html`) e condizioni d'uso (`termini.html`), italiano e inglese, con `legal.css` e `legal.js`. **Non pubblicate**: GitHub Pages usa Jekyll, che salta le cartelle con `_`. Titolare: Lorenz Belfiore. Manca l'email di contatto (segnaposto `[email]`). |
 | `vendor/pdfjs/` | pdf.js 6.2.108, versione "legacy" (Apache-2.0). Si carica solo quando si legge una busta paga. |
 | `sw.js` | Service worker: prima prova la rete, poi la cache. La cache si chiama `myturn-vN`: N va aumentato a ogni rilascio. |
 | `version.json` | Versione, data e note di rilascio (it, en, fr, de, es, pt). L'app la usa per proporre l'aggiornamento. |
@@ -114,6 +116,13 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
   - Android, in `android/app/src/main/`: `MainActivity.java` (registra il plugin; con `--ez widgetPreview true` mostra l'anteprima del widget, solo nelle versioni di prova), `MyTurnNativePlugin.java`, `ShiftWidget.java`, `res/layout/myturn_widget.xml`, `res/xml/myturn_widget_info.xml`.
   - Le foto del workflow (avvio, widget, orologio) finiscono nel registro: `tools/app/foto.sh cartella` le estrae.
 - **Prossimi passi (fase 1 della roadmap):** account Apple Developer e Google Play del proprietario; firma e invio a TestFlight dal workflow (chiave API di App Store Connect nei segreti di GitHub; App Group e identificativi `app.myturn`, `.widget`, `.watchkitapp`, `.watchkitapp.widget` da registrare); 12 tester per 14 giorni su Google Play; sveglie (AlarmKit da iOS 26 / AlarmManager); Wear OS; rotazioni pronte; calendario per la famiglia.
+
+## Privacy e condizioni d'uso
+
+- Le pagine sono in `_bozze/`. Per pubblicarle: sostituire `[email]` (anche nei `mailto:`), spostare i quattro file nella cartella principale, mettere `LEGAL_READY=true` in `index.html` e fare un rilascio. Compaiono allora i collegamenti in Impostazioni (in fondo), nel pannello Account e nella registrazione ("Creando l'account accetti…").
+- Nell'app nativa i collegamenti puntano al sito (`SITE` in `index.html`, `https://blfrlrnz.github.io/MyTurn-/`); nella versione web sono relativi. Le pagine scelgono italiano o inglese da sole (`?lang=it|en`).
+- Quello che le pagine promettono e il codice deve mantenere: dati solo sul dispositivo senza account; sincronizzazione cifrata; promemoria web con i turni dei prossimi 45 giorni; uscendo dall'account si cancellano indirizzo per le notifiche e promemoria futuri (`acLogout`); i promemoria passati si cancellano ogni notte (job `myturn-cleanup` di `pg_cron`, migrazione `20261112140000_pulizia_promemoria.sql`); niente cookie, statistiche, pubblicità o file da server esterni. **Se cambia uno di questi punti, va aggiornata anche l'informativa.**
+- Fornitori citati: Supabase (Supabase Pte. Ltd. e Supabase, Inc.; server a Francoforte), Brevo (Brevo SAS, Parigi), GitHub Pages, servizi push dei browser.
 
 ## Server (Supabase)
 

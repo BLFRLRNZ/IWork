@@ -838,3 +838,8 @@ DuPont
 Dia 12 h
 Noite 12 h
 Rotações prontas
+Ao criar a conta, você aceita os {a} e confirma que leu a {b}.
+termos de uso
+política de privacidade
+Privacidade
+Termos de uso

@@ -908,5 +908,10 @@
 "4 e 4": "4 και 4",
 "Giorno 12 h": "Ημέρα 12 ω",
 "Notte 12 h": "Νύχτα 12 ω",
-"Rotazioni pronte": "Έτοιμα προγράμματα"
+"Rotazioni pronte": "Έτοιμα προγράμματα",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Δημιουργώντας λογαριασμό αποδέχεσαι τους {a} και επιβεβαιώνεις ότι διάβασες την {b}.",
+"condizioni d'uso": "όρους χρήσης",
+"informativa sulla privacy": "πολιτική απορρήτου",
+"Privacy": "Απόρρητο",
+"Condizioni d'uso": "Όροι χρήσης"
 };

@@ -838,3 +838,8 @@ DuPont
 Päev 12 h
 Öö 12 h
 Valmis graafikud
+Konto luues nõustud {a} ja kinnitad, et oled lugenud {b}.
+kasutustingimustega
+privaatsuspoliitikat
+Privaatsus
+Kasutustingimused

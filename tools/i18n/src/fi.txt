@@ -838,3 +838,8 @@ DuPont
 Päivä 12 h
 Yö 12 h
 Valmiit vuorokierrot
+Luomalla tilin hyväksyt {a} ja vahvistat lukeneesi {b}.
+käyttöehdot
+tietosuojaselosteen
+Tietosuoja
+Käyttöehdot

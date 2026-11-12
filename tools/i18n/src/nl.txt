@@ -838,3 +838,8 @@ DuPont
 Dag 12 u
 Nacht 12 u
 Kant-en-klare roosters
+Door een account aan te maken ga je akkoord met de {a} en bevestig je dat je de {b} hebt gelezen.
+gebruiksvoorwaarden
+privacyverklaring
+Privacy
+Gebruiksvoorwaarden

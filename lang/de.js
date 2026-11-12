@@ -908,5 +908,10 @@
 "4 e 4": "4 an, 4 frei",
 "Giorno 12 h": "Tag 12 h",
 "Notte 12 h": "Nacht 12 h",
-"Rotazioni pronte": "Fertige Schichtfolgen"
+"Rotazioni pronte": "Fertige Schichtfolgen",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Mit dem Erstellen des Kontos akzeptierst du die {a} und bestätigst, die {b} gelesen zu haben.",
+"condizioni d'uso": "Nutzungsbedingungen",
+"informativa sulla privacy": "Datenschutzerklärung",
+"Privacy": "Datenschutz",
+"Condizioni d'uso": "Nutzungsbedingungen"
 };

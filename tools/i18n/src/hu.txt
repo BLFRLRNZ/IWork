@@ -838,3 +838,8 @@ DuPont
 Nappal 12 ó
 Éjszaka 12 ó
 Kész beosztások
+A fiók létrehozásával elfogadod a {a}, és megerősíted, hogy elolvastad az {b}.
+felhasználási feltételeket
+adatvédelmi tájékoztatót
+Adatvédelem
+Felhasználási feltételek

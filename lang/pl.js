@@ -952,5 +952,10 @@
 "4 e 4": "4 na 4",
 "Giorno 12 h": "Dzień 12 h",
 "Notte 12 h": "Noc 12 h",
-"Rotazioni pronte": "Gotowe grafiki"
+"Rotazioni pronte": "Gotowe grafiki",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Tworząc konto, akceptujesz {a}; jak postępujemy z twoimi danymi, wyjaśnia {b}.",
+"condizioni d'uso": "warunki korzystania",
+"informativa sulla privacy": "polityka prywatności",
+"Privacy": "Prywatność",
+"Condizioni d'uso": "Warunki korzystania"
 };

@@ -931,5 +931,10 @@
 "4 e 4": "4 cu 4",
 "Giorno 12 h": "Zi 12 h",
 "Notte 12 h": "Noapte 12 h",
-"Rotazioni pronte": "Rotații gata făcute"
+"Rotazioni pronte": "Rotații gata făcute",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Creând contul, accepți {a} și confirmi că ai citit {b}.",
+"condizioni d'uso": "condițiile de utilizare",
+"informativa sulla privacy": "politica de confidențialitate",
+"Privacy": "Confidențialitate",
+"Condizioni d'uso": "Condiții de utilizare"
 };

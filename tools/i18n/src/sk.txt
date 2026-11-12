@@ -838,3 +838,8 @@ DuPont
 Deň 12 h
 Noc 12 h
 Hotové rozpisy
+Vytvorením účtu prijímaš {a}; ako narábame s tvojimi údajmi, vysvetľujú {b}.
+podmienky používania
+zásady ochrany súkromia
+Súkromie
+Podmienky používania

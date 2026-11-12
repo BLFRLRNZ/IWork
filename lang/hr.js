@@ -920,5 +920,10 @@
 "4 e 4": "4 i 4",
 "Giorno 12 h": "Dan 12 h",
 "Notte 12 h": "Noć 12 h",
-"Rotazioni pronte": "Gotovi rasporedi"
+"Rotazioni pronte": "Gotovi rasporedi",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Izradom računa prihvaćaš {a}, a {b} objašnjavaju kako postupamo s tvojim podacima.",
+"condizioni d'uso": "uvjete korištenja",
+"informativa sulla privacy": "pravila privatnosti",
+"Privacy": "Privatnost",
+"Condizioni d'uso": "Uvjeti korištenja"
 };

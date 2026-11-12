@@ -908,5 +908,10 @@
 "4 e 4": "4 og 4",
 "Giorno 12 h": "Dag 12 t",
 "Notte 12 h": "Nat 12 t",
-"Rotazioni pronte": "Færdige vagtplaner"
+"Rotazioni pronte": "Færdige vagtplaner",
+"Creando l'account accetti le {a} e confermi di aver letto l'{b}.": "Når du opretter en konto, accepterer du {a} og bekræfter, at du har læst {b}.",
+"condizioni d'uso": "brugsbetingelserne",
+"informativa sulla privacy": "privatlivspolitikken",
+"Privacy": "Privatliv",
+"Condizioni d'uso": "Brugsbetingelser"
 };

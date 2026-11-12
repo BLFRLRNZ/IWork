@@ -838,3 +838,8 @@ DuPont
 Dan 12 ur
 Noč 12 ur
 Pripravljeni razporedi
+Z ustvarjanjem računa sprejmeš {a}; kako ravnamo s tvojimi podatki, pojasnjuje {b}.
+pogoje uporabe
+politika zasebnosti
+Zasebnost
+Pogoji uporabe
