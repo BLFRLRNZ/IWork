@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Обновленията идват от App Store или Google Play, както при другите приложения. Смените ти си остават.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Федералните празници и тези на щатите по закон важат само за служителите в държавния сектор: в частния сектор зависи от договора. Избери щата си, за да видиш празниците му.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Работното време и почивките може да се различават по провинции: провери стойностите по-долу.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Карнавалът и Тяло Христово са „ponto facultativo“. Избери щата си за празниците му; тези на общината добави като местен празник."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Карнавалът и Тяло Христово са „ponto facultativo“. Избери щата си за празниците му; тези на общината добави като местен празник.",
+"Lascia com'è": "Остави както е",
+"Nessun turno da importare con queste scelte.": "С тези избори няма смени за импортиране.",
+"Importa {n} giorno": "Импортирай {n} ден",
+"Importa {n} giorni": {
+"other": "Импортирай {n} дни",
+"one": "Импортирай {n} ден"
+},
+"Importa": "Импортирай",
+"Scegli…": "Избери…",
+"Leggo il PDF…": "Чета PDF файла…",
+"Il PDF è protetto da una password.": "PDF файлът е защитен с парола.",
+"Leggo la foto…": "Чета снимката…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Не намерих смени в този файл. При снимка: по-отблизо, изправена и добре осветена. Ако можеш, използвай PDF файла.",
+"Ho trovato {n} persona: scegli la tua riga.": "Намерих {n} човек: избери своя ред.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Намерих {n} души: избери своя ред.",
+"one": "Намерих {n} човек: избери своя ред."
+},
+"Ho trovato {n} giorno.": "Намерих {n} ден.",
+"Ho trovato {n} giorni.": {
+"other": "Намерих {n} дни.",
+"one": "Намерих {n} ден."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Не мога да прочета този файл. Опитай с PDF или друга снимка.",
+"Il file è troppo grande.": "Файлът е твърде голям.",
+"Importato {n} giorno dal foglio dei turni.": "Импортиран е {n} ден от графика на смените.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Импортирани са {n} дни от графика на смените.",
+"one": "Импортиран е {n} ден от графика на смените."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Мога ли да кача графика на смените от работа?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Да: в {p} избери PDF файла или снимка. Приложението намира таблицата с дните от месеца и по един ред за всеки човек или списък с дати и часове. Избери своя ред, провери какво означава всяко съкращение (ако графикът има легенда, часовете се вземат от нея) и разгледай прегледа преди импортиране. Файлът се чете само на това устройство. При снимка качеството е важно: листът изправен, добре осветен и цял.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Как да виждам смяната в Dynamic Island или да питам Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Когато смяна тече или започва до 3 часа, тя се появява на заключения екран и в Dynamic Island с оставащото време до края; обновява се, когато отвориш приложението. В приложението „Бързи команди“ ще намериш действието „Next shift“ на {app}, което можеш да използваш и със Siri. В Контролния център можеш да добавиш бутона на {app}, който показва следващата смяна и отваря календара.",
+"Leggi il foglio dei turni": "Прочети графика на смените",
+"Da un PDF o da una foto": "От PDF или снимка",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Качи PDF файла или снимка на графика на смените от работа: приложението намира твоите смени и ги отбелязва в календара. Файлът се чете само на това устройство и не се запазва.",
+"Scegli PDF o foto": "Избери PDF или снимка",
+"Scatta una foto": "Направи снимка",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "За снимка: листът изправен, добре осветен и целият в кадър.",
+"Di chi sono i turni?": "Чии са смените?",
+"Cosa vuol dire ogni sigla": "Какво означава всяко съкращение",
+"Sostituisci i giorni già compilati": "Замени вече попълнените дни",
+"Anteprima": "Преглед"
 };

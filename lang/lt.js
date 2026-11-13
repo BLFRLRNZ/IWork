@@ -994,5 +994,57 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Atnaujinimai ateina iš „App Store“ arba „Google Play“, kaip ir kitoms programėlėms. Tavo pamainos lieka savo vietose.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Federalinės ir valstijų šventės pagal įstatymą taikomos tik viešojo sektoriaus darbuotojams: privačiame sektoriuje tai priklauso nuo sutarties. Pasirink savo valstiją, kad matytum jos šventes.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Darbo ir poilsio laikas provincijose gali skirtis: patikrink žemiau esančias reikšmes.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnavalas ir Devintinės yra „ponto facultativo“. Pasirink savo valstiją, kad matytum jos šventes; savivaldybės šventes pridėk kaip vietines."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnavalas ir Devintinės yra „ponto facultativo“. Pasirink savo valstiją, kad matytum jos šventes; savivaldybės šventes pridėk kaip vietines.",
+"Lascia com'è": "Palikti kaip yra",
+"Nessun turno da importare con queste scelte.": "Su šiais pasirinkimais nėra ką importuoti.",
+"Importa {n} giorno": "Importuoti {n} dieną",
+"Importa {n} giorni": {
+"other": "Importuoti {n} dienų",
+"few": "Importuoti {n} dienas",
+"many": "Importuoti {n} dienos",
+"one": "Importuoti {n} dieną"
+},
+"Importa": "Importuoti",
+"Scegli…": "Pasirink…",
+"Leggo il PDF…": "Skaitau PDF…",
+"Il PDF è protetto da una password.": "PDF apsaugotas slaptažodžiu.",
+"Leggo la foto…": "Skaitau nuotrauką…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Šiame faile neradau pamainų. Nuotraukai: iš arčiau, tiesiai ir gerai apšviesta. Jei gali, naudok PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "Radau {n} asmenį: pasirink savo eilutę.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Radau {n} asmenų: pasirink savo eilutę.",
+"few": "Radau {n} asmenis: pasirink savo eilutę.",
+"many": "Radau {n} asmens: pasirink savo eilutę.",
+"one": "Radau {n} asmenį: pasirink savo eilutę."
+},
+"Ho trovato {n} giorno.": "Radau {n} dieną.",
+"Ho trovato {n} giorni.": {
+"other": "Radau {n} dienų.",
+"few": "Radau {n} dienas.",
+"many": "Radau {n} dienos.",
+"one": "Radau {n} dieną."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Negaliu perskaityti šio failo. Pabandyk su PDF ar kita nuotrauka.",
+"Il file è troppo grande.": "Failas per didelis.",
+"Importato {n} giorno dal foglio dei turni.": "Importuota {n} diena iš pamainų grafiko.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Importuota {n} dienų iš pamainų grafiko.",
+"few": "Importuotos {n} dienos iš pamainų grafiko.",
+"many": "Importuota {n} dienos iš pamainų grafiko.",
+"one": "Importuota {n} diena iš pamainų grafiko."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Ar galiu įkelti darbo pamainų grafiką?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Taip: skiltyje {p} pasirink PDF arba nuotrauką. Programėlė suranda lentelę su mėnesio dienomis ir po eilutę kiekvienam asmeniui arba sąrašą su datomis ir laikais. Pasirink savo eilutę, patikrink, ką reiškia kiekvienas sutrumpinimas (jei grafike yra legenda, laikai imami iš jos), ir prieš importuodamas peržiūrėk. Failas skaitomas tik šiame įrenginyje. Nuotraukai svarbi kokybė: lapas tiesiai, gerai apšviestas ir visas.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Kaip matyti pamainą „Dynamic Island“ ar paklausti „Siri“?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Kai pamaina vyksta arba prasideda per 3 valandas, ji rodoma užrakinimo ekrane ir „Dynamic Island“ su laiku iki pabaigos; ji atsinaujina, kai atidarai programėlę. Programėlėje „Spartieji klavišai“ rasi {app} veiksmą „Next shift“, kurį gali naudoti ir su „Siri“. Valdymo centre gali pridėti {app} mygtuką, kuris rodo kitą pamainą ir atidaro kalendorių.",
+"Leggi il foglio dei turni": "Nuskaityti pamainų grafiką",
+"Da un PDF o da una foto": "Iš PDF ar nuotraukos",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Įkelk darbo pamainų grafiko PDF arba nuotrauką: programėlė suranda tavo pamainas ir pažymi jas kalendoriuje. Failas skaitomas tik šiame įrenginyje ir neišsaugomas.",
+"Scegli PDF o foto": "Pasirinkti PDF ar nuotrauką",
+"Scatta una foto": "Fotografuoti",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Nuotraukai: lapas tiesiai, gerai apšviestas ir visas kadre.",
+"Di chi sono i turni?": "Kieno tai pamainos?",
+"Cosa vuol dire ogni sigla": "Ką reiškia kiekvienas sutrumpinimas",
+"Sostituisci i giorni già compilati": "Pakeisti jau užpildytas dienas",
+"Anteprima": "Peržiūra"
 };

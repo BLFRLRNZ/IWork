@@ -1,6 +1,7 @@
 // Ponte tra la pagina dell'app (wgSync in index.html) e il codice nativo:
 // salva i prossimi turni nell'App Group, aggiorna i widget e li manda all'Apple Watch.
 import Foundation
+import UIKit
 import Capacitor
 import WidgetKit
 import WatchConnectivity
@@ -13,7 +14,9 @@ public class MyTurnNativePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "setData", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "alarmState", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "alarmRequest", returnType: CAPPluginReturnPromise),
-        CAPPluginMethod(name: "setAlarms", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "setAlarms", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "ocr", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "takeLink", returnType: CAPPluginReturnPromise)
     ]
 
     override public func load() { WatchLink.shared.start() }
@@ -23,7 +26,25 @@ public class MyTurnNativePlugin: CAPPlugin, CAPBridgedPlugin {
         ShiftStore.save(json)
         WidgetCenter.shared.reloadAllTimelines()
         WatchLink.shared.send(json)
+        ShiftLive.update()
+        if #available(iOS 18.0, *) { ControlCenter.shared.reloadAllControls() }
         call.resolve()
+    }
+
+    // foglio dei turni: parole lette dalla foto (Vision), vedi imOcr in index.html
+    @objc func ocr(_ call: CAPPluginCall) {
+        guard let b64 = call.getString("data"), let data = Data(base64Encoded: b64),
+              let img = UIImage(data: data), let cg = img.cgImage else { call.reject("immagine"); return }
+        DispatchQueue.global(qos: .userInitiated).async {
+            do { call.resolve(["words": try ShiftOCR.words(cg)]) } catch { call.reject("ocr") }
+        }
+    }
+
+    // aperta dal Centro di Controllo: la pagina mostra il mese di oggi
+    @objc func takeLink(_ call: CAPPluginCall) {
+        let d = ShiftStore.defaults
+        if d.bool(forKey: MYTURN_OPEN_TODAY) { d.set(false, forKey: MYTURN_OPEN_TODAY); call.resolve(["url": "myturn://today"]) }
+        else { call.resolve([:]) }
     }
 
     // sveglie (AlarmKit, iOS 26+)

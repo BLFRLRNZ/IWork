@@ -992,5 +992,57 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Aktualizace přicházejí z App Storu nebo Google Play, stejně jako u jiných aplikací. Tvoje směny zůstanou, kde jsou.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Federální svátky i svátky jednotlivých států platí ze zákona jen pro zaměstnance veřejného sektoru: v soukromém sektoru záleží na smlouvě. Vyber svůj stát a uvidíš jeho svátky.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Pracovní doba a odpočinek se mohou lišit podle provincie: zkontroluj hodnoty níže.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval a Boží tělo jsou „ponto facultativo“. Vyber svůj stát pro jeho svátky; svátky obce přidej jako místní svátek."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval a Boží tělo jsou „ponto facultativo“. Vyber svůj stát pro jeho svátky; svátky obce přidej jako místní svátek.",
+"Lascia com'è": "Nechat beze změny",
+"Nessun turno da importare con queste scelte.": "S touto volbou nejsou žádné směny k importu.",
+"Importa {n} giorno": "Importovat {n} den",
+"Importa {n} giorni": {
+"other": "Importovat {n} dní",
+"few": "Importovat {n} dny",
+"many": "Importovat {n} dne",
+"one": "Importovat {n} den"
+},
+"Importa": "Importovat",
+"Scegli…": "Vyber…",
+"Leggo il PDF…": "Čtu PDF…",
+"Il PDF è protetto da una password.": "PDF je chráněné heslem.",
+"Leggo la foto…": "Čtu fotku…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "V tomto souboru jsem nenašel žádné směny. U fotky: blíž, rovně a dobře osvětlené. Pokud můžeš, použij PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "Našel jsem {n} osobu: vyber svůj řádek.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Našel jsem {n} osob: vyber svůj řádek.",
+"few": "Našel jsem {n} osoby: vyber svůj řádek.",
+"many": "Našel jsem {n} osoby: vyber svůj řádek.",
+"one": "Našel jsem {n} osobu: vyber svůj řádek."
+},
+"Ho trovato {n} giorno.": "Našel jsem {n} den.",
+"Ho trovato {n} giorni.": {
+"other": "Našel jsem {n} dní.",
+"few": "Našel jsem {n} dny.",
+"many": "Našel jsem {n} dne.",
+"one": "Našel jsem {n} den."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Tento soubor nemůžu přečíst. Zkus PDF nebo jinou fotku.",
+"Il file è troppo grande.": "Soubor je příliš velký.",
+"Importato {n} giorno dal foglio dei turni.": "Importován {n} den z rozpisu směn.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Importováno {n} dní z rozpisu směn.",
+"few": "Importovány {n} dny z rozpisu směn.",
+"many": "Importováno {n} dne z rozpisu směn.",
+"one": "Importován {n} den z rozpisu směn."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Můžu nahrát rozpis směn z práce?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Ano: v {p} vyber PDF nebo fotku. Aplikace najde tabulku se dny v měsíci a jedním řádkem na osobu, nebo seznam s daty a časy. Vyber svůj řádek, zkontroluj, co znamená každá zkratka (pokud má rozpis legendu, časy se vezmou z ní), a před importem se podívej na náhled. Soubor se čte jen na tomto zařízení. U fotky záleží na kvalitě: list rovně, dobře osvětlený a celý.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Jak vidět směnu na Dynamic Islandu nebo se zeptat Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Když směna probíhá nebo začíná do 3 hodin, objeví se na zamčené obrazovce a na Dynamic Islandu se zbývajícím časem do konce; aktualizuje se, když otevřeš aplikaci. V aplikaci Zkratky najdeš akci „Next shift“ aplikace {app}, kterou můžeš používat i se Siri. V Ovládacím centru můžeš přidat tlačítko {app}, které ukazuje příští směnu a otevírá kalendář.",
+"Leggi il foglio dei turni": "Načíst rozpis směn",
+"Da un PDF o da una foto": "Z PDF nebo z fotky",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Nahraj PDF nebo fotku rozpisu směn z práce: aplikace najde tvoje směny a zapíše je do kalendáře. Soubor se čte jen na tomto zařízení a neukládá se.",
+"Scegli PDF o foto": "Vybrat PDF nebo fotku",
+"Scatta una foto": "Vyfotit",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "U fotky: list rovně, dobře osvětlený a celý v záběru.",
+"Di chi sono i turni?": "Čí jsou tyhle směny?",
+"Cosa vuol dire ogni sigla": "Co znamená každá zkratka",
+"Sostituisci i giorni già compilati": "Nahradit už vyplněné dny",
+"Anteprima": "Náhled"
 };

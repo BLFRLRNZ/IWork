@@ -875,3 +875,35 @@ Ažuriranja stižu iz App Storea ili s Google Playa, kao i za druge aplikacije. 
 Savezni blagdani i blagdani saveznih država po zakonu vrijede samo za zaposlene u javnom sektoru: u privatnom sektoru ovisi o ugovoru. Odaberi svoju saveznu državu da vidiš njezine blagdane.
 Radno vrijeme i odmor mogu se razlikovati po pokrajinama: provjeri vrijednosti ispod.
 Karneval i Tijelovo su „ponto facultativo”. Odaberi svoju državu za njezine blagdane; blagdane općine dodaj kao lokalni blagdan.
+Ostavi kako jest
+S ovim izborima nema smjena za uvoz.
+Uvezi {n} dan
+Uvezi {n} dana ‖few: Uvezi {n} dana
+Uvezi
+Odaberi…
+Čitam PDF…
+PDF je zaštićen lozinkom.
+Čitam fotografiju…
+U ovoj datoteci nisam našao smjene. Za fotografiju: bliže, ravno i dobro osvijetljeno. Ako možeš, koristi PDF.
+Našao sam {n} osobu: odaberi svoj redak.
+Našao sam {n} osoba: odaberi svoj redak. ‖few: Našao sam {n} osobe: odaberi svoj redak.
+Našao sam {n} dan.
+Našao sam {n} dana. ‖few: Našao sam {n} dana.
+Ne mogu pročitati ovu datoteku. Pokušaj s PDF-om ili drugom fotografijom.
+Datoteka je prevelika.
+Uvezen je {n} dan iz rasporeda smjena.
+Uvezeno je {n} dana iz rasporeda smjena. ‖few: Uvezena su {n} dana iz rasporeda smjena.
+Mogu li učitati raspored smjena s posla?
+Da: u {p} odaberi PDF ili fotografiju. Aplikacija pronalazi tablicu s danima u mjesecu i po jednim retkom za svaku osobu ili popis s datumima i satima. Odaberi svoj redak, provjeri što znači svaka oznaka (ako raspored ima legendu, sati se uzimaju iz nje) i pogledaj pregled prije uvoza. Datoteka se čita samo na ovom uređaju. Kod fotografije važna je kvaliteta: list ravno, dobro osvijetljen i cijeli.
+Kako vidjeti smjenu na Dynamic Islandu ili pitati Siri?
+Kad smjena traje ili počinje u sljedeća 3 sata, prikazuje se na zaključanom zaslonu i na Dynamic Islandu s vremenom do kraja; osvježava se kad otvoriš aplikaciju. U aplikaciji Prečaci naći ćeš radnju „Next shift” aplikacije {app}, koju možeš koristiti i sa Siri. U Kontrolnom centru možeš dodati gumb aplikacije {app} koji pokazuje sljedeću smjenu i otvara kalendar.
+Učitaj raspored smjena
+Iz PDF-a ili fotografije
+Učitaj PDF ili fotografiju rasporeda smjena s posla: aplikacija pronalazi tvoje smjene i upisuje ih u kalendar. Datoteka se čita samo na ovom uređaju i ne sprema se.
+Odaberi PDF ili fotografiju
+Snimi fotografiju
+Za fotografiju: list ravno, dobro osvijetljen i cijeli u kadru.
+Čije su ovo smjene?
+Što znači svaka oznaka
+Zamijeni već ispunjene dane
+Pregled

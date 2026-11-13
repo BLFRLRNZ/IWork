@@ -875,3 +875,35 @@ Päivitykset tulevat App Storesta tai Google Playsta kuten muillekin sovelluksil
 Liittovaltion ja osavaltioiden pyhät koskevat lain mukaan vain julkisen sektorin työntekijöitä: yksityisellä sektorilla se riippuu sopimuksesta. Valitse osavaltiosi, niin näet sen pyhät.
 Työ- ja lepoajat voivat vaihdella provinsseittain: tarkista alla olevat arvot.
 Karnevaali ja Kristuksen ruumiin juhla ovat ”ponto facultativo”. Valitse osavaltiosi, niin näet sen pyhät; lisää kuntasi pyhät paikallisina pyhinä.
+Jätä ennalleen
+Näillä valinnoilla ei ole tuotavia vuoroja.
+Tuo {n} päivä
+Tuo {n} päivää
+Tuo
+Valitse…
+Luen PDF:ää…
+PDF on suojattu salasanalla.
+Luen kuvaa…
+En löytänyt tästä tiedostosta vuoroja. Kuvassa: lähempää, suoraan ja hyvässä valossa. Käytä PDF:ää, jos voit.
+Löysin {n} henkilön: valitse oma rivisi.
+Löysin {n} henkilöä: valitse oma rivisi.
+Löysin {n} päivän.
+Löysin {n} päivää.
+En pysty lukemaan tätä tiedostoa. Kokeile PDF:ää tai toista kuvaa.
+Tiedosto on liian suuri.
+Tuotiin {n} päivä vuorolistasta.
+Tuotiin {n} päivää vuorolistasta.
+Voinko ladata työpaikan vuorolistan?
+Kyllä: valitse kohdassa {p} PDF tai kuva. Sovellus löytää taulukon, jossa on kuukauden päivät ja rivi kullekin henkilölle, tai luettelon päivämäärineen ja kellonaikoineen. Valitse oma rivisi, tarkista mitä kukin lyhenne tarkoittaa (jos listassa on selite, kellonajat otetaan siitä) ja katso esikatselu ennen tuontia. Tiedosto luetaan vain tällä laitteella. Kuvassa laatu ratkaisee: arkki suoraan, hyvin valaistuna ja kokonaan.
+Miten näen vuoroni Dynamic Islandissa tai kysyn Siriltä?
+Kun vuoro on käynnissä tai alkaa 3 tunnin sisällä, se näkyy lukitusnäytöllä ja Dynamic Islandissa jäljellä olevan ajan kanssa; se päivittyy, kun avaat sovelluksen. Pikakomennot-sovelluksesta löydät {app}-toiminnon ”Next shift”, jota voit käyttää myös Sirin kanssa. Ohjauskeskukseen voit lisätä {app}-painikkeen, joka näyttää seuraavan vuorosi ja avaa kalenterin.
+Lue vuorolista
+PDF:stä tai kuvasta
+Lataa työpaikan vuorolistan PDF tai kuva: sovellus löytää vuorosi ja merkitsee ne kalenteriin. Tiedosto luetaan vain tällä laitteella eikä sitä tallenneta.
+Valitse PDF tai kuva
+Ota kuva
+Kuvassa: arkki suoraan, hyvin valaistuna ja kokonaan kuvassa.
+Kenen vuoroja nämä ovat?
+Mitä kukin lyhenne tarkoittaa
+Korvaa jo täytetyt päivät
+Esikatselu

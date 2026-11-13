@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Οι ενημερώσεις έρχονται από το App Store ή το Google Play, όπως και στις άλλες εφαρμογές. Οι βάρδιές σου μένουν εκεί που είναι.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Οι ομοσπονδιακές αργίες και οι αργίες των πολιτειών ισχύουν από τον νόμο μόνο για τους δημόσιους υπαλλήλους: στον ιδιωτικό τομέα εξαρτάται από τη σύμβαση. Διάλεξε την πολιτεία σου για να δεις τις αργίες της.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Ωράριο και ανάπαυση μπορεί να διαφέρουν ανά επαρχία: έλεγξε τις τιμές παρακάτω.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Το Καρναβάλι και του Σώματος του Χριστού είναι «ponto facultativo». Διάλεξε την πολιτεία σου για τις αργίες της· του δήμου σου πρόσθεσέ τες ως τοπική αργία."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Το Καρναβάλι και του Σώματος του Χριστού είναι «ponto facultativo». Διάλεξε την πολιτεία σου για τις αργίες της· του δήμου σου πρόσθεσέ τες ως τοπική αργία.",
+"Lascia com'è": "Άφησέ το ως έχει",
+"Nessun turno da importare con queste scelte.": "Με αυτές τις επιλογές δεν υπάρχουν βάρδιες για εισαγωγή.",
+"Importa {n} giorno": "Εισαγωγή {n} ημέρας",
+"Importa {n} giorni": {
+"other": "Εισαγωγή {n} ημερών",
+"one": "Εισαγωγή {n} ημέρας"
+},
+"Importa": "Εισαγωγή",
+"Scegli…": "Διάλεξε…",
+"Leggo il PDF…": "Διαβάζω το PDF…",
+"Il PDF è protetto da una password.": "Το PDF προστατεύεται με κωδικό.",
+"Leggo la foto…": "Διαβάζω τη φωτογραφία…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Δεν βρήκα βάρδιες σε αυτό το αρχείο. Με φωτογραφία: πιο κοντά, ίσια και με καλό φως. Αν μπορείς, χρησιμοποίησε το PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "Βρήκα {n} άτομο: διάλεξε τη γραμμή σου.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Βρήκα {n} άτομα: διάλεξε τη γραμμή σου.",
+"one": "Βρήκα {n} άτομο: διάλεξε τη γραμμή σου."
+},
+"Ho trovato {n} giorno.": "Βρήκα {n} ημέρα.",
+"Ho trovato {n} giorni.": {
+"other": "Βρήκα {n} ημέρες.",
+"one": "Βρήκα {n} ημέρα."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Δεν μπορώ να διαβάσω αυτό το αρχείο. Δοκίμασε με PDF ή άλλη φωτογραφία.",
+"Il file è troppo grande.": "Το αρχείο είναι πολύ μεγάλο.",
+"Importato {n} giorno dal foglio dei turni.": "Εισήχθη {n} ημέρα από το πρόγραμμα βαρδιών.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Εισήχθησαν {n} ημέρες από το πρόγραμμα βαρδιών.",
+"one": "Εισήχθη {n} ημέρα από το πρόγραμμα βαρδιών."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Μπορώ να ανεβάσω το πρόγραμμα βαρδιών της δουλειάς;",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Ναι: στο {p} διάλεξε το PDF ή μια φωτογραφία. Η εφαρμογή βρίσκει τον πίνακα με τις ημέρες του μήνα και μία γραμμή ανά άτομο ή μια λίστα με ημερομηνίες και ώρες. Διάλεξε τη γραμμή σου, έλεγξε τι σημαίνει κάθε συντομογραφία (αν το πρόγραμμα έχει υπόμνημα, οι ώρες παίρνονται από εκεί) και δες την προεπισκόπηση πριν από την εισαγωγή. Το αρχείο διαβάζεται μόνο σε αυτή τη συσκευή. Με φωτογραφία μετράει η ποιότητα: φύλλο ίσιο, καλά φωτισμένο και ολόκληρο.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Πώς βλέπω τη βάρδια στο Dynamic Island ή ρωτάω τη Siri;",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Όταν μια βάρδια είναι σε εξέλιξη ή ξεκινά μέσα σε 3 ώρες, εμφανίζεται στην οθόνη κλειδώματος και στο Dynamic Island με τον χρόνο που μένει ως το τέλος· ενημερώνεται όταν ανοίγεις την εφαρμογή. Στην εφαρμογή Συντομεύσεις θα βρεις την ενέργεια «Next shift» του {app}, που μπορείς να χρησιμοποιήσεις και με τη Siri. Στο Κέντρο ελέγχου μπορείς να προσθέσεις το κουμπί του {app}, που δείχνει την επόμενη βάρδια και ανοίγει το ημερολόγιο.",
+"Leggi il foglio dei turni": "Διάβασε το πρόγραμμα βαρδιών",
+"Da un PDF o da una foto": "Από PDF ή φωτογραφία",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Ανέβασε το PDF ή μια φωτογραφία του προγράμματος βαρδιών της δουλειάς: η εφαρμογή βρίσκει τις βάρδιές σου και τις σημειώνει στο ημερολόγιο. Το αρχείο διαβάζεται μόνο σε αυτή τη συσκευή και δεν αποθηκεύεται.",
+"Scegli PDF o foto": "Διάλεξε PDF ή φωτογραφία",
+"Scatta una foto": "Τράβηξε φωτογραφία",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Για φωτογραφία: φύλλο ίσιο, καλά φωτισμένο και ολόκληρο στο κάδρο.",
+"Di chi sono i turni?": "Ποιανού είναι οι βάρδιες;",
+"Cosa vuol dire ogni sigla": "Τι σημαίνει κάθε συντομογραφία",
+"Sostituisci i giorni già compilati": "Αντικατάσταση ημερών που είναι ήδη συμπληρωμένες",
+"Anteprima": "Προεπισκόπηση"
 };

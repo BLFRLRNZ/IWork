@@ -875,3 +875,35 @@ Aktualizacje przychodzą z App Store lub Google Play, jak w innych aplikacjach. 
 Święta federalne i stanowe z mocy prawa dotyczą tylko pracowników sektora publicznego: w sektorze prywatnym zależy to od umowy. Wybierz swój stan, aby zobaczyć jego święta.
 Czas pracy i odpoczynku może się różnić między prowincjami: sprawdź wartości poniżej.
 Karnawał i Boże Ciało to „ponto facultativo”. Wybierz swój stan, aby zobaczyć jego święta; święta gminy dodaj jako święto lokalne.
+Zostaw bez zmian
+Przy tych wyborach nie ma zmian do zaimportowania.
+Importuj {n} dzień
+Importuj {n} dnia ‖few: Importuj {n} dni ‖many: Importuj {n} dni
+Importuj
+Wybierz…
+Czytam PDF…
+PDF jest chroniony hasłem.
+Czytam zdjęcie…
+Nie znalazłem zmian w tym pliku. Przy zdjęciu: bliżej, prosto i w dobrym świetle. Jeśli możesz, użyj PDF.
+Znalazłem {n} osobę: wybierz swój wiersz.
+Znalazłem {n} osoby: wybierz swój wiersz. ‖few: Znalazłem {n} osoby: wybierz swój wiersz. ‖many: Znalazłem {n} osób: wybierz swój wiersz.
+Znalazłem {n} dzień.
+Znalazłem {n} dnia. ‖few: Znalazłem {n} dni. ‖many: Znalazłem {n} dni.
+Nie mogę odczytać tego pliku. Spróbuj z PDF albo innym zdjęciem.
+Plik jest za duży.
+Zaimportowano {n} dzień z grafiku.
+Zaimportowano {n} dnia z grafiku. ‖few: Zaimportowano {n} dni z grafiku. ‖many: Zaimportowano {n} dni z grafiku.
+Czy mogę wczytać grafik z mojej firmy?
+Tak: w {p} wybierz PDF albo zdjęcie. Aplikacja znajdzie tabelę z dniami miesiąca i jednym wierszem na osobę albo listę z datami i godzinami. Wybierz swój wiersz, sprawdź, co oznacza każdy skrót (jeśli grafik ma legendę, godziny są brane z niej) i obejrzyj podgląd przed importem. Plik jest czytany tylko na tym urządzeniu. Przy zdjęciu liczy się jakość: kartka prosto, dobrze oświetlona i w całości.
+Jak zobaczyć zmianę na Dynamic Island albo zapytać Siri?
+Gdy zmiana trwa albo zaczyna się w ciągu 3 godzin, pojawia się na ekranie blokady i na Dynamic Island z czasem do końca; odświeża się, gdy otwierasz aplikację. W aplikacji Skróty znajdziesz czynność „Next shift” aplikacji {app}, której możesz używać też z Siri. W centrum sterowania możesz dodać przycisk {app}: pokazuje najbliższą zmianę i otwiera kalendarz.
+Wczytaj grafik
+Z PDF albo zdjęcia
+Wczytaj PDF albo zdjęcie grafiku z firmy: aplikacja znajdzie twoje zmiany i zaznaczy je w kalendarzu. Plik jest czytany tylko na tym urządzeniu i nie jest zapisywany.
+Wybierz PDF lub zdjęcie
+Zrób zdjęcie
+Przy zdjęciu: kartka prosto, dobrze oświetlona i cała w kadrze.
+Czyje to zmiany?
+Co oznacza każdy skrót
+Zastąp już wypełnione dni
+Podgląd

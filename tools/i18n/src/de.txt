@@ -875,3 +875,35 @@ Updates kommen über den App Store oder Google Play, wie bei anderen Apps. Deine
 Bundes- und Staatsfeiertage gelten gesetzlich nur für Beschäftigte im öffentlichen Dienst: In der Privatwirtschaft hängt es vom Vertrag ab. Wähle deinen Bundesstaat, um seine Feiertage zu sehen.
 Arbeits- und Ruhezeiten können je nach Provinz verschieden sein: Prüfe die Werte unten.
 Karneval und Fronleichnam sind „ponto facultativo“. Wähle deinen Bundesstaat für seine Feiertage; trage die deiner Gemeinde als lokalen Feiertag ein.
+So lassen
+Mit dieser Auswahl gibt es keine Schichten zu importieren.
+{n} Tag importieren
+{n} Tage importieren
+Importieren
+Auswählen …
+PDF wird gelesen …
+Das PDF ist mit einem Passwort geschützt.
+Foto wird gelesen …
+In dieser Datei habe ich keine Schichten gefunden. Bei einem Foto: näher, gerade und gut beleuchtet. Wenn möglich, nimm das PDF.
+Ich habe {n} Person gefunden: Wähle deine Zeile.
+Ich habe {n} Personen gefunden: Wähle deine Zeile.
+Ich habe {n} Tag gefunden.
+Ich habe {n} Tage gefunden.
+Ich kann diese Datei nicht lesen. Versuche es mit einem PDF oder einem anderen Foto.
+Die Datei ist zu groß.
+{n} Tag aus dem Dienstplan importiert.
+{n} Tage aus dem Dienstplan importiert.
+Kann ich den Dienstplan meiner Firma hochladen?
+Ja: Wähle unter {p} das PDF oder ein Foto. Die App findet die Tabelle mit den Tagen des Monats und einer Zeile pro Person oder eine Liste mit Datum und Uhrzeiten. Wähle deine Zeile, prüfe, was jedes Kürzel bedeutet (hat der Plan eine Legende, kommen die Uhrzeiten von dort), und sieh dir die Vorschau an, bevor du importierst. Die Datei wird nur auf diesem Gerät gelesen. Bei einem Foto zählt die Qualität: Blatt gerade, gut beleuchtet und vollständig.
+Wie sehe ich meine Schicht in der Dynamic Island oder frage Siri?
+Wenn eine Schicht läuft oder in den nächsten 3 Stunden beginnt, erscheint sie auf dem Sperrbildschirm und in der Dynamic Island mit der Zeit bis zum Ende; sie aktualisiert sich, wenn du die App öffnest. Du kannst fragen: „Hey Siri, nächste Schicht in {app}“. Im Kontrollzentrum kannst du die Taste von {app} hinzufügen: Sie zeigt deine nächste Schicht und öffnet den Kalender.
+Dienstplan einlesen
+Aus einem PDF oder Foto
+Lade das PDF oder ein Foto des Dienstplans deiner Firma: Die App findet deine Schichten und trägt sie in den Kalender ein. Die Datei wird nur auf diesem Gerät gelesen und nicht gespeichert.
+PDF oder Foto wählen
+Foto aufnehmen
+Bei einem Foto: Blatt gerade, gut beleuchtet und ganz im Bild.
+Wessen Schichten sind das?
+Was jedes Kürzel bedeutet
+Bereits ausgefüllte Tage ersetzen
+Vorschau

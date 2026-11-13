@@ -875,3 +875,35 @@ As atualizações chegam pela App Store ou pelo Google Play, como nos outros app
 Os feriados federais e os de cada estado só valem por lei para os funcionários públicos: no privado depende do contrato. Escolha o seu estado para ver os feriados dele.
 Horários e descansos podem mudar de província para província: verifique os valores abaixo.
 Carnaval e Corpus Christi são ponto facultativo. Escolha o seu estado para os feriados estaduais; os do município, adicione como feriado local.
+Deixar como está
+Não há turnos para importar com essas escolhas.
+Importar {n} dia
+Importar {n} dias
+Importar
+Escolha…
+Lendo o PDF…
+O PDF está protegido por senha.
+Lendo a foto…
+Não encontrei turnos neste arquivo. Com uma foto: mais perto, reta e bem iluminada. Se puder, use o PDF.
+Encontrei {n} pessoa: escolha a sua linha.
+Encontrei {n} pessoas: escolha a sua linha.
+Encontrei {n} dia.
+Encontrei {n} dias.
+Não consigo ler este arquivo. Tente com um PDF ou outra foto.
+O arquivo é grande demais.
+Importado {n} dia da escala.
+Importados {n} dias da escala.
+Posso carregar a escala de turnos da minha empresa?
+Sim: em {p} escolha o PDF ou uma foto. O app encontra a tabela com os dias do mês e uma linha por pessoa, ou uma lista com datas e horários. Escolha a sua linha, confira o que significa cada sigla (se a escala tiver legenda, os horários vêm dela) e veja a prévia antes de importar. O arquivo só é lido neste dispositivo. Com uma foto, a qualidade importa: folha reta, bem iluminada e inteira.
+Como vejo meu turno na Dynamic Island ou pergunto à Siri?
+Quando um turno está em andamento ou começa em até 3 horas, ele aparece na Tela Bloqueada e na Dynamic Island com o tempo que falta para terminar; ele se atualiza quando você abre o app. Você pode dizer «E aí Siri, próximo turno no {app}». Na Central de Controle você pode adicionar o controle do {app}, que mostra o próximo turno e abre o calendário.
+Ler a escala de turnos
+De um PDF ou de uma foto
+Carregue o PDF ou uma foto da escala de turnos da sua empresa: o app encontra seus turnos e marca no calendário. O arquivo só é lido neste dispositivo e não é salvo.
+Escolher PDF ou foto
+Tirar uma foto
+Para uma foto: folha reta, bem iluminada e inteira no enquadramento.
+De quem são os turnos?
+O que significa cada sigla
+Substituir os dias já preenchidos
+Prévia

@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "A frissítések az App Store-ból vagy a Google Playről érkeznek, mint más appoknál. A műszakjaid megmaradnak.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "A szövetségi és az állami ünnepek törvény szerint csak a közszféra dolgozóira vonatkoznak: a magánszektorban a szerződéstől függ. Válaszd ki az államodat, hogy lásd az ünnepeit.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "A munka- és pihenőidő tartományonként eltérhet: ellenőrizd az alábbi értékeket.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "A karnevál és az úrnapja „ponto facultativo”. Válaszd ki az államodat az ünnepeiért; a településedét add hozzá helyi ünnepként."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "A karnevál és az úrnapja „ponto facultativo”. Válaszd ki az államodat az ünnepeiért; a településedét add hozzá helyi ünnepként.",
+"Lascia com'è": "Maradjon így",
+"Nessun turno da importare con queste scelte.": "Ezekkel a beállításokkal nincs mit importálni.",
+"Importa {n} giorno": "{n} nap importálása",
+"Importa {n} giorni": {
+"other": "{n} nap importálása",
+"one": "{n} nap importálása"
+},
+"Importa": "Importálás",
+"Scegli…": "Válassz…",
+"Leggo il PDF…": "Olvasom a PDF-et…",
+"Il PDF è protetto da una password.": "A PDF jelszóval védett.",
+"Leggo la foto…": "Olvasom a fotót…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Ebben a fájlban nem találtam műszakokat. Fotónál: közelebbről, egyenesen és jó fényben. Ha tudod, használd a PDF-et.",
+"Ho trovato {n} persona: scegli la tua riga.": "{n} személyt találtam: válaszd ki a sorodat.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "{n} személyt találtam: válaszd ki a sorodat.",
+"one": "{n} személyt találtam: válaszd ki a sorodat."
+},
+"Ho trovato {n} giorno.": "{n} napot találtam.",
+"Ho trovato {n} giorni.": {
+"other": "{n} napot találtam.",
+"one": "{n} napot találtam."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Ezt a fájlt nem tudom elolvasni. Próbáld PDF-fel vagy egy másik fotóval.",
+"Il file è troppo grande.": "A fájl túl nagy.",
+"Importato {n} giorno dal foglio dei turni.": "{n} nap importálva a beosztásból.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "{n} nap importálva a beosztásból.",
+"one": "{n} nap importálva a beosztásból."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Feltölthetem a munkahelyi beosztást?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Igen: itt: {p} válaszd ki a PDF-et vagy egy fotót. Az app megtalálja a táblázatot a hónap napjaival és személyenként egy sorral, vagy egy listát dátumokkal és időpontokkal. Válaszd ki a sorodat, ellenőrizd, mit jelent az egyes rövidítés (ha a beosztásnak van jelmagyarázata, az időpontokat onnan veszi), és importálás előtt nézd meg az előnézetet. A fájlt csak ez az eszköz olvassa. Fotónál a minőség számít: a lap egyenesen, jól megvilágítva és egészben legyen.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Hogyan látom a műszakot a Dynamic Islanden, vagy kérdezem meg Sirit?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Ha egy műszak tart, vagy 3 órán belül kezdődik, megjelenik a zárolási képernyőn és a Dynamic Islanden a végéig hátralévő idővel; frissül, amikor megnyitod az appot. A Parancsok appban megtalálod a(z) {app} „Next shift” műveletét, amelyet Sirivel is használhatsz. A Vezérlőközpontba felveheted a(z) {app} gombját, amely mutatja a következő műszakot és megnyitja a naptárat.",
+"Leggi il foglio dei turni": "Beosztás beolvasása",
+"Da un PDF o da una foto": "PDF-ből vagy fotóból",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Töltsd fel a munkahelyi beosztás PDF-jét vagy fotóját: az app megtalálja a műszakjaidat és beírja őket a naptárba. A fájlt csak ez az eszköz olvassa, és nem menti el.",
+"Scegli PDF o foto": "PDF vagy fotó kiválasztása",
+"Scatta una foto": "Fotó készítése",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Fotónál: a lap egyenesen, jól megvilágítva és egészen a képen legyen.",
+"Di chi sono i turni?": "Kinek a műszakjai ezek?",
+"Cosa vuol dire ogni sigla": "Mit jelent az egyes rövidítés",
+"Sostituisci i giorni già compilati": "A már kitöltött napok cseréje",
+"Anteprima": "Előnézet"
 };

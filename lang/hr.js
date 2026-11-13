@@ -961,5 +961,53 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Ažuriranja stižu iz App Storea ili s Google Playa, kao i za druge aplikacije. Tvoje smjene ostaju gdje jesu.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Savezni blagdani i blagdani saveznih država po zakonu vrijede samo za zaposlene u javnom sektoru: u privatnom sektoru ovisi o ugovoru. Odaberi svoju saveznu državu da vidiš njezine blagdane.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Radno vrijeme i odmor mogu se razlikovati po pokrajinama: provjeri vrijednosti ispod.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval i Tijelovo su „ponto facultativo”. Odaberi svoju državu za njezine blagdane; blagdane općine dodaj kao lokalni blagdan."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval i Tijelovo su „ponto facultativo”. Odaberi svoju državu za njezine blagdane; blagdane općine dodaj kao lokalni blagdan.",
+"Lascia com'è": "Ostavi kako jest",
+"Nessun turno da importare con queste scelte.": "S ovim izborima nema smjena za uvoz.",
+"Importa {n} giorno": "Uvezi {n} dan",
+"Importa {n} giorni": {
+"other": "Uvezi {n} dana",
+"few": "Uvezi {n} dana",
+"one": "Uvezi {n} dan"
+},
+"Importa": "Uvezi",
+"Scegli…": "Odaberi…",
+"Leggo il PDF…": "Čitam PDF…",
+"Il PDF è protetto da una password.": "PDF je zaštićen lozinkom.",
+"Leggo la foto…": "Čitam fotografiju…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "U ovoj datoteci nisam našao smjene. Za fotografiju: bliže, ravno i dobro osvijetljeno. Ako možeš, koristi PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "Našao sam {n} osobu: odaberi svoj redak.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Našao sam {n} osoba: odaberi svoj redak.",
+"few": "Našao sam {n} osobe: odaberi svoj redak.",
+"one": "Našao sam {n} osobu: odaberi svoj redak."
+},
+"Ho trovato {n} giorno.": "Našao sam {n} dan.",
+"Ho trovato {n} giorni.": {
+"other": "Našao sam {n} dana.",
+"few": "Našao sam {n} dana.",
+"one": "Našao sam {n} dan."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Ne mogu pročitati ovu datoteku. Pokušaj s PDF-om ili drugom fotografijom.",
+"Il file è troppo grande.": "Datoteka je prevelika.",
+"Importato {n} giorno dal foglio dei turni.": "Uvezen je {n} dan iz rasporeda smjena.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Uvezeno je {n} dana iz rasporeda smjena.",
+"few": "Uvezena su {n} dana iz rasporeda smjena.",
+"one": "Uvezen je {n} dan iz rasporeda smjena."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Mogu li učitati raspored smjena s posla?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Da: u {p} odaberi PDF ili fotografiju. Aplikacija pronalazi tablicu s danima u mjesecu i po jednim retkom za svaku osobu ili popis s datumima i satima. Odaberi svoj redak, provjeri što znači svaka oznaka (ako raspored ima legendu, sati se uzimaju iz nje) i pogledaj pregled prije uvoza. Datoteka se čita samo na ovom uređaju. Kod fotografije važna je kvaliteta: list ravno, dobro osvijetljen i cijeli.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Kako vidjeti smjenu na Dynamic Islandu ili pitati Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Kad smjena traje ili počinje u sljedeća 3 sata, prikazuje se na zaključanom zaslonu i na Dynamic Islandu s vremenom do kraja; osvježava se kad otvoriš aplikaciju. U aplikaciji Prečaci naći ćeš radnju „Next shift” aplikacije {app}, koju možeš koristiti i sa Siri. U Kontrolnom centru možeš dodati gumb aplikacije {app} koji pokazuje sljedeću smjenu i otvara kalendar.",
+"Leggi il foglio dei turni": "Učitaj raspored smjena",
+"Da un PDF o da una foto": "Iz PDF-a ili fotografije",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Učitaj PDF ili fotografiju rasporeda smjena s posla: aplikacija pronalazi tvoje smjene i upisuje ih u kalendar. Datoteka se čita samo na ovom uređaju i ne sprema se.",
+"Scegli PDF o foto": "Odaberi PDF ili fotografiju",
+"Scatta una foto": "Snimi fotografiju",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Za fotografiju: list ravno, dobro osvijetljen i cijeli u kadru.",
+"Di chi sono i turni?": "Čije su ovo smjene?",
+"Cosa vuol dire ogni sigla": "Što znači svaka oznaka",
+"Sostituisci i giorni già compilati": "Zamijeni već ispunjene dane",
+"Anteprima": "Pregled"
 };

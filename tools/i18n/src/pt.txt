@@ -875,3 +875,35 @@ As atualizações chegam pela App Store ou pelo Google Play, como nas outras app
 Os feriados federais e os de cada estado só valem por lei para os funcionários públicos: no privado depende do contrato. Escolha o seu estado para ver os feriados dele.
 Horários e descansos podem mudar de província para província: verifique os valores abaixo.
 Carnaval e Corpo de Deus são ponto facultativo. Escolha o seu estado para os feriados dele; os do município adicione-os como feriado local.
+Deixar como está
+Não há turnos para importar com estas escolhas.
+Importar {n} dia
+Importar {n} dias
+Importar
+Escolha…
+A ler o PDF…
+O PDF está protegido por palavra-passe.
+A ler a fotografia…
+Não encontrei turnos neste ficheiro. Numa fotografia: mais perto, direita e bem iluminada. Se puder, use o PDF.
+Encontrei {n} pessoa: escolha a sua linha.
+Encontrei {n} pessoas: escolha a sua linha.
+Encontrei {n} dia.
+Encontrei {n} dias.
+Não consigo ler este ficheiro. Experimente com um PDF ou outra fotografia.
+O ficheiro é demasiado grande.
+Importado {n} dia da escala de turnos.
+Importados {n} dias da escala de turnos.
+Posso carregar a escala de turnos da minha empresa?
+Sim: em {p} escolha o PDF ou uma fotografia. A app encontra a tabela com os dias do mês e uma linha por pessoa, ou uma lista com datas e horários. Escolha a sua linha, verifique o que significa cada sigla (se a escala tiver legenda, os horários vêm daí) e veja a pré-visualização antes de importar. O ficheiro só é lido neste dispositivo. Numa fotografia conta a qualidade: folha direita, bem iluminada e inteira.
+Como vejo o turno na Dynamic Island ou pergunto à Siri?
+Quando um turno está a decorrer ou começa dentro de 3 horas, aparece no ecrã bloqueado e na Dynamic Island com o tempo que falta até ao fim; atualiza-se quando abre a app. Pode dizer «Siri, próximo turno no {app}». No Centro de controlo pode adicionar o controlo do {app}, que mostra o próximo turno e abre o calendário.
+Ler a escala de turnos
+De um PDF ou de uma fotografia
+Carregue o PDF ou uma fotografia da escala de turnos da sua empresa: a app encontra os seus turnos e marca-os no calendário. O ficheiro só é lido neste dispositivo e não é guardado.
+Escolher PDF ou fotografia
+Tirar uma fotografia
+Para uma fotografia: folha direita, bem iluminada e toda no enquadramento.
+De quem são os turnos?
+O que significa cada sigla
+Substituir os dias já preenchidos
+Pré-visualização

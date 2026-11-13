@@ -26,12 +26,12 @@ def group(proj, dir)
     proj.main_group.new_group(dir, dir)
 end
 
-# aggiunge i file della cartella ai target: .swift in "Compile Sources", .xcassets in "Copy Bundle Resources"
+# aggiunge i file della cartella ai target: .swift in "Compile Sources", .xcassets e .xcstrings (traduzioni) in "Copy Bundle Resources"
 def sync(proj, dir, targets)
   g = group(proj, dir)
   Dir.children(File.join(ROOT, dir)).sort.each do |name|
     ext = File.extname(name)
-    next unless ['.swift', '.xcassets'].include?(ext)
+    next unless ['.swift', '.xcassets', '.xcstrings'].include?(ext)
     ref = g.files.find { |r| r.path == name } || g.new_reference(name)
     targets.each do |t|
       if ext == '.swift'
@@ -103,6 +103,9 @@ settings(wwidget, common.merge({
   'SDKROOT' => 'watchos', 'SUPPORTED_PLATFORMS' => 'watchos watchsimulator', 'TARGETED_DEVICE_FAMILY' => '4',
   'LD_RUNPATH_SEARCH_PATHS' => '$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks'
 }))
+
+# --- lingue delle traduzioni native (Siri e Comandi rapidi): così iOS usa anche l'italiano per i testi di sistema
+proj.root_object.known_regions = (proj.root_object.known_regions + %w[en Base it fr de es pt]).uniq
 
 # --- file nelle cartelle
 sync(proj, 'App', [app])

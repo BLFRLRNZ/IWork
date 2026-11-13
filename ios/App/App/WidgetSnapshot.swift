@@ -39,6 +39,33 @@ enum WidgetSnapshot {
                 }
             }
         }
+        liveActivity(dir, during: during, before: before)
+    }
+
+    /// turno sulla schermata di blocco e sulla Dynamic Island (compatta ed estesa), come le disegna iOS
+    @MainActor static func liveActivity(_ dir: URL, during: Date, before: Date) {
+        let t0 = Calendar.current.startOfDay(for: Date())
+        let st = ShiftLiveState(title: "Mattina", hours: "06:00 → 14:00", tone: "m", start: t0.addingTimeInterval(6 * 3600),
+                                end: t0.addingTimeInterval(14 * 3600), label: "Oggi", nowText: "In turno adesso", startText: "06:00")
+        func save<V: View>(_ name: String, _ v: V) {
+            let r = ImageRenderer(content: v.environment(\.colorScheme, .dark)); r.scale = 3
+            if let png = r.uiImage?.pngData() { try? png.write(to: dir.appendingPathComponent("widget-\(name).png")) }
+        }
+        for (name, date) in [("8-live-blocco-in-corso", during), ("8-live-blocco-prima", t0.addingTimeInterval(4 * 3600))] {
+            save(name, ShiftLiveLockView(state: st, date: date).frame(width: 364).background(st.bg)
+                .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous)))
+        }
+        // Dynamic Island compatta: pillola nera con pallino e conto alla rovescia
+        save("9-isola-compatta", HStack(spacing: 0) {
+            ShiftBadge(state: st)
+            Spacer(minLength: 126)
+            LiveTimer(state: st, date: during).font(.system(size: 14, weight: .semibold)).foregroundStyle(st.fg)
+        }.padding(.horizontal, 12).frame(width: 250, height: 37).background(Capsule().fill(.black)))
+        // Dynamic Island estesa
+        save("9-isola-estesa", VStack(spacing: 10) {
+            HStack(alignment: .center) { ShiftIslandLeading(state: st, date: during); Spacer(); ShiftIslandTrailing(state: st, date: during) }
+            ShiftIslandBottom(state: st, date: during)
+        }.padding(.horizontal, 16).padding(.vertical, 18).frame(width: 371).background(RoundedRectangle(cornerRadius: 44, style: .continuous).fill(.black)))
     }
 }
 #endif

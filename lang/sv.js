@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Uppdateringar kommer från App Store eller Google Play, precis som för andra appar. Dina pass ligger kvar.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Federala helgdagar och delstaternas helgdagar gäller enligt lag bara för offentligt anställda: i privat sektor beror det på avtalet. Välj din delstat för att se dess helgdagar.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Arbets- och vilotider kan skilja mellan provinser: kontrollera värdena nedan.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval och Kristi lekamens dag är ”ponto facultativo”. Välj din delstat för dess helgdagar; lägg till kommunens som lokal helgdag."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval och Kristi lekamens dag är ”ponto facultativo”. Välj din delstat för dess helgdagar; lägg till kommunens som lokal helgdag.",
+"Lascia com'è": "Låt vara",
+"Nessun turno da importare con queste scelte.": "Med de här valen finns inga pass att importera.",
+"Importa {n} giorno": "Importera {n} dag",
+"Importa {n} giorni": {
+"other": "Importera {n} dagar",
+"one": "Importera {n} dag"
+},
+"Importa": "Importera",
+"Scegli…": "Välj …",
+"Leggo il PDF…": "Läser PDF:en …",
+"Il PDF è protetto da una password.": "PDF:en är lösenordsskyddad.",
+"Leggo la foto…": "Läser bilden …",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Jag hittade inga pass i den här filen. För en bild: närmare, rakt och i bra ljus. Använd PDF:en om du kan.",
+"Ho trovato {n} persona: scegli la tua riga.": "Jag hittade {n} person: välj din rad.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Jag hittade {n} personer: välj din rad.",
+"one": "Jag hittade {n} person: välj din rad."
+},
+"Ho trovato {n} giorno.": "Jag hittade {n} dag.",
+"Ho trovato {n} giorni.": {
+"other": "Jag hittade {n} dagar.",
+"one": "Jag hittade {n} dag."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Jag kan inte läsa den här filen. Prova med en PDF eller en annan bild.",
+"Il file è troppo grande.": "Filen är för stor.",
+"Importato {n} giorno dal foglio dei turni.": "{n} dag importerad från schemat.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "{n} dagar importerade från schemat.",
+"one": "{n} dag importerad från schemat."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Kan jag läsa in schemat från jobbet?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Ja: välj PDF:en eller en bild under {p}. Appen hittar tabellen med månadens dagar och en rad per person, eller en lista med datum och tider. Välj din rad, kontrollera vad varje förkortning betyder (har schemat en teckenförklaring tas tiderna därifrån) och titta på förhandsvisningen innan du importerar. Filen läses bara på den här enheten. Med en bild spelar kvaliteten roll: arket rakt, väl belyst och helt.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Hur ser jag mitt pass i Dynamic Island eller frågar Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "När ett pass pågår eller börjar inom 3 timmar visas det på låsskärmen och i Dynamic Island med tiden kvar till slutet; det uppdateras när du öppnar appen. I appen Genvägar hittar du åtgärden ”Next shift” från {app}, som du också kan använda med Siri. I Kontrollcenter kan du lägga till knappen från {app}, som visar ditt nästa pass och öppnar kalendern.",
+"Leggi il foglio dei turni": "Läs in schemat",
+"Da un PDF o da una foto": "Från en PDF eller en bild",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Läs in PDF:en eller en bild av schemat från jobbet: appen hittar dina pass och lägger in dem i kalendern. Filen läses bara på den här enheten och sparas inte.",
+"Scegli PDF o foto": "Välj PDF eller bild",
+"Scatta una foto": "Ta en bild",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "För en bild: arket rakt, väl belyst och helt i bild.",
+"Di chi sono i turni?": "Vems pass är det här?",
+"Cosa vuol dire ogni sigla": "Vad varje förkortning betyder",
+"Sostituisci i giorni già compilati": "Ersätt dagar som redan är ifyllda",
+"Anteprima": "Förhandsvisning"
 };

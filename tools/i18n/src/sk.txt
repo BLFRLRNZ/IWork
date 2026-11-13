@@ -875,3 +875,35 @@ Aktualizácie prichádzajú z App Store alebo Google Play, rovnako ako pri inýc
 Federálne sviatky aj sviatky jednotlivých štátov platia zo zákona len pre zamestnancov verejného sektora: v súkromnom sektore závisí od zmluvy. Vyber svoj štát a uvidíš jeho sviatky.
 Pracovný čas a odpočinok sa môžu líšiť podľa provincie: skontroluj hodnoty nižšie.
 Karneval a Božie telo sú „ponto facultativo“. Vyber svoj štát pre jeho sviatky; sviatky obce pridaj ako miestny sviatok.
+Nechať tak
+S týmto výberom nie sú žiadne zmeny na import.
+Importovať {n} deň
+Importovať {n} dní ‖few: Importovať {n} dni ‖many: Importovať {n} dňa
+Importovať
+Vyber…
+Čítam PDF…
+PDF je chránené heslom.
+Čítam fotku…
+V tomto súbore som nenašiel žiadne zmeny. Pri fotke: bližšie, rovno a dobre osvetlené. Ak môžeš, použi PDF.
+Našiel som {n} osobu: vyber svoj riadok.
+Našiel som {n} osôb: vyber svoj riadok. ‖few: Našiel som {n} osoby: vyber svoj riadok. ‖many: Našiel som {n} osoby: vyber svoj riadok.
+Našiel som {n} deň.
+Našiel som {n} dní. ‖few: Našiel som {n} dni. ‖many: Našiel som {n} dňa.
+Tento súbor neviem prečítať. Skús PDF alebo inú fotku.
+Súbor je príliš veľký.
+Importovaný {n} deň z rozpisu zmien.
+Importovaných {n} dní z rozpisu zmien. ‖few: Importované {n} dni z rozpisu zmien. ‖many: Importovaného {n} dňa z rozpisu zmien.
+Môžem nahrať rozpis zmien z práce?
+Áno: v {p} vyber PDF alebo fotku. Aplikácia nájde tabuľku s dňami v mesiaci a jedným riadkom na osobu alebo zoznam s dátumami a časmi. Vyber svoj riadok, skontroluj, čo znamená každá skratka (ak má rozpis legendu, časy sa vezmú z nej), a pred importom si pozri náhľad. Súbor sa číta len v tomto zariadení. Pri fotke záleží na kvalite: list rovno, dobre osvetlený a celý.
+Ako vidieť zmenu na Dynamic Islande alebo sa opýtať Siri?
+Keď zmena prebieha alebo sa začína do 3 hodín, zobrazí sa na uzamknutej obrazovke a na Dynamic Islande so zostávajúcim časom do konca; aktualizuje sa, keď otvoríš aplikáciu. V aplikácii Skratky nájdeš akciu „Next shift“ aplikácie {app}, ktorú môžeš používať aj so Siri. V Ovládacom centre môžeš pridať tlačidlo {app}, ktoré ukazuje ďalšiu zmenu a otvára kalendár.
+Načítať rozpis zmien
+Z PDF alebo z fotky
+Nahraj PDF alebo fotku rozpisu zmien z práce: aplikácia nájde tvoje zmeny a zapíše ich do kalendára. Súbor sa číta len v tomto zariadení a neukladá sa.
+Vybrať PDF alebo fotku
+Odfotiť
+Pri fotke: list rovno, dobre osvetlený a celý v zábere.
+Čie sú tieto zmeny?
+Čo znamená každá skratka
+Nahradiť už vyplnené dni
+Náhľad

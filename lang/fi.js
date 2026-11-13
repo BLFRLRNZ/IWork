@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Päivitykset tulevat App Storesta tai Google Playsta kuten muillekin sovelluksille. Vuorosi pysyvät paikallaan.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Liittovaltion ja osavaltioiden pyhät koskevat lain mukaan vain julkisen sektorin työntekijöitä: yksityisellä sektorilla se riippuu sopimuksesta. Valitse osavaltiosi, niin näet sen pyhät.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Työ- ja lepoajat voivat vaihdella provinsseittain: tarkista alla olevat arvot.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnevaali ja Kristuksen ruumiin juhla ovat ”ponto facultativo”. Valitse osavaltiosi, niin näet sen pyhät; lisää kuntasi pyhät paikallisina pyhinä."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnevaali ja Kristuksen ruumiin juhla ovat ”ponto facultativo”. Valitse osavaltiosi, niin näet sen pyhät; lisää kuntasi pyhät paikallisina pyhinä.",
+"Lascia com'è": "Jätä ennalleen",
+"Nessun turno da importare con queste scelte.": "Näillä valinnoilla ei ole tuotavia vuoroja.",
+"Importa {n} giorno": "Tuo {n} päivä",
+"Importa {n} giorni": {
+"other": "Tuo {n} päivää",
+"one": "Tuo {n} päivä"
+},
+"Importa": "Tuo",
+"Scegli…": "Valitse…",
+"Leggo il PDF…": "Luen PDF:ää…",
+"Il PDF è protetto da una password.": "PDF on suojattu salasanalla.",
+"Leggo la foto…": "Luen kuvaa…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "En löytänyt tästä tiedostosta vuoroja. Kuvassa: lähempää, suoraan ja hyvässä valossa. Käytä PDF:ää, jos voit.",
+"Ho trovato {n} persona: scegli la tua riga.": "Löysin {n} henkilön: valitse oma rivisi.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Löysin {n} henkilöä: valitse oma rivisi.",
+"one": "Löysin {n} henkilön: valitse oma rivisi."
+},
+"Ho trovato {n} giorno.": "Löysin {n} päivän.",
+"Ho trovato {n} giorni.": {
+"other": "Löysin {n} päivää.",
+"one": "Löysin {n} päivän."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "En pysty lukemaan tätä tiedostoa. Kokeile PDF:ää tai toista kuvaa.",
+"Il file è troppo grande.": "Tiedosto on liian suuri.",
+"Importato {n} giorno dal foglio dei turni.": "Tuotiin {n} päivä vuorolistasta.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Tuotiin {n} päivää vuorolistasta.",
+"one": "Tuotiin {n} päivä vuorolistasta."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Voinko ladata työpaikan vuorolistan?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Kyllä: valitse kohdassa {p} PDF tai kuva. Sovellus löytää taulukon, jossa on kuukauden päivät ja rivi kullekin henkilölle, tai luettelon päivämäärineen ja kellonaikoineen. Valitse oma rivisi, tarkista mitä kukin lyhenne tarkoittaa (jos listassa on selite, kellonajat otetaan siitä) ja katso esikatselu ennen tuontia. Tiedosto luetaan vain tällä laitteella. Kuvassa laatu ratkaisee: arkki suoraan, hyvin valaistuna ja kokonaan.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Miten näen vuoroni Dynamic Islandissa tai kysyn Siriltä?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Kun vuoro on käynnissä tai alkaa 3 tunnin sisällä, se näkyy lukitusnäytöllä ja Dynamic Islandissa jäljellä olevan ajan kanssa; se päivittyy, kun avaat sovelluksen. Pikakomennot-sovelluksesta löydät {app}-toiminnon ”Next shift”, jota voit käyttää myös Sirin kanssa. Ohjauskeskukseen voit lisätä {app}-painikkeen, joka näyttää seuraavan vuorosi ja avaa kalenterin.",
+"Leggi il foglio dei turni": "Lue vuorolista",
+"Da un PDF o da una foto": "PDF:stä tai kuvasta",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Lataa työpaikan vuorolistan PDF tai kuva: sovellus löytää vuorosi ja merkitsee ne kalenteriin. Tiedosto luetaan vain tällä laitteella eikä sitä tallenneta.",
+"Scegli PDF o foto": "Valitse PDF tai kuva",
+"Scatta una foto": "Ota kuva",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Kuvassa: arkki suoraan, hyvin valaistuna ja kokonaan kuvassa.",
+"Di chi sono i turni?": "Kenen vuoroja nämä ovat?",
+"Cosa vuol dire ogni sigla": "Mitä kukin lyhenne tarkoittaa",
+"Sostituisci i giorni già compilati": "Korvaa jo täytetyt päivät",
+"Anteprima": "Esikatselu"
 };

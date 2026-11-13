@@ -994,5 +994,57 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Aktualizacje przychodzą z App Store lub Google Play, jak w innych aplikacjach. Twoje zmiany zostają na miejscu.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Święta federalne i stanowe z mocy prawa dotyczą tylko pracowników sektora publicznego: w sektorze prywatnym zależy to od umowy. Wybierz swój stan, aby zobaczyć jego święta.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Czas pracy i odpoczynku może się różnić między prowincjami: sprawdź wartości poniżej.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnawał i Boże Ciało to „ponto facultativo”. Wybierz swój stan, aby zobaczyć jego święta; święta gminy dodaj jako święto lokalne."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnawał i Boże Ciało to „ponto facultativo”. Wybierz swój stan, aby zobaczyć jego święta; święta gminy dodaj jako święto lokalne.",
+"Lascia com'è": "Zostaw bez zmian",
+"Nessun turno da importare con queste scelte.": "Przy tych wyborach nie ma zmian do zaimportowania.",
+"Importa {n} giorno": "Importuj {n} dzień",
+"Importa {n} giorni": {
+"other": "Importuj {n} dnia",
+"few": "Importuj {n} dni",
+"many": "Importuj {n} dni",
+"one": "Importuj {n} dzień"
+},
+"Importa": "Importuj",
+"Scegli…": "Wybierz…",
+"Leggo il PDF…": "Czytam PDF…",
+"Il PDF è protetto da una password.": "PDF jest chroniony hasłem.",
+"Leggo la foto…": "Czytam zdjęcie…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Nie znalazłem zmian w tym pliku. Przy zdjęciu: bliżej, prosto i w dobrym świetle. Jeśli możesz, użyj PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "Znalazłem {n} osobę: wybierz swój wiersz.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Znalazłem {n} osoby: wybierz swój wiersz.",
+"few": "Znalazłem {n} osoby: wybierz swój wiersz.",
+"many": "Znalazłem {n} osób: wybierz swój wiersz.",
+"one": "Znalazłem {n} osobę: wybierz swój wiersz."
+},
+"Ho trovato {n} giorno.": "Znalazłem {n} dzień.",
+"Ho trovato {n} giorni.": {
+"other": "Znalazłem {n} dnia.",
+"few": "Znalazłem {n} dni.",
+"many": "Znalazłem {n} dni.",
+"one": "Znalazłem {n} dzień."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Nie mogę odczytać tego pliku. Spróbuj z PDF albo innym zdjęciem.",
+"Il file è troppo grande.": "Plik jest za duży.",
+"Importato {n} giorno dal foglio dei turni.": "Zaimportowano {n} dzień z grafiku.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Zaimportowano {n} dnia z grafiku.",
+"few": "Zaimportowano {n} dni z grafiku.",
+"many": "Zaimportowano {n} dni z grafiku.",
+"one": "Zaimportowano {n} dzień z grafiku."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Czy mogę wczytać grafik z mojej firmy?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Tak: w {p} wybierz PDF albo zdjęcie. Aplikacja znajdzie tabelę z dniami miesiąca i jednym wierszem na osobę albo listę z datami i godzinami. Wybierz swój wiersz, sprawdź, co oznacza każdy skrót (jeśli grafik ma legendę, godziny są brane z niej) i obejrzyj podgląd przed importem. Plik jest czytany tylko na tym urządzeniu. Przy zdjęciu liczy się jakość: kartka prosto, dobrze oświetlona i w całości.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Jak zobaczyć zmianę na Dynamic Island albo zapytać Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Gdy zmiana trwa albo zaczyna się w ciągu 3 godzin, pojawia się na ekranie blokady i na Dynamic Island z czasem do końca; odświeża się, gdy otwierasz aplikację. W aplikacji Skróty znajdziesz czynność „Next shift” aplikacji {app}, której możesz używać też z Siri. W centrum sterowania możesz dodać przycisk {app}: pokazuje najbliższą zmianę i otwiera kalendarz.",
+"Leggi il foglio dei turni": "Wczytaj grafik",
+"Da un PDF o da una foto": "Z PDF albo zdjęcia",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Wczytaj PDF albo zdjęcie grafiku z firmy: aplikacja znajdzie twoje zmiany i zaznaczy je w kalendarzu. Plik jest czytany tylko na tym urządzeniu i nie jest zapisywany.",
+"Scegli PDF o foto": "Wybierz PDF lub zdjęcie",
+"Scatta una foto": "Zrób zdjęcie",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Przy zdjęciu: kartka prosto, dobrze oświetlona i cała w kadrze.",
+"Di chi sono i turni?": "Czyje to zmiany?",
+"Cosa vuol dire ogni sigla": "Co oznacza każdy skrót",
+"Sostituisci i giorni già compilati": "Zastąp już wypełnione dni",
+"Anteprima": "Podgląd"
 };

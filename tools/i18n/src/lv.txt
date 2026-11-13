@@ -875,3 +875,35 @@ Atjauninājumi pienāk no App Store vai Google Play, tāpat kā citām lietotnē
 Federālie un štatu svētki pēc likuma attiecas tikai uz valsts sektora darbiniekiem: privātajā sektorā tas atkarīgs no līguma. Izvēlies savu štatu, lai redzētu tā svētkus.
 Darba un atpūtas laiks var atšķirties pa provincēm: pārbaudi vērtības zemāk.
 Karnevāls un Kristus Miesas svētki ir “ponto facultativo”. Izvēlies savu štatu, lai redzētu tā svētkus; pašvaldības svētkus pievieno kā vietējos svētkus.
+Atstāt kā ir
+Ar šīm izvēlēm nav maiņu, ko importēt.
+Importēt {n} dienu
+Importēt {n} dienas
+Importēt
+Izvēlies…
+Lasu PDF…
+PDF ir aizsargāts ar paroli.
+Lasu fotoattēlu…
+Šajā failā neatradu maiņas. Fotoattēlam: tuvāk, taisni un labā apgaismojumā. Ja vari, izmanto PDF.
+Atradu {n} personu: izvēlies savu rindu.
+Atradu {n} personas: izvēlies savu rindu.
+Atradu {n} dienu.
+Atradu {n} dienas.
+Nevaru nolasīt šo failu. Mēģini ar PDF vai citu fotoattēlu.
+Fails ir pārāk liels.
+Importēta {n} diena no maiņu grafika.
+Importētas {n} dienas no maiņu grafika.
+Vai varu augšupielādēt darba maiņu grafiku?
+Jā: sadaļā {p} izvēlies PDF vai fotoattēlu. Lietotne atrod tabulu ar mēneša dienām un vienu rindu katrai personai vai sarakstu ar datumiem un laikiem. Izvēlies savu rindu, pārbaudi, ko nozīmē katrs saīsinājums (ja grafikam ir leģenda, laiki tiek ņemti no tās), un pirms importēšanas apskati priekšskatījumu. Fails tiek lasīts tikai šajā ierīcē. Fotoattēlam svarīga ir kvalitāte: lapa taisni, labi apgaismota un visa.
+Kā redzēt maiņu Dynamic Island vai pajautāt Siri?
+Kad maiņa notiek vai sākas 3 stundu laikā, tā parādās bloķēšanas ekrānā un Dynamic Island ar laiku līdz beigām; tā atjaunojas, kad atver lietotni. Lietotnē Īsceļi atradīsi {app} darbību “Next shift”, ko vari izmantot arī ar Siri. Vadības centrā vari pievienot {app} pogu, kas rāda nākamo maiņu un atver kalendāru.
+Nolasīt maiņu grafiku
+No PDF vai fotoattēla
+Augšupielādē darba maiņu grafika PDF vai fotoattēlu: lietotne atrod tavas maiņas un atzīmē tās kalendārā. Fails tiek lasīts tikai šajā ierīcē un netiek saglabāts.
+Izvēlēties PDF vai fotoattēlu
+Uzņemt fotoattēlu
+Fotoattēlam: lapa taisni, labi apgaismota un visa kadrā.
+Kam pieder šīs maiņas?
+Ko nozīmē katrs saīsinājums
+Aizstāt jau aizpildītās dienas
+Priekšskatījums

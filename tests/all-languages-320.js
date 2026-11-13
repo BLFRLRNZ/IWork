@@ -28,7 +28,7 @@ for(const l of LANGS){const p=await b.newPage({viewport:{width:320,height:640}})
  await p.click('[data-k="2026-11-18"]');await snap('editor');await close();
  await p.click('#setBtn');await snap('settings');await close();
  await p.click('#toolsBtn');await snap('tools');await close();
- for(const [id,n] of [['cycleBtn','cycle'],['presetsBtn','presets'],['labelsBtn','labels'],['shareBtn','share'],['pdfBtn','pdf'],['whBtn','wh'],['pyBtn','py'],['j2Btn','j2'],['icsBtn','ics'],['bpBtn','bp']]){await tool(id);await snap(n);await close();}
+ for(const [id,n] of [['cycleBtn','cycle'],['presetsBtn','presets'],['labelsBtn','labels'],['shareBtn','share'],['pdfBtn','pdf'],['whBtn','wh'],['pyBtn','py'],['j2Btn','j2'],['icsBtn','ics'],['bpBtn','bp'],['importBtn','import']]){await tool(id);await snap(n);if(n==='import'){await p.setInputFiles('#imFile',path.join(ROOT,'tests/schedule/tabella-it.pdf'));await p.waitForFunction(()=>!document.getElementById('imBox').hidden,null,{timeout:30000}).catch(()=>{});await p.selectOption('#imWho',{index:1});await snap('import2');}await close();}
  // onboarding on a fresh page
  const q=await b.newPage({viewport:{width:320,height:640},locale:l==='pt-BR'?'pt-BR':l+'-'+HOME[l]});q.on('pageerror',e=>errs.push(e.message));
  await q.goto('http://localhost:8765/index.html');await q.waitForTimeout(600);

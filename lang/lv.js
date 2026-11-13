@@ -952,5 +952,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Atjauninājumi pienāk no App Store vai Google Play, tāpat kā citām lietotnēm. Tavas maiņas paliek savā vietā.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Federālie un štatu svētki pēc likuma attiecas tikai uz valsts sektora darbiniekiem: privātajā sektorā tas atkarīgs no līguma. Izvēlies savu štatu, lai redzētu tā svētkus.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Darba un atpūtas laiks var atšķirties pa provincēm: pārbaudi vērtības zemāk.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnevāls un Kristus Miesas svētki ir “ponto facultativo”. Izvēlies savu štatu, lai redzētu tā svētkus; pašvaldības svētkus pievieno kā vietējos svētkus."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karnevāls un Kristus Miesas svētki ir “ponto facultativo”. Izvēlies savu štatu, lai redzētu tā svētkus; pašvaldības svētkus pievieno kā vietējos svētkus.",
+"Lascia com'è": "Atstāt kā ir",
+"Nessun turno da importare con queste scelte.": "Ar šīm izvēlēm nav maiņu, ko importēt.",
+"Importa {n} giorno": "Importēt {n} dienu",
+"Importa {n} giorni": {
+"other": "Importēt {n} dienas",
+"one": "Importēt {n} dienu"
+},
+"Importa": "Importēt",
+"Scegli…": "Izvēlies…",
+"Leggo il PDF…": "Lasu PDF…",
+"Il PDF è protetto da una password.": "PDF ir aizsargāts ar paroli.",
+"Leggo la foto…": "Lasu fotoattēlu…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Šajā failā neatradu maiņas. Fotoattēlam: tuvāk, taisni un labā apgaismojumā. Ja vari, izmanto PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "Atradu {n} personu: izvēlies savu rindu.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Atradu {n} personas: izvēlies savu rindu.",
+"one": "Atradu {n} personu: izvēlies savu rindu."
+},
+"Ho trovato {n} giorno.": "Atradu {n} dienu.",
+"Ho trovato {n} giorni.": {
+"other": "Atradu {n} dienas.",
+"one": "Atradu {n} dienu."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Nevaru nolasīt šo failu. Mēģini ar PDF vai citu fotoattēlu.",
+"Il file è troppo grande.": "Fails ir pārāk liels.",
+"Importato {n} giorno dal foglio dei turni.": "Importēta {n} diena no maiņu grafika.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Importētas {n} dienas no maiņu grafika.",
+"one": "Importēta {n} diena no maiņu grafika."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Vai varu augšupielādēt darba maiņu grafiku?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Jā: sadaļā {p} izvēlies PDF vai fotoattēlu. Lietotne atrod tabulu ar mēneša dienām un vienu rindu katrai personai vai sarakstu ar datumiem un laikiem. Izvēlies savu rindu, pārbaudi, ko nozīmē katrs saīsinājums (ja grafikam ir leģenda, laiki tiek ņemti no tās), un pirms importēšanas apskati priekšskatījumu. Fails tiek lasīts tikai šajā ierīcē. Fotoattēlam svarīga ir kvalitāte: lapa taisni, labi apgaismota un visa.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Kā redzēt maiņu Dynamic Island vai pajautāt Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Kad maiņa notiek vai sākas 3 stundu laikā, tā parādās bloķēšanas ekrānā un Dynamic Island ar laiku līdz beigām; tā atjaunojas, kad atver lietotni. Lietotnē Īsceļi atradīsi {app} darbību “Next shift”, ko vari izmantot arī ar Siri. Vadības centrā vari pievienot {app} pogu, kas rāda nākamo maiņu un atver kalendāru.",
+"Leggi il foglio dei turni": "Nolasīt maiņu grafiku",
+"Da un PDF o da una foto": "No PDF vai fotoattēla",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Augšupielādē darba maiņu grafika PDF vai fotoattēlu: lietotne atrod tavas maiņas un atzīmē tās kalendārā. Fails tiek lasīts tikai šajā ierīcē un netiek saglabāts.",
+"Scegli PDF o foto": "Izvēlēties PDF vai fotoattēlu",
+"Scatta una foto": "Uzņemt fotoattēlu",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Fotoattēlam: lapa taisni, labi apgaismota un visa kadrā.",
+"Di chi sono i turni?": "Kam pieder šīs maiņas?",
+"Cosa vuol dire ogni sigla": "Ko nozīmē katrs saīsinājums",
+"Sostituisci i giorni già compilati": "Aizstāt jau aizpildītās dienas",
+"Anteprima": "Priekšskatījums"
 };

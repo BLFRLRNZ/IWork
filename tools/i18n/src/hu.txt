@@ -875,3 +875,35 @@ A frissítések az App Store-ból vagy a Google Playről érkeznek, mint más ap
 A szövetségi és az állami ünnepek törvény szerint csak a közszféra dolgozóira vonatkoznak: a magánszektorban a szerződéstől függ. Válaszd ki az államodat, hogy lásd az ünnepeit.
 A munka- és pihenőidő tartományonként eltérhet: ellenőrizd az alábbi értékeket.
 A karnevál és az úrnapja „ponto facultativo”. Válaszd ki az államodat az ünnepeiért; a településedét add hozzá helyi ünnepként.
+Maradjon így
+Ezekkel a beállításokkal nincs mit importálni.
+{n} nap importálása
+{n} nap importálása
+Importálás
+Válassz…
+Olvasom a PDF-et…
+A PDF jelszóval védett.
+Olvasom a fotót…
+Ebben a fájlban nem találtam műszakokat. Fotónál: közelebbről, egyenesen és jó fényben. Ha tudod, használd a PDF-et.
+{n} személyt találtam: válaszd ki a sorodat.
+{n} személyt találtam: válaszd ki a sorodat.
+{n} napot találtam.
+{n} napot találtam.
+Ezt a fájlt nem tudom elolvasni. Próbáld PDF-fel vagy egy másik fotóval.
+A fájl túl nagy.
+{n} nap importálva a beosztásból.
+{n} nap importálva a beosztásból.
+Feltölthetem a munkahelyi beosztást?
+Igen: itt: {p} válaszd ki a PDF-et vagy egy fotót. Az app megtalálja a táblázatot a hónap napjaival és személyenként egy sorral, vagy egy listát dátumokkal és időpontokkal. Válaszd ki a sorodat, ellenőrizd, mit jelent az egyes rövidítés (ha a beosztásnak van jelmagyarázata, az időpontokat onnan veszi), és importálás előtt nézd meg az előnézetet. A fájlt csak ez az eszköz olvassa. Fotónál a minőség számít: a lap egyenesen, jól megvilágítva és egészben legyen.
+Hogyan látom a műszakot a Dynamic Islanden, vagy kérdezem meg Sirit?
+Ha egy műszak tart, vagy 3 órán belül kezdődik, megjelenik a zárolási képernyőn és a Dynamic Islanden a végéig hátralévő idővel; frissül, amikor megnyitod az appot. A Parancsok appban megtalálod a(z) {app} „Next shift” műveletét, amelyet Sirivel is használhatsz. A Vezérlőközpontba felveheted a(z) {app} gombját, amely mutatja a következő műszakot és megnyitja a naptárat.
+Beosztás beolvasása
+PDF-ből vagy fotóból
+Töltsd fel a munkahelyi beosztás PDF-jét vagy fotóját: az app megtalálja a műszakjaidat és beírja őket a naptárba. A fájlt csak ez az eszköz olvassa, és nem menti el.
+PDF vagy fotó kiválasztása
+Fotó készítése
+Fotónál: a lap egyenesen, jól megvilágítva és egészen a képen legyen.
+Kinek a műszakjai ezek?
+Mit jelent az egyes rövidítés
+A már kitöltött napok cseréje
+Előnézet

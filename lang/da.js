@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Opdateringer kommer fra App Store eller Google Play som for andre apps. Dine vagter bliver, hvor de er.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Føderale helligdage og delstaternes helligdage gælder ved lov kun for offentligt ansatte: i den private sektor afhænger det af kontrakten. Vælg din delstat for at se dens helligdage.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Arbejds- og hviletider kan variere fra provins til provins: tjek værdierne nedenfor.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval og Kristi legems fest er »ponto facultativo«. Vælg din delstat for dens helligdage; tilføj kommunens som lokal helligdag."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval og Kristi legems fest er »ponto facultativo«. Vælg din delstat for dens helligdage; tilføj kommunens som lokal helligdag.",
+"Lascia com'è": "Lad være som det er",
+"Nessun turno da importare con queste scelte.": "Med disse valg er der ingen vagter at importere.",
+"Importa {n} giorno": "Importér {n} dag",
+"Importa {n} giorni": {
+"other": "Importér {n} dage",
+"one": "Importér {n} dag"
+},
+"Importa": "Importér",
+"Scegli…": "Vælg…",
+"Leggo il PDF…": "Læser PDF'en…",
+"Il PDF è protetto da una password.": "PDF'en er beskyttet med en adgangskode.",
+"Leggo la foto…": "Læser billedet…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Jeg fandt ingen vagter i denne fil. Ved et billede: tættere på, lige og godt belyst. Brug PDF'en, hvis du kan.",
+"Ho trovato {n} persona: scegli la tua riga.": "Jeg fandt {n} person: vælg din række.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Jeg fandt {n} personer: vælg din række.",
+"one": "Jeg fandt {n} person: vælg din række."
+},
+"Ho trovato {n} giorno.": "Jeg fandt {n} dag.",
+"Ho trovato {n} giorni.": {
+"other": "Jeg fandt {n} dage.",
+"one": "Jeg fandt {n} dag."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Jeg kan ikke læse denne fil. Prøv med en PDF eller et andet billede.",
+"Il file è troppo grande.": "Filen er for stor.",
+"Importato {n} giorno dal foglio dei turni.": "{n} dag importeret fra vagtplanen.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "{n} dage importeret fra vagtplanen.",
+"one": "{n} dag importeret fra vagtplanen."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Kan jeg indlæse vagtplanen fra mit arbejde?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Ja: vælg PDF'en eller et billede under {p}. Appen finder tabellen med månedens dage og én række pr. person eller en liste med datoer og tidspunkter. Vælg din række, tjek hvad hver forkortelse betyder (har vagtplanen en forklaring, tages tidspunkterne derfra), og se forhåndsvisningen, før du importerer. Filen læses kun på denne enhed. Ved et billede betyder kvaliteten noget: arket lige, godt belyst og helt med.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Hvordan ser jeg min vagt i Dynamic Island eller spørger Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Når en vagt er i gang eller starter inden for 3 timer, vises den på låseskærmen og i Dynamic Island med tiden til slutningen; den opdateres, når du åbner appen. I appen Genveje finder du handlingen “Next shift” fra {app}, som du også kan bruge med Siri. I Kontrolcenter kan du tilføje knappen fra {app}, som viser din næste vagt og åbner kalenderen.",
+"Leggi il foglio dei turni": "Indlæs vagtplanen",
+"Da un PDF o da una foto": "Fra en PDF eller et billede",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Indlæs PDF'en eller et billede af vagtplanen fra dit arbejde: appen finder dine vagter og sætter dem i kalenderen. Filen læses kun på denne enhed og gemmes ikke.",
+"Scegli PDF o foto": "Vælg PDF eller billede",
+"Scatta una foto": "Tag et billede",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Ved et billede: arket lige, godt belyst og helt med i billedet.",
+"Di chi sono i turni?": "Hvis vagter er det?",
+"Cosa vuol dire ogni sigla": "Hvad hver forkortelse betyder",
+"Sostituisci i giorni già compilati": "Erstat dage, der allerede er udfyldt",
+"Anteprima": "Forhåndsvisning"
 };

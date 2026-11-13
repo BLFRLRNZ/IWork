@@ -875,3 +875,35 @@ Atnaujinimai ateina iš „App Store“ arba „Google Play“, kaip ir kitoms p
 Federalinės ir valstijų šventės pagal įstatymą taikomos tik viešojo sektoriaus darbuotojams: privačiame sektoriuje tai priklauso nuo sutarties. Pasirink savo valstiją, kad matytum jos šventes.
 Darbo ir poilsio laikas provincijose gali skirtis: patikrink žemiau esančias reikšmes.
 Karnavalas ir Devintinės yra „ponto facultativo“. Pasirink savo valstiją, kad matytum jos šventes; savivaldybės šventes pridėk kaip vietines.
+Palikti kaip yra
+Su šiais pasirinkimais nėra ką importuoti.
+Importuoti {n} dieną
+Importuoti {n} dienų ‖few: Importuoti {n} dienas ‖many: Importuoti {n} dienos
+Importuoti
+Pasirink…
+Skaitau PDF…
+PDF apsaugotas slaptažodžiu.
+Skaitau nuotrauką…
+Šiame faile neradau pamainų. Nuotraukai: iš arčiau, tiesiai ir gerai apšviesta. Jei gali, naudok PDF.
+Radau {n} asmenį: pasirink savo eilutę.
+Radau {n} asmenų: pasirink savo eilutę. ‖few: Radau {n} asmenis: pasirink savo eilutę. ‖many: Radau {n} asmens: pasirink savo eilutę.
+Radau {n} dieną.
+Radau {n} dienų. ‖few: Radau {n} dienas. ‖many: Radau {n} dienos.
+Negaliu perskaityti šio failo. Pabandyk su PDF ar kita nuotrauka.
+Failas per didelis.
+Importuota {n} diena iš pamainų grafiko.
+Importuota {n} dienų iš pamainų grafiko. ‖few: Importuotos {n} dienos iš pamainų grafiko. ‖many: Importuota {n} dienos iš pamainų grafiko.
+Ar galiu įkelti darbo pamainų grafiką?
+Taip: skiltyje {p} pasirink PDF arba nuotrauką. Programėlė suranda lentelę su mėnesio dienomis ir po eilutę kiekvienam asmeniui arba sąrašą su datomis ir laikais. Pasirink savo eilutę, patikrink, ką reiškia kiekvienas sutrumpinimas (jei grafike yra legenda, laikai imami iš jos), ir prieš importuodamas peržiūrėk. Failas skaitomas tik šiame įrenginyje. Nuotraukai svarbi kokybė: lapas tiesiai, gerai apšviestas ir visas.
+Kaip matyti pamainą „Dynamic Island“ ar paklausti „Siri“?
+Kai pamaina vyksta arba prasideda per 3 valandas, ji rodoma užrakinimo ekrane ir „Dynamic Island“ su laiku iki pabaigos; ji atsinaujina, kai atidarai programėlę. Programėlėje „Spartieji klavišai“ rasi {app} veiksmą „Next shift“, kurį gali naudoti ir su „Siri“. Valdymo centre gali pridėti {app} mygtuką, kuris rodo kitą pamainą ir atidaro kalendorių.
+Nuskaityti pamainų grafiką
+Iš PDF ar nuotraukos
+Įkelk darbo pamainų grafiko PDF arba nuotrauką: programėlė suranda tavo pamainas ir pažymi jas kalendoriuje. Failas skaitomas tik šiame įrenginyje ir neišsaugomas.
+Pasirinkti PDF ar nuotrauką
+Fotografuoti
+Nuotraukai: lapas tiesiai, gerai apšviestas ir visas kadre.
+Kieno tai pamainos?
+Ką reiškia kiekvienas sutrumpinimas
+Pakeisti jau užpildytas dienas
+Peržiūra

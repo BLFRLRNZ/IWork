@@ -875,3 +875,35 @@ Uuendused tulevad App Store'ist või Google Playst nagu teistelgi rakendustel. S
 Föderaalpühad ja osariikide pühad kehtivad seaduse järgi ainult avaliku sektori töötajatele: erasektoris sõltub see lepingust. Vali oma osariik, et näha selle pühi.
 Töö- ja puhkeaeg võivad provintsiti erineda: kontrolli allolevaid väärtusi.
 Karneval ja Kristuse ihu ja vere püha on „ponto facultativo”. Vali oma osariik, et näha selle pühi; omavalitsuse pühad lisa kohaliku pühana.
+Jäta nii
+Nende valikutega pole midagi importida.
+Impordi {n} päev
+Impordi {n} päeva
+Impordi
+Vali…
+Loen PDF-i…
+PDF on parooliga kaitstud.
+Loen fotot…
+Ma ei leidnud sellest failist vahetusi. Foto puhul: lähemalt, otse ja hea valgusega. Kui saad, kasuta PDF-i.
+Leidsin {n} inimese: vali oma rida.
+Leidsin {n} inimest: vali oma rida.
+Leidsin {n} päeva.
+Leidsin {n} päeva.
+Ma ei saa seda faili lugeda. Proovi PDF-i või mõnda teist fotot.
+Fail on liiga suur.
+Imporditi {n} päev vahetuste graafikust.
+Imporditi {n} päeva vahetuste graafikust.
+Kas saan laadida töökoha vahetuste graafiku?
+Jah: vali {p} all PDF või foto. Rakendus leiab tabeli kuu päevade ja iga inimese reaga või nimekirja kuupäevade ja kellaaegadega. Vali oma rida, kontrolli, mida iga lühend tähendab (kui graafikul on legend, võetakse kellaajad sealt), ja vaata enne importimist eelvaadet. Faili loetakse ainult selles seadmes. Foto puhul on oluline kvaliteet: leht otse, hästi valgustatud ja tervikuna.
+Kuidas näha vahetust Dynamic Islandil või küsida Siri käest?
+Kui vahetus käib või algab 3 tunni jooksul, ilmub see lukustuskuvale ja Dynamic Islandile koos lõpuni jäänud ajaga; see uueneb, kui avad rakenduse. Rakenduses Otseteed leiad {app} toimingu „Next shift”, mida saad kasutada ka koos Siriga. Juhtimiskeskusesse saad lisada {app} nupu, mis näitab järgmist vahetust ja avab kalendri.
+Loe vahetuste graafik
+PDF-ist või fotolt
+Laadi üles töökoha vahetuste graafiku PDF või foto: rakendus leiab sinu vahetused ja märgib need kalendrisse. Faili loetakse ainult selles seadmes ja seda ei salvestata.
+Vali PDF või foto
+Tee foto
+Foto puhul: leht otse, hästi valgustatud ja tervikuna kaadris.
+Kelle vahetused need on?
+Mida iga lühend tähendab
+Asenda juba täidetud päevad
+Eelvaade

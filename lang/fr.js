@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Les mises à jour arrivent par l'App Store ou Google Play, comme pour les autres apps. Vos postes restent où ils sont.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Les jours fériés fédéraux et ceux des États ne valent légalement que pour les employés publics : dans le privé, cela dépend du contrat. Choisissez votre État pour voir ses fêtes.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Les horaires et les repos peuvent changer d'une province à l'autre : vérifiez les valeurs ci-dessous.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Le Carnaval et la Fête-Dieu sont « ponto facultativo ». Choisissez votre État pour ses fêtes ; ajoutez celle de votre commune comme fête locale."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Le Carnaval et la Fête-Dieu sont « ponto facultativo ». Choisissez votre État pour ses fêtes ; ajoutez celle de votre commune comme fête locale.",
+"Lascia com'è": "Laisser tel quel",
+"Nessun turno da importare con queste scelte.": "Aucun poste à importer avec ces choix.",
+"Importa {n} giorno": "Importer {n} jour",
+"Importa {n} giorni": {
+"other": "Importer {n} jours",
+"one": "Importer {n} jour"
+},
+"Importa": "Importer",
+"Scegli…": "Choisissez…",
+"Leggo il PDF…": "Lecture du PDF…",
+"Il PDF è protetto da una password.": "Le PDF est protégé par un mot de passe.",
+"Leggo la foto…": "Lecture de la photo…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Je n'ai trouvé aucun poste dans ce fichier. Pour une photo : plus près, droite et bien éclairée. Si possible, utilisez le PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "J'ai trouvé {n} personne : choisissez votre ligne.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "J'ai trouvé {n} personnes : choisissez votre ligne.",
+"one": "J'ai trouvé {n} personne : choisissez votre ligne."
+},
+"Ho trovato {n} giorno.": "J'ai trouvé {n} jour.",
+"Ho trovato {n} giorni.": {
+"other": "J'ai trouvé {n} jours.",
+"one": "J'ai trouvé {n} jour."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Je n'arrive pas à lire ce fichier. Essayez avec un PDF ou une autre photo.",
+"Il file è troppo grande.": "Le fichier est trop volumineux.",
+"Importato {n} giorno dal foglio dei turni.": "{n} jour importé depuis le planning.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "{n} jours importés depuis le planning.",
+"one": "{n} jour importé depuis le planning."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Puis-je charger le planning de mon entreprise ?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Oui : dans {p}, choisissez le PDF ou une photo. L'application trouve le tableau avec les jours du mois et une ligne par personne, ou une liste avec des dates et des horaires. Choisissez votre ligne, vérifiez ce que veut dire chaque sigle (si le planning a une légende, les horaires viennent de là) et regardez l'aperçu avant d'importer. Le fichier est lu uniquement sur cet appareil. Avec une photo, la qualité compte : feuille droite, bien éclairée et entière.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Comment voir mon poste dans la Dynamic Island ou le demander à Siri ?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Quand un poste est en cours ou commence dans les 3 heures, il apparaît sur l'écran verrouillé et dans la Dynamic Island avec le temps restant jusqu'à la fin ; il se met à jour quand vous ouvrez l'application. Vous pouvez demander « Dis Siri, prochain poste dans {app} ». Dans le Centre de contrôle, vous pouvez ajouter la commande de {app}, qui montre votre prochain poste et ouvre le calendrier.",
+"Leggi il foglio dei turni": "Lire le planning",
+"Da un PDF o da una foto": "À partir d'un PDF ou d'une photo",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Chargez le PDF ou une photo du planning de votre entreprise : l'application trouve vos postes et les inscrit dans le calendrier. Le fichier est lu uniquement sur cet appareil et n'est pas enregistré.",
+"Scegli PDF o foto": "Choisir un PDF ou une photo",
+"Scatta una foto": "Prendre une photo",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Pour une photo : feuille droite, bien éclairée et entièrement dans le cadre.",
+"Di chi sono i turni?": "À qui sont ces postes ?",
+"Cosa vuol dire ogni sigla": "Ce que veut dire chaque sigle",
+"Sostituisci i giorni già compilati": "Remplacer les jours déjà remplis",
+"Anteprima": "Aperçu"
 };

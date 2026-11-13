@@ -875,3 +875,35 @@ Uppdateringar kommer från App Store eller Google Play, precis som för andra ap
 Federala helgdagar och delstaternas helgdagar gäller enligt lag bara för offentligt anställda: i privat sektor beror det på avtalet. Välj din delstat för att se dess helgdagar.
 Arbets- och vilotider kan skilja mellan provinser: kontrollera värdena nedan.
 Karneval och Kristi lekamens dag är ”ponto facultativo”. Välj din delstat för dess helgdagar; lägg till kommunens som lokal helgdag.
+Låt vara
+Med de här valen finns inga pass att importera.
+Importera {n} dag
+Importera {n} dagar
+Importera
+Välj …
+Läser PDF:en …
+PDF:en är lösenordsskyddad.
+Läser bilden …
+Jag hittade inga pass i den här filen. För en bild: närmare, rakt och i bra ljus. Använd PDF:en om du kan.
+Jag hittade {n} person: välj din rad.
+Jag hittade {n} personer: välj din rad.
+Jag hittade {n} dag.
+Jag hittade {n} dagar.
+Jag kan inte läsa den här filen. Prova med en PDF eller en annan bild.
+Filen är för stor.
+{n} dag importerad från schemat.
+{n} dagar importerade från schemat.
+Kan jag läsa in schemat från jobbet?
+Ja: välj PDF:en eller en bild under {p}. Appen hittar tabellen med månadens dagar och en rad per person, eller en lista med datum och tider. Välj din rad, kontrollera vad varje förkortning betyder (har schemat en teckenförklaring tas tiderna därifrån) och titta på förhandsvisningen innan du importerar. Filen läses bara på den här enheten. Med en bild spelar kvaliteten roll: arket rakt, väl belyst och helt.
+Hur ser jag mitt pass i Dynamic Island eller frågar Siri?
+När ett pass pågår eller börjar inom 3 timmar visas det på låsskärmen och i Dynamic Island med tiden kvar till slutet; det uppdateras när du öppnar appen. I appen Genvägar hittar du åtgärden ”Next shift” från {app}, som du också kan använda med Siri. I Kontrollcenter kan du lägga till knappen från {app}, som visar ditt nästa pass och öppnar kalendern.
+Läs in schemat
+Från en PDF eller en bild
+Läs in PDF:en eller en bild av schemat från jobbet: appen hittar dina pass och lägger in dem i kalendern. Filen läses bara på den här enheten och sparas inte.
+Välj PDF eller bild
+Ta en bild
+För en bild: arket rakt, väl belyst och helt i bild.
+Vems pass är det här?
+Vad varje förkortning betyder
+Ersätt dagar som redan är ifyllda
+Förhandsvisning

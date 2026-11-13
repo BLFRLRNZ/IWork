@@ -875,3 +875,35 @@ Posodobitve pridejo iz App Store ali Google Play, kot pri drugih aplikacijah. Tv
 Zvezni prazniki in prazniki zveznih držav po zakonu veljajo le za zaposlene v javnem sektorju: v zasebnem sektorju je odvisno od pogodbe. Izberi svojo zvezno državo, da vidiš njene praznike.
 Delovni čas in počitek se lahko razlikujeta po provincah: preveri spodnje vrednosti.
 Karneval in sveto rešnje telo sta »ponto facultativo«. Izberi svojo zvezno državo za njene praznike; praznike občine dodaj kot lokalni praznik.
+Pusti tako
+S temi izbirami ni izmen za uvoz.
+Uvozi {n} dan
+Uvozi {n} dni ‖two: Uvozi {n} dneva ‖few: Uvozi {n} dni
+Uvozi
+Izberi …
+Berem PDF …
+PDF je zaščiten z geslom.
+Berem fotografijo …
+V tej datoteki nisem našel izmen. Pri fotografiji: bližje, naravnost in dobro osvetljeno. Če lahko, uporabi PDF.
+Našel sem {n} osebo: izberi svojo vrstico.
+Našel sem {n} oseb: izberi svojo vrstico. ‖two: Našel sem {n} osebi: izberi svojo vrstico. ‖few: Našel sem {n} osebe: izberi svojo vrstico.
+Našel sem {n} dan.
+Našel sem {n} dni. ‖two: Našel sem {n} dneva. ‖few: Našel sem {n} dni.
+Te datoteke ne morem prebrati. Poskusi s PDF-jem ali drugo fotografijo.
+Datoteka je prevelika.
+Uvožen {n} dan iz razporeda izmen.
+Uvoženih {n} dni iz razporeda izmen. ‖two: Uvožena {n} dneva iz razporeda izmen. ‖few: Uvoženi {n} dnevi iz razporeda izmen.
+Ali lahko naložim razpored izmen iz službe?
+Da: v {p} izberi PDF ali fotografijo. Aplikacija najde tabelo z dnevi v mesecu in eno vrstico za vsako osebo ali seznam z datumi in urami. Izberi svojo vrstico, preveri, kaj pomeni vsaka oznaka (če ima razpored legendo, se ure vzamejo iz nje), in pred uvozom poglej predogled. Datoteka se bere samo v tej napravi. Pri fotografiji šteje kakovost: list naravnost, dobro osvetljen in cel.
+Kako vidim izmeno na Dynamic Islandu ali vprašam Siri?
+Ko izmena poteka ali se začne v naslednjih 3 urah, se prikaže na zaklenjenem zaslonu in na Dynamic Islandu s časom do konca; posodobi se, ko odpreš aplikacijo. V aplikaciji Bližnjice najdeš dejanje »Next shift« aplikacije {app}, ki ga lahko uporabljaš tudi s Siri. V Nadzorni center lahko dodaš gumb {app}, ki pokaže naslednjo izmeno in odpre koledar.
+Preberi razpored izmen
+Iz PDF-ja ali fotografije
+Naloži PDF ali fotografijo razporeda izmen iz službe: aplikacija najde tvoje izmene in jih vpiše v koledar. Datoteka se bere samo v tej napravi in se ne shrani.
+Izberi PDF ali fotografijo
+Fotografiraj
+Pri fotografiji: list naravnost, dobro osvetljen in cel v kadru.
+Čigave so te izmene?
+Kaj pomeni vsaka oznaka
+Zamenjaj že izpolnjene dni
+Predogled

@@ -875,3 +875,35 @@ Actualizările vin din App Store sau Google Play, ca la celelalte aplicații. Tu
 Sărbătorile federale și cele ale statelor se aplică prin lege doar angajaților publici: în privat depinde de contract. Alege-ți statul ca să vezi sărbătorile lui.
 Programul și odihna pot diferi de la o provincie la alta: verifică valorile de mai jos.
 Carnavalul și Corpus Christi sunt „ponto facultativo”. Alege-ți statul pentru sărbătorile lui; pe cele ale comunei adaugă-le ca sărbătoare locală.
+Lasă așa
+Cu aceste alegeri nu sunt ture de importat.
+Importă {n} zi
+Importă {n} de zile ‖few: Importă {n} zile
+Importă
+Alege…
+Citesc PDF-ul…
+PDF-ul este protejat cu parolă.
+Citesc fotografia…
+Nu am găsit ture în acest fișier. La o fotografie: mai de aproape, dreaptă și bine luminată. Dacă poți, folosește PDF-ul.
+Am găsit {n} persoană: alege-ți rândul.
+Am găsit {n} de persoane: alege-ți rândul. ‖few: Am găsit {n} persoane: alege-ți rândul.
+Am găsit {n} zi.
+Am găsit {n} de zile. ‖few: Am găsit {n} zile.
+Nu pot citi acest fișier. Încearcă cu un PDF sau cu altă fotografie.
+Fișierul este prea mare.
+Am importat {n} zi din programul de ture.
+Am importat {n} de zile din programul de ture. ‖few: Am importat {n} zile din programul de ture.
+Pot încărca programul de ture al firmei?
+Da: în {p} alege PDF-ul sau o fotografie. Aplicația găsește tabelul cu zilele lunii și câte un rând pentru fiecare persoană, sau o listă cu date și ore. Alege-ți rândul, verifică ce înseamnă fiecare prescurtare (dacă programul are legendă, orele se iau de acolo) și uită-te la previzualizare înainte de import. Fișierul este citit doar pe acest dispozitiv. La o fotografie contează calitatea: foaia dreaptă, bine luminată și întreagă.
+Cum văd tura pe Dynamic Island sau o întreb pe Siri?
+Când o tură este în desfășurare sau începe în cel mult 3 ore, apare pe ecranul de blocare și pe Dynamic Island cu timpul rămas până la final; se actualizează când deschizi aplicația. În aplicația Scurtături găsești acțiunea „Next shift” a {app}, pe care o poți folosi și cu Siri. În Centrul de control poți adăuga butonul {app}, care arată următoarea tură și deschide calendarul.
+Citește programul de ture
+Dintr-un PDF sau o fotografie
+Încarcă PDF-ul sau o fotografie a programului de ture al firmei: aplicația îți găsește turele și le trece în calendar. Fișierul este citit doar pe acest dispozitiv și nu este salvat.
+Alege PDF sau fotografie
+Fă o fotografie
+Pentru o fotografie: foaia dreaptă, bine luminată și întreagă în cadru.
+Ale cui sunt turele?
+Ce înseamnă fiecare prescurtare
+Înlocuiește zilele deja completate
+Previzualizare

@@ -875,3 +875,35 @@ Las actualizaciones llegan desde el App Store o Google Play, como en las demás 
 Los festivos federales y los de cada estado solo valen por ley para los empleados públicos: en el sector privado depende del contrato. Elige tu estado para ver sus festivos.
 Los horarios y descansos pueden cambiar de una provincia a otra: comprueba los valores de abajo.
 Carnaval y Corpus Christi son «ponto facultativo». Elige tu estado para sus festivos; añade el de tu municipio como fiesta local.
+Dejar como está
+No hay turnos que importar con estas opciones.
+Importar {n} día
+Importar {n} días
+Importar
+Elige…
+Leyendo el PDF…
+El PDF está protegido con contraseña.
+Leyendo la foto…
+No he encontrado turnos en este archivo. Con una foto: más cerca, recta y bien iluminada. Si puedes, usa el PDF.
+He encontrado {n} persona: elige tu fila.
+He encontrado {n} personas: elige tu fila.
+He encontrado {n} día.
+He encontrado {n} días.
+No puedo leer este archivo. Prueba con un PDF o con otra foto.
+El archivo es demasiado grande.
+Importado {n} día de la hoja de turnos.
+Importados {n} días de la hoja de turnos.
+¿Puedo cargar la hoja de turnos de mi empresa?
+Sí: en {p} elige el PDF o una foto. La app encuentra la tabla con los días del mes y una fila por persona, o una lista con fechas y horarios. Elige tu fila, comprueba qué significa cada sigla (si la hoja tiene leyenda, los horarios se toman de ahí) y mira la vista previa antes de importar. El archivo solo se lee en este dispositivo. Con una foto importa la calidad: hoja recta, bien iluminada y entera.
+¿Cómo veo mi turno en la Dynamic Island o se lo pregunto a Siri?
+Cuando un turno está en curso o empieza en menos de 3 horas, aparece en la pantalla de bloqueo y en la Dynamic Island con el tiempo que falta para terminar; se actualiza al abrir la app. Puedes decir «Oye Siri, próximo turno en {app}». En el centro de control puedes añadir el control de {app}, que muestra tu próximo turno y abre el calendario.
+Leer la hoja de turnos
+Desde un PDF o una foto
+Carga el PDF o una foto de la hoja de turnos de tu empresa: la app encuentra tus turnos y los marca en el calendario. El archivo solo se lee en este dispositivo y no se guarda.
+Elegir PDF o foto
+Hacer una foto
+Para una foto: hoja recta, bien iluminada y entera en el encuadre.
+¿De quién son los turnos?
+Qué significa cada sigla
+Sustituir los días ya rellenos
+Vista previa

@@ -972,5 +972,53 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Actualizările vin din App Store sau Google Play, ca la celelalte aplicații. Turele tale rămân unde sunt.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Sărbătorile federale și cele ale statelor se aplică prin lege doar angajaților publici: în privat depinde de contract. Alege-ți statul ca să vezi sărbătorile lui.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Programul și odihna pot diferi de la o provincie la alta: verifică valorile de mai jos.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Carnavalul și Corpus Christi sunt „ponto facultativo”. Alege-ți statul pentru sărbătorile lui; pe cele ale comunei adaugă-le ca sărbătoare locală."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Carnavalul și Corpus Christi sunt „ponto facultativo”. Alege-ți statul pentru sărbătorile lui; pe cele ale comunei adaugă-le ca sărbătoare locală.",
+"Lascia com'è": "Lasă așa",
+"Nessun turno da importare con queste scelte.": "Cu aceste alegeri nu sunt ture de importat.",
+"Importa {n} giorno": "Importă {n} zi",
+"Importa {n} giorni": {
+"other": "Importă {n} de zile",
+"few": "Importă {n} zile",
+"one": "Importă {n} zi"
+},
+"Importa": "Importă",
+"Scegli…": "Alege…",
+"Leggo il PDF…": "Citesc PDF-ul…",
+"Il PDF è protetto da una password.": "PDF-ul este protejat cu parolă.",
+"Leggo la foto…": "Citesc fotografia…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Nu am găsit ture în acest fișier. La o fotografie: mai de aproape, dreaptă și bine luminată. Dacă poți, folosește PDF-ul.",
+"Ho trovato {n} persona: scegli la tua riga.": "Am găsit {n} persoană: alege-ți rândul.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Am găsit {n} de persoane: alege-ți rândul.",
+"few": "Am găsit {n} persoane: alege-ți rândul.",
+"one": "Am găsit {n} persoană: alege-ți rândul."
+},
+"Ho trovato {n} giorno.": "Am găsit {n} zi.",
+"Ho trovato {n} giorni.": {
+"other": "Am găsit {n} de zile.",
+"few": "Am găsit {n} zile.",
+"one": "Am găsit {n} zi."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Nu pot citi acest fișier. Încearcă cu un PDF sau cu altă fotografie.",
+"Il file è troppo grande.": "Fișierul este prea mare.",
+"Importato {n} giorno dal foglio dei turni.": "Am importat {n} zi din programul de ture.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Am importat {n} de zile din programul de ture.",
+"few": "Am importat {n} zile din programul de ture.",
+"one": "Am importat {n} zi din programul de ture."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Pot încărca programul de ture al firmei?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Da: în {p} alege PDF-ul sau o fotografie. Aplicația găsește tabelul cu zilele lunii și câte un rând pentru fiecare persoană, sau o listă cu date și ore. Alege-ți rândul, verifică ce înseamnă fiecare prescurtare (dacă programul are legendă, orele se iau de acolo) și uită-te la previzualizare înainte de import. Fișierul este citit doar pe acest dispozitiv. La o fotografie contează calitatea: foaia dreaptă, bine luminată și întreagă.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Cum văd tura pe Dynamic Island sau o întreb pe Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Când o tură este în desfășurare sau începe în cel mult 3 ore, apare pe ecranul de blocare și pe Dynamic Island cu timpul rămas până la final; se actualizează când deschizi aplicația. În aplicația Scurtături găsești acțiunea „Next shift” a {app}, pe care o poți folosi și cu Siri. În Centrul de control poți adăuga butonul {app}, care arată următoarea tură și deschide calendarul.",
+"Leggi il foglio dei turni": "Citește programul de ture",
+"Da un PDF o da una foto": "Dintr-un PDF sau o fotografie",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Încarcă PDF-ul sau o fotografie a programului de ture al firmei: aplicația îți găsește turele și le trece în calendar. Fișierul este citit doar pe acest dispozitiv și nu este salvat.",
+"Scegli PDF o foto": "Alege PDF sau fotografie",
+"Scatta una foto": "Fă o fotografie",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Pentru o fotografie: foaia dreaptă, bine luminată și întreagă în cadru.",
+"Di chi sono i turni?": "Ale cui sunt turele?",
+"Cosa vuol dire ogni sigla": "Ce înseamnă fiecare prescurtare",
+"Sostituisci i giorni già compilati": "Înlocuiește zilele deja completate",
+"Anteprima": "Previzualizare"
 };

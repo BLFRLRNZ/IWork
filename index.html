@@ -442,6 +442,13 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
 .alrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
 .alrow .check{margin:0;flex:1;min-width:0}
 .alrow select{width:auto;min-width:104px;flex:0 0 auto}
+.impick{display:flex;gap:8px;flex-wrap:wrap}#imBox{display:flex;flex-direction:column;gap:16px}#imBox[hidden]{display:none}.impick .btn{flex:1 1 140px}
+.imrow{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
+.imrow .imc{flex:1;min-width:0;overflow-wrap:anywhere}.imrow .imc small{display:block;color:var(--muted);font-size:12px}
+.imrow select{width:auto;max-width:62%;flex:0 1 auto}
+.imprev{max-height:38vh;overflow:auto;border:1px solid var(--line);border-radius:12px;padding:2px 12px;font-size:14px}
+.imprev div{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}.imprev div:last-child{border-bottom:0}
+.imprev .d{min-width:88px;color:var(--muted)}.imprev .skip{opacity:.45;text-decoration:line-through}
 .alhd{display:flex;justify-content:space-between;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:10px 0 2px}
 .altn{display:inline-flex;align-items:center;gap:7px}
 .altn .dot{width:10px;height:10px;border-radius:3px;display:inline-block}
@@ -727,6 +734,7 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
       <h3>Compila i turni</h3>
       <button type="button" class="mi" id="cycleBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-13.7 5.6M4 12a8 8 0 0 1 13.7-5.6"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></span><span><b>Turnazione ciclica</b><small>Uno schema che si ripete, su più settimane</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="repeatBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15h6M13 13l2 2-2 2"/></svg></span><span><b>Ripeti l'ultima settimana</b><small>Copia i turni sulla settimana dopo</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
+      <button type="button" class="mi" id="importBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><path d="M8 9.5h8M8 12.5h8M8 15.5h5"/></svg></span><span><b>Leggi il foglio dei turni</b><small>Da un PDF o da una foto</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <h3>Ore e contratto</h3>
       <button type="button" class="mi" id="whBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><span><b>Orario di lavoro</b><small>Durata dei turni, riposo minimo, ore notturne</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
       <button type="button" class="mi" id="lvBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M7 20c0-4 2-7 5-7s5 3 5 7"/><path d="M12 13V4M12 4c-3 0-5 2-6 4M12 4c3 0 5 2 6 4"/></svg></span><span><b>Ferie e permessi</b><small>Quanti giorni e quante ore ti spettano</small></span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5l4.5 4.5L6 12.5"/></svg></button>
@@ -1059,6 +1067,34 @@ dl.pay .totrow{border-top:1px solid var(--line);padding-top:10px;font-weight:700
   </form>
 </dialog>
 
+<dialog id="im" aria-labelledby="imTitle">
+  <div class="sheet">
+    <h2 id="imTitle" style="text-transform:none">Leggi il foglio dei turni</h2>
+    <p class="sub">Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.</p>
+    <div class="impick">
+      <label class="btn primary bpload"><input type="file" id="imFile" accept="application/pdf,.pdf,image/*" hidden><span>Scegli PDF o foto</span></label>
+      <label class="btn bpload"><input type="file" id="imCam" accept="image/*" capture="environment" hidden><span>Scatta una foto</span></label>
+    </div>
+    <p class="help">Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.</p>
+    <div class="bppw" id="imPwBox" hidden>
+      <label class="eyebrow" for="imPw">Password del PDF</label>
+      <div class="row"><input type="password" id="imPw" autocomplete="off" spellcheck="false"><button type="button" class="btn" id="imPwGo">Apri</button></div>
+    </div>
+    <p class="bpst" id="imStatus" aria-live="polite" hidden></p>
+    <div id="imBox" hidden>
+      <div class="field" id="imWhoF"><label class="eyebrow" for="imWho">Di chi sono i turni?</label><select id="imWho"></select></div>
+      <div class="field" id="imMonF"><label class="eyebrow" for="imMon">Mese</label><select id="imMon"></select></div>
+      <div class="field" id="imCodesF"><span class="eyebrow">Cosa vuol dire ogni sigla</span><div id="imCodes"></div></div>
+      <label class="check"><input type="checkbox" id="imOver" checked> Sostituisci i giorni già compilati</label>
+      <div class="field"><span class="eyebrow">Anteprima</span><div class="imprev" id="imPrev"></div></div>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn ghost" id="imCancel">Chiudi</button>
+      <button type="button" class="btn primary" id="imGo" disabled>Importa</button>
+    </div>
+  </div>
+</dialog>
+
 <dialog id="sh" aria-labelledby="shTitle">
   <form class="sheet" id="shForm" method="dialog">
     <h2 id="shTitle" style="text-transform:none">Condividi la settimana</h2>
@@ -1236,7 +1272,7 @@ function translateDom(){const w=document.createTreeWalker(document.body,NodeFilt
     ["placeholder","aria-label","title","alt"].forEach(a=>{if(!el.hasAttribute(a))return;if(m[a]==null)m[a]=el.getAttribute(a);el.setAttribute(a,t(m[a]));});});
   document.documentElement.lang=LANG;}
 const hosted=!!(window.claude&&window.claude.use);
-const APP_VERSION="2.14.0";
+const APP_VERSION="2.15.0";
 const LOGO={arcs:[["M206.6 103.8A160 160 0 0 1 412.5 222.7","#7C7FFF"],["M412.5 289.3A160 160 0 0 1 206.6 408.2","#FFB61D"],["M148.9 374.9A160 160 0 0 1 148.9 137.1","#FF6B3D"]],hands:["M256 256L256.0 172.0","M256 256L308.0 286.0"]};
 const LOGO_PDF="1 J 0.486 0.498 1.000 RG 48 w 206.6 103.8 m 249.7 89.8 296.7 94.8 336.0 117.4 c 375.3 140.1 403.1 178.4 412.5 222.7 c S 1.000 0.714 0.114 RG 48 w 412.5 289.3 m 403.1 333.6 375.3 371.9 336.0 394.6 c 296.7 417.2 249.7 422.2 206.6 408.2 c S 1.000 0.420 0.239 RG 48 w 148.9 374.9 m 115.2 344.6 96.0 301.3 96.0 256.0 c 96.0 210.7 115.2 167.4 148.9 137.1 c S 1 1 1 RG 30 w 256 256 m 256.0 172.0 l S 1 1 1 RG 30 w 256 256 m 308.0 286.0 l S 1 1 1 rg 278 256 m 278 268.2 268.2 278 256 278 c 243.8 278 234 268.2 234 256 c 234 243.8 243.8 234 256 234 c 268.2 234 278 243.8 278 256 c f";
 function drawLogo(g,x,y,size){g.save();g.translate(x,y);g.scale(size/512,size/512);const gr=g.createLinearGradient(0,0,0,512);gr.addColorStop(0,"#1c1f2a");gr.addColorStop(1,"#0a0b10");g.fillStyle=gr;g.beginPath();if(g.roundRect)g.roundRect(0,0,512,512,118);else g.rect(0,0,512,512);g.fill();g.lineCap="round";g.lineWidth=48;LOGO.arcs.forEach(a=>{g.strokeStyle=a[1];g.stroke(new Path2D(a[0]));});g.strokeStyle="#fff";g.lineWidth=30;LOGO.hands.forEach(h=>g.stroke(new Path2D(h)));g.fillStyle="#fff";g.beginPath();g.arc(256,256,22,0,7);g.fill();g.restore();}
@@ -1253,7 +1289,7 @@ function normSettings(s){s=s||{};const wd=num(s.wd,0.5,16,DEF.wd),sat=num(s.sat,
     pOt:num(s.pOt,0,300,0),pNight:num(s.pNight,0,300,0),pSun:num(s.pSun,0,300,0),pHol:num(s.pHol,0,300,0),
     country:typeof s.country==="string"&&(window.MYTURN_COUNTRIES||{})[s.country]?s.country:"IT",region:typeof s.region==="string"?s.region.slice(0,8):"",patron:null,setup:s.setup?1:0,rules:null,
     rem:(r=>({on:r.on?1:0,min:[15,30,60,90,120,180].includes(+r.min)?+r.min:60,j2:r.j2===0?0:1,oc:r.oc===0?0:1}))(s.rem||{}),
-    alarm:(a=>{const ok=(v,d)=>AL_MIN.includes(+v)?+v:d,ty=(o,d)=>({on:(o||{}).on===0?0:1,min:ok((o||{}).min,d)});return{on:a.on?1:0,m:ty(a.m,90),p:ty(a.p,60),n:ty(a.n,60)};})(s.alarm||{}),payLag:s.payLag?1:0,ocOn:s.ocOn?1:0,ocS:okT(s.ocS)?s.ocS:"20:00",ocD:num(s.ocD,0.5,24,12),ocPay:num(s.ocPay,0,9999,0),j2:null};
+    alarm:(a=>{const ok=(v,d)=>AL_MIN.includes(+v)?+v:d,ty=(o,d)=>({on:(o||{}).on===0?0:1,min:ok((o||{}).min,d)});return{on:a.on?1:0,m:ty(a.m,90),p:ty(a.p,60),n:ty(a.n,60)};})(s.alarm||{}),imp:(i=>({who:String(i.who||"").slice(0,60),map:Object.fromEntries(Object.entries(i.map&&typeof i.map==="object"?i.map:{}).filter(([k,v])=>k.length<=12&&/^(p\d{1,2}|[rfpmxt])$/.test(String(v))).slice(-40))}))(s.imp||{}),payLag:s.payLag?1:0,ocOn:s.ocOn?1:0,ocS:okT(s.ocS)?s.ocS:"20:00",ocD:num(s.ocD,0.5,24,12),ocPay:num(s.ocPay,0,9999,0),j2:null};
   /* secondo lavoro: nome, durata standard, paga oraria */
   const j=s.j2&&typeof s.j2==="object"?s.j2:{};o.j2={on:j.on?1:0,n:String(j.n||"").trim().slice(0,24),d:num(j.d,0.5,16,4),rate:num(j.rate,0,9999,0)};
   if(s.rules&&typeof s.rules==="object"){const r={};const a=num(s.rules.rest,0,24,null),b=num(s.rules.maxWeek,1,99,null),c=num(s.rules.nf,0,23,null),d=num(s.rules.nt,0,23,null);
@@ -1734,7 +1770,7 @@ function lockPage(){if(document.body.classList.contains("locked"))return;lockY=w
 function unlockPage(){if(document.querySelector("dialog[open]")||!document.body.classList.contains("locked"))return;document.body.classList.remove("locked");document.body.style.top="";window.scrollTo(0,lockY);}
 function openDlg(d){lockPage();if(d.open)return;d.tabIndex=-1;d.showModal();d.focus({preventScroll:true});}
 function showField(id){setTimeout(()=>{const el=$(id);if(!el)return;el.scrollIntoView({block:"center",behavior:"smooth"});const f=el.closest(".field")||el;f.classList.remove("flash");void f.offsetWidth;f.classList.add("flash");},120);}
-[$("ed"),$("st"),$("pd"),$("cy"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp"),$("hp"),$("ac"),$("rm"),$("al"),$("sy")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
+[$("ed"),$("st"),$("pd"),$("cy"),$("im"),$("sh"),$("tl"),$("rc"),$("pr"),$("lb"),$("wh"),$("lv"),$("hb"),$("py"),$("j2"),$("ic"),$("bp"),$("hp"),$("ac"),$("rm"),$("al"),$("sy")].forEach(dlg=>{dlg.addEventListener("click",ev=>{if(ev.target===dlg)dlg.close();});dlg.addEventListener("close",unlockPage);});
 /* niente zoom con due dita o doppio tocco (Safari ignora user-scalable) */
 ["gesturestart","gesturechange","gestureend"].forEach(t=>document.addEventListener(t,ev=>ev.preventDefault(),{passive:false}));
 document.addEventListener("touchmove",ev=>{if(ev.touches.length>1)ev.preventDefault();},{passive:false});
@@ -2064,6 +2100,236 @@ $("cyForm").addEventListener("submit",ev=>{ev.preventDefault();if(!cyPlan().leng
   const f=dateOf(plan[0][0]);view=new Date(f.getFullYear(),f.getMonth(),1);if(mode!=="cal")setMode("cal");
   apply(plan.map(x=>[x[0],cyEntry(x[1])]),tn(plan.length,"Turnazione applicata a {n} giorno.","Turnazione applicata a {n} giorni."));});
 
+/* ---------- foglio dei turni: da un PDF o da una foto, tutto sul telefono ----------
+   1. testo con la posizione di ogni parola: PDF con pdf.js (una scansione diventa un'immagine);
+      foto e scansioni con il riconoscimento del testo di Apple nell'app per iPhone, altrimenti con Tesseract.js (vendor/tesseract).
+   2. imParse: "tabella" = una riga con i giorni del mese (1 2 3 …) e sotto una riga per persona;
+      "elenco" = righe con una data e un orario o una sigla. Una legenda ("M = 06-14") dà gli orari delle sigle.
+   3. si scelgono la persona, il mese e cosa vuol dire ogni sigla; anteprima e importazione annullabile. */
+let imData=null,imBuf=null,imBusy=false;
+const imNorm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9\u0370-\u03ff\u0400-\u04ff]+/g,"");
+const imMDY=()=>/-US$/.test(LOC)||S.settings.country==="US";
+function imStatus(msg,cls){const e=$("imStatus");e.hidden=!msg;e.className="bpst"+(cls?" "+cls:"");e.innerHTML=msg||"";}
+/* PDF: parole con posizione (origine in alto a sinistra); le pagine senza testo diventano immagini */
+async function imPdfPages(buf,pw){const L=await bpLib(),task=L.getDocument({data:new Uint8Array(buf),password:pw||undefined,isEvalSupported:false,disableFontFace:true,verbosity:0});let doc;
+  try{doc=await task.promise;}catch(e){task.destroy();throw e;}const pages=[];
+  try{for(let p=1;p<=Math.min(doc.numPages,6);p++){const pg=await doc.getPage(p),vp=pg.getViewport({scale:1}),tc=await pg.getTextContent(),toks=[];
+      tc.items.forEach(i=>{const str=i.str||"";if(!str.trim())return;const h=Math.abs(i.transform[3])||Math.abs(i.height)||8,x=i.transform[4],yb=vp.height-i.transform[5],n=str.length,w=i.width||n*h*.5;
+        str.replace(/\S+(?: \S+)*/g,(m,ix)=>{toks.push({s:m,x0:x+w*ix/n,x1:x+w*(ix+m.length)/n,y0:yb-h,y1:yb});return m;});});
+      if(toks.length<12){const sc=Math.min(3,2600/Math.max(vp.width,vp.height)),v2=pg.getViewport({scale:sc}),cv=document.createElement("canvas");cv.width=Math.round(v2.width);cv.height=Math.round(v2.height);
+        const g=cv.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,cv.width,cv.height);await pg.render({canvasContext:g,viewport:v2}).promise;pages.push({scan:cv});}
+      else pages.push({toks});}}
+  finally{task.destroy();}return pages;}
+/* foto: dritta (EXIF), lato lungo tra 1600 e 2800 punti */
+async function imCanvas(file){let src;try{src=await createImageBitmap(file,{imageOrientation:"from-image"});}
+  catch(e){src=await new Promise((ok,ko)=>{const im=new Image(),u=URL.createObjectURL(file);im.onload=()=>{URL.revokeObjectURL(u);ok(im);};im.onerror=()=>{URL.revokeObjectURL(u);ko(e);};im.src=u;});}
+  const W=src.width,H=src.height,M=Math.max(W,H),sc=M>2800?2800/M:M<1600?1600/M:1,cv=document.createElement("canvas");cv.width=Math.round(W*sc);cv.height=Math.round(H*sc);
+  const g=cv.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,cv.width,cv.height);g.drawImage(src,0,0,cv.width,cv.height);return cv;}
+/* foto per Tesseract: bianco e nero con soglia locale (ombre e luce non uniforme) e senza le linee della griglia */
+function imPrep(cv){const W=cv.width,H=cv.height,g=cv.getContext("2d"),id=g.getImageData(0,0,W,H),d=id.data,N=W*H,gr=new Float32Array(N),I=new Float64Array((W+1)*(H+1));
+  for(let i=0;i<N;i++)gr[i]=d[i*4]*.299+d[i*4+1]*.587+d[i*4+2]*.114;
+  for(let y=0;y<H;y++){let r=0;for(let x=0;x<W;x++){r+=gr[y*W+x];I[(y+1)*(W+1)+x+1]=I[y*(W+1)+x+1]+r;}}
+  const R=Math.max(8,Math.round(Math.max(W,H)/40)),bk=new Uint8Array(N);
+  for(let y=0;y<H;y++){const y0=Math.max(0,y-R),y1=Math.min(H,y+R+1);for(let x=0;x<W;x++){const x0=Math.max(0,x-R),x1=Math.min(W,x+R+1);
+    const m=(I[y1*(W+1)+x1]-I[y0*(W+1)+x1]-I[y1*(W+1)+x0]+I[y0*(W+1)+x0])/((y1-y0)*(x1-x0));bk[y*W+x]=gr[y*W+x]<m*.82&&gr[y*W+x]<200?1:0;}}
+  const L=Math.max(36,Math.round(Math.max(W,H)*.02)),rm=new Uint8Array(N);
+  /* linee lunghe: righe di tre pixel insieme, così anche una linea un po' storta resta continua */
+  for(let y=0;y<H;y++){let st=-1;for(let x=0;x<=W;x++){const on=x<W&&(bk[y*W+x]||y>0&&bk[(y-1)*W+x]||y<H-1&&bk[(y+1)*W+x]);
+    if(on&&st<0)st=x;else if(!on&&st>=0){if(x-st>=L)for(let k=st;k<x;k++)rm[y*W+k]=1;st=-1;}}}
+  for(let x=0;x<W;x++){let st=-1;for(let y=0;y<=H;y++){const on=y<H&&(bk[y*W+x]||x>0&&bk[y*W+x-1]||x<W-1&&bk[y*W+x+1]);
+    if(on&&st<0)st=y;else if(!on&&st>=0){if(y-st>=L*1.4)for(let k=st;k<y;k++)rm[k*W+x]=1;st=-1;}}}
+  const o=document.createElement("canvas");o.width=W;o.height=H;const og=o.getContext("2d"),od=og.createImageData(W,H);
+  for(let i=0;i<N;i++){const v=bk[i]&&!rm[i]?0:255;od.data[i*4]=od.data[i*4+1]=od.data[i*4+2]=v;od.data[i*4+3]=255;}og.putImageData(od,0,0);return o;}
+let imTessP=null;
+function imTess(){if(!imTessP)imTessP=new Promise((ok,ko)=>{if(window.Tesseract)return ok(window.Tesseract);const s=document.createElement("script");s.src="vendor/tesseract/tesseract.min.js";
+  s.onload=()=>window.Tesseract?ok(window.Tesseract):ko(new Error("tesseract"));s.onerror=()=>{imTessP=null;ko(new Error("tesseract"));};document.head.appendChild(s);});return imTessP;}
+async function imTessWorker(onp){const T=await imTess(),base=new URL("vendor/tesseract/",location.href).href,langs=["eng"].concat(LANG==="el"?["ell"]:LANG==="bg"?["bul"]:[]);
+  return T.createWorker(langs,1,{workerPath:base+"worker.min.js",corePath:base+"core/",langPath:base+"lang",gzip:true,logger:m=>{if(onp&&m&&m.status==="recognizing text")onp(m.progress||0);}});}
+async function imTessRead(w,cv,psm,minConf){await w.setParameters({tessedit_pageseg_mode:psm,preserve_interword_spaces:"1"});const {data}=await w.recognize(cv,{},{blocks:true}),out=[];
+  (data.blocks||[]).forEach(b=>(b.paragraphs||[]).forEach(p=>(p.lines||[]).forEach(l=>(l.words||[]).forEach(x=>{const s=(x.text||"").trim();
+    if(s&&x.confidence>=minConf&&!/^[|_\-—–=.:;,'"`~°\[\]()]+$/.test(s))out.push({s,x0:x.bbox.x0,y0:x.bbox.y0,x1:x.bbox.x1,y1:x.bbox.y1});}))));return out;}
+/* pagina intera: nell'app per iPhone il riconoscimento del testo di Apple; altrimenti Tesseract (che poi rilegge le righe, vedi imRefine) */
+async function imOcr(pg,onp){const cv=pg.scan;
+  if(NATIVE&&document.documentElement.classList.contains("ios")){const P=wgPlugin();
+    if(P&&P.ocr){try{const r=await P.ocr({data:cv.toDataURL("image/jpeg",.9).split(",")[1]});if(r&&Array.isArray(r.words)&&r.words.length)return r.words;}catch(e){}}}
+  pg.w=await imTessWorker(onp);pg.prep=imPrep(cv);return imTessRead(pg.w,pg.prep,"6",20);}
+/* secondo passaggio, solo con Tesseract: le caselle di ogni persona ritagliate e messe in fila su una striscia pulita, letta come una riga sola.
+   Le lettere isolate di una tabella si leggono molto meglio così che nella pagina intera. */
+async function imRefine(D,pages,onp){const todo=[];D.rows.forEach(r=>(r.at||[]).forEach(a=>{if(pages[a.pi]&&pages[a.pi].w)todo.push([r,a]);}));let n=0;
+  for(const [r,a] of todo){const pg=pages[a.pi],cv=pg.prep,cw=Math.max(12,Math.round(a.sp*.8)),ch=Math.max(12,Math.round(Math.min(a.pitch*.88,a.sp*1.7))),gap=Math.round(cw*.9),pad=Math.round(ch*.35),N=a.cols.length;
+    const st=document.createElement("canvas");st.width=N*(cw+gap)+gap;st.height=ch+2*pad;const g=st.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,st.width,st.height);
+    a.cols.forEach((c,j)=>{const q=1+a.k*a.k,ix=(c.x-a.yc*a.k)/q,iy=(a.yc+c.x*a.k)/q;g.drawImage(cv,Math.round(ix-cw/2),Math.round(iy-ch/2),cw,ch,gap+j*(cw+gap),pad,cw,ch);});
+    const words=await imTessRead(pg.w,st,"7",10),cells={};
+    words.forEach(t=>{const j=Math.floor(((t.x0+t.x1)/2-gap/2)/(cw+gap));if(j>=0&&j<N)(cells[j]=cells[j]||[]).push(t.s);});
+    a.cols.forEach((c,j)=>{const txt=(cells[j]||[]).join(" ").trim(),ex=r.days.find(x=>x.c===c);if(txt){if(ex)ex.s=txt;else r.days.push({c,s:txt});}});
+    r.days.sort((x,y)=>x.c.o-y.c.o);if(onp)onp(++n/todo.length);}}
+/* una parola che può essere un giorno: "7", "07/11", "7.11.2026", "2026-11-07" */
+function imDayTok(s){let m=s.match(/^(\d{1,2})\.?$/);if(m){const d=+m[1];return d>=1&&d<=31?{d}:null;}
+  m=s.match(/^(\d{1,2})[./-](\d{1,2})(?:[./-](\d{2}|\d{4}))?\.?$/);if(m){let a=+m[1],b=+m[2];if(imMDY())[a,b]=[b,a];
+    if(a>=1&&a<=31&&b>=1&&b<=12)return{d:a,m:b,y:m[3]?(m[3].length===2?2000+ +m[3]:+m[3]):0};return null;}
+  m=s.match(/^(\d{4})-(\d{2})-(\d{2})$/);if(m)return{d:+m[3],m:+m[2],y:+m[1]};return null;}
+/* foto storta: pendenza delle righe (mediana tra parole vicine sulla stessa riga) e coordinate raddrizzate */
+function imDeskew(toks){const c=toks.map(t=>({x:(t.x0+t.x1)/2,y:(t.y0+t.y1)/2,h:Math.max(1,t.y1-t.y0)})),sl=[];
+  c.forEach(a=>{let b=null;c.forEach(o=>{const dx=o.x-a.x,dy=o.y-a.y;if(dx>a.h*.6&&dx<a.h*8&&Math.abs(dy)<a.h*.7&&(!b||dx<b.dx))b={dx,dy};});if(b)sl.push(b.dy/b.dx);});
+  const K=a=>{a.k=a.k||0;return a;};if(sl.length<6)return K(toks.slice());sl.sort((a,b)=>a-b);const k=sl[sl.length>>1];if(Math.abs(k)<.003)return K(toks.slice());
+  const o=toks.map((t,i)=>{const w=t.x1-t.x0,h=t.y1-t.y0,x=c[i].x+c[i].y*k,y=c[i].y-c[i].x*k;return{s:t.s,x0:x-w/2,x1:x+w/2,y0:y-h/2,y1:y+h/2};});o.k=k;return o;}
+function imLines(toks){const hs=toks.map(t=>t.y1-t.y0).filter(h=>h>0).sort((a,b)=>a-b),mh=hs[hs.length>>1]||10,lines=[];
+  toks.slice().sort((a,b)=>(a.y0+a.y1)-(b.y0+b.y1)).forEach(t=>{const yc=(t.y0+t.y1)/2;let L=null;
+    for(let i=lines.length-1;i>=Math.max(0,lines.length-4);i--)if(Math.abs(lines[i].yc-yc)<mh*.55){L=lines[i];break;}
+    if(L){L.t.push(t);L.yc+=(yc-L.yc)/L.t.length;}else lines.push({yc,t:[t]});});
+  lines.sort((a,b)=>a.yc-b.yc);lines.forEach(L=>L.t.sort((a,b)=>a.x0-b.x0));return{lines,mh};}
+/* riga dei giorni: numeri che crescono di uno da sinistra a destra (con qualche numero letto male) */
+function imHeader(L){const c=L.t.map(t=>({v:imDayTok(t.s),x:(t.x0+t.x1)/2})).filter(o=>o.v);if(c.length<5)return null;
+  const nxt=(a,b)=>b.d===a.d+1||b.d===1&&a.d>=28;let best=null;
+  for(let i=0;i<c.length;i++){const run=[{...c[i],i:0}];
+    for(let j=i+1;j<c.length;j++){const p=run[run.length-1],q=c[j],sp=run.length>1?(p.x-run[0].x)/p.i:0;
+      if(nxt(p.v,q.v)&&(!sp||Math.abs(q.x-p.x-sp)<sp*.45)){run.push({...q,i:p.i+1});continue;}
+      const k=q.v.d-p.v.d;if(sp&&k>=2&&k<=3&&Math.abs(q.x-p.x-k*sp)<sp*.4)run.push({...q,i:p.i+k});}
+    const last=run[run.length-1];if(run.length>=5&&run.length>=(last.i+1)*.6&&(!best||run.length>best.length))best=run;}
+  if(!best)return null;const cols=[];
+  for(let i=0;i<=best[best.length-1].i;i++){const k=best.find(r=>r.i===i);if(k){cols.push({x:k.x,d:k.v.d,m:k.v.m||0,y:k.v.y||0});continue;}
+    const a=[...best].reverse().find(r=>r.i<i),b=best.find(r=>r.i>i);cols.push({x:a.x+(b.x-a.x)*(i-a.i)/(b.i-a.i),d:0,m:0,y:0});}
+  cols.forEach((c,i)=>{if(!c.d){const p=cols[i-1];c.d=p.d+1;}});
+  const sp=cols.length>1?(cols[cols.length-1].x-cols[0].x)/(cols.length-1):0;
+  while(sp&&!cols[0].m&&cols[0].d>1&&cols[0].d<=3&&cols[0].x-sp*1.6>0)cols.unshift({x:cols[0].x-sp,d:cols[0].d-1,m:0,y:0});return cols;}
+/* legenda: "M = 06:00-14:00", "N: notte 22-6" */
+const IM_T="(\\d{1,2})(?:[:.h,](\\d{2}))?",IM_SEP="\\s*(?:[-–—/>~]|\\s(?:a|to|bis|à|até|alle|al|tot|do|till|ka|kuni)\\s)\\s*";
+function imRanges(s){const re=new RegExp("(?:^|[^\\d:.])"+IM_T+IM_SEP+IM_T+"(?![\\d:])","gi"),rs=[];let m;
+  while((m=re.exec(s))&&rs.length<2){const h1=+m[1],m1=+(m[2]||0),h2=+m[3],m2=+(m[4]||0);if(h1>24||h2>24||m1>59||m2>59)continue;
+    let d=((h2*60+m2)-(h1*60+m1))/60;if(d<=0)d+=24;if(d<1||d>16||!m[2]&&!m[4]&&d<3)continue;rs.push({s:pad(h1%24)+":"+pad(m1),d:Math.round(d*100)/100});}
+  if(!rs.length){const tt=[...s.matchAll(/(^|[^\d])(\d{1,2})[:.h](\d{2})(?!\d)/g)];
+    if(tt.length===2){const a=+tt[0][2]*60+ +tt[0][3],b=+tt[1][2]*60+ +tt[1][3];let d=(b-a)/60;if(d<=0)d+=24;if(+tt[0][2]<=24&&+tt[1][2]<=24&&d>=1&&d<=16)rs.push({s:pad(+tt[0][2]%24)+":"+tt[0][3],d:Math.round(d*100)/100});}}
+  return rs;}
+function imLegend(lines){const lg={};lines.forEach(L=>{const txt=L.t.map(t=>t.s).join(" ");
+  /* senza "=" (nelle foto si perde spesso): "M 07:00-14:00 P 14:00-21:00", almeno due coppie nella riga */
+  const R2=/(?:^|\s)([A-ZÀ-ÖØ-Þ][A-ZÀ-ÖØ-Þ0-9]{0,3})[=:]?\s+(\d{1,2}[:.h]\d{2}\s*[-–—]\s*\d{1,2}[:.h]\d{2})/g,pairs=[...txt.matchAll(R2)];
+  if(pairs.length>=2)pairs.forEach(m=>{const rs=imRanges(m[2]);if(rs.length&&!lg[m[1]])lg[m[1]]=rs;});
+  txt.replace(/(?:^|\s|[;,(])([A-ZÀ-ÖØ-Þ][A-ZÀ-ÖØ-Þ0-9]{0,3})\s*[=:]\s*([^=;]{0,40}?\d{1,2}(?:[:.h,]\d{2})?\s*[-–—/]\s*\d{1,2}(?:[:.h,]\d{2})?)/g,(m,c,r)=>{const rs=imRanges(r);if(rs.length&&!lg[c])lg[c]=rs;return m;});});return lg;}
+/* nomi dei mesi e dei giorni nella lingua dell'app, in inglese e in italiano */
+let imNamesC=null;
+function imNames(){if(imNamesC&&imNamesC.l===LOC)return imNamesC;const mo={},ml={},wd=[];
+  [LOC,"en","it"].forEach(l=>{for(let m=0;m<12;m++){const d=new Date(2026,m,15);["long","short"].forEach(f=>{try{const s=imNorm(new Intl.DateTimeFormat(l,{month:f}).format(d));if(s.length>=3){mo[s]=m+1;if(f==="long"&&s.length>=4)ml[s]=m+1;}}catch(e){}});}
+    for(let i=0;i<7;i++){const d=new Date(2026,10,2+i);["long","short"].forEach(f=>{try{const s=imNorm(new Intl.DateTimeFormat(l,{weekday:f}).format(d));if(s.length>=2)wd.push(s);}catch(e){}});}});
+  return imNamesC={l:LOC,mo,ml,wd:[...new Set(wd)]};}
+function imMonthIn(txt){const N=imNames();let r=null;
+  String(txt).split(/[\s,;()|]+/).some((w,i,a)=>{const n=imNorm(w),y=(a.slice(i+1,i+3).join(" ").match(/\b(20\d\d)\b/)||[])[1];
+    if(N.ml[n]||N.mo[n]&&y&&!N.wd.includes(n)){r={m:N.mo[n],y:y?+y:0};return true;}return false;});
+  if(!r){const m=String(txt).match(/\b(0?[1-9]|1[0-2])[./-](20\d\d)\b|\b(20\d\d)[./-](0[1-9]|1[0-2])\b/);if(m)r=m[1]?{m:+m[1],y:+m[2]}:{m:+m[4],y:+m[3]};}
+  return r;}
+/* elenco: una data all'inizio della riga, poi orario o sigla */
+function imListRow(txt){const N=imNames();let m,d=null,rest="";
+  if((m=txt.match(/(\d{4})-(\d{2})-(\d{2})/)))d={d:+m[3],m:+m[2],y:+m[1]};
+  else if((m=txt.match(/(^|[^\d:.])(\d{1,2})[./-](\d{1,2})(?:[./-](\d{2,4}))?\.?(?![\d:])/))&&m.index<16){let a=+m[2],b=+m[3];if(imMDY())[a,b]=[b,a];
+    if(a>=1&&a<=31&&b>=1&&b<=12)d={d:a,m:b,y:m[4]?(m[4].length===2?2000+ +m[4]:+m[4]):0};}
+  if(!d){const ws=txt.split(/\s+/);for(let i=0;i<Math.min(ws.length-1,3);i++){const a=imNorm(ws[i]),b=imNorm(ws[i+1]);
+      if(/^\d{1,2}$/.test(a)&&N.mo[b]&&!N.wd.includes(b)&&+a>=1&&+a<=31){d={d:+a,m:N.mo[b],y:0};m={index:txt.indexOf(ws[i]),0:ws[i]+" "+ws[i+1]};break;}
+      if(N.wd.includes(a)&&/^\d{1,2}$/.test(b)&&+b>=1&&+b<=31){d={d:+b,m:0,y:0};m={index:txt.indexOf(ws[i]),0:ws[i]+" "+ws[i+1]};break;}
+      if(N.mo[a]&&/^\d{1,2}$/.test(b)&&+b>=1&&+b<=31){d={d:+b,m:N.mo[a],y:0};m={index:txt.indexOf(ws[i]),0:ws[i]+" "+ws[i+1]};break;}}}
+  if(!d)return null;rest=(txt.slice(0,m.index)+" "+txt.slice(m.index+m[0].length)).trim();
+  const w0=rest.split(/\s+/);if(w0.length&&N.wd.includes(imNorm(w0[0])))rest=w0.slice(1).join(" ");
+  return rest?{...d,s:rest}:null;}
+function imParse(pages){const people={},order=[],list=[],allLines=[];let ord=0;
+  const isLegend=txt=>/(^|\s)[A-ZÀ-Þ][A-ZÀ-Þ0-9]{0,3}\s*[=:]\s*\S/.test(txt)&&(imRanges(txt).length>0||/[=]/.test(txt));
+  pages.forEach((pg,pi)=>{const dk=imDeskew(pg.toks),{lines,mh}=imLines(dk);allLines.push(...lines);let seg=null;const segs=[];
+    lines.forEach(L=>{const h=imHeader(L);if(h){h.forEach(c=>{c.o=++ord;});seg={cols:h,sp:h.length>1?(h[h.length-1].x-h[0].x)/(h.length-1):40,ent:[]};segs.push(seg);return;}
+      if(!seg)return;const txt=L.t.map(t=>t.s).join(" ");if(isLegend(txt))return;
+      const {cols,sp}=seg,left=cols[0].x-sp*.6,lab=[],cells={};
+      L.t.forEach(t=>{const xc=(t.x0+t.x1)/2;if(xc<left){lab.push(t.s);return;}let bi=-1,bd=1e9;cols.forEach((c,j)=>{const d=Math.abs(c.x-xc);if(d<bd){bd=d;bi=j;}});
+        if(bd<sp*.62)(cells[bi]=cells[bi]||[]).push(t.s);});
+      const label=lab.join(" ").replace(/\s+/g," ").trim(),named=label&&/[A-Za-zÀ-ɏͰ-Ͽ\u0400-\u04ff]{2}/.test(label);
+      if(named||Object.keys(cells).length)seg.ent.push({yc:L.yc,label:named?label:"",cells});});
+    /* le righe senza nome (orari su due righe, sigle sotto il nome) vanno alla persona più vicina, sopra o sotto */
+    segs.forEach(sg=>{const named=sg.ent.filter(e=>e.label);if(!named.length)return;
+      const gaps=named.slice(1).map((e,i)=>e.yc-named[i].yc).sort((a,b)=>a-b),pitch=gaps.length?gaps[gaps.length>>1]:mh*3,lim=Math.max(mh*1.6,pitch*.62);
+      named.forEach(e=>{e.parts=[e];});
+      sg.ent.filter(e=>!e.label).forEach(e=>{let b=null,bd=1e9;named.forEach(n=>{const d=Math.abs(n.yc-e.yc);if(d<bd){bd=d;b=n;}});if(b&&bd<=lim)b.parts.push(e);});
+      named.forEach(n=>{const k=imNorm(n.label);if(!people[k]){people[k]={label:n.label,days:[],at:[]};order.push(k);}const P=people[k];
+        P.at.push({pi,yc:n.parts.reduce((a,e)=>a+e.yc,0)/n.parts.length,cols:sg.cols,sp:sg.sp,pitch,k:dk.k});
+        n.parts.sort((a,b)=>a.yc-b.yc).forEach(e=>Object.keys(e.cells).forEach(j=>{const c=sg.cols[j],txt=e.cells[j].join(" "),ex=P.days.find(x=>x.c===c);if(ex)ex.s+=" "+txt;else P.days.push({c,s:txt});}));});});
+    if(!segs.length)lines.forEach(L=>{const r=imListRow(L.t.map(t=>t.s).join(" "));if(r)list.push(r);});});
+  const txt=allLines.map(L=>L.t.map(t=>t.s).join(" ")).join("\n"),month=imMonthIn(txt),legend=imLegend(allLines);
+  const rows=order.map(k=>people[k]).filter(p=>p.days.length>=3);rows.forEach(r=>r.days.sort((a,b)=>a.c.o-b.c.o));
+  if(rows.length)return{mode:"table",rows,month,legend};
+  if(list.length>=3)return{mode:"list",rows:[{label:"",days:list.map(x=>({c:{d:x.d,m:x.m,y:x.y},s:x.s}))}],month,legend};
+  return null;}
+/* cosa c'è in una cella: orari ("06-14", "06:00 14:00", due fasce) oppure una sigla */
+function imCell(s){s=String(s||"").replace(/[|]/g," ").replace(/\s+/g," ").trim();if(!s)return null;const rs=imRanges(s);
+  if(rs.length)return{r:rs};const code=s.toUpperCase().replace(/[.\s]+$/,"").slice(0,12);return code?{code}:null;}
+/* la sigla scelta → giorno del calendario */
+function imTargets(){const P=S.settings.presets,o=[];P.forEach((p,i)=>{if(p.j!==2)o.push(["p"+i,p.n+" "+p.t]);});
+  o.push(["r",kind("r")],["f",kind("f")],["p",kind("p")],["m",kind("m")],["x",t("Lascia com'è")]);return o;}
+function imGuess(code,legend){const m=(S.settings.imp.map||{})[code];if(m&&(m==="t"&&legend[code]||imTargets().some(o=>o[0]===m)))return m;
+  if(legend[code])return"t";const c=imNorm(code);if(!c)return"x";const P=S.settings.presets;
+  for(let i=0;i<P.length;i++){if(P[i].j===2)continue;const n=imNorm(P[i].n);if(n===c||c.length>=2&&n.startsWith(c)||c.length===1&&n[0]===c)return"p"+i;}
+  for(const k of["r","f","m","p"]){const names=[kind(k),KIND[k],kshort(k)].map(imNorm);if(names.some(n=>n===c||c.length>=2&&n.startsWith(c)))return k;}
+  if(/^(off|ff|fr|lib|riposo|rest|frei|libre|rp|rip)$/.test(c))return"r";
+  for(const k of["r","f","m"]){if(c.length===1&&imNorm(kind(k))[0]===c)return k;}return"x";}
+function imEntry(cell,map,legend){if(!cell)return null;let rs=cell.r;
+  if(!rs){const tg=map[cell.code]||"x";if(tg==="x")return null;if(tg==="t")rs=legend[cell.code];
+    else if(tg[0]==="p"&&tg.length>1){const p=S.settings.presets[+tg.slice(1)];return p?presetEntry(p):null;}else return{k:tg,n:""};}
+  if(!rs||!rs.length)return null;const e={k:"w",s:rs[0].s,d:rs[0].d,ot:0,n:""};if(rs[1]){e.s2=rs[1].s;e.d2=rs[1].d;}return normEntry(e);}
+/* le date: colonne o righe con giorno (e a volte mese), il mese scelto per il resto; dopo il 31 si passa al mese dopo */
+function imDates(row,ym){let [y,m]=ym.split("-").map(Number),prev=0;const out=[];
+  row.days.forEach(x=>{const c=x.c;let mm=m,yy=y;
+    if(c.m){mm=c.m;yy=c.y||(Math.abs(c.m-m)>6?(c.m<m?y+1:y-1):y);}else{if(prev&&c.d<prev-20){m++;if(m>12){m=1;y++;}}mm=m;yy=y;prev=c.d;}
+    const dt=new Date(yy,mm-1,c.d);if(dt.getMonth()===mm-1)out.push({k:keyOf(dt),s:x.s});});
+  const seen={};return out.filter(o=>seen[o.k]?false:(seen[o.k]=1));}
+function imMonths(){const o=[],t0=new Date();for(let i=-6;i<=12;i++){const d=new Date(t0.getFullYear(),t0.getMonth()+i,1);o.push([d.getFullYear()+"-"+pad(d.getMonth()+1),df(d,{month:"long",year:"numeric"})]);}return o;}
+const imRowSel=()=>imData&&$("imWho").value!==""?imData.rows[+$("imWho").value]:null;
+function imPlan(){if(!imData)return[];const row=imRowSel();if(!row)return[];const map={};
+  $("imCodes").querySelectorAll("select").forEach(s=>{map[s.dataset.code]=s.value;});
+  return imDates(row,$("imMon").value).map(o=>({k:o.k,cell:imCell(o.s),src:o.s})).map(o=>({...o,e:imEntry(o.cell,map,imData.legend)})).filter(o=>o.e);}
+function imCodesRender(){const row=imRowSel();if(!row){$("imCodes").innerHTML="";$("imCodesF").hidden=true;return;}
+  const cnt={};row.days.forEach(x=>{const c=imCell(x.s);if(c&&c.code)cnt[c.code]=(cnt[c.code]||0)+1;});
+  const codes=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]).slice(0,16),T=imTargets();$("imCodesF").hidden=!codes.length;
+  $("imCodes").innerHTML=codes.map(c=>{const lg=imData.legend[c],g=imGuess(c,imData.legend),opts=(lg?[["t",lg.map(r=>r.s+"–"+hm(new Date(2000,0,1,0,toMin(r.s)+r.d*60))).join(", ")]]:[]).concat(T);
+    return'<div class="imrow"><span class="imc"><b>'+esc(c)+"</b><small>"+esc(tn(cnt[c],"{n} giorno","{n} giorni"))+'</small></span><select data-code="'+esc(c)+'" aria-label="'+esc(c)+'">'+
+      opts.map(o=>'<option value="'+o[0]+'"'+(o[0]===g?" selected":"")+">"+esc(o[1])+"</option>").join("")+"</select></div>";}).join("");}
+function imPreview(){const plan=imPlan(),over=$("imOver").checked,go=plan.filter(o=>over||!S.days[o.k]);
+  $("imPrev").innerHTML=plan.length?plan.map(o=>{const d=dateOf(o.k),e=o.e,skip=!over&&S.days[o.k];
+    const pn=presetName(e),what=e.k==="w"?esc(pn===t("Turno")&&o.cell&&o.cell.code?o.cell.code:pn)+" "+e.s+"–"+hm(new Date(2000,0,1,0,toMin(e.s)+(e.d||S.settings.wd)*60))+(e.s2?" · "+e.s2:""):esc(kind(e.k));
+    return'<div'+(skip?' class="skip"':"")+'><span class="d">'+esc(df(d,{weekday:"short",day:"numeric",month:"short"}))+"</span><span>"+what+"</span></div>";}).join(""):'<p class="help">'+esc(t("Nessun turno da importare con queste scelte."))+"</p>";
+  $("imGo").disabled=!go.length;$("imGo").textContent=go.length?tn(go.length,"Importa {n} giorno","Importa {n} giorni"):t("Importa");}
+function imShow(){const D=imData;$("imBox").hidden=!D;if(!D){$("imGo").disabled=true;return;}
+  const w=S.settings.imp.who,wk=imNorm(w);let sel=D.rows.length===1?0:-1;
+  if(wk)D.rows.forEach((r,i)=>{const k=imNorm(r.label);if(sel<0&&k&&(k===wk||k.includes(wk)||wk.includes(k)))sel=i;});
+  $("imWhoF").hidden=D.mode!=="table";
+  $("imWho").innerHTML=(sel<0?'<option value="" selected disabled>'+esc(t("Scegli…"))+"</option>":"")+D.rows.map((r,i)=>'<option value="'+i+'"'+(i===sel?" selected":"")+">"+esc(r.label)+"</option>").join("");
+  const needM=D.rows.some(r=>r.days.some(x=>!x.c.m)),ms=imMonths(),guess=D.month?(D.month.y||new Date().getFullYear())+"-"+pad(D.month.m):view.getFullYear()+"-"+pad(view.getMonth()+1);
+  if(!ms.some(o=>o[0]===guess))ms.push([guess,df(new Date(+guess.slice(0,4),+guess.slice(5)-1,1),{month:"long",year:"numeric"})]);
+  $("imMonF").hidden=!needM;$("imMon").innerHTML=ms.map(o=>'<option value="'+o[0]+'"'+(o[0]===guess?" selected":"")+">"+esc(o[1])+"</option>").join("");
+  imCodesRender();imPreview();}
+async function imRead(pw){if(!imBuf||imBusy)return;imBusy=true;imData=null;imShow();$("imPwBox").hidden=true;
+  try{let pages=[];const f=imBuf;
+    if(f.pdf){imStatus(esc(t("Leggo il PDF…")));try{pages=await imPdfPages(f.buf,pw);}
+      catch(e){if(e&&e.name==="PasswordException"){$("imPwBox").hidden=false;imStatus(esc(pw?t("Password sbagliata. Riprova."):t("Il PDF è protetto da una password.")),"err");return;}throw e;}}
+    else pages=[{scan:await imCanvas(f.file)}];
+    try{for(const pg of pages)if(pg.scan){imStatus(esc(t("Leggo la foto…")));pg.toks=await imOcr(pg,p=>imStatus(esc(t("Leggo la foto…"))+" "+Math.round(p*50)+"%"));}
+      imData=imParse(pages);
+      if(imData&&imData.mode==="table"&&pages.some(pg=>pg.w))await imRefine(imData,pages,p=>imStatus(esc(t("Leggo la foto…"))+" "+Math.round(50+p*50)+"%"));}
+    finally{for(const pg of pages){if(pg.w)try{await pg.w.terminate();}catch(e){}delete pg.w;delete pg.prep;delete pg.scan;}}
+    if(!imData){imStatus(esc(t("Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.")),"err");imShow();return;}
+    imStatus(imData.mode==="table"?esc(tn(imData.rows.length,"Ho trovato {n} persona: scegli la tua riga.","Ho trovato {n} persone: scegli la tua riga.")):esc(tn(imData.rows[0].days.length,"Ho trovato {n} giorno.","Ho trovato {n} giorni.")),"ok");imShow();}
+  catch(e){console.warn(e);imStatus(esc(t("Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.")),"err");}
+  finally{imBusy=false;}}
+async function imPick(ev){const f=ev.target.files&&ev.target.files[0];ev.target.value="";if(!f)return;
+  if(f.size>25e6){imStatus(esc(t("Il file è troppo grande.")),"err");return;}
+  const pdf=/pdf$/i.test(f.type)||/\.pdf$/i.test(f.name);imBuf=pdf?{pdf:1,buf:await f.arrayBuffer()}:{file:f};imRead();}
+$("imFile").addEventListener("change",imPick);$("imCam").addEventListener("change",imPick);
+$("imPwGo").onclick=()=>{const p=$("imPw").value;if(p)imRead(p);};
+$("imPw").addEventListener("keydown",ev=>{if(ev.key==="Enter"){ev.preventDefault();$("imPwGo").click();}});
+$("imWho").addEventListener("change",()=>{imCodesRender();imPreview();});
+$("imMon").addEventListener("change",imPreview);$("imOver").addEventListener("change",imPreview);
+$("imCodes").addEventListener("change",imPreview);
+$("importBtn").onclick=()=>{imData=null;imBuf=null;imStatus("");$("imPwBox").hidden=true;$("imPw").value="";imShow();openDlg($("im"));};
+$("imCancel").onclick=()=>$("im").close();
+$("imGo").onclick=()=>{const plan=imPlan(),over=$("imOver").checked,go=plan.filter(o=>over||!S.days[o.k]);if(!go.length)return;
+  const row=imRowSel(),map={...(S.settings.imp.map||{})};$("imCodes").querySelectorAll("select").forEach(s=>{map[s.dataset.code]=s.value;});
+  S.settings.imp={who:imData.mode==="table"&&row?row.label.slice(0,60):S.settings.imp.who,map:Object.fromEntries(Object.entries(map).slice(-40))};mark("settings","s");
+  const changes=go.map(o=>{const old=S.days[o.k],e={...o.e};if(old&&old.n)e.n=old.n;if(old&&old.l&&e.k==="w")e.l=old.l;return[o.k,normEntry(e)];});
+  $("im").close();const f=dateOf(changes[0][0]);view=new Date(f.getFullYear(),f.getMonth(),1);if(mode!=="cal")setMode("cal");
+  apply(changes,tn(changes.length,"Importato {n} giorno dal foglio dei turni.","Importati {n} giorni dal foglio dei turni."));};
+
 /* ---------- account (Supabase) e promemoria ----------
    Senza configurazione (SUPA.url vuoto) tutto questo resta nascosto e l'app funziona solo in locale.
    Accesso con codice a 6 cifre via email: su iPhone il link aprirebbe Safari invece dell'app installata. */
@@ -2304,8 +2570,14 @@ if(NATIVE){$("alBtn").hidden=false;setTimeout(()=>alSync(true),2000);
   const alBack=async()=>{alSync(true);if($("al").open){const was=alState;await alCheck();if(alState!==was)alGranted();}};
   document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")alBack();});
   try{if(CAP.App)CAP.App.addListener("resume",alBack);}catch(e){}}
-function openDeep(u){const m=/^myturn:\/\/day\/(\d{4}-\d\d-\d\d)/.exec(u||"");if(!m)return;if($("ob").open)return;
+function openDeep(u){if($("ob").open)return;
+  /* dal Centro di Controllo (iPhone): il mese di oggi */
+  if(/^myturn:\/\/today/.test(u||"")){document.querySelectorAll("dialog[open]").forEach(d=>d.close());const n=new Date();view=new Date(n.getFullYear(),n.getMonth(),1);if(mode!=="cal")setMode("cal");render();return;}
+  const m=/^myturn:\/\/day\/(\d{4}-\d\d-\d\d)/.exec(u||"");if(!m)return;
   document.querySelectorAll("dialog[open]").forEach(d=>d.close());const d=dateOf(m[1]);view=new Date(d.getFullYear(),d.getMonth(),1);render();openEditor(m[1]);}
+/* aperta da un comando (Centro di Controllo, Comandi rapidi): il codice nativo lascia un segno, la pagina lo legge */
+function takeLink(){const P=NATIVE&&wgPlugin();if(P&&P.takeLink)P.takeLink().then(r=>{if(r&&r.url)openDeep(r.url);}).catch(()=>{});}
+if(NATIVE){setTimeout(takeLink,700);document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")takeLink();});try{if(CAP.App)CAP.App.addListener("resume",takeLink);}catch(e){}}
 if(NATIVE&&CAP.App){try{CAP.App.addListener("appUrlOpen",e=>openDeep(e&&e.url));CAP.App.getLaunchUrl().then(r=>{if(r&&r.url)setTimeout(()=>openDeep(r.url),600);}).catch(()=>{});}catch(e){}}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")wgSync(true);});
 
@@ -2503,6 +2775,7 @@ function helpData(){const MK={a:"\u0001a\u0002",b:"\u0001b\u0002",c:"\u0001c\u00
     [t("Come segno gli straordinari o un turno spezzato?"),[t("Nella scheda del giorno usa {a} per gli straordinari o per un'uscita anticipata. Con {b} indichi le due fasce, per esempio 8–12 e 16–20.",MK),{a:T("Ore in più o in meno"),b:T("Turno spezzato, in due fasce")}]],
     [t("Come creo i miei turni rapidi?"),[t("Apri {p} e scegli nome, orario d'inizio e durata di ogni pulsante. Possono essere turni spezzati e, se hai un secondo lavoro, appartenere a quel lavoro.",MK),{p:tl("Turni rapidi")}],"presetsBtn"],
     [t("Faccio sempre la stessa rotazione: posso riempire il calendario in automatico?"),[t("Sì: in {p} descrivi lo schema (per esempio 5 mattine, 2 riposi, 5 notti, 2 riposi), il giorno di partenza e fino a quando. Con {q} copi invece una settimana su quella dopo.",MK),{p:tl("Turnazione ciclica"),q:tl("Ripeti l'ultima settimana")}],"cycleBtn"],
+    [t("Posso caricare il foglio dei turni dell'azienda?"),[t("Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.",MK),{p:tl("Leggi il foglio dei turni")}],"importBtn"],
     [t("A cosa servono le etichette?"),[t("Servono per segnare reparto, macchinario o postazione. Le crei in {p}; poi le scegli sopra al calendario e tocchi i giorni, anche insieme a un turno.",MK),{p:tl("Etichette")}],"labelsBtn"],
     [t("Come trovo un giorno, una nota o un'etichetta?"),[t("Passa alla vista a elenco con il pulsante accanto ai turni rapidi: compare la ricerca nelle note e nelle etichette. La scheda {a} mostra i totali di tutto l'anno, mese per mese.",MK),{a:T("Anno")}]]]],
   [t("Ore, contratto e paga"),[
@@ -2530,7 +2803,8 @@ function helpData(){const MK={a:"\u0001a\u0002",b:"\u0001b\u0002",c:"\u0001c\u00
     [t("Dove sono salvati i miei turni?"),[NATIVE?t("Su questo telefono, dentro l'app. Senza account niente viene inviato a un server. Con la sincronizzazione una copia cifrata con la tua password va sul server.",MK):t("Su questo dispositivo, nel browser. Senza account niente viene inviato a un server. Con la sincronizzazione una copia cifrata con la tua password va sul server; con i promemoria ci vanno i turni dei prossimi 45 giorni.",MK),{}]],
     [t("Come faccio una copia o passo a un altro telefono?"),[t("Con {p} ottieni un file con turni e impostazioni. Sull'altro telefono apri l'app e usa {q}. Il pallino su {a} ti ricorda quando è il momento di farne una.",MK),{p:tl("Salva una copia dei turni"),q:tl("Carica una copia"),a:T("Strumenti")}],"bakBtn"],
     NATIVE?[t("Se elimino l'app perdo i turni?"),[t("Sì, se non hai una copia e non usi la sincronizzazione con l'account. Per questo conviene salvarne una ogni tanto, soprattutto prima di cambiare telefono.",MK),{}]]:[t("Se cancello i dati del browser perdo i turni?"),[t("Sì, se non hai una copia. Per questo conviene salvarne una ogni tanto, soprattutto prima di cambiare telefono.",MK),{}]],
-    ...(NATIVE?[[t("Come metto i turni nei widget o sull'orologio?"),[t("Tieni premuto su uno spazio vuoto della schermata Home, aggiungi un widget e cerca {app}: vedi il turno in corso o il prossimo e i giorni seguenti. Su iPhone ci sono anche i widget per la schermata di blocco. Se hai un Apple Watch o un orologio Wear OS, installa {app} anche sull'orologio: i turni arrivano dal telefono e puoi metterli anche sul quadrante.",Object.assign({app:APP},MK)),{}]]]:[[t("Come installo l'app sul telefono?"),[t("Su iPhone apri l'app in Safari, tocca Condividi e poi Aggiungi alla schermata Home. Su Android apri il menu di Chrome e scegli Installa app o Aggiungi a schermata Home. Una volta installata funziona anche senza connessione.",MK),{}]]]),
+    ...(NATIVE?[[t("Come metto i turni nei widget o sull'orologio?"),[t("Tieni premuto su uno spazio vuoto della schermata Home, aggiungi un widget e cerca {app}: vedi il turno in corso o il prossimo e i giorni seguenti. Su iPhone ci sono anche i widget per la schermata di blocco. Se hai un Apple Watch o un orologio Wear OS, installa {app} anche sull'orologio: i turni arrivano dal telefono e puoi metterli anche sul quadrante.",Object.assign({app:APP},MK)),{}]],
+      ...(document.documentElement.classList.contains("ios")?[[t("Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?"),[t("Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.",Object.assign({app:APP},MK)),{}]]]:[])]:[[t("Come installo l'app sul telefono?"),[t("Su iPhone apri l'app in Safari, tocca Condividi e poi Aggiungi alla schermata Home. Su Android apri il menu di Chrome e scegli Installa app o Aggiungi a schermata Home. Una volta installata funziona anche senza connessione.",MK),{}]]]),
     [t("Come aggiorno l'app?"),[NATIVE?t("Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.",MK):t("Quando c'è una nuova versione compare un avviso in alto: tocca {a}. I tuoi turni restano dove sono.",MK),{a:T("Aggiorna")}]],
     [t("Come cambio paese, festività, lingua o tema?"),[t("In {p} scegli paese e regione per le festività, la lingua e il tema chiaro o scuro. Le feste locali che l'app non conosce segnale come riposo.",MK),{p:T("Impostazioni")}],"setBtn"]]]];}
 /* risposta: i nomi di pulsanti e schermate arrivano dalle traduzioni dell'interfaccia e vanno in grassetto */
@@ -2873,7 +3147,7 @@ $("repeatBtn").onclick=()=>{const keys=Object.keys(S.days).sort();if(!keys.lengt
   apply(ch,t("Settimana del {a} ripetuta su quella del {b}.",{a:fDMs(src),b:fDMs(to)}));};
 
 function fromMenu(){if($("tl").open)setTimeout(()=>$("tl").close(),0);}
-["cycleBtn","shareBtn","pdfBtn","icsBtn","rmBtn"].forEach(id=>$(id).addEventListener("click",fromMenu));
+["cycleBtn","importBtn","shareBtn","pdfBtn","icsBtn","rmBtn"].forEach(id=>$(id).addEventListener("click",fromMenu));
 $("repeatBtn").addEventListener("click",()=>$("tl").close());
 $("toolsBtn").onclick=()=>{bkRender();try{localStorage.setItem("myturn-bkseen",String(Date.now()));}catch(e){}$("toolsBadge").hidden=true;openDlg($("tl"));};
 $("tlClose").onclick=()=>$("tl").close();
@@ -3049,7 +3323,7 @@ function obStart(){OB.existing=Object.keys(S.days).length>0||!!S.settings.labels
   OB.wd=S.settings.wd;OB.sat=S.settings.sat;OB.step=0;OB.q="";obRender();openDlg($("ob"));
   if(OB.lang!==LANG)setLang(OB.lang).then(obRender);}
 
-window.myturnDebug={remItems,wgData,syItems,syHash,syRun:()=>syRun(),S,apply,mark,startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
+window.myturnDebug={remItems,wgData,syItems,syHash,syRun:()=>syRun(),S,apply,mark,startTour,tn,t,bpLines,bpParse,bpNum,bpSplit,imParse,imPlan,imOcr,imRefine,imCanvas,imPrep,imDeskew,imLines,imHeader,imCell,imPdfPages,holFor:(c,y,r)=>{const o=[S.settings.country,S.settings.region,S.settings.patron];S.settings.country=c;S.settings.region=r||"";S.settings.patron=null;const h=holidays(y);[S.settings.country,S.settings.region,S.settings.patron]=o;return h;},holidays,ruleDate,easterO,RULES:()=>RULES,WS:()=>WS};
 applyTheme(getTheme());
 applyCountry();
 (async()=>{await loadLang(LANG);if(LANG!=="it"&&!I18N[LANG])LANG="it";setLoc();relabelPresets();setNames();translateDom();

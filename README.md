@@ -36,6 +36,7 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - **Turni rapidi** ed **Etichette**: crei e modifichi i pulsanti che compaiono sopra al calendario.
 - **Turnazione ciclica**: costruisci uno schema che si ripete (per esempio 5 mattine, 2 riposi, 5 pomeriggi, 2 riposi) e applicalo a più settimane. Ci sono 9 **rotazioni pronte** da scegliere con un tocco: settimana 5 + 2, mattina e pomeriggio alternati, rotazione settimanale 3 × 8, ciclo continuo 2-2-2-2, in quinta, 2-2-3 (Panama), Pitman, DuPont e 4 e 4. Usano i tuoi turni rapidi; se manca un turno (per esempio quelli da 12 ore) viene aggiunto, e lo puoi cambiare quando vuoi.
 - **Ripeti l'ultima settimana**.
+- **Leggi il foglio dei turni**: carichi il PDF o una foto della turnistica dell'azienda (tabella con i giorni del mese e una riga per persona, oppure elenco con date e orari). Scegli la tua riga, controlli cosa vuol dire ogni sigla (gli orari si prendono dalla legenda, se c'è) e vedi l'anteprima prima di importare; le scelte restano per il mese dopo. Il file è letto solo sul dispositivo e non viene salvato: i PDF con [pdf.js](https://github.com/mozilla/pdf.js), le foto e i PDF scansionati con [Tesseract.js](https://github.com/naptha/tesseract.js) (Apache-2.0, nella cartella `vendor/tesseract/`) o, nell'app per iPhone, con il riconoscimento del testo di iOS.
 - **Condividi la settimana**: qualsiasi settimana, passata o futura, come immagine pronta da mandare oppure come testo da incollare.
 - **PDF del mese** a scelta, pronto da stampare, del lavoro principale o del secondo lavoro.
 - **Esporta nel calendario**: un file .ics per Google Calendar, il Calendario di Apple e Outlook, con periodo, contenuto e promemoria a scelta. Riesportando lo stesso periodo i turni si aggiornano invece di duplicarsi.
@@ -62,8 +63,9 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - Senza account l'app funziona come sempre.
 
 **App per iPhone e Android** (pronta, non ancora negli store; vedi "App per gli store" in `CLAUDE.md`)
-- È la stessa app dentro Capacitor, con in più i **widget** sulla schermata Home e sulla schermata di blocco, l'app per **Apple Watch** con le complicazioni, l'app per gli orologi **Wear OS** (Android) con il riquadro e la complicazione per il quadrante, e i promemoria come notifiche del telefono, senza account. La Guida spiega sveglie, widget e orologi.
+- È la stessa app dentro Capacitor, con in più i **widget** sulla schermata Home e sulla schermata di blocco, l'app per **Apple Watch** con le complicazioni, l'app per gli orologi **Wear OS** (Android) con il riquadro e la complicazione per il quadrante, e i promemoria come notifiche del telefono, senza account. La Guida spiega sveglie, widget, orologi, Dynamic Island e Siri.
 - **Sveglie** (Strumenti → Sveglie): una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso e si può fermare o posticipare di 10 minuti. Si sceglie per mattina, pomeriggio e notte se suona e quanto prima (da 30 minuti a 3 ore). Copre i prossimi 14 giorni e si aggiorna da sola quando cambiano i turni. Sull'iPhone serve iOS 26 (AlarmKit); su Android la sveglia compare anche a schermo intero sopra il blocco e torna dopo un riavvio.
+- **Solo su iPhone**: il turno in corso o che inizia entro 3 ore compare sulla **Dynamic Island** e sulla **schermata di blocco** (Live Activity) con il tempo che manca alla fine; **Siri** risponde a "prossimo turno" (anche nell'app Comandi); nel **Centro di Controllo** si può aggiungere un tasto con il prossimo turno che apre il calendario (iOS 18).
 
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in 23 lingue (le traduzioni sono nella cartella `lang/`).
 
@@ -83,6 +85,7 @@ I turni restano nel browser del dispositivo che usi (`localStorage`). Il server 
 - `lang/`: le traduzioni (l'italiano è dentro `index.html`).
 - `fonts/`: il carattere incorporato nel PDF (sottoinsieme di Liberation Sans rinominato "MyTurn Sans PDF", licenza SIL Open Font License in `fonts/OFL.txt`), con latino, greco e cirillico.
 - `lang/`: le traduzioni (l'italiano è nel codice).
+- `vendor/`: librerie servite dal sito stesso (pdf.js per i PDF, Tesseract.js per le foto del foglio dei turni, scaricato dal workflow `.github/workflows/vendor.yml`).
 - `version.json`: l'ultima versione pubblicata.
 - `supabase/`: tabelle e funzioni del server per account e promemoria.
 

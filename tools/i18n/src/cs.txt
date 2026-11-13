@@ -875,3 +875,35 @@ Aktualizace přicházejí z App Storu nebo Google Play, stejně jako u jiných a
 Federální svátky i svátky jednotlivých států platí ze zákona jen pro zaměstnance veřejného sektoru: v soukromém sektoru záleží na smlouvě. Vyber svůj stát a uvidíš jeho svátky.
 Pracovní doba a odpočinek se mohou lišit podle provincie: zkontroluj hodnoty níže.
 Karneval a Boží tělo jsou „ponto facultativo“. Vyber svůj stát pro jeho svátky; svátky obce přidej jako místní svátek.
+Nechat beze změny
+S touto volbou nejsou žádné směny k importu.
+Importovat {n} den
+Importovat {n} dní ‖few: Importovat {n} dny ‖many: Importovat {n} dne
+Importovat
+Vyber…
+Čtu PDF…
+PDF je chráněné heslem.
+Čtu fotku…
+V tomto souboru jsem nenašel žádné směny. U fotky: blíž, rovně a dobře osvětlené. Pokud můžeš, použij PDF.
+Našel jsem {n} osobu: vyber svůj řádek.
+Našel jsem {n} osob: vyber svůj řádek. ‖few: Našel jsem {n} osoby: vyber svůj řádek. ‖many: Našel jsem {n} osoby: vyber svůj řádek.
+Našel jsem {n} den.
+Našel jsem {n} dní. ‖few: Našel jsem {n} dny. ‖many: Našel jsem {n} dne.
+Tento soubor nemůžu přečíst. Zkus PDF nebo jinou fotku.
+Soubor je příliš velký.
+Importován {n} den z rozpisu směn.
+Importováno {n} dní z rozpisu směn. ‖few: Importovány {n} dny z rozpisu směn. ‖many: Importováno {n} dne z rozpisu směn.
+Můžu nahrát rozpis směn z práce?
+Ano: v {p} vyber PDF nebo fotku. Aplikace najde tabulku se dny v měsíci a jedním řádkem na osobu, nebo seznam s daty a časy. Vyber svůj řádek, zkontroluj, co znamená každá zkratka (pokud má rozpis legendu, časy se vezmou z ní), a před importem se podívej na náhled. Soubor se čte jen na tomto zařízení. U fotky záleží na kvalitě: list rovně, dobře osvětlený a celý.
+Jak vidět směnu na Dynamic Islandu nebo se zeptat Siri?
+Když směna probíhá nebo začíná do 3 hodin, objeví se na zamčené obrazovce a na Dynamic Islandu se zbývajícím časem do konce; aktualizuje se, když otevřeš aplikaci. V aplikaci Zkratky najdeš akci „Next shift“ aplikace {app}, kterou můžeš používat i se Siri. V Ovládacím centru můžeš přidat tlačítko {app}, které ukazuje příští směnu a otevírá kalendář.
+Načíst rozpis směn
+Z PDF nebo z fotky
+Nahraj PDF nebo fotku rozpisu směn z práce: aplikace najde tvoje směny a zapíše je do kalendáře. Soubor se čte jen na tomto zařízení a neukládá se.
+Vybrat PDF nebo fotku
+Vyfotit
+U fotky: list rovně, dobře osvětlený a celý v záběru.
+Čí jsou tyhle směny?
+Co znamená každá zkratka
+Nahradit už vyplněné dny
+Náhled

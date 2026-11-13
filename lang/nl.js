@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Updates komen via de App Store of Google Play, net als bij andere apps. Je diensten blijven waar ze zijn.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Federale feestdagen en die van de staten gelden wettelijk alleen voor overheidspersoneel: in de privésector hangt het van je contract af. Kies je staat om de feestdagen ervan te zien.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Werk- en rusttijden verschillen per provincie: controleer de waarden hieronder.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Carnaval en Sacramentsdag zijn ‘ponto facultativo’. Kies je staat voor de feestdagen ervan; voeg die van je gemeente toe als lokale feestdag."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Carnaval en Sacramentsdag zijn ‘ponto facultativo’. Kies je staat voor de feestdagen ervan; voeg die van je gemeente toe als lokale feestdag.",
+"Lascia com'è": "Laten zoals het is",
+"Nessun turno da importare con queste scelte.": "Met deze keuzes zijn er geen diensten om te importeren.",
+"Importa {n} giorno": "{n} dag importeren",
+"Importa {n} giorni": {
+"other": "{n} dagen importeren",
+"one": "{n} dag importeren"
+},
+"Importa": "Importeren",
+"Scegli…": "Kies…",
+"Leggo il PDF…": "PDF wordt gelezen…",
+"Il PDF è protetto da una password.": "De PDF is beveiligd met een wachtwoord.",
+"Leggo la foto…": "Foto wordt gelezen…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Ik heb geen diensten gevonden in dit bestand. Bij een foto: dichterbij, recht en goed belicht. Gebruik als het kan de PDF.",
+"Ho trovato {n} persona: scegli la tua riga.": "Ik heb {n} persoon gevonden: kies je rij.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Ik heb {n} personen gevonden: kies je rij.",
+"one": "Ik heb {n} persoon gevonden: kies je rij."
+},
+"Ho trovato {n} giorno.": "Ik heb {n} dag gevonden.",
+"Ho trovato {n} giorni.": {
+"other": "Ik heb {n} dagen gevonden.",
+"one": "Ik heb {n} dag gevonden."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Ik kan dit bestand niet lezen. Probeer een PDF of een andere foto.",
+"Il file è troppo grande.": "Het bestand is te groot.",
+"Importato {n} giorno dal foglio dei turni.": "{n} dag geïmporteerd uit het rooster.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "{n} dagen geïmporteerd uit het rooster.",
+"one": "{n} dag geïmporteerd uit het rooster."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Kan ik het rooster van mijn werkgever uploaden?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Ja: kies bij {p} de PDF of een foto. De app vindt de tabel met de dagen van de maand en een rij per persoon, of een lijst met datums en tijden. Kies je rij, controleer wat elke code betekent (heeft het rooster een legenda, dan komen de tijden daarvandaan) en bekijk het voorbeeld voordat je importeert. Het bestand wordt alleen op dit apparaat gelezen. Bij een foto telt de kwaliteit: blad recht, goed belicht en helemaal in beeld.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Hoe zie ik mijn dienst in het Dynamic Island of vraag ik het aan Siri?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Als een dienst bezig is of binnen 3 uur begint, verschijnt hij op het toegangsscherm en in het Dynamic Island met de tijd tot het einde; hij wordt bijgewerkt als je de app opent. In de app Opdrachten vind je de actie ‘Next shift’ van {app}, die je ook met Siri kunt gebruiken. In het bedieningspaneel kun je de knop van {app} toevoegen: die toont je volgende dienst en opent de kalender.",
+"Leggi il foglio dei turni": "Rooster inlezen",
+"Da un PDF o da una foto": "Uit een PDF of een foto",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Upload de PDF of een foto van het rooster van je werkgever: de app vindt je diensten en zet ze in de kalender. Het bestand wordt alleen op dit apparaat gelezen en niet bewaard.",
+"Scegli PDF o foto": "PDF of foto kiezen",
+"Scatta una foto": "Foto maken",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Bij een foto: blad recht, goed belicht en helemaal in beeld.",
+"Di chi sono i turni?": "Van wie zijn de diensten?",
+"Cosa vuol dire ogni sigla": "Wat elke code betekent",
+"Sostituisci i giorni già compilati": "Al ingevulde dagen vervangen",
+"Anteprima": "Voorbeeld"
 };

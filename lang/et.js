@@ -948,5 +948,49 @@
 "Gli aggiornamenti arrivano dall'App Store o da Google Play, come per le altre app. I tuoi turni restano dove sono.": "Uuendused tulevad App Store'ist või Google Playst nagu teistelgi rakendustel. Sinu vahetused jäävad alles.",
 "Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste.": "Föderaalpühad ja osariikide pühad kehtivad seaduse järgi ainult avaliku sektori töötajatele: erasektoris sõltub see lepingust. Vali oma osariik, et näha selle pühi.",
 "Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto.": "Töö- ja puhkeaeg võivad provintsiti erineda: kontrolli allolevaid väärtusi.",
-"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval ja Kristuse ihu ja vere püha on „ponto facultativo”. Vali oma osariik, et näha selle pühi; omavalitsuse pühad lisa kohaliku pühana."
+"Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale.": "Karneval ja Kristuse ihu ja vere püha on „ponto facultativo”. Vali oma osariik, et näha selle pühi; omavalitsuse pühad lisa kohaliku pühana.",
+"Lascia com'è": "Jäta nii",
+"Nessun turno da importare con queste scelte.": "Nende valikutega pole midagi importida.",
+"Importa {n} giorno": "Impordi {n} päev",
+"Importa {n} giorni": {
+"other": "Impordi {n} päeva",
+"one": "Impordi {n} päev"
+},
+"Importa": "Impordi",
+"Scegli…": "Vali…",
+"Leggo il PDF…": "Loen PDF-i…",
+"Il PDF è protetto da una password.": "PDF on parooliga kaitstud.",
+"Leggo la foto…": "Loen fotot…",
+"Non ho trovato turni in questo file. Con una foto: più vicina, dritta e ben illuminata. Se puoi, usa il PDF.": "Ma ei leidnud sellest failist vahetusi. Foto puhul: lähemalt, otse ja hea valgusega. Kui saad, kasuta PDF-i.",
+"Ho trovato {n} persona: scegli la tua riga.": "Leidsin {n} inimese: vali oma rida.",
+"Ho trovato {n} persone: scegli la tua riga.": {
+"other": "Leidsin {n} inimest: vali oma rida.",
+"one": "Leidsin {n} inimese: vali oma rida."
+},
+"Ho trovato {n} giorno.": "Leidsin {n} päeva.",
+"Ho trovato {n} giorni.": {
+"other": "Leidsin {n} päeva.",
+"one": "Leidsin {n} päeva."
+},
+"Non riesco a leggere questo file. Prova con un PDF o con un'altra foto.": "Ma ei saa seda faili lugeda. Proovi PDF-i või mõnda teist fotot.",
+"Il file è troppo grande.": "Fail on liiga suur.",
+"Importato {n} giorno dal foglio dei turni.": "Imporditi {n} päev vahetuste graafikust.",
+"Importati {n} giorni dal foglio dei turni.": {
+"other": "Imporditi {n} päeva vahetuste graafikust.",
+"one": "Imporditi {n} päev vahetuste graafikust."
+},
+"Posso caricare il foglio dei turni dell'azienda?": "Kas saan laadida töökoha vahetuste graafiku?",
+"Sì: in {p} scegli il PDF o una foto. L'app trova la tabella con i giorni del mese e una riga per persona, oppure un elenco con date e orari. Scegli la tua riga, controlla cosa vuol dire ogni sigla (se il foglio ha una legenda, gli orari li prende da lì) e guarda l'anteprima prima di importare. Il file viene letto solo su questo dispositivo. Con una foto conta la qualità: foglio dritto, ben illuminato e intero.": "Jah: vali {p} all PDF või foto. Rakendus leiab tabeli kuu päevade ja iga inimese reaga või nimekirja kuupäevade ja kellaaegadega. Vali oma rida, kontrolli, mida iga lühend tähendab (kui graafikul on legend, võetakse kellaajad sealt), ja vaata enne importimist eelvaadet. Faili loetakse ainult selles seadmes. Foto puhul on oluline kvaliteet: leht otse, hästi valgustatud ja tervikuna.",
+"Come vedo il turno sulla Dynamic Island o lo chiedo a Siri?": "Kuidas näha vahetust Dynamic Islandil või küsida Siri käest?",
+"Quando un turno è in corso o inizia entro 3 ore, compare sulla schermata di blocco e sulla Dynamic Island con il tempo che manca alla fine; si aggiorna quando apri l'app. Puoi chiedere «Ehi Siri, prossimo turno su {app}». Nel Centro di Controllo puoi aggiungere il tasto di {app}, che mostra il prossimo turno e apre il calendario.": "Kui vahetus käib või algab 3 tunni jooksul, ilmub see lukustuskuvale ja Dynamic Islandile koos lõpuni jäänud ajaga; see uueneb, kui avad rakenduse. Rakenduses Otseteed leiad {app} toimingu „Next shift”, mida saad kasutada ka koos Siriga. Juhtimiskeskusesse saad lisada {app} nupu, mis näitab järgmist vahetust ja avab kalendri.",
+"Leggi il foglio dei turni": "Loe vahetuste graafik",
+"Da un PDF o da una foto": "PDF-ist või fotolt",
+"Carica il PDF o una foto del foglio dei turni dell'azienda: l'app trova i tuoi turni e li segna nel calendario. Il file viene letto solo su questo dispositivo e non viene salvato.": "Laadi üles töökoha vahetuste graafiku PDF või foto: rakendus leiab sinu vahetused ja märgib need kalendrisse. Faili loetakse ainult selles seadmes ja seda ei salvestata.",
+"Scegli PDF o foto": "Vali PDF või foto",
+"Scatta una foto": "Tee foto",
+"Per una foto: foglio dritto, ben illuminato e tutto nell'inquadratura.": "Foto puhul: leht otse, hästi valgustatud ja tervikuna kaadris.",
+"Di chi sono i turni?": "Kelle vahetused need on?",
+"Cosa vuol dire ogni sigla": "Mida iga lühend tähendab",
+"Sostituisci i giorni già compilati": "Asenda juba täidetud päevad",
+"Anteprima": "Eelvaade"
 };

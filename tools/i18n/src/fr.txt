@@ -875,3 +875,35 @@ Les mises à jour arrivent par l'App Store ou Google Play, comme pour les autres
 Les jours fériés fédéraux et ceux des États ne valent légalement que pour les employés publics : dans le privé, cela dépend du contrat. Choisissez votre État pour voir ses fêtes.
 Les horaires et les repos peuvent changer d'une province à l'autre : vérifiez les valeurs ci-dessous.
 Le Carnaval et la Fête-Dieu sont « ponto facultativo ». Choisissez votre État pour ses fêtes ; ajoutez celle de votre commune comme fête locale.
+Laisser tel quel
+Aucun poste à importer avec ces choix.
+Importer {n} jour
+Importer {n} jours
+Importer
+Choisissez…
+Lecture du PDF…
+Le PDF est protégé par un mot de passe.
+Lecture de la photo…
+Je n'ai trouvé aucun poste dans ce fichier. Pour une photo : plus près, droite et bien éclairée. Si possible, utilisez le PDF.
+J'ai trouvé {n} personne : choisissez votre ligne.
+J'ai trouvé {n} personnes : choisissez votre ligne.
+J'ai trouvé {n} jour.
+J'ai trouvé {n} jours.
+Je n'arrive pas à lire ce fichier. Essayez avec un PDF ou une autre photo.
+Le fichier est trop volumineux.
+{n} jour importé depuis le planning.
+{n} jours importés depuis le planning.
+Puis-je charger le planning de mon entreprise ?
+Oui : dans {p}, choisissez le PDF ou une photo. L'application trouve le tableau avec les jours du mois et une ligne par personne, ou une liste avec des dates et des horaires. Choisissez votre ligne, vérifiez ce que veut dire chaque sigle (si le planning a une légende, les horaires viennent de là) et regardez l'aperçu avant d'importer. Le fichier est lu uniquement sur cet appareil. Avec une photo, la qualité compte : feuille droite, bien éclairée et entière.
+Comment voir mon poste dans la Dynamic Island ou le demander à Siri ?
+Quand un poste est en cours ou commence dans les 3 heures, il apparaît sur l'écran verrouillé et dans la Dynamic Island avec le temps restant jusqu'à la fin ; il se met à jour quand vous ouvrez l'application. Vous pouvez demander « Dis Siri, prochain poste dans {app} ». Dans le Centre de contrôle, vous pouvez ajouter la commande de {app}, qui montre votre prochain poste et ouvre le calendrier.
+Lire le planning
+À partir d'un PDF ou d'une photo
+Chargez le PDF ou une photo du planning de votre entreprise : l'application trouve vos postes et les inscrit dans le calendrier. Le fichier est lu uniquement sur cet appareil et n'est pas enregistré.
+Choisir un PDF ou une photo
+Prendre une photo
+Pour une photo : feuille droite, bien éclairée et entièrement dans le cadre.
+À qui sont ces postes ?
+Ce que veut dire chaque sigle
+Remplacer les jours déjà remplis
+Aperçu
