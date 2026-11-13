@@ -37,10 +37,10 @@
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSSupportsLiveActivities</key>
-	<true/>
 	<key>NSAlarmKitUsageDescription</key>
 	<string>MyTurn usa le sveglie per svegliarti prima dei turni. / MyTurn uses alarms to wake you up before your shifts.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
