@@ -84,6 +84,8 @@ jobs:
       - name: Compila per il simulatore
         run: |
           set -o pipefail
+          # al primo errore continua lo stesso: così il registro mostra tutti gli errori in una volta
+          defaults write com.apple.dt.Xcode IDEBuildingContinueBuildingAfterErrors -bool YES
           xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Debug \
             -destination 'generic/platform=iOS Simulator' -derivedDataPath build/ios CODE_SIGNING_ALLOWED=NO build \
             | grep -E 'error:|warning: .*(MyTurn|Shift)|BUILD (SUCCEEDED|FAILED)|\*\*'

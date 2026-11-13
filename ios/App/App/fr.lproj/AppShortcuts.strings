@@ -1,0 +1,5 @@
+/* Frasi di Siri e Comandi (AppShortcuts in ShiftShortcuts.swift). Con iOS 16 non si può usare AppShortcuts.xcstrings. */
+"What's my next shift in ${applicationName}" = "Quel est mon prochain poste dans ${applicationName}";
+"Next shift in ${applicationName}" = "Prochain poste dans ${applicationName}";
+"When do I work in ${applicationName}" = "Quand est-ce que je travaille dans ${applicationName}";
+"Open my shifts in ${applicationName}" = "Ouvre mes postes dans ${applicationName}";

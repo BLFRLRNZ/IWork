@@ -1,5 +1,5 @@
 // "Ehi Siri, prossimo turno su MyTurn": risponde con il turno in corso o il prossimo, senza aprire l'app.
-// Frasi e titoli tradotti in AppShortcuts.xcstrings e Localizable.xcstrings (it, fr, de, es, pt).
+// Frasi tradotte in xx.lproj/AppShortcuts.strings (con iOS 16 il .xcstrings non si può usare), titoli in Localizable.xcstrings (it, fr, de, es, pt).
 import AppIntents
 import Foundation
 

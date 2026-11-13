@@ -41,6 +41,26 @@ def sync(proj, dir, targets)
       end
     end
   end
+  # file tolti dalla cartella: via anche dal progetto
+  g.files.dup.each do |r|
+    next unless r.path && ['.swift', '.xcassets', '.xcstrings'].include?(File.extname(r.path))
+    next if File.exist?(File.join(ROOT, dir, r.path))
+    r.build_files.each(&:remove_from_project)
+    r.remove_from_project
+  end
+  # traduzioni in cartelle xx.lproj (per esempio AppShortcuts.strings: con iOS 16 non si può usare il .xcstrings)
+  lprojs = Dir.children(File.join(ROOT, dir)).select { |n| n.end_with?('.lproj') && n != 'Base.lproj' }.sort
+  lprojs.flat_map { |l| Dir.children(File.join(ROOT, dir, l)).select { |f| f.end_with?('.strings') } }.uniq.each do |name|
+    vg = g.children.find { |c| c.isa == 'PBXVariantGroup' && c.name == name } || g.new_variant_group(name)
+    lprojs.each do |l|
+      path = "#{l}/#{name}"
+      next unless File.exist?(File.join(ROOT, dir, path))
+      next if vg.files.any? { |r| r.path == path }
+      ref = vg.new_reference(path)
+      ref.name = l.sub('.lproj', '')
+    end
+    targets.each { |t| t.resources_build_phase.add_file_reference(vg, true) }
+  end
   # file di riferimento (Info.plist, entitlements) visibili nel progetto, senza fasi di build
   Dir.children(File.join(ROOT, dir)).sort.each do |name|
     next unless ['.plist', '.entitlements'].include?(File.extname(name))

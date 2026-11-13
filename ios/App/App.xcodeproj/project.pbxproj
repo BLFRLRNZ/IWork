@@ -45,7 +45,6 @@
 		BB13538653EDA87E4A322454 /* ShiftLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6922DF5FD3A4793FFF82DC /* ShiftLive.swift */; };
 		BC416E275918840745401A73 /* MyTurnWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBC9340BE574B373828300 /* MyTurnWidget.swift */; };
 		BDA1F94D7A9D699ED01818CC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 862118F831F49BE82EA75C66 /* Localizable.xcstrings */; };
-		C166712F614B692326F434A8 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 33176226DADA0986DA6C04D9 /* AppShortcuts.xcstrings */; };
 		D099B21ECD88E0EC25E27F8F /* ShiftActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B26008C21819FE8792C02 /* ShiftActivity.swift */; };
 		D35E377F0C5D9D808A069B52 /* ShiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4420B0F302FB9E899F9A /* ShiftData.swift */; };
 		E5D17011C6F595C043ABF9F5 /* MyTurnWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF0BCE09086B198AC5E573D8 /* MyTurnWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -127,7 +126,6 @@
 		1F9FB8936FB8DD1D4F6DC7F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		28AF4420B0F302FB9E899F9A /* ShiftData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftData.swift; sourceTree = "<group>"; };
 		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
-		33176226DADA0986DA6C04D9 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		3BCD92B2D411E36C0D9A1200 /* MyTurnWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnWatchApp.swift; sourceTree = "<group>"; };
 		41EC7EF4C1B651EFB36F2041 /* ShiftViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftViews.swift; sourceTree = "<group>"; };
 		43DFBBBA2E27735AD12BF7E5 /* App.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
@@ -282,7 +280,6 @@
 				6346716DC3A3B763076EB0C2 /* WidgetSnapshot.swift */,
 				43DFBBBA2E27735AD12BF7E5 /* App.entitlements */,
 				0CFBC6DD3A3946FEC7C8BE5F /* ShiftAlarms.swift */,
-				33176226DADA0986DA6C04D9 /* AppShortcuts.xcstrings */,
 				862118F831F49BE82EA75C66 /* Localizable.xcstrings */,
 				4B6922DF5FD3A4793FFF82DC /* ShiftLive.swift */,
 				613FFE5C2B3CCD5A2DBC35B1 /* ShiftOCR.swift */,
@@ -469,7 +466,6 @@
 				50379B232058CBB4000EE86E /* capacitor.config.json in Resources */,
 				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
 				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
-				C166712F614B692326F434A8 /* AppShortcuts.xcstrings in Resources */,
 				BDA1F94D7A9D699ED01818CC /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
