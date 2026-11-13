@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyTurn</string>
+    <string name="open_phone">Öffne MyTurn auf dem Handy: Deine Schichten erscheinen dann hier.</string>
+    <string name="tile_label">Nächste Schicht</string>
+    <string name="tile_description">Deine aktuelle oder nächste Schicht und die Tage danach.</string>
+</resources>

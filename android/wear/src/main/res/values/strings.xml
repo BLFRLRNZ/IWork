@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyTurn</string>
+    <string name="open_phone">Open MyTurn on your phone: your shifts will appear here.</string>
+    <string name="tile_label">Next shift</string>
+    <string name="tile_description">Your current or next shift and the days after.</string>
+</resources>

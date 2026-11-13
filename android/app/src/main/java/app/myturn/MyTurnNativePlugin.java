@@ -26,7 +26,18 @@ public class MyTurnNativePlugin extends Plugin {
         if (json == null) { call.reject("json mancante"); return; }
         getContext().getSharedPreferences(ShiftWidget.PREFS, Context.MODE_PRIVATE).edit().putString(ShiftWidget.KEY, json).apply();
         ShiftWidget.updateAll(getContext());
+        toWatch(json);
         call.resolve();
+    }
+
+    /** gli stessi dati all'orologio Wear OS, se c'è (Data Layer di Google Play Services) */
+    private void toWatch(String json) {
+        try {
+            com.google.android.gms.wearable.PutDataMapRequest r = com.google.android.gms.wearable.PutDataMapRequest.create("/myturn/data");
+            r.getDataMap().putString("json", json);
+            com.google.android.gms.wearable.Wearable.getDataClient(getContext()).putDataItem(r.asPutDataRequest().setUrgent())
+                .addOnFailureListener(e -> { /* nessun orologio o niente Play Services: va bene così */ });
+        } catch (Exception e) { /* telefono senza Play Services */ }
     }
 
     // --- sveglie: su Android lo stato è "granted" oppure "prompt" (il pulsante porta dove si dà il permesso)

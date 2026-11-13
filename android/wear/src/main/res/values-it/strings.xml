@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyTurn</string>
+    <string name="open_phone">Apri MyTurn sul telefono: i turni arriveranno qui.</string>
+    <string name="tile_label">Prossimo turno</string>
+    <string name="tile_description">Il turno in corso o il prossimo e i giorni seguenti.</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- anteprima del riquadro nell'elenco dei riquadri dell'orologio -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp" android:height="192dp" android:viewportWidth="192" android:viewportHeight="192">
+    <path android:fillColor="#FF000000" android:pathData="M96,0a96,96 0,1 1,0 192a96,96 0,1 1,0 -192z" />
+    <path android:fillColor="#FF4D3A08" android:pathData="M42,52h108a24,24 0,0 1,24 24v18a24,24 0,0 1,-24 24H42a24,24 0,0 1,-24 -24V76a24,24 0,0 1,24 -24z" />
+    <path android:fillColor="#FFFFE2A2" android:pathData="M60,66h72v8H60zM48,82h96v14H48zM64,102h64v8H64z" />
+    <path android:fillColor="#FF4D3A08" android:pathData="M32,140a12,12 0,1 0,24 0a12,12 0,1 0,-24 0z" />
+    <path android:fillColor="#FF572712" android:pathData="M60,140a12,12 0,1 0,24 0a12,12 0,1 0,-24 0z" />
+    <path android:fillColor="#FF27296E" android:pathData="M88,140a12,12 0,1 0,24 0a12,12 0,1 0,-24 0z" />
+    <path android:fillColor="#FF222632" android:pathData="M116,140a12,12 0,1 0,24 0a12,12 0,1 0,-24 0z" />
+    <path android:fillColor="#FF0F4427" android:pathData="M144,140a12,12 0,1 0,24 0a12,12 0,1 0,-24 0z" />
+</vector>

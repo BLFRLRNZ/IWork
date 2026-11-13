@@ -1,0 +1,47 @@
+// App per orologi Wear OS: turni ricevuti dal telefono (Data Layer), riquadro (tile) e complicazione.
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'org.jetbrains.kotlin.plugin.compose'
+
+android {
+    namespace = "app.myturn.wear"
+    compileSdk = rootProject.ext.compileSdkVersion
+    defaultConfig {
+        // stesso identificativo dell'app del telefono: serve per ricevere i dati
+        applicationId "app.myturn"
+        minSdkVersion 30
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildFeatures {
+        compose true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+    }
+}
+
+dependencies {
+    implementation "androidx.activity:activity-compose:$androidxActivityVersion"
+    implementation "androidx.wear.compose:compose-foundation:1.4.1"
+    implementation "androidx.wear.compose:compose-material:1.4.1"
+    implementation "androidx.wear.tiles:tiles:1.4.1"
+    implementation "androidx.wear.protolayout:protolayout:1.2.1"
+    implementation "androidx.wear.protolayout:protolayout-expression:1.2.1"
+    implementation "androidx.wear.watchface:watchface-complications-data-source:1.2.1"
+    implementation "com.google.android.gms:play-services-wearable:19.0.0"
+    implementation "com.google.guava:guava:33.3.1-android"
+}

@@ -158,7 +158,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: myturn-android-prova
-          path: android/app/build/outputs/apk/debug/*.apk
+          path: |
+            android/app/build/outputs/apk/debug/*.apk
+            android/wear/build/outputs/apk/debug/*.apk
       - name: Abilita KVM per l'emulatore
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -192,6 +194,32 @@ jobs:
             sleep 3
             adb exec-out screencap -p > shots/android-4-sveglia-notifica.png
             adb shell cmd statusbar collapse || true
+      - name: Foto dall'orologio Wear OS
+        continue-on-error: true
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: android-wear
+          arch: x86_64
+          profile: wearos_large_round
+          disable-animations: true
+          script: |
+            mkdir -p shots
+            adb shell settings put global hide_error_dialogs 1
+            adb install -r android/wear/build/outputs/apk/debug/wear-debug.apk
+            adb shell am start -n app.myturn/app.myturn.wear.MainActivity --ez demo true
+            sleep 20
+            adb exec-out screencap -p > shots/android-wear-1-app.png
+            adb shell input swipe 227 380 227 140 400
+            sleep 3
+            adb exec-out screencap -p > shots/android-wear-2-giorni.png
+            adb shell input keyevent KEYCODE_HOME
+            sleep 3
+            adb shell am broadcast -a com.google.android.wearable.app.DEBUG_SURFACE --es operation add-tile --ecn component app.myturn/app.myturn.wear.ShiftTileService || true
+            sleep 3
+            adb shell am broadcast -a com.google.android.wearable.app.DEBUG_SYSUI --es operation show-tile --ei index 0 || true
+            sleep 10
+            adb exec-out screencap -p > shots/android-wear-3-riquadro.png
       - name: Foto nel registro
         if: always()
         run: |
