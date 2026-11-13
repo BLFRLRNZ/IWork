@@ -1,0 +1,64 @@
+# Scarica le librerie che il sito serve da sé (niente server esterni per gli utenti) e le salva in vendor/.
+# Tesseract.js: legge il testo delle foto del foglio dei turni, tutto sul telefono.
+# Parte da solo quando cambia questo file, oppure a mano da GitHub (Actions → Librerie esterne → Run workflow).
+name: Librerie esterne
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/vendor.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  tesseract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Scarica Tesseract.js, il motore e le lingue
+        run: |
+          set -e
+          mkdir -p /tmp/v && cd /tmp/v
+          npm pack tesseract.js@6 tesseract.js-core@6 @tesseract.js-data/eng @tesseract.js-data/ell @tesseract.js-data/bul
+          for f in *.tgz; do d="${f%.tgz}"; mkdir -p "$d"; tar -xzf "$f" -C "$d"; done
+          ls
+          find . -maxdepth 3 -name '*.js' -path '*dist*' | head -20
+          find . -maxdepth 3 -name 'tesseract-core*' | sort
+          find . -maxdepth 4 -name '*.traineddata*' | sort
+      - name: Copia in vendor/tesseract
+        run: |
+          set -e
+          V=vendor/tesseract
+          rm -rf $V && mkdir -p $V/core $V/lang
+          T=$(ls -d /tmp/v/tesseract.js-[0-9]*)/package
+          C=$(ls -d /tmp/v/tesseract.js-core-*)/package
+          cp $T/dist/tesseract.min.js $T/dist/worker.min.js $V/
+          cp $T/LICENSE.md $V/LICENSE-tesseract.js.md 2>/dev/null || cp $T/LICENSE* $V/ || true
+          # solo le versioni LSTM del motore (le usa l'app), con e senza SIMD
+          cp $C/tesseract-core-lstm.wasm.js $C/tesseract-core-simd-lstm.wasm.js $V/core/
+          cp $C/tesseract-core-relaxedsimd-lstm.wasm.js $V/core/ 2>/dev/null || true
+          for l in eng ell bul; do
+            D=$(ls -d /tmp/v/tesseract.js-data-$l-*)/package
+            F=$(ls $D/4.0.0_best_int/$l.traineddata.gz 2>/dev/null || ls $D/*/$l.traineddata.gz | head -1)
+            cp "$F" $V/lang/$l.traineddata.gz
+          done
+          {
+            echo "Tesseract.js e i suoi file, scaricati da npm dal workflow vendor.yml (licenza Apache-2.0)."
+            echo "Versioni:"
+            for d in /tmp/v/*/package; do node -e "const p=require('$d/package.json');console.log('- '+p.name+' '+p.version)"; done
+          } > $V/README.txt
+          ls -la $V $V/core $V/lang
+      - name: Salva nel repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vendor/tesseract
+          if git diff --cached --quiet; then echo "niente di nuovo"; else
+            git commit -m "Librerie: Tesseract.js per leggere le foto del foglio dei turni [skip ci]"
+            git pull --rebase origin main && git push origin HEAD:main
+          fi
