@@ -35,15 +35,15 @@ jobs:
           set -e
           V=vendor/tesseract
           rm -rf $V && mkdir -p $V/core $V/lang
-          T=$(ls -d /tmp/v/tesseract.js-[0-9]*)/package
-          C=$(ls -d /tmp/v/tesseract.js-core-*)/package
+          T=$(ls -d /tmp/v/tesseract.js-[0-9]*/ | head -1)package
+          C=$(ls -d /tmp/v/tesseract.js-core-*/ | head -1)package
           cp $T/dist/tesseract.min.js $T/dist/worker.min.js $V/
-          cp $T/LICENSE.md $V/LICENSE-tesseract.js.md 2>/dev/null || cp $T/LICENSE* $V/ || true
+          cp $T/LICENSE* $V/ 2>/dev/null || true
           # solo le versioni LSTM del motore (le usa l'app), con e senza SIMD
           cp $C/tesseract-core-lstm.wasm.js $C/tesseract-core-simd-lstm.wasm.js $V/core/
           cp $C/tesseract-core-relaxedsimd-lstm.wasm.js $V/core/ 2>/dev/null || true
           for l in eng ell bul; do
-            D=$(ls -d /tmp/v/tesseract.js-data-$l-*)/package
+            D=$(ls -d /tmp/v/tesseract.js-data-$l-*/ | head -1)package
             F=$(ls $D/4.0.0_best_int/$l.traineddata.gz 2>/dev/null || ls $D/*/$l.traineddata.gz | head -1)
             cp "$F" $V/lang/$l.traineddata.gz
           done
