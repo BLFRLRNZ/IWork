@@ -860,3 +860,18 @@ Programėlėje priminimai suplanuojami telefone: į serverį nieko nepatenka. Pa
 Tikras žadintuvas prieš kiekvieną pamainą, skambantis net kai telefonas nutildytas. Jis atsinaujina pats, kai pakeiti pamainas.
 Leisti žadintuvus
 Žadintuvas prieš pamainas
+Čia rasi visa kita: pamainų rotaciją, atostogas ir laisvas valandas, valandų banką, atlyginimo įvertį, atlyginimo lapelį, priminimus ir žadintuvus prieš pamainas, mėnesio PDF, eksportą į kalendorių, duomenų kopiją ir Vadovą.
+Atidaryk {p} ir įjunk {a}: pasirink, kiek anksčiau nori pranešimo, taip pat antram darbui ir budėjimui. Pranešimus suplanuoja pats telefonas, net be paskyros. Su {b} iškart patikrinsi, ar veikia.
+Kaip nustatyti žadintuvą prieš pamainas?
+Atidaryk {p} ir leisk žadintuvus, kai telefonas paprašys. Rytui, popietei ir nakčiai pasirink, ar jis turi skambėti ir kiek anksčiau – nuo 30 minučių iki 3 valandų. Žadintuvas skamba net kai telefonas nutildytas, o jį gali sustabdyti arba atidėti 10 minučių. Jis apima artimiausias 14 dienų ir atsinaujina pats, kai keiti pamainas. „iPhone“ reikia iOS 26.
+Patikrink, ar {app} pranešimai leidžiami telefono nustatymuose, tada išjunk ir vėl įjunk {a} ir išbandyk {b}.
+Tavo el. paštas ir, su sinchronizavimu, visi duomenys, bet užšifruoti tavo slaptažodžiu, todėl neįskaitomi. Priminimus ir žadintuvus suplanuoja telefonas, be serverio. Paskyrą ir visus serverio duomenis gali ištrinti skiltyje {p}.
+Šiame telefone, programėlėje. Be paskyros niekas nesiunčiama į serverį. Su sinchronizavimu į serverį keliauja tavo slaptažodžiu užšifruota kopija.
+Ar ištrynęs programėlę prarasiu pamainas?
+Taip, jei neturi kopijos ir nenaudoji sinchronizavimo su paskyra. Todėl verta kartais ją išsaugoti, ypač prieš keičiant telefoną.
+Kaip matyti pamainas valdikliuose ar laikrodyje?
+Palaikyk pirštą tuščioje pradžios ekrano vietoje, pridėk valdiklį ir ieškok {app}: matysi dabartinę ar kitą pamainą ir tolesnes dienas. „iPhone“ yra ir užrakinimo ekrano valdiklių. Jei turi „Apple Watch“ ar „Wear OS“ laikrodį, įdiek {app} ir laikrodyje: pamainos ateina iš telefono, o jas gali pridėti ir prie ciferblato.
+Atnaujinimai ateina iš „App Store“ arba „Google Play“, kaip ir kitoms programėlėms. Tavo pamainos lieka savo vietose.
+Federalinės ir valstijų šventės pagal įstatymą taikomos tik viešojo sektoriaus darbuotojams: privačiame sektoriuje tai priklauso nuo sutarties. Pasirink savo valstiją, kad matytum jos šventes.
+Darbo ir poilsio laikas provincijose gali skirtis: patikrink žemiau esančias reikšmes.
+Karnavalas ir Devintinės yra „ponto facultativo“. Pasirink savo valstiją, kad matytum jos šventes; savivaldybės šventes pridėk kaip vietines.

@@ -17,7 +17,7 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 - **App per iPhone e Android:** la stessa `index.html` dentro Capacitor (vedi "App per gli store").
 - **Nomi interni:** tutto usa il prefisso `myturn`: dati in `localStorage["myturn-v1"]`, altre chiavi `myturn-*`, cache `myturn-vN`, `MYTURN_I18N`, `MYTURN_COUNTRIES`, `myturnDebug`. Il nome visibile è `APP` in `index.html`.
 - **Lingue:** 23.
-- **Paesi:** 41, con le loro festività e le regole sul riposo.
+- **Paesi:** 41, con le loro festività e le regole sul riposo; per Stati Uniti, Brasile, Canada, Australia e altri anche stati, province o regioni.
 - **Versione:** è in `APP_VERSION` dentro `index.html` e in `version.json`.
 
 ## File
@@ -79,7 +79,7 @@ Questo file serve a riprendere il lavoro sul progetto in una chat nuova. Va lett
 | `monthPdf(y,m,job)` | Crea il PDF del mese (`job` 2 = secondo lavoro). |
 | `icsText` | Crea il file per il calendario (.ics). |
 | `bpLines` / `bpParse` | Leggono la busta paga dal PDF. |
-| `helpData` | Contiene il testo della Guida. |
+| `helpData` | Contiene il testo della Guida. Alcune risposte cambiano nell'app (`NATIVE`): sveglie, widget e orologi, niente browser. |
 | `startTour` / `tourSteps` | Avviano e descrivono il tour guidato. |
 | `ROT` / `ROLE` / `rotRole` | Rotazioni pronte della turnazione ciclica: schemi per ruolo (M, P, N da 8 ore; G, NN da 12 ore; R riposo). Ogni ruolo usa un turno rapido esistente (per orario e durata) o ne aggiunge uno (`new:X` finché non si applica). I nomi sono nella lista "values passed through variables" di `tools/i18n/extract.js`. |
 | `renderYStats` | Statistiche della vista Anno (`#yStats`), con i dati in più di `yearData` (`tm/tp/tn`, `wd`, `fe`, `streak`, `wkFree`). |
@@ -97,7 +97,7 @@ Il motore delle festività è in `index.html`. Le regole possono essere:
 - `?…:…`, una condizione;
 - `A~B/D`, una festività che si sposta.
 
-Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiungere festività o sostituire quelle nazionali.
+Le opzioni sono `from`, `to`, `skip`, `obs` (`near`, `mon`, `sun`, `sat`, `move`, `ar`), `nwd` e `ev` (solo gli anni con anno%N==R). Le regioni possono aggiungere festività o sostituire quelle nazionali.
 
 ## App per gli store (Capacitor)
 
@@ -117,8 +117,9 @@ Le opzioni sono `from`, `to`, `skip`, `obs` e `nwd`. Le regioni possono aggiunge
   - iPhone, in `ios/App/`: `App/MyTurnNativePlugin.swift` (salva nell'App Group `group.app.myturn`, aggiorna i widget, manda i dati all'orologio con WatchConnectivity), `App/MyTurnViewController.swift` (registra il plugin; è la classe del controller in `Main.storyboard`), `App/ShiftAlarms.swift` (sveglie), `App/WidgetSnapshot.swift` (solo Debug: con `-widgetSnapshot` disegna i widget in Documents per le foto). `Shared/` = modello e viste comuni; `SharedWidget/` = calendario dei widget; `MyTurnWidget/` = widget Home e schermata di blocco; `MyTurnWatch/` = app Apple Watch; `MyTurnWatchWidget/` = complicazioni.
   - I target si aggiungono al progetto Xcode con `tools/app/ios-targets.rb` (gem xcodeproj, nel workflow): un file `.swift` nuovo in una di quelle cartelle entra da solo nei target giusti.
   - Android, in `android/app/src/main/`: `MainActivity.java` (registra il plugin; con `--ez widgetPreview true` mostra l'anteprima del widget, solo nelle versioni di prova), `MyTurnNativePlugin.java`, `ShiftAlarms.java`, `AlarmReceiver.java`, `AlarmActivity.java`, `BootReceiver.java`, `ShiftWidget.java`, `res/layout/myturn_widget.xml`, `res/xml/myturn_widget_info.xml`.
-  - Le foto del workflow (avvio, widget, orologio, sveglia Android) finiscono nel registro: `tools/app/foto.sh cartella` le estrae.
-- **Prossimi passi (fase 1 della roadmap):** account Apple Developer e Google Play del proprietario; firma e invio a TestFlight dal workflow (chiave API di App Store Connect nei segreti di GitHub; App Group e identificativi `app.myturn`, `.widget`, `.watchkitapp`, `.watchkitapp.widget` da registrare); 12 tester per 14 giorni su Google Play; provare le sveglie su un telefono vero (iOS 26 e Android); Wear OS; calendario per la famiglia.
+  - **Orologi Wear OS** (dalla 2.14), modulo `android/wear/` in **Kotlin con Compose per Wear OS** (unico codice Kotlin del progetto; plugin Kotlin 2.2.20 nel `build.gradle` principale; librerie del 2024: wear compose 1.4.1, tiles 1.4.1, protolayout 1.2.1, complicazioni 1.2.1). Stesso `applicationId` dell'app del telefono (serve al Data Layer). Il telefono manda il JSON dei widget anche all'orologio (`MyTurnNativePlugin.toWatch`, percorso `/myturn/data`, `play-services-wearable`); sull'orologio `DataListener` lo salva e aggiorna riquadro e complicazione. File: `MainActivity.kt` (schermata con turno in corso o prossimo e giorni seguenti), `ShiftTileService.kt` (riquadro, una schermata per ogni inizio e fine turno, e `DataListener`), `ShiftComplicationService.kt` (breve, lunga, con barra), `ShiftStore.kt` (dati, colori, testi, dati di prova). Testi senza dati in `res/values*/strings.xml` (it, en, fr, de, es, pt). Con `--ez demo true` (solo prove) usa dati di prova.
+  - Le foto del workflow (avvio, widget, orologio, sveglia Android, Wear OS) finiscono nel registro: `tools/app/foto.sh cartella` le estrae.
+- **Prossimi passi (fase 1 della roadmap):** account Apple Developer e Google Play del proprietario; firma e invio a TestFlight dal workflow (chiave API di App Store Connect nei segreti di GitHub; App Group e identificativi `app.myturn`, `.widget`, `.watchkitapp`, `.watchkitapp.widget` da registrare); 12 tester per 14 giorni su Google Play; provare sveglie e orologio Wear OS su dispositivi veri; calendario per la famiglia.
 
 ## Privacy e condizioni d'uso
 
@@ -179,6 +180,8 @@ python3 tools/countries/build.py eu noneu amoc it_block.js   # rigenera countrie
 
 `it_block.js` contiene l'intestazione e l'Italia. `eu.py`, `noneu.py` e `amoc.py` contengono gli altri paesi.
 
+Gli stati di Stati Uniti e Brasile sono in `states.py`, **generato**: si clona la libreria [holidays](https://github.com/vacanza/holidays), poi `python3 -I tools/countries/states_gen.py /percorso/holidays US` (e `BR`), `python3 tools/countries/states_emit.py`, la riga `build.py` sopra e `node tests/holidays-states.js`. Le date attese del test sono in `tests/holidays/` (copiate dai file `expected_XX.json` che scrive `states_gen.py`). Le esclusioni (giornate commemorative, feste facoltative del Texas) sono in `EXCL` di `states_gen.py`; i casi particolari (vigilia di Natale, Inauguration Day) in `fix()` di `states_emit.py`. Opzioni del motore aggiunte per questi casi: `ev:[N,R]` (solo gli anni con anno%N==R) e il recupero `sat`.
+
 ## Test
 
 I test usano Playwright, che è già installato. Alcuni test leggono file con `fetch`: in quel caso bisogna avviare prima un server dalla cartella principale del progetto, con `python3 -m http.server 8765`. Le immagini prodotte vanno in `$OUT` (di solito `/tmp/myturn-tests`).
@@ -200,6 +203,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | `tests/native-shell.js` | L'app nativa simulata nel browser con plugin finti: niente service worker, promemoria locali, file condivisi, margini Android | sì |
 | `tests/rotations-stats.js` | Rotazioni pronte (turni esistenti e turni da 12 ore aggiunti) e statistiche della vista Anno a 430 e 320 px, anche scuro | sì |
 | `tests/alarms.js` | Sveglie nell'app con un plugin finto: permesso, anticipo per tipo di turno, aggiornamento quando cambiano i turni, iOS vecchio, permesso negato, Android che concede dopo, niente nella versione web | sì |
+| `tests/holidays-states.js` | Festività di 51 stati USA, 27 stati del Brasile e Terranova e Labrador, data per data dal 2024 al 2045, contro le date attese in `tests/holidays/` | sì |
 | `tests/sync.js` | Sincronizzazione tra due dispositivi con un server finto: password, unione, conflitti, cancellazioni, password dimenticata, niente in chiaro sul server | sì |
 
 - Le buste paga di prova sono in `tests/payslip/`. Si rigenerano con `gen.py`, `gen2.py` e `gen3.py`, che usano reportlab e pypdf.
@@ -217,7 +221,7 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 
 - **Traduzioni da far rivedere** a chi parla la lingua: et, lv, lt, hu, sl; il termine per "reperibilità" in ogni lingua; i nomi dei menu di iPhone e Android nella Guida.
 - **Etichetta della versione 2.0.0 su GitHub:** va creata a mano.
-- **Festività mancanti:** quelle dei singoli stati di USA e Brasile, la provincia di Terranova e Labrador in Canada, i ponti decisi ogni anno dai governi.
+- **Festività mancanti:** i ponti decisi ogni anno dai governi; il Diwali in California (dal 2026, data lunare) se il proprietario lo vuole.
 - **Dominio proprio per le email** (per esempio myturn.it), da collegare a Brevo, quando l'app si apre a molti utenti.
 - **Funzioni del server ancora da fare:** calendario in abbonamento, condivisione con i colleghi.
 
@@ -239,3 +243,4 @@ I test usano Playwright, che è già installato. Alcuni test leggono file con `f
 | 2.11 | Sincronizzazione automatica con l'account, senza niente da attivare; app per iPhone e Android (Capacitor) con widget e Apple Watch, non ancora negli store |
 | 2.12 | Rotazioni pronte nella turnazione ciclica (9 schemi); statistiche nella vista Anno |
 | 2.13 | Sveglie prima dei turni nell'app (AlarmKit su iPhone, AlarmManager su Android); greco con il carattere del telefono |
+| 2.14 | Festività di 51 stati USA, 27 stati del Brasile e di Terranova e Labrador; nell'app la Guida spiega sveglie, widget e orologi; app per orologi Wear OS |

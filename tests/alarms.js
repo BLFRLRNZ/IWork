@@ -80,8 +80,22 @@ const days={};for(let i=1;i<=30;i++){const c=(i-1)%8;days[day(i)]=c<2?{k:'w',s:'
     ok(!over.length,w+(dark?' scuro':'')+': niente esce dal pannello '+over.join(','));
     await p.screenshot({path:path.join(OUT,'alarm_'+w+(dark?'_dark':'')+'.png')});await p.context().close();}
 
-  // --- 6. versione web: niente sveglie
+  // --- 6. Guida nell'app: sveglie, widget e orologio, risposte senza browser; "Portami lì" apre le sveglie
+  {const p=await open({state:'granted'});await p.evaluate(()=>{document.getElementById('helpBtn').click();});await p.waitForTimeout(300);
+    const qs=await p.evaluate(()=>[...document.querySelectorAll('#hpList summary')].map(s=>s.textContent));
+    ok(qs.includes('Come metto una sveglia prima dei turni?')&&qs.includes("Come metto i turni nei widget o sull'orologio?")&&qs.includes("Se elimino l'app perdo i turni?"),'Guida nell\'app: sveglie, widget e orologio');
+    ok(!qs.includes("Come installo l'app sul telefono?")&&!qs.includes('Se cancello i dati del browser perdo i turni?'),'Guida nell\'app: niente domande sul browser');
+    const txt=await p.textContent('#hpList');ok(!/schermata Home e la apri da lì|nel browser/.test(txt),'nessuna risposta pensata per il browser');
+    await p.fill('#hpQ','sveglia');await p.waitForTimeout(200);
+    await p.click('#hpList details:not([hidden]) [data-go="alBtn"]');await p.waitForTimeout(400);
+    ok(await p.evaluate(()=>document.getElementById('al').open),'Portami lì apre le sveglie');
+    ok(!p.errs.length,'nessun errore '+p.errs.join('|'));await p.context().close();}
+  // --- 7. versione web: niente sveglie
   {const p=await open({web:true});await p.click('#toolsBtn');await p.waitForTimeout(150);
-    ok(await p.isHidden('#alBtn'),'nella versione web il pulsante Sveglie non c\'è');await p.context().close();}
+    ok(await p.isHidden('#alBtn'),'nella versione web il pulsante Sveglie non c\'è');
+    await p.keyboard.press('Escape');await p.evaluate(()=>document.querySelectorAll('dialog[open]').forEach(d=>d.close()));await p.evaluate(()=>document.getElementById('helpBtn').click());await p.waitForTimeout(300);
+    const qs=await p.evaluate(()=>[...document.querySelectorAll('#hpList summary')].map(s=>s.textContent));
+    ok(qs.includes("Come installo l'app sul telefono?")&&!qs.includes('Come metto una sveglia prima dei turni?'),'Guida web come prima');
+    await p.context().close();}
 
   console.log(fail?fail+' FALLITI':'tutto ok');await b.close();process.exit(fail?1:0);})();

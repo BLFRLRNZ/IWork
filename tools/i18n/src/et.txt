@@ -860,3 +860,18 @@ Rakenduses ajastatakse meeldetuletused telefonis: serverisse ei jõua midagi. Ku
 Päris äratus enne iga vahetust, mis heliseb ka siis, kui telefon on hääletu. See uueneb ise, kui muudad vahetusi.
 Luba äratused
 Äratus enne vahetusi
+Siit leiad kõik muu: vahetuste rotatsiooni, puhkused ja vabad tunnid, tundide panga, palgahinnangu, palgalehe, meeldetuletused ja äratused enne vahetusi, kuu PDF-i, kalendrisse ekspordi, andmete koopia ja Juhendi.
+Ava {p} ja lülita sisse {a}: vali, kui palju varem soovid teavitust, ka teise töö ja valve jaoks. Teavitused ajastab telefon ise, ka ilma kontota. Nupuga {b} kontrollid kohe, kas see töötab.
+Kuidas panna äratus enne vahetusi?
+Ava {p} ja luba äratused, kui telefon seda küsib. Vali hommiku, pärastlõuna ja öö jaoks, kas äratus heliseb ja kui palju varem, 30 minutist 3 tunnini. Äratus heliseb ka siis, kui telefon on hääletu režiimil, ja saad selle peatada või 10 minutit edasi lükata. See katab järgmised 14 päeva ja uueneb ise, kui muudad vahetusi. iPhone'is on vaja iOS 26.
+Kontrolli, et {app} teavitused oleksid telefoni seadetes lubatud, siis lülita {a} välja ja uuesti sisse ning proovi nuppu {b}.
+Sinu e-posti aadress ja sünkroonimisega kõik andmed, kuid sinu parooliga krüpteeritult, seega loetamatult. Meeldetuletused ja äratused ajastab telefon ise, ilma serverita. Konto ja kõik serveris olevad andmed saad kustutada siit: {p}.
+Selles telefonis, rakenduses. Ilma kontota ei saadeta midagi serverisse. Sünkroonimisega läheb serverisse sinu parooliga krüpteeritud koopia.
+Kas rakenduse kustutamisel kaotan vahetused?
+Jah, kui sul pole koopiat ega kasuta konto sünkroonimist. Seepärast tasub aeg-ajalt üks salvestada, eriti enne telefoni vahetamist.
+Kuidas näha vahetusi vidinates või kellas?
+Hoia sõrme avakuva tühjal kohal, lisa vidin ja otsi {app}: näed käimasolevat või järgmist vahetust ja järgmisi päevi. iPhone'is on ka lukustuskuva vidinad. Kui sul on Apple Watch või Wear OS-iga kell, paigalda {app} ka kellale: vahetused tulevad telefonist ja saad need panna ka kella sihverplaadile.
+Uuendused tulevad App Store'ist või Google Playst nagu teistelgi rakendustel. Sinu vahetused jäävad alles.
+Föderaalpühad ja osariikide pühad kehtivad seaduse järgi ainult avaliku sektori töötajatele: erasektoris sõltub see lepingust. Vali oma osariik, et näha selle pühi.
+Töö- ja puhkeaeg võivad provintsiti erineda: kontrolli allolevaid väärtusi.
+Karneval ja Kristuse ihu ja vere püha on „ponto facultativo”. Vali oma osariik, et näha selle pühi; omavalitsuse pühad lisa kohaliku pühana.

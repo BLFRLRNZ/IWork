@@ -860,3 +860,18 @@ V aplikaciji se opomniki načrtujejo na telefonu: na strežnik ne pride nič. Č
 Prava budilka pred vsako izmeno, ki zvoni tudi, ko je telefon utišan. Sama se posodobi, ko spremeniš izmene.
 Dovoli budilke
 Budilka pred izmenami
+Tukaj najdeš vse ostalo: menjavo izmen, dopust in proste ure, banko ur, oceno plače, plačilno listo, opomnike in budilke pred izmenami, PDF meseca, izvoz v koledar, kopijo podatkov in Vodnik.
+Odpri {p} in vklopi {a}: izberi, koliko prej želiš obvestilo, tudi za drugo službo in pripravljenost. Obvestila načrtuje telefon sam, tudi brez računa. Z {b} takoj preveriš, ali deluje.
+Kako nastavim budilko pred izmenami?
+Odpri {p} in dovoli budilke, ko telefon to zahteva. Za jutro, popoldne in noč izberi, ali naj zvoni in koliko prej, od 30 minut do 3 ur. Budilka zvoni tudi, ko je telefon utišan, in jo lahko ustaviš ali odložiš za 10 minut. Pokriva naslednjih 14 dni in se sama posodobi, ko spremeniš izmene. Na iPhonu potrebuješ iOS 26.
+Preveri, ali so obvestila za {app} dovoljena v nastavitvah telefona, nato izklopi in znova vklopi {a} in poskusi {b}.
+Tvoj e-naslov in s sinhronizacijo vsi podatki, vendar šifrirani s tvojim geslom, torej neberljivi. Opomnike in budilke načrtuje telefon sam, brez strežnika. Račun in vse podatke na strežniku lahko izbrišeš v {p}.
+Na tem telefonu, v aplikaciji. Brez računa se nič ne pošlje na strežnik. S sinhronizacijo gre na strežnik kopija, šifrirana s tvojim geslom.
+Ali izgubim izmene, če izbrišem aplikacijo?
+Da, če nimaš kopije in ne uporabljaš sinhronizacije z računom. Zato se splača občasno shraniti eno, posebej pred menjavo telefona.
+Kako vidim izmene v pripomočkih ali na uri?
+Pridrži prst na praznem mestu začetnega zaslona, dodaj pripomoček in poišči {app}: vidiš trenutno ali naslednjo izmeno in dneve za njo. Na iPhonu so tudi pripomočki za zaklenjeni zaslon. Če imaš Apple Watch ali uro z Wear OS, namesti {app} tudi na uro: izmene pridejo s telefona, lahko pa jih dodaš tudi na številčnico.
+Posodobitve pridejo iz App Store ali Google Play, kot pri drugih aplikacijah. Tvoje izmene ostanejo, kjer so.
+Zvezni prazniki in prazniki zveznih držav po zakonu veljajo le za zaposlene v javnem sektorju: v zasebnem sektorju je odvisno od pogodbe. Izberi svojo zvezno državo, da vidiš njene praznike.
+Delovni čas in počitek se lahko razlikujeta po provincah: preveri spodnje vrednosti.
+Karneval in sveto rešnje telo sta »ponto facultativo«. Izberi svojo zvezno državo za njene praznike; praznike občine dodaj kot lokalni praznik.

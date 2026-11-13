@@ -860,3 +860,18 @@ Dans l'app, les rappels sont programmés sur le téléphone : rien n'arrive au s
 Une vraie alarme avant chaque poste, qui sonne même quand le téléphone est en silencieux. Elle se met à jour toute seule quand vous modifiez vos postes.
 Autoriser les alarmes
 Alarme avant les postes
+Vous y trouverez tout le reste : roulement, congés et absences, banque d'heures, estimation de la paie, bulletin de paie, rappels et alarmes avant les postes, PDF du mois, export vers le calendrier, sauvegarde des données et le Guide.
+Ouvrez {p} et activez {a} : choisissez combien de temps avant vous voulez être prévenu, aussi pour le deuxième emploi et l'astreinte. C'est le téléphone qui programme les notifications, même sans compte. Avec {b}, vous vérifiez tout de suite que cela fonctionne.
+Comment mettre une alarme avant mes postes ?
+Dans {p}, autorisez les alarmes quand le téléphone le demande. Pour le matin, l'après-midi et la nuit, choisissez si elle doit sonner et combien de temps avant, de 30 minutes à 3 heures. L'alarme sonne même quand le téléphone est en silencieux, et vous pouvez l'arrêter ou la répéter 10 minutes plus tard. Elle couvre les 14 prochains jours et se met à jour toute seule quand vous modifiez vos postes. Sur iPhone, iOS 26 est nécessaire.
+Vérifiez que les notifications de {app} sont autorisées dans les réglages du téléphone, puis désactivez et réactivez {a} et essayez {b}.
+Votre e-mail et, avec la synchronisation, toutes les données, mais chiffrées avec votre mot de passe, donc illisibles. Les rappels et les alarmes sont programmés par le téléphone, sans passer par le serveur. Vous pouvez supprimer le compte et toutes les données du serveur depuis {p}.
+Sur ce téléphone, dans l'app. Sans compte, rien n'est envoyé à un serveur. Avec la synchronisation, une copie chiffrée avec votre mot de passe va sur le serveur.
+Si je supprime l'app, est-ce que je perds mes postes ?
+Oui, si vous n'avez pas de copie et n'utilisez pas la synchronisation avec un compte. C'est pourquoi il vaut mieux en enregistrer une de temps en temps, surtout avant de changer de téléphone.
+Comment voir mes postes dans les widgets ou sur ma montre ?
+Touchez longuement un espace vide de l'écran d'accueil, ajoutez un widget et cherchez {app} : vous voyez le poste en cours ou le prochain et les jours suivants. Sur iPhone, il y a aussi des widgets pour l'écran verrouillé. Si vous avez une Apple Watch ou une montre Wear OS, installez aussi {app} sur la montre : les postes arrivent depuis le téléphone et vous pouvez aussi les mettre sur le cadran.
+Les mises à jour arrivent par l'App Store ou Google Play, comme pour les autres apps. Vos postes restent où ils sont.
+Les jours fériés fédéraux et ceux des États ne valent légalement que pour les employés publics : dans le privé, cela dépend du contrat. Choisissez votre État pour voir ses fêtes.
+Les horaires et les repos peuvent changer d'une province à l'autre : vérifiez les valeurs ci-dessous.
+Le Carnaval et la Fête-Dieu sont « ponto facultativo ». Choisissez votre État pour ses fêtes ; ajoutez celle de votre commune comme fête locale.

@@ -860,3 +860,18 @@ Sovelluksessa muistutukset ajastetaan puhelimessa: palvelimelle ei mene mitään
 Oikea herätys ennen jokaista vuoroa, joka soi, vaikka puhelin olisi äänettömällä. Se päivittyy itsestään, kun muutat vuorojasi.
 Salli herätykset
 Herätys ennen vuoroja
+Täältä löydät kaiken muun: vuorokierron, lomat ja vapaat tunnit, tuntipankin, palkka-arvion, palkkalaskelman, muistutukset ja herätykset ennen vuoroja, kuukauden PDF:n, viennin kalenteriin, tietojen varmuuskopion ja Oppaan.
+Avaa {p} ja ota käyttöön {a}: valitse, kuinka paljon aiemmin haluat ilmoituksen, myös toiselle työlle ja varallaololle. Puhelin ajastaa ilmoitukset itse, myös ilman tiliä. Painikkeella {b} tarkistat heti, että se toimii.
+Miten asetan herätyksen ennen vuoroja?
+Avaa {p} ja salli herätykset, kun puhelin kysyy. Valitse aamulle, iltapäivälle ja yölle, soiko herätys ja kuinka paljon aiemmin, 30 minuutista 3 tuntiin. Herätys soi, vaikka puhelin olisi äänettömällä, ja voit pysäyttää sen tai torkuttaa 10 minuuttia. Se kattaa seuraavat 14 päivää ja päivittyy itsestään, kun muutat vuoroja. iPhonessa tarvitaan iOS 26.
+Tarkista, että {app}-ilmoitukset on sallittu puhelimen asetuksissa, ja kytke sitten {a} pois ja takaisin päälle ja kokeile painiketta {b}.
+Sähköpostiosoitteesi ja synkronoinnilla kaikki tiedot, mutta salasanallasi salattuina eli lukukelvottomina. Muistutukset ja herätykset puhelin ajastaa itse, ilman palvelinta. Voit poistaa tilin ja kaikki palvelimen tiedot kohdasta {p}.
+Tässä puhelimessa, sovelluksessa. Ilman tiliä mitään ei lähetetä palvelimelle. Synkronoinnilla palvelimelle menee salasanallasi salattu kopio.
+Menetänkö vuoroni, jos poistan sovelluksen?
+Kyllä, jos sinulla ei ole kopiota etkä käytä synkronointia tilin kanssa. Siksi kannattaa tallentaa kopio aina välillä, varsinkin ennen puhelimen vaihtoa.
+Miten näen vuoroni widgeteissä tai kellossa?
+Pidä sormea Koti-valikon tyhjässä kohdassa, lisää widget ja hae {app}: näet käynnissä olevan tai seuraavan vuoron ja sitä seuraavat päivät. iPhonessa on myös widgetit lukitusnäytölle. Jos sinulla on Apple Watch tai Wear OS -kello, asenna {app} myös kelloon: vuorot tulevat puhelimesta, ja voit lisätä ne myös kellotauluun.
+Päivitykset tulevat App Storesta tai Google Playsta kuten muillekin sovelluksille. Vuorosi pysyvät paikallaan.
+Liittovaltion ja osavaltioiden pyhät koskevat lain mukaan vain julkisen sektorin työntekijöitä: yksityisellä sektorilla se riippuu sopimuksesta. Valitse osavaltiosi, niin näet sen pyhät.
+Työ- ja lepoajat voivat vaihdella provinsseittain: tarkista alla olevat arvot.
+Karnevaali ja Kristuksen ruumiin juhla ovat ”ponto facultativo”. Valitse osavaltiosi, niin näet sen pyhät; lisää kuntasi pyhät paikallisina pyhinä.

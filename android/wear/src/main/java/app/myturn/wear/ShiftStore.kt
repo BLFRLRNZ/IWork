@@ -187,16 +187,23 @@ object ShiftStore {
         c.set(Calendar.HOUR_OF_DAY, 0); c.set(Calendar.MINUTE, 0); c.set(Calendar.SECOND, 0); c.set(Calendar.MILLISECOND, 0)
         val wd = SimpleDateFormat("EEE", Locale.ITALIAN)
         val days = JSONArray()
-        // il primo turno è già iniziato da 2 ore: così si vede anche la barra
-        val shift = (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) - 2 + 24) % 24
+        // il turno di oggi è iniziato da 2 ore: così si vedono anche la barra e il conto alla rovescia
+        val now = System.currentTimeMillis()
+        val nowStart = now - now % 3_600_000L - 2 * 3_600_000L
         for (i in 0 until 14) {
             val p = plan[i % plan.size]
             val d = JSONObject()
             d.put("d", key(c.timeInMillis)); d.put("wd", wd.format(c.time)); d.put("dn", c.get(Calendar.DAY_OF_MONTH).toString())
             d.put("k", p[0]); d.put("t", p[1]); d.put("tn", p[2])
-            if (p[0] == "w") {
-                val a = if (i == 0) shift else p[3] as Int
-                val b = if (i == 0) shift + 8 else p[4] as Int
+            if (i == 0) {
+                val hh = SimpleDateFormat("HH:mm", Locale.US)
+                val tn = Calendar.getInstance().apply { timeInMillis = nowStart }.get(Calendar.HOUR_OF_DAY).let { if (it < 12) "m" else if (it < 18) "p" else "n" }
+                d.put("k", "w"); d.put("tn", tn); d.put("t", mapOf("m" to "Mattina", "p" to "Pomeriggio", "n" to "Notte").getValue(tn))
+                d.put("h", hh.format(nowStart) + "–" + hh.format(nowStart + 8 * 3_600_000L))
+                d.put("s", nowStart); d.put("e", nowStart + 8 * 3_600_000L)
+            } else if (p[0] == "w") {
+                val a = p[3] as Int
+                val b = p[4] as Int
                 d.put("h", String.format(Locale.US, "%02d:00–%02d:00", a, b % 24))
                 d.put("s", c.timeInMillis + a * 3_600_000L); d.put("e", c.timeInMillis + b * 3_600_000L)
             } else d.put("h", "")

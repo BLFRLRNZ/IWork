@@ -860,3 +860,18 @@ V aplikácii sa pripomienky plánujú v telefóne: na server nič nejde. Keď zm
 Skutočný budík pred každou zmenou, ktorý zvoní aj pri stlmenom telefóne. Sám sa upraví, keď zmeníš zmeny.
 Povoliť budíky
 Budík pred zmenami
+Tu nájdeš všetko ostatné: rotáciu zmien, dovolenku a voľno, banku hodín, odhad mzdy, výplatnú pásku, pripomienky a budíky pred zmenami, PDF mesiaca, export do kalendára, zálohu údajov a Sprievodcu.
+Otvor {p} a zapni {a}: vyber, ako dlho vopred chceš upozornenie, aj pre druhú prácu a pohotovosť. Upozornenia si plánuje sám telefón, aj bez účtu. Pomocou {b} hneď overíš, že to funguje.
+Ako si nastavím budík pred zmenami?
+Otvor {p} a povoľ budíky, keď o to telefón požiada. Pre rannú, poobednú a nočnú zmenu vyber, či má zvoniť a ako dlho vopred, od 30 minút do 3 hodín. Budík zvoní, aj keď je telefón stlmený, a môžeš ho vypnúť alebo odložiť o 10 minút. Platí na najbližších 14 dní a sám sa upraví, keď upravíš zmeny. Na iPhone treba iOS 26.
+Skontroluj, či sú upozornenia pre {app} povolené v nastaveniach telefónu, potom vypni a znova zapni {a} a skús {b}.
+Tvoj e-mail a so synchronizáciou všetky údaje, ale zašifrované tvojím heslom, teda nečitateľné. Pripomienky a budíky si plánuje telefón sám, bez servera. Účet a všetky údaje na serveri môžeš vymazať v {p}.
+V tomto telefóne, v aplikácii. Bez účtu sa nič neposiela na server. So synchronizáciou ide na server kópia zašifrovaná tvojím heslom.
+Prídem o zmeny, keď vymažem aplikáciu?
+Áno, ak nemáš kópiu a nepoužívaš synchronizáciu s účtom. Preto sa oplatí ju občas uložiť, hlavne pred výmenou telefónu.
+Ako uvidím zmeny vo widgetoch alebo na hodinkách?
+Podrž prst na prázdnom mieste plochy, pridaj widget a vyhľadaj {app}: uvidíš prebiehajúcu alebo nasledujúcu zmenu a ďalšie dni. Na iPhone sú aj widgety pre uzamknutú obrazovku. Ak máš Apple Watch alebo hodinky s Wear OS, nainštaluj {app} aj do hodiniek: zmeny prídu z telefónu a môžeš si ich dať aj na ciferník.
+Aktualizácie prichádzajú z App Store alebo Google Play, rovnako ako pri iných aplikáciách. Tvoje zmeny zostanú, kde sú.
+Federálne sviatky aj sviatky jednotlivých štátov platia zo zákona len pre zamestnancov verejného sektora: v súkromnom sektore závisí od zmluvy. Vyber svoj štát a uvidíš jeho sviatky.
+Pracovný čas a odpočinok sa môžu líšiť podľa provincie: skontroluj hodnoty nižšie.
+Karneval a Božie telo sú „ponto facultativo“. Vyber svoj štát pre jeho sviatky; sviatky obce pridaj ako miestny sviatok.

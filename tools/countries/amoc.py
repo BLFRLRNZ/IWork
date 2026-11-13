@@ -1,6 +1,7 @@
 # Americhe e Oceania: US, CA, MX, BR, AR, AU, NZ
 from eu import H
 from noneu import C
+from states import US_REG,BR_REG
 def E(r,n,**o):return H(r,n,n,**o)
 def F(r,en,fr,**o):return H(r,en,en,{"fr":fr},**o)
 
@@ -23,6 +24,8 @@ CA_REG={
  "BC":P("British Columbia","Colombie-Britannique",cNY,cFAM,cGF,cVIC,cCAN,cAUG("British Columbia Day","Jour de la Colombie-Britannique"),cLAB,F("09-30","National Day for Truth and Reconciliation","Journée nationale de la vérité et de la réconciliation",from_=2023),cTH,cREM,cX),
  "MB":P("Manitoba","Manitoba",cNY,F("n02/1/3","Louis Riel Day","Journée Louis-Riel"),cGF,cVIC,cCAN,cLAB,F("09-30","National Day for Truth and Reconciliation","Journée nationale de la vérité et de la réconciliation",from_=2023),cTH,cX),
  "NB":P("New Brunswick","Nouveau-Brunswick",cNY,cFAM,cGF,cCAN,cAUG("New Brunswick Day","Fête du Nouveau-Brunswick"),cLAB,cREM,cX),
+ "NL":P("Newfoundland and Labrador","Terre-Neuve-et-Labrador",F("01-01","New Year's Day","Jour de l'An",obs="mon"),cGF,F("07-01","Memorial Day (Canada Day)","Jour commémoratif (fête du Canada)",obs="mon"),cLAB,
+   F("11-11","Remembrance Day","Jour du Souvenir",obs="mon"),F("12-25","Christmas Day","Noël",obs="mon")),
  "NS":P("Nova Scotia","Nouvelle-Écosse",cNY,F("n02/1/3","Heritage Day","Jour du patrimoine"),cGF,cCAN,cLAB,F("11-11","Remembrance Day","Jour du Souvenir",obs="mon"),cX),
  "ON":P("Ontario","Ontario",cNY,cFAM,cGF,cVIC,cCAN,cLAB,cTH,cX,cBOX),
  "PE":P("Prince Edward Island","Île-du-Prince-Édouard",cNY,F("n02/1/3","Islander Day","Fête des Insulaires"),cGF,cCAN,cLAB,F("09-30","National Day for Truth and Reconciliation","Journée nationale de la vérité et de la réconciliation",from_=2022),cREM,cX),
@@ -83,23 +86,25 @@ NZ_REG={"AUK":S("Auckland",E("a01-26/1","Auckland Anniversary Day")),"WGN":S("We
  "CAN":S("Canterbury",E("a11-11/5","Canterbury Anniversary Day (Show Day)"))}
 
 COUNTRIES=[
-C("US",{"en":"United States","it":"Stati Uniti","es":"Estados Unidos"},"en",US,cur="USD",ws=0,
+C("US",{"en":"United States","it":"Stati Uniti","es":"Estados Unidos"},"en",US,cur="USD",ws=0,reg=US_REG,
+  regNone={"en":"Federal holidays only","it":"Solo festività federali","es":"Solo feriados federales"},
   rules={"rest":8,"maxWeek":40,"adv":1},
-  src="Fair Labor Standards Act (straordinario oltre 40 ore a settimana; nessun riposo minimo federale); festività federali: 5 U.S.C. 6103 e U.S. Office of Personnel Management",
-  note="Le festività federali valgono per legge solo per i dipendenti pubblici federali: nel privato dipende dal contratto. Ogni stato ha le sue feste: aggiungi la tua come festa locale."),
+  src="Fair Labor Standards Act (straordinario oltre 40 ore a settimana; nessun riposo minimo federale); festività federali: 5 U.S.C. 6103 e U.S. Office of Personnel Management; festività degli stati: leggi statali, dalla libreria open source holidays (vacanza/holidays)",
+  note="Le festività federali e quelle degli stati valgono per legge solo per i dipendenti pubblici: nel privato dipende dal contratto. Scegli il tuo stato per vedere le sue feste."),
 C("CA",{"en":"Canada","fr":"Canada","it":"Canada"},"en",CA,cur="CAD",ws=0,reg=CA_REG,
   regNone={"en":"Federally regulated workplaces","fr":"Secteurs de compétence fédérale","it":"Settori di competenza federale"},
   rules={"rest":8,"maxWeek":48},
-  src="Code canadien du travail / Canada Labour Code (8 ore di riposo tra due turni, 40 ore normali e 48 al massimo); festività: leggi sul lavoro di ogni provincia e territorio",
-  note="Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto. Terranova e Labrador non è ancora inclusa."),
+  src="Code canadien du travail / Canada Labour Code (8 ore di riposo tra due turni, 40 ore normali e 48 al massimo); festività: leggi sul lavoro di ogni provincia e territorio (Terranova e Labrador: Labour Standards Act, art. 14)",
+  note="Orari e riposi possono cambiare da provincia a provincia: controlla i valori qui sotto."),
 C("MX",{"es":"México","en":"Mexico","it":"Messico"},"es",MX,cur="MXN",night=(20,6),
   rules={"rest":8,"maxWeek":48,"maxWeekBy":{"2027":46,"2028":44,"2029":42,"2030":40},"adv":1},
   src="Ley Federal del Trabajo, art. 60, 61, 69, 74; riforma della giornata lavorativa (DOF, 2026): 46 ore nel 2027, 44 nel 2028, 42 nel 2029, 40 dal 2030",
   note="Anche i giorni delle elezioni federali e locali sono festivi per chi deve votare."),
-C("BR",{"pt":"Brasil","en":"Brazil","it":"Brasile"},"pt",BR,cur="BRL",ws=0,night=(22,5),
+C("BR",{"pt":"Brasil","en":"Brazil","it":"Brasile"},"pt",BR,cur="BRL",ws=0,night=(22,5),reg=BR_REG,
+  regNone={"pt":"Nenhum estado (só feriados nacionais)","en":"No state (national holidays only)","it":"Nessuno stato (solo feste nazionali)"},
   rules={"rest":11,"maxWeek":44,"weeklyRest":24},
-  src="CLT art. 66, 67, 73 e Costituzione art. 7 (11 ore di riposo, 44 ore settimanali, notte dalle 22 alle 5); Lei 662/1949, 6.802/1980, 14.759/2023",
-  note="Carnevale e Corpus Domini sono «ponto facultativo»; ogni stato e comune aggiunge le sue feste: aggiungi la tua come festa locale."),
+  src="CLT art. 66, 67, 73 e Costituzione art. 7 (11 ore di riposo, 44 ore settimanali, notte dalle 22 alle 5); Lei 662/1949, 6.802/1980, 14.759/2023; feriados estaduais: leggi di ogni stato, dalla libreria open source holidays (vacanza/holidays)",
+  note="Carnevale e Corpus Domini sono «ponto facultativo». Scegli il tuo stato per le sue feste; quelle del comune aggiungile come festa locale."),
 C("AR",{"es":"Argentina","en":"Argentina","it":"Argentina"},"es",AR,cur="ARS",night=(21,6),
   rules={"rest":12,"maxWeek":48,"weeklyRest":35},
   src="Ley de Contrato de Trabajo 20.744 art. 197, 200, 204 e Ley 11.544 (12 ore di riposo, 48 ore settimanali, notte dalle 21 alle 6); feriados: Ley 27.399",

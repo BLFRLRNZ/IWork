@@ -860,3 +860,18 @@ W aplikacji przypomnienia są planowane na telefonie: nic nie trafia na serwer. 
 Prawdziwy budzik przed każdą zmianą, który dzwoni nawet przy wyciszonym telefonie. Aktualizuje się sam, gdy zmieniasz grafik.
 Zezwól na budziki
 Budzik przed zmianami
+Tutaj znajdziesz wszystko inne: grafik cykliczny, urlopy i wolne godziny, bank godzin, szacunkową płacę, pasek wypłaty, przypomnienia i budziki przed zmianami, PDF miesiąca, eksport do kalendarza, kopię danych i Przewodnik.
+Otwórz {p} i włącz {a}: wybierz, z jakim wyprzedzeniem chcesz powiadomienie, także dla drugiej pracy i dyżurów. Powiadomienia planuje sam telefon, nawet bez konta. Przyciskiem {b} od razu sprawdzisz, czy działa.
+Jak ustawić budzik przed zmianami?
+Otwórz {p} i zezwól na budziki, gdy telefon o to poprosi. Dla rana, popołudnia i nocy wybierz, czy ma dzwonić i z jakim wyprzedzeniem, od 30 minut do 3 godzin. Budzik dzwoni nawet przy wyciszonym telefonie, a możesz go wyłączyć albo włączyć drzemkę na 10 minut. Obejmuje najbliższe 14 dni i aktualizuje się sam, gdy zmieniasz grafik. Na iPhonie potrzebny jest iOS 26.
+Sprawdź, czy powiadomienia {app} są dozwolone w ustawieniach telefonu, potem wyłącz i włącz {a} i wypróbuj {b}.
+Twój adres e-mail oraz, przy synchronizacji, wszystkie dane, ale zaszyfrowane twoim hasłem, więc nieczytelne. Przypomnienia i budziki planuje sam telefon, bez udziału serwera. Konto i wszystkie dane na serwerze usuniesz w {p}.
+Na tym telefonie, w aplikacji. Bez konta nic nie trafia na serwer. Przy synchronizacji na serwer trafia kopia zaszyfrowana twoim hasłem.
+Czy po usunięciu aplikacji stracę zmiany?
+Tak, jeśli nie masz kopii i nie używasz synchronizacji z kontem. Dlatego warto co jakiś czas ją zapisać, zwłaszcza przed zmianą telefonu.
+Jak widzieć zmiany w widżetach albo na zegarku?
+Przytrzymaj puste miejsce na ekranie początkowym, dodaj widżet i wyszukaj {app}: zobaczysz bieżącą lub najbliższą zmianę i kolejne dni. Na iPhonie są też widżety na ekran blokady. Jeśli masz Apple Watch albo zegarek z Wear OS, zainstaluj {app} także na zegarku: zmiany przychodzą z telefonu i możesz je też umieścić na tarczy.
+Aktualizacje przychodzą z App Store lub Google Play, jak w innych aplikacjach. Twoje zmiany zostają na miejscu.
+Święta federalne i stanowe z mocy prawa dotyczą tylko pracowników sektora publicznego: w sektorze prywatnym zależy to od umowy. Wybierz swój stan, aby zobaczyć jego święta.
+Czas pracy i odpoczynku może się różnić między prowincjami: sprawdź wartości poniżej.
+Karnawał i Boże Ciało to „ponto facultativo”. Wybierz swój stan, aby zobaczyć jego święta; święta gminy dodaj jako święto lokalne.

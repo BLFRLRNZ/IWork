@@ -860,3 +860,18 @@ I appen planlægges påmindelser på telefonen: intet når serveren. Hvis du æn
 En rigtig alarm før hver vagt, der ringer, selv når telefonen er på lydløs. Den opdateres af sig selv, når du ændrer dine vagter.
 Tillad alarmer
 Alarm før vagter
+Her finder du alt det andet: vagtrotation, ferie og fritimer, timebank, lønskøn, lønseddel, påmindelser og alarmer før vagter, månedens PDF, eksport til kalenderen, kopi af dataene og Guiden.
+Åbn {p} og slå {a} til: vælg, hvor lang tid før du vil have besked, også for dit andet job og tilkaldevagt. Telefonen planlægger selv notifikationerne, også uden konto. Med {b} tjekker du med det samme, at det virker.
+Hvordan sætter jeg en alarm før mine vagter?
+Åbn {p} og tillad alarmer, når telefonen spørger. Vælg for morgen, eftermiddag og nat, om den skal ringe og hvor lang tid før, fra 30 minutter til 3 timer. Alarmen ringer også, når telefonen er på lydløs, og du kan stoppe den eller snooze 10 minutter. Den dækker de næste 14 dage og opdaterer sig selv, når du ændrer dine vagter. På iPhone kræver det iOS 26.
+Tjek, at notifikationer for {app} er tilladt i telefonens indstillinger, og slå derefter {a} fra og til igen, og prøv {b}.
+Din e-mail og, med synkronisering, alle data, men krypteret med din adgangskode og derfor ulæselige. Påmindelser og alarmer planlægger telefonen selv, uden om serveren. Du kan slette kontoen og alle data på serveren under {p}.
+På denne telefon, i appen. Uden konto sendes intet til en server. Med synkronisering sendes en kopi krypteret med din adgangskode til serveren.
+Mister jeg mine vagter, hvis jeg sletter appen?
+Ja, hvis du ikke har en kopi og ikke bruger synkronisering med en konto. Derfor er det godt at gemme en en gang imellem, især før du skifter telefon.
+Hvordan ser jeg mine vagter i widgets eller på uret?
+Hold fingeren på et tomt sted på hjemmeskærmen, tilføj en widget, og søg efter {app}: du ser den igangværende eller næste vagt og de følgende dage. På iPhone er der også widgets til låseskærmen. Har du et Apple Watch eller et Wear OS-ur, så installer {app} på uret også: vagterne kommer fra telefonen, og du kan også sætte dem på urskiven.
+Opdateringer kommer fra App Store eller Google Play som for andre apps. Dine vagter bliver, hvor de er.
+Føderale helligdage og delstaternes helligdage gælder ved lov kun for offentligt ansatte: i den private sektor afhænger det af kontrakten. Vælg din delstat for at se dens helligdage.
+Arbejds- og hviletider kan variere fra provins til provins: tjek værdierne nedenfor.
+Karneval og Kristi legems fest er »ponto facultativo«. Vælg din delstat for dens helligdage; tilføj kommunens som lokal helligdag.

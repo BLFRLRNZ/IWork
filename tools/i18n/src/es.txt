@@ -860,3 +860,18 @@ En la app, los recordatorios se programan en el teléfono: no llega nada al serv
 Una alarma de verdad antes de cada turno, que suena aunque el teléfono esté en silencio. Se actualiza sola cuando cambias tus turnos.
 Permitir alarmas
 Alarma antes de los turnos
+Aquí encuentras todo lo demás: rotación de turnos, vacaciones y permisos, bolsa de horas, estimación de nómina, nómina, recordatorios y alarmas antes de los turnos, PDF del mes, exportación al calendario, copia de los datos y la Guía.
+Abre {p} y activa {a}: elige con cuánta antelación quieres el aviso, también para el segundo empleo y las guardias. Las notificaciones las programa el teléfono, incluso sin cuenta. Con {b} compruebas enseguida que funciona.
+¿Cómo pongo una alarma antes de mis turnos?
+En {p} permite las alarmas cuando el teléfono lo pida. Para mañana, tarde y noche elige si debe sonar y con cuánta antelación, de 30 minutos a 3 horas. La alarma suena aunque el teléfono esté en silencio y puedes detenerla o posponerla 10 minutos. Cubre los próximos 14 días y se actualiza sola cuando cambias tus turnos. En iPhone necesitas iOS 26.
+Comprueba que las notificaciones de {app} estén permitidas en los ajustes del teléfono; luego desactiva y vuelve a activar {a} y prueba con {b}.
+Tu correo y, con la sincronización, todos los datos, pero cifrados con tu contraseña, así que ilegibles. Los recordatorios y las alarmas los programa el teléfono, sin pasar por el servidor. Puedes eliminar la cuenta y todos los datos del servidor desde {p}.
+En este teléfono, dentro de la app. Sin cuenta no se envía nada a ningún servidor. Con la sincronización, una copia cifrada con tu contraseña va al servidor.
+Si borro la app, ¿pierdo mis turnos?
+Sí, si no tienes una copia y no usas la sincronización con una cuenta. Por eso conviene guardar una de vez en cuando, sobre todo antes de cambiar de teléfono.
+¿Cómo veo mis turnos en los widgets o en el reloj?
+Mantén pulsado un espacio vacío de la pantalla de inicio, añade un widget y busca {app}: verás el turno en curso o el próximo y los días siguientes. En iPhone también hay widgets para la pantalla de bloqueo. Si tienes un Apple Watch o un reloj con Wear OS, instala {app} también en el reloj: los turnos llegan desde el teléfono y también puedes ponerlos en la esfera.
+Las actualizaciones llegan desde el App Store o Google Play, como en las demás apps. Tus turnos siguen donde están.
+Los festivos federales y los de cada estado solo valen por ley para los empleados públicos: en el sector privado depende del contrato. Elige tu estado para ver sus festivos.
+Los horarios y descansos pueden cambiar de una provincia a otra: comprueba los valores de abajo.
+Carnaval y Corpus Christi son «ponto facultativo». Elige tu estado para sus festivos; añade el de tu municipio como fiesta local.

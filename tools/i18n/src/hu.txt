@@ -860,3 +860,18 @@ Az alkalmazásban az emlékeztetőket a telefon ütemezi: semmi sem kerül a sze
 Valódi ébresztő minden műszak előtt, ami némított telefonon is szól. Magától frissül, amikor módosítod a műszakjaidat.
 Ébresztők engedélyezése
 Ébresztő a műszakok előtt
+Itt találsz minden mást: műszakbeosztást, szabadságot és szabad órákat, órabankot, bérbecslést, bérjegyzéket, emlékeztetőket és ébresztőket a műszakok előtt, havi PDF-et, naptárexportot, adatmentést és az Útmutatót.
+Nyisd meg ezt: {p}, és kapcsold be ezt: {a}. Válaszd ki, mennyivel előtte kérsz értesítést, a második munkához és a készenléthez is. Az értesítéseket maga a telefon ütemezi, fiók nélkül is. Ezzel: {b} rögtön ellenőrizheted, hogy működik-e.
+Hogyan állítok be ébresztőt a műszakok elé?
+Nyisd meg ezt: {p}, és engedélyezd az ébresztőket, amikor a telefon kéri. Reggelre, délutánra és éjszakára válaszd ki, hogy szóljon-e, és mennyivel előtte, 30 perctől 3 óráig. Az ébresztő akkor is szól, ha a telefon le van némítva, és leállíthatod vagy 10 percre elhalaszthatod. A következő 14 napot fedi le, és magától frissül, ha módosítod a műszakjaidat. iPhone-on iOS 26 kell hozzá.
+Ellenőrizd, hogy a(z) {app} értesítései engedélyezve vannak-e a telefon beállításaiban, aztán kapcsold ki és újra be ezt: {a}, és próbáld ki ezt: {b}.
+Az e-mail-címed, és szinkronizálással minden adatod, de a jelszavaddal titkosítva, tehát olvashatatlanul. Az emlékeztetőket és az ébresztőket a telefon ütemezi, a szerver nélkül. A fiókot és a szerveren lévő összes adatot itt törölheted: {p}.
+Ezen a telefonon, az appon belül. Fiók nélkül semmi sem kerül szerverre. Szinkronizálással a jelszavaddal titkosított másolat kerül a szerverre.
+Ha törlöm az appot, elvesznek a műszakjaim?
+Igen, ha nincs másolatod, és nem használsz szinkronizálást fiókkal. Ezért érdemes időnként menteni egyet, főleg telefoncsere előtt.
+Hogyan látom a műszakjaimat widgeten vagy az órámon?
+Tartsd az ujjad a főképernyő egy üres részén, adj hozzá egy widgetet, és keress rá erre: {app}. Látod a folyamatban lévő vagy a következő műszakot és az utána következő napokat. iPhone-on a zárolási képernyőre is vannak widgetek. Ha Apple Watch-od vagy Wear OS-es órád van, telepítsd az órára is ezt: {app}. A műszakok a telefonról érkeznek, és a számlapra is felteheted őket.
+A frissítések az App Store-ból vagy a Google Playről érkeznek, mint más appoknál. A műszakjaid megmaradnak.
+A szövetségi és az állami ünnepek törvény szerint csak a közszféra dolgozóira vonatkoznak: a magánszektorban a szerződéstől függ. Válaszd ki az államodat, hogy lásd az ünnepeit.
+A munka- és pihenőidő tartományonként eltérhet: ellenőrizd az alábbi értékeket.
+A karnevál és az úrnapja „ponto facultativo”. Válaszd ki az államodat az ünnepeiért; a településedét add hozzá helyi ünnepként.

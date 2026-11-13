@@ -860,3 +860,18 @@ U aplikaciji se podsjetnici zakazuju na telefonu: ništa ne stiže na poslužite
 Prava budilica prije svake smjene koja zvoni i kad je telefon utišan. Sama se ažurira kad promijeniš smjene.
 Dopusti budilice
 Budilica prije smjena
+Ovdje nalaziš sve ostalo: rotaciju smjena, godišnji odmor i slobodne sate, banku sati, procjenu plaće, platnu listu, podsjetnike i budilice prije smjena, PDF mjeseca, izvoz u kalendar, kopiju podataka i Vodič.
+Otvori {p} i uključi {a}: odaberi koliko ranije želiš obavijest, i za drugi posao i pripravnost. Obavijesti zakazuje sam telefon, čak i bez računa. S {b} odmah provjeriš radi li.
+Kako postaviti budilicu prije smjena?
+Otvori {p} i dopusti budilice kad telefon to zatraži. Za jutro, popodne i noć odaberi treba li zvoniti i koliko ranije, od 30 minuta do 3 sata. Budilica zvoni i kad je telefon utišan, a možeš je zaustaviti ili odgoditi za 10 minuta. Pokriva sljedećih 14 dana i sama se ažurira kad promijeniš smjene. Na iPhoneu treba iOS 26.
+Provjeri jesu li obavijesti za {app} dopuštene u postavkama telefona, zatim isključi i ponovno uključi {a} i probaj {b}.
+Tvoja e-pošta i, uz sinkronizaciju, svi podaci, ali šifrirani tvojom lozinkom, dakle nečitljivi. Podsjetnike i budilice zakazuje telefon, bez poslužitelja. Račun i sve podatke na poslužitelju možeš izbrisati u {p}.
+Na ovom telefonu, u aplikaciji. Bez računa ništa se ne šalje na poslužitelj. Sa sinkronizacijom na poslužitelj ide kopija šifrirana tvojom lozinkom.
+Gubim li smjene ako izbrišem aplikaciju?
+Da, ako nemaš kopiju i ne koristiš sinkronizaciju s računom. Zato se isplati povremeno spremiti jednu, osobito prije promjene mobitela.
+Kako vidjeti smjene u widgetima ili na satu?
+Zadrži prst na praznom mjestu početnog zaslona, dodaj widget i potraži {app}: vidiš trenutačnu ili sljedeću smjenu i dane nakon nje. Na iPhoneu postoje i widgeti za zaključani zaslon. Ako imaš Apple Watch ili sat s Wear OS-om, instaliraj {app} i na sat: smjene stižu s telefona, a možeš ih staviti i na brojčanik.
+Ažuriranja stižu iz App Storea ili s Google Playa, kao i za druge aplikacije. Tvoje smjene ostaju gdje jesu.
+Savezni blagdani i blagdani saveznih država po zakonu vrijede samo za zaposlene u javnom sektoru: u privatnom sektoru ovisi o ugovoru. Odaberi svoju saveznu državu da vidiš njezine blagdane.
+Radno vrijeme i odmor mogu se razlikovati po pokrajinama: provjeri vrijednosti ispod.
+Karneval i Tijelovo su „ponto facultativo”. Odaberi svoju državu za njezine blagdane; blagdane općine dodaj kao lokalni blagdan.

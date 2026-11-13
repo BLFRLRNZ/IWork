@@ -860,3 +860,18 @@ Lietotnē atgādinājumi tiek ieplānoti tālrunī: uz serveri nekas nenonāk. J
 Īsts modinātājs pirms katras maiņas, kas zvana arī tad, ja tālrunis ir klusumā. Tas atjaunojas pats, kad maini maiņas.
 Atļaut modinātājus
 Modinātājs pirms maiņām
+Šeit atradīsi visu pārējo: maiņu rotāciju, atvaļinājumu un brīvās stundas, stundu banku, algas aprēķinu, algas lapiņu, atgādinājumus un modinātājus pirms maiņām, mēneša PDF, eksportu uz kalendāru, datu kopiju un Ceļvedi.
+Atver {p} un ieslēdz {a}: izvēlies, cik laicīgi vēlies paziņojumu, arī otrajam darbam un dežūrām. Paziņojumus ieplāno pats tālrunis, arī bez konta. Ar {b} uzreiz pārbaudīsi, vai tas darbojas.
+Kā iestatīt modinātāju pirms maiņām?
+Atver {p} un atļauj modinātājus, kad tālrunis to prasa. Rītam, pēcpusdienai un naktij izvēlies, vai tam jāzvana un cik laicīgi – no 30 minūtēm līdz 3 stundām. Modinātājs zvana arī tad, ja tālrunis ir klusuma režīmā, un to var apturēt vai atlikt uz 10 minūtēm. Tas aptver nākamās 14 dienas un atjaunojas pats, kad maini maiņas. iPhone tālrunī vajadzīga iOS 26.
+Pārbaudi, vai {app} paziņojumi ir atļauti tālruņa iestatījumos, tad izslēdz un atkal ieslēdz {a} un izmēģini {b}.
+Tava e-pasta adrese un, ar sinhronizāciju, visi dati, bet šifrēti ar tavu paroli, tātad nelasāmi. Atgādinājumus un modinātājus ieplāno tālrunis, neizmantojot serveri. Kontu un visus datus serverī vari izdzēst sadaļā {p}.
+Šajā tālrunī, lietotnē. Bez konta nekas netiek sūtīts uz serveri. Ar sinhronizāciju uz serveri nonāk ar tavu paroli šifrēta kopija.
+Vai, izdzēšot lietotni, es pazaudēšu maiņas?
+Jā, ja tev nav kopijas un tu neizmanto sinhronizāciju ar kontu. Tāpēc ir vērts ik pa laikam saglabāt kopiju, īpaši pirms tālruņa maiņas.
+Kā redzēt maiņas logrīkos vai pulkstenī?
+Turi pirkstu uz tukšas vietas sākuma ekrānā, pievieno logrīku un meklē {app}: redzēsi pašreizējo vai nākamo maiņu un nākamās dienas. iPhone tālrunī ir arī logrīki bloķēšanas ekrānam. Ja tev ir Apple Watch vai Wear OS pulkstenis, instalē {app} arī pulkstenī: maiņas pienāk no tālruņa, un tās var likt arī uz ciparnīcas.
+Atjauninājumi pienāk no App Store vai Google Play, tāpat kā citām lietotnēm. Tavas maiņas paliek savā vietā.
+Federālie un štatu svētki pēc likuma attiecas tikai uz valsts sektora darbiniekiem: privātajā sektorā tas atkarīgs no līguma. Izvēlies savu štatu, lai redzētu tā svētkus.
+Darba un atpūtas laiks var atšķirties pa provincēm: pārbaudi vērtības zemāk.
+Karnevāls un Kristus Miesas svētki ir “ponto facultativo”. Izvēlies savu štatu, lai redzētu tā svētkus; pašvaldības svētkus pievieno kā vietējos svētkus.

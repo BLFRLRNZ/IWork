@@ -860,3 +860,18 @@ In der App werden Erinnerungen auf dem Telefon geplant: Nichts gelangt zum Serve
 Ein echter Wecker vor jeder Schicht, der auch bei stummgeschaltetem Telefon klingelt. Er passt sich von selbst an, wenn du deine Schichten änderst.
 Wecker erlauben
 Wecker vor den Schichten
+Hier findest du alles andere: Schichtrotation, Urlaub und Freistunden, Stundenkonto, Lohnschätzung, Lohnabrechnung, Erinnerungen und Wecker vor Schichten, Monats-PDF, Kalenderexport, Datensicherung und die Anleitung.
+Öffne {p} und schalte {a} ein: Wähle, wie früh du erinnert werden willst, auch für den Zweitjob und die Bereitschaft. Die Mitteilungen plant das Handy selbst, auch ohne Konto. Mit {b} prüfst du sofort, ob es funktioniert.
+Wie stelle ich einen Wecker vor meinen Schichten?
+Erlaube in {p} die Wecker, wenn das Handy danach fragt. Wähle für Früh-, Spät- und Nachtschicht, ob er klingeln soll und wie früh, von 30 Minuten bis 3 Stunden. Der Wecker klingelt auch im Stummmodus, und du kannst ihn stoppen oder 10 Minuten schlummern lassen. Er gilt für die nächsten 14 Tage und passt sich von selbst an, wenn du Schichten änderst. Auf dem iPhone ist iOS 26 nötig.
+Prüfe, ob Mitteilungen für {app} in den Einstellungen des Handys erlaubt sind, schalte dann {a} aus und wieder ein und probiere {b}.
+Deine E-Mail und, mit Synchronisierung, alle Daten, aber mit deinem Passwort verschlüsselt und damit unlesbar. Erinnerungen und Wecker plant das Handy selbst, ohne den Server. Konto und alle Daten auf dem Server kannst du unter {p} löschen.
+Auf diesem Handy, in der App. Ohne Konto wird nichts an einen Server geschickt. Mit Synchronisierung geht eine mit deinem Passwort verschlüsselte Kopie an den Server.
+Verliere ich meine Schichten, wenn ich die App lösche?
+Ja, wenn du keine Kopie hast und keine Synchronisierung mit einem Konto nutzt. Deshalb lohnt es sich, ab und zu eine Kopie zu speichern, vor allem vor einem Handywechsel.
+Wie sehe ich meine Schichten in Widgets oder auf der Uhr?
+Halte eine freie Stelle auf dem Home-Bildschirm gedrückt, füge ein Widget hinzu und suche nach {app}: Du siehst die laufende oder nächste Schicht und die Tage danach. Auf dem iPhone gibt es auch Widgets für den Sperrbildschirm. Mit einer Apple Watch oder einer Wear-OS-Uhr installierst du {app} auch auf der Uhr: Die Schichten kommen vom Handy, und du kannst sie auch aufs Zifferblatt legen.
+Updates kommen über den App Store oder Google Play, wie bei anderen Apps. Deine Schichten bleiben, wo sie sind.
+Bundes- und Staatsfeiertage gelten gesetzlich nur für Beschäftigte im öffentlichen Dienst: In der Privatwirtschaft hängt es vom Vertrag ab. Wähle deinen Bundesstaat, um seine Feiertage zu sehen.
+Arbeits- und Ruhezeiten können je nach Provinz verschieden sein: Prüfe die Werte unten.
+Karneval und Fronleichnam sind „ponto facultativo“. Wähle deinen Bundesstaat für seine Feiertage; trage die deiner Gemeinde als lokalen Feiertag ein.

@@ -17,7 +17,7 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - **Prossimo turno**: conto alla rovescia all'inizio e, mentre sei in turno, quanto manca alla fine.
 - **Totali del mese**: ore, ore extra, ore notturne, sabati, domeniche e festivi, ferie e permessi residui, banca ore.
 - **Avvisi**: meno di 11 ore di riposo, sette giorni di fila, settimane sopra le 48 ore, ferie o permessi oltre quelli spettanti.
-- **Festività del paese** segnate in rosso, con la regione (o il cantone) e il santo patrono o una festa locale. Paesi disponibili: Italia, gli altri 26 dell'Unione Europea, Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco, Liechtenstein, Stati Uniti, Canada, Messico, Brasile, Argentina, Australia e Nuova Zelanda (41 paesi).
+- **Festività del paese** segnate in rosso, con la regione (o il cantone) e il santo patrono o una festa locale. Paesi disponibili: Italia, gli altri 26 dell'Unione Europea, Svizzera, Regno Unito, Norvegia, Islanda, San Marino, Monaco, Liechtenstein, Stati Uniti, Canada, Messico, Brasile, Argentina, Australia e Nuova Zelanda (41 paesi). Per Stati Uniti (50 stati e Washington DC), Brasile (27 stati), Canada (tutte le province, compresa Terranova e Labrador) e Australia si sceglie anche lo stato o la provincia.
 - **Vista calendario o elenco**: nell'elenco leggi note ed etichette per intero e puoi **cercare** in tutte le note e le etichette, di qualsiasi mese.
 - **Turni spezzati**: due fasce nello stesso giorno, per esempio 8–12 e 16–20, anche come turni rapidi.
 - **Etichette**: reparti, macchinari o postazioni che crei una volta e scegli con un tocco in ogni giorno.
@@ -62,7 +62,7 @@ L'app ha due schermate, **Calendario** e **Anno**. In **Impostazioni** ci sono l
 - Senza account l'app funziona come sempre.
 
 **App per iPhone e Android** (pronta, non ancora negli store; vedi "App per gli store" in `CLAUDE.md`)
-- È la stessa app dentro Capacitor, con in più i **widget** sulla schermata Home e sulla schermata di blocco, l'app per **Apple Watch** con le complicazioni, e i promemoria come notifiche del telefono, senza account.
+- È la stessa app dentro Capacitor, con in più i **widget** sulla schermata Home e sulla schermata di blocco, l'app per **Apple Watch** con le complicazioni, l'app per gli orologi **Wear OS** (Android) con il riquadro e la complicazione per il quadrante, e i promemoria come notifiche del telefono, senza account. La Guida spiega sveglie, widget e orologi.
 - **Sveglie** (Strumenti → Sveglie): una sveglia vera prima di ogni turno, che suona anche con il telefono in silenzioso e si può fermare o posticipare di 10 minuti. Si sceglie per mattina, pomeriggio e notte se suona e quanto prima (da 30 minuti a 3 ore). Copre i prossimi 14 giorni e si aggiorna da sola quando cambiano i turni. Sull'iPhone serve iOS 26 (AlarmKit); su Android la sveglia compare anche a schermo intero sopra il blocco e torna dopo un riavvio.
 
 Installabile sul telefono, funziona anche offline e cerca da sola gli aggiornamenti. Disponibile in 23 lingue (le traduzioni sono nella cartella `lang/`).
