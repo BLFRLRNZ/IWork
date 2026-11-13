@@ -34,6 +34,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.wear.compose.foundation.lazy.AutoCenteringParams
 import androidx.wear.compose.foundation.lazy.ScalingLazyColumn
 import androidx.wear.compose.foundation.lazy.items
 import androidx.wear.compose.foundation.lazy.rememberScalingLazyListState
@@ -95,7 +96,8 @@ class MainActivity : ComponentActivity(), DataClient.OnDataChangedListener {
 @Composable
 fun WatchApp(data: ShiftData?) {
     MaterialTheme {
-        val state = rememberScalingLazyListState()
+        // all'apertura il riquadro del turno sta al centro, sotto l'ora
+        val state = rememberScalingLazyListState(initialCenterItemIndex = 0)
         var now by remember { mutableLongStateOf(System.currentTimeMillis()) }
         LaunchedEffect(Unit) {
             while (true) {
@@ -119,6 +121,7 @@ fun WatchApp(data: ShiftData?) {
                     state = state,
                     contentPadding = PaddingValues(horizontal = 10.dp, vertical = 30.dp),
                     verticalArrangement = Arrangement.spacedBy(5.dp),
+                    autoCentering = AutoCenteringParams(itemIndex = 0),
                 ) {
                     item { Hero(data, f, now) }
                     items(rest) { day -> DayRow(data, day, today) }
