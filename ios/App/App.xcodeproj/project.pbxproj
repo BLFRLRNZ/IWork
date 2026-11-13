@@ -17,6 +17,7 @@
 		2592BB4C9AFC69C59DD97EBE /* ShiftAlarms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBC6DD3A3946FEC7C8BE5F /* ShiftAlarms.swift */; };
 		281D15B9DD4229014D42140D /* ShiftIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDE445F52144922C2B0689 /* ShiftIntents.swift */; };
 		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
+		33D341675EBB0C28375BF9A6 /* AppShortcuts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EE03D4E05E9FAFD1E1B1FB7 /* AppShortcuts.strings */; };
 		35590BD27DC0E68A9FB36620 /* ShiftIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDE445F52144922C2B0689 /* ShiftIntents.swift */; };
 		3849F373F3188064B7A57AF8 /* ShiftIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDE445F52144922C2B0689 /* ShiftIntents.swift */; };
 		3D60CC631510F1741B7543D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6D9BA134C522605CBA8B9D /* Foundation.framework */; };
@@ -139,14 +140,17 @@
 		504EC3111FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		589536DE73EF6A4EAF7D5019 /* es */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		613FFE5C2B3CCD5A2DBC35B1 /* ShiftOCR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftOCR.swift; sourceTree = "<group>"; };
 		6346716DC3A3B763076EB0C2 /* WidgetSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
 		73D204DC99591D0E55B6200B /* ShiftShortcuts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftShortcuts.swift; sourceTree = "<group>"; };
+		76E02670DB36725803C0EB1E /* de */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		862118F831F49BE82EA75C66 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		91AAB192FDE303300DCA7396 /* MyTurnWatch.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = MyTurnWatch.entitlements; sourceTree = "<group>"; };
 		9332A593E56DA158899F963D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9582B6822FE993A50072D4E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		9DAD97420E58871E87669E67 /* pt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		9E3FB1435618A8C9AAEAEC3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA34B78FB71C789654F06970 /* MyTurnNativePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnNativePlugin.swift; sourceTree = "<group>"; };
 		AAF99981B2FC59E37C49A23C /* MyTurnWatchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTurnWatchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,8 @@
 		BC23C792AAA625FD97A9EECE /* MyTurnViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyTurnViewController.swift; sourceTree = "<group>"; };
 		C3D461F18527369CD740123B /* MyTurnWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTurnWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C4F25418FD75EA6D41D723 /* ShiftTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftTimeline.swift; sourceTree = "<group>"; };
+		CD16B80D04904090403D0C34 /* fr */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
+		CFAF88F0BB99F0DA5E6803F2 /* it */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		D12B26008C21819FE8792C02 /* ShiftActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftActivity.swift; sourceTree = "<group>"; };
 		E0F8B3BF0694F8CB09799B9B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6787DF38DFF0D47F397D8B /* ShiftLiveActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShiftLiveActivity.swift; sourceTree = "<group>"; };
@@ -284,6 +290,7 @@
 				4B6922DF5FD3A4793FFF82DC /* ShiftLive.swift */,
 				613FFE5C2B3CCD5A2DBC35B1 /* ShiftOCR.swift */,
 				73D204DC99591D0E55B6200B /* ShiftShortcuts.swift */,
+				4EE03D4E05E9FAFD1E1B1FB7 /* AppShortcuts.strings */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -467,6 +474,7 @@
 				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
 				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
 				BDA1F94D7A9D699ED01818CC /* Localizable.xcstrings in Resources */,
+				33D341675EBB0C28375BF9A6 /* AppShortcuts.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +587,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4EE03D4E05E9FAFD1E1B1FB7 /* AppShortcuts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76E02670DB36725803C0EB1E /* de */,
+				589536DE73EF6A4EAF7D5019 /* es */,
+				CD16B80D04904090403D0C34 /* fr */,
+				CFAF88F0BB99F0DA5E6803F2 /* it */,
+				9DAD97420E58871E87669E67 /* pt */,
+			);
+			name = AppShortcuts.strings;
+			sourceTree = "<group>";
+		};
 		504EC30B1FED79650016851F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
